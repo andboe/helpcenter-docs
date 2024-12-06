@@ -1,0 +1,12 @@
+name: help-center
+title: Help Center
+start_page: index.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    table-caption: false
+    product: peopleware
+nav:
+  - modules/forecast/nav.adoc
+  - modules/plan/nav.adoc
+  - modules/me/nav.adoc
