@@ -1,7 +1,6 @@
 name: help-center
-title: Help Center
+title: 'Help Center'
 version: ~
-start_page: index.adoc
 asciidoc:
   attributes:
     source-language: asciidoc@
