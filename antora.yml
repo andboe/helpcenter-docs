@@ -1,11 +1,14 @@
 name: help-center
-title: 'Help Center'
+title: Help Center
 version: ~
 asciidoc:
   attributes:
+    experimental: ''
     source-language: asciidoc@
     table-caption: false
-    product: peopleware
+    product-generic: peopleware
+    product-classic: peopleware Classic
+    product-wfm: peopleware Enterprise WFM
 nav:
   - modules/forecast/nav.adoc
   - modules/plan/nav.adoc

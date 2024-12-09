@@ -1,0 +1,138 @@
+= Browser einrichten
+:author: Tina Techwriter
+:email: tina.techwriter@ivx.com
+:description: Erfahre, wie du deinen Browser für die Arbeit mit {product-generic} einrichtest.
+// relates to products:
+:on-premise:
+:classic:
+//redirect due to filename update on 27 July 2023
+:page-aliases: client-configuration.adoc
+:product-base-url: peopleware.com
+
+
+Um mit ActiveX-basierten Features in WFM zu arbeiten, nutze xref:support:faq/configure-edge-internet-explorer-mode.adoc#config-ie-mode-in-edge[Microsoft Edge im Internet Explorer(IE)-Modus].
+Du findest eine Liste kompatibler Browser in den xref:system-requirements.adoc#browser-requirements[Systemanforderungen].
+
+Wenn du nicht die nötigen Rechte hast, um die Browser-Einstellungen zu ändern oder Software zu installieren, wende dich an deine IT-Abteilung.
+
+[#configure-the-trusted-sites-and-security-zone-settings]
+== Vertrauenswürdige Sites und Sicherheitszonen-Einstellungen konfigurieren
+
+{product-classic} und {product-wfm} enthalten ActiveX-Steuerelemente.
+Du musst dem Browser (Edge im IE-Modus) erlauben, diese ActiveX-Steuerelemente auszuführen.
+
+Füge in den Browsereinstellungen alle Seiten von {product-generic} (_\*.{product-base-url}_) zu den vertrauenswürdigen Seiten hinzu:
+
+. Öffne das Windows-Startmenü, gib Internetoptionen ein und drücke
+. Wähle auf dem Tab *Sicherheit* die Zone *Vertrauenswürdige Sites* und klicke auf _Sites_.
+. Gib im Feld *Diese Webseite zur Zone hinzufügen* https://\*.{product-base-url} ein.
+. Aktiviere die Checkbox *Für Sites dieser Zone ist eine Serverüberprüfung (https:) erforderlich*.
+. Klicke auf btn:[Hinzufügen].
+. Klicke auf btn:[Schließen].
+
+image::ie-config.jpg[Sicherheiteinstellungen, 250]
+
+Passe die Sicherheitszone für die vertrauenswürdigen Sites wie folgt an:
+
+. Öffne das Windows-Startmenü, gib Internetoptionen ein und drücke kbd:[Enter].
+. Wähle auf dem Tab *Sicherheit* die Zone *Vertrauenswürdige Sites*.
+. Deaktiviere die Checkbox *Geschützten Modus aktivieren*.
++
+[NOTE]
+====
+Diese Checkbox ist in Windows 11 und höher nicht mehr verfügbar.
+====
+. Ändere auf dem Tab *Sicherheit* die Sicherheitsstufe für *Vertrauenswürdige Sites* auf *Mittelhoch* bzw. *Mittel*
+Wenn du Mittel wählst, kannst du die Schritte 6-9 überspringen.
+. Klicke auf btn:[OK].
+. Klicke auf btn:[Stufe anpassen].
+. Ändere im Dialogfenster *Sicherheitseinstellungen* folgende Einstellungen:
++
+[%header,cols="1,1"]
+|===
+| Einstellung
+| Status
+
+| ActiveX-Steuerelemente ausführen, die für Skripting sicher sind
+| AKTIVIERT
+
+| ActiveX-Steuerelemente und Plug-Ins
+| AKTIVIERT
+
+| Signierte ActiveX Steuerelemente herunterladen
+| Eingabeaufforderung oder AKTIVIERT
+
+| Automatische Eingabeaufforderung für ActiveX Steuerelemente
+| AKTIVIERT
+|===
+
+. Klicke auf btn:[OK].
+Die folgende Meldung erscheint: Sind Sie sicher, dass Sie die Einstellungen für diese Zone ändern möchten?
+. Klicke auf btn:[Ja].
+. Um den Dialog zu schließen, klicke auf btn:[OK].
+
+[#client-installation]
+== Client-Installation
+
+{product-classic} und {product-wfm} enthalten ActiveX-Steuerelemente, die xref:support:faq/configure-edge-internet-explorer-mode.adoc[Microsoft Edge im IE-Modus] und die Client-Applikation von {product-generic} erfordern.
+
+Wenn du beim Anmelden bei oder Verwenden von {product-generic} eine Fehlermeldung siehst:
+
+- verwende einen xref:system-requirements.adoc#browser-requirements[kompatiblen Browser]
+- installiere die Client-Applikation von {product-generic} (wie unten beschrieben).
+
+[#client-auto-installation]
+=== Automatische Installation der Client-Applikation (WFM-Startseite)
+
+Wenn du die oben beschriebenen Browsereinstellungen verwendest, installiert sich der Client automatisch, wenn du WFM aufrufst.
+
+. Gehe zu menu:WFM[].
+. Warte bis der Download beendet ist und die Client-Installation beginnt.
+. Der Browser zeigt diese Meldung an:
++
+--
+[quote]
+____
+Diese Webseite möchte das folgende Add-on ausführen:
+'injixo Enterprise' von 'InVision AG'.
+____
+Wenn diese Meldung nicht erscheint, wende dich an deine IT-Abteilung.
+--
+. Klicke auf btn:[Installieren], um die erforderlichen Add-ons zu installieren.
+. Klicke auf btn:[Installieren], um den Client zu installieren.
+
+Wenn die Installation erfolgreich war, kannst du auf ActiveX-Komponenten zugreifen.
+
+[#manual-client-installation]
+=== Manuelle Client-Installation
+
+Installiere den Client manuell, z.&nbsp;B. in der On-Premises-Version von {product-wfm} oder wenn die automatische Installation nicht funktioniert.
+
+[NOTE]
+====
+Wenn du ein Programm zur Softwareverteilung verwendest, führe das Installationsprogramm für den Benutzer aus, der später auf dem Computer angemeldet sein wird, z.&nbsp;B. mit Microsofts `msiexec.exe` mit der Option `runas /user`.
+====
+
+. Lade die https://downloads.injixo.com/de#client[aktuelle Version der Client-Applikation] herunter.
+. Um den MSI-Installer auszuführen, klicke auf btn:[Ausführen].
+. Um fortzufahren, klicke auf btn:[Weiter].
+. (Optional) Ändere den Installationspfad.
+. Wenn der Computer von mehreren Benutzern verwendet wird, wähle *Jeder*.
+. Um fortzufahren, klicke auf btn:[Weiter].
+. Um die Installation auszuführen, klicke auf btn:[Installieren].
++
+--
+Die folgende Meldung erscheint:
+[quote]
+____
+Möchten Sie zulassen, dass Software auf diesem Computer durch das folgende Programm installiert wird?
+____
+--
+. Klicke auf btn:[Ja], um die Meldung zu bestätigen.
+
+Wenn die Installation erfolgreich war, kannst du auf ActiveX-Komponenten zugreifen.
+
+== Verwandte Themen
+
+* xref:help-center:support:faq/client-installer-errors.adoc[]
+* xref:help-center:support:faq/session-timeout-message.adoc[]
