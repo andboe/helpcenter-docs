@@ -1,0 +1,67 @@
+[plantuml]
+----
+@startuml
+@startuml
+
+' Define the top-level entity
+rectangle "Project" as project
+
+' Define second-level entities
+rectangle "Component1" as component1
+rectangle "Component2" as component2
+rectangle "Component3" as component3
+
+' Define third-level entities for Component1
+rectangle "Module1" as module1_1
+rectangle "Module2" as module1_2
+rectangle "Module3" as module1_3
+rectangle "Module4" as module1_4
+
+' Define third-level entities for Component2
+rectangle "Module1" as module2_1
+rectangle "Module2" as module2_2
+rectangle "Module3" as module2_3
+
+' Define third-level entities for Component3
+rectangle "Module1" as module3_1
+rectangle "Module2" as module3_2
+
+' Define fourth-level entities for module1_2
+rectangle "Pages" as pages
+rectangle "Partials" as partials
+rectangle "Images" as images
+rectangle "Attachments" as attachments
+rectangle "Examples" as examples
+
+' Connect top-level to second-level
+project --|> component1
+project --|> component2
+project --|> component3
+
+' Connect second-level to third-level for Component1
+component1 --|> module1_1
+component1 --|> module1_2
+component1 --|> module1_3
+component1 --|> module1_4
+
+' Connect second-level to third-level for Component2
+component2 --|> module2_1
+component2 --|> module2_2
+component2 --|> module2_3
+
+' Connect second-level to third-level for Component3
+component3 --|> module3_1
+component3 --|> module3_2
+
+' Connect third-level to fourth-level for module1_2
+module1_2 --|> pages
+module1_2 --|> partials
+module1_2 --|> images
+module1_2 --|> attachments
+module1_2 --|> examples
+
+@enduml
+
+@enduml
+
+----

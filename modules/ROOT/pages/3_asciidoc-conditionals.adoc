@@ -1,0 +1,33 @@
+= Conditional content
+// Let's define a few conditions here
+:vale:
+//just specified for illustration, set by the AsciiDoc processor
+:backend-pdf:
+:product-me:
+:product-wfm:
+
+ifdef::vale[]
+== Show only for output tailored to Vale
+This is section is for Vale only.
+
+We tagged this section with an if directive.
+Now we can control if this section is displayed by setting or unsetting the `vale` attribute.
+endif::[]
+
+ifndef::backend-pdf[]
+== Hide in PDF output
+This is something we want to exclude from PDF output.
+endif::[]
+
+ifdef::product-me,product-wfm[]
+== Me *or* WFM
+This section contains content only relevant for Agents (i.e. user of Me) and users of the WFM legacy system.
+This section is displayed when either the `product-me` attribute or the `product-wfm` attribute or both are set.
+endif::[]
+
+ifdef::product-me+backend-pdf[]
+== PDF output related to ME only
+This section contains content we only want to display in the PDF output of articles that contain information for users of Me.
+endif::[]
+
+

@@ -1,0 +1,39 @@
+= Antora
+
+== Project structure
+
+include::partial$diagrams/antora-structure.adoc[]
+
+=== Resource IDs
+
+Resources such as pages, partials, images, etc. are identified within an Antora project by their unique resource ID.
+
+image::resourceIDs.png[width=400]
+
+Fully qualified resource ID:
+
+ xref:help-center:getting-started:browser-setup.adoc[]
+
+Short form:
+
+ xref:huppifluppi.adoc[]
+
+.Resource IDs in action
+----
+xref:help-center:getting-started:browser-setup.adoc[]
+xref:help-center:ROOT:page$index.adoc[]
+xref:index.adoc[]
+
+image::ROOT:image$cat.webp[]
+image::cat.webp[]
+
+\include::help-center:ROOT:partial$peopleware-ftw.adoc[]
+\include::partial$peopleware-ftw.adoc[]
+----
+
+Resource IDs are great because:
+
+* Uncoupled from filesystem
+* No relative path shenanigans
+* Uncoupled from publishing URL
+* Intuitive

@@ -1,0 +1,37 @@
+= Includes
+// :four:
+
+include::partial$peopleware-ftw.adoc[]
+
+include::partial$tagged-areas.adoc[tags=one]
+
+include::partial$tagged-areas.adoc[tags=two;three]
+
+ifdef::four[]
+include::partial$tagged-areas.adoc[tags=four,leveloffset=+1]
+endif::four[]
+
+== Table use case
+
+//You can use includes to assemble tables
+
+[%header, cols="1a,2a,2a"]
+|===
+|Header 1
+|Header 2
+|Header 3
+
+include::partial$table-rows/row-tina.adoc[]
+include::partial$table-rows/row-tristan.adoc[]
+include::partial$table-rows/row-marty.adoc[tags=row]
+
+[NOTE]
+====
+Want Marty's data as a list? Just pull it from the same source:
+
+include::partial$table-rows/row-marty.adoc[tags=list]
+====
+
+|===
+
+// You can also include content based on line ranges in a file, from a URI (e.g. a github repo). Not that useful for us though, imho

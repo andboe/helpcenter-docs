@@ -1,0 +1,32 @@
+= Antora configuration
+
+== Component version descriptor
+
+ antora.yml
+
+Defines the following component version settings:
+
+* Mandatory:
+** name
+** version (can be unversioned)
+* Optional
+** title
+** any number of AsciiDoc attributes (applied to every resource in the component version)
+** navigation
+** ...
+
+== Playbook
+
+Controls for the site built based on the playbook:
+
+* Included content
+* UI
+* Where the content is published
+
+Defines:
+
+* Title of the site
+* Landing page
+* Repos, branches, tags fed into the build
+* Global attributes and extensions (site-wide)
+

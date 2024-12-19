@@ -1,0 +1,158 @@
+= AsciiDoc Syntax Reference
+:author: Andreas Böttcher
+:email: andreas.boettcher@ivx.com
+:topic-type-reference:
+:description: A reference page about the basic AsciiDoc markup features.
+:page-alias: old-name-of-the-article.adoc
+:company: peopleware
+:product-generic: peopleware
+:product-classic: peopleware Classic
+:product-wfm: peopleware Enterprise WFM
+
+== Introduction
+
+This is a sample page to illustrate the formatting options available in AsciiDoc when used with the Antora static site generator.
+
+== Variables
+
+We're all happy little workers at {company}.
+We happily work to improve {product-generic}.
+Some of us work on {product-classic}, while others work on {product-wfm}.
+
+== Formatting Text
+
+*Bold text*
+
+_italic text_
+
+`monospaced text`
+
+== Lists
+
+* Unordered list item 1
+* Unordered list item 2
+** Nested unordered list item
+
+. Ordered list item 1
+. Ordered list item 2
+.. Nested ordered list item
+
+== URL links
+
+https://example.com
+
+https://example.com[Link text]
+
+== Cross-references
+
+xref:index.adoc[]
+
+xref:index.adoc[Link text]
+
+== Images
+
+image::cat.webp['An angry cat', width=200]
+
+Stone me! I’ve got the Wilsons for Saturday, mate. Meet me in the Earl of Wakefield around 12. Sausage and Mash. image:cat.webp['A tiny angry cat inserted inline', width=20] Blimey! You’ll have to speak up, ‘e’s a bit Mutton. AJ Hackett? 24 carat plonker! Have a wash ya’ smelly paraffin. Nina Simone means phone! Lovely jubbly! Man From Cairo.
+
+Lawd above! Henry the Eighth? Bird Bath! Blimey! Tom cruise? Rachel Hunter! Lawd above! Blackpool Tower. Jam Roll. Lor’ luv a duck! False Start.
+
+[.right]
+image::cat.webp['An angry cat floated to the right', width=150]
+
+What a palaver!Jimmy Connors! Paraffin Oil means boil. During the war … String o’ Beads! Obi Wan Kenobi means mobi (mobile phone)? Lor’ luv a duck! Shovel and Spade? Speckled Hen? Lovely jubbly! Otis Redding!
+
+== Source Code
+
+[source,asciidoc]
+----
+= Title
+:author: Andreas Böttcher
+:email: andreas.boettcher@ivx.com
+
+== Introduction
+
+Lorem Ipsum yaddayadda
+
+image::cat.webp[]
+----
+
+== Admonitions
+
+// see also: Blocks
+
+TIP: This is a tip. It uses the inline syntax.
+
+[TIP]
+====
+This is also a tip. But it uses the block syntax, which allows for multi-line content.
+
+See? Another line. Fabulous.
+====
+
+NOTE: This is a note.
+
+IMPORTANT: This is important.
+
+CAUTION: This is a caution.
+
+WARNING: This is a warning.
+
+== Tables
+
+// I am single-line comment. I am here so that Andreas can highlight once more how superior AsciiDoc tables are to the abomination that Markdown labels table syntax
+
+[%header, cols="1s,2a,1m"]
+|===
+|Column 1
+|Column 2
+|Column 3
+
+|Col1 Row1
+|Col2 Row1
+
+Complex content with *formatting*!
+Also, we have lists!
+
+* See?
+* Isn't that great?
+* It's great!
+
+IMPORTANT: An _admonition_? In a _TABLE_??? You crazy, crazy man!
+|Col3 Row1
+
+|Col1 Row2
+|Col2 Row2
+|Col3 Row2
+
+|===
+
+//If you like, you can still use a table-like notation
+
+|===
+| Header 1  | Header 2  | Header 3
+
+| Cell      | Cell      | Cell
+| Cell      | Cell      | Cell
+|===
+
+== Macros
+
+=== Keyboard
+
+* Press kbd:[F11] to toggle full screen.
+* Here's a challenge: Press kbd:[Ctrl+Cmd+Ü+F1] while balancing an egg on your nose.
+
+=== Buttons
+
+* Click btn:[Obliterate] to destroy everything and go home early today.
+
+== Menus
+
+* To save the file, go to menu:File[Save].
+* To abort the launch, go to menu:Rocket[Launch control > Activate Self-Destruct]
+
+== Formulas, Equations etc.
+
+* stem:[sqrt(4) = 2]
+* Oi mate, I'm thirsty! You 'ave some stem:[H_2O]?
