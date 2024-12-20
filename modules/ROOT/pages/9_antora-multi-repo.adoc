@@ -1,0 +1,6 @@
+= Multi-repo
+
+* Easy separation of content, presentation and configuration
+* Flexible site assembly from a number of repo sources
+* Easy reuse of resources (e.g. UI)
+* Easier handling of publishing channels (1 playbook per channel, one repo per playbook)

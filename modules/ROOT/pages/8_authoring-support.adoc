@@ -1,0 +1,39 @@
+= Authoring support
+
+== IntelliJ + AsciiDoc plugin
+
+xref:asciidoc-syntax-ref.adoc[]
+
+* Refactoring & Co
+** File renaming
+** Safe delete
+** File usage finder
+* Auto-complete
+** Resource IDs
+** Anchors
+** Variables (from doc, component, playbook)
+* On-the-fly error checking
+** Spell checker
+** Style checker
+** References
+** Vale rules
+* Live templates
+* File templates
+* Accurate preview
+** Navigation in preview
+* One-click PDF, DOCX, HTML export
+* Paste images from clipboard
+* ...
+
+
+[%header, cols="1a,2a,2a"]
+|===
+|header 1
+|header 2
+|header 3
+
+|
+|
+|
+
+|===
