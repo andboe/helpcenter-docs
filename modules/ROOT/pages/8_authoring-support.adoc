@@ -2,7 +2,7 @@
 
 == IntelliJ + AsciiDoc plugin
 
-xref:asciidoc-syntax-ref.adoc[]
+xref:1_asciidoc-syntax-ref.adoc[]
 
 * Refactoring & Co
 ** File renaming
