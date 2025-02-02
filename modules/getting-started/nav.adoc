@@ -1,4 +1,4 @@
-* Allgemein
+* Erste Schritte
 ** xref:system-requirements.adoc[]
 ** xref:browser-setup.adoc[]
 ** xref:log-in-to-injixo.adoc[]
