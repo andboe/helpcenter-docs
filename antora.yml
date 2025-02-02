@@ -10,6 +10,7 @@ asciidoc:
     product-classic: peopleware Classic
     product-wfm: peopleware Enterprise WFM
 nav:
+  - modules/ROOT/nav.adoc
   - modules/getting-started/nav.adoc
   - modules/forecast/nav.adoc
   - modules/plan/nav.adoc
