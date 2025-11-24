@@ -1,0 +1,5 @@
+:btn-save: btn:[Save]
+:btn-edit: btn:[Edit]
+:btn-cancel: btn:[Cancel]
+:btn-create: btn:[Create]
+:btn-delete: btn:[Delete]

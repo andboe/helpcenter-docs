@@ -1,4 +1,5 @@
 = Configure user roles
+include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Andreas Böttcher
 :email: andreas.boettcher@peopleware.com
 :topic-type-task:
@@ -55,7 +56,8 @@ To create a new role and configure all its settings from scratch, proceed as fol
 To grant permissions, check the checkbox of the feature.
 . Click btn:[Save].
 
-=== Duplicate an existing role <a name="duplicate-a-role"></a>
+[#duplicate-existing-role]
+=== Duplicate an existing role
 
 Duplicating an existing role transfers all its settings, including permission settings, to the new role.
 To duplicate a role, proceed as follows:
@@ -66,28 +68,31 @@ To duplicate a role, proceed as follows:
 4. Click {% icon overlapping_boxes | icon-only %} Duplicate to immediately create the new, duplicated role.
 5. (Optional) Edit the role settings as needed.
 
+[#assign-roles-to-people]
 === Assign roles to people <a name="assign-roles-to-people"></a>
 
-1. Go to _People_{:.breadcrumbs}.
+1. Go to {bc-people}.
 2. Select a person from the list.
-3. In the left-side menu, click **Access**.
-4. In the _Roles and admin access_{:.label} section, click {% icon pencil | icon-only %} **Edit**.
+3. In the left-side menu, click *Access*.
+4. In the *Roles and admin access* section, click {icon-edit} *Edit*.
 5. Check the relevant checkboxes in the list.
 To limit the displayed roles, use the search field.
-6. Click _Save_{:.doc-button}.
+6. Click {btn-save}.
 
-=== Edit roles <a name="edit-roles"></a>
+[#edit-roles]
+=== Edit roles
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Find the role in the Roles table.
-3. Make the changes to the role and click _Save_{:.doc-button}.
+1. Go to {bc-account-roles}.
+2. Find the role in the *Roles* table.
+3. Make the changes to the role and click {btn-save}.
 
-=== Delete roles <a name="delete-roles"></a>
+[#delete-roles]
+=== Delete roles
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Click the {% icon ellipsis_v %} next to the role you want to delete.
-3. Click {% icon trash | icon-only %} Delete.
-4. In the window that opens, click _Delete_{:.doc-button} to confirm.
+1. Go to {bc-account-roles}.
+2. Click the context menu icon {icon-context-menu} next to the role you want to delete.
+3. Click {icon-delete} Delete.
+4. In the window that opens, click {btn-delete} to confirm.
 
 == {see-also-title}
 
