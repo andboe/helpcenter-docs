@@ -1,3 +1,90 @@
-= Forecast
+= What is Forecast?
+:author: Alexis Braine
+:email: alexis.braine@peopleware.com
+:product-label: essential, advanced, enterprise, classic
+:topic-type-concept:
+:description: Use Forecast to automatically calculate a forecast for contact volume and AHT.
+:related-articles: create-workloads.adoc, manual-adjustments.adoc, save-forecast-versions.adoc, download-forecast.adoc
 
-{product-generic}
+*Forecast* applies machine learning to your historical data to generate high-quality forecasts and find trends, patterns, and fluctuations included in your data.
+
+*Forecast* generates a forecast for the following time ranges:
+
+* Advanced and Enterprise WFM plans: 24 months after the data import
+* Classic and Essential WFM plans: 12 months after the data import
+
+[#generate-a-forecast]
+== Generate a forecast
+
+Check our quick start guide to learn how to xref:getting-started:calculate-a-forecast.adoc[generate a forecast].
+
+Forecasts are updated automatically at least once a week.
+Manual changes will typically be applied after several minutes.
+For bulk data uploads, forecasts are recalculated if the data introduces a significant change (e.g. adding more than a week of new data or large differences in the existing data).
+
+[#data-requirements]
+== Data requirements
+
+*Forecast* requires that you import offered contacts, average handling time (AHT), and handled contacts.
+
+A forecast can be generated from a workload with just a few days of historical data.
+To identify monthly patterns, at least one month of historical data is required.
+For yearly patterns, at least a year of historical data is required.
+
+Which kind of workloads are available to you depends on your WFM plan (Classic, Essential, Advanced or Enterprise WFM).
+
+[#how-to-deal-with-low-data-quality]
+== How to deal with low data quality
+
+To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked xref:forecast:events-and-holidays.adoc[events or public holidays] will impact forecast quality.
+
+Historical data may include prolonged outages, or it may miss data for a particular timeframe. 
+The closer that missing data is to the current day, the less the forecast quality is affected.
+
+Here are some tips on managing low data quality depending on how long the period with poor or missing data is:
+
+[%header, cols="2a,2a"]
+|===
+|Timeframe with poor quality data
+|Tip
+
+|A few days
+|Use xref:forecast:events-and-holidays.adoc[events] to mark the affected days as an outage and exclude them from the calculation.
+
+|A couple of weeks
+|Upload additional data without gaps or irrelevant patterns.
+
+|Several weeks or months
+|Remove the data that predates the gap. 
+Import only the data from after the gap.
+
+|===
+
+[NOTE]
+====
+If you cannot upload additional data or you do not have enough data after a gap, the negative impact of missing data is automatically minimized.
+Check and clean up data before you import it.
+You cannot remove historical data.
+Contact your Customer Success team if needed.
+====
+
+[#forecast-low-volumes]
+== Forecast low volumes
+
+*Forecast* can generate forecasts for low and high contact volumes.
+When generating a forecast based on data from low contact volumes, daily patterns may not be recognized.
+While rare, this may result in no forecast being generated for particular days.
+For single days, adjust the forecast manually.
+In a recurring situation, you can:
+
+* Add multiple queues to the workload (resulting in higher volumes).
+* Use another approach to generate staff requirements for scheduling, e.g. xref:forecast:constant-requirement-script.adoc[generate constant staff requirements].
+
+== {see-also-title}
+
+* xref:forecast:create-workloads.adoc[]
+* xref:forecast:manual-adjustments.adoc[]
+* xref:forecast:save-forecast-versions.adoc[]
+* xref:forecast:download-forecast.adoc[]
+
+=== {see-also-concept}
