@@ -1,0 +1,161 @@
+= Configure user roles
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Andreas Böttcher
+:email: andreas.boettcher@peopleware.com
+:topic-type-task:
+:page-aliases: user-and-role-authorzation.adoc
+:product_label: advanced, enterprise
+
+[#about-roles]
+== About roles
+
+A role groups people with the same set of permissions for the apps and features in Peopleware, e.g {bc-forecast-workloads} or to the features in WFM, e.g. {bc-wfm-administration}.
+
+Every role can be marked as a default role in the role settings.
+Peopleware assigns roles with the *Default role* setting to every new user account.
+All roles except the predefined *Everyone* role can be unassigned from any user account at any time.
+
+For more information see xref:predefined-user-roles.adoc[].
+
+[NOTE]
+====
+In Essential WFM and Advanced WFM, you can configure workload permissions.
+In Enterprise WFM, you can additionally configure permissions for individual workloads, dashboards and roles.
+For more information, see:
+
+* xref:forecast:workload-permissions.adoc[].
+* xref:monitoring:dashboards/manage-dashboards.adoc[]
+* xref:role-permissions.adoc[]
+====
+
+[#manage-roles]
+== Manage roles
+
+[#prerequisites]
+=== Prerequisites
+
+To manage and configure roles, your role needs the following permissions:
+
+* {permission-roles-full-access-to-roles}
+
+To configure WFM permissions, your role also needs the following permissions:
+
+* {permission-wfm-enable-access-to-wfm}
+
+[#create-role-from-scratch]
+=== Create a new role from scratch
+
+To create a new role and configure all its settings from scratch, proceed as follows:
+
+. Go to {bc-account-roles}.
+. Click btn:[Create role].
+. In the *Basic information* section, configure the following fields:
+* *Name*
+* Optional: *Description*
+. Edit the role permissions.
+To grant permissions, check the checkbox of the feature.
+. Click btn:[Save].
+
+[#duplicate-existing-role]
+=== Duplicate an existing role
+
+Duplicating an existing role transfers all its settings, including permission settings, to the new role.
+To duplicate a role, proceed as follows:
+
+. Go to {bc-account-roles}.
+. Find the role in the *Roles* table.
+. In the role entry, click the image:help-center:ROOT:icons/3_dots_vertical.svg[] icon on the right to display the role entry menu.
+. Click {% icon overlapping_boxes | icon-only %} Duplicate to immediately create the new, duplicated role.
+. (Optional) Edit the role settings as needed.
+
+[#assign-roles-to-people]
+=== Assign roles to people <a name="assign-roles-to-people"></a>
+
+. Go to {bc-people}.
+. Select a person from the list.
+. In the left-side menu, click *Access*.
+. In the *Roles and admin access* section, click {icon-edit} *Edit*.
+. Check the relevant checkboxes in the list.
+To limit the displayed roles, use the search field.
+. Click {btn-save}.
+
+[#edit-roles]
+=== Edit roles
+
+. Go to {bc-account-roles}.
+. Find the role in the *Roles* table.
+. Make the changes to the role and click {btn-save}.
+
+[#delete-roles]
+=== Delete roles
+
+. Go to {bc-account-roles}.
+. Click the context menu icon {icon-context-menu} next to the role you want to delete.
+. Click {icon-delete} Delete.
+. In the window that opens, click {btn-delete} to confirm.
+
+[#set-wfm-permissions]
+== Set WFM permissions
+
+. Under {bc-account-roles}, select a role.
+. In the *WFM* section, click *Show in WFM*.
+You will be redirected to {bc-wfm-administration-system-roleauthorization}.
+. In the *Navigator* section on the right, check or uncheck the checkboxes to add or remove permissions.
+
+[NOTE]
+====
+Individual permissions can overwrite role-based permissions.
+This also applies to people with admin access.
+
+Use only role-based permissions whenever possible.
+You can change permissions for individual people under {bc-wfm-administration-system-userauthorization}, but such changes will overwrite the role-based permissions.
+
+To reset specific permissions, you may need to temporarily remove admin access to activate the grayed-out checkboxes on the user authorization page.
+Click Reset {icon-wfm-reset} to reset the role to the configuration set in {bc-account-roles}.
+====
+
+[#manage-team-access]
+== Manage team access: Restrict access to configuration data
+
+If your organization includes several teams and you want to restrict access to the teams' data, you can add more than one role to a person.
+The permissions defined by different roles are combined.
+You can restrict access to elements such as planning units, day models, activities or reports.
+
+=== Example
+
+If all your planners should have access to the schedule but each planner should only be able to edit the data of their own planning unit, you can assign two roles to each planner.
+
+You can create a new role with no access to specific planning units, or remove access to all planning units from an existing role.
+To remove access to all planning units from an existing role, proceed as follows:
+
+. Go to {bc-account-roles}.
+. Select the role.
+. In the *WFM* section, click *View in WFM*.
+. On the right, scroll to the *Planning Units* section (or use the quick link on top).
+. Click the delete icon {icon-wfm-delete} next to the *[ALL]* entry to delete access to all planning units.
+. Click {btn-ok}.
+
+Add access to the specific planning unit to other roles as follows:
+
+. Select the second role.
+. In the *Planning Units* section, click the add icon {icon-wfm-add}.
+. Select the planning unit(s) from the list.
+Press kbd:[CTRL] or kbd:[Shift] while clicking to select multiple planning units.
+. Under *Access Authorization*, check one or more checkboxes to set *Read*, *Edit*, and *Delete* rights.
+. Click {btn-ok}.
+
+To complete the configuration, go to _People_{:.breadcrumbs} and [assign the roles to your people](#assign-roles-to-people).
+
+=== View people in Schedules and Shift Center <a name="view-people-in-schedules-and-shift-center"></a>
+
+You cannot add permissions to view specific people to a role. If you have access to a planning unit but cannot see a person in Schedules and Shift Center, you need to add permissions for at least one selection to which the person belongs.
+
+
+
+== {see-also-title}
+
+=== {see-also-concept}
+
+* xref:predefined-user-roles.adoc[]
+* xref:forecast:workload-permissions.adoc[]
+

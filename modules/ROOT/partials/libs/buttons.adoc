@@ -3,3 +3,4 @@
 :btn-cancel: btn:[Cancel]
 :btn-create: btn:[Create]
 :btn-delete: btn:[Delete]
+:btn-ok: btn:[OK]
