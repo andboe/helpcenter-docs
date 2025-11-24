@@ -1,8 +1,0 @@
-= Internet-Explorer_modus in Microsoft Edge einrichten
-
-[#prepare-client]
-== Client vorbereiten
-
-[#config-ie-mode-in-edge]
-== Internet Explorer Modus in Edge konfigurieren
-

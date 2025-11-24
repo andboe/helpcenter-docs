@@ -37,3 +37,5 @@ Resource IDs are great because:
 * No relative path shenanigans
 * Uncoupled from publishing URL
 * Intuitive
+
+xref:

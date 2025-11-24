@@ -47,6 +47,8 @@ https://example.com[Link text]
 
 xref:index.adoc[]
 
+xref:getting-started:calculate-a-forecast.adoc[]
+
 xref:index.adoc[Link text]
 
 == Images
@@ -102,7 +104,7 @@ WARNING: This is a warning.
 
 // I am single-line comment. I am here so that Andreas can highlight once more how superior AsciiDoc tables are to the abomination that Markdown labels table syntax
 
-[%header, cols="1s,2a,1m"]
+[%header, cols="1a,2a,1m"]
 |===
 |Column 1
 |Column 2
@@ -132,7 +134,10 @@ IMPORTANT: An _admonition_? In a _TABLE_??? You crazy, crazy man!
 |===
 | Header 1  | Header 2  | Header 3
 
-| Cell      | Cell      | Cell
+| Cell
+| Cell
+| Cell
+
 | Cell      | Cell      | Cell
 |===
 

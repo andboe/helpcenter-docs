@@ -24,16 +24,3 @@ xref:1_asciidoc-syntax-ref.adoc[]
 * One-click PDF, DOCX, HTML export
 * Paste images from clipboard
 * ...
-
-
-[%header, cols="1a,2a,2a"]
-|===
-|header 1
-|header 2
-|header 3
-
-|
-|
-|
-
-|===
