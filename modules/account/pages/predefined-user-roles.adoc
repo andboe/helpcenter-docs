@@ -1,0 +1,11 @@
+= Predefined user roles
+:author: Andreas Böttcher
+:email: andreas.boettcher@peopleware.com
+:topic-type-concept:
+
+== Introduction
+
+== General information
+
+== Random section
+
