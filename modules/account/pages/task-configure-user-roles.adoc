@@ -60,9 +60,9 @@ To grant permissions, check the checkbox of the feature.
 Duplicating an existing role transfers all its settings, including permission settings, to the new role.
 To duplicate a role, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Find the role in the **Roles** table.
-3. In the role entry, click the {% icon ellipsis_v %} on the right to display the role entry menu.
+1. Go to {bc-account-roles}.
+2. Find the role in the *Roles* table.
+3. In the role entry, click the image:help-center:ROOT:icons/3_dots_vertical.svg[] icon on the right to display the role entry menu.
 4. Click {% icon overlapping_boxes | icon-only %} Duplicate to immediately create the new, duplicated role.
 5. (Optional) Edit the role settings as needed.
 
@@ -88,13 +88,6 @@ To limit the displayed roles, use the search field.
 2. Click the {% icon ellipsis_v %} next to the role you want to delete.
 3. Click {% icon trash | icon-only %} Delete.
 4. In the window that opens, click _Delete_{:.doc-button} to confirm.
-
-
-
-
-
-
-
 
 == {see-also-title}
 
