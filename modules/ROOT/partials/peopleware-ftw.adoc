@@ -1,0 +1,6 @@
+[IMPORTANT]
+====
+Dear Person!
+You are using *{product-generic}*.
+Congratulations!
+====

@@ -1,0 +1,4 @@
+:bc-forecast-workloads: menu:Forecast[Workloads]
+:bc-wfm-administration: menu:WFM[Administration]
+:bc-account-roles: menu:Account[Roles]
+:bc-people: menu:People[]

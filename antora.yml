@@ -9,15 +9,6 @@ asciidoc:
     product-generic: peopleware
     product-classic: peopleware Classic
     product-wfm: peopleware Enterprise WFM
-    see-also-title: See also
-    see-also-task: Task
-    see-also-concept: Concept
-    see-also-reference: Reference
-    bc-forecast-workloads: menu:Forecast[Workloads]
-    bc-wfm-administration: menu:WFM[Administration]
-    bc-account-roles: menu:Account[Roles]
-    permission-roles-full-access-to-roles: Full access to roles
-    permission-wfm-enable-access-to-wfm: Enable access to WFM
 nav:
   - modules/ROOT/nav.adoc
   - modules/getting-started/nav.adoc

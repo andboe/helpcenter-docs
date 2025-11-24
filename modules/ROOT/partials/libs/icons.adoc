@@ -1,0 +1,3 @@
+:icon-context-menu: image:help-center:ROOT:icons/3_dots_vertical.svg["context menu"]
+:icon-edit: image:help-center:ROOT:icons/pencil.svg[edit]
+:icon-delete: image:help-center:ROOT:icons/trash.svg[delete]
