@@ -42,8 +42,10 @@ Historical data may include prolonged outages, or it may miss data for a particu
 
 Here are some tips on managing low data quality depending on how long the period with poor or missing data is:
 
+[%header, cols="2a,2a"]
 |===
-|Timeframe with poor quality data |Tip
+|Timeframe with poor quality data
+|Tip
 
 |A few days
 |Use xref:forecast:events-and-holidays.adoc[events] to mark the affected days as an outage and exclude them from the calculation.
@@ -53,6 +55,7 @@ Here are some tips on managing low data quality depending on how long the period
 
 |Several weeks or months
 |Remove the data that predates the gap. Import only the data from after the gap.
+
 |===
 
 [NOTE]
