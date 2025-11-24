@@ -38,7 +38,8 @@ Which kind of workloads are available to you depends on your WFM plan (Classic, 
 
 To generate an accurate forecast, historical data must be both complete (enough data with as few gaps as possible) and clean (free of irrelevant patterns). For example, incorrectly marked xref:forecast:events-and-holidays.adoc[events or public holidays] will impact forecast quality.
 
-Historical data may include prolonged outages, or it may miss data for a particular timeframe. The closer that missing data is to the current day, the less the forecast quality is affected.
+Historical data may include prolonged outages, or it may miss data for a particular timeframe. 
+The closer that missing data is to the current day, the less the forecast quality is affected.
 
 Here are some tips on managing low data quality depending on how long the period with poor or missing data is:
 
@@ -54,7 +55,8 @@ Here are some tips on managing low data quality depending on how long the period
 |Upload additional data without gaps or irrelevant patterns.
 
 |Several weeks or months
-|Remove the data that predates the gap. Import only the data from after the gap.
+|Remove the data that predates the gap. 
+Import only the data from after the gap.
 
 |===
 
