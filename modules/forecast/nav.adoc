@@ -1,1 +1,5 @@
-* xref:forecast.adoc[]
+* Forecast
+** xref:forecast.adoc[]
+** xref:manual-adjustments.adoc[]
+** xref:save-forecast-versions.adoc[]
+** xref:download-forecast.adoc[]
