@@ -155,7 +155,7 @@ Smart workloads in Live mode cannot be reverted to Test mode.
 Integrations are not necessary if you do not want to import historical data to create forecasts.
 To import forecasts, you can create workloads without queues.
 
-. Go to *Forecast > Workloads*.
+. Go to {bc-forecast-workloads}.
 . xref:#workloads-and-queues[] with the mandatory information first.
 +
 The new workload is displayed in the workloads list.
@@ -165,7 +165,7 @@ Now you can xref:forecast:import-forecast.adoc#import-a-forecast[import a third-
 [#edit-workloads]
 == Edit workloads
 
-. In *Forecast > Workloads*, click *Edit* in the card of the workload that you want to edit.
+. In {bc-forecast-workloads}, click *Edit* in the card of the workload that you want to edit.
 +
 In the *Assign queues* section, you can add or remove queues.
 If a queue's interval or channel does not match that of the selected queues, all non-matching queues will be grayed out.
@@ -178,7 +178,7 @@ The new configuration may update the forecast.
 [#delete-workloads]
 == Delete workloads
 
-. In *Forecast > Workloads*, click *Delete* in the card of the workload that you want to delete.
+. In {bc-forecast-workloads}, click *Delete* in the card of the workload that you want to delete.
 . In the confirmation window, click *Delete workload*.
 +
 Peopleware stores the associated historical data.
