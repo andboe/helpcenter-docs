@@ -3,3 +3,9 @@
 :product-label: essential, advanced, enterprise, classic
 :description: Use Forecast to automatically calculate a forecast for contact volume and AHT.
 :related-articles: create-workloads.adoc, manual-adjustments.adoc, save-forecast-versions.adoc, download-forecast.adoc
+
+[#adjust-the-volume]
+== Adjust the volume
+
+[#adjust-the-aht]
+== Adjust the AHT

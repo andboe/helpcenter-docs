@@ -1,0 +1,4 @@
+== Activity types and properties
+
+[#multiactivity]
+== Multiactivity
