@@ -5,8 +5,12 @@
 :topic-type-task:
 :description: Create workloads to represent historical and forecasted contact volume and AHT. Learn about the different workload types.
 :related-articles: what-is-forecast.adoc, import-forecast.adoc, manual-adjustments.adoc
+:page-aliases: workloads.adoc, manage-workloads.adoc
+:!sectnums:
+:imagesdir: ../images
+include::ROOT:partial$libs/breadcrumbs.adoc[]
 
-To create, edit or delete workloads, go to *Forecast > Workloads*.
+To create, edit or delete workloads, go to {bc-forecast-workloads}.
 
 Workloads represent the input channels of the external system that records the details of your customer interactions.
 Future workloads are forecasted based on imported contact data.
@@ -91,7 +95,7 @@ If you want people responsible for tier 2 to also handle tier 1 enquiries with l
 Create one workload for each activity you want to schedule using staff requirements.
 Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
 
-. In *Forecast > Workloads*, click *New workload* at the top of the list.
+. In {bc-forecast-workloads}, click *New workload* at the top of the list.
 . Enter the basic configuration information for your workload:
 +
 * *Name*: Unique name to identify your workload.
@@ -107,11 +111,6 @@ For example, if a CSV integration is set to UTC time and your workload is set to
 * (Optional) *Holiday region*: Includes public holidays that may affect your forecast.
 * (Optional) *Planning unit* and *Activity*: If you want to take business hours into account, select a planning unit and an activity.
 Learn more about xref:forecast:forecast-activate-business-hours.adoc#activate-business-hours[activating business hours] in Help Center.
-
-. (For Classic only) Select an option from the *Forecast model* section:
-+
-* *Live mode* (paid): Invoiced monthly. Cannot be reverted to Test mode.
-* *Test mode* (free): You can only view forecasts and not transfer staff requirements for scheduling.
 
 . In the *Channel and interval* section, select a *Channel* and an *Interval*.
 You cannot change the channel or interval after creating the workload.
