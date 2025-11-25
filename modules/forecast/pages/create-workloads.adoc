@@ -5,9 +5,6 @@
 :topic-type-task:
 :related-articles: what-is-forecast.adoc, import-forecast.adoc, manual-adjustments.adoc
 :page-aliases: workloads.adoc, manage-workloads.adoc
-:!sectnums:
-:imagesdir: ../images
-include::ROOT:partial$libs/breadcrumbs.adoc[]
 
 To create, edit or delete workloads, go to {bc-forecast-workloads}.
 
@@ -119,11 +116,10 @@ You cannot change the channel or interval after creating the workload.
 . (Optional) In the *Assign queues* section, select the queues for your workload.
 +
 To limit the queues displayed:
-+
-* Filter the queues by channel (Calls, Chats, etc.).
-* Use the checkboxes to show selected, unselected or inactive queues.
+** Filter the queues by channel (Calls, Chats, etc.).
+** Use the checkboxes to show selected, unselected or inactive queues.
 Inactive queues are those imported by integrations that have been deleted.
-* Use the search field above the table.
+** Use the search field above the table.
 You can search for queue, integration or workload name.
 +
 [NOTE]
