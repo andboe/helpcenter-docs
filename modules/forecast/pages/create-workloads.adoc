@@ -34,9 +34,11 @@ You can still xref:#workloads-and-queues[] later to add queues that match the ch
 == Queues and channels
 
 The imported contact data from your integration is stored in queues.
-Each queue is always associated with one channel.
-Moreover, each queue has a fixed interval of 15, 30, or 60 minutes.
-The interval is determined by the data import interval.
+Queues have the following characteristics:
+
+* Each queue is always associated with one channel.
+* Each queue has a fixed interval of 15, 30, or 60 minutes.
+* A queue's interval is determined by the data import interval.
 
 Integrations support the following channels:
 
@@ -94,7 +96,7 @@ Multiactivities require one workload for the multiactivity, and one workload for
 . Enter the basic configuration information for your workload:
 +
 * *Name*: Unique name to identify your workload.
-* *Time zone*: The xref:_root:best-practices/working-with-timezones.adoc[time zone] of the workload cannot be edited later.
+* *Time zone*: The xref:best-practices:working-with-timezones.adoc[time zone] of the workload cannot be edited later.
 +
 [NOTE]
 ====
