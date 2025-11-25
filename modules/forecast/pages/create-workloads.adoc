@@ -5,9 +5,6 @@
 :topic-type-task:
 :related-articles: what-is-forecast.adoc, import-forecast.adoc, manual-adjustments.adoc
 :page-aliases: workloads.adoc, manage-workloads.adoc
-:!sectnums:
-:imagesdir: ../images
-include::ROOT:partial$libs/breadcrumbs.adoc[]
 
 To create, edit or delete workloads, go to {bc-forecast-workloads}.
 
