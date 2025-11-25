@@ -253,7 +253,7 @@ If you are using a workload without queues based on imported forecast data, chec
 To compare forecast and actual values throughout the day, save a version of the forecast at the beginning of the day or week.
 Use this saved version to compare values in the dashboard.
 |===
-[#see-also]
+
 [#see-also]
 == See also
 
