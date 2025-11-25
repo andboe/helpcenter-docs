@@ -64,8 +64,8 @@ To duplicate a role, proceed as follows:
 
 . Go to {bc-account-roles}.
 . Find the role in the *Roles* table.
-. In the role entry, click the image:help-center:ROOT:icons/3_dots_vertical.svg[] icon on the right to display the role entry menu.
-. Click {% icon overlapping_boxes | icon-only %} Duplicate to immediately create the new, duplicated role.
+. In the role entry, click the icon {icon-context-menu} on the right to display the role entry menu.
+. Click icon {icon-duplicate} to immediately create the new, duplicated role.
 . (Optional) Edit the role settings as needed.
 
 [#assign-roles-to-people]
@@ -74,7 +74,7 @@ To duplicate a role, proceed as follows:
 . Go to {bc-people}.
 . Select a person from the list.
 . In the left-side menu, click *Access*.
-. In the *Roles and admin access* section, click {icon-edit} *Edit*.
+. In the *Roles and admin access* section, click icon {icon-edit}.
 . Check the relevant checkboxes in the list.
 To limit the displayed roles, use the search field.
 . Click {btn-save}.
@@ -91,7 +91,7 @@ To limit the displayed roles, use the search field.
 
 . Go to {bc-account-roles}.
 . Click the context menu icon {icon-context-menu} next to the role you want to delete.
-. Click {icon-delete} Delete.
+. Click icon {icon-delete}.
 . In the window that opens, click {btn-delete} to confirm.
 
 [#set-wfm-permissions]
@@ -111,7 +111,7 @@ Use only role-based permissions whenever possible.
 You can change permissions for individual people under {bc-wfm-administration-system-userauthorization}, but such changes will overwrite the role-based permissions.
 
 To reset specific permissions, you may need to temporarily remove admin access to activate the grayed-out checkboxes on the user authorization page.
-Click Reset {icon-wfm-reset} to reset the role to the configuration set in {bc-account-roles}.
+Click the icon {icon-wfm-reset} to reset the role to the configuration set in {bc-account-roles}.
 ====
 
 [#manage-team-access]
@@ -132,13 +132,13 @@ To remove access to all planning units from an existing role, proceed as follows
 . Select the role.
 . In the *WFM* section, click *View in WFM*.
 . On the right, scroll to the *Planning Units* section (or use the quick link on top).
-. Click the delete icon {icon-wfm-delete} next to the *[ALL]* entry to delete access to all planning units.
+. Click the icon {icon-wfm-delete} next to the *[ALL]* entry to delete access to all planning units.
 . Click {btn-ok}.
 
 Add access to the specific planning unit to other roles as follows:
 
 . Select the second role.
-. In the *Planning Units* section, click the add icon {icon-wfm-add}.
+. In the *Planning Units* section, click the icon {icon-wfm-add}.
 . Select the planning unit(s) from the list.
 Press kbd:[CTRL] or kbd:[Shift] while clicking to select multiple planning units.
 . Under *Access Authorization*, check one or more checkboxes to set *Read*, *Edit*, and *Delete* rights.
@@ -159,4 +159,3 @@ If you have access to a planning unit but cannot see a person in Schedules and S
 
 * xref:predefined-user-roles.adoc[]
 * xref:forecast:workload-permissions.adoc[]
-
