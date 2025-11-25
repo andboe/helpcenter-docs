@@ -254,6 +254,7 @@ To compare forecast and actual values throughout the day, save a version of the 
 Use this saved version to compare values in the dashboard.
 |===
 [#see-also]
+[#see-also]
 == See also
 
 * xref:forecast:what-is-forecast.adoc[]
