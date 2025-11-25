@@ -26,13 +26,13 @@ New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 == Prerequisites
 
 To create forecasts based on historical data, set up an integration to import data into Peopleware first.
-Peopleware stores historical contact data imported by the integration in xref:#queues-and-channels[].
+Peopleware stores historical contact data imported by the integration in xref:#queues-and-channels[queues].
 You can only add queues with the same interval and channel to a workload.
 
 If you only want to import third-party forecasts into your workload, you do not need to select queues and therefore do not need to create an integration.
 In this case, you define the channel and interval while creating a workload without queues.
 The Channel and interval can no longer be changed after saving the workload.
-You can still xref:#workloads-and-queues[] later to add queues that match the channel and interval if needed.
+You can still xref:#edit-workloads[edit your workload] later to add queues that match the channel and interval if needed.
 
 [#queues-and-channels]
 == Queues and channels
@@ -53,7 +53,7 @@ Integrations support the following channels:
 * Documents
 * Social media
 
-When you xref:#create-workloads[], you can filter queues by channel to assign them to the workload.
+When you xref:#create-workloads[create workloads], you can filter queues by channel to assign them to the workload.
 Native integrations automatically set the channel for queues.
 Not all integrations support all channels.
 For a CSV integration, you need to set the channel manually.
@@ -81,13 +81,13 @@ You have five queues configured in your ACD system:
 In this example, the three product sales queues refer to different regions of a country with a main language.
 That means that people skilled to handle sales-related questions can do so regardless of where the contact comes from.
 It can be relevant to split the sales queues by region to track marketing campaigns or other metrics, but it is not necessary to forecast contact volumes and staff requirements for each region.
-You can xref:#workloads-and-queues[] with the name Product Sales and select all three Product Sales queues in the *Assign queues* section.
+You can only add queues with the name Product Sales and select all three Product Sales queues in the *Assign queues* section.
 
 The volume and staff requirements for support enquiries, on the other hand, need to be calculated separately.
 Tier 1 enquiries are more common and easier to handle than tier 2 enquiries.
 People skilled to handle tier 1 enquiries are not necessarily trained to handle tier 2 enquiries.
 Additionally, because tier 2 enquiries are less common, you need fewer people to handle them.
-Here you xref:#workloads-and-queues[], Support Tier 1 and Support Tier 2 and assign the applicable queue to each one.
+Here you xref:#create-workloads[create two workloads], Support Tier 1 and Support Tier 2 and assign the applicable queue to each one.
 If you want people responsible for tier 2 to also handle tier 1 enquiries with lower priority, keep the two separated workloads, and use a xref:administration:activity-types-and-properties.adoc#subactivities[multiactivity] for planning.
 
 [#create-workloads]
@@ -156,7 +156,7 @@ Integrations are not necessary if you do not want to import historical data to c
 To import forecasts, you can create workloads without queues.
 
 . Go to {bc-forecast-workloads}.
-. xref:#workloads-and-queues[] with the mandatory information first.
+. xref:#workloads-and-queues[Create a workload] with the mandatory information first.
 +
 The new workload is displayed in the workloads list.
 
