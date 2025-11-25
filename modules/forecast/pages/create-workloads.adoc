@@ -31,7 +31,7 @@ You can only add queues with the same interval and channel to a workload.
 
 If you only want to import third-party forecasts into your workload, you do not need to select queues and therefore do not need to create an integration.
 In this case, you define the channel and interval while creating a workload without queues.
-The Channel and interval can no longer be changed after saving the workload.
+The channel and interval can no longer be changed after saving the workload.
 You can still xref:#workloads-and-queues[] later to add queues that match the channel and interval if needed.
 
 [#queues-and-channels]
@@ -119,11 +119,10 @@ You cannot change the channel or interval after creating the workload.
 . (Optional) In the *Assign queues* section, select the queues for your workload.
 +
 To limit the queues displayed:
-+
-* Filter the queues by channel (Calls, Chats, etc.).
-* Use the checkboxes to show selected, unselected or inactive queues.
+** Filter the queues by channel (Calls, Chats, etc.).
+** Use the checkboxes to show selected, unselected or inactive queues.
 Inactive queues are those imported by integrations that have been deleted.
-* Use the search field above the table.
+** Use the search field above the table.
 You can search for queue, integration or workload name.
 +
 [NOTE]
