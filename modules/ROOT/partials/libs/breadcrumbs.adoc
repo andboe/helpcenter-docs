@@ -4,3 +4,5 @@
 :bc-people: menu:People[]
 :bc-wfm-administration-system-roleauthorization: menu:WFM[Administration > System > Role authorization]
 :bc-wfm-administration-system-userauthorization: menu:WFM[Administration > System > User authorization]
+:bc-forecast-workloads: menu:Forecast[Workloads]
+:bc-account-integrations: menu:Account[Integrations]
