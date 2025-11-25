@@ -32,7 +32,7 @@ You can only add queues with the same interval and channel to a workload.
 If you only want to import third-party forecasts into your workload, you do not need to select queues and therefore do not need to create an integration.
 In this case, you define the channel and interval while creating a workload without queues.
 The Channel and interval can no longer be changed after saving the workload.
-You can still xref:#workloads-and-queues[] later to add queues that match the channel and interval if needed.
+You can still xref:#workloads-and-queues[add queues to workloads] later to add queues that match the channel and interval if needed.
 
 [#queues-and-channels]
 == Queues and channels
