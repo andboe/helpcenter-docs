@@ -1,4 +1,5 @@
 = Create workloads
+include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Alexis Braine
 :email: alexis.braine@peopleware.com
 :product-label: essential, advanced, enterprise
@@ -161,22 +162,19 @@ Now you can xref:forecast:import-forecast.adoc#import-a-forecast[import a third-
 [#edit-workloads]
 == Edit workloads
 
-. In {bc-forecast-workloads}, click *Edit* in the card of the workload that you want to edit.
-+
+. In {bc-forecast-workloads}, click *Edit* in the card of the workload that you want to edit. +
 In the *Assign queues* section, you can add or remove queues.
 If a queue's interval or channel does not match that of the selected queues, all non-matching queues will be grayed out.
 If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
 
-. Click *Save workload*.
-+
+. Click *Save workload*. +
 The new configuration may update the forecast.
 
 [#delete-workloads]
 == Delete workloads
 
 . In {bc-forecast-workloads}, click *Delete* in the card of the workload that you want to delete.
-. In the confirmation window, click *Delete workload*.
-+
+. In the confirmation window, click *Delete workload*. +
 Peopleware stores the associated historical data.
 To reuse the data, add the queue or queues to another workload.
 
