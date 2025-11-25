@@ -5,3 +5,4 @@
 :bc-wfm-administration-system-roleauthorization: menu:WFM[Administration > System > Role authorization]
 :bc-wfm-administration-system-userauthorization: menu:WFM[Administration > System > User authorization]
 :bc-people: menu:People[]
+:bc-account-billing: menu:Account[Billing]

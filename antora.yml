@@ -11,6 +11,7 @@ asciidoc:
     product-wfm: peopleware Enterprise WFM
 nav:
   - modules/getting-started/nav.adoc
+  - modules/account/nav.adoc
   - modules/forecast/nav.adoc
   - modules/plan/nav.adoc
   - modules/me/nav.adoc
