@@ -3,7 +3,6 @@
 :email: alexis.braine@peopleware.com
 :product-label: essential, advanced, enterprise
 :topic-type-task:
-:description: Create workloads to represent historical and forecasted contact volume and AHT. Learn about the different workload types.
 :related-articles: what-is-forecast.adoc, import-forecast.adoc, manual-adjustments.adoc
 
 To create, edit or delete workloads, go to *Forecast > Workloads*.
