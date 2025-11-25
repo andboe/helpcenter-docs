@@ -187,7 +187,7 @@ To reuse the data, add the queue or queues to another workload.
 [#navigate-workloads]
 == Navigate workloads
 
-In {bc-forecast-workloads} page includes the following three sections:
+The {bc-forecast-workloads} page includes the following three sections:
 
 * The volume section
 * The *AHT* section (hidden by default)
