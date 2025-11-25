@@ -4,7 +4,6 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :email: alexis.braine@peopleware.com
 :product-label: essential, advanced, enterprise
 :topic-type-task:
-:related-articles: what-is-forecast.adoc, import-forecast.adoc, manual-adjustments.adoc
 :page-aliases: workloads.adoc, manage-workloads.adoc
 
 To create, edit or delete workloads, go to {bc-forecast-workloads}.
@@ -115,7 +114,6 @@ Learn more about xref:forecast:forecast-activate-business-hours.adoc#activate-bu
 You cannot change the channel or interval after creating the workload.
 
 . (Optional) In the *Assign queues* section, select the queues for your workload.
-+
 To limit the queues displayed:
 ** Filter the queues by channel (Calls, Chats, etc.).
 ** Use the checkboxes to show selected, unselected or inactive queues.
@@ -239,7 +237,7 @@ Learn how to use xref:forecast:staff-requirements/task-save-staff-requirements.a
 [#frequently-asked-questions]
 == Frequently asked questions
 
-[%header,cols="1,1"]
+[%header,cols="1,3"]
 |===
 | Question
 | Answer
@@ -255,7 +253,7 @@ If you are using a workload without queues based on imported forecast data, chec
 To compare forecast and actual values throughout the day, save a version of the forecast at the beginning of the day or week.
 Use this saved version to compare values in the dashboard.
 |===
-
+[#see-also]
 == See also
 
 * xref:forecast:what-is-forecast.adoc[]
