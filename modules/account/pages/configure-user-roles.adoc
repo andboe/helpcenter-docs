@@ -69,7 +69,7 @@ To duplicate a role, proceed as follows:
 . (Optional) Edit the role settings as needed.
 
 [#assign-roles-to-people]
-=== Assign roles to people <a name="assign-roles-to-people"></a>
+=== Assign roles to people
 
 . Go to {bc-people}.
 . Select a person from the list.
@@ -144,13 +144,14 @@ Press kbd:[CTRL] or kbd:[Shift] while clicking to select multiple planning units
 . Under *Access Authorization*, check one or more checkboxes to set *Read*, *Edit*, and *Delete* rights.
 . Click {btn-ok}.
 
-To complete the configuration, go to _People_{:.breadcrumbs} and [assign the roles to your people](#assign-roles-to-people).
+To complete the configuration, go to {bc-people} and assign the roles to your people.
+For more information see: xref:#assign-roles-to-people[].
 
-=== View people in Schedules and Shift Center <a name="view-people-in-schedules-and-shift-center"></a>
+[#view-people-in-schedules-shift-center]
+=== View people in Schedules and Shift Center
 
-You cannot add permissions to view specific people to a role. If you have access to a planning unit but cannot see a person in Schedules and Shift Center, you need to add permissions for at least one selection to which the person belongs.
-
-
+You cannot add permissions to view specific people to a role.
+If you have access to a planning unit but cannot see a person in Schedules and Shift Center, you need to add permissions for at least one selection to which the person belongs.
 
 == {see-also-title}
 
