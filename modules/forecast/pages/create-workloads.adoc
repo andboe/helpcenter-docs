@@ -29,7 +29,7 @@ You can only add queues with the same interval and channel to a workload.
 
 If you only want to import third-party forecasts into your workload, you do not need to select queues and therefore do not need to create an integration.
 In this case, you define the channel and interval while creating a workload without queues.
-The Channel and interval can no longer be changed after saving the workload.
+The channel and interval can no longer be changed after saving the workload.
 You can still xref:#edit-workloads[edit your workload] later to add queues that match the channel and interval if needed.
 
 [#queues-and-channels]
@@ -139,7 +139,6 @@ If you are using the Advanced or Enterprise WFM plans, you can create Smart work
 Smart workloads generate a forecast based on just one day of historical data.
 Smart workloads support business hours.
 
-If you are using the Classic plan, select the Forecast model (Smart or Basic) for each workload.
 For Smart workloads, choose between Live mode and Test mode.
 The Test mode is free of charge but you can only see the forecast.
 You cannot transfer staff requirements for scheduling purposes.
@@ -246,7 +245,7 @@ Learn how to use xref:forecast:staff-requirements/task-save-staff-requirements.a
 | Answer
 
 | Why are the graphs on a workload details page empty?
-| The forecast is generated for up to 24 months after the last data import (up to 365 days for customers on the Classic and Essential WFM plans).
+| The forecast is generated for up to 24 months after the last data import (up to 365 days for customers on the Essential WFM plan).
 If the graphs on a workload page do not display data for a specific time range in the future, check if your integration is still importing data in {bc-account-integrations}.
 Also, check if the right queues are assigned to the workload in the workload configuration.
 If you are using a workload without queues based on imported forecast data, check that the selected date range matches the date range in your imported data.
