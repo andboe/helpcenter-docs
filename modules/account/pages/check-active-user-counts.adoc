@@ -1,0 +1,26 @@
+= Check active user counts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Andreas Böttcher
+:email: andreas.boettcher@peopleware.com
+:topic-type-task:
+:product_label: essential, advanced, enterprise
+
+The base fee for your Peopleware WFM plan includes a fixed number of active users.
+
+To check the number of active users for any given month, go to {bc-account-billing}.
+The page provides the following information:
+
+* Maximum active user count for the current month
+* Maximum active user count for a selected month
+* A chart that illustrates the active user count fluctuation and the maximum number of active users for the selected month
+
+For a more detailed view on active user numbers for a selected month, proceed as follows:
+
+. In the *History* section, select the month and the year.
+The active user data for that month is displayed in the chart.
+. To view the active user count for a specific day, move your cursor to the corresponding position in the chart.
+
+[NOTE]
+====
+For any billing related inquiries, e. g. regarding invoice copies or address changes, contact finance@peopleware.com.
+====
