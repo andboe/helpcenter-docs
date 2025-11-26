@@ -1,0 +1,262 @@
+= Create workloads
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:email: alexis.braine@peopleware.com
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:page-aliases: workloads.adoc, manage-workloads.adoc
+
+To create, edit or delete workloads, go to {bc-forecast-workloads}.
+
+Workloads represent the input channels of the external system that records the details of your customer interactions.
+Future workloads are forecasted based on imported contact data.
+The contact data is stored in queues.
+Configurable events, public holidays, or opening hours influence the forecast result.
+You can also xref:forecast:import-forecast.adoc[import your own forecast] into a workload.
+
+You can configure the calculation of staff requirements per workload.
+Staff requirements are needed for scheduling.
+
+New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
+
+[#prerequisites]
+== Prerequisites
+
+To create forecasts based on historical data, set up an integration to import data into Peopleware first.
+Peopleware stores historical contact data imported by the integration in xref:#queues-and-channels[queues].
+You can only add queues with the same interval and channel to a workload.
+
+If you only want to import third-party forecasts into your workload, you do not need to select queues and therefore do not need to create an integration.
+In this case, you define the channel and interval while creating a workload without queues.
+The channel and interval can no longer be changed after saving the workload.
+You can still xref:#edit-workloads[edit your workload] later to add queues that match the channel and interval if needed.
+
+[#queues-and-channels]
+== Queues and channels
+
+The imported contact data from your integration is stored in queues.
+Queues have the following characteristics:
+
+* Each queue is always associated with one channel.
+* Each queue has a fixed interval of 15, 30, or 60 minutes.
+* A queue's interval is determined by the data import interval.
+
+Integrations support the following channels:
+
+* Calls
+* Chats
+* Emails
+* Cases
+* Documents
+* Social media
+
+When you xref:#create-workloads[create workloads], you can filter queues by channel to assign them to the workload.
+Native integrations automatically set the channel for queues.
+Not all integrations support all channels.
+For a CSV integration, you need to set the channel manually.
+You can add a channel per column or select one channel for the file when you xref:general:create-csv-schema.adoc#map-columns[map the columns] of a CSV file.
+
+*Forecast* groups queues by channel.
+You can only add queues with the same channel to a workload.
+
+[#workloads-and-queues]
+== Workloads and queues
+
+How many workloads you configure and how many queues you add to each one depends on the needs of your organization.
+You need to consider if you need separate volume, AHT, and staff requirements calculations for each queue.
+
+Consider the following example:
+
+You have five queues configured in your ACD system:
+
+* Support Tier 1
+* Support Tier 2
+* Product Sales North
+* Product Sales Central
+* Product Sales South
+
+In this example, the three product sales queues refer to different regions of a country with a main language.
+That means that people skilled to handle sales-related questions can do so regardless of where the contact comes from.
+It can be relevant to split the sales queues by region to track marketing campaigns or other metrics, but it is not necessary to forecast contact volumes and staff requirements for each region.
+You can only add queues with the name Product Sales and select all three Product Sales queues in the *Assign queues* section.
+
+The volume and staff requirements for support enquiries, on the other hand, need to be calculated separately.
+Tier 1 enquiries are more common and easier to handle than tier 2 enquiries.
+People skilled to handle tier 1 enquiries are not necessarily trained to handle tier 2 enquiries.
+Additionally, because tier 2 enquiries are less common, you need fewer people to handle them.
+Here you xref:#create-workloads[create two workloads], Support Tier 1 and Support Tier 2 and assign the applicable queue to each one.
+If you want people responsible for tier 2 to also handle tier 1 enquiries with lower priority, keep the two separated workloads, and use a xref:administration:activity-types-and-properties.adoc#subactivities[multiactivity] for planning.
+
+[#create-workloads]
+== Create workloads
+
+Create one workload for each activity you want to schedule using staff requirements.
+Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
+
+. In {bc-forecast-workloads}, click *New workload* at the top of the list.
+. Enter the basic configuration information for your workload:
++
+* *Name*: Unique name to identify your workload.
+* *Time zone*: The xref:best-practices:working-with-timezones.adoc[time zone] of the workload cannot be edited later.
++
+[NOTE]
+====
+* To save staff requirements for a planning unit, the time zone of the workload must match the time zone of the planning unit.
+* If you select a different time zone for your workload than the time zone of the integration used to import data, the imported data will be displayed as shifted in time in the workload.
+For example, if a CSV integration is set to UTC time and your workload is set to CEST time (UTC +2 hours), the imported data marked at 08:00 will be displayed at 10:00 in the workload.
+====
++
+* (Optional) *Holiday region*: Includes public holidays that may affect your forecast.
+* (Optional) *Planning unit* and *Activity*: If you want to take business hours into account, select a planning unit and an activity.
+Learn more about xref:forecast:forecast-activate-business-hours.adoc#activate-business-hours[activating business hours] in Help Center.
+
+. In the *Channel and interval* section, select a *Channel* and an *Interval*.
+You cannot change the channel or interval after creating the workload.
+
+. (Optional) In the *Assign queues* section, select the queues for your workload.
+To limit the queues displayed:
+** Filter the queues by channel (Calls, Chats, etc.).
+** Use the checkboxes to show selected, unselected or inactive queues.
+Inactive queues are those imported by integrations that have been deleted.
+** Use the search field above the table.
+You can search for queue, integration or workload name.
++
+[NOTE]
+If a queue's interval or channel does not match that of the selected queues, all non-matching queues will be grayed out.
+
+. Click *Create workload*.
++
+If you assigned queues in step 5, the page displays historical data and a preliminary forecast version.
+When the calculation is completed, reload the page to see the final forecast version.
+The new workload is displayed in the workloads list.
+
+If you are using the Essential plan, you can create Basic workloads.
+Basic workloads do not support business hours.
+
+If you are using the Advanced or Enterprise WFM plans, you can create Smart workloads.
+Smart workloads generate a forecast based on just one day of historical data.
+Smart workloads support business hours.
+
+For Smart workloads, choose between Live mode and Test mode.
+The Test mode is free of charge but you can only see the forecast.
+You cannot transfer staff requirements for scheduling purposes.
+The Live mode offers the full functionality and is billed monthly.
+Smart workloads in Live mode cannot be reverted to Test mode.
+
+[#create-workloads-without-queues]
+== Create workloads without queues
+
+Integrations are not necessary if you do not want to import historical data to create forecasts.
+To import forecasts, you can create workloads without queues.
+
+. Go to {bc-forecast-workloads}.
+. xref:#workloads-and-queues[Create a workload] with the mandatory information first.
++
+The new workload is displayed in the workloads list.
+
+Now you can xref:forecast:import-forecast.adoc#import-a-forecast[import a third-party forecast] to your workload.
+
+[#edit-workloads]
+== Edit workloads
+
+. In {bc-forecast-workloads}, click *Edit* in the card of the workload that you want to edit. +
+In the *Assign queues* section, you can add or remove queues.
+If a queue's interval or channel does not match that of the selected queues, all non-matching queues will be grayed out.
+If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
+
+. Click *Save workload*. +
+The new configuration may update the forecast.
+
+[#delete-workloads]
+== Delete workloads
+
+. In {bc-forecast-workloads}, click *Delete* in the card of the workload that you want to delete.
+. In the confirmation window, click *Delete workload*. +
+Peopleware stores the associated historical data.
+To reuse the data, add the queue or queues to another workload.
+
+[#navigate-workloads]
+== Navigate workloads
+
+The {bc-forecast-workloads} page includes the following three sections:
+
+* The volume section
+* The *AHT* section (hidden by default)
+* The *Staff requirements* section
+
+Each section includes a graph and edit functionalities.
+
+By default, the graphs display data from the current week.
+
+* To choose a different time range, use the date picker.
+Click a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
+* Use the navigation buttons to navigate to the past and to the future of the selected time range.
+
+[#historical-and-forecast-data-in-graphs]
+== Historical and forecast data in graphs
+
+You can select periods that show a combination of historical and forecasted data.
+When historical and forecast data are available within the selected timeframe, e.g. because it includes the current day, the graphs show values as follows:
+
+* Historical data in gray
+* Forecasted contacts in blue
+
+The daily view shows interval values, while the weekly view shows the total contacts.
+In the daily view, historical and forecast data do not appear side by side.
+Instead, the forecast starts from the last historical data point available.
+
+In the weekly view, a dotted line indicates the combined value of history and the remaining forecast for the day.
+The tiles Combined (Historic and Forecast), Historic, and Forecast reflect the daily totals.
+
+Manual adjustments apply only to intervals with forecast data.
+If part of the day already has historical data, adjustments do not spread evenly across the entire day and only impact forecasted intervals.
+
+[#the-volume-section]
+=== The volume section
+
+The graph in the volume section displays contact volume for historical data, imported forecasts, and generated forecasts.
+Hover over the graph to see detailed information about volume, AHT, staff requirements, manual adjustments, and added events.
+Learn how to xref:forecast:manual-adjustments.adoc#adjust-the-volume[adjust the volume].
+
+[#the-aht-section]
+=== The AHT section
+
+The AHT section is hidden by default when you open or reload the workload details page.
+To display the AHT section, click the eye icon.
+The AHT graph is only available for workloads with queues that contain AHT data.
+Learn how to xref:forecast:manual-adjustments.adoc#adjust-the-aht[adjust the AHT].
+
+[#the-staff-requirements-section]
+=== The Staff requirements section
+
+The graph in the staff requirements section displays the calculated staff requirements.
+Under the graph, you can see the configured staff requirements parameters and the total person-hours.
+Hover over the graph to see detailed information about volume, AHT, staff requirements, any manual adjustments and added events.
+Learn how to use xref:forecast:staff-requirements/task-save-staff-requirements.adoc#use-staff-requirements-for-scheduling[staff requirements for scheduling].
+
+[#frequently-asked-questions]
+== Frequently asked questions
+
+[%header,cols="1,3"]
+|===
+| Question
+| Answer
+
+| Why are the graphs on a workload details page empty?
+| The forecast is generated for up to 24 months after the last data import (up to 365 days for customers on the Essential WFM plan).
+If the graphs on a workload page do not display data for a specific time range in the future, check if your integration is still importing data in {bc-account-integrations}.
+Also, check if the right queues are assigned to the workload in the workload configuration.
+If you are using a workload without queues based on imported forecast data, check that the selected date range matches the date range in your imported data.
+
+| Why do forecasted call volumes disappear from dashboards during the day?
+| The forecasted values are replaced by historical data throughout the day.
+To compare forecast and actual values throughout the day, save a version of the forecast at the beginning of the day or week.
+Use this saved version to compare values in the dashboard.
+|===
+
+[#see-also]
+== See also
+
+* xref:forecast:what-is-forecast.adoc[]
+* xref:forecast:manual-adjustments.adoc[]
+* xref:forecast:import-forecast.adoc[]
