@@ -7,3 +7,5 @@
 :bc-account-integrations: menu:Account[Integrations]
 :bc-people: menu:People[]
 :bc-account-billing: menu:Account[Billing]
+:bc-plan-schedules: menu:Plan[Schedules]
+:bc-plan-shift-center: menu:Plan[Shift Center]
