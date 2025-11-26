@@ -1,4 +1,5 @@
 = What is Forecast?
+include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Alexis Braine
 :email: alexis.braine@peopleware.com
 :product-label: essential, advanced, enterprise, classic
