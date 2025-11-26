@@ -3,7 +3,6 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Andreas Böttcher
 :email: andreas.boettcher@peopleware.com
 :topic-type-task:
-:page-aliases: configure-user-roles.adoc
 :product_label: advanced, enterprise
 
 In {bc-account-roles}, you can restrict view and edit permissions for certain roles.
