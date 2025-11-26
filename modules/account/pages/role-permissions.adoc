@@ -38,3 +38,7 @@ To allow a role to assign and edit all roles, proceed as follows:
 3. Click {btn-save}.
 
 The role you edited can view, assign and edit all roles.
+
+[#see-also]
+== See also
+xref:account:configure-user-roles.adoc[]
