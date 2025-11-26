@@ -36,7 +36,7 @@ For more information, see:
 
 To manage and configure roles, your role needs the following permissions:
 
-* {permission-roles-full-access-to-roles}
+* {permissions-account-full-access-to-roles}
 
 To configure WFM permissions, your role also needs the following permissions:
 

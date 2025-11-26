@@ -17,7 +17,7 @@ You can also xref:forecast:import-forecast.adoc[import your own forecast] into a
 You can configure the calculation of staff requirements per workload.
 Staff requirements are needed for scheduling.
 
-New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
+New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
 
 [#prerequisites]
 == Prerequisites
@@ -85,7 +85,7 @@ Tier 1 enquiries are more common and easier to handle than tier 2 enquiries.
 People skilled to handle tier 1 enquiries are not necessarily trained to handle tier 2 enquiries.
 Additionally, because tier 2 enquiries are less common, you need fewer people to handle them.
 Here you xref:#create-workloads[create two workloads], Support Tier 1 and Support Tier 2 and assign the applicable queue to each one.
-If you want people responsible for tier 2 to also handle tier 1 enquiries with lower priority, keep the two separated workloads, and use a xref:administration:activity-types-and-properties.adoc#subactivities[multiactivity] for planning.
+If you want people responsible for tier 2 to also handle tier 1 enquiries with lower priority, keep the two separated workloads, and use a xref:administration:activity-types-and-properties.adoc#multiactivity[multiactivity] for planning.
 
 [#create-workloads]
 == Create workloads
@@ -257,6 +257,6 @@ Use this saved version to compare values in the dashboard.
 [#see-also]
 == See also
 
-* xref:forecast:what-is-forecast.adoc[]
+* xref:forecast:forecast.adoc[]
 * xref:forecast:manual-adjustments.adoc[]
 * xref:forecast:import-forecast.adoc[]
