@@ -32,3 +32,11 @@ Pattern: `permission-module-name`
 permission-roles-full-access-to-roles: Full access to roles
 permission-wfm-enable-access-to-wfm: Enable access to WFM
 ```
+
+### Sort file contents alphabetically
+
+Run in terminal:
+
+```
+python3 scripts/sort-file-contents.py <filepath>
+```
