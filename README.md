@@ -33,7 +33,7 @@ permission-roles-full-access-to-roles: Full access to roles
 permission-wfm-enable-access-to-wfm: Enable access to WFM
 ```
 
-### Sort out file contents alphabetically
+### Sort file contents alphabetically
 
 Run in terminal:
 
