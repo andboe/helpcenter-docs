@@ -7,8 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 This article explains how to save staff requirement data that Peopleware calculated automatically for a workload's forecast versions.
 Saving staff requirement data makes that data available for scheduling processes.
 
-[#prerequisites]
-== Prerequisites
+include::help-center:ROOT:partials/headings/prerequisites.adoc[]
 
 [#general]
 === General
@@ -67,12 +66,12 @@ Peopleware saves the staff requirements for the planning unit and activity speci
 The staff requirements are available for scheduling tasks, for example in {bc-plan-schedules}.
 You can check the calculation results in {bc-plan-schedules} and {bc-plan-shift-center}.
 
-== {see-also-concept}
-xref:forecast:staff-requirements:concept-staff-requirements.adoc[]
+include::help-center:ROOT:partials/headings/see-also-concept.adoc[]
+* xref:forecast:staff-requirements:concept-staff-requirements.adoc[]
 
-== {see-also-task}
-xref:forecast:staff-requirements:task-set-up-staff-requirements-calculation.adoc[]
-xref:forecast:staff-requirements:task-run-requirement-calculations.adoc[]
+include::help-center:ROOT:partials/headings/see-also-task.adoc[]
+* xref:forecast:staff-requirements:task-set-up-staff-requirements-calculation.adoc[]
+* xref:forecast:staff-requirements:task-run-requirement-calculations.adoc[]
 
-== {see-also-reference}
-xref:forecast:staff-requirements:ref-requirement-calculations.adoc[]
+include::help-center:ROOT:partials/headings/see-also-reference.adoc[]
+* xref:forecast:staff-requirements:ref-requirement-calculations.adoc[]
