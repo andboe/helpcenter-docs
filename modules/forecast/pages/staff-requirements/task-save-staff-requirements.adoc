@@ -29,11 +29,17 @@ Your role needs object permissions for the objects associated with the action:
 
 [%header,cols="1a,1a"]
 |===
-|Object type |Permissions
-|Workload |View
+|Object type 
+|Permissions
 
-|Planning unit |View
-|Activity |View
+|Workload 
+|View
+
+|Planning unit 
+|View
+
+|Activity 
+|View
 |===
 
 [NOTE]
