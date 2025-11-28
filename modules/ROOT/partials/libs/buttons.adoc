@@ -1,6 +1,7 @@
 :btn-cancel: btn:[Cancel]
 :btn-create: btn:[Create]
 :btn-delete: btn:[Delete]
+:btn-download-as-csv: btn:[Download as CSV]
 :btn-edit: btn:[Edit]
 :btn-ok: btn:[OK]
 :btn-save: btn:[Save]
