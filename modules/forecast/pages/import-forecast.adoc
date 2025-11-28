@@ -91,5 +91,5 @@ Timestamp;Offered;AHT
 Depending on the CSV schema settings, Peopleware displays the imported forecast data as *Imported forecast* or as a forecast version in the Volume or AHT graph.
 If you do not see the imported data, check whether the data period set for the page includes the imported period.
 
-{see-also-task}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 * xref:forecast:create-workloads.adoc[Create workloads]

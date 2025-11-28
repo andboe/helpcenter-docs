@@ -42,11 +42,13 @@ Each requirement calculation has its own configuration interface and parameters,
 
 Peopleware saves the staff requirements for the planning unit and activity in {bc-plan-schedules}.
 
-{see-also-concept}
+include::help-center:ROOT:partial$headings/see-also.adoc
+
+include::help-center:ROOT:partial$headings/see-also-concept.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/concept-staff-requirements.adoc[]
 
-{see-also-task}
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
 
-{see-also-reference}
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

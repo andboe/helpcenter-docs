@@ -67,9 +67,14 @@ Peopleware supports several calculation methods to determine staff requirements:
 Automatic calculations always apply one of these methods.
 Depending on the purpose, manual calculations use one of these methods or other approaches to calculate a result.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
 
 * xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
 * xref:forecast:staff-requirements/task-save-staff-requirements.adoc[]
 * xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
+
 * xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

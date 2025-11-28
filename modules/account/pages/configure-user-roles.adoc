@@ -153,6 +153,7 @@ For more information see: xref:#assign-roles-to-people[].
 You cannot add permissions to view specific people to a role.
 If you have access to a planning unit but cannot see a person in Schedules and Shift Center, you need to add permissions for at least one selection to which the person belongs.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
 * xref:predefined-user-roles.adoc[]
 * xref:forecast:workload-permissions.adoc[]

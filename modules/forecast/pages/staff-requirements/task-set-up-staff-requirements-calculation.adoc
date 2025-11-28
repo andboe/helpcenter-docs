@@ -65,7 +65,16 @@ Staff requirements are calculated only for periods within the planning unit's bu
 
 Next, xref:forecast:staff-requirements/task-save-staff-requirements.adoc[save the calculated staff requirements] to make them available for scheduling.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-concept.adoc
+
 * xref:forecast:staff-requirements/concept-staff-requirements.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc
+
 * xref:forecast:staff-requirements/task-save-staff-requirements.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc
+
 * xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

@@ -38,6 +38,6 @@ This lets you customize view and edit permissions by workload.
 Use the search field to narrow down the workload list if needed.
 . Click {btn-save-changes}.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
 * xref:forecast:create-workloads.adoc[]

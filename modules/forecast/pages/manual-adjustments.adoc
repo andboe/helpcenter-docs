@@ -150,10 +150,10 @@ To update staff requirement data via manual staff requirement calculations:
 . Configure and run the calculation.
 See xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[].
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc
 
 * xref:forecast:events-and-holidays.adoc[]
 
-{see-also-task}
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
 
 * xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]

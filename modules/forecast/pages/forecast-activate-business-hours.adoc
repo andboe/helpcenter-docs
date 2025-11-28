@@ -57,7 +57,7 @@ The distribution is relative to existing interval values and follows the forecas
 Volumes outside of business hours become `0`.
 * Forecasted AHT values outside business hours are set to `0`.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
 * xref:forecast:forecast.adoc[]
 * xref:forecast:create-workloads.adoc[]

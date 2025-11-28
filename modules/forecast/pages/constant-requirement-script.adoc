@@ -108,10 +108,10 @@ The script uses the value entered in *Number of days* as a date range starting f
 ** *Yes*: Staff requirements are calculated for the selected weekdays until the end of the date range.
 ** *No*: Staff requirements are calculated repeatedly, starting with Day 1 and regardless of the weekday, until the end of the date range.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
-{see-also-task}
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[]
 
-{see-also-reference}
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

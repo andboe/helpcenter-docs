@@ -156,5 +156,5 @@ The graph legend shows which color corresponds to which event.
 Click a week number to select the whole week, or click any day and drag to select a different period.
 . Hover over the graphs to see events, event outliers, and public holidays.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc
 * xref:forecast:create-workloads.adoc[]

@@ -66,12 +66,14 @@ Peopleware saves the staff requirement data for this period.
 Peopleware saves the staff requirements for the planning unit and activity specified in the staff requirements calculation settings and the selected period.
 The staff requirements are available for scheduling tasks such as {bc-plan-schedules} and {bc-plan-shift-center}.
 
-{see-also-concept}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-concept.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/concept-staff-requirements.adoc[]
 
-{see-also-task}
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
 * xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[]
 
-{see-also-reference}
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
 * xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

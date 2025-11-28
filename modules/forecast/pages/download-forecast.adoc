@@ -54,6 +54,6 @@ See xref:forecast:create-workloads.adoc[] for details about Live mode and Test m
 Smart workloads are only available for Enterprise and Advanced WFM plans.
 ====
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc
 * xref:forecast:save-forecast-versions.adoc[]
 * xref:forecast:import-forecast.adoc[]

@@ -39,7 +39,7 @@ The Volume and AHT graphs show the data from the different forecast versions as 
 * Version 3 data is displayed as an orange line.
 * Version 4 data is displayed as a blue line.
 
-{see-also-title}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
 * xref:forecast:forecast.adoc[]
 * xref:forecast:create-workloads.adoc[]

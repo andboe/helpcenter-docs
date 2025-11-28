@@ -2,10 +2,7 @@
 include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Alexis Braine
 :email: alexis.braine@peopleware.com
-:product-label: essential, advanced, enterprise, classic
-:topic-type-concept:
-:description: Use Forecast to automatically calculate a forecast for contact volume and AHT.
-:related-articles: create-workloads.adoc, manual-adjustments.adoc, save-forecast-versions.adoc, download-forecast.adoc
+:product-label: essential, advanced, enterprise
 
 *Forecast* applies machine learning to your historical data to generate high-quality forecasts and find trends, patterns, and fluctuations included in your data.
 
@@ -81,11 +78,10 @@ In a recurring situation, you can:
 * Add multiple queues to the workload (resulting in higher volumes).
 * Use another approach to generate staff requirements for scheduling, e.g. xref:forecast:constant-requirement-script.adoc[generate constant staff requirements].
 
-== {see-also-title}
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
 * xref:forecast:create-workloads.adoc[]
 * xref:forecast:manual-adjustments.adoc[]
 * xref:forecast:save-forecast-versions.adoc[]
 * xref:forecast:download-forecast.adoc[]
-
-=== {see-also-concept}
