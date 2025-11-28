@@ -1,4 +1,96 @@
-== Import a forecast
+= Import forecasts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: advanced, enterprise
+:topic-type-task:
+:page-aliases: import-forecast.adoc
+
+You can import CSV files with forecasted contact volume and AHT data generated outside Peopleware.
+
+New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
+
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
+
+To import a forecast, you need the following:
+
+* A xref:forecast:create-workloads.adoc[workload].
+If you only want to import forecasts, create a workload without queues so that you do not need an integration.
+* A CSV file with contact data that contains at least one row for a single interval, for example:
++
+----
+Timestamp;Offered;AHT
+2024-13-09 08:15;14;192
+----
+
+[NOTE]
+====
+Single daily values cannot be imported.
+The CSV file must contain interval data (15, 30, or 60 minutes).
+====
+
+[#import-data-requirements]
+== Import data requirements
+
+Your import data must match the format requirements specified by the CSV schema you use for the import.
+Peopleware provides a default template for forecast imports.
+For more information, see xref:general:create-csv-schema.adoc[].
+
+In addition to the format requirements specified by the CSV schema, the CSV import file must fulfill the following requirements:
+
+* Timestamps must match the workload's time zone.
+* Timestamps of individual records must yield full-hour, half-hour, or quarter-hour intervals that match the workload interval configuration.
+* Volume data must be provided as integer values, for example `00`.
+* AHT data must be provided as integer or decimal values, for example `180.5`.
+* The maximum file size is 20 MB or 20,000 rows.
+* The maximum date range is one year.
+
+[WARNING]
+====
+When the AHT column is not included or values are `0`, *Forecast* may not be able to calculate staff requirements with certain calculation methods.
+You can still use a fixed value to overwrite the imported AHT for those intervals.
+====
+
+[#handle-import-data-gaps]
+== Handle import data gaps
+
+Peopleware can handle CSV import files with missing rows or partial rows.
+
+* In the Volume and AHT graph, missing data is displayed as `0`.
+* New data overwrites existing data for identical timestamps.
+* Intervals with data gaps retain the original workload data.
+
+.Row with partially missing data
+====
+----
+Timestamp;Offered;AHT
+2025-05-17 15:00;30;210
+2025-05-17 15:15;;
+2025-05-17 15:30;40;180
+----
+====
+
+.Missing row (15-minute interval)
+====
+----
+Timestamp;Offered;AHT
+2025-05-17 15:00;30;210
+2025-05-17 15:30;40;180
+----
+====
 
 [#import-a-forecast]
 == Import a forecast
+
+. In {bc-forecast-workloads}, select the workload for which you want to import the external forecast data.
+. From the context menu icon {icon-context-menu} at the top right, select *Import forecast data*.
+. In the *CSV schema* field, select the CSV schema you want to use to import the data.
+. Provide the CSV file in the upload dialog.
+. Click {btn-import}
+. Wait for the upload to complete.
+. Click {btn-close}.
+
+Depending on the CSV schema settings, Peopleware displays the imported forecast data as *Imported forecast* or as a forecast version in the Volume or AHT graph.
+If you do not see the imported data, check whether the data period set for the page includes the imported period.
+
+{see-also-task}
+* xref:forecast:create-workloads.adoc[Create workloads]

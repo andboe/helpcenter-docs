@@ -4,3 +4,4 @@
 ** xref:save-forecast-versions.adoc[]
 ** xref:download-forecast.adoc[]
 ** xref:staff-requirements/task-save-staff-requirements.adoc[]
+** xref:forecast/import-forecast.adoc[]
