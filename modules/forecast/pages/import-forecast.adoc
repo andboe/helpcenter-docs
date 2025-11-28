@@ -9,7 +9,7 @@ You can import CSV files with forecasted contact volume and AHT data generated o
 
 New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
 
-include::help-center:ROOT:partials/headings/prerequisites.adoc[]
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
 
 To import a forecast, you need the following:
 
