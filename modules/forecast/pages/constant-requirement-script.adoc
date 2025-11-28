@@ -12,8 +12,7 @@ Use the Constant requirement script when:
 * No historical data exists to calculate staff requirements with a different method.
 * Specific activities require a fixed number of people over a period, for example two people to handle emails every afternoon.
 
-[#prerequisites]
-== Prerequisites
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
 
 Create at least one xref:forecast:create-workloads.adoc#create-workloads[workload].
 
@@ -27,7 +26,8 @@ Create at least one xref:forecast:create-workloads.adoc#create-workloads[workloa
 .Date
 [%header,cols="1a,3a"]
 |===
-|Field |Description
+|Field
+|Description
 
 |Start date
 |Enter the start date for the staff requirements calculation.
@@ -36,9 +36,11 @@ Create at least one xref:forecast:create-workloads.adoc#create-workloads[workloa
 |Enter the number of days from the start date for which you want to calculate staff requirements.
 
 |Consider each day of the week
-|*Yes*: Display weekday names in the data section.
-*No*: Display Day 1, Day 2, and so on, where Day 1 corresponds to the *Start date*.
-See xref:consider-each-day-of-the-week
+|
+* *Yes*: Display weekday names in the data section.
+* *No*: Display Day 1, Day 2, and so on, where Day 1 corresponds to the *Start date*.
+
+For more information, see xref:consider-each-day-of-the-week.adoc[]
 
 |Add to existing requirement
 |When selected, the values you enter are added to the existing staff requirements.
@@ -51,7 +53,6 @@ When cleared, the values overwrite existing staff requirements for overlapping p
 |Observe planning unit's business hours
 |Save staff requirements only for intervals within the planning unit's business hours.
 |===
-+
 .Drop-down menus
 [%header,cols="1a,3a"]
 |===
@@ -67,7 +68,6 @@ When cleared, the values overwrite existing staff requirements for overlapping p
 |Number of activities for which you can enter staff requirements.
 The *Data* section displays a column for each activity.
 |===
-+
 .Data section
 [%header,cols="1a,3a"]
 |===

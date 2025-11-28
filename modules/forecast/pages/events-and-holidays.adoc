@@ -3,7 +3,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Alexis Braine
 :product-label: advanced, enterprise
 
-Add events to your historical data and generated *Forecast* data to improve the forecast results.
+Add events to your historical data and generated forecast data to improve the forecast results.
 Besides data, events are the second most important driver for forecast quality.
 
 New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
