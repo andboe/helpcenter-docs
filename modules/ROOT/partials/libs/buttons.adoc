@@ -4,3 +4,5 @@
 :btn-edit: btn:[Edit]
 :btn-ok: btn:[OK]
 :btn-save: btn:[Save]
+:btn-import: btn:[Import]
+:btn-close: btn:[Close]

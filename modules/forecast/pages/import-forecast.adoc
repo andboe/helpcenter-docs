@@ -59,22 +59,24 @@ Peopleware can handle CSV import files with missing rows or partial rows.
 * New data overwrites existing data for identical timestamps.
 * Intervals with data gaps retain the original workload data.
 
-Example: Row with partially missing data
-
+.Row with partially missing data
+====
 ----
 Timestamp;Offered;AHT
 2025-05-17 15:00;30;210
 2025-05-17 15:15;;
 2025-05-17 15:30;40;180
 ----
+====
 
-Example: Missing row (15-minute interval)
-
+.Missing row (15-minute interval)
+====
 ----
 Timestamp;Offered;AHT
 2025-05-17 15:00;30;210
 2025-05-17 15:30;40;180
 ----
+====
 
 [#import-a-forecast]
 == Import a forecast
@@ -83,9 +85,9 @@ Timestamp;Offered;AHT
 . From the context menu icon {icon-context-menu} at the top right, select *Import forecast data*.
 . In the *CSV schema* field, select the CSV schema you want to use to import the data.
 . Provide the CSV file in the upload dialog.
-. Click btn:[Import].
+. Click {btn-import}
 . Wait for the upload to complete.
-. Click btn:[Close].
+. Click {btn-close}.
 
 Depending on the CSV schema settings, Peopleware displays the imported forecast data as *Imported forecast* or as a forecast version in the Volume or AHT graph.
 If you do not see the imported data, check whether the data period set for the page includes the imported period.
