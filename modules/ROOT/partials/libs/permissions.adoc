@@ -1,3 +1,3 @@
-:permissions-wfm-enable-access-to-wfm: Enable access to WFM
 :permissions-account-full-access-to-roles: Full access to Roles
 :permissions-people-edit-people: Edit people
+:permissions-wfm-enable-access-to-wfm: Enable access to WFM

@@ -10,7 +10,7 @@
 :bc-plan-schedules: menu:Plan[Schedules]
 :bc-plan-shift-center: menu:Plan[Shift Center]
 :bc-wfm-administration: menu:WFM[Administration]
+:bc-wfm-administration-forecasting-scripts: menu:WFM[Administration > Forecasting > Scripts]
 :bc-wfm-administration-system-roleauthorization: menu:WFM[Administration > System > Role authorization]
 :bc-wfm-administration-system-userauthorization: menu:WFM[Administration > System > User authorization]
-:bc-wfm-administration-forecasting-scripts: menu:WFM[Administration > Forecasting > Scripts]
 :bc-wfm-forecastpro-forecast: menu:WFM[Forecast > ForecastPro > Forecast]
