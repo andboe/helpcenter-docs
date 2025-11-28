@@ -12,8 +12,7 @@ Use the Constant requirement script when:
 * No historical data exists to calculate staff requirements with a different method.
 * Specific activities require a fixed number of people over a period, for example two people to handle emails every afternoon.
 
-[#prerequisites]
-== Prerequisites
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
 
 Create at least one xref:forecast:create-workloads.adoc#create-workloads[workload].
 
