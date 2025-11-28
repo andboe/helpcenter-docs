@@ -53,7 +53,7 @@ Object permissions for planning units and activities are set up in {bc-wfm-admin
 * *Chat*
 * *Linear*
 . In the *Calculation parameters* section, configure the calculation settings.
-See the xref:forecast:staff-requirements/ref-requirement-calculations.adoc#automatic-requirement-calculations[reference guide] for details.
+See the xref:forecast:staff-requirements/ref-requirement-calculations.adoc#automatic-calculations[] for details.
 . In the *Associated planning unit and activity* section, configure where Peopleware saves the staff requirement data.
 By default, data is saved for the planning unit and activity specified in the workload.
 . Click {btn-save}.

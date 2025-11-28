@@ -5,7 +5,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 Forecast versions allow you to save forecast values for specific periods.
 Use them to compare the original forecast with current values and understand how factors such as events influence the forecast.
-You can also xref:forecast:staff-requirements/task-set-up-staff-requirement-calculation.adoc[calculate staff requirements] based on a forecast version or display forecast version data in xref:monitoring:dashboards/manage-dashboards.adoc[Dashboards].
+You can also xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[calculate staff requirements] based on a forecast version or display forecast version data in xref:monitoring:dashboards/manage-dashboards.adoc[Dashboards].
 
 [#save-a-forecast-version]
 == Save a forecast version

@@ -40,7 +40,7 @@ To manage and configure roles, your role needs the following permissions:
 
 To configure WFM permissions, your role also needs the following permissions:
 
-* {permission-wfm-enable-access-to-wfm}
+* {permissions-wfm-enable-access-to-wfm}
 
 [#create-role-from-scratch]
 === Create a new role from scratch

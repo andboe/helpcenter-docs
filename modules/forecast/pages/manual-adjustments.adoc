@@ -41,7 +41,7 @@ The time frame you select determines the adjustment options shown.
 
 |Value
 |Enter the value used to alter or overwrite the volume.
-See <<how-time-frames-affect-adjustments,how time frames affect adjustments>>.
+See xref:how-time-frames-affect-adjustments[].
 |===
 . Click {btn-apply-adjustment}.
 +
@@ -140,7 +140,7 @@ The original forecast values appear for the selected range.
 
 Manual adjustments automatically recalculate the staff requirements.
 
-If you xref:forecast:staff-requirements/task-set-up-staff-requirement-calculation.adoc[set up the staff requirements calculation] on the workload page, you can use the new values for scheduling by clicking {btn-save-staff-requirements}.
+If you xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[set up staff requirement calculation] on the workload page, you can use the new values for scheduling by clicking {btn-save-staff-requirements}.
 
 To update staff requirement data via manual staff requirement calculations:
 
@@ -151,7 +151,9 @@ To update staff requirement data via manual staff requirement calculations:
 See xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[].
 
 {see-also-title}
+
 * xref:forecast:events-and-holidays.adoc[]
 
 {see-also-task}
+
 * xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
