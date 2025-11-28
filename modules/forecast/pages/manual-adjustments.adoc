@@ -1,11 +1,157 @@
-= Manual adjustments
+= Adjust the forecast
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: advanced, enterprise
 
-:product-label: essential, advanced, enterprise, classic
-:description: Use Forecast to automatically calculate a forecast for contact volume and AHT.
-:related-articles: create-workloads.adoc, manual-adjustments.adoc, save-forecast-versions.adoc, download-forecast.adoc
+You can edit a generated forecast to remove irregularities from the contact volume or the average handle time (AHT).
+
+Adjust the forecast if any of the following applies:
+
+* You do not have enough historical data or your data is incorrect.
+* Your contact volume or AHT values deviate from current trends and you do not expect them to change back, for example due to structural changes in your business.
+* Your contact volumes are unusually high or low during a specific period, for example during a marketing campaign.
+Remove the irregularities, or xref:forecast:events-and-holidays.adoc#add-an-event-to-a-workload[add an outage] to exclude the period from the forecast calculation.
+
+Manual adjustments change the generated forecast, but new forecast calculations do not overwrite manually adjusted values.
+You cannot adjust values for periods with historical data only.
+If periods contain historical and forecast data, only the forecast data is updated.
 
 [#adjust-the-volume]
 == Adjust the volume
 
+. In {bc-forecast-workloads}, select a workload.
+. Select a time frame from the date picker.
+Click a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
+The time frame you select determines the adjustment options shown.
+. In the Volume section, click {btn-adjust-volume}.
+. Configure the adjustment:
++
+[%header,cols="1a,3a"]
+|===
+|Parameter |Description
+
+|Date range
+|Available when you selected a multi-day time frame.
+
+|Start time / End time
+|Available when you selected a single day.
+
+|alter (%) / overwrite
+|Select whether to adjust the current value by a percentage (positive or negative) or replace it with a new positive whole number.
+
+|Value
+|Enter the value used to alter or overwrite the volume.
+See <<how-time-frames-affect-adjustments,how time frames affect adjustments>>.
+|===
+. Click {btn-apply-adjustment}.
++
+Changes are highlighted in the volume graph.
+Hover over the graph to see details about contact volume, AHT, staff requirements, and events.
+
 [#adjust-the-aht]
 == Adjust the AHT
+
+. In {bc-forecast-workloads}, select a workload.
+. Select a time frame from the date picker.
+. Next to *AHT*, click the hide icon {icon-hide}.
+. Click {btn-adjust-aht}.
+. Configure the adjustment:
++
+[%header,cols="1a,3a"]
+|===
+|Parameter |Description
+
+|Date range
+|Available when you selected a multi-day time frame.
+
+|Start time / End time
+|Available when you selected a single day.
+
+|alter (%) / overwrite
+|Select whether to adjust the current value by a percentage (positive or negative) or replace it with a new positive whole number.
+
+|Value
+|Enter the value used to alter or overwrite the AHT.
+See xref:how-time-frames-affect-adjustments.
+|===
+. Click {btn-apply-adjustment}.
++
+Changes are highlighted in the AHT graph.
+Hover over the graph to see details about contact volume, AHT, staff requirements, and events.
+
+Repeat this procedure if there is a significant difference between the generated forecast and your manual adjustment.
+
+[NOTE]
+====
+If you readjust volume or AHT values, the configuration window does not show the values you entered previously.
+Another percentage increase or decrease updates the value that you adjusted before, not the original value.
+====
+
+[#how-time-frames-affect-adjustments]
+== How time frames affect volume and AHT adjustments
+
+Adjustments have a different impact based on the selected time frame:
+
+[%header,cols="1a,1a,3a"]
+|===
+
+|Value
+|Time frame
+|Impact
+
+|Volume
+|Single day
+|A percentage value decreases or increases the existing values for all intervals within *Start time* and *End time*.
+An absolute value overwrites the existing values for all intervals within *Start time* and *End time*.
+
+|Volume
+|Several days
+|Both a percentage value and an absolute value increase or decrease the total volume.
+The value distributes proportionally over the selected period, preserving the trends and distribution patterns for all intervals.
+
+|AHT
+|Single day
+|A percentage value decreases or increases the existing values for the intervals included within *Start time* and *End time*.
+An absolute value overwrites the existing values for all intervals within *Start time* and *End time*.
+
+|AHT
+|Several days
+|Both a percentage value and an absolute value increase or decrease the total weighted average.
+AHT values are distributed over the selected period while preserving trends and distribution patterns for all intervals.
+This may result in higher or lower values on one or more days.
+|===
+
+[#delete-adjustments]
+== Delete adjustments
+
+Delete adjustments that are no longer relevant.
+
+. In {bc-forecast-workloads}, select a workload.
+. Do one of the following:
+* In the Volume section, click {btn-adjust-volume}.
+* In the AHT section, click {btn-adjust-aht}.
+. Select a *Date range*.
+. Click {btn-delete-all-adjustments} to remove all adjustments from the selected date range.
++
+The original forecast values appear for the selected range.
+
+[#use-staff-requirements]
+== Use staff requirements for scheduling
+
+Manual adjustments automatically recalculate the staff requirements.
+
+If you xref:forecast:staff-requirements/task-set-up-staff-requirement-calculation.adoc[set up the staff requirements calculation] on the workload page, you can use the new values for scheduling by clicking {btn-save-staff-requirements}.
+
+To update staff requirement data via manual staff requirement calculations:
+
+. From the context menu icon {icon-context-menu} at the top right, select *Use forecast*.
+. In the configuration window, click {btn-use-forecast}.
+. In {bc-forecast-requirementcalculations}, select a requirement calculation option.
+. Configure and run the calculation.
+See xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[].
+
+{see-also-title}
+* xref:forecast:events-and-holidays.adoc[]
+
+{see-also-task}
+* xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]

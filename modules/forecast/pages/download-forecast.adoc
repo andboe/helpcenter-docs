@@ -2,8 +2,6 @@
 include::help-center:ROOT:partial$libs/libs.adoc[]
 :author: Alexis Braine
 :product-label: advanced, enterprise
-:topic-type-task:
-:page-aliases: download-forecast/index.adoc
 
 In {bc-forecast-workloads}, you can download your forecast data as a CSV file.
 
@@ -55,3 +53,7 @@ Switch the workload to Live mode to access the download option.
 See xref:forecast:create-workloads.adoc[] for details about Live mode and Test mode.
 Smart workloads are only available for Enterprise and Advanced WFM plans.
 ====
+
+{see-also-title}
+* xref:forecast:save-forecast-versions.adoc[]
+* xref:forecast:import-forecast.adoc[]

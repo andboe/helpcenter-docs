@@ -1,4 +1,63 @@
-== Activate business hours
+= Activate business hours
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: advanced, enterprise
+
+New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
+
+By default, workloads do not take business hours into account and forecasts are based on the total daily volume.
+You can configure workloads so that business hours are considered and displayed in the forecast.
+Staff requirements always take business hours into account.
+
+The Classic plan supports business hours only in Smart workloads.
+
+[#prerequisites]
+== Prerequisites
+
+Make sure the following conditions are met:
+
+* Valid business hours and activities exist for the planning unit for which you want to activate business hours.
+* The valid-from and valid-to settings for the planning unit and the activity assigned to the workload cover the desired periods.
+* You have the necessary permissions to view and edit the relevant planning units.
+* If a planning calendar is assigned to the planning unit, you also have the necessary xref:account:configure-user-roles.adoc#set-wfm-permissions[permissions] for the planning calendar to display the business hours.
 
 [#activate-business-hours]
 == Activate business hours
+
+Activate business hours separately for each workload to include volumes outside business hours in the calculation.
+
+. In {bc-forecast-workloads}, select a workload.
+. Click {btn-edit}.
+. In the *Basic configuration* section, select a planning unit and an activity.
+. Check the *Forecast within business hours only* checkbox.
++
+If you update the planning unit's business hours, uncheck and check the checkbox again to refresh the forecast.
+. Click {btn-save-workload}.
++
+A new forecast is calculated, which can take some time.
+
+Once business hours are active, the graph on the *Forecast* page displays periods outside business hours as gray areas.
+
+[NOTE]
+====
+Forecasts and staff requirements are generated only if the business hours and the activity configured for the workload specify date and time values that apply to the forecasting period.
+====
+
+[#effects-on-the-forecast]
+== Effects on the forecast
+
+Activating business hours has the following effects:
+
+* Business hours are read from the planning unit and the activity assigned to the workload.
+Peopleware displays the times when both the planning unit and the workload are simultaneously open.
+Intervals within this period are considered and displayed as open in the forecast graph.
+* Volumes outside business hours are redistributed within the business hours.
+The total daily volume does not change.
+The distribution is relative to existing interval values and follows the forecasted intraday pattern.
+Volumes outside of business hours become `0`.
+* Forecasted AHT values outside business hours are set to `0`.
+
+{see-also-title}
+
+* xref:forecast:forecast.adoc[]
+* xref:forecast:create-workloads.adoc[]
