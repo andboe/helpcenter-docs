@@ -1,4 +1,45 @@
-=Save forecast versions
+= Save forecast versions
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:product-label: essential, advanced, enterprise
+:page-aliases: save-forecast-versions/index.adoc, versions/index.adoc
+
+Forecast versions allow you to save forecast values for specific periods.
+Use them to compare the original forecast with current values and understand how factors such as events influence the forecast.
+You can also xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[calculate staff requirements] based on a forecast version or display forecast version data in xref:monitoring:dashboards/manage-dashboards.adoc[Dashboards].
 
 [#save-a-forecast-version]
 == Save a forecast version
+
+You can choose between four forecast versions:
+
+* *Version 1 (Operational)*: for short to mid-term forecasts to calculate staff requirements.
+* *Version 2 (Strategic)*: for long-term forecasts to plan your organization's capacity.
+* *Version 3*: for longer-term forecasts for monitoring and controlling purposes.
+* *Version 4*: for short-term forecasts to adjust staff requirements.
+
+To save the default forecast data in a forecast version:
+
+. In {bc-forecast-workloads}, select a workload.
+. Select the time frame for which you want to save the forecast version.
+Click a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
+. From the context menu icon {icon-context-menu} at the top right, select *Save forecast in version*.
+. In the configuration window, select the forecast version into which you want to save the data.
++
+[NOTE]
+====
+There can only be one of each forecast version for a period in a workload.
+Saving data for the same period in the same forecast version overwrites the existing data.
+====
+. Click {btn-save}.
+
+The Volume and AHT graphs show the data from the different forecast versions as colored lines:
+
+* Version 1 data is displayed as a purple line.
+* Version 2 data is displayed as a green line.
+* Version 3 data is displayed as an orange line.
+* Version 4 data is displayed as a blue line.
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+* xref:forecast:forecast.adoc[]
+* xref:forecast:create-workloads.adoc[]

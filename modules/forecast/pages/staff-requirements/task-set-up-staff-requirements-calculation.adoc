@@ -1,1 +1,80 @@
-== Set up staff requirement calculation
+= Set up staff requirement calculation
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:page-aliases: staff-requirement/index.adoc, calculate-staff-requirements/index.adoc
+
+Set up and edit the automatic calculation of staff requirements for individual workloads.
+
+[#prerequisites]
+== Prerequisites
+
+[#general]
+=== General
+
+* Forecast data is available for the workload.
+
+[#permissions]
+=== Permissions
+
+Your role needs object permissions for the following:
+
+* The workload for which staff requirements are calculated
+* The planning unit and activity specified in the workload's staff requirements calculation settings
+
+[%header,cols="1a,1a"]
+|===
+|Object type
+|Permissions
+
+|Workload
+|View; Edit staff requirements
+
+|Planning unit
+|View
+
+|Activity
+|View
+|===
+
+[NOTE]
+====
+Object permissions for workloads are set up in {bc-account-roles}.
+Object permissions for planning units and activities are set up in {bc-wfm-administration-system-roleauthorization}.
+====
+
+[#steps]
+== Steps
+
+. In {bc-forecast-workloads}, select a workload.
+. In the *Staff requirements* section, click {btn-edit-staff-requirements}.
+. From the *Calculation method* drop-down, select one of the following:
+* *Erlang-C*
+* *Chat*
+* *Linear*
+. In the *Calculation parameters* section, configure the calculation settings.
+See the xref:forecast:staff-requirements/ref-requirement-calculations.adoc#automatic-calculations[] for details.
+. In the *Associated planning unit and activity* section, configure where Peopleware saves the staff requirement data.
+By default, data is saved for the planning unit and activity specified in the workload.
+. Click {btn-save}.
+
+Peopleware now calculates staff requirements for all forecast versions of the workload.
+The *Staff requirements* graph shows the results.
+Hover over the graph for more details.
+Staff requirements are calculated only for periods within the planning unit's business hours.
+
+Next, xref:forecast:staff-requirements/task-save-staff-requirements.adoc[save the calculated staff requirements] to make them available for scheduling.
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-concept.adoc
+
+* xref:forecast:staff-requirements/concept-staff-requirements.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc
+
+* xref:forecast:staff-requirements/task-save-staff-requirements.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc
+
+* xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

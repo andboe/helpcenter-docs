@@ -1,1 +1,54 @@
-== Run staff requirement calculations
+= Run staff requirement calculations
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+
+Run manual staff requirement calculations to cover scenarios that automatic calculations cannot handle.
+
+[#prerequisites]
+== Prerequisites
+
+[#general]
+=== General
+
+* Click *Use forecast* so that the latest forecast is used for the calculation.
+
+[#permissions]
+=== Permissions
+
+Your role needs the following object permissions:
+
+* View permission for the relevant workloads
+* View permission for the relevant planning units
+* View permission for the relevant activities
+* View permission for the relevant queues when a calculation reads data from a source queue
+* Edit permission for the relevant queues when a calculation writes data to a target queue
+
+Functional permission:
+
+* Full access to requirement calculations under *Forecast*
+
+[#run-a-calculation]
+== Run a requirement calculation
+
+Each requirement calculation has its own configuration interface and parameters, but the general process is the same.
+
+. Go to {bc-forecast-requirementcalculations}.
+. Select the calculation you need from the list.
+. (Optional) Click {btn-apply-preset} and select a preset from the list.
+. In the *Calculation parameters* section, configure the parameters such as date ranges, planning units, activities, and service goals.
+. Click {btn-run}.
+
+Peopleware saves the staff requirements for the planning unit and activity in {bc-plan-schedules}.
+
+include::help-center:ROOT:partial$headings/see-also.adoc
+
+include::help-center:ROOT:partial$headings/see-also-concept.adoc[leveloffset=+1]
+* xref:forecast:staff-requirements/concept-staff-requirements.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
+* xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
+* xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

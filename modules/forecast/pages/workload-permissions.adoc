@@ -1,4 +1,43 @@
-= Workload permissions
+= Configure workload permissions
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: advanced, enterprise
+:topic-type-task:
+
+In {bc-account-roles}, you can configure workload permissions for *Forecast*, including future workloads.
+For example, you can give one role view-only access to all workloads and allow another role to view and edit all workloads.
+
+New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
 
 [#configure-workload-permissions]
 == Configure workload permissions
+
+. Go to {bc-account-roles}.
+. Select the role whose workload permissions you want to edit.
+. Under *Forecast*, select the relevant checkboxes:
+* *Create workloads*
+* *Full access to requirement scripts*
+. Click {btn-configure-workload-permissions}.
+. In the *General* section, check the permissions you want to grant for all workloads.
+. Click {btn-save-changes}.
+
+[#configure-individual-workload-permissions]
+== Configure individual workload permissions
+
+In Enterprise WFM, you can grant permissions for individual workloads.
+This lets you customize view and edit permissions by workload.
+
+. Go to {bc-account-roles}.
+. Select the role whose workload permissions you want to edit.
+. Under *Forecast*, select the relevant checkboxes:
+* *Create workloads*
+* *Full access to requirement scripts*
+. Click {btn-configure-workload-permissions}.
+. In the *General* section, check the permissions that apply to all workloads.
+. In the *Workload* section, check the permissions for each workload individually.
+Use the search field to narrow down the workload list if needed.
+. Click {btn-save-changes}.
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+* xref:forecast:create-workloads.adoc[]

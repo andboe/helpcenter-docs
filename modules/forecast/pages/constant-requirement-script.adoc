@@ -1,1 +1,117 @@
 = Constant requirement script
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: essential, advanced, enterprise, classic
+:page-aliases: requirement-constant/index.adoc
+
+Use the Constant requirement script to save fixed staff requirements based on your input.
+Create new staff requirements or overwrite existing values for specific activities and time periods.
+
+Use the Constant requirement script when:
+
+* No historical data exists to calculate staff requirements with a different method.
+* Specific activities require a fixed number of people over a period, for example two people to handle emails every afternoon.
+
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
+
+Create at least one xref:forecast:create-workloads.adoc#create-workloads[workload].
+
+[#configure-the-script]
+== Configure the script
+
+. Go to {bc-forecast-requirementscripts}.
+. In the *Other - Constant Requirement* tile, click {btn-open}.
+. Configure the following settings:
+
+.Date
+[%header,cols="1a,3a"]
+|===
+|Field
+|Description
+
+|Start date
+|Enter the start date for the staff requirements calculation.
+
+|Number of days
+|Enter the number of days from the start date for which you want to calculate staff requirements.
+
+|Consider each day of the week
+|
+* *Yes*: Display weekday names in the data section.
+* *No*: Display Day 1, Day 2, and so on, where Day 1 corresponds to the *Start date*.
+
+For more information, see xref:consider-each-day-of-the-week.adoc[]
+
+|Add to existing requirement
+|When selected, the values you enter are added to the existing staff requirements.
+When cleared, the values overwrite the existing staff requirements.
+
+|Add up requirements of overlapping timespans
+|When selected, values entered for partially overlapping periods are added to the existing staff requirements.
+When cleared, the values overwrite existing staff requirements for overlapping periods.
+
+|Observe planning unit's business hours
+|Save staff requirements only for intervals within the planning unit's business hours.
+|===
+.Drop-down menus
+[%header,cols="1a,3a"]
+|===
+|Field |Description
+
+|Number of days with timespans
+|Number of days from the start date for which you can enter staff requirements.
+
+|Timespans per day
+|Number of time periods per day for which you can enter staff requirements.
+
+|Number of activities
+|Number of activities for which you can enter staff requirements.
+The *Data* section displays a column for each activity.
+|===
+.Data section
+[%header,cols="1a,3a"]
+|===
+|Field |Description
+
+|Planning unit / Activity
+|Select a planning unit and an activity for each activity column.
+
+|Start / End
+|Enter start and end times for each period in 24-hour format.
+
+|Agents
+|Enter the number of people required for each period.
+
+|Day checkboxes
+|Select the days for which you want to calculate staff requirements.
+|===
+
+[#run-the-script]
+== Run the script
+
+After configuring the script, click {btn-ok} to start the calculation.
+A window lists the planning units and activities you selected and the script results.
+
+[NOTE]
+====
+In Enterprise on-premise, go to {bc-wfm-forecastpro-forecast} or {bc-wfm-administration-forecasting-scripts}.
+The script name may vary because you can enter a custom name when creating the script.
+====
+
+[#consider-each-day-of-the-week]
+== Consider each day of the week
+
+The script uses the value entered in *Number of days* as a date range starting from the specified *Start date*.
+
+* If the number of days is seven or fewer, staff requirements are calculated only for the dates in that range.
+* If the number of days is greater than seven:
+** *Yes*: Staff requirements are calculated for the selected weekdays until the end of the date range.
+** *No*: Staff requirements are calculated repeatedly, starting with Day 1 and regardless of the weekday, until the end of the date range.
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
+* xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
+* xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

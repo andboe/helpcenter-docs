@@ -1,1 +1,160 @@
-= Events and holidays
+= Add events and public holidays
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: advanced, enterprise
+
+Add events to your historical data and generated forecast data to improve the forecast results.
+Besides data, events are the second most important driver for forecast quality.
+
+New to *Forecast*? Learn xref:forecast:forecast.adoc[the basics] first.
+
+[#what-are-events]
+== What are events?
+
+Events allow you to mark past and future days where the contact volume or data deviates from the standard.
+For example:
+
+* Days with unusually low or high volume or average handle time (AHT), e.g. due to marketing or newsletter campaigns.
+* Days with volume distributions that differ from a standard day.
+* Days with incomplete, faulty, or missing data, e.g. due to an ACD outage.
+
+You can create an event and add it to one or more workloads.
+*Forecast* analyzes events to detect trends, fluctuations in volume, and other patterns to improve the generated forecast.
+
+Public holidays are created and added to your workloads automatically when you select a holiday region in your workload's xref:forecast:create-workloads.adoc#create-workloads[basic configuration].
+Public holidays are treated like events because they may influence the contact volume for the day.
+
+[#create-an-event]
+== Create an event
+
+. Go to {bc-forecast-events}.
+. Click {btn-create-event}.
+. Enter a *Name*.
+. (Optional) Check *Mark as an outlier* if you want to exclude the event from the forecast, for example when the contact volume will not be representative on that day.
+Leave the checkbox unchecked if you want to use the contact volume or data generated on the day of the event when creating the forecast.
+. Click {btn-save}.
++
+The event appears in the event list, which shows whether an event is marked as an outlier and how many workloads it affects.
+
+You can update an event at any time, for example to change the outlier status.
+
+[#add-an-event-to-a-workload]
+== Add an event to a workload
+
+Add events to all relevant workloads so that they are considered when calculating the forecast.
+
+. In {bc-forecast-workloads}, select a workload.
+. From the context menu icon {icon-context-menu} at the top right, select *Manage events*.
+. Click {btn-add-event} and enter the information:
++
+[%header,cols="1a,3a"]
+|===
+|Field |Description
+
+|Event
+|Select an event from the drop-down.
+Outliers are marked with *Outlier* in brackets.
+Only events within the workload's date range are shown.
+
+|Date range
+|Select the date range to which you want to add the event.
+You can only add events within the workload date range.
+|===
++
+You cannot add overlapping events to the same workload.
+If the new event overlaps with an existing one, adjust the dates or remove one of the events.
+. Click {btn-save}.
++
+Events appear in the window and are color-coded.
+The workload graphs use the same colors.
+. Click {btn-close}.
+
+[NOTE]
+====
+To exclude a past day from the calculation, add an event that is marked as an outlier to the workload.
+====
+
+[#add-an-event-to-several-workloads]
+== Add an event to several workloads
+
+You can add an event to several workloads at a time.
+This is useful when you work with a large number of workloads.
+
+. In {bc-forecast-events}, select an event.
+. Next to *Calendar entries*, click {btn-add}.
+. In the *Add calendar entry* window, specify the following:
++
+[%header,cols="1a,3a"]
+|===
+|Field |Description
+
+|Date range
+|Use the date picker to select the period to which you want to add the event.
+
+|Workloads
+|Check the workloads to which you want to add the event.
+|===
+. Click {btn-save}.
+
+[NOTE]
+====
+You only see workloads for which you have edit permissions.
+====
+
+[#remove-an-event-from-a-workload]
+== Remove an event from a workload
+
+. In {bc-forecast-workloads}, select a workload.
+. From the context menu icon {icon-context-menu} at the top right, select *Manage events*.
+. Click {icon-delete} next to the event you want to remove.
+. Click {btn-close}.
++
+The forecast is recalculated.
+
+[#remove-an-event-from-several-workloads]
+== Remove an event from several workloads
+
+. In {bc-forecast-events}, select an event.
+. In the *Calendar entries* section, select a calendar entry.
+. Clear the checkboxes next to the workloads from which you want to remove the calendar entry.
+Removing the calendar entry from all workloads removes the calendar entry but does not delete the event.
+. Click {btn-save}.
+
+[#delete-an-event]
+== Delete an event
+
+. In {bc-forecast-events}, hover over an event in the list.
+. Click {icon-delete} on the right of the entry.
+. In the confirmation window, click {btn-delete}.
+
+[WARNING]
+====
+Deleting an event removes it from all affected workloads and forecasts.
+The forecast is recalculated.
+====
+
+[#change-the-holiday-region]
+== Change the holiday region
+
+When you xref:forecast:create-workloads.adoc#create-workloads[create a workload], you can select a holiday region to automatically add public holidays from that region to your workload as events.
+
+To change the holiday region and its public holiday events:
+
+. In {bc-forecast-workloads}, select a workload.
+. Click {btn-edit} at the top right.
+. Select a *Holiday region* from the drop-down.
+. Click {btn-save-workload}.
+
+[#see-events-in-graphs]
+== See events and public holidays in workload graphs
+
+In the workload graphs in {bc-forecast-workloads}, you can identify events, event outliers, and public holidays by color.
+The graph legend shows which color corresponds to which event.
+
+. In {bc-forecast-workloads}, select a workload.
+. Select a time period from the date picker.
+Click a week number to select the whole week, or click any day and drag to select a different period.
+. Hover over the graphs to see events, event outliers, and public holidays.
+
+include::help-center:ROOT:partial$headings/see-also.adoc
+* xref:forecast:create-workloads.adoc[]

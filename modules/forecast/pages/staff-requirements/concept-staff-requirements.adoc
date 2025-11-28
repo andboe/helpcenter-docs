@@ -1,1 +1,80 @@
-== Staff requirements
+= Staff requirement basics
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: Alexis Braine
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:page-aliases: concept-requirement-calculations/index.adoc, en/concept-requirement-calculations/index.adoc, en-GB/concept-requirement-calculations/index.adoc, en-gb/concept-staff-requirements/index.adoc, en-gb/features/forecast/staff-requirements/concept-staff-requirements/index.adoc
+
+Staff requirements specify the number of people needed to handle a planning unit's activities in a given period.
+The calculation of staff requirements is the final step in the forecasting process.
+Once complete, the requirements data can be used by scheduling features such as:
+
+* Create optimized schedule
+* Job optimization
+* Optimize breaks
+
+Peopleware generates staff requirement data in two ways:
+
+* A continuous, automated process based on your forecast
+* Specific, manually triggered calculations
+
+[#automatic-requirement-calculations]
+== Automatic requirement calculations
+
+Automatic requirement calculations are set up per workload in {bc-forecast-workloads}.
+Once set up, they continuously provide staff requirement data based on input such as forecasted contact volume and AHT.
+The data required for the calculation is stored in queues in {bc-analyze-configuration}.
+Queues have the name of the corresponding workload with a leading asterisk, for example `*yourWorkloadName`.
+
+The calculation is automatic, but the data is not available for scheduling until someone saves the calculated requirements for a defined period.
+This gives planners full control over when new forecast data becomes relevant for scheduling.
+
+Characteristics of automatic requirement calculations:
+
+* *Trigger*: Automatic and continuous
+* *Scope*: Every forecast version of a workload and any period
+* *Purpose*: Provide baseline staff requirement data continuously
+
+Learn how to xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[set up automatic staff requirement calculations].
+
+[#manual-requirement-calculations]
+== Manual requirement calculations
+
+You can trigger requirement calculations manually in {bc-forecast-requirementcalculations}.
+Manual calculations are performed for a specific period and use parameters set up for that run.
+Use them when automatic calculations cannot model a specific scenario.
+
+Characteristics of manual requirement calculations:
+
+* *Trigger*: Manual
+* *Scope*: Varies, but always covers a specific period
+* *Purpose*: Address unique staffing needs, model scenarios, or make targeted adjustments
+
+Learn more in:
+
+* xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[Run staff requirement calculations]
+* xref:forecast:staff-requirements/ref-requirement-calculations.adoc[Requirement calculations reference]
+
+[#calculation-methods]
+== Calculation methods
+
+Peopleware supports several calculation methods to determine staff requirements:
+
+* *Erlang-C*: Calculates the staff needed to answer a certain volume of calls within a target service level, for example 80% of calls answered within 20 seconds.
+* *Chat*: Extends Erlang-C for concurrent chat sessions and lets you define the number of simultaneous chats an agent can handle.
+* *Linear*: Suitable for work that does not happen in real time, such as emails, letters, or back-office tasks.
+
+Automatic calculations always apply one of these methods.
+Depending on the purpose, manual calculations use one of these methods or other approaches to calculate a result.
+
+include::help-center:ROOT:partial$headings/see-also.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-task.adoc[leveloffset=+1]
+
+* xref:forecast:staff-requirements/task-set-up-staff-requirements-calculation.adoc[]
+* xref:forecast:staff-requirements/task-save-staff-requirements.adoc[]
+* xref:forecast:staff-requirements/task-run-requirement-calculations.adoc[]
+
+include::help-center:ROOT:partial$headings/see-also-reference.adoc[leveloffset=+1]
+
+* xref:forecast:staff-requirements/ref-requirement-calculations.adoc[]

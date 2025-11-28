@@ -40,7 +40,7 @@ To manage and configure roles, your role needs the following permissions:
 
 To configure WFM permissions, your role also needs the following permissions:
 
-* {permission-wfm-enable-access-to-wfm}
+* {permissions-wfm-enable-access-to-wfm}
 
 [#create-role-from-scratch]
 === Create a new role from scratch
@@ -48,13 +48,13 @@ To configure WFM permissions, your role also needs the following permissions:
 To create a new role and configure all its settings from scratch, proceed as follows:
 
 . Go to {bc-account-roles}.
-. Click btn:[Create role].
+. Click {btn-create}.
 . In the *Basic information* section, configure the following fields:
 * *Name*
 * Optional: *Description*
 . Edit the role permissions.
 To grant permissions, check the checkbox of the feature.
-. Click btn:[Save].
+. Click {btn-save}.
 
 [#duplicate-existing-role]
 === Duplicate an existing role
@@ -153,9 +153,7 @@ For more information see: xref:#assign-roles-to-people[].
 You cannot add permissions to view specific people to a role.
 If you have access to a planning unit but cannot see a person in Schedules and Shift Center, you need to add permissions for at least one selection to which the person belongs.
 
-== {see-also-title}
-
-=== {see-also-concept}
+include::help-center:ROOT:partial$headings/see-also.adoc[]
 
 * xref:predefined-user-roles.adoc[]
 * xref:forecast:workload-permissions.adoc[]
