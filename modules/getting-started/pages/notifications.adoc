@@ -21,7 +21,7 @@ Email notifications are sent to each person's login email address. Browser push 
 == Configure notifications
 Users with admin access can turn off specific notifications:
 
-1. Go to _Account > Notifications_{:.breadcrumbs}.
+1. Go to menu:Account[Notifications].
 2. Click a tab to change the notification category.
    > Note
    >
@@ -36,7 +36,7 @@ If notifications are not already set through group policies in the operating sys
 Before you start, make sure that your browser allows websites to request permission to send push notifications.
 
 1. In Peopleware, click your **username** at the top right to open your user profile.
-2. In the **Notifications** section, click _Allow Peopleware notifications_{:.doc-button}.
+2. In the **Notifications** section, click btn:[Allow Peopleware notifications].
 3. A pop-up window will open in your browser where you can permanently allow browser push notifications.
 
 [#fix-browser-push-notifications-issues]

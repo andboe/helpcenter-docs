@@ -20,12 +20,12 @@ By default, Xlink stores all external activities from your system in the activit
 
 Create a separate new activity for each activity which has been stored in _Present_.
 
-1. Go to _Plan > Configuration_{:.breadcrumbs} and select **Activities**.
+1. Go to menu:Plan[Configuration] and select **Activities**.
 2. Click **Present** in the list of activities, then click **External System**. You will see a list of all activities which have been imported by Xlink.
 3. For each of these activities, xref:administration:activities.adoc#create-an-activity[create a new activity] if it doesn't exist already.
 4. Click the **Present** activity, then click **External System**.
-5. Click _![remove button](/assets/img/common/item-delete.gif)_{:.doc-button-icon} on every **activity** to remove it from the **Present** activity.
-6. Click _OK_{:.doc-button}.
+5. Click *![remove button](/assets/img/common/item-delete.gif)* on every **activity** to remove it from the **Present** activity.
+6. Click btn:[OK].
 
 Now, you can map the activities from the external system with the newly created activities:
 
@@ -34,25 +34,25 @@ Now, you can map the activities from the external system with the newly created 
 3. For **External System**, select your external system.
 4. For **External Activity**, select the external activity you want to connect with the current activity.
 5. Select _1_ for **Classification**.
-6. Click _OK_{:.doc-button}.
+6. Click btn:[OK].
 7. Modify all activities you created in the same way.
 
 [NOTE]
 ====
-To properly display your newly created activities, add them to your xref:administration:create-and-manage-planning-units.adoc#add-activities[planning unit] under _WFM > Administration > Scheduling > Planning Units_{:.breadcrumbs}.
+To properly display your newly created activities, add them to your xref:administration:create-and-manage-planning-units.adoc#add-activities[planning unit] under menu:WFM[Administration>Scheduling>Planning Units].
 ====
 Several external activities can be assigned to one WFM activity. Conversely, however, only exactly one WFM activity can be assigned to an external activity.
 
 [#add-external-login-ids-to-employees]
 == Add external login IDs to employees
-Your employees have a unique ID in the external system with which they log in. Go to _WFM > Administration > Scheduling > Employees_{:.breadcrumbs} and assign the correct external user identifier to each employee.
+Your employees have a unique ID in the external system with which they log in. Go to menu:WFM[Administration>Scheduling>Employees] and assign the correct external user identifier to each employee.
 
 1. Click an **Employee**.
 2. At the top, find the **External System** link and click it. The page will scroll down to the External System section.
 3. Click the {icon-wfm-add} to add an external system. A new window opens.
 4. For **External System**, select the external system you have set up in advance.
 5. For **Employee ID in External System**, add the ACD login ID for the employee. The ID may only contain numbers.
-6. Click _OK_{:.doc-button}.
+6. Click btn:[OK].
 
 Repeat the process for all employees. A missing or wrong user identifier will lead to no data import. After you have added the external user identifier for all employees, you can import data.
 

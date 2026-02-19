@@ -31,11 +31,11 @@ If you are already working with Work Time Pattern Models, you will need to split
 == Personal employee day models
 You can also limit the available day models for optimization via personal day models with long and short breaks. The optimization takes into account the day model assignment to the employee and only schedules the assigned day models.
 
-Assign personal day models to your employees. Make the necessary changes under _Administration > Scheduling > Employees_{:.breadcrumbs} in the section _Day Models_. Employees who you want to schedule for short breaks will receive day models with short breaks; the other employees will receive day models with long breaks.
+Assign personal day models to your employees. Make the necessary changes under menu:Administration[Scheduling>Employees] in the section _Day Models_. Employees who you want to schedule for short breaks will receive day models with short breaks; the other employees will receive day models with long breaks.
 
 The assignment of day models to an employee is applied system wide, i.e. also for manual scheduling or in the Infothek. The disadvantage is that the assignment process may be time-consuming, as unfortunately mass update does not support this.
 
-Notes on the scheduling rule _2661_{:.id-label} _Check day model assignment to employee_:
+Notes on the scheduling rule *2661* _Check day model assignment to employee_:
 
 - If the rule is activated, an employee is not scheduled if he or she does not have a personal day model.
 - If the rule is deactivated, the optimization uses
@@ -46,7 +46,7 @@ Notes on the scheduling rule _2661_{:.id-label} _Check day model assignment to e
 == Using skills
 Employees get their desired break length because the optimization checks the necessary skill for the activities of a day model.
 
-The scheduling rule _2605_{:.id-label} _Check skill_ is always activated and works not only for activities of type present, but for all activities with a skill.
+The scheduling rule *2605* _Check skill_ is always activated and works not only for activities of type present, but for all activities with a skill.
 
 Follow these steps:
 

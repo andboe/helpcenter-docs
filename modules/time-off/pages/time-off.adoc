@@ -15,9 +15,9 @@ include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
 >
 [NOTE]
 ====
-Only roles with the permissions View time off, Full access to Accounts or Full access to configuration can access _Time Off_{:.breadcrumbs}. To configure role permissions for Time Off, go to _Account > Roles_{:.breadcrumbs}. Learn more about xref:account:configure-user-roles.adoc[roles].
+Only roles with the permissions View time off, Full access to Accounts or Full access to configuration can access menu:Time Off[]. To configure role permissions for Time Off, go to menu:Account[Roles]. Learn more about xref:account:configure-user-roles.adoc[roles].
 ====
-In _Time Off_{:.breadcrumbs}, you have the following options to manage people's time off:
+In menu:Time Off[], you have the following options to manage people's time off:
 
 - Approve and reject time-off requests or requests to cancel already approved time off
 - View and edit [personal balances and entitlement](https://help.peopleware.com/time-off-types/#time-off-accounts)
@@ -49,7 +49,7 @@ By default, Time Off is set up without recommendations, and planners can view an
 
 To activate recommendations, proceed as follows:
 
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. Select a time-off type.
 3. In the **General** section, check the checkbox **Enable recommendations**.
 
@@ -57,12 +57,12 @@ To activate recommendations, proceed as follows:
 
 [#approve-or-reject-time-off-requests]
 == Approve or reject time-off requests
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the tab **Time off requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
 3. In the relevant request, click **Show coverage and time off** and/or **View in plan** to make a better-informed decision. Learn more about these functionalities in the subsections below.
-4. Click _Approve time off_{:.doc-button} or _Reject_{:.doc-button}.
+4. Click btn:[Approve time off] or btn:[Reject].
 5. In the confirmation window, you can add a comment.
-6. Click _Confirm_{:.doc-button}.
+6. Click btn:[Confirm].
    The person is notified by email. Rejections are final.<br>
    Peopleware automatically adds approved time off to the person's schedule.<br>
    You can see how the time-off or cancellation request is valuated; **Booked** for decided requests, **To be booked** for pending requests.
@@ -113,7 +113,7 @@ To ensure consistency and correct valuation, add all absences via the Time Off a
 
 To view how each day of a time-off request was evaluated:
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the **Time-off requests** tab.
 3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
 4. A detailed breakdown is displayed showing:
@@ -124,7 +124,7 @@ To view how each day of a time-off request was evaluated:
 === Edit the valuation
 If you need to overwrite a calculated value or add a missing valuation, you can override the valuation. To do so, proceed as follows:
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the **Time-off requests** tab.
 3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
 4. In the table, click the cell in the **Override** column corresponding to the time off that you want to edit.
@@ -140,11 +140,11 @@ To delete an override, cancel the corresponding time off and add it again.
 
 [#see-how-many-people-are-off]
 === See how many people are off
-You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in _Time Off > Plan_{:.breadcrumbs}. Alternatively, click **View in plan** on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
+You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in menu:Time Off[Plan]. Alternatively, click **View in plan** on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
 
 You can view time off filtered by different criteria:
 
-1. Go to _Time Off > Plan_{:.breadcrumbs}.
+1. Go to menu:Time Off[Plan].
 2. Select the level of detail you want to display for the time period:
    - **Day**
    - **Week**
@@ -175,26 +175,26 @@ Time-off quotas apply to time-off activities, such as Absence, Illness, or Vacat
 
 [#edit-quotas]
 === Edit quota for a specific date
-1. Go to _Time off > Quotas_{:.breadcrumbs}
+1. Go to menu:Time off[Quotas]
 2. Select a planning unit.
 3. Use the date picker to select the relevant date range.
 4. Click the date you want to edit.
 5. Enter the quota for the date.
-6. Click _{icon-check}_{:.doc-button}.
+6. Click btn:[{icon-check}].
 
 [#bulk-edit-quotas]
 === Bulk edit quotas
-1. Go to _Time off > Quotas_{:.breadcrumbs}
+1. Go to menu:Time off[Quotas]
 2. Select a planning unit.
-3. Click _Bulk edit_{:.doc-button}
+3. Click btn:[Bulk edit]
 4. Use the date picker to select the relevant date range.
 5. Enter the quota for the date range.
 6. Check or uncheck the days of the week for which you want to apply the quota.
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 [#view-quota-consumption]
 === View quota consumption
-1. Go to _Time off > Plan_{:.breadcrumbs}.
+1. Go to menu:Time off[Plan].
 2. From the **Data** drop-down, select **Quota**.
 
 [#show-coverage-and-time-off]
@@ -238,7 +238,7 @@ Row&nbsp;3 shows how Peopleware can combine the variants from rows&nbsp;1&nbsp;a
 
 [#email-notifications]
 == Email notifications
-_Time Off_{:.breadcrumbs} sends e-mail notifications for the following events:
+menu:Time Off[] sends e-mail notifications for the following events:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -325,14 +325,14 @@ If the time-off type is paid but the fill-up functionality is not activated, the
 == Approve or reject a cancellation request
 People cannot cancel their own time off. Instead, they must submit a cancellation request that needs to be accepted or rejected.
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the tab **Cancellation requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
-3. In the relevant request, click _Cancel time off_{:.doc-button} or _Reject_{:.doc-button}.
+3. In the relevant request, click btn:[Cancel time off] or btn:[Reject].
 4. In the confirmation window, you can add a comment.
 5. If you approve the cancellation and the person had previously been scheduled for the days for which they want to cancel their time off, select one of the following options:
    - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in _Plan > Schedules_{:.breadcrumbs}.
-6. Click _Confirm_{:.doc-button} or _Confirm cancellation_.
+   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in menu:Plan[Schedules].
+6. Click btn:[Confirm] or _Confirm cancellation_.
    The person is notified by email.
 
 [NOTE]
@@ -350,15 +350,15 @@ You can add time off directly to your people's schedules. This may be needed, fo
 
 Add time off directly to the schedule as follows:
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
-2. Click _Create time off_{:.doc-button}.
+1. Go to menu:Time Off[Requests].
+2. Click btn:[Create time off].
 3. Enter the following information:
    - **Person**
    - **Time-off type**
    - **Time range**
    - (Optional) **Request a part of the day**: Available only when you select a time range of one or two days. Configure a **Start time** and **End time**.
    - (Optional) **Comment**.
-4. Click _Add time off_{:.doc-button}.  
+4. Click btn:[Add time off].  
    The person is notified by email.
 
 [#edit-the-time-range-of-approved-time-off]
@@ -367,11 +367,11 @@ You may need to extend or reduce a person's planned time off, for example, if si
 
 Extend or reduce planned time off as follows:
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
-3. In the entry of the relevant time off, click _{icon-edit} Edit time off_{:.doc-button}.
+3. In the entry of the relevant time off, click btn:[{icon-edit} Edit time off].
 4. Edit the **Time range**, or the **Start time** and **End time**.
-5. Click _Edit time off_{:.doc-button}.
+5. Click btn:[Edit time off].
    The person is notified by email.
 
 Peopleware automatically updates the person's balance and their schedule to reflect the new time range.
@@ -382,13 +382,13 @@ You may need to cancel time off you have already approved, e.g. because people n
 
 Cancel an approved time off as follows:
 
-1. Go to _Time Off > Requests_{:.breadcrumbs}.
+1. Go to menu:Time Off[Requests].
 2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
-3. In the entry of the relevant time off, click _Cancel time off_{:.doc-button}.
+3. In the entry of the relevant time off, click btn:[Cancel time off].
 4. If the person had previously been scheduled for the days for which you want to cancel their time off, select one of the following options:
    - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in _Plan > Schedules_{:.breadcrumbs}.
-5. Click _Confirm cancellation_{:.doc-button}.
+   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in menu:Plan[Schedules].
+5. Click btn:[Confirm cancellation].
 
 [#staff-membership-changes]
 == Staff membership changes
@@ -396,17 +396,17 @@ Changing the staff membership end date for a person affects their time-off reque
 
 If the staff membership end date lies before the requested period starts, the following applies:
 
-- Approved time off is no longer displayed in _Time Off > Plan_{:.breadcrumbs}.
+- Approved time off is no longer displayed in menu:Time Off[Plan].
 - For approved time off, the person's balance and time account are adjusted.
 - For approved time off, quotas are adjusted accordingly.
-- Pending time-off requests are rejected and removed from _Time Off > Requests_{:.breadcrumbs}.
+- Pending time-off requests are rejected and removed from menu:Time Off[Requests].
 
 If the staff membership end date falls within the requested period, the following applies:
 
-- Approved time off remains visible in _Time Off > Plan_{:.breadcrumbs}.
+- Approved time off remains visible in menu:Time Off[Plan].
 - For approved time off, the person's balance and time account are adjusted for the days up to their staff membership end date. Time Off only values the part of the request that lies before the before the staff memberhsip end date.
 - For approved time off, quotas are adjusted accordingly.
-- Pending requests remain in _Time Off > Requests_{:.breadcrumbs} and need to be manually rejected.
+- Pending requests remain in menu:Time Off[Requests] and need to be manually rejected.
 
 People can still request time off that falls outside their staff membership.
 
@@ -428,7 +428,7 @@ Peopleware can send daily time-off reports by email which contain the currently 
 
 To activate daily status reports, proceed as follows:
 
-1. Go to _Account > Notifications_{:.breadcrumbs}.
+1. Go to menu:Account[Notifications].
 2. Click the **Time Off** tab.
 3. Check the checkbox **Status report**.
 
@@ -461,11 +461,11 @@ Update schedules manually when shifts cannot be restored
 >
 [NOTE]
 ====
-If you want the person to work on the days for which the time off is cancelled, xref:scheduling:schedules-edit.adoc[update their schedule manually in _Plan > Schedules_{:.breadcrumbs}].
+If you want the person to work on the days for which the time off is cancelled, xref:scheduling:schedules-edit.adoc[update their schedule manually in menu:Plan[Schedules]].
 ====
 Peopleware cannot restore scheduled shifts in the following cases:
 
-- The time off was originally requested and approved in _Plan > Time Off_{:.breadcrumbs} instead of Time Off.
+- The time off was originally requested and approved in menu:Plan[Time Off] instead of Time Off.
 - The time off was [valuated with 0](https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-) and was not added to the schedule.
 - The time off was revaluated after approval because the person was assigned a new contract.
 - The person has several part-day time off planned for the same day.

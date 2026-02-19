@@ -16,10 +16,10 @@ Generating staff requirements is the last step of the forecasting process. In **
 == View and edit staff requirements
 You can view staff requirements in the following four places:
 
-- _Forecast_{:.menu-item}
-- _Analyze > Dashboard_{:.breadcrumbs}
-- _Plan > Schedules_{:.breadcrumbs}
-- _Plan > Shift Center_{:.breadcrumbs}
+- *Forecast*
+- menu:Analyze[Dashboard]
+- menu:Plan[Schedules]
+- menu:Plan[Shift Center]
 
 The following table includes details about the options available in each place:
 
@@ -35,19 +35,19 @@ table {
 |View
 |Edit
 |Delete
-|_Forecast_{:.menu-item}
+|*Forecast*
 |Yes
 |Yes
 |Yes
-|_Analyze > Dashboard_{:.breadcrumbs}
-|Yes
-|No
-|No
-|_Plan > Schedules_{:.breadcrumbs}
+|menu:Analyze[Dashboard]
 |Yes
 |No
 |No
-|_Plan > Shift Center_{:.breadcrumbs}
+|menu:Plan[Schedules]
+|Yes
+|No
+|No
+|menu:Plan[Shift Center]
 |Yes
 |Yes
 |No
@@ -55,7 +55,7 @@ table {
 
 [#edit-staff-requirements-in-shift-center]
 === Edit staff requirements in Shift Center
-1. Go to _Plan > Shift Center_{:.breadcrumbs}.
+1. Go to menu:Plan[Shift Center].
 2. At the bottom of the panel, select the **Activities - Requirement** or the **Activity Overview** tab.<br>
 
    > No Data message in a cell
@@ -68,11 +68,11 @@ table {
    You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
 
 6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
-7. Click _OK_{:.doc-button}.
+7. Click btn:[OK].
 
 [#edit-staff-requirements-in-forecast]
 === Edit staff requirements in Forecast
-To manually edit staff requirements, you can run the constant requirement script in _Forecast_{:.breadcrumbs}. For more information on the configuration options, see the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[Staff requirement reference guide].
+To manually edit staff requirements, you can run the constant requirement script in menu:Forecast[]. For more information on the configuration options, see the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[Staff requirement reference guide].
 
 [#delete-staff-requirements]
 == Delete staff requirements

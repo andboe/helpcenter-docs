@@ -51,7 +51,7 @@ You can set activity properties with the following checkboxes.
 |Paid
 |Activates the working time calculation for scheduled activities. If breaks or absences are paid, they are calculated as working time. If they are unpaid, they are not included in the net working time calculation.
 |Comply with rest period
-|Prevents violations of the rest period configured in the contract. The rest period is only checked if scheduling rule _2601_{:.id-label} **Rest between two workdays** is activated.
+|Prevents violations of the rest period configured in the contract. The rest period is only checked if scheduling rule *2601* **Rest between two workdays** is activated.
 |Plannable
 |The activity can be scheduled if you use the Create optimized schedules functionality, or can be optimized during job optimization. We recommend using this property for activities with staff requirements. It is typically not used for activities of the types Absence, Vacation, and Illness.
 |Requestable in Me

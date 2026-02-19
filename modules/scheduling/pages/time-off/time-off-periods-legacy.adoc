@@ -16,7 +16,7 @@ Time-off periods only support the activity types Absence, Vacation, and Illness.
 
 In Me, people can request time off for different reasons, e.g. vacation or illness. People can only create time-off requests for time ranges that are included in a time-off period with the status Published.
 
-Note: To allow people to request time off, go to _Me_{:.breadcrumbs} in the main navigation and activate the **Time Off Requests** option.
+Note: To allow people to request time off, go to menu:Me[] in the main navigation and activate the **Time Off Requests** option.
 
 Use xref:scheduling:what-are-scheduling-periods.adoc[scheduling periods] to allow people xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[to see their schedules], xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[exchange shifts], and xref:scheduling:schedules-shift-bidding.adoc[bid on shifts].
 
@@ -36,9 +36,9 @@ Every time-off period has a status that determines whether it is available for p
 
 [#manage-time-off-periods]
 == Manage time-off periods
-1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right.
-3. Select a _Planning unit_{:.label} to filter the list.
+1. Go to menu:Plan[Time Off].
+2. Click btn:[Time-off periods] on the top right.
+3. Select a *Planning unit* to filter the list.
 4. Optional: Choose a selection and/or an activity.
 
 The list will show the relevant time-off periods divided into two tabs:
@@ -52,27 +52,27 @@ To sort a column, click the table header. To reverse the sorting order, click ag
 
 [#create-a-time-off-period]
 == Create a time-off period
-1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right.
-3. Click _Create time-off period_{:.doc-button} on the top right.
+1. Go to menu:Plan[Time Off].
+2. Click btn:[Time-off periods] on the top right.
+3. Click btn:[Create time-off period] on the top right.
 4. Fill in the fields.
    Remember that people can only request time off if you select the status Published.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#edit-a-time-off-period]
 == Edit a time-off period
 If you want to change the status of a time-off period
 
-1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right.
+1. Go to menu:Plan[Time Off].
+2. Click btn:[Time-off periods] on the top right.
 3. To change the status, use the drop-down in the **Status** column. The changed status will be saved automatically.  
    To edit other data, hover over the list item that you want to edit and click the {icon-edit} on the right.
 4. Edit the relevant data.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#delete-a-time-off-period]
 == Delete a time-off period
-1. Go to _Plan > Time Off_{:.breadcrumbs}.
-2. Click _Time-off periods_{:.doc-button} on the top right.
+1. Go to menu:Plan[Time Off].
+2. Click btn:[Time-off periods] on the top right.
 3. Check one or more checkboxes on the left. The checkbox on the header selects all items.
-4. Click _Delete entries_{:.doc-button}.
+4. Click btn:[Delete entries].

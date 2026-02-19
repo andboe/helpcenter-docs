@@ -21,7 +21,7 @@ An employee can access Me via their Peopleware account. In this article, you wil
 
 [#create-an-account-for-each-employee]
 == Create an account for each employee
-1. Go to _WFM > Administration > Scheduling > Employees_{:.breadcrumbs}
+1. Go to menu:WFM[Administration>Scheduling>Employees]
 2. Click an **employee**. (If you haven't added employees yet, xref:administration:employee-overview.adoc[create an employee first].) A form containing all information about that employee will open to the right.
 3. Scroll down to _Personal Data_ and enter an email address in the field **Peopleware Login (Email)**.
 4. Click **OK**.

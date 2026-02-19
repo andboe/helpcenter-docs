@@ -59,16 +59,16 @@ Learn how the xref:best-practices:importance-for-activities.adoc[importance], xr
 
 [#run-a-job-optimization]
 == Run a job optimization
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
+1. Go to menu:Plan[Schedules].
 2. Select a date range from the date picker. You can select from one day up to two months in the future.
-3. From the _Scheduling Actions_{:.doc-button} drop-down menu on the right, select _Job optimization_{:.doc-button}.
+3. From the btn:[Scheduling Actions] drop-down menu on the right, select btn:[Job optimization].
 4. In the window that opens, configure the job optimization:
    - **Date range**: The pre-selected date range is the one you selected in step 2. You can select a different date range.
-   - _Planning unit_{:.label}
-   - (Optional) _Selection_{:.label}
+   - *Planning unit*
+   - (Optional) *Selection*
 5. Click **Start job optimization**.
 
-A process starts in the background. In _Plan > Schedules_{:.breadcrumbs}, a green notification is displayed at the top if the process started successfully, and a red one if the process could not start.<br>
+A process starts in the background. In menu:Plan[Schedules], a green notification is displayed at the top if the process started successfully, and a red one if the process could not start.<br>
 The optimization process can take some time, depending on the data amount and the selected period's length.<br>
 During the optimization process, you cannot edit the schedule of the selected planning unit and period.<br>After the optimization, the optimized schedule is saved automatically.
 

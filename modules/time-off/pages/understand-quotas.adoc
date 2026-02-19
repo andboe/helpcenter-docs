@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn how to define, calculate, and manage time-off quotas in Peopleware to effectively control employee leave and ensure adequate staffing.
 
-In _Time Off_{:.breadcrumbs}, you can define and manage time-off quotas to help maintain adequate staffing levels. This article explains how to define time-off quotas, and when they are updated.
+In menu:Time Off[], you can define and manage time-off quotas to help maintain adequate staffing levels. This article explains how to define time-off quotas, and when they are updated.
 
 [#what-are-quotas]
 == What are time-off quotas?

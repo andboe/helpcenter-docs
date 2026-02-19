@@ -26,17 +26,17 @@ Once inserted, you cannot remove an entire template. If you inserted the wrong t
 ====
 [#create-a-planning-calendar]
 == Create a planning calendar
-1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Plan[Configuration>Planning calendar].
+2. Click btn:[Create].
 3. Enter a **Name**.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 5. Add xref:#add-a-day-type[day types] and/or a xref:#add-a-template[template].
 
 Peopleware automatically saves the changes.
 
 [#add-a-day-type]
 === Add a day type
-1. In the **Calendar** section, select a **Year** or use _<_{:.doc-button} and _>_{:.doc-button} to navigate to a past or future year.
+1. In the **Calendar** section, select a **Year** or use btn:[<] and btn:[>] to navigate to a past or future year.
 2. Select a **Day type**.
 3. Add the selected day type to a day of the month. If you click a cell that already contains a day type, it is overwritten.
 
@@ -45,7 +45,7 @@ Peopleware automatically saves the changes.
 1. Click the three-dot menu {% icon ellipsis_v ; icon-only %}.
 2. Click **+ Insert template**.
 3. Select a **Public holiday region**.
-4. Click _Insert_{:.doc-button}.
+4. Click btn:[Insert].
 
 [#remove-day-types-from-the-planning-calendar]
 == Remove day types from the planning calendar
@@ -53,13 +53,13 @@ If your planning unit is closed on certain days and your people do not receive a
 
 To remove day types from the planning calendar, proceed as follows:
 
-1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Planning calendar].
 2. Select your planning calendar.
-3. Hover over each day type you want to remove and click Close _X_{:.doc-button}.
+3. Hover over each day type you want to remove and click Close btn:[X].
 
 [#edit-an-existing-planning-calendar]
 == Edit an existing planning calendar
-1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Planning calendar].
 2. Select your planning calendar.
 3. Edit the planning calendar.
 
@@ -70,11 +70,11 @@ Peopleware automatically saves the changes.
 Planning calendars should be assigned to planning units, making them valid for all people in the relevant planning unit.
 To use a planning calendar for scheduling, proceed as follows:
 
-1. Go to _Plan > Configuration > Planning units_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Planning units].
 2. Select the planning unit to which you want to assign the planning calendar.
 3. In the **Planning Calendar** section, click **+ Add**.
 4. In the **Planning Calendar** configuration window, select a planning calendar.<br>You can choose a single calendar that spans several years, for example if you create a schedule that exceeds one year. If you want to assign different planning calendars for each year, choose one calendar at a time and use the **Valid from** and **Valid To** fields to set the time period when it should be used. Note that single-year planning calendars only work for single-year schedules.
-5. Click _OK_{:.doc-button}
+5. Click btn:[OK]
 
 [NOTE]
 ====
@@ -88,7 +88,7 @@ If your planning unit contains children planning units, the planning calendar is
 == Add planning calendars to people (Enterprise only)
 You can also add planning calendars to individual people, which overwrites any assignments derived from planning units.
 
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select a person from the list.
 3. In the left-side menu, click **Planning**.
 4. In the **Planning calendars** section, click **+ Add**.
@@ -96,7 +96,7 @@ You can also add planning calendars to individual people, which overwrites any a
    - **Planning calendars**
    - **Reference date**
    - **Valid from** and **Valid to**: Configure these dates if you want to add the planning calendar only temporarily to the person.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#duplicate-planning-calendars]
 == Duplicate planning calendars

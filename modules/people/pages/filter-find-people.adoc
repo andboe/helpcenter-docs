@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn how to use filters to find people.
 
-The _People_{:.breadcrumbs} page provides two types of search filters:
+The menu:People[] page provides two types of search filters:
 
 - Standard filter
 - xref:people:advanced-filters.adoc[Advanced filters]
@@ -29,18 +29,18 @@ To use the standard filter, proceed as follows:
 3. Select the options you want to use for filtering.
 
 Repeat this operation if you want to filter by more than one object.
-To remove a filter, click _x_{:.doc-button}.
+To remove a filter, click btn:[x].
 
 == Use the advanced filter
 
 Advanced filters are predefined sets of custom filter criteria. Use advanced filters to apply filter criteria quickly without the need to specify them manually for each search. Learn more about advanced filters and how to xref:people:advanced-filters.adoc[configure them].
 
-To use an advanced filter, go to _People_{:.breadcrumbs} and proceed as follows:
+To use an advanced filter, go to menu:People[] and proceed as follows:
 
 1. Click the {icon-filter-plus}.
-1. Select _{icon-two-lines-with-circles} Advanced_{:.doc-button}.
+1. Select btn:[{icon-two-lines-with-circles} Advanced].
 1. Select an advanced filter.
 
 The list updates automatically.
-To clear the filter, click _{icon-circle-xmark}_{:.doc-button}.
+To clear the filter, click btn:[{icon-circle-xmark}].
 To edit your advanced filters, click **Manage advanced filter** in the advanced filter dropdown.

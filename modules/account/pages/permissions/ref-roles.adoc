@@ -38,7 +38,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |Enable access to WFM
-|Grants access to _WFM_{:.breadcrumbs}.
+|Grants access to menu:WFM[].
 |===
 
 === Forecast
@@ -48,9 +48,9 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View all workloads
-|Grants view permissions for workloads in _Forecast_{:.breadcrumbs}.
+|Grants view permissions for workloads in menu:Forecast[].
 |Create workloads
-|Grants write permissions for workloads in _Forecast_{:.breadcrumbs}.
+|Grants write permissions for workloads in menu:Forecast[].
 |Access to Requirement calculations
 |Allows people with the role to configure and execute staff requirement calculations.
 |===
@@ -64,21 +64,21 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View schedules
-|Grants view permissions for schedules in _Plan > Schedules_{:.breadcrumbs} and _Plan > Shift Center_{:.breadcrumbs}.
+|Grants view permissions for schedules in menu:Plan[Schedules] and menu:Plan[Shift Center].
 |Full access to Schedules
 |Allows people with the role to use all **Schedules** features.
 |Insert shift sequences
 |Allows people with the role to insert shift sequences.
 |Full access to Meetings
-|Allows people with the role to use all _Plan > Meetings_{:.breadcrumbs} features.
+|Allows people with the role to use all menu:Plan[Meetings] features.
 |View time off
-|Grants view permissions for time-off data in _Plan > Time off_{:.breadcrumbs}.
+|Grants view permissions for time-off data in menu:Plan[Time off].
 |Full access to Time Off
-|Allows people with the role to use all features in _Plan > Time off_{:.breadcrumbs}.
+|Allows people with the role to use all features in menu:Plan[Time off].
 |Full access to Shift Center
 |Allows people with the role to use all **Shift Center** features.
 |Full access to Configuration
-|Grants access to _Plan > Configuration_{:.breadcrumbs}. Access to configuration data types must be granted in _WFM > System > Role authorization > Navigator > Administration > Scheduling_{:.breadcrumbs}.
+|Grants access to menu:Plan[Configuration]. Access to configuration data types must be granted in menu:WFM[System>Role authorization>Navigator>Administration>Scheduling].
 |===
 
 === Intraday
@@ -90,11 +90,11 @@ Functional permissions that have corresponding object permissions are deactivate
 |Configure adherence settings
 |<!-- what does it do? Does nothing in intraday if checked -->
 |View Real-Time Adherence
-|Grants view permissions for _Intraday > Real-Time Adherence_{:.breadcrumbs}.
+|Grants view permissions for menu:Intraday[Real-Time Adherence].
 |View Intraday Adherence
-|Grants view permissions for _Intraday > Intraday Adherence_{:.breadcrumbs}. Requires the **View Real-Time Adherence** permission.
+|Grants view permissions for menu:Intraday[Intraday Adherence]. Requires the **View Real-Time Adherence** permission.
 |Edit agent status
-|Allows people with the role to edit actual activities in _Intraday > Intraday Adherence_{:.breadcrumbs}.
+|Allows people with the role to edit actual activities in menu:Intraday[Intraday Adherence].
 |===
 
 === Analyze
@@ -104,9 +104,9 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View all dashboards
-|Grants view permissions for all dashboards in _Analyze_{:.breadcrumbs}.
+|Grants view permissions for all dashboards in menu:Analyze[].
 |Create dashboards
-|Allows people with the role to create dashboards in _Analyze_{:.breadcrumbs}.
+|Allows people with the role to create dashboards in menu:Analyze[].
 |===
 
 === People
@@ -140,7 +140,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View time off
-|Grants view permissions on _Time Off > Requests_{:.breadcrumbs} and _Time Off > Plan_{:.breadcrumbs}.
+|Grants view permissions on menu:Time Off[Requests] and menu:Time Off[Plan].
 |Create time off
 |Allows people with the role to create time off.
 |Edit time range
@@ -156,11 +156,11 @@ Functional permissions that have corresponding object permissions are deactivate
 |Decide all requests
 |Allows people with the role to approve or reject all time-off requests.
 |Full access to Accounts
-|Allows people with the role to access _Time Off > Accounts_{:.breadcrumbs}.
+|Allows people with the role to access menu:Time Off[Accounts].
 |View time-off quotas
-|Grants view permissions on _Time Off > Quotas_{:.breadcrumbs}.
+|Grants view permissions on menu:Time Off[Quotas].
 |Full access to time-off quotas
-|Grants view and edit permissions on _Time Off > Quotas_{:.breadcrumbs}.
+|Grants view and edit permissions on menu:Time Off[Quotas].
 |View Configuration
 |Grants view access to **Periods**, **Accounting rules**, and **Types**.
 |Full access to Configuration
@@ -178,7 +178,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |View Me
 |Allows people with the role to access the **Me** portal.
 |Edit availabilities
-|Allows people with the role to add and edit availabilities in _Me > Availability_{:.breadcrumbs}.
+|Allows people with the role to add and edit availabilities in menu:Me[Availability].
 |===
 
 === Account

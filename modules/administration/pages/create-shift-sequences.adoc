@@ -20,15 +20,15 @@ This article explains how to create, edit, and delete shift sequences, and gener
 == Create a shift sequence
 [#enter-the-basic-information]
 === Enter the basic information
-1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Plan[Configuration>Shift sequences].
+2. Click btn:[Create].
 3. Specify the general settings for the shift sequence. For more information see xref:#general-settings[General settings].
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#assign-activities-and-day-models-to-the-shift-sequence]
 === Assign activities and day models to the shift sequence
 1. (Optional) In the **Assignments** section, rename the Employee rows by clicking on their name.
-2. Click _Day model_{:.doc-button} or _Activity_{:.doc-button}.
+2. Click btn:[Day model] or btn:[Activity].
 3. In the dropdown menu, select the day model or activity that you want to assign to the shift sequence.
    - If you select an activity, set its start and end time.
 4. Click on a cell to insert the day model or activity.
@@ -39,21 +39,21 @@ You can now xref:administration:assign-shift-sequences-to-people.adoc[assign shi
 
 [#edit-a-shift-sequence]
 == Edit a shift sequence
-1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Shift sequences].
 2. Click on the name of the shift sequence that you want to edit.
 3. Make the changes.
 
-- If you make changes in the **General** section, click _Save_{:.doc-button}.
-- If you edit the **Assignments**, your changes are saved automatically. To clear all assignments, click the three-dot menu {icon-context-menu} and then _Clear all_{:.doc-button}.
+- If you make changes in the **General** section, click btn:[Save].
+- If you edit the **Assignments**, your changes are saved automatically. To clear all assignments, click the three-dot menu {icon-context-menu} and then btn:[Clear all].
 
 [#delete-a-shift-sequence]
 == Delete a shift sequence
-1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Shift sequences].
 2. In the row corresponding to the shift sequence that you want to delete, click the three-dot menu {icon-context-menu}.
 3. From the drop-down menu, select {icon-delete} Delete.
-4. In the window that opens, click _Delete_{:.doc-button}.
+4. In the window that opens, click btn:[Delete].
 
-If the shift sequence was assigned to your people, it remains visible in their page under _Planning > Shift sequences_{:.breadcrumbs}
+If the shift sequence was assigned to your people, it remains visible in their page under menu:Planning[Shift sequences]
 
 [#duplicate-a-shift-sequence]
 == Duplicate a shift sequence
@@ -63,9 +63,9 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate shift sequences].
 == Generate a report
 For each shift sequence, you can generate a PDF report that includes shift sequence data. For more information on the data included in the report, see the xref:#addendum[addendums].
 
-1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Shift sequences].
 2. In the row corresponding to the shift sequence for which you want to create a report, click the three-dot menu {icon-context-menu}.
-3. From the drop-down menu, select _Create report_{:.doc-button}.
+3. From the drop-down menu, select btn:[Create report].
 
 A process starts in the background. To track its progress, go to the xref:general:jobstatus.adoc[Job status page].
 

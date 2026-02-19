@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: work-with-charts.adoc, dashboards-examples.adoc
 :page-aliases: dashboards-overview
 
-In _Analyze > Dashboards_{:.breadcrumbs}, you can create and display dashboards with up to four different charts. Each chart can display graphs for multiple time series and date ranges. If you do not have a dashboard yet, the page shows the edit mode, and you can xref:#create-dashboards[create a dashboard].
+In menu:Analyze[Dashboards], you can create and display dashboards with up to four different charts. Each chart can display graphs for multiple time series and date ranges. If you do not have a dashboard yet, the page shows the edit mode, and you can xref:#create-dashboards[create a dashboard].
 
 - To display an existing dashboard, select a dashboard from the drop-down menu, or type in the field to filter.
 - To display the values for a specific interval, hover over a graph in the dashboard.
@@ -20,13 +20,13 @@ You can also xref:monitoring:work-with-charts.adoc#navigate-charts[switch betwee
 == Configure dashboard permissions
 In Enterprise and Advanced WFM, you can configure view, edit, and delete permissions for individual dashboards. These permissions are based on roles. To configure permissions for individual dashboards for a role, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
+1. Go to menu:Account[Roles].
 2. Select the role for which you want to edit dashboard permissions.
-3. Scroll down to _Analyze_{:.label} and check or uncheck the _Create dashboards_{:.label} checkbox.
-4. Click _Configure dashboard permissions_{:.label}.
+3. Scroll down to *Analyze* and check or uncheck the *Create dashboards* checkbox.
+4. Click *Configure dashboard permissions*.
 5. To give blanket permissions for all dashboards, check the corresponding checkboxes in the **All existing and future Dashboards** entry.
 6. To fine-tune permissions for individual dashboards, check the checkboxes of the individual dashboards instead.
-7. Click _Save_{:.label}.
+7. Click *Save*.
 
 [NOTE]
 ====
@@ -38,7 +38,7 @@ Whether people can see workload data in dashboards depends on the workload permi
 ====
 [#create-dashboards]
 == Create dashboards
-1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
+1. Go to menu:Analyze[Dashboards].
 2. From the {icon-context-menu} on the right, select **Create New Dashboard**.
 3. Configure the following fields:
    - **Name**: Unique name for your dashboard.
@@ -50,43 +50,43 @@ Whether people can see workload data in dashboards depends on the workload permi
 6. From the tree view on the left, drag and drop time series into the charts to visualize different key figures:
    - **Workloads**: History, Forecast, Import, and xref:forecast:save-forecast-versions.adoc[forecast versions].
    - **Planning units**: Staffing, staff requirements, and coverage for scheduled shifts and activities, plus shifts requested in Me.
-   - **WFM Queues**: Workload data in WFM queues that you saved by clicking _Use forecast_{:.doc-button} in the workload page. The option may not be available, depending on your WFM plan.
+   - **WFM Queues**: Workload data in WFM queues that you saved by clicking btn:[Use forecast] in the workload page. The option may not be available, depending on your WFM plan.
 
      > Note
      >
      > - The {icon-exclamation} in the legend of a chart is displayed if you have no data for a period.
      > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a [Genesys Cloud integration](/add-genesys-cloud-integration/), you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
 
-7. Click _Save_{:.doc-button}.<br>To return to the view mode, click _Close Edit mode_{:.doc-button}.
+7. Click btn:[Save].<br>To return to the view mode, click btn:[Close Edit mode].
 
 [#duplicate-a-dashboard]
 === Duplicate a dashboard
 To create a new dashboard with the same general properties as an existing dashboard, follow these steps:
 
-1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
+1. Go to menu:Analyze[Dashboards].
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu}, select **Duplicate Dashboard**.
 4. Edit the name and configuration details, if needed.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#auto-refresh-dashboards]
 === Auto-refresh dashboards
-You can automatically refresh the selected dashboard. To do so, select an interval from the drop-down menu on the right and click _{icon-rotate} Auto-Refresh_{:.doc-button}.<br>In the lower left of the page, you can see when the dashboard was last updated.
+You can automatically refresh the selected dashboard. To do so, select an interval from the drop-down menu on the right and click btn:[{icon-rotate} Auto-Refresh].<br>In the lower left of the page, you can see when the dashboard was last updated.
 
 [#edit-dashboards]
 == Edit dashboards
-1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
+1. Go to menu:Analyze[Dashboards].
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu} on the right, select **Edit**.
 4. Edit the dashboard, xref:monitoring:work-with-charts.adoc#customize-time-series[customize time series] or xref:monitoring:work-with-charts.adoc#delete-time-series[delete] them.
-5. Click _Save_{:.doc-button}. To return to the view mode, click _Close Edit mode_{:.doc-button}.
+5. Click btn:[Save]. To return to the view mode, click btn:[Close Edit mode].
 
 [#delete-dashboards]
 == Delete dashboards
-1. Go to _Analyze > Dashboards_{:.breadcrumbs}.
+1. Go to menu:Analyze[Dashboards].
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu} on the right, select **Edit**.
-4. Click _Delete_{:.doc-button} at the bottom right.
-5. In the confirmation window, click _Delete Dashboard_{:.doc-button}.<br> To cancel the deletion, click _Keep Dashboard_{:.doc-button}.
+4. Click btn:[Delete] at the bottom right.
+5. In the confirmation window, click btn:[Delete Dashboard].<br> To cancel the deletion, click btn:[Keep Dashboard].
 
 If you delete the last remaining dashboard, the page shows the edit mode until you xref:#create-dashboards[create a new dashboard].

@@ -1,0 +1,4 @@
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
+
+* You are familiar with scheduling in {product-generic}.
+* You have the necessary permissions to manage schedules.

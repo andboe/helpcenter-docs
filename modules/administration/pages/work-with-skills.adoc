@@ -11,7 +11,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 Skills ensure that people are only scheduled for activities for which they are qualified.
 Skills map people's abilities (e.g. product knowledge, languages, communication channels, etc.) to activities they can work on and that you schedule.
 
-To configure skills, go to _Plan > Configuration > Skills_{:.breadcrumbs}.
+To configure skills, go to menu:Plan[Configuration>Skills].
 
 [#create-skills]
 == Create skills
@@ -24,10 +24,10 @@ You can create different skill levels for one skill.
 ====
 If people do not need specific abilities to work on an activity, you do not need to create a skill for it.
 ====
-1. Click _Create_{:.doc-button}.
+1. Click btn:[Create].
 2. Enter a **Name**.
    The abbreviation is auto-generated, but you can edit it.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 Next, you can xref:#add-skill-levels-to-a-person[assign a skill level to a person] and xref:#add-skills-to-activities[assign the skill to an activity].
 
@@ -38,14 +38,14 @@ Next, you can xref:#add-skill-levels-to-a-person[assign a skill level to a perso
 3. Configure the following parameters:
    - **Name**. The abbreviation is auto-generated, but you can edit it.
    - **Rating**. See also: xref:#calculate-suitability-using-rating-and-weighting[Calculate suitability using rating and weighting].
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#edit-skills-and-skill-levels]
 == Edit skills and skill levels
 1. Select a skill from the list.
 2. Edit the skill or skill level(s).
    - To edit a skill level, click a skill level.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#duplicate-skills]
 == Duplicate skills
@@ -54,34 +54,34 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate skills].
 [#delete-skills]
 == Delete skills
 1. Hover over a skill and click the {icon-delete} next to it.
-2. In the confirmation window, click _Delete_{:.doc-button}.
+2. In the confirmation window, click btn:[Delete].
 
 [#delete-skill-levels]
 == Delete skill levels
 1. Select a skill from the list.
 2. In the **Skill levels** section, hover over a skill level and click the {icon-delete} next to it.
-3. In the confirmation window, click _Delete_{:.doc-button}.
+3. In the confirmation window, click btn:[Delete].
 
 [#add-skills-to-activities]
 == Add skills to activities
-1. Go to _Plan > Configuration > Activities_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Activities].
 2. Select an activity from the list.
 3. In the **Skills** section, click **{icon-plus} Add**.
 4. Select a skill from the drop-down menu.
 5. (Optional) Change the **Weighting**. If you only add one skill, enter 100%.  
    For activities that require more than one skill, you can xref:#calculate-suitability-using-rating-and-weighting[use weighting] to determine which skill is more important.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#add-skill-levels-to-a-person]
 == Add skill levels to a person
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Select a person from the list.
 3. In the left-side menu, click **Work profile**.
 4. In the **Skill levels** section, click **{icon-plus} Add**.
 5. Select the skill levels you want to add to the person.
 6. (Optional) Select **Valid from** and \*_Valid to_ dates if you want to add the skill levels only temporarily to the person.
    You cannot assign different skill levels of the same skill to a person for the same validity period.
-7. Click _Save_{:.doc-button}.  
+7. Click btn:[Save].  
    The activities that require the skill(s) assigned will appear in the **Activities** section for that person.
 
 An activity can require one or more skills.
@@ -108,6 +108,6 @@ The suitability value is calculated using this formula: `(Sum(Each skill's weigh
 
 If an activity requires only one skill, the suitability value equals the person's skill level.
 
-To consider the suitability value in xref:scheduling:schedules-optimized-schedules.adoc[optimized scheduling] (instead of using the headcount), configure setting _48069_{:.id-label} _Take suitability percentage into account_.
+To consider the suitability value in xref:scheduling:schedules-optimized-schedules.adoc[optimized scheduling] (instead of using the headcount), configure setting *48069* _Take suitability percentage into account_.
 In xref:scheduling:analyze-coverage-staffing-requirement.adoc[Shift Center] and xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[Schedules], coverage and staffing cannot be displayed based on people's suitability.
 In these cases, coverage and staffing are always displayed as 100% to show the headcount.

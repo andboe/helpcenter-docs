@@ -18,7 +18,7 @@ If necessary, trigger schedule optimization processes before you apply a coach's
 ====
 To apply the activities or day models scheduled for the coach to trainees of the group, proceed as follows:
 
-1. Go to _Plan > Shift Center_{:.breadcrumbs}.
+1. Go to menu:Plan[Shift Center].
 2. If necessary, adjust the filter settings to display the desired schedule level, period and coach in the schedule area.
 3. In the relevant planning unit, find the coach entry.
    The schedule area displays trainees assigned to the same planning unit as the coach as child entries of that coach.

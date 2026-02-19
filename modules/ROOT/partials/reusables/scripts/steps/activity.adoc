@@ -1,1 +1,1 @@
-Select the **Activity** for which you want to write the requirements.
+Select the *Activity* for which you want to write the requirements.

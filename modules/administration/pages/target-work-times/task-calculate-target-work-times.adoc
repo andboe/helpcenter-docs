@@ -46,26 +46,26 @@ You have the following base permissions:
 -->
 
 <!-- ROLES-new - release with go-live of new roles UI
-- _Plan > Configuration > Target work times_{:.breadcrumbs}
+- menu:Plan[Configuration>Target work times]
   - **Configure target work times**
 -->
 <!-- LNF-new - release with go-live of left-side nav
-- _Scheduling > Configuration > Target work times_{:.breadcrumbs}
+- menu:Scheduling[Configuration>Target work times]
 - **Configure target work times**
 -->
 
 [#steps]
 == Calculate target work times
 <!-- LNF-new
-1. Go to _Scheduling > Configuration > Target work times_{:.breadcrumbs}.
+1. Go to menu:Scheduling[Configuration>Target work times].
 -->
 
-1. Go to _Plan > Configuration > Target work times_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Target work times].
 2. Select a planning unit and scheduling period.
    The target work times table now displays all people that are members of the planning unit within the scheduling period.
 3. Optional: Select a selection to further filter the people shown in the table.
 4. In the table, select all people you want to calculate the target work time for.
-5. Click _Calculate_{:.doc-button}.
+5. Click btn:[Calculate].
 
 The calculated target work times of all selected people and scheduling period is now available for evaluation or further processing.
 If necessary, you can adjust the calculated target work time.
@@ -81,9 +81,9 @@ To adjust the calculated target work time of an individual person, proceed as fo
 To adjust the calculated target work time for multiple people in batch, proceed as follows:
 
 1. In the **Target work times** table, select all the people whose calculated value you want to adjust.
-2. Click _Adjust_{:.doc-button}.
+2. Click btn:[Adjust].
    Peopleware opens a configuration dialog.
 3. In the dialog, configure how you want to adjust the calculated values.
-4. Click _Adjust_{:.doc-button}.
+4. Click btn:[Adjust].
 
 Peopleware stores the new target work time in the people's respective **Modified value** fields.

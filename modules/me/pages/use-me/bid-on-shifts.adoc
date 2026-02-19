@@ -15,11 +15,11 @@ Shift bidding allows you to take part in the scheduling process by expressing yo
 - You have been given access to the shift bidding functionality by a user with Admin access.
 - A scheduling period with the status Shift bidding enabled has been created by your planner.
 
-For scheduling periods with the status Shift bidding enabled created by your planner, you will see a notification in the Notices section in _Me > Dashboard_{:.breadcrumbs}, and a banner in _Me > My Calendar_{:.breadcrumbs}.
+For scheduling periods with the status Shift bidding enabled created by your planner, you will see a notification in the Notices section in menu:Me[Dashboard], and a banner in menu:Me[My Calendar].
 
 [#bid-on-shifts]
 == Bid on shifts
-1. In _Me > Dashboard_{:.breadcrumbs}, click _Bid_{:.doc-button} in a shift bidding notification.  
+1. In menu:Me[Dashboard], click btn:[Bid] in a shift bidding notification.  
    A dialog window opens.
 2. Select a week from the drop-down menu, then a day.  
    You will see the available shifts for that day.
@@ -28,7 +28,7 @@ For scheduling periods with the status Shift bidding enabled created by your pla
    >
    > You can only bid on shifts up to 100 days in advance. Even if a corresponding scheduling period exists, you will see a message that no shifts are available on days more than 100 days in the future.
 
-3. Under **Choice**, click _1_{:.doc-button} next to your preferred shift. To add a second choice, click _2_{:.doc-button} next to another shift.  
+3. Under **Choice**, click btn:[1] next to your preferred shift. To add a second choice, click btn:[2] next to another shift.  
    You can place up to two bids on each day. Everyone can bid on the same shifts.  
    You can see how many shifts are needed on each day (Required) and how many times your colleagues have already bid on a specific shift (Requested).
 

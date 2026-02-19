@@ -1,1 +1,1 @@
-Select **Auto-Forecast** as the **Version**. In injixo Enterprise on-premise, you can select another version in which your forecast has been saved.
+Select *Auto-Forecast* as the *Version*. In injixo Enterprise on-premise, you can select another version in which your forecast has been saved.

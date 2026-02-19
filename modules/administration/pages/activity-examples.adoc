@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Set up standard activities with the help of examples.
 :related-articles: activities.adoc, work-with-skills.adoc
 
-To configure how activities are handled during scheduling and for reporting, use the xref:administration:activity-types-and-properties.adoc[activity types and properties] under _Plan > Configuration > Activities_{:.breadcrumbs}.
+To configure how activities are handled during scheduling and for reporting, use the xref:administration:activity-types-and-properties.adoc[activity types and properties] under menu:Plan[Configuration>Activities].
 
 Below, you will find configuration examples for frequently used activities, their type and matching properties.
 

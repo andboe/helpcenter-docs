@@ -17,11 +17,11 @@ To use the **Replace activities** functionality, the following conditions need t
 
 [#batch-replace-an-activity]
 == Batch replace an activity
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
+1. Go to menu:Plan[Schedules].
 2. Select a date range from the date picker.
-3. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Replace activities_{:.menu-item}.
+3. From the btn:[Scheduling actions] drop-down menu, select *Replace activities*.
 4. In the page that opens, configure the replacing process.<br>In the **Settings** section configure the following parameters:
-   - _Planning unit_{:.label}: After you select a planning unit, the list in the **Employees** section below updates and displays all the people assigned to the planning unit.
+   - *Planning unit*: After you select a planning unit, the list in the **Employees** section below updates and displays all the people assigned to the planning unit.
    - **Activity to be replaced**
    - **Replace activity with**: Select the activity that will replace the **Activity to be replaced**.
    - **Levels**: Check one or more checkboxes to select the [levels](/glossary/overview/#level) <!-- add link to levels once it's been reworked https://help.peopleware.com/tips-on-shift-center-usage#tip-9-working-with-different-levels --> in which the activity will be replaced.
@@ -29,7 +29,7 @@ To use the **Replace activities** functionality, the following conditions need t
      In the **Employees** section, select the people for whom you want to replace the activity. By default, Peopleware displays and pre-selects all the people assigned to the selected planning unit.
    - (Optional) Click the {icon-selection-filter-s} or the {icon-schedules-filter-employees-s} to filter out people. By default, all checkboxes are checked.
    - Uncheck the checkboxes next to the names of the people that you want to exclude. Uncheck the checkbox next to **Name** in the header to deselect all entries in the list.
-5. At the bottom left, click _Replace activities_{:.doc-button}.
+5. At the bottom left, click btn:[Replace activities].
 
-A process starts in the background. You are redirected to _Plan > Schedules_{:.breadcrumbs} and see a success or an error message at the top of the page.<br>
+A process starts in the background. You are redirected to menu:Plan[Schedules] and see a success or an error message at the top of the page.<br>
 Go to xref:general:jobstatus.adoc[Job status] to track the progress of the process. If the process fails, click the related entry to see the job details and the cause of the failure.

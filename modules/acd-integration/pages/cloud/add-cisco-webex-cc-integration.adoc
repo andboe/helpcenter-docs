@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Cisco Webex Contact Center integration is a cloud integration that imports call history, chat history, email history, social media history, agent status and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#prerequisites]
 == Prerequisites
@@ -54,15 +54,15 @@ The Cisco Webex Contact Center API endpoints vary by region. Ensure your integra
 
 [#add-a-cisco-webex-contact-center-integration]
 == Add a Cisco Webex Contact Center integration
-1. Go to _Account > Integrations_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Cisco**.
 5. From the **Model name** drop-down menu, select **Cisco Webex Contact Center**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-cisco-webex-contact-center-integration]
 == Set up your Cisco Webex Contact Center integration
 1. In the **Credentials** section, enter the required information.
 2. In the **Configuration** section, select your **Account region**.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].

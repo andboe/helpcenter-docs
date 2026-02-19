@@ -92,16 +92,16 @@ image::scheduling-night-shifts/image-4.png[Adjust the shift requirements table, 
 
 [#night-shift-related-settings]
 == Night shift-related settings
-- _48161_{:.id-label} _Mode for defining night work_
-- _48121_{:.id-label} _Earliest start time for night work_
-- _48122_{:.id-label} _Night work duration_
-- _48162_{:.id-label} _Reference time for night shifts_
+- *48161* _Mode for defining night work_
+- *48121* _Earliest start time for night work_
+- *48122* _Night work duration_
+- *48162* _Reference time for night shifts_
 
 [#additional-constraints-on-night-shifts-in-contracts]
 == Additional constraints on night shifts in contracts
-- _2632_{:.id-label} Max. night shifts per week
-- _2633_{:.id-label} Max. night shifts per month
-- _2634_{:.id-label} Max. consecutive night shifts
-- _2635_{:.id-label} _Ensure minimum number of days off after night work_
-- _2636_{:.id-label} _Ensure rest period after night work_
-- _2637_{:.id-label} _Ensure maximum number of working days before night work_
+- *2632* Max. night shifts per week
+- *2633* Max. night shifts per month
+- *2634* Max. consecutive night shifts
+- *2635* _Ensure minimum number of days off after night work_
+- *2636* _Ensure rest period after night work_
+- *2637* _Ensure maximum number of working days before night work_

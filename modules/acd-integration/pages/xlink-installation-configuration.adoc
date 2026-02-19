@@ -39,13 +39,13 @@ To configure both the login credentials and the server connection, you need to c
 === Create an Xlink user
 To install Xlink, you need a user who belongs to the user group _System_.
 
-1. Log in to injixo and go to _Administration > System > User Authorization_{:.breadcrumbs}.
+1. Log in to injixo and go to menu:Administration[System>User Authorization].
 2. Click the {icon-wfm-add} to create a new user.
 3. Enter _xlink_ as **username** and add a password.
-4. Click _OK_{:.doc-button}
+4. Click btn:[OK]
 5. Click the **new user** in the list of users.
 6. Under **Membership**, click the {icon-wfm-add} and select **System**.
-7. Click _OK_{:.doc-button} twice.
+7. Click btn:[OK] twice.
 
 Xlink will later use the user and password to connect to the server.
 
@@ -57,7 +57,7 @@ Xlink will later use the user and password to connect to the server.
 
 4. Open the file **Passcode.exe** in the **support-applications** folder.
 5. In the **upper field**, enter the _Xlink user password_ to display an encrypted password in the **lower field**.
-6. Copy the **encrypted password** to the clipboard for the next step and click _OK_{:.doc-button}  
+6. Copy the **encrypted password** to the clipboard for the next step and click btn:[OK]  
    image::xlink-installation-configuration/image-2.png[Passcode.exe without text input, width=75%]
 
 7. Replace the string **\<password from generator\>** (including the < >) with _your-encrypted-password_ you copied from _Passcode.exe_. The result should look like this:

@@ -12,7 +12,7 @@ It processes records of scheduled activities and actual performed activities and
 
 Time Management processes data as follows:
 
-- **Activity Recording**: Activity data can be imported from external systems (e.g. ACD systems) or can be directly recorded by people in _Me > Time Tracking_{:.breadcrumbs}
+- **Activity Recording**: Activity data can be imported from external systems (e.g. ACD systems) or can be directly recorded by people in menu:Me[Time Tracking]
 - **Rule Processing**: Peopleware applies calculation rules to the recorded activity data to validate, categorize, and account for time worked.
 - **Calculation and Review**: Peopleware calculates results that can be reviewed in Shift Center or Payroll overview.
 

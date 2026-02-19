@@ -31,9 +31,9 @@ Alternatively, make the changes in the Xlink user interface:
 
 1. Open the Xlink user interface isps_ul.exe.
 2. Click the external system you want to change on the left.
-3. Go to _Settings > ACD_{:.breadcrumbs} in the menu bar, or right-click the selected external system and click **Configuration**.
+3. Go to menu:Settings[ACD] in the menu bar, or right-click the selected external system and click **Configuration**.
 4. In the configuration dialog, change the ODBC information.
-5. Click _OK_{:.doc-button}.  
+5. Click btn:[OK].  
    The changes will be applied on the next import.
 
 [#is-a-new-mapping-required]
@@ -47,11 +47,11 @@ If you are changing to a completely new ACD (typically from a different vendor),
 We provide several standard interfaces besides the fully configurable universal interface and a CSV interface. Using the universal interface you can also consolidate data in a view and select the data from this view.
 As an Xlink replacement, the injixo Cloud offers a file-based integration (CSV), as well as native integrations. Learn more about xref:acd-integration:how-integrations-work.adoc[how integrations work].
 
-Create a new external system in _Administration > System > External Systems_{:.breadcrumbs} for the new Xlink ACD connection. Then configure it as described for xref:acd-integration:xlink-configuration-import-odbc.adoc[ODBC] or xref:acd-integration:xlink-configuration-import-csv.adoc[CSV].
+Create a new external system in menu:Administration[System>External Systems] for the new Xlink ACD connection. Then configure it as described for xref:acd-integration:xlink-configuration-import-odbc.adoc[ODBC] or xref:acd-integration:xlink-configuration-import-csv.adoc[CSV].
 
 [#operating-an-acd-test-system-in-parallel]
 == Operating an ACD test system in parallel
-If parallel operation of the old and new environment is requested, create the new ACD as another external system in _Administration > System > External Systems_{:.breadcrumbs}. Configure it as described for xref:acd-integration:xlink-configuration-import-odbc.adoc[ODBC] or xref:acd-integration:xlink-configuration-import-csv.adoc[CSV].
+If parallel operation of the old and new environment is requested, create the new ACD as another external system in menu:Administration[System>External Systems]. Configure it as described for xref:acd-integration:xlink-configuration-import-odbc.adoc[ODBC] or xref:acd-integration:xlink-configuration-import-csv.adoc[CSV].
 
 The new ACD appears on the left side of the Xlink as an additional external system. Data should not flow into the existing WFM queues, but into a new _test queue_. Create one or more new WFM queues and create a xref:acd-integration:xlink-mapping-telephony.adoc[Mapping] for the new telephone system. You can create a xref:acd-integration:xlink-mapping-activities.adoc[test mapping for activities] by assigning the external IDs from the new system.
 

@@ -27,12 +27,12 @@ Make sure the following applies:
 == Activate business hours
 To include volumes outside business hours into the forecast calculation, activate business hours separately for each workload.
 
-1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. Click _Edit_{:.doc-button}.
+1. In menu:Forecast[Workloads], select a workload.
+2. Click btn:[Edit].
 3. In the **Basic configuration** section, select a planning unit and an activity.
 4. Check the **Forecast within business hours only** checkbox.<br>
    If you update the planning unit's business hours, uncheck and check the checkbox again to update the forecast.
-5. Click _Save workload_{:.doc-button}.
+5. Click btn:[Save workload].
    A new forecast is calculated. The calculation can take some time.
 
 Once you have activated the business hours, the graph on the **Forecast** page displays periods outside business hours as gray areas.

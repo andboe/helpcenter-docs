@@ -1,1 +1,1 @@
-(Optional) If you selected **\[None\]** in the **Average Handling Time** field before, enter an value in seconds in the **Fixed Average Handling Time** field. If you selected a value type before, keep the default value (not taken into account).
+(Optional) If you selected *\[None\]* in the *Average Handling Time* field before, enter an value in seconds in the *Fixed Average Handling Time* field. If you selected a value type before, keep the default value (not taken into account).

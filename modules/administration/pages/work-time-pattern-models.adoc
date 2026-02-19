@@ -41,13 +41,13 @@ You can only use week time patterns as part of a work time pattern model. For a 
 
 To create a week time pattern, follow these steps:
 
-1. Go to _Plan > Configuration > Week time patterns_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Plan[Configuration>Week time patterns].
+2. Click btn:[Create].
 3. Configure the settings of the week time pattern:
    - **Name**: Enter a unique name (max. 50 characters).
    - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
    - **Maximum number of exception days per week**: xref:#exception-days[Exception days] allow to break the rules of the work time pattern model to better meet staff requirements.
-4. Click _Create_{:.doc-button}.
+4. Click btn:[Create].
 
 You can now add day models to your week time pattern.
 
@@ -55,7 +55,7 @@ You can now add day models to your week time pattern.
 === Add day models to a week time pattern
 1. In the configuration window of the week time pattern, go to the **Day models** section and click {icon-edit} Edit.
 2. Select one or more day models from the list.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 You can add both xref:administration:daymodel-basics.adoc#types-of-day-models[fixed and variable day models] to a week time pattern. If you use variable day models, the **Create optimized schedule** functionality can determine the optimal starting time of the shifts within the constraints set by the day model.
 
@@ -74,8 +74,8 @@ Replaceable activities can be replaced with plannable activities within a shift.
 ====
 [#create-work-time-pattern-models]
 == Create work time pattern models
-1. Go to _Plan > Configuration > Work time pattern models_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Plan[Configuration>Work time pattern models].
+2. Click btn:[Create].
 3. Configure the settings of the work time pattern model:
    - **Name**: Enter a unique name (max. 50 characters).
    - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
@@ -83,7 +83,7 @@ Replaceable activities can be replaced with plannable activities within a shift.
    - **Week Time Pattern - Exception Days**: Select the week time pattern that should be planned for xref:#exception-days[exception days].
    - (Optional) **Description**
 
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 You can now add week time patterns to your work time pattern model.
 
@@ -93,7 +93,7 @@ You can now add week time patterns to your work time pattern model.
 2. Choose a **Week time pattern** from the list.
 3. Set a **Position**.
    If you add several week time patterns, click the {icon-down-arrow-blue} and the {icon-up-arrow-blue} to change the position.
-4. Click _OK_{:.doc-button}.
+4. Click btn:[OK].
 
 [#position]
 === Position
@@ -150,16 +150,16 @@ When choosing a day model for the week, Peopleware cannot use day models defined
 
 [#add-work-time-pattern-models-to-people]
 == Add work time pattern models to people
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select a person from the list.
 3. In the left-side menu, click **Planning**.
-4. In the _Work time pattern models_{:.label} section, click {icon-plus} **Add**
+4. In the *Work time pattern models* section, click {icon-plus} **Add**
 5. Configure the following information:
    - **Work time pattern model**
    - **Reference date**
    - **Valid from** and **Valid to**: Configure these dates if you want to add the work time pattern model only temporarily to the person.
 
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 Use the xref:people:concept-mass-update.adoc[mass update functionality in WFM] to assign a work time pattern model to several people at once.
 

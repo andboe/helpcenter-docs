@@ -27,16 +27,16 @@ Learn more about xref:account:concept-user-authorization.adoc[user authorization
 
 == Open user authorization settings
 
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select the person for whom you want to edit user authorization settings.
-3. Click _Access_{:.breadcrumbs}.
+3. Click menu:Access[].
 4. In the **User authorization** section, click **Access user authorization of this person**.
 
 == Functional permissions
 
 1. Open the person's user authorization settings.
 2. Select or deselect the apps and features to add or remove access for the user.
-3. Click _OK_{:.doc-button}.
+3. Click btn:[OK].
 
 == Object permissions
 
@@ -46,7 +46,7 @@ Learn more about xref:account:concept-user-authorization.adoc[user authorization
 4. Filter or select the object.
    To select multiple objects, hold the Command key on MacOS or the Control key on Windows/Linux while clicking.
 5. Configure the object permissions as required.
-6. Click _OK_{:.doc-button}.
+6. Click btn:[OK].
 
 == Reset user authorization settings
 
@@ -55,4 +55,4 @@ Resetting a person's the user authorization settings reverts all individual perm
 1. Access User Authorization.
 2. Scroll to the app or object type for which you want to reset the User Authorization.
 3. Click the Reset icon {icon-asterisk} next to the app or object type.
-4. Click _OK_{:.doc-button}.
+4. Click btn:[OK].

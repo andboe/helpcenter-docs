@@ -10,18 +10,18 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Freshdesk Contact Center integration is a cloud integration that imports call history and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-freshdesk-contact-center-integration]
 == Add a Freshdesk Contact Center integration
 To add a new Freshdesk Contact Center integration, you need a Pro or Enterprise Freshdesk Contact Center account.
 
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Freshworks**.
 5. From the **Model name** drop-down menu, select **Freshcaller**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-freshdesk-contact-center-integration]
 == Set up your Freshdesk Contact Center integration
@@ -29,7 +29,7 @@ To add a new Freshdesk Contact Center integration, you need a Pro or Enterprise 
    - **Domain**: Enter your full Freshdesk Contact Center domain name including the subdomain, e.g. example.freshchat.com.
    - **API key**: Enter a valid API key of a Freshdesk Contact Center user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
 2. In the **Configuration** section, select the xref:#queue-names-by-grouping-strategy[grouping strategy for imported queues].
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 After you have saved the configuration, proceed in the **Install the Peopleware app** section on the page.
 

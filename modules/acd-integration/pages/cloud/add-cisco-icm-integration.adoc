@@ -9,16 +9,16 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 The Cisco ICM integration imports real-time adherence data. The integration uses xref:acd-integration:install-cloud-link.adoc[Cloud Link].
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-cisco-icm-integration]
 == Add a Cisco ICM integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Cisco**.
 5. From the **Model name** drop-down menu, select **Cisco ICM**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-cisco-icm-integration]
 == Set up your Cisco ICM integration
@@ -40,20 +40,20 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
    - **Peripheral gateway 1**: Enter the addresses (as IP address or DNS name) and port numbers to be used. Separate addresses with commas (e.g. “192.168.0.1:42027, 192.168.0.2:43027”). The first address is considered a Side A peripheral gateway, and the second one a Side B peripheral gateway. If you only enter one address, it is assumed that no Side B exists.
    - (Optional) **Peripheral gateway 2**.
 
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 RTA data starts to be imported but the data is only visible after you have mapped external identifiers to your people.
 
 [#map-external-identifiers-to-your-people]
 == Map external identifiers to your people
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Assign external identifiers to your people. The external identifiers are the Unified CCE Skill Target IDs.
 
 Learn more about xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[mapping external identifiers] to people.
 
 [#map-external-statuses-to-peopleware-activities]
 == Map external statuses to Peopleware activities
-1. Go to _Intraday > Configuration_{:.breadcrumbs}.
+1. Go to menu:Intraday[Configuration].
 2. Map external statuses from Cisco ICM to Peopleware activities.
 
 Learn more about xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[mapping external statuses] to Peopleware activities.

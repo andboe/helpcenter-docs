@@ -53,7 +53,7 @@ Users are logged out after 12 hours of inactivity.
 1. Go to the [login screen](https://app.peopleware.com/login).
 2. Click **Forgot your password?**
 3. Enter your **Email**.
-4. Click _Send Instructions_{:.doc-button} to receive an email with detailed instructions.
+4. Click btn:[Send Instructions] to receive an email with detailed instructions.
 5. Check your inbox. If you do not find the reset password email, check your spam folder.
 
 After you have changed your password, you will be redirected back to the login screen.

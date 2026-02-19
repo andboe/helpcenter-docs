@@ -19,7 +19,7 @@ Classic and Enterprise WFM contain ActiveX controls. You need to allow the brows
 In the browser settings, add all Peopleware pages (_\*.peopleware.com_) to the trusted sites:
 
 1. Open the Windows start menu, type internet options, and press the Enter key.
-2. On the **Security** tab, select the **Trusted sites** zone, and click _Sites_{:.doc-button}.
+2. On the **Security** tab, select the **Trusted sites** zone, and click btn:[Sites].
 3. In the **Add this website to the zone** field, enter https://\*.peopleware.com.
 4. Check the checkbox **Require server verification (https:) for all sites in this zone**.
 5. Click **Add**.
@@ -36,8 +36,8 @@ Adjust the security zone level for the trusted sites:
    Note: This checkbox is no longer available in Windows 11 and above.
 
 4. On the **Security** tab, adjust the security level for **Trusted Sites** to **Medium** or **Medium-Low**. Medium-Low allows you to skip steps 6 to 9.
-5. Click _OK_{:.doc-button}.
-6. Click _Custom level..._{:.doc-button}.
+5. Click btn:[OK].
+6. Click btn:[Custom level...].
 7. In the **Security Settings** dialog window, change the following settings:
 
 [%header, cols="1a,1a,".rstrip(',')]
@@ -54,12 +54,12 @@ Adjust the security zone level for the trusted sites:
 |ENABLED
 |===
 
-8. Click _OK_{:.doc-button}.
+8. Click btn:[OK].
 
    The following message appears: Are you sure you want to change the settings for this zone?
 
-9. Click _Yes_{:.doc-button}.
-10. To close the dialog window, click _OK_{:.doc-button}.
+9. Click btn:[Yes].
+10. To close the dialog window, click btn:[OK].
 
 [#peopleware-client-installation]
 == Peopleware client installation
@@ -74,11 +74,11 @@ If you see an error message <!-- Add message after it has been changed in People
 === Automatic client installation (WFM start page)
 If you are using the above browser settings, the client installs itself automatically when WFM is entered.
 
-1. Go to _WFM_{:.menu-item}.
+1. Go to *WFM*.
 2. Wait until the download has finished and the client installation starts.
 3. The browser shows this message: This webpage wants to run the following add-on: 'Peopleware Enterprise' from 'InVision AG'.<br>If the prompt does not appear, ask your IT for help.
-4. Click _Install_{:.doc-button} to install the required add-ons.
-5. Click _Install_{:.doc-button} to install the client.
+4. Click btn:[Install] to install the required add-ons.
+5. Click btn:[Install] to install the client.
 
 After successful installation, you can access ActiveX components.
 
@@ -89,13 +89,13 @@ Install the client manually, e.g. in WFM Enterprise on-premise or when the autom
 Note: If you are using a software distribution tool, run the installer for the user who will be logged in to the computer later, e.g. using Microsoft's msiexec.exe with the runas /user option.
 
 1. Download the [latest Peopleware client](https://downloads.peopleware.com/en#client-components).
-2. To run the MSI installer, click _Run_{:.doc-button}.
-3. To continue, click _Next_{:.doc-button}.
+2. To run the MSI installer, click btn:[Run].
+3. To continue, click btn:[Next].
 4. (Optional) Edit the installation path.
 5. If the computer is shared by several users, select **Everyone**.
-6. To continue, click _Next_{:.doc-button}.
-7. To start the installation, click _Install_{:.doc-button}.
+6. To continue, click btn:[Next].
+7. To start the installation, click btn:[Install].
    The following message appears: Do you want to allow the following program from an unknown publisher to make changes to this computer?
-8. Click _Yes_{:.doc-button} to confirm the message.
+8. Click btn:[Yes] to confirm the message.
 
 After successful installation, you can access ActiveX components.

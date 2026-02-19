@@ -7,20 +7,20 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Manually add or delete activities, day models, availabilities, and comments in your peoples' shifts in Shift Center.
 :page-aliases: add-and-delete-items
 
-In _Plan > Shift Center_{:.breadcrumbs}, you can manually add and delete the following _entries_{:.css} to your schedule:
+In menu:Plan[Shift Center], you can manually add and delete the following *entries* to your schedule:
 
 - xref:administration:activities.adoc[Activities]
 - xref:administration:daymodel-basics.adoc[Day models]
 - xref:administration:availabilities.adoc[Availabilities]
 - Comments
 
-New to _Shift Center_{:.css}? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
+New to *Shift Center*? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
 
 [#level-in-the-schedule-area]
 == Levels in the schedule area
-You can add different _entries_{:.css} in the levels in the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area]. Select the levels you want to display in the _schedule area_{:.css} with xref:scheduling:shift-center-overview.adoc#action-bar[the action bar].
+You can add different *entries* in the levels in the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area]. Select the levels you want to display in the *schedule area* with xref:scheduling:shift-center-overview.adoc#action-bar[the action bar].
 
-The following table provides an overview of the _entries_{:.css} you can add to each level:
+The following table provides an overview of the *entries* you can add to each level:
 
 <style>
    table {
@@ -48,7 +48,7 @@ The following table provides an overview of the _entries_{:.css} you can add to 
 |<i class="icon-check">
 |
 |<i class="icon-check">
-|_Time Recording_{:.css}
+|*Time Recording*
 |<i class="icon-check">
 |
 |
@@ -68,7 +68,7 @@ The following table provides an overview of the _entries_{:.css} you can add to 
 |<i class="icon-check">
 |
 |<i class="icon-check">
-|_Absence Request_{:.css}
+|*Absence Request*
 |<i class="icon-check">
 |
 |
@@ -104,82 +104,82 @@ The following table provides an overview of the _entries_{:.css} you can add to 
 == Add activities
 To add activities, follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css}.
-   The _configuration window_{:.css} opens in the _Activities_{:.label} tab.  
-   The _Activities_{:.label} tab displays a table with the scheduled activities, if there are any.
-2. Select an activity type from the _Type_{:.label} drop-down menu.
-3. Click _Add_{:.doc-button}.  
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*.
+   The *configuration window* opens in the *Activities* tab.  
+   The *Activities* tab displays a table with the scheduled activities, if there are any.
+2. Select an activity type from the *Type* drop-down menu.
+3. Click btn:[Add].  
    A row for the activity type is added to the table if at least one activity of this type is available. Activities can be unavailable because they are not set up for the selected activity type, they are not assigned to the person's planning unit or because the person does not have the skills required for the activity.
 4. Configure the activity in the following columns:
-   - _Activity_{:.label}
-   - _Start time_{:.label}
-   - _End time_{:.label}
-   - _-/0/+_{:.label}: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
+   - *Activity*
+   - *Start time*
+   - *End time*
+   - *-/0/+*: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
 
-5. Click _OK_{:.doc-button}.
+5. Click btn:[OK].
 
 [#add-multiactivities]
 === Add multiactivities
 To add xref:administration:activity-types-and-properties.adoc#subactivities[multiactivities], follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css}, and click the _Multi-Activities_{:.label} tab in the _configuration window_{:.css}.
-   The _configuration window_{:.css} displays a table with the scheduled multiactivities, if there are any, and a list of multiactivities assigned to the person's planning unit on the right. To see the subactivities assigned to the multiactivity, click the {icon-plus}.
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*, and click the *Multi-Activities* tab in the *configuration window*.
+   The *configuration window* displays a table with the scheduled multiactivities, if there are any, and a list of multiactivities assigned to the person's planning unit on the right. To see the subactivities assigned to the multiactivity, click the {icon-plus}.
 2. Double-click the multiactivity.  
    Rows for the multiactivity are added to the table.
 3. Configure the multiactivity in the following columns:
-   - _Start Time_{:.label}
-   - _End Time_{:.label}
-   - _-/0/+_{:.label}: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
+   - *Start Time*
+   - *End Time*
+   - *-/0/+*: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
 
-4. Click _OK_{:.label}.
+4. Click *OK*.
 
 [#add-full-day-activities]
 === Add full-day activities
 If you have xref:administration:activity-types-and-properties.adoc#activity-properties[allowed an activity as a full-day activity], add it by following these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css}, and click the _Full-Day Activities_{:.label} tab in the _configuration window_{:.css}.  
-   The _configuration window_{:.css} displays a table with the scheduled _full-day activities_{:.css}, if there are any. To display all _full-day activities_{:.css} of the year for the relevant person, check the _Display All Full-Day Activities of the Year_{:.label} checkbox.
-2. Select an activity type from the _Type_{:.label} drop-down menu.
-3. Click _Add_{:.doc-button}.  
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*, and click the *Full-Day Activities* tab in the *configuration window*.  
+   The *configuration window* displays a table with the scheduled *full-day activities*, if there are any. To display all *full-day activities* of the year for the relevant person, check the *Display All Full-Day Activities of the Year* checkbox.
+2. Select an activity type from the *Type* drop-down menu.
+3. Click btn:[Add].  
    A row for the full-day activity is added to the table.
 4. Configure the full-day activity in the following columns:
-   - _Activity_{:.label}
-   - _Start Date_{:.label}
-   - _End Date_{:.label}
+   - *Activity*
+   - *Start Date*
+   - *End Date*
 
-5. Click _OK_{:.doc-button}.
+5. Click btn:[OK].
 
 [#add-day-models]
 == Add day models
 To add day models, follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css}, and click the _Day models_{:.label} tab in the _configuration window_{:.css}.  
-   The _configuration window_{:.css} displays a table with scheduled day models, and the _Day Models (PU)_{:.label} and _Day Models (Emp.)_{:.label} lists with _expandable sections_{:.css} on the right. The _Understaffed Shifts_{:.label} and _Generated Shifts_{:.label} sections include the results of the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[shift generation]. The other _expandable sections_{:.css} include day models sorted by abbreviation, time, or duration. To expand the sections, click the {icon-plus} next to them.
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*, and click the *Day models* tab in the *configuration window*.  
+   The *configuration window* displays a table with scheduled day models, and the *Day Models (PU)* and *Day Models (Emp.)* lists with *expandable sections* on the right. The *Understaffed Shifts* and *Generated Shifts* sections include the results of the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[shift generation]. The other *expandable sections* include day models sorted by abbreviation, time, or duration. To expand the sections, click the {icon-plus} next to them.
 2. Click the {icon-plus} next to the day model you want to add.  
    Variable day models display a list of possible times at which you can add them. Fixed day models display only one day model time option.
 3. Double-click the day model time.  
    A row for the day model is added to the table. To display the day model details, click the {icon-plus} next to the day model.
-4. (Optional) For variable day models, click the cell in the _Start Time_{:.label} column and set the start time with the drop-down menu. The _End Time_{:.label} changes according to the duration of the day model.
-5. Click _OK_{:.doc-button}.
+4. (Optional) For variable day models, click the cell in the *Start Time* column and set the start time with the drop-down menu. The *End Time* changes according to the duration of the day model.
+5. Click btn:[OK].
 
 [#add-availabilities]
 == Add availabilities
 To add availabilities, follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css} in the _Availability_{:.label} level row.
-   The _configuration window_{:.css} opens in the _Availability_{:.label} tab. The _Availability_{:.label} tab displays a table with the availabilities of the relevant person.
-2. Click _Add_{:.label}.  
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell* in the *Availability* level row.
+   The *configuration window* opens in the *Availability* tab. The *Availability* tab displays a table with the availabilities of the relevant person.
+2. Click *Add*.  
    A row for the availability is added to the table.
 3. Configure the availability in the following columns:
-   - _Start Time_{:.label}
-   - _End Time_{:.label}
-   - _-/0/+_{:.label}: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
+   - *Start Time*
+   - *End Time*
+   - *-/0/+*: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
 
-4. Click _OK_{:.label}.
+4. Click *OK*.
 
 [#add-day-model-availabilities]
 === Add day model availabilities
-In the xref:#add-availabilities[Availability tab] of the _configuration window_{:.css}, you can also add availabilites configured as xref:administration:availabilities.adoc#configure-availabilities[day model availabilities]. The _Availability_{:.label} tab displays the _Day Models (PU)_{:.label} list with _expandable sections_{:.css} on the right. The _expandable sections_{:.css} include day model availabilities sorted by abbreviation or start time. To expand the sections, click the {icon-plus} next to them. To add day model availabilities, follow these steps:
+In the xref:#add-availabilities[Availability tab] of the *configuration window*, you can also add availabilites configured as xref:administration:availabilities.adoc#configure-availabilities[day model availabilities]. The *Availability* tab displays the *Day Models (PU)* list with *expandable sections* on the right. The *expandable sections* include day model availabilities sorted by abbreviation or start time. To expand the sections, click the {icon-plus} next to them. To add day model availabilities, follow these steps:
 
 <!-- An availability specifies certain time slots on a day where an employee is available for work. If no availability has been defined, the employee is considered as _available_ for the whole day. -->
 
@@ -187,11 +187,11 @@ In the xref:#add-availabilities[Availability tab] of the _configuration window_{
 2. Double-click the day model availability.  
    A row for the day model availability is added to the table.
 3. Configure the day model availability in the following columns:
-   - _Start Time_{:.label}
-   - _End Time_{:.label}
-   - _-/0/+_{:.label}: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
+   - *Start Time*
+   - *End Time*
+   - *-/0/+*: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
 
-4. Click _OK_{:.label}.
+4. Click *OK*.
 
 [NOTE]
 ====
@@ -210,24 +210,24 @@ If you add day model availabilities with overlapping time, they are combined int
 == Add comments
 In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], you can add comments to each level for each person per day. To add comments, follow these steps:
 
-1. Double-click a _day cell_{:.css}, and click the _Comments_{:.label} tab in the _configuration window_{:.css}.
+1. Double-click a *day cell*, and click the *Comments* tab in the *configuration window*.
 2. Enter a comment with a maximum length of 250 characters.
-3. Click _OK_{:.doc-button}.  
-   The _day cell_{:.css} you commented is highlighted with a thicker border. To see the comment, hover over the _day cell_{:.css}.
+3. Click btn:[OK].  
+   The *day cell* you commented is highlighted with a thicker border. To see the comment, hover over the *day cell*.
 
 You can see the comments you add in different parts of Peopleware:
 
-- The xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area] in _Shift Center_{:.label}
-- The xref:scheduling:schedules-overview.adoc#schedule-area[schedule area] in _Plan > Schedules_{:.breadcrumbs}
+- The xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area] in *Shift Center*
+- The xref:scheduling:schedules-overview.adoc#schedule-area[schedule area] in menu:Plan[Schedules]
 - In xref:me:explore-me.adoc#see-your-schedule-my-calendar[Me] if you add the comment to a day within a scheduling period with the status Published or Shift bidding enabled.
 
 [#add-activities-day-models-availabilities-or-comments-to-multiple-people]
 == Add activities, day models, availabilities, or comments to multiple people
-You can add the same activity, day model, availability, or comments to the schedule of multiple people at once on the same day. To add the same _entry_{:.css} to a _day cell_{:.css} of multiple people, follow these steps:
+You can add the same activity, day model, availability, or comments to the schedule of multiple people at once on the same day. To add the same *entry* to a *day cell* of multiple people, follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css} and click the _Employees_{:.label} tab.
-2. Check the checkboxes next to the people for whom you want to add an _entry_{:.css}. To select or deselect all people, click _All_{:.doc-button} or _None_{:.doc-button}.
-3. Click the tab that corresponds to the _entry_{:.css} you want to add, e.g. the _Activities_{:.label} tab.
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell* and click the *Employees* tab.
+2. Check the checkboxes next to the people for whom you want to add an *entry*. To select or deselect all people, click btn:[All] or btn:[None].
+3. Click the tab that corresponds to the *entry* you want to add, e.g. the *Activities* tab.
 4. Add an xref:#add-activities[activity], xref:#add-day-models[day model], xref:#add-availabilities[availability], or xref:#add-comments[comment].
 
 [WARNING]
@@ -236,36 +236,36 @@ You can add the same activity, day model, availability, or comments to the sched
 >
 [NOTE]
 ====
-Users with Admin access or the _Planner_{:.label} role can update schedules regardless of any scheduling rule violations. If they update the schedule of multiple people at once, check if any scheduling rule was violated in the xref:scheduling:shift-center-overview.adoc#message-area[message area].
+Users with Admin access or the *Planner* role can update schedules regardless of any scheduling rule violations. If they update the schedule of multiple people at once, check if any scheduling rule was violated in the xref:scheduling:shift-center-overview.adoc#message-area[message area].
 ====
 [#delete-activities-day-models-availabilities-or-comments]
 == Delete activities, day models, availabilities, or comments
-In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], you can delete activities, day models, availabilities, or comments, or delete all _entries_{:.css} of a _day cell_{:.css}.
+In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], you can delete activities, day models, availabilities, or comments, or delete all *entries* of a *day cell*.
 
 [#delete-activities-day-models-or-availabilities]
 === Delete activities, day models, or availabilities
 You have two options to delete activities, day models, and availabilities:
 
-- In the _schedule area_{:.css}: Right-click the _entry_{:.css} you want to delete in xref:scheduling:shift-center-overview.adoc#day-week-month-and-year-columns[the expanded day cell] and select _Delete Entry_{:.label}.
+- In the *schedule area*: Right-click the *entry* you want to delete in xref:scheduling:shift-center-overview.adoc#day-week-month-and-year-columns[the expanded day cell] and select *Delete Entry*.
 
-- In the _configuration window_{:.css}:
-  1. Double-click the _day cell_{:.css}.
-  2. Select the tab corresponding to the _entry_{:.css} you want to delete, e.g. the _Activities_{:.label} tab.
-  3. Click the row of the _entry_{:.css} you want to delete in the table.
-  4. Click _Delete_{:.label}.
-  5. Click _OK_{:.label}.
+- In the *configuration window*:
+  1. Double-click the *day cell*.
+  2. Select the tab corresponding to the *entry* you want to delete, e.g. the *Activities* tab.
+  3. Click the row of the *entry* you want to delete in the table.
+  4. Click *Delete*.
+  5. Click *OK*.
 
 [#delete-comments]
 === Delete comments
 To delete comments, follow these steps:
 
-1.  Double-click the _day cell_{:.css}, and click the _Comments_{:.label} tab.
+1.  Double-click the *day cell*, and click the *Comments* tab.
 2.  Delete the comment.
-3.  Click _OK_{:.doc-button}
+3.  Click btn:[OK]
 
 [#delete-all-entries-of-a-day-cell]
 === Delete all entries of a day cell
-To delete all _entries_{:.css} of a _day cell_{:.css}, right-click the _day cell_{:.css} and select _Delete All Entries_{:.label}.
+To delete all *entries* of a *day cell*, right-click the *day cell* and select *Delete All Entries*.
 
 [WARNING]
 ====
@@ -273,25 +273,25 @@ To delete all _entries_{:.css} of a _day cell_{:.css}, right-click the _day cell
 >
 [NOTE]
 ====
-_Entries_{:.css} are deleted without prior confirmation. To recover deleted _entries_{:.css}, use the xref:#recover-previous-schedules-states[History tab].
+*Entries* are deleted without prior confirmation. To recover deleted *entries*, use the xref:#recover-previous-schedules-states[History tab].
 ====
 [#recover-previous-schedules-states]
 == Recover previous schedules states
-Whenever you create or update a schedule, or delete _entries_{:.css}, the schedule state previous to the change is saved in the _History_{:.label} tab. To recover the schedule state, follow these steps:
+Whenever you create or update a schedule, or delete *entries*, the schedule state previous to the change is saved in the *History* tab. To recover the schedule state, follow these steps:
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a _day cell_{:.css}, and click the _History_{:.label} tab.  
-   The _History_{:.label} tab includes a table with the current schedule on the top and previous schedules states sorted by chronological order.
-2. Click the number of the schedule state you want to recover in the _Layer_{:.label} column.  
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*, and click the *History* tab.  
+   The *History* tab includes a table with the current schedule on the top and previous schedules states sorted by chronological order.
+2. Click the number of the schedule state you want to recover in the *Layer* column.  
    The schedule state is replicated above the current schedule.
-3. Click _OK_{:.doc-button}.
+3. Click btn:[OK].
 
 [#booking-date-and-columns---0-+]
 == Booking date and columns -/0/+
-The _Activities_{:.label}, _Multi-Activities_{:.label}, and _Availability_{:.label} tabs of the _configuration window_{:.css} include tables with a _Booking Date_{:.label} column and configurable _-/0/+_{:.label} columns. The _Booking Date_{:.label} and _-/0/+_{:.label} columns function as follows:
+The *Activities*, *Multi-Activities*, and *Availability* tabs of the *configuration window* include tables with a *Booking Date* column and configurable *-/0/+* columns. The *Booking Date* and *-/0/+* columns function as follows:
 
-- _Booking Date_{:.label}: Indicates the date of the _day cell_{:.css} you clicked to open the _configuration window_{:.css}.
+- *Booking Date*: Indicates the date of the *day cell* you clicked to open the *configuration window*.
 
-- _-/0/+_{:.label}: Set the start or end time of the activity or availability to the _Booking Date_{:.label}, or to the previous or following day. The first _-/0/+_{:.label} column refers to the start time and the second refers to the end time. Select one of the options:
-  - _-_{:.label}: Set the start or end time to the day before the _Booking Date_{:.label}.
-  - _0_{:.label}: Keep the start or end time on the _Booking Date_{:.label}.
-  - _+_{:.label}: Set the start or end time to the day after the _Booking Date_{:.label}.
+- *-/0/+*: Set the start or end time of the activity or availability to the *Booking Date*, or to the previous or following day. The first *-/0/+* column refers to the start time and the second refers to the end time. Select one of the options:
+  - *-*: Set the start or end time to the day before the *Booking Date*.
+  - *0*: Keep the start or end time on the *Booking Date*.
+  - *+*: Set the start or end time to the day after the *Booking Date*.

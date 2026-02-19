@@ -23,7 +23,7 @@ Once a time-off period is set up and published, people in the assigned planning 
 [NOTE]
 ====
 Only people with a role that grants the Access time off permission can request time off.
-Roles are assigned to people in _Account > Roles_{:.breadcrumbs}.
+Roles are assigned to people in menu:Account[Roles].
 Learn more about xref:account:role-permissions.adoc[role permissions].
 ====
 Use
@@ -53,12 +53,12 @@ You set a status when you create the time-off period, but you can change the sta
 === Notify people of published time-off periods
 To inform people by email about the fact that they can request time-off in a time-off period, proceed as follows:
 
-1. Go to _Time Off > Periods_{:.breadcrumbs}.
+1. Go to menu:Time Off[Periods].
 2. Select an existing time-off period or create a new one.
 3. Make sure the status of the time-off period is set to Published.
 4. Activate the **Send notification** checkbox.
 5. Optional: Enter a comment. The comment will be included in the notification email.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 Peopleware sends a notification email to all people that meet the following criteria:
 
@@ -76,7 +76,7 @@ Peopleware clears the notification settings, including the comment, after saving
 ====
 [#manage-time-off-periods]
 == Manage time-off periods
-1. Go to _Time Off > Periods_{:.breadcrumbs}.
+1. Go to menu:Time Off[Periods].
 2. Click the {icon-filter-plus} to access filtering options.
 
 The table shows information for all time-off periods that match the filter criteria.

@@ -1,1 +1,1 @@
-If your workloads have a forecasted average handling time (AHT), select the **value type** for the **Average Handling Time**. If not, select **\[None\]**.
+If your workloads have a forecasted average handling time (AHT), select the *value type* for the *Average Handling Time*. If not, select *\[None\]*.

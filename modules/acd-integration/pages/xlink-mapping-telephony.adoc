@@ -25,8 +25,8 @@ You can map one or more queues from your external system to a queue value type c
 3. Click the **plus icon** next to the queue to expand the value types. Select a **value type**.
 4. Double-click the **value type** in the _Interface_ section on the left that you want to add to the mapping. It appears in the _Assigned Valuetypes_ section.
 5. Double-click the **value type** in the _WFM Queue_ section on the right to create or edit a calculation script. The default script calculates the sum of all added value types. You can use it as template to xref:acd-integration:generate-xlink-scripts.adoc[create your own scripts].
-6. In the new window, click _Create_{:.doc-button} to create a new default script.
-7. Click _OK_{:.doc-button} to save the script.
+6. In the new window, click btn:[Create] to create a new default script.
+7. Click btn:[OK] to save the script.
 
 Xlink imports will now execute the calculation script for the related mapping and save the results to the combination of queue, value type, and version within injixo.
 
@@ -52,4 +52,4 @@ Note: The order of the lines depends on the order in which you have executed the
 4. Double-click a **mapping entry** in the _Assigned Valuetypes_ section to remove it.
 5. Double-click the **value type** in the _WFM Queue_ section on the right to remove/edit the existing script.
 6. Delete the script content completely, or edit it if the number/order of assigned parameters changes.
-7. Click _OK_{:.doc-button} to save the script.
+7. Click btn:[OK] to save the script.

@@ -26,10 +26,10 @@ The following table provides an overview of the supported object types and how d
 |Import type
 |Forecast
 |Import forecast data including forecast versions to a workload.
-|Manual upload in _Forecast > Workloads_{:.breadcrumbs}
+|Manual upload in menu:Forecast[Workloads]
 |Time-off account balance
 |Import time-off account balance data for people.
-|Manual upload in _Time Off > Accounts_{:.breadcrumbs}
+|Manual upload in menu:Time Off[Accounts]
 |Contact data
 |Import contact data.
 |CSV integration
@@ -43,7 +43,7 @@ The following table provides an overview of the supported object types and how d
 
 <!-- Time-off quotas are unreleased at the time of writing
 
-| Time-off quota           | Import time-off quotas for planning units.                      | Manual upload in _Time Off > Quotas_{:.breadcrumbs}    |-->
+| Time-off quota           | Import time-off quotas for planning units.                      | Manual upload in menu:Time Off[Quotas]    |-->
 
 [NOTE]
 ====
@@ -56,7 +56,7 @@ CSV import for some object types may not be available in your Peopleware plan.
 >
 [NOTE]
 ====
-- Time-off-related object types are available only in _Time off_{:.breadcrumbs}.
+- Time-off-related object types are available only in menu:Time off[].
 - Plan data imports are a paid feature.
 - CSV imports for forecast data are available only in the Advanced WFM and Enterprise WFM plans.
 ====

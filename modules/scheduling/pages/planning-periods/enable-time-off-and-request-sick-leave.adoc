@@ -13,23 +13,23 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under _Plan > Time Off_{:.breadcrumbs} instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under menu:Plan[Schedules] and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under menu:Plan[Time Off] instead.
 ====
 [#allow-time-off-requests-and-sick-leave]
 == Allow time-off requests and sick leave
-To allow _time-off requests_ or sick leave, you first have to activate the option in Me. Click _Me_{:.breadcrumbs} in the main navigation and turn on **Time Off Requests**.
+To allow _time-off requests_ or sick leave, you first have to activate the option in Me. Click menu:Me[] in the main navigation and turn on **Time Off Requests**.
 
-1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
-2. Choose the _Planning Unit_{:.label} you want to allow time-off requests for.
+1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+2. Choose the *Planning Unit* you want to allow time-off requests for.
 3. As **Type**, choose one of your requestable activities. Learn how to configure an xref:administration:activities.adoc[activity as **Requestable in Me**]. Then add the activity to the xref:administration:create-and-manage-planning-units.adoc[planning unit].
-4. Choose a _Selection_{:.label} if you want to limit time-off requests to a certain group of agents. Otherwise, keep **[All]**.
-5. Click _Apply_{:.doc-button}.
-6. If a matching planning period exists, select it and click the _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} button in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add} button in the action bar.
+4. Choose a *Selection* if you want to limit time-off requests to a certain group of agents. Otherwise, keep **[All]**.
+5. Click btn:[Apply].
+6. If a matching planning period exists, select it and click the *![edit button](/assets/img/common/item-edit.gif)* button in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add} button in the action bar.
 
 In both cases, the following dialog appears:
 

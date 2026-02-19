@@ -15,7 +15,7 @@ Before your people can request time off in Peopleware Me, you need to create tim
 == Time-off types
 In Time Off , types are absence categories that distinguish between different reasons for absences, such as sickness, vacation, or parental leave. For example, if your organization offers one day off per year for volunteering at an NGO, you can add the type Volunteering leave. The different types of time off can be paid or unpaid, depending on your organization's needs and national legislation.
 
-When you create a type in Time Off , a full-day activity of the type Absence with the same name is automatically created in _Plan > Configuration > Activities_{:.breadcrumbs}. If the time-off type is paid and/or requestable, the activity is configured the same.
+When you create a type in Time Off , a full-day activity of the type Absence with the same name is automatically created in menu:Plan[Configuration>Activities]. If the time-off type is paid and/or requestable, the activity is configured the same.
 
 [NOTE]
 ====
@@ -23,7 +23,7 @@ When you create a type in Time Off , a full-day activity of the type Absence wit
 >
 [NOTE]
 ====
-If your reporting relies on the other activity types, Illness or Vacation, create any new activity in _Plan > Configuration > Activities_{:.breadcrumbs} instead. Such activities also create a new time-off type in Time Off .
+If your reporting relies on the other activity types, Illness or Vacation, create any new activity in menu:Plan[Configuration>Activities] instead. Such activities also create a new time-off type in Time Off .
 ====
 Peopleware uses the activity to represent the time off in Schedules and Shift Center.
 
@@ -62,8 +62,8 @@ You can activate or deactivate the fill-up functionality for any paid type at an
 ====
 [#create-a-time-off-type]
 === Create a time-off type
-1. Go to _Time Off > Types_{:.breadcrumbs}.
-2. Click _Create type_{:.doc-button} on the right.
+1. Go to menu:Time Off[Types].
+2. Click btn:[Create type] on the right.
 3. Enter the following information:
    - **Name**
    - **Time unit**: Select whether you want to calculate the time off taken in hours or days.<br>Depending on national legislation, it may be mandatory to calculate time off in hours or days.<br>You cannot change the time unit after saving the new time-off type.
@@ -72,21 +72,21 @@ You can activate or deactivate the fill-up functionality for any paid type at an
    - **Requestable**: People can request time off for requestable types only. Planners can add non-requestable types to a person's schedule, e.g. in case of sickness. People can select the non-requestable types, e.g. to see their current balance.
    - **Deducts from entitlement**: Ensures that approved requests for this type-off type reduce the person’s time-off balance for the associated entitlement.
    - **Start of leave year**: Defines the start date of a recurring annual entitlement period. Entitlement is granted for or accrued over the leave year.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#edit-a-time-off-type]
 === Edit a time-off type
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. In the table, select the type that you want to edit.
 3. Edit the information.
-4. Click _Save changes_{:.doc-button}.
+4. Click btn:[Save changes].
 
 [#delete-a-time-off-type]
 === Delete a time-off type
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. In the table, select the type that you want to delete.
-3. Click _Delete type_{:.doc-button}.
-4. In the confirmation window, click _Delete type_{:.doc-button}.
+3. Click btn:[Delete type].
+4. In the confirmation window, click btn:[Delete type].
 
 [NOTE]
 ====

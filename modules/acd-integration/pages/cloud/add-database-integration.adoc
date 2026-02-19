@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Connect your database to import data.
 :related-articles: how-integrations-work.adoc, install-cloud-link.adoc, import-agent-status-data.adoc
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#what-is-a-database-integration]
 == What is a database integration?
@@ -22,12 +22,12 @@ Use a database integration in the following cases:
 
 [#add-a-database-integration]
 == Add a database integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Universal interfaces**.
 5. From the **Model name** drop-down menu, select **Database**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-database-integration]
 == Set up your database integration
@@ -55,7 +55,7 @@ Use a database integration in the following cases:
    - **Time zone**.
    - **SQL query**: Enter the SQL query to get the data from your database table or view. Learn more about the xref:#sql-query[SQL Query].
 
-2. Click _Save_{:.doc-button}.  
+2. Click btn:[Save].  
    The integration starts importing data. The initial import can take a while.  
    All queues imported from the connected database are available automatically on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.  
    External activities are available in the Present activity (ID 1). To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities].

@@ -112,7 +112,7 @@ The Cloud Link installation displays the following message, including a PIN:
 
 1. Return to the **Add a new integration** page in your browser.
 2. In the **injixo Cloud Link** section, enter your PIN in the six-digit input field **PIN shown during installation**.
-3. Click _Connect_{:.doc-button}.  
+3. Click btn:[Connect].  
    Cloud Link connects to Peopleware. You can continue setting up your xref:acd-integration:add-an-integration.adoc#what-are-on-premise-integrations[on-premise integration] or xref:acd-integration:add-csv-integration.adoc[CSV integration].
 
 [#connect-through-a-proxy-server]
@@ -223,7 +223,7 @@ table th:nth-of-type(2) {
 |How do I get a new PIN if the old one has expired?
 |Restart Cloud Link. Enter the new PIN from the log file in the six-digit input field in the **injixo Cloud Link** section on the configuration page.
 |How do I delete Cloud Link from my system?
-|1. Re-run the Cloud Link installer or go to _Programs > Programs and Features_{:.breadcrumbs} in Windows. +2. Right-click the **injixo Cloud Link** entry in the list and select **Uninstall** or **Uninstall/Change**. +3. Follow the on-screen instructions. + +To uninstall additional instances, go to _Programs > Programs and Features_{:.breadcrumbs} in Windows and follow steps 2 and 3.
+|1. Re-run the Cloud Link installer or go to menu:Programs[Programs and Features] in Windows. +2. Right-click the **injixo Cloud Link** entry in the list and select **Uninstall** or **Uninstall/Change**. +3. Follow the on-screen instructions. + +To uninstall additional instances, go to menu:Programs[Programs and Features] in Windows and follow steps 2 and 3.
 |How do I move Cloud Link to a new server?
 |1. Click the {icon-edit} to the right of an integration to edit it. +2. Click **Connect a new installation of Cloud Link**. +3. Download Cloud Link again if needed and install the software on the new server.
 |How do I change the integration for an existing Cloud Link installation?

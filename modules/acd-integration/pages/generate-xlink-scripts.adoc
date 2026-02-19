@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 Import scripts determine how Xlink handles the data to be imported.
 
-When mapping call data, you can automatically create scripts that sum up all associated ACD metrics and write them to the associated _WFM_{:.menu-item} queue value type combination.
+When mapping call data, you can automatically create scripts that sum up all associated ACD metrics and write them to the associated *WFM* queue value type combination.
 
 Import scripts are created in the _BASIC_ programming language. The Xlink supports the dialect "Enable Basic".
 
@@ -16,7 +16,7 @@ Sometimes it may be necessary to create special scripts, e.g. for weekday or tim
 
 [#create-your-own-scripts]
 == Create your own scripts
-To create your own import script, you should always use _Create_{:.doc-button}. The script template is an ideal starting point for your own scripts.
+To create your own import script, you should always use btn:[Create]. The script template is an ideal starting point for your own scripts.
 
 [#example-for-a-standard-script-with-an-assigned-key-figure]
 === Example for a standard script with an assigned key figure
@@ -45,7 +45,7 @@ There are a few predefined variables described below, whose names must not be ch
 
 [#result]
 ==== Result
-The result of the script procedure is assigned here. To save storage space in the database, the variable can only contain integer values. Decimal places are not considered, but truncated. The result is multiplied by 100 before saving to _WFM_{:.menu-item} (`Result = Para1 * 100`). In this way, values such as "80,23" are converted to "8023" and can be stored as integers.
+The result of the script procedure is assigned here. To save storage space in the database, the variable can only contain integer values. Decimal places are not considered, but truncated. The result is multiplied by 100 before saving to *WFM* (`Result = Para1 * 100`). In this way, values such as "80,23" are converted to "8023" and can be stored as integers.
 
 [#para-para1-para2-etc]
 ==== Para... (Para1, Para2 etc.)
@@ -157,7 +157,7 @@ Of course you can also define your own variables, e.g. to save intermediate resu
 
 [#syntax-check]
 == Syntax check
-By clicking the _Test_{:.doc-button} button you can perform a syntax check on the script you have created. The script is only checked for syntactic correctness, there is no check for mathematically invalid actions such as division by zero.
+By clicking the btn:[Test] button you can perform a syntax check on the script you have created. The script is only checked for syntactic correctness, there is no check for mathematically invalid actions such as division by zero.
 
 [NOTE]
 ====

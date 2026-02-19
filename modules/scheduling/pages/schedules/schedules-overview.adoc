@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: View and edit shifts, activities and other scheduling elements like time-off requests.
 :related-articles: analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc, schedules-edit.adoc, schedules-comments.adoc
 
-In _Plan > Schedules_{:.breadcrumbs}, you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
+In menu:Plan[Schedules], you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
 The Schedules page consists of an action bar, the schedules area and the activities area. The different sections of this article explain what you can do on each part of the page.
 
 [#prerequisites]
@@ -29,11 +29,11 @@ On the left side of the top bar, you have different filtering options:
 
 [#notify-people]
 === Notify people
-Click _Notify people_{:.doc-button} to xref:scheduling:notify-people.adoc[let people know about changes made to their schedule] via push notifications or emails.
+Click btn:[Notify people] to xref:scheduling:notify-people.adoc[let people know about changes made to their schedule] via push notifications or emails.
 
 [#scheduling-periods]
 === Scheduling periods
-Click _Scheduling periods_{:.doc-button} to xref:scheduling:what-are-scheduling-periods.adoc[configure scheduling periods].
+Click btn:[Scheduling periods] to xref:scheduling:what-are-scheduling-periods.adoc[configure scheduling periods].
 
 [#scheduling-actions]
 === Scheduling actions
@@ -54,7 +54,7 @@ The following scheduling actions are only available in Advanced WFM and Enterpri
 
 [#full-screen-mode]
 === Full-screen mode
-Click the full screen mode icon _![full-screen mode icon](/assets/img/common/full-screen-mode.png)_{:.doc-button-icon} to switch to full-screen mode. When in full-screen mode, move the cursor to the arrow icon at the top of the screen to see the action bar. Click the {icon-full-screen-exit} or press the Esc key to leave the full-screen mode.
+Click the full screen mode icon *![full-screen mode icon](/assets/img/common/full-screen-mode.png)* to switch to full-screen mode. When in full-screen mode, move the cursor to the arrow icon at the top of the screen to see the action bar. Click the {icon-full-screen-exit} or press the Esc key to leave the full-screen mode.
 
 [#schedule-area]
 == Schedule area
@@ -62,7 +62,7 @@ The schedule area consists of a table that shows scheduled shifts for the people
 
 [#employee-name-column]
 === Employee name column
-The **Employee Name** column is the first column from the left. It displays the planning units according to your filter. Click _>_{:.doc-button} to the left of a planning unit's name to expand it.
+The **Employee Name** column is the first column from the left. It displays the planning units according to your filter. Click btn:[>] to the left of a planning unit's name to expand it.
 
 Use the search field above the column to search for specific people. Use commas to separate the names if you want to search for more than one person at a time. You can only see a person's row if you expand the planning unit they are assigned to.
 
@@ -79,13 +79,13 @@ If the person's planning unit has a validity period, and their assignment to the
 ====
 [#level-column]
 === Level column
-The Schedule level is selected by default. To change the levels displayed, click the filter icon {icon-filter}. In Essential WFM, only the Schedule level is available. You can collapse or expand the **Level** column using the arrows _<_{:.doc-button} and _>_{:.doc-button} next to the Search employees field.
+The Schedule level is selected by default. To change the levels displayed, click the filter icon {icon-filter}. In Essential WFM, only the Schedule level is available. You can collapse or expand the **Level** column using the arrows btn:[<] and btn:[>] next to the Search employees field.
 
 To sort a day column by shift start times, click {icon-context-menu} in each day's column header if you selected xref:#multi-day-view-with-day-columns[between two and seven days]. If applicable, choose the level with the data you want to sort.
 
 [#working-hours-column]
 === Working hours column
-The Working hours column is the third column from the left. You can collapse or expand it using the arrows _<_{:.doc-button} and _>_{:.doc-button}. It contains three sections: Difference, Actual and Contractual. These sections display peoples's contractual and actual working times, plus the difference between those values.<br>The Difference value is color-coded as follows:
+The Working hours column is the third column from the left. You can collapse or expand it using the arrows btn:[<] and btn:[>]. It contains three sections: Difference, Actual and Contractual. These sections display peoples's contractual and actual working times, plus the difference between those values.<br>The Difference value is color-coded as follows:
 
 - Red: Fewer hours scheduled than contractually required
 - Blue: More hours scheduled than contractually required
@@ -111,4 +111,4 @@ To sort data by shift start in this view, click the {icon-context-menu} to the r
 
 [#activities-area]
 == Activities area
-Click _^_{:.doc-button} on the bottom left to display a table with activity data that you can use to xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[analyze staffing, coverage and staff requirements].<br>Click the different tabs to change between them. Click the filter icon {icon-filter} in the **Activity** column to select the activities you want to display.
+Click btn:[^] on the bottom left to display a table with activity data that you can use to xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[analyze staffing, coverage and staff requirements].<br>Click the different tabs to change between them. Click the filter icon {icon-filter} in the **Activity** column to select the activities you want to display.

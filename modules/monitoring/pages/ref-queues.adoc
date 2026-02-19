@@ -5,7 +5,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-reference:
 :description: Find information about every queue configuration setting.
 
-This article lists all queue settings available in _Analyze > Configuration_{:.breadcrumbs}.
+This article lists all queue settings available in menu:Analyze[Configuration].
 
 == Queues
 

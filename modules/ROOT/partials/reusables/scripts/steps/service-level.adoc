@@ -1,1 +1,1 @@
-Enter values for **Service Level (%)** and **Service Sec.**. These values define the percentage of contacts and the time period for the service level, e.g. 80% of contacts need to be answered in 20 seconds.
+Enter values for *Service Level (%)* and *Service Sec.*. These values define the percentage of contacts and the time period for the service level, e.g. 80% of contacts need to be answered in 20 seconds.

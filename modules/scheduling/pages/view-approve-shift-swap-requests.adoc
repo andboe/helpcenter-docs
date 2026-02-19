@@ -17,7 +17,7 @@ People with roles that include the **View Me** permission, e.g. standard agent r
 - All activities included in day models have been configured as xref:administration:activity-types-and-properties.adoc[Exchangeable with shift swap].
 - A xref:scheduling:what-are-scheduling-periods.adoc[scheduling period] with the status Shift bidding enabled, Published, or Finished exists. The deadline if configured has not been reached yet.
 
-Setting _48151_{:.id-label} defines the number of days, starting from the current date, for which no shift swap is possible, e.g. value 0 allows people to swap shifts for today and all days after; value 1 would allow swaps starting tomorrow.
+Setting *48151* defines the number of days, starting from the current date, for which no shift swap is possible, e.g. value 0 allows people to swap shifts for today and all days after; value 1 would allow swaps starting tomorrow.
 
 [#how-shift-swap-works]
 == How shift swap works
@@ -26,7 +26,7 @@ Setting _48151_{:.id-label} defines the number of days, starting from the curren
 3. Select a counter offer that best fits their needs.  
    The shift is either swapped automatically or an approval request is created.
 
-Setting _48152_{:.id-label} controls whether swaps are automatically approved or not. If not, shift swaps must be xref:#approve-or-reject-shift-swaps[approved manually].
+Setting *48152* controls whether swaps are automatically approved or not. If not, shift swaps must be xref:#approve-or-reject-shift-swaps[approved manually].
 
 Learn more about the actual steps people must take to swap shifts in Me in xref:me:swap-shifts-with-your-colleagues.adoc#swap-shifts[Swap shifts with your colleagues].
 
@@ -34,15 +34,15 @@ Learn more about the actual steps people must take to swap shifts in Me in xref:
 == Approve or reject shift swaps
 Users with admin access or people with roles that include the **Full access to Schedules** permission can review, approve, or reject shift swap requests as follows:
 
-1. Go to _Plan > Schedules_{:.breadcrumbs}
-2. From the _Scheduling actions_{:.doc-button} drop-down menu, select **Approve shift swaps**.
-3. Select a _planning unit_{:.label} and, optionally, a _selection_{:.label} from the drop-down menus.
-4. Select a **date range**.<br>If no date range has been selected in _Schedules_{:.menu-item}, the date range starts on the current date and ends seven days later.
+1. Go to menu:Plan[Schedules]
+2. From the btn:[Scheduling actions] drop-down menu, select **Approve shift swaps**.
+3. Select a *planning unit* and, optionally, a *selection* from the drop-down menus.
+4. Select a **date range**.<br>If no date range has been selected in *Schedules*, the date range starts on the current date and ends seven days later.
 5. Check the checkboxes next to the entries you want to approve or reject. Use the checkbox at the top to select all entries at once.
-6. Click _Approve selected_{:.doc-button} or _Reject selected_{:.doc-button}.  
+6. Click btn:[Approve selected] or btn:[Reject selected].  
    After pending requests have been approved or rejected, they move to the **Information** tab.
 
-The Exchange Statistics report under _WFM > Monitoring > Reports_{:.breadcrumbs} lists the status of shift swaps (Offered, Not edited, Rejected, and Approved) for a configurable period. Auto-accepted swaps are shown as approved.
+The Exchange Statistics report under menu:WFM[Monitoring>Reports] lists the status of shift swaps (Offered, Not edited, Rejected, and Approved) for a configurable period. Auto-accepted swaps are shown as approved.
 
 [#activate-shift-swap-auto-acceptance]
 === Activate shift swap auto-acceptance
@@ -50,9 +50,9 @@ Shift swap auto-acceptance lets the offering person pre-select preferred shifts 
 
 To activate shift swap auto-acceptance, proceed as follows:
 
-1. Go to _Plan > Configuration > General_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>General].
 2. In the **Shift swaps in Me** section, check the **Enable shift swap auto-acceptance** checkbox.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#generate-a-list-of-past-shift-swaps]
 == Generate a list of past shift swaps
@@ -60,17 +60,17 @@ On the **Approve shift swaps** page, the **Information** tab shows which person 
 
 [#shift-swap-settings]
 == Shift swap settings
-In _Account > WFM Settings_{:.breadcrumbs}, you can adapt the shift swap process to the needs of your business by changing these settings:
+In menu:Account[WFM Settings], you can adapt the shift swap process to the needs of your business by changing these settings:
 
-- _48151_{:.id-label} _Barred period for the Shift Exchange_: Number of days from the current date for which a swap is no longer possible (default: 3 days).
-- _48152_{:.id-label} _Exchange Mode_: Configure whether a user with admin access or the planner role must approve shift swaps between people (Defaults to 0 for approval, choose 1 for automatic swaps without approval).
-- _48153_{:.id-label} _Exchange Entitlement_: Allow swaps between people assigned to one planning unit (value 0, default), one selection (value 1), or different planning units (value 2).
-- _48555_{:.id-label} _Exchanging workdays against free days_: Allow people to swap shifts for days off (default: 0, no).
-- _48556_{:.id-label} _Exchanging different days_: Allow people to swap shifts on different days of the week (default: 0, no).
-- _48999_{:.id-label} _Enable specific checks for subactivities of multi-activities in association with scheduling rule 2605_: Skills are checked for each subactivity when exchanging multiactivities (default: 0, no check).
+- *48151* _Barred period for the Shift Exchange_: Number of days from the current date for which a swap is no longer possible (default: 3 days).
+- *48152* _Exchange Mode_: Configure whether a user with admin access or the planner role must approve shift swaps between people (Defaults to 0 for approval, choose 1 for automatic swaps without approval).
+- *48153* _Exchange Entitlement_: Allow swaps between people assigned to one planning unit (value 0, default), one selection (value 1), or different planning units (value 2).
+- *48555* _Exchanging workdays against free days_: Allow people to swap shifts for days off (default: 0, no).
+- *48556* _Exchanging different days_: Allow people to swap shifts on different days of the week (default: 0, no).
+- *48999* _Enable specific checks for subactivities of multi-activities in association with scheduling rule 2605_: Skills are checked for each subactivity when exchanging multiactivities (default: 0, no check).
 
 [#why-are-shift-swaps-blocked]
 == Why are shift swaps blocked?
 People can see and swap shifts offered in Me if their swap request complies with the working hours configured for their contract, and if they have the necessary skills.
 
-To find out why the swap is prevented in Me, simulate the swap in _Shift Center_{:.menu-item}. When copying and pasting the shifts, the xref:scheduling:shift-center-overview.adoc#message-area[message window] at the bottom of the screen will display the xref:administration:create-contracts.adoc#scheduling-rules-and-parameters[scheduling rule] and the reason preventing the shift swap, e.g. wrong skills or other contractual constraints.
+To find out why the swap is prevented in Me, simulate the swap in *Shift Center*. When copying and pasting the shifts, the xref:scheduling:shift-center-overview.adoc#message-area[message window] at the bottom of the screen will display the xref:administration:create-contracts.adoc#scheduling-rules-and-parameters[scheduling rule] and the reason preventing the shift swap, e.g. wrong skills or other contractual constraints.

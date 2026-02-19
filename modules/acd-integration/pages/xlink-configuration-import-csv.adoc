@@ -70,13 +70,13 @@ image::xlink-configuration-import-csv/image-1.png[Configuration CSV Interface, w
 Proceed as follows to configure these settings:
 
 1. Open the file 'isps_ul.exe
-2. Right-click the external system. Choose _configuration_{:.menu-item}.
-   Alternatively, click _Settings > ACD_{:.breadcrumbs} on the toolbar.
+2. Right-click the external system. Choose *configuration*.
+   Alternatively, click menu:Settings[ACD] on the toolbar.
 3. Select the folder where the CSV files are stored with _Data - Directory_.
 4. Set in _Timezone - UTC offset_ if necessary, the time offset between the time in the CSV file and the local time
 5. Define in _CSV separator_ the CSV separator you wish to use
 6. Activate the xref:acd-integration:xlink-log-files.adoc[Logging] within _Log - Options_ (optional)
-7. Simply click _Ok_{:.doc-button} in the dialog to save the settings.
+7. Simply click btn:[Ok] in the dialog to save the settings.
 
 After saving, the values are stored in parameters within the `isps_ul.ini` file in the Xlink directory.
 

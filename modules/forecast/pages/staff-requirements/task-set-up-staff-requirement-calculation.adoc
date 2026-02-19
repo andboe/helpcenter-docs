@@ -16,23 +16,13 @@ This article describes how to set up and edit the automatic calculation of staff
 === General
 - Forecast data is available for the workload.
 
-[#permissions]
-=== Permissions
-Your role needs to have object permissions for the objects associated with the action:
-
-- The workload for which staff requirements are calculated.
-- The planning unit and activity specified in the workload's staff requirements calculation settings.
+include::help-center:forecast:partial$staff-requirements/permission-intro.adoc[]
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
 |Object type
 |Permissions
-|Workload
-|View +Edit staff requirements
-|Planning unit
-|View
-|Activity
-|View
+include::help-center:forecast:partial$staff-requirements/permission-table-staff-reqs.adoc[]
 |===
 
 [NOTE]
@@ -41,13 +31,13 @@ Your role needs to have object permissions for the objects associated with the a
 >
 [NOTE]
 ====
-Object permissions for workloads are set up in _Account > Roles_{:.breadcrumbs}.<br>
-Object permissions for planning units and activities are set up in _WFM > Administration > System > Role Authorization_{:.breadcrumbs}
+Object permissions for workloads are set up in menu:Account[Roles].<br>
+Object permissions for planning units and activities are set up in menu:WFM[Administration>System>Role Authorization]
 ====
 [#steps]
 == Steps
-1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
-2. In the **Staff requirements** section, click _Edit staff requirements_{:.doc-button}.
+1. In menu:Forecast[Workloads], select a workload.
+2. In the **Staff requirements** section, click btn:[Edit staff requirements].
 3. From the **Calculation method** drop-down menu, select an option:
    - **Erlang-C**
    - **Chat**
@@ -55,7 +45,7 @@ Object permissions for planning units and activities are set up in _WFM > Admini
 4. In the **Calculation parameters** section, configure the calculation settings.
    For more information see the xref:forecast:ref-requirement-calculations.adoc#automatic-requirement-calculations[staff requirements reference guide].
 5. In the **Associated planning unit and activity** section, configure where Peopleware should save the staff requirement data. By default, staff requirement data is saved for the planning unit and the activity specified in the workload.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 Peopleware now calculates staff requirements for all forecast versions of this workload.
 To check the results, see the graph in the staff requirements section.

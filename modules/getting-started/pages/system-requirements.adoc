@@ -95,7 +95,7 @@ To access the web pages, allow web traffic to and from \*.peopleware.com via por
 
 If you use ActiveX-based features or custom SDK applications, add another firewall exception. These applications use port 45054 for outgoing traffic (port 80 for hosts prior to 2019) and require direct Internet access over Transmission Control Protocol (TCP). Proxy servers configured in the browser are not supported.
 
-To get the address for the firewall exception, click _WFM_{:.menu-item} and use the name of your Peopleware host that is visible in the browser address bar, e.g. wfm-123abc.peopleware.com.
+To get the address for the firewall exception, click *WFM* and use the name of your Peopleware host that is visible in the browser address bar, e.g. wfm-123abc.peopleware.com.
 
 To learn more about firewall exceptions in Windows, see [Microsoft documentation](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26#:~:text=Go%20to%20Start%20%3E%20Settings%20%3E%20Update,%2C%20file%20types%2C%20or%20process).
 

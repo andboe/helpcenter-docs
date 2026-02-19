@@ -25,9 +25,9 @@ Do not confuse scheduling periods with time-off periods. xref:scheduling:time-of
 ====
 [#create-scheduling-periods]
 == Create scheduling periods
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. Click _Scheduling periods_{:.doc-button}.
-3. Click _Create scheduling period_{:.doc-button} in the upper right.
+1. Go to menu:Plan[Schedules].
+2. Click btn:[Scheduling periods].
+3. Click btn:[Create scheduling period] in the upper right.
 4. Configure the following fields:
    - **Planning unit**
    - (Optional) **Selection**
@@ -35,7 +35,7 @@ Do not confuse scheduling periods with time-off periods. xref:scheduling:time-of
    - (Optional) **Deadline**: Last day on which people can swap or bid on shifts.
    - **Status**: xref:#status[Learn more about the different possible statuses and what they mean].
 
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#status]
 == Status
@@ -59,8 +59,8 @@ All scheduling periods have a status. The status unlocks or restricts certain op
 == Display scheduling periods
 To see all scheduling periods created for a specific planning unit and/or selection, follow these steps:
 
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. Click _Scheduling periods_{:.doc-button}.
+1. Go to menu:Plan[Schedules].
+2. Click btn:[Scheduling periods].
 3. Select a **Planning unit** and, optionally, a **Selection**.
    The table displays all scheduling periods for your selected planning unit (and selection), if there are any.<br>
    Learn more about the xref:#ongoing-and-expired-tabs[tabs] and xref:#table-columns[table columns] below.
@@ -102,11 +102,11 @@ To edit all parameters of a scheduling period (including the status), follow the
 
 1. In the table, hover over the relevant scheduling period and click the {icon-edit} on the right.
 2. Edit the relevant parameters.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#delete-scheduling-periods]
 == Delete scheduling periods
-To delete one or more scheduling periods, check the checkboxes on the left of the list entries. The checkbox in the table heading selects all displayed entries. Click _Delete selected_{:.doc-button} below the list.
+To delete one or more scheduling periods, check the checkboxes on the left of the list entries. The checkbox in the table heading selects all displayed entries. Click btn:[Delete selected] below the list.
 
 [#other-actions]
 == Other actions
@@ -122,7 +122,7 @@ In the Scheduling periods table, click the {icon-context-menu} on the right of a
 
 [#when-can-people-see-their-schedules]
 === When can people see their schedules?
-In _Me > My calendar_{:.breadcrumbs}, people can see their schedules for all scheduling periods with the status Published, Shift bidding enabled or Finished.
+In menu:Me[My calendar], people can see their schedules for all scheduling periods with the status Published, Shift bidding enabled or Finished.
 
 [#when-can-people-swap-shifts]
 === When can people swap shifts?

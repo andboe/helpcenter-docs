@@ -13,7 +13,7 @@ The different scheduling methods are designed to fit different use cases. All sc
 
 [#prerequisites]
 == Prerequisites
-Before you start using scheduling methods, make sure that you have set up the following configuration data in _Plan > Configuration_{:.breadcrumbs}:
+Before you start using scheduling methods, make sure that you have set up the following configuration data in menu:Plan[Configuration]:
 
 - Skills
 - Activities

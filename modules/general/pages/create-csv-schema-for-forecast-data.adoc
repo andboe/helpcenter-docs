@@ -33,7 +33,7 @@ The schema can contain one or more forecast record types.
 2. Map the date and time columns as required.
 3. In the data column mapping settings, find the forecast record type you want to assign to the CSV schema, e.g. **Version 1 (Operational)**.
 4. Map the data columns for that forecast record type. Leave empty all mapping fields of the other forecast record types.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 The CSV schema can now be used to import forecast data into a workload as **Version 1 (Operational)**.
 To enable the import of forecast data into another forecast record type, repeat the above steps to create a corresponding CSV schema.

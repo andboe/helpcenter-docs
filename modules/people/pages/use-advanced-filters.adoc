@@ -13,23 +13,23 @@ Advanced filters work similarly to xref:administration:selections.adoc[selection
 - For employee filters, the grouping criteria are based on configuration elements, e.g. planning unit, skill, and contract.
 - For selections, you can create your own grouping criteria.
 
-To access advanced filters, go to _People > Advanced filters_{:.breadcrumbs}.
+To access advanced filters, go to menu:People[Advanced filters].
 
 [#create-a-filter]
 == Create a filter
-1. In _People > Advanced filters_{:.breadcrumbs}, click _Create_{:.doc-button}.
+1. In menu:People[Advanced filters], click btn:[Create].
 2. Select a xref:people:advanced-filters.adoc#time-frames[**Time frame**].
 3. Select a **Date range**.
-4. Click _+ Add group_{:.doc-button}. Learn more about xref:people:advanced-filters.adoc#groups[**groups**].
-5. Click _+Add criterion_{:.doc-button}. Learn more about xref:people:advanced-filters.adoc#criteria[**Criteria**].
+4. Click btn:[+ Add group]. Learn more about xref:people:advanced-filters.adoc#groups[**groups**].
+5. Click btn:[+Add criterion]. Learn more about xref:people:advanced-filters.adoc#criteria[**Criteria**].
 6. (Optional) Add more groups or criteria.
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 [#edit-a-filter]
 == Edit a filter
 1. In the **Advanced filters** section, select a filter or use the search field.
 2. Edit the filter.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#duplicate-a-filter]
 == Duplicate a filter
@@ -42,4 +42,4 @@ To access advanced filters, go to _People > Advanced filters_{:.breadcrumbs}.
 1. In the **Advanced filters** section, select a filter or use the search field.
 2. Click the three-dot menu icon {icon-context-menu}.
 3. Click {icon-delete} Delete.
-4. To confirm, click _Delete_{:.doc-button}.
+4. To confirm, click btn:[Delete].

@@ -21,16 +21,16 @@ You can choose between four forecast versions:
 
 To save the default Forecast data in a forecast version, proceed as follows:
 
-1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+1. In menu:Forecast[Workloads], select a workload.
 2. Select the time frame for which you want to save the forecast version. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
-3. From the {icon-context-menu} at the top right, select _Save forecast in version_{:.doc-button}.
+3. From the {icon-context-menu} at the top right, select btn:[Save forecast in version].
 4. In the configuration window, select the forecast version into which you want to save the data.
 
    > Note
    >
    > There can only be one of each forecast version for a period in a workload. Saving data for the same period in the same forecast version overwrites the existing data.
 
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 The volume and AHT graphs show the data from the different forecast versions as colored lines:
 

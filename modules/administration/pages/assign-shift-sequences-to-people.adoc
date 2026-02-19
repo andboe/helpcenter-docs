@@ -19,12 +19,12 @@ To assign shift sequences to your people in bulk, use the xref:people:concept-ma
 
 [#steps]
 == Steps
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select a person from the list.
 3. In the menu on the left, click **Planning**.
-4. In the _Shift sequences_{:.label} section, click {icon-plus} **Add** .
+4. In the *Shift sequences* section, click {icon-plus} **Add** .
 5. Configure the xref:#settings[assignment settings].
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#settings]
 == Settings

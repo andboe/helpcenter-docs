@@ -19,8 +19,8 @@ Adjustments to the schedule can be necessary in the following situations:
 
 [#copy-a-schedule-to-another-level]
 == Copy a schedule to another level
-1. Go to _Plan > Schedules_{:.breadcrumbs} and select the date range of the schedule you want to copy.
-2. From the _Scheduling actions_{:.doc-button} menu, click **Copy level content**.
+1. Go to menu:Plan[Schedules] and select the date range of the schedule you want to copy.
+2. From the btn:[Scheduling actions] menu, click **Copy level content**.
 3. In the **Settings** section, configure the following fields:
    - **Planning unit**
    - **Source level**: The level from which you want to copy the scheduling data.
@@ -30,6 +30,6 @@ Adjustments to the schedule can be necessary in the following situations:
    - (Optional) **Target start date**: The date when the copied scheduling data should begin in the target level.
    - (Optional) **Empty source level content after copying**: Check this checkbox to delete the existing content from the source level.
 4. (Optional) In the **Employees** section, check or uncheck the checkboxes next to the name of the people for whom you want to empty the level.<br>Use the {icon-schedules-filter-employees-u} and the {icon-filter-u} to filter people from the employees list with an employee filter or a selection from the drop-down menu.
-5. Click _Copy level content_{:.doc-button}.
+5. Click btn:[Copy level content].
 
 Go to xref:general:jobstatus.adoc[Job status] to view the progress of a level copy. When the level is copied, you see a link to the corresponding report.

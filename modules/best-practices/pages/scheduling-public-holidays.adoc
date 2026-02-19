@@ -29,7 +29,7 @@ If your contact center is open on a public holiday, but has different business h
 5. In the **From** and **To** fields, enter the business hours for each day.  
    On public holidays, Peopleware only generates staff requirements and schedule people within the business hours. Other days will not be affected.
 
-Note: Scheduling rule _2631_{:.id-label} **Do not schedule on holidays** checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
+Note: Scheduling rule *2631* **Do not schedule on holidays** checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
 
 [TIP]
 ====
@@ -62,7 +62,7 @@ The target working time for these days is determined as follows:
 |Peopleware considers the value entered for the weekday
 |===
 
-Users with the Agent role can see the public holidays in their calendars in _Me > My Calendar_{:.breadcrumbs}.
+Users with the Agent role can see the public holidays in their calendars in menu:Me[My Calendar].
 
 [#closed-use-the-planning-calendar]
 == Closed: Use the planning calendar

@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Deliver Peopleware reports via email.
 
-In _WFM > Monitoring > Reports_{:.breadcrumbs}, you can easily send reports by email to specific groups or individual people. You can configure the email delivery options before the report generation.
+In menu:WFM[Monitoring>Reports], you can easily send reports by email to specific groups or individual people. You can configure the email delivery options before the report generation.
 
 After sending the email, you will receive a status report with the report as attachment.
 
@@ -29,8 +29,8 @@ To configure if and to whom the report is sent by e-mail, select one of the foll
 == Email address
 In the **E-mail address** drop-down menu, you can specify the e-mail address to which the report is sent. The options are the following:
 
-- **Peopleware Login (Email)**: The e-mail address you entered in the **Basic information** section in _People_{:.breadcrumbs}
-- **E-mail 2**: The alternate e-mail address you entered in the **Contact data** section in _People_{:.breadcrumbs}
+- **Peopleware Login (Email)**: The e-mail address you entered in the **Basic information** section in menu:People[]
+- **E-mail 2**: The alternate e-mail address you entered in the **Contact data** section in menu:People[]
 - **Both**
 
 In Enterprise on-premise, the **Peopleware Login (Email)** field is named **E-Mail 1**.

@@ -24,7 +24,7 @@ We recommend setting up the configuration items in the order presented in this a
 
 [#configure-time-off]
 == Configure time off
-People can request time off using Me. To configure time off, go to _Plan > Time Off_{:.breadcrumbs}:
+People can request time off using Me. To configure time off, go to menu:Plan[Time Off]:
 
 1. Enter your people's xref:scheduling:vacation-entitlement.adoc[vacation entitlement] for the current year.
 2. Create a xref:scheduling:time-off-periods-legacy.adoc[time-off period] and publish it. A time-off period defines the time frame in which people can request vacation and other absences. People will receive a notification in Me and can start creating time-off requests for that period.
@@ -35,7 +35,7 @@ In xref:scheduling:schedules-overview.adoc[Schedules] and xref:scheduling:shift-
 
 [#manage-time-off-requests]
 == Manage time-off requests
-In _Plan > Time Off_{:.breadcrumbs}, approve or reject any xref:scheduling:vacation-absences-management.adoc[pending requests].
+In menu:Plan[Time Off], approve or reject any xref:scheduling:vacation-absences-management.adoc[pending requests].
 
 [NOTE]
 ====
@@ -64,5 +64,5 @@ Before applying any xref:scheduling:modify-items.adoc[manual changes] to your or
 == Publish the schedule and allow shift swaps
 1. Create a scheduling period to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[allow people to see their schedule] in Me.
 2. (Optional) xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Allow people to swap shifts].  
-   By default, you need to xref:scheduling:view-approve-shift-swap-requests.adoc[view and approve any pending shift swaps], but you can also allow automatic swaps between people with the _48152_{:.id-label} **Exchange Mode** setting.
+   By default, you need to xref:scheduling:view-approve-shift-swap-requests.adoc[view and approve any pending shift swaps], but you can also allow automatic swaps between people with the *48152* **Exchange Mode** setting.
 3. Share the article xref:me:explore-me.adoc[Explore Me] with your people.

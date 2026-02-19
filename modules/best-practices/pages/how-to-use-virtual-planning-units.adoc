@@ -20,8 +20,8 @@ You want to staff agents across two or more virtual or real locations to handle 
 
 - You have created two or more xref:administration:create-and-manage-planning-units.adoc[planning units] that represent your virtual or phyical locations.
 - In Enterprise on-premise, activate the following settings to use the functionality:
-  - _48103_{:.id-label} _Consolidate key figures for higher-level planning units_
-  - _48399_{:.id-label} _Plannability of virtual planning units in AutoScheduler_
+  - *48103* _Consolidate key figures for higher-level planning units_
+  - *48399* _Plannability of virtual planning units in AutoScheduler_
 
 [NOTE]
 ====

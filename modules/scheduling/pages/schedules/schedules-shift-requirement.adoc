@@ -11,11 +11,11 @@ Shift requirements define the minimum and maximum number of shifts that must be 
 
 [#display-shift-requirements]
 == Display shift requirements
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. Click _Scheduling periods_{:.doc-button}.
-3. Select a _Planning unit_{:.label} and, optionally, a _Selection_{:.label}.
+1. Go to menu:Plan[Schedules].
+2. Click btn:[Scheduling periods].
+3. Select a *Planning unit* and, optionally, a *Selection*.
 4. Hover over a scheduling period and click the {icon-context-menu}.
-5. Click _Adjust shift generation_{:.label}.  
+5. Click *Adjust shift generation*.  
    The table shows all fixed and variable day models assigned to the selected planning unit. The columns show the standard day types (weekdays) and other day types assigned to the selected planning unit. Each day type allows to enter a minimum (Min) and maximum value (Max).
 
 [#adjust-shift-requirements]
@@ -39,7 +39,7 @@ Before you generate shifts, adjust the minimum and maximum to determine the numb
 |Leave both fields empty or enter a minimum value only.
 |===
 
-3. Click _Save_{:.doc-button} to store the values.
+3. Click btn:[Save] to store the values.
 
 You may need to xref:#adjust-values-regularly-before-you-generate-shifts[adjust the values] each time you generate shifts for new period.
 
@@ -103,7 +103,7 @@ You only need 1 shift for the full day, set both the minimum and maximum to 1 sh
 
 [#key-figures-in-shift-center]
 == Key figures in Shift Center
-Find further information on shift requirements and staffing in _Plan > Shift Center_{:.breadcrumbs}. On the Activities tab at the bottom of the table, right-click a cell to display the following figures:
+Find further information on shift requirements and staffing in menu:Plan[Shift Center]. On the Activities tab at the bottom of the table, right-click a cell to display the following figures:
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -123,7 +123,7 @@ Find further information on shift requirements and staffing in _Plan > Shift Cen
 
 [#key-figures-in-dashboards]
 == Key figures in Dashboards
-In xref:monitoring:manage-dashboards.adoc[_Analyze > Dashboards_{:.breadcrumbs}], you can configure dashboards to display the following figures:
+In xref:monitoring:manage-dashboards.adoc[menu:Analyze[Dashboards]], you can configure dashboards to display the following figures:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===

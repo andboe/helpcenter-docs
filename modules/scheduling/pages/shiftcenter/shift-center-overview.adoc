@@ -6,9 +6,9 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn what Shift Center is used for and how to customize the display of data.
 
-In _Plan > Shift Center_{:.breadcrumbs}, you can see and manage your _people_{:.css}'s _shifts_{:.css}.
+In menu:Plan[Shift Center], you can see and manage your *people*'s *shifts*.
 
-Use _Shift Center_{:.label} to do the following:
+Use *Shift Center* to do the following:
 
 - xref:scheduling:analyze-coverage-staffing-requirement.adoc[Analyze coverage, requirement, and staffing]
 - xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc[Add and delete activities, day models, and availabilities]
@@ -19,7 +19,7 @@ Use _Shift Center_{:.label} to do the following:
 
 [#prerequisites]
 == Prerequisites
-To get the most out of the options available in _Shift Center_{:.label}, make sure the following applies:
+To get the most out of the options available in *Shift Center*, make sure the following applies:
 
 - You have created xref:administration:daymodel-creation.adoc[day models] and, if necessary, limited their usage in your xref:administration:create-and-manage-planning-units.adoc#limit-day-models[planning units].
 - You have created at least one xref:administration:selections.adoc[selection].
@@ -34,18 +34,18 @@ The action bar at the top allows you to filter data and select the period for wh
 === Filter data
 You have the following filtering options:
 
-- Filter by _selection_{:.css}: Click the {icon-filter-u} and use the drop-down menu on the left to select one.
-- Filter by _employee filter_{:.css}: Click the {icon-schedules-filter-employees-u} and use the drop-down menu on the left to select one.
-- Filter by _level_{:.css}: Click _{icon-filter} Levels_{:.doc-button} and select the xref:scheduling:use-levels.adoc[levels] you want to include in the overview.
+- Filter by *selection*: Click the {icon-filter-u} and use the drop-down menu on the left to select one.
+- Filter by *employee filter*: Click the {icon-schedules-filter-employees-u} and use the drop-down menu on the left to select one.
+- Filter by *level*: Click btn:[{icon-filter} Levels] and select the xref:scheduling:use-levels.adoc[levels] you want to include in the overview.
 
 [#select-the-period-for-the-displayed-data]
 === Select the period for the displayed data
-On the right side of the action bar, select the period in which you want to see your _schedules_{:.css} as follows:
+On the right side of the action bar, select the period in which you want to see your *schedules* as follows:
 
 1. Select a start date with the date picker.
 2. In the field next to the date picker, enter the number of time units (days, weeks, months, or years).
 3. Select a time unit from the drop-down menu. This affects xref:#day-week-month-and-year-columns[how the table in the schedule area shows schedules].
-4. Click _Apply_{:.doc-button}.
+4. Click btn:[Apply].
 
 [NOTE]
 ====
@@ -57,25 +57,25 @@ You can enter up to 371 days, 53 weeks, 24 months, or 2 years.
 ====
 [#shift-center-areas]
 == Shift Center areas
-The _Shift Center_{:.label} page includes the xref:#schedule-area[schedule area], the xref:#parameter-area[parameter area], and the xref:#message-area[message area]. The schedule and parameter areas consist of tables and display data relevant to scheduled _shifts_{:.css}. The message area includes a message board.
+The *Shift Center* page includes the xref:#schedule-area[schedule area], the xref:#parameter-area[parameter area], and the xref:#message-area[message area]. The schedule and parameter areas consist of tables and display data relevant to scheduled *shifts*. The message area includes a message board.
 
-The schedule and parameter areas include the _Level_{:.label} column and the day, week, month, and year columns, which represent the settings configured in the action bar.
+The schedule and parameter areas include the *Level* column and the day, week, month, and year columns, which represent the settings configured in the action bar.
 
 [#level-column]
-=== _Level_{:.label} column
-The _Level_{:.label} column displays rows with the _levels_{:.css} you selected in the action bar.
+=== *Level* column
+The *Level* column displays rows with the *levels* you selected in the action bar.
 
 [#day-week-month-and-year-columns]
 === Day, week, month, and year columns
-Next to the _Level_{:.label} column, you see the day, week, month, and year columns. The time unit you select from the drop-down menu in the action bar leads to a certain arrangement of the table:
+Next to the *Level* column, you see the day, week, month, and year columns. The time unit you select from the drop-down menu in the action bar leads to a certain arrangement of the table:
 
-- _Days_{:.label}: The table displays expandable day columns for each day of the period. To expand a day column, click the corresponding header.  
-  The day column expands to the right. The expanded day column's header has a 24-hour time scale at the top, and the rows show the _shifts_{:.css} and _activities_{:.css} throughout the day.  
+- *Days*: The table displays expandable day columns for each day of the period. To expand a day column, click the corresponding header.  
+  The day column expands to the right. The expanded day column's header has a 24-hour time scale at the top, and the rows show the *shifts* and *activities* throughout the day.  
   To collapse the expanded day column, click the day column's header. Use the arrow buttons on the left side of the time scale to change its size:
   - To increase the size of the time scale, click the right arrow.
   - To reduce the size of the time scale, click the left arrow.
 
-- _Weeks_{:.label}, _Months_{:.label}, or _Years_{:.label}: The table displays expandable week, month, or year columns, respectively. To expand a week, month, or year column, click the corresponding header.  
+- *Weeks*, *Months*, or *Years*: The table displays expandable week, month, or year columns, respectively. To expand a week, month, or year column, click the corresponding header.  
   The table displays expandable day columns that correspond to that week, month, or year, the xref:#contractual-time-actual-time-and-diff-columns[Contractual Time, Actual, and Diff. columns], and the xref:#time-account-column[Time Account column] at the right end.  
   To collapse the day columns, click the week, month, or year column's header.
 
@@ -85,65 +85,65 @@ Next to the _Level_{:.label} column, you see the day, week, month, and year colu
 >
 [NOTE]
 ====
-Empty day cells can have two different background shades. The shade indicates if _business hours_{:.css} are configured:
+Empty day cells can have two different background shades. The shade indicates if *business hours* are configured:
 ====
 >
 [NOTE]
 ====
-- Lighter shade: _Business hours_{:.css} are not configured.
-- Darker shade: _Business hours_{:.css} are configured.
+- Lighter shade: *Business hours* are not configured.
+- Darker shade: *Business hours* are configured.
 ====
 === Resize areas
 
 To resize an area, click the gray border between the areas and drag it up or down.
 
-The following sections describe the _Shift Center_{:.label} areas in further details.
+The following sections describe the *Shift Center* areas in further details.
 
 [#schedule-area]
 == Schedule area
-The schedule area consists of the upper table and includes information about scheduled _shifts_{:.css} and _activities_{:.css}. The table displays information by _planning units_{:.term} and the _people_{:.css} assigned to them. In the schedule area, you can also xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc[add and delete activities, shifts, and availabilities] as well as xref:scheduling:modify-items.adoc[edit them].
+The schedule area consists of the upper table and includes information about scheduled *shifts* and *activities*. The table displays information by *planning units* and the *people* assigned to them. In the schedule area, you can also xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc[add and delete activities, shifts, and availabilities] as well as xref:scheduling:modify-items.adoc[edit them].
 
 [#planning-unit-column]
 === Planning Units column
-The _Planning Units_{:.label} column includes the _planning units_{:.css} and the _people_{:.css} assigned to them. To see the _people_{:.css} assigned to your _planning units_{:.css} and their _schedules_{:.css}, click the {icon-plus} next to the _planning unit_{:.css}. Each row includes the _person_{:.css}'s name, their _personnel number_{:.css}, and their _schedules_{:.css} per _level_{:.css} within the period you xref:#action-bar[set in the action bar].
+The *Planning Units* column includes the *planning units* and the *people* assigned to them. To see the *people* assigned to your *planning units* and their *schedules*, click the {icon-plus} next to the *planning unit*. Each row includes the *person*'s name, their *personnel number*, and their *schedules* per *level* within the period you xref:#action-bar[set in the action bar].
 
-By default, the day columns show color-coded _activities_{:.css} with the abbreviation of the first _activity_{:.css} in the _shift_{:.css}. To change the data that the day cell displays, follow these steps:
+By default, the day columns show color-coded *activities* with the abbreviation of the first *activity* in the *shift*. To change the data that the day cell displays, follow these steps:
 
-- Right-click a day cell and hover over _Display_{:.label}.
+- Right-click a day cell and hover over *Display*.
 - Select one of the options:
-  - _Scheduling data_{:.label}: Displays the abbreviation of the first _activity_{:.css} of the _shift_{:.css}.
-  - _Actual Working Hours_{:.label}
-  - _Time Account_{:.label}
-  - _Start Time_{:.label}
-  - _End Time_{:.label}
+  - *Scheduling data*: Displays the abbreviation of the first *activity* of the *shift*.
+  - *Actual Working Hours*
+  - *Time Account*
+  - *Start Time*
+  - *End Time*
 
-If you expand the day columns, the table displays _activities_{:.css} and _shifts_{:.css} for each day in details.
+If you expand the day columns, the table displays *activities* and *shifts* for each day in details.
 
 [#understanding-the-day-columns-content]
 === Understand the day columns' content
-In the day columns, markers indicate _activities_{:.css}, xref:administration:daymodel-creation.adoc[day model], and comments.
+In the day columns, markers indicate *activities*, xref:administration:daymodel-creation.adoc[day model], and comments.
 
-- _Activities_{:.css}: A color-coded bar.
+- *Activities*: A color-coded bar.
 
   image::shift-center-overview/image-1.png[Activity in the the schedule area, width=50%]
 
-- _Day models_{:.css}: A bar with a bottom border. The dots at the top indicate moveable _corridor elements_{:.css}.
+- *Day models*: A bar with a bottom border. The dots at the top indicate moveable *corridor elements*.
 
   image::shift-center-overview/image-2.png[Day model in the schedule area, width=50%]
 
-- _Variable day models_{:.css}: A bar with a bottom border and dots at the bottom of the cell. The dots indicate possible _shift_{:.css} times.
+- *Variable day models*: A bar with a bottom border and dots at the bottom of the cell. The dots indicate possible *shift* times.
 
   image::shift-center-overview/image-3.png[Variable day model in the schedule area, width=50%]
 
-- _Deleted activities_{:.css}: A bar with a full dashed border
+- *Deleted activities*: A bar with a full dashed border
 
   image::shift-center-overview/image-4.png[Deleted activity in the schedule area, width=50%]
 
-- _Deleted day models_{:.css}: A bar with a dotted bottom border
+- *Deleted day models*: A bar with a dotted bottom border
 
   image::shift-center-overview/image-5.png[Deleted day model in the schedule area, width=50%]
 
-- _Comment_{:.css}: A cell with thicker border. To see the comment, hover over the cell.
+- *Comment*: A cell with thicker border. To see the comment, hover over the cell.
 
   image::shift-center-overview/image-6.png[Comment in the schedule area, width=50%]
 
@@ -153,22 +153,22 @@ In the day columns, markers indicate _activities_{:.css}, xref:administration:da
 >
 [NOTE]
 ====
-A gray day cell, _day model_{:.css}, or _activity_{:.css} means that the _person_{:.css} is assigned to more than one _planning unit_{:.css}, and the _day model_{:.css} or _activity_{:.css} is scheduled in another _planning unit_{:.css}'s _schedule_{:.css}.
+A gray day cell, *day model*, or *activity* means that the *person* is assigned to more than one *planning unit*, and the *day model* or *activity* is scheduled in another *planning unit*'s *schedule*.
 ====
 [#contractual-time-actual-time-and-diff-columns]
 === Contractual Time, Actual Time, and Diff. columns
-The following table provides an overview of the _Contractual Time_{:.label}, _Actual Time_{:.label}, and _Diff._{:.label} columns:
+The following table provides an overview of the *Contractual Time*, *Actual Time*, and *Diff.* columns:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
 |Column
 |Data
-|_Contractual Time_{:.label}
-|The working hours specified in the _contract_{:.css}
-|_Actual Time_{:.label}
-|The actual amount of scheduled _activity_{:.css} time
-|_Diff._{:.label}
-|The difference between the values in the _Contractual Time_{:.label} and the _Actual Time_{:.label} columns
+|*Contractual Time*
+|The working hours specified in the *contract*
+|*Actual Time*
+|The actual amount of scheduled *activity* time
+|*Diff.*
+|The difference between the values in the *Contractual Time* and the *Actual Time* columns
 |===
 
 [NOTE]
@@ -177,25 +177,25 @@ The following table provides an overview of the _Contractual Time_{:.label}, _Ac
 >
 [NOTE]
 ====
-Whenever your _schedules_{:.css} change, the color of the numbers in the _Actual Time_{:.label} and _Diff._{:.label} columns turn orange. The values in orange are not up to date. Update the values in your table as follows:
+Whenever your *schedules* change, the color of the numbers in the *Actual Time* and *Diff.* columns turn orange. The values in orange are not up to date. Update the values in your table as follows:
 ====
 >
 [NOTE]
 ====
-- To update the values of an individual _planning unit_{:.css}, click the {icon-shift-center-update-working-times} next to the _planning unit_{:.css} name.
-- To update all _planning units_{:.css}, click the _Planning Units_{:.label} column header.
+- To update the values of an individual *planning unit*, click the {icon-shift-center-update-working-times} next to the *planning unit* name.
+- To update all *planning units*, click the *Planning Units* column header.
 ====
 [#time-account-column]
-=== _Time Account_{:.label} column
-The _Time Account_{:.label} column displays the xref:administration:concept-target-work-times.adoc[target work times].
+=== *Time Account* column
+The *Time Account* column displays the xref:administration:concept-target-work-times.adoc[target work times].
 
 [#parameter-area]
 == Parameter area
-The parameter area consists of the lower table with tabs at the bottom. It displays parameters from your scheduled _day models_{:.css} and _activities_{:.css}, e.g. _staff requirements_{:.css}, _staffing_{:.css}, and _coverage_{:.css}.
+The parameter area consists of the lower table with tabs at the bottom. It displays parameters from your scheduled *day models* and *activities*, e.g. *staff requirements*, *staffing*, and *coverage*.
 
-In the _Day Models_{:.label} and _Activity_{:.label} tabs, the day cells display the total parameter value.<br>The expanded day cells display the parameters in intervals throughout the day. By default, the expanded day cells display the parameters in 1-hour intervals. To view the parameters in 30- or 15-minute intervals, xref:#day-week-month-and-year-columns[increase the size of the expanded day cell's time scale].
+In the *Day Models* and *Activity* tabs, the day cells display the total parameter value.<br>The expanded day cells display the parameters in intervals throughout the day. By default, the expanded day cells display the parameters in 1-hour intervals. To view the parameters in 30- or 15-minute intervals, xref:#day-week-month-and-year-columns[increase the size of the expanded day cell's time scale].
 
-The expanded day cells are color-coded as shown below. The more intense the color, the greater the difference between the _staff requirements_{:.css} and the _staffing_{:.css}.
+The expanded day cells are color-coded as shown below. The more intense the color, the greater the difference between the *staff requirements* and the *staffing*.
 
 <!-- left-align table -->
 <style>
@@ -207,61 +207,61 @@ table {
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Color
-|_Coverage_{:.css}
+|*Coverage*
 |Description
 |Red
-|_Understaffing_{:.css}
-|Fewer scheduled _people_{:.css} than necessary
+|*Understaffing*
+|Fewer scheduled *people* than necessary
 |Blue
-|_Overstaffing_{:.css}
-|More scheduled _people_{:.css} than necessary
+|*Overstaffing*
+|More scheduled *people* than necessary
 |Green
-|Ideal _coverage_{:.css}
-|The number of scheduled _people_{:.css} matches the _staff requirements_{:.css}.
+|Ideal *coverage*
+|The number of scheduled *people* matches the *staff requirements*.
 |===
 
 In the parameter area, you can also xref:scheduling:find-replacement-employees-and-understaffed-shifts.adoc[find replacement for activities and day models], xref:scheduling:edit-or-delete-staff-requirements.adoc[edit and delete staff requirements], and xref:scheduling:schedules-shift-bidding.adoc#edit-the-generated-shifts[edit generated shifts].
 
-The tabs at the bottom of the table provide different overviews of the parameters from your _people_{:.css}'s _shifts_{:.css}.
+The tabs at the bottom of the table provide different overviews of the parameters from your *people*'s *shifts*.
 
 [#day-models-tab]
-=== _Day Models_{:.label} tab
-The _Day Models_{:.label} tab displays parameters from _shifts_{:.css} created with _day models_{:.css} used for the _planning unit_{:.css}. To display the parameters of a _planning unit_{:.css}, click the {icon-plus} next to the _planning unit_{:.css} in the _Planning Units_{:.label} column.
+=== *Day Models* tab
+The *Day Models* tab displays parameters from *shifts* created with *day models* used for the *planning unit*. To display the parameters of a *planning unit*, click the {icon-plus} next to the *planning unit* in the *Planning Units* column.
 
 To select the parameters that you want to display, right-click a day cell or an expanded day cell and select one of the options:
 
-- _Coverage_{:.label}: Difference between the number of assigned and required _shifts_{:.css}.
-- _Requests_{:.label}: Number of _shifts_{:.css} that _people_{:.css} requested.
-- _Staffing_{:.label}: Number of _people_{:.css} scheduled.
-- _Requirement_{:.label}: The _shift requirements_{:.css} created by the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality].
+- *Coverage*: Difference between the number of assigned and required *shifts*.
+- *Requests*: Number of *shifts* that *people* requested.
+- *Staffing*: Number of *people* scheduled.
+- *Requirement*: The *shift requirements* created by the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality].
 
 [#activities-tab]
-=== _Activities_{:.label} tab
-The _Activities_{:.label} tab displays parameters from _activities_{:.css} by _planning unit_{:.css}. To display the parameters of a _planning unit_{:.css}, click the {icon-plus} next to the _planning unit_{:.css} in the _Planning Units_{:.label} column.
+=== *Activities* tab
+The *Activities* tab displays parameters from *activities* by *planning unit*. To display the parameters of a *planning unit*, click the {icon-plus} next to the *planning unit* in the *Planning Units* column.
 
 To select the parameters that you want to display, right-click a day cell or a cell in the expanded day column and select one of the options:
 
-- _Requirement_{:.label}: Number of _people_{:.css} necessary for the _activity_{:.css}.
-- _Staffing_{:.label}: Number of _people_{:.css} scheduled.
-- _Coverage_{:.label}: The difference between the number of scheduled and required _people_{:.css}.
-- _Net maximum capacity_{:.label}: Number of scheduled _people_{:.css} who have the necessary _skills_{:.css} for the _activity_{:.css}.
-- _Staffing according to shift requirement_{:.label}: Number of scheduled _people_{:.css} if all _shifts_{:.css} from the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality] are scheduled.
-- _Coverage according to shift requirement_{:.label}: _Coverage_{:.css} if all _shifts_{:.css} from the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality] are scheduled.
+- *Requirement*: Number of *people* necessary for the *activity*.
+- *Staffing*: Number of *people* scheduled.
+- *Coverage*: The difference between the number of scheduled and required *people*.
+- *Net maximum capacity*: Number of scheduled *people* who have the necessary *skills* for the *activity*.
+- *Staffing according to shift requirement*: Number of scheduled *people* if all *shifts* from the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality] are scheduled.
+- *Coverage according to shift requirement*: *Coverage* if all *shifts* from the xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Shift generation functionality] are scheduled.
 
 [#activity-overview-tab]
-=== _Activity Overview_{:.label} tab
-The _Activity Overview_{:.label} tab displays parameters from a single _activity_{:.css} or _activity type_{:.css} by _planning unit_{:.css}. To display the parameters of a _planning unit_{:.css}, click the {icon-plus} next to the _planning unit_{:.css} in the _Planning Units_{:.label} column. The table displays the period as xref:#action-bar[set in the action bar] in columns and 15-minute interval rows.
+=== *Activity Overview* tab
+The *Activity Overview* tab displays parameters from a single *activity* or *activity type* by *planning unit*. To display the parameters of a *planning unit*, click the {icon-plus} next to the *planning unit* in the *Planning Units* column. The table displays the period as xref:#action-bar[set in the action bar] in columns and 15-minute interval rows.
 
-To select the _activity_{:.css} or _activity type_{:.css}, the parameter, and the _level_{:.css} that you want to display, right-click a day cell and hover over one of the options:
+To select the *activity* or *activity type*, the parameter, and the *level* that you want to display, right-click a day cell and hover over one of the options:
 
-- _Activity_{:.label}: Select an _activity_{:.css} or _activity type_{:.css}.
-- _Parameter_{:.label}
-- _Level_{:.label}
+- *Activity*: Select an *activity* or *activity type*.
+- *Parameter*
+- *Level*
 
 [#message-area]
 == Message area
-The message area consists of the bottom area with a board. The message area displays warning and error messages when scheduling rules are violated. To display or hide the message area, press _CTRL + K_{:.label} or right-click any day cell in the schedule area to open the context menu. Then, select **Message window**.
+The message area consists of the bottom area with a board. The message area displays warning and error messages when scheduling rules are violated. To display or hide the message area, press *CTRL + K* or right-click any day cell in the schedule area to open the context menu. Then, select **Message window**.
 
-To delete a message, click the message and press _Delete_{:.label}. You can also select multiple messages.
+To delete a message, click the message and press *Delete*. You can also select multiple messages.
 
-To delete all messages, press _CTRL + A_{:.label} and then press _Delete_{:.label}.
+To delete all messages, press *CTRL + A* and then press *Delete*.

@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Review and correct employee punches before payroll closes
 :related-articles: concept-time-management.adoc
 
-This article explains how to validate people's punches in _Time Management_{:.breadcrumbs}, correct any issues and recalculate balances for payroll.
+This article explains how to validate people's punches in menu:Time Management[], correct any issues and recalculate balances for payroll.
 
 This task is typically performed at the end of each payroll period to make sure worked time was evaluated correctly and no incorrect balances flow into payroll.
 
@@ -26,15 +26,15 @@ To access the different pages for this task, your role needs to have the followi
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Page
-|Permissions required in _Account > Roles_{:.breadcrumbs}
-|Permissions required in _WFM > Administration > System > Role authorization > Time Management_{:.breadcrumbs}
-|_Time Management > Account Statistics_{:.breadcrumbs}
+|Permissions required in menu:Account[Roles]
+|Permissions required in menu:WFM[Administration>System>Role authorization>Time Management]
+|menu:Time Management[Account Statistics]
 |- View Balances and Account statistics
 |Read access to Account Statistics
-|_Time Management > Payroll Overview_{:.breadcrumbs}
+|menu:Time Management[Payroll Overview]
 |- View Payroll Overview +- Full access to Payroll Overview
 |Start recalculation
-|_Time Management > Balances_{:.breadcrumbs}
+|menu:Time Management[Balances]
 |- View Balances and Account Statistics + - Full access to Balances
 |—
 |===
@@ -51,15 +51,15 @@ Your roles needs to have object permissions for the following object types:
 === Inspect account details
 Use **Account statistics** to view the time values for selected accounts for a specific day and per person:
 
-1. Go to _Time Management > Account statistics_{:.breadcrumbs}.
+1. Go to menu:Time Management[Account statistics].
 2. Filter by account, planning unit or selection. You can display data for several objects.
-3. (Optional) To export a report for the selected objects and date, click _Statistics report_{:.doc-button}.
+3. (Optional) To export a report for the selected objects and date, click btn:[Statistics report].
 
 [#check-punches]
 === Review punches
 Use **Payroll Overview** to view and compare scheduling data and punches per person for a selected period.
 
-1. Go to _Time Management > Payroll Overview_{:.breadcrumbs}.
+1. Go to menu:Time Management[Payroll Overview].
 2. Filter the list by planning unit, selection or status.
 3. Select a time range.
 4. Check statuses and click a person to see their data.
@@ -68,40 +68,40 @@ Use **Payroll Overview** to view and compare scheduling data and punches per per
 
 [#correct-punches]
 === Correct punches
-If you spotted issues for people in the previous step, you can correct punches directly in _Intraday_{:.breadcrumbs}.
+If you spotted issues for people in the previous step, you can correct punches directly in menu:Intraday[].
 To correct punches, follow the steps described in xref:intraday:edit-intraday-activities.adoc[Edit Intraday activities].
 
 [#correct-balances]
 === Correct balances
 Use **Balances** to check people's balances per account group, account, planning unit or selection and perform account operations:
 
-1. Go to _Time Management > Balances_{:.breadcrumbs}.
+1. Go to menu:Time Management[Balances].
 2. Filter the list by account group, account, planning unit or selection.
 3. Select a time range.
 4. Select the people for which you want to correct balances:
    - To correct balances for one person, click the person.
    - To correct balances for several people, select people using the checkboxes.
-5. Click the {icon-context-menu} and select **Account operation**. If you selected only one person, click _Account operation_{:.doc-button}.
+5. Click the {icon-context-menu} and select **Account operation**. If you selected only one person, click btn:[Account operation].
 6. Configure the operation:
    - Select a date range
    - Select a time
    - Select an operation type
-7. Click _Create_{:.doc-button}.
+7. Click btn:[Create].
 
 [#recalculate]
 === Recalculate balances
 If you corrected punches or balances in the previous step, run a recalculation to ensure your payroll remains up to date:
 
-1. Go to _Time Management > Payroll Overview_{:.breadcrumbs}.
+1. Go to menu:Time Management[Payroll Overview].
 2. Recalculate balances:
-   - To recalculate all balances, click _Recalculate_{:.doc-button}.
+   - To recalculate all balances, click btn:[Recalculate].
    - To recalculate a balance for a person, click the person, the {icon-context-menu} and select **Recalculate**.
 3. Select the items you want to recalculate:
    - To recalculate punched times, time categories and account balances, select **All**.
    - To recalculate time categories and account balances, select **Time Categories and Account Balances**.
    - To recalculate only account balances, select **Account Balances**.
 4. Select a date range.
-5. (Optional) If you clicked _Recalculate_{:.doc-button} from the main Payroll Overview page, select the people for which you want to recalculate balances.
-6. Click _Confirm_{:.doc-button}.
+5. (Optional) If you clicked btn:[Recalculate] from the main Payroll Overview page, select the people for which you want to recalculate balances.
+6. Click btn:[Confirm].
 
 Any corrections are reflected after recalculation, so balances stay accurate.

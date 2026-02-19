@@ -26,12 +26,12 @@ To see the results of reports created by other users, your role needs the follow
 
 [#see-a-description-of-each-report]
 == See a description of each report
-1. Go to _Analyze > Reports_{:.breadcrumbs}.
+1. Go to menu:Analyze[Reports].
 2. Hover over the report description in the **Reports** section.
 
 [#create-reports]
 == Create reports
-1. Go to _Analyze > Reports_{:.breadcrumbs}.
+1. Go to menu:Analyze[Reports].
 2. Select a date range.
 3. Filter people:
    - Use the standard filter to filter by planning unit, selection or contract
@@ -39,7 +39,7 @@ To see the results of reports created by other users, your role needs the follow
 4. Select people.
 5. Select a xref:reporting:concept-reports.adoc#report-category[report category].
 6. Select a report.
-7. Click _Create report_{:.doc-button}.
+7. Click btn:[Create report].
 
 In the **Create report** window that opens, select a xref:reporting:ref-reports.adoc#settings[level] and the xref:reporting:ref-reports.adoc#format-delivery[delivery format].
 

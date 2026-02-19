@@ -9,21 +9,21 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 An 8X8 integration is a cloud integration that imports calls, chats, emails, voicemails, agent status and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-an-8X8-integration]
 == Add an 8X8 integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **8X8**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#set-up-your-8x8-integration]
 == Set up your 8X8 integration
 1. In the **Credentials** section, enter the xref:#credentials[required information].
 2. In the **Configuration** section, enter the xref:#configuration[required information]
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#credentials]
 === Credentials
@@ -123,7 +123,7 @@ Potential time discrepancy in Intraday Adherence
 ====
 The 8X8 API accepts timestamps only in UTC format but interprets them as local time when returning data. This can cause a time discrepancy for tenants in time zones that differ from UTC.<br>
 In addition, the integration imports historical agent status data every 15 minutes. This can introduce an additional delay of 15-30 minutes.<br>
-If present, these time discrepancies will appear in the historical agent status data in _Intraday > Intraday Adherence_{:.breadcrumbs}.
+If present, these time discrepancies will appear in the historical agent status data in menu:Intraday[Intraday Adherence].
 ====
 [#live-agent-status-data]
 === Live agent status data

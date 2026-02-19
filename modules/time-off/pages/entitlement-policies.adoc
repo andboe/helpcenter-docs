@@ -24,7 +24,7 @@ The renewal date controls when entitlement is created and when people can begin 
 
 [#create-an-entitlement-policy]
 == Create an entitlement policy
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. Select a time-off type.
 3. In the **Entitlement policies** section, click **+ Add**.
 4. Enter the basic information:
@@ -35,14 +35,14 @@ The renewal date controls when entitlement is created and when people can begin 
    - Select **Yearly renewal** to give people a fixed amount of time-off entitlement in the leave year period. Enter an **Entitlement amount** to define the number of days or hours a person receives under the entitlement policy. The **Renewal date** defines the day on which the entitlement policy creates a time-off entitlement. If you change this date after an entitlement has already been granted for the current leave year, Time Off creates a new entitlement record for the same leave year. This occurs if the new renewal date falls within that year and the previous entitlement was not yet active or was revoked.
    - Select **Accrual** to add time-off entitlement gradually (weekly, bi-weekly, or monthly) throughout the leave year. Enter an **Accrual amount** to define the number of days or hours a person earns at the end of each accrual cycle. Select an **Accrual frequency** to define how often entitlement is added. The first record creation typically occurs after 7 days for weekly accrual, 14 days for bi-weekly, or one month for monthly accrual.
 6. Check the **Carry over** checkbox to allow unused time-off entitlement to be transferred into the next leave year. This option is available for Yearly renewal strategy only. Enter a **Max. carry over amount** to define the amount of unused entitlement that can be transferred from one leave year to the next. Enter a **Carry over expiration date** to define the date by which people must use carried-over time-off entitlement before it automatically expires.
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 [#edit-an-entitlement-policy]
 == Edit an entitlement policy
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. Select the entitlement policy you want to edit.
 3. Adjust the details.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [NOTE]
 ====
@@ -54,7 +54,7 @@ Changes are not applied retroactively.
 ====
 [#delete-an-entitlement-policy]
 == Delete an entitlement policy
-1. Go to _Time Off > Types_{:.breadcrumbs}.
+1. Go to menu:Time Off[Types].
 2. Select the time-off type from which you want to delete the entitlement policy.
 3. Go to section **Entitlement policies**.
 4. Click the {icon-delete} Delete icon on the row of the entitlement policy you want to delete.

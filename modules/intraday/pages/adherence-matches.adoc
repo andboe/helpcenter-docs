@@ -30,7 +30,7 @@ Standard reports do not reflect matched activities but only consider the activit
 ====
 [#access-the-activity-matches-page]
 == Access Activity matches
-In _Intraday > Real-Time Adherence_{:.breadcrumbs}, there are three ways to access the **Activity matches** page:
+In menu:Intraday[Real-Time Adherence], there are three ways to access the **Activity matches** page:
 
 - At the top right of the overview table, click the {icon-context-menu} and select **Activity matches**.
 - In the overview table, hover over an activity in the **Actual activity** column and click the {icon-matches} once it appears.
@@ -42,14 +42,14 @@ In _Intraday > Real-Time Adherence_{:.breadcrumbs}, there are three ways to acce
    The cloud icon {icon-cloud-arrow-up-gray} marks activities already mapped to an external status. The **Show only mapped activities** checkbox is checked by default. Uncheck it to see a complete list of your Peopleware activites.
 2. Select an activity from the list on the left.
    You see the mapping and match information for that activity on the right of the page. Under **Actual activity** you see a list of all external statuses mapped to that activity, grouped by external system. Under **Scheduled activity** you see all matched activities and activity types, which are considered as being in adherence.
-3. Click _{icon-edit} Manage activity matches_{:.doc-button} under **Scheduled activity**.
+3. Click btn:[{icon-edit} Manage activity matches] under **Scheduled activity**.
 4. Select the activities you want to match to the activity you are editing.
-5. Click _Apply_{:.doc-button}.
+5. Click btn:[Apply].
 
 [#manage-mappings-of-external-statuses]
 === Manage mappings of external statuses
-To edit how external statuses are mapped to activities, click **Edit in Intraday** under **Actual activity**. Peopleware redirects you to _Intraday > Configuration_{:.breadcrumbs}, where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
-If you do not have access to _Intraday > Configuration_{:.breadcrumbs}, you are redirected to xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-wfm[external status mapping to activities in WFM].
+To edit how external statuses are mapped to activities, click **Edit in Intraday** under **Actual activity**. Peopleware redirects you to menu:Intraday[Configuration], where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
+If you do not have access to menu:Intraday[Configuration], you are redirected to xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-wfm[external status mapping to activities in WFM].
 
 [#default-matches]
 === Matches configured by default

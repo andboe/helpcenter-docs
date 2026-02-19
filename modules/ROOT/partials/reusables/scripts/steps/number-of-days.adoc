@@ -1,1 +1,1 @@
-Enter the **Number of Days** for which you want to run the script (starting with the start date). This period typically corresponds with the date range you want to schedule.
+Enter the *Number of Days* for which you want to run the script (starting with the start date). This period typically corresponds with the date range you want to schedule.

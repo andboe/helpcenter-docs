@@ -22,8 +22,8 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 
 [#filter-shift-sequences]
 == Filter shift sequences
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. From the **Scheduling Actions** drop-down menu on the right, select _Insert shift sequences_{:.doc-button}.
+1. Go to menu:Plan[Schedules].
+2. From the **Scheduling Actions** drop-down menu on the right, select btn:[Insert shift sequences].
 3. Select a planning unit.
 4. (Optional) Pick a selection.
 5. Set a time period.
@@ -72,7 +72,7 @@ The **Overview** section shows shift sequences that match your filter. The table
    > The selected options are only applied while inserting a person's first shift sequence.
 
 3. (Optional) Change the target level. By default, the Schedule level is selected. The available levels are Schedule and Actual. If you are using Peopleware Enterprise WFM, you can additionally insert shift sequences in the Version 1, Version 2 and Version 3 levels.
-4. Click _Insert shift sequences_{:.doc-button}.
+4. Click btn:[Insert shift sequences].
 
 [NOTE]
 ====
@@ -86,15 +86,15 @@ If deleted day models are still present in a shift sequence, they are still inse
 == Access result reports
 In the **History** section, you can access reports for the current and previous runs of inserting shift sequences. Click the **View details** link to check why shifts or activities could not be inserted. A four-digit ID at the beginning of a row refers to a scheduling rule that blocks the shift sequence from being inserted.
 
-To delete entries from the **History** section, check the checkboxes next to an entry and click _Delete entries_{:.doc-button}. To select all entries at once, check the checkbox at the top.
+To delete entries from the **History** section, check the checkboxes next to an entry and click btn:[Delete entries]. To select all entries at once, check the checkbox at the top.
 
 [#prevent-overwriting-of-scheduled-activities]
 == Prevent overwriting of scheduled activities
-By default, when you insert full-day activities into the schedule using shift sequences, other full-day activities are overwritten in the schedule, e.g. time off. To prevent this, activate the scheduling rule _2645_{:.id-label} _Disallow overwriting of full-day activities with shifts or activities_.
+By default, when you insert full-day activities into the schedule using shift sequences, other full-day activities are overwritten in the schedule, e.g. time off. To prevent this, activate the scheduling rule *2645* _Disallow overwriting of full-day activities with shifts or activities_.
 
 By default, partial-day activities of the types Absence, Illness, Vacation, or Meeting are not overwritten.
 
-To delete activities of all types when inserting a shift sequence, check the checkbox **Delete all activities and shifts** to avoid errors related to the scheduling rule _2648_{:.id-label} _Write protection for activities in the Shift Center_, which is always active for shift sequence insertion.
+To delete activities of all types when inserting a shift sequence, check the checkbox **Delete all activities and shifts** to avoid errors related to the scheduling rule *2648* _Write protection for activities in the Shift Center_, which is always active for shift sequence insertion.
 
 [NOTE]
 ====

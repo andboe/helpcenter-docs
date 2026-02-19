@@ -110,7 +110,7 @@ New versions require at least database version _20122001_ or _20130001_. If your
 
 [#customize-email-server-settings]
 == Customize Email Server Settings
-The email settings are no longer made via the injixo Enterprise interface; settings _48105_{:.id-label} and _48106_{:.id-label} are no longer taken into account. Please add the following paragraph to the `isps.cfg` and configure the SMTP parameters.
+The email settings are no longer made via the injixo Enterprise interface; settings *48105* and *48106* are no longer taken into account. Please add the following paragraph to the `isps.cfg` and configure the SMTP parameters.
 
 If the section with `ShortName = ivemail` is already configured in `isps.cfg` by a previous update, you can skip this step. Otherwise add the following paragraph and configure the parameters for sending e-mails:
 
@@ -128,7 +128,7 @@ If the section with `ShortName = ivemail` is already configured in `isps.cfg` by
     SMTPTag = "Your custom topic"
     ```
 
-Permitted values for the **SMTPSecureMode** parameter are SSL, PLAIN, and TLS. **SMTPTag** is optional to add a prefix to the subject of your emails sent from your injixo Enterprise Server, e.g. _Your custom topic_{:.menu-item}.
+Permitted values for the **SMTPSecureMode** parameter are SSL, PLAIN, and TLS. **SMTPTag** is optional to add a prefix to the subject of your emails sent from your injixo Enterprise Server, e.g. *Your custom topic*.
 
 Test the new configuration by sending a report via e-mail after the update. If there is an error, the error message will be displayed in the report.
 

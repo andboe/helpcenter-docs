@@ -13,23 +13,23 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Scheduling Periods] under menu:Plan[Schedules] instead.
 ====
 [#allow-employees-to-swap-shifts]
 == Allow employees to swap shifts
-To allow shift swaps, you first have to activate the option in Me. Click _Me_{:.breadcrumbs} in the main navigation and turn on **Shift swap**.
+To allow shift swaps, you first have to activate the option in Me. Click menu:Me[] in the main navigation and turn on **Shift swap**.
 
-1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
-2. Select the _Planning Unit_{:.label} for which you want to allow shift swaps among employees.
+1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+2. Select the *Planning Unit* for which you want to allow shift swaps among employees.
 3. Select the **Type** _Standard_.
-4. Pick a _Selection_{:.label} if you want to limit the option to swap shifts to a certain group of agents. Otherwise, keep **[All]**.
-5. Click _Apply_{:.doc-button}.
-6. Select the planning period with the date range for which you want to allow shift swaps and click _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add}.
+4. Pick a *Selection* if you want to limit the option to swap shifts to a certain group of agents. Otherwise, keep **[All]**.
+5. Click btn:[Apply].
+6. Select the planning period with the date range for which you want to allow shift swaps and click *![edit button](/assets/img/common/item-edit.gif)* in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add}.
 
 In both cases, the following dialog appears:
 
@@ -38,6 +38,6 @@ image::enable-employees-to-swap-shifts/image-3.png[Define Planning Period, width
 1. Use **Valid From** and **Valid To** to define the time period for which you want to allow shift swaps.
 2. Select the **Status** _Enabled_.
 3. Optional: Set a **Deadline**. Until that date, employees can swap shifts.
-4. Confirm with _Ok_{:.doc-button}.
+4. Confirm with btn:[Ok].
 
 Your employees can swap shifts in Me for the time period defined by the planning period. This is possible for all xref:administration:activity-examples.adoc[activities] which are configured as **Exchangeable with shift swap**.

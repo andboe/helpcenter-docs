@@ -13,7 +13,7 @@ The real-time adherence feature uses data from your external system (usually an 
 
 In order to monitor your people's adherence to their schedule, you need to map the statuses your ACD uses (here called external statuses) to your activities in Peopleware.
 
-Go to _Intraday > Configuration_{:.breadcrumbs} to map external statuses to activities.
+Go to menu:Intraday[Configuration] to map external statuses to activities.
 
 [#mapping-strategies]
 == Mapping strategies
@@ -27,37 +27,37 @@ Option B: You want a higher level of detail in your adherence monitoring. You wa
 
 [#map-external-statuses-to-activities-in-intraday]
 == Map external statuses to activities in Intraday
-1. In _Intraday > Configuration_{:.breadcrumbs}, select an activity from the list.<br>Under **Integrations**, you will see a list of your integrations.
+1. In menu:Intraday[Configuration], select an activity from the list.<br>Under **Integrations**, you will see a list of your integrations.
 2. Click the integration with the system whose external statuses you want to map.<br>In the **External statuses** section, you can find all statuses from the external system.<br>If a status is already mapped to an activity, the activity's name is displayed next to it.
 3. Select all external statuses you want to map to that activity.
-4. Click _Save changes_{:.doc-button}.
+4. Click btn:[Save changes].
 
 You can use the search field to search external statuses by name, or you can enter "unmapped" to see all statuses from the selected integration that are not yet mapped to any activity.
 
 [#map-external-statuses-to-activities-in-wfm]
 == Map external statuses to activities in WFM
-If you do not have access to _Intraday > Configuration_{:.breadcrumbs}, integrations store such activities in the activity Present (ID 1) and display the imported agent status as Present. To display the same activities as your external system, you first need to pause the integration:
+If you do not have access to menu:Intraday[Configuration], integrations store such activities in the activity Present (ID 1) and display the imported agent status as Present. To display the same activities as your external system, you first need to pause the integration:
 
-1. Go to _Account > Integrations_{:.breadcrumbs}.
+1. Go to menu:Account[Integrations].
 2. In the list of integrations, click the Suspend importing icon {icon-pause-circle} next to the integration for which you want to remap external statuses.
 
 You can then remap external statuses to other activities as follows:
 
-1. Go to _Plan > Configuration > Activities_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Activities].
 2. Select the activity you want to remap.
-3. In the **External Systems** section, click _Edit in WFM_{:.doc-button}.
+3. In the **External Systems** section, click btn:[Edit in WFM].
 4. Scroll down to the **External Systems** section and click the {icon-wfm-delete} next to **Present**.
 5. In the **External Systems** section, click the Add icon {icon-wfm-add}.
 6. In the **External Systems** window, configure the following:<br>
    - **External System**: Select the relevant integration.
    - **Name from the External System**: Select the activity from the external system that you want to map to the currently selected Peopleware activity.
    - **Classification**: Select the value 1.
-7. Click _OK_{:.doc-button}.
+7. Click btn:[OK].
 
 [#remap-already-mapped-external-statuses]
 == Remap already mapped external statuses
 You can map an already mapped external status to another activity.
 
-1. In _Intraday > Configuration_{:.breadcrumbs}, select an activity, and then an integration.
+1. In menu:Intraday[Configuration], select an activity, and then an integration.
 2. In the **External statuses** section, select the external statuses that you want to remap.<br>You will see a yellow warning icon next to the name of the activity to which the external status is currently mapped.
-3. Click _Save changes_{:.doc-button}.<br>The previous mapping is overwritten.
+3. Click btn:[Save changes].<br>The previous mapping is overwritten.

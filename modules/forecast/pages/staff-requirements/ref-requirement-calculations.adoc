@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [#automatic-requirement-calculations]
 == Automatic requirement calculations
-This section describes the requirement calculation settings available in _Forecast > Workloads > Edit staff requirements_{:.breadcrumbs}.
+This section describes the requirement calculation settings available in menu:Forecast[Workloads>Edit staff requirements].
 
 [%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
 |===
@@ -61,7 +61,7 @@ This section describes the requirement calculation settings available in _Foreca
 
 [#manual-requirement-calculation]
 == Manual requirement calculation
-This section lists the requirement calculation settings available in _Forecast > Requirement calculations_{:.breadcrumbs}.
+This section lists the requirement calculation settings available in menu:Forecast[Requirement calculations].
 
 [#backoffice-linear]
 === Backoffice - Linear

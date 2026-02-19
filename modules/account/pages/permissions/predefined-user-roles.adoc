@@ -35,7 +35,7 @@ The default role setting can be disabled for the Standard Agent role, but not fo
 For more information on how to set up roles, see xref:account:configure-user-roles.adoc[Configure roles].
 
 Predefined roles have a set of permissions, which can be edited.
-To view or edit the permissions of a role, go to _Account > Roles_{:.breadcrumbs}.
+To view or edit the permissions of a role, go to menu:Account[Roles].
 
 [NOTE]
 ====
@@ -43,5 +43,5 @@ To view or edit the permissions of a role, go to _Account > Roles_{:.breadcrumbs
 >
 [NOTE]
 ====
-Each predefined role specifies additional permissions in _WFM > Administration > System > Role Authorization_{:.breadcrumbs} to control access to WFM features.
+Each predefined role specifies additional permissions in menu:WFM[Administration>System>Role Authorization] to control access to WFM features.
 ====

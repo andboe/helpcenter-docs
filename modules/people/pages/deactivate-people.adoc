@@ -15,28 +15,28 @@ If people are not available for work for an extended period of time, e.g. when t
 
 To deactivate a person, follow these steps:
 
-1. Go to _People_{:.breadcrumbs} and select a person from the list.
+1. Go to menu:People[] and select a person from the list.
 2. In the left-side menu, click **Work profile**.
 3. In the **Staff membership** section, click the currently active staff membership.
 4. Enter a **Valid to** date.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#list-deactivated-people]
 === List deactivated people
-1. Go to _People_{:.breadcrumbs}.
-2. Click _{icon-filter} Filter_{:.doc-button}.
+1. Go to menu:People[].
+2. Click btn:[{icon-filter} Filter].
 3. Activate the **Only show inactive** checkbox.
 
 [#reactivate-people]
 === Reactivate people
 To reactivate a person, e.g. when they return to work after a long absence, follow these steps:
 
-1. Go to _People_{:.breadcrumbs} and select the person you want to reactivate.
+1. Go to menu:People[] and select the person you want to reactivate.
    You can use the search or xref:#list-deactivated-people[display only deactivated people].
 2. In the left-side menu, click **Work profile**.
 3. In the **Staff membership** section, click {icon-plus} **Add**.
 4. Configure a new staff membership with at least a **Valid from** date.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#delete-a-person]
 == Delete a person
@@ -57,22 +57,22 @@ You cannot reactivate a deleted person. The person will be removed from all curr
 ====
 [#delete-person-in-overview-table]
 === Delete person in overview table
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Find the person in the list.
 3. Click the Delete icon {icon-delete}.
-4. In the confirmation window, click _Delete_{:.doc-button}.
+4. In the confirmation window, click btn:[Delete].
 
 [#delete-person-in-detailed-view]
 === Delete person in detailed view
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Select the person in the list.
 3. From the {icon-context-menu} at the top left, select {icon-delete} **Delete**.
-4. In the confirmation window, click _Delete_{:.doc-button}.
+4. In the confirmation window, click btn:[Delete].
 
 [#delete-multiple-people]
 === Delete multiple people
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Select at least 2 people in the list.
 3. In the action bar, select {icon-delete} **Delete**.
 4. In the confirmation window, enter the number of people records you selected for deletion.
-5. Click _Delete_{:.doc-button}.
+5. Click btn:[Delete].

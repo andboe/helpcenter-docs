@@ -20,7 +20,7 @@ Legacy Peopleware client components, such as the Peopleware client, the Reportse
 1. Open the **Windows start menu**, type _internet options_, and press _Enter_.
 2. Click the **Advanced** tab and scroll to the bottom.
 3. Activate **Use TLS 1.2**.
-4. Click _OK_{:.doc-button}.
+4. Click btn:[OK].
 
 image::tls12/image-1.png[Internet Options Dialog, width=50%]
 

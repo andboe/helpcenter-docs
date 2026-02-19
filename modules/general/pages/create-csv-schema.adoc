@@ -24,11 +24,11 @@ The CSV schema will only be available for manual CSV imports and CSV integration
 
 [#create-csv-schema-draft]
 === Create CSV schema draft
-1. Go to _Account > CSV Schemas_{:.breadcrumbs}
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[CSV Schemas]
+2. Click btn:[Create].
 3. Configure general and file processing settings as needed.
 4. Upload the CSV sample file.
-5. Click _Save_{:.doc-button}
+5. Click btn:[Save]
 
 Peopleware saves the CSV schema draft and opens the details page.
 
@@ -42,7 +42,7 @@ Usually, mapping is required for date and time values and for data specific to t
 3. For every date or time field, assign the corresponding CSV column and specify the value format.
 4. Go to the **Data column mapping and processing** section.
 5. Assign the target fields to their corresponding CSV column.
-6. Click _Save_{:.doc-button}
+6. Click btn:[Save]
 
 Depending on the schema type, the CSV schema can now be used to import CSV data via the CSV import dialogs or a CSV integration.
 

@@ -10,7 +10,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [#what-are-roles]
 == About roles
-A role groups people with the same set of permissions for the apps and features in Peopleware, e.g. _Forecast_{:.menu-item}, or to the features in WFM, e.g. _WFM > Administration_{:.breadcrumbs}.
+A role groups people with the same set of permissions for the apps and features in Peopleware, e.g. *Forecast*, or to the features in WFM, e.g. menu:WFM[Administration].
 
 Every role can be marked as a default role in the role settings.
 Peopleware assigns roles with the **Default role** setting to every new user account.
@@ -23,7 +23,7 @@ For more information see xref:account:predefined-user-roles.adoc[Predefined role
 >
 [NOTE]
 ====
-In Essential WFM and Advanced WFM, you can configure xref:forecast:workload-permissions.adoc#configure-workload-permissions[permissions for all workloads]. In Enterprise WFM, you can additionally configure xref:forecast:workload-permissions.adoc#configure-individual-workload-permissions[permissions for individual workloads], xref:monitoring:manage-dashboards.adoc#configure-dashboard-permissions[dashboards] and xref:account:role-permissions.adoc[roles] in _Account > Roles_{:.breadcrumbs}.
+In Essential WFM and Advanced WFM, you can configure xref:forecast:workload-permissions.adoc#configure-workload-permissions[permissions for all workloads]. In Enterprise WFM, you can additionally configure xref:forecast:workload-permissions.adoc#configure-individual-workload-permissions[permissions for individual workloads], xref:monitoring:manage-dashboards.adoc#configure-dashboard-permissions[dashboards] and xref:account:role-permissions.adoc[roles] in menu:Account[Roles].
 ====
 [#managing-roles]
 == Manage roles
@@ -36,20 +36,20 @@ To configure WFM permissions, your role also needs the **Enable access to WFM** 
 === Create a new role from scratch
 To create a new role and configure all its settings from scratch, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Click _Create role_{:.doc-button}.
-3. In the _Basic information_{:.label} section, configure the following fields:
+1. Go to menu:Account[Roles].
+2. Click btn:[Create role].
+3. In the *Basic information* section, configure the following fields:
    - **Name**
    - (Optional) **Description**
-4. Edit the role _permissions_{:.css}. To grant _permissions_{:.css}, check the checkbox of the feature.
-5. Click _Save_{:.doc-button}.
+4. Edit the role *permissions*. To grant *permissions*, check the checkbox of the feature.
+5. Click btn:[Save].
 
 [#duplicate-a-role]
 === Duplicate an existing role
 Duplicating an existing role transfers all its settings, including permission settings, to the new role.
 To duplicate a role, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
+1. Go to menu:Account[Roles].
 2. Find the role in the **Roles** table.
 3. In the role entry, click the {icon-context-menu} on the right to display the role entry menu.
 4. Click {icon-overlapping-boxes} Duplicate to immediately create the new, duplicated role.
@@ -57,33 +57,33 @@ To duplicate a role, proceed as follows:
 
 [#assign-roles-to-people]
 === Assign roles to people
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select a person from the list.
 3. In the left-side menu, click **Access**.
-4. In the _Roles and admin access_{:.label} section, click {icon-edit} **Edit**.
+4. In the *Roles and admin access* section, click {icon-edit} **Edit**.
 5. Check the relevant checkboxes in the list.
    To limit the displayed roles, use the search field.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#edit-roles]
 === Edit roles
-1. Go to _Account > Roles_{:.breadcrumbs}.
+1. Go to menu:Account[Roles].
 2. Find the role in the Roles table.
-3. Make the changes to the role and click _Save_{:.doc-button}.
+3. Make the changes to the role and click btn:[Save].
 
 [#delete-roles]
 === Delete roles
-1. Go to _Account > Roles_{:.breadcrumbs}.
+1. Go to menu:Account[Roles].
 2. Click the {icon-context-menu} next to the role you want to delete.
 3. Click {icon-delete} Delete.
-4. In the window that opens, click _Delete_{:.doc-button} to confirm.
+4. In the window that opens, click btn:[Delete] to confirm.
 
 [#set-wfm-permissions]
-== Set WFM _permissions_{:.css}
-1. Under _Account > Roles_{:.breadcrumbs}, select a role.
-2. In the **WFM** section, click _Show in WFM_{:.label}.
-   You will be redirected to _WFM > Administration > System > Role authorization_{:.breadcrumbs}.
-3. In the **Navigator** section on the right, check or uncheck the checkboxes to add or remove _permissions_{:.css}.
+== Set WFM *permissions*
+1. Under menu:Account[Roles], select a role.
+2. In the **WFM** section, click *Show in WFM*.
+   You will be redirected to menu:WFM[Administration>System>Role authorization].
+3. In the **Navigator** section on the right, check or uncheck the checkboxes to add or remove *permissions*.
 
 [NOTE]
 ====
@@ -91,44 +91,44 @@ To duplicate a role, proceed as follows:
 >
 [NOTE]
 ====
-Individual _permissions_{:.css} can overwrite role-based _permissions_{:.css} (also for _people_{:.css} with admin access).
+Individual *permissions* can overwrite role-based *permissions* (also for *people* with admin access).
 ====
 >
 [NOTE]
 ====
-Use only role-based _permissions_{:.css} whenever possible. You can change _permissions_{:.css} for individual _people_{:.css} under _WFM > Administration > System > User Authorization_{:.breadcrumbs} but such changes will overwrite the role-based _permissions_{:.css}.
+Use only role-based *permissions* whenever possible. You can change *permissions* for individual *people* under menu:WFM[Administration>System>User Authorization] but such changes will overwrite the role-based *permissions*.
 ====
 >
 [NOTE]
 ====
-To reset specific _permissions_{:.css}, you may need to temporarily remove admin access to activate the grayed-out checkboxes on the user authorization page. Click the Reset icon {icon-asterisk} to reset the role to the configuration set in _Account > Roles_{:.breadcrumbs}.
+To reset specific *permissions*, you may need to temporarily remove admin access to activate the grayed-out checkboxes on the user authorization page. Click the Reset icon {icon-asterisk} to reset the role to the configuration set in menu:Account[Roles].
 ====
 [#manage-team-access-restrict-access-to-configuration-data]
 == Manage team access: Restrict access to configuration data
-If your organization includes several teams and you want to restrict access to the teams' data, you can add more than one role to a person. The _permissions_{:.css} defined by different roles are combined. You can restrict access to elements such as _planning units_{:.css}, _day models_{:.css}, activities, or reports.
+If your organization includes several teams and you want to restrict access to the teams' data, you can add more than one role to a person. The *permissions* defined by different roles are combined. You can restrict access to elements such as *planning units*, *day models*, activities, or reports.
 
 **Example**
 
-If all your planners should have access to the _schedule_{:.css} but each planner should only be able to edit the data of their own _planning unit_{:.css}, you can assign two roles to each planner.
+If all your planners should have access to the *schedule* but each planner should only be able to edit the data of their own *planning unit*, you can assign two roles to each planner.
 
-You can create a new role with no access to specific _planning units_{:.css}, or remove access to all _planning units_{:.css} from an existing role. To remove access to all _planning units_{:.css} from an existing role, proceed as follows:
+You can create a new role with no access to specific *planning units*, or remove access to all *planning units* from an existing role. To remove access to all *planning units* from an existing role, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
+1. Go to menu:Account[Roles].
 2. Select the role.
-3. In the **WFM** section, click _View in WFM_{:.label}.
-4. On the right, scroll to the _Planning Units_{:.label} section (or use the quick link on top).
-5. Click the {icon-wfm-delete} next to the [ALL] entry to delete access to all _planning units_{:.css}.
-6. Click _OK_{:.doc-button}.
+3. In the **WFM** section, click *View in WFM*.
+4. On the right, scroll to the *Planning Units* section (or use the quick link on top).
+5. Click the {icon-wfm-delete} next to the [ALL] entry to delete access to all *planning units*.
+6. Click btn:[OK].
 
-Add access to the specific _planning unit_{:.css} to other roles as follows:
+Add access to the specific *planning unit* to other roles as follows:
 
 1. Select the second role.
-2. In the _Planning Units_{:.label} section, click the {icon-wfm-add}.
-3. Select the planning unit(s) from the list. Press **CTRL** or **Shift** while clicking to select multiple _planning units_{:.css}.
-4. Under _Access Authorization_{:.label}, check one or more checkboxes to set **Read**, **Edit**, and **Delete** rights.
-5. Click _OK_{:.doc-button}.
+2. In the *Planning Units* section, click the {icon-wfm-add}.
+3. Select the planning unit(s) from the list. Press **CTRL** or **Shift** while clicking to select multiple *planning units*.
+4. Under *Access Authorization*, check one or more checkboxes to set **Read**, **Edit**, and **Delete** rights.
+5. Click btn:[OK].
 
-To complete the configuration, go to _People_{:.breadcrumbs} and xref:#assign-roles-to-people[assign the roles to your people].
+To complete the configuration, go to menu:People[] and xref:#assign-roles-to-people[assign the roles to your people].
 
 [#view-people-in-schedules-and-shift-center]
 === View people in Schedules and Shift Center

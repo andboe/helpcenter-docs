@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn about the standard reports available at a planning unit level.
 :related-articles: adherence-intraday.adoc
 
-In _WFM > Monitoring > Reports_{:.breadcrumbs}, you can create reports based on xref:reporting:planning-unit-reports.adoc[planning unit] and xref:reporting:employee-reports.adoc[people] data. This article describes the contents of the reports about planning unit data.
+In menu:WFM[Monitoring>Reports], you can create reports based on xref:reporting:planning-unit-reports.adoc[planning unit] and xref:reporting:employee-reports.adoc[people] data. This article describes the contents of the reports about planning unit data.
 
 New to reports? Learn how to xref:reporting:task-create-reports.adoc[create reports].
 

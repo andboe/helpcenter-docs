@@ -47,32 +47,32 @@ Additionally, your role needs object permissions to edit the relevant objects:
 == Steps
 === Create attribute
 
-1. Go to _Plan > Configuration > Attributes_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Attributes].
 2. Check if the following attribute already exists:
    - **Name**: `Optimisation: remove on writing`
    - **Type**: Yes/No
    - **Available for**: Activities
 3. If the attribute does not exist, create it:
-   1. In the Attributes overview table, click _Create_{:.doc-button}.
+   1. In the Attributes overview table, click btn:[Create].
    2. Set the parameters as described in step 2.
       Make sure that the attribute name matches exactly, including capitalization and spacing.
-   3. Click _Save_{:.doc-button}.
+   3. Click btn:[Save].
 
 The attribute can now be assigned to activities.
 
 [#assign-attribute-activity]
 === Assign attribute to activity
-1. Go to _Plan > Configuration > Activities_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Activities].
 2. Open the activity you want to exclude from scheduling.
 3. Navigate to the **Attributes** section.
-4. Click _Add_{:.doc-button}.
+4. Click btn:[Add].
    Configure the new attribute:
    - **Attribute**: `Optimisation: remove on writing`.
    - **Value**: Yes
    - **Priority**: 1
    - (Optional): Set a validity period for the attribute assignment.
      If you set a validity period, the activity will only be excluded from scheduling during that period.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 **Create optimized schedule** jobs will from now on exclude this activity from scheduling.
 The jobs' logs contain information about which activities were removed from the schedule based on this attribute.

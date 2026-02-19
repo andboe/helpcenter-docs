@@ -1,1 +1,1 @@
-Enter the **Start Date** for the calculation.
+Enter the *Start Date* for the calculation.

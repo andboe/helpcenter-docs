@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn about the standard reports available at an employee level.
 
-In _WFM > Monitoring > Reports_{:.breadcrumbs}, you can create reports based on xref:reporting:planning-unit-reports.adoc[planning unit] and xref:reporting:employee-reports.adoc[people] data. This article describes the contents of the reports about people data.
+In menu:WFM[Monitoring>Reports], you can create reports based on xref:reporting:planning-unit-reports.adoc[planning unit] and xref:reporting:employee-reports.adoc[people] data. This article describes the contents of the reports about people data.
 
 New to reports? Learn how to xref:reporting:task-create-reports.adoc[create reports].
 
@@ -35,7 +35,7 @@ The following reports contain the schedules per person for all selected people, 
 - **Modifying Master Data**: Logs users' additions, updates, and deletions to selected configuration data in the last 90 days. It shows a comprehensive overview of the changes made to people's data (e.g., name, address, email, date of birth, ID) within the specified timeframe.
 - **Master Data Overview**: All people data available.
 - **Role Authorization**: Access rights to features, menu items and scheduling actions per selection.
-- **Fluctuation I**: Shows the number of hires and departures in chronological order, in total and in percentage. <!-- Employees of one, several or all Planning Units are displayed. A separate page is created for each _Planning Unit_{:.css}. -->
+- **Fluctuation I**: Shows the number of hires and departures in chronological order, in total and in percentage. <!-- Employees of one, several or all Planning Units are displayed. A separate page is created for each *Planning Unit*. -->
 - **Holiday Work (Lottery and Assignment)**: Shows all activities of the type Presence or Break, all shifts with these activities that are assigned to people by lottery, plus assignments on public holidays and with shift requests. The data comes from the Request and Alternative Request levels.
 - **Fluctuation II**: Join and leave dates, number of days in the company, selection and contract for each person who left the company.
 - **Organizational Chart**: Shows all people in a planning unit with their skills, resulting activities, assigned contracts and selections.

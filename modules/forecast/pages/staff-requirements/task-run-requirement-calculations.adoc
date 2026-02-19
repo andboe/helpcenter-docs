@@ -35,10 +35,10 @@ Your role needs to have the following functional permissions:
 == Run a requirement calculation
 Each requirement calculation has its own configuration interface and parameters, but the general process is the same.
 
-1.  Go to _Forecast > Requirement calculations_{:.breadcrumbs}.
+1.  Go to menu:Forecast[Requirement calculations].
 2.  Select the calculation you need from the list to open it.
-3.  (Optional) Click _Apply preset..._{:.doc-button} and select a preset from the list.
+3.  (Optional) Click btn:[Apply preset...] and select a preset from the list.
 4.  In the **Calculation parameters** section, configure the specific parameters for the calculation, e.g. date ranges, planning units, activities, and service goals.
-5.  Click _Run_{:.doc-button}.
+5.  Click btn:[Run].
 
-Peopleware saves the staff requirements for the planning unit and activity in _Plan > Schedules_{:.breadcrumbs}.
+Peopleware saves the staff requirements for the planning unit and activity in menu:Plan[Schedules].

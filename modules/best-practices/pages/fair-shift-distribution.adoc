@@ -34,13 +34,13 @@ Before running the schedule optimization, you can insert the shift sequence into
 
 [#optimized-rotation-work-time-pattern-models]
 == Optimized rotation: Work time pattern models
-If you want to optimize shifts while applying rotating patterns, use _work time pattern models_{:.menu-item}.
+If you want to optimize shifts while applying rotating patterns, use *work time pattern models*.
 
 Work time pattern models let you schedule your employees work early, middle, and late shifts on a rotating weekly basis (for example). In each week, the shifts that may be worked are chosen from a list of **day models** that you specify in a **week time pattern**. The optimization is constrained by the **type** you specify in the work time pattern model - _Flexible Rotation_, _Fixed Rotation_, etc.
 
 [#unpopular-shifts-exception-days]
 == Unpopular shifts: Exception days
-If you don’t want to assign unpopular shifts or tasks for entire weeks, but only schedule one or two per week for each employee, you can use _week time patterns_{:.menu-item} with **exception days**:
+If you don’t want to assign unpopular shifts or tasks for entire weeks, but only schedule one or two per week for each employee, you can use *week time patterns* with **exception days**:
 
 1. Create a **week time pattern** with your standard shifts.
    image::fair-shift-distribution/image-4.png[week time pattern with day models for standard shifts, width=50%]

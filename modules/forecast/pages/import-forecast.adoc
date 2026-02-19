@@ -82,13 +82,13 @@ Timestamp;Offered;AHT
 
 [#import-a-forecast]
 == Import a forecast
-1. In _Forecast > Workloads_{:.breadcrumbs}, select the workload for which you want to import the external forecast data.
+1. In menu:Forecast[Workloads], select the workload for which you want to import the external forecast data.
 2. From the three-dot menu {icon-context-menu} at the top right, select **Import forecast data**.
 3. In the CSV schema field, select the CSV schema you want to use to import the data.
 4. Provide the CSV file in the upload dialog.
-5. Click _Import_{:.doc-button}.
+5. Click btn:[Import].
 6. Wait for the upload to complete.
-7. Click _Close_{:.doc-button}
+7. Click btn:[Close]
 
 Depending on the CSV schema settings, Peopleware displays the imported forecast data as **Imported forecast** or a forecast version in the volume or AHT graph.
 If you don't see the import data, make sure the data period set for the page covers a period for which you have imported data.

@@ -26,11 +26,11 @@ To use the **Schedule extra activities** functionality, the following conditions
 
 [#generate-scheduling-suggestions]
 == Generate scheduling suggestions
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Schedule extra activities_{:.menu-item}.
-3. Click _Set up new extra activity_{:.doc-button} at the bottom left.
+1. Go to menu:Plan[Schedules].
+2. From the btn:[Scheduling actions] drop-down menu, select *Schedule extra activities*.
+3. Click btn:[Set up new extra activity] at the bottom left.
 4. In the **Settings** section, configure the extra activity that you want to schedule:
-   - _Planning unit_{:.label}: Select a planning unit from the drop-down menu or type its name in the search bar.<br>
+   - *Planning unit*: Select a planning unit from the drop-down menu or type its name in the search bar.<br>
      After you select a planning unit, you see a message if there are activities of type Presence that are not configured as Replaceable in the planning unit.
    - **Extra activity to schedule**: Select an activity from the drop-down menu. You only see activities of type Presence configured as Paid.
    - **Date range**: The period during which you want to schedule the extra activity. By default, the date range is the first working week (Monday to Sunday) after the current date.
@@ -40,7 +40,7 @@ To use the **Schedule extra activities** functionality, the following conditions
 5. In the **Employees** section, select the people that you want to schedule for the extra activity. By default, you see as pre-selected all people assigned to the selected planning unit who have the required skill(s).
    - (Optional) Click the {icon-selection-filter-s} or the {icon-schedules-filter-employees-s} to filter out people. By default, all checkboxes are checked.
    - Uncheck the checkboxes next to the names of the people that you do not want to schedule for the extra activities. Uncheck the checkbox next to **Name** to deselect all people in the list.
-6. Click _Generate suggestions_{:.doc-button} at the bottom of the page.
+6. Click btn:[Generate suggestions] at the bottom of the page.
    An entry is created in the table in the **Scheduling history** section.
 
 It can take some time to generate scheduling suggestions, depending on the number of employees and the chosen date range. When the process is complete, the status changes. Learn about the possible statuses in the section below.
@@ -51,7 +51,7 @@ The **Scheduling history** section includes a table with the following informati
 
 - **Initiated on**: Date and time of the process start.
 - **User**: The person who started the process.
-- _Planning unit_{:.label}
+- *Planning unit*
 - **Extra activity**
 - **Date range**
 - **Status**: When the process is complete, the status updates. The following table includes the possible statuses:
@@ -86,7 +86,7 @@ If the scheduling suggestions were generated successfully, the **Status** column
    - **Resulting coverage**: How the coverage changes for all affected activities if you accept the scheduling suggestion(s) for the extra activity.
 2. (Optional) To reject a suggestion, uncheck the corresponding checkbox.<br>
    The number of person-hours to be scheduled at the top updates.
-3. To apply the selected suggestions, click _Schedule extra activity_{:.doc-button} at the bottom of the page.
+3. To apply the selected suggestions, click btn:[Schedule extra activity] at the bottom of the page.
 
 [#see-the-scheduling-results]
 == See the scheduling results
@@ -102,8 +102,8 @@ To see the scheduling results, click **View results** in the **Scheduling histor
 
 [#delete-an-entry-from-the-scheduling-suggestions-history]
 == Delete an entry from the scheduling suggestions history
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Schedule extra activities_{:.menu-item}.
+1. Go to menu:Plan[Schedules].
+2. From the btn:[Scheduling actions] drop-down menu, select *Schedule extra activities*.
 3. In the **Scheduling history** section, check the checkbox next to the entry that you want to delete. Check the checkbox in the table header to select all entries.
-4. Click _Delete entries_{:.doc-button}.<br>
+4. Click btn:[Delete entries].<br>
    The extra activities that you already entered in the schedule will not be removed.

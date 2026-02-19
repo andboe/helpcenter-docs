@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: what-is-forecast.adoc, forecast-activate-business-hours.adoc
 :page-aliases: workloads
 
-To create, edit or delete workloads, go to _Forecast_{:.breadcrumbs}.
+To create, edit or delete workloads, go to menu:Forecast[].
 
 Workloads represent the input channels of the external system that records the details of your customer interactions.
 Future workloads are forecasted based on imported contact data.
@@ -74,7 +74,7 @@ The volume and staff requirements for support enquiries, on the other hand, need
 == Create workloads
 Create one workload for each activity you want to schedule using staff requirements. Multiactivities require one workload for the multiactivity, and one workload for each subactivity.
 
-1. In _Forecast > Workloads_{:.breadcrumbs}, click _New workload_{:.doc-button} at the top of the list.
+1. In menu:Forecast[Workloads], click btn:[New workload] at the top of the list.
 2. Enter the basic configuration information for your workload:
    - **Name**: Unique name to identify your workload.
    - **Time zone**: The xref:best-practices:working-with-timezones.adoc[time zone] of the workload cannot be edited later.
@@ -85,7 +85,7 @@ Create one workload for each activity you want to schedule using staff requireme
      > - If you select a different time zone for your workload than the time zone of the integration used to import data, the imported data will be displayed as shifted in time in the workload. For example, if a CSV integration is set to UTC&nbsp;time and your workload is set to CEST&nbsp;time (UTC&nbsp;+2&nbsp;hours), the imported data marked at 08:00 will be displayed at 10:00 in the workload.
 
    - (Optional) **Holiday region**: Includes public holidays that may affect your forecast.
-   - (Optional) _Planning unit_{:.label} and **Activity**: If you want to take business hours into account, select a planning unit and an activity. Learn more about xref:forecast:forecast-activate-business-hours.adoc#activate-business-hours[activating business hours] in Help Center.
+   - (Optional) *Planning unit* and **Activity**: If you want to take business hours into account, select a planning unit and an activity. Learn more about xref:forecast:forecast-activate-business-hours.adoc#activate-business-hours[activating business hours] in Help Center.
 
 3. (For Classic only) Select an option from the **Forecast model** section:
    - **Live mode** (paid): Invoiced monthly. Cannot be reverted to Test mode.
@@ -102,7 +102,7 @@ Create one workload for each activity you want to schedule using staff requireme
 
    Note: If a queue's interval or channel does not match that of the selected queues, all non-matching queues will be grayed out.
 
-6. Click _Create workload_{:.doc-button}.
+6. Click btn:[Create workload].
 
    If you assigned queues in step 5, the page displays historical data and a preliminary forecast version.  
    When the calculation is completed, reload the page to see the final forecast version.  
@@ -119,26 +119,26 @@ If you are using the Classic plan, select the Forecast model (Smart or Basic) fo
 Integrations are not necessary if you do not want to import historical data to create forecasts.
 To import forecasts, you can create workloads without queues.
 
-1. Go to _Forecast > Workloads_{:.breadcrumbs}.
+1. Go to menu:Forecast[Workloads].
 2. xref:#create-workloads[Create a workload] with the mandatory information first.<br>The new workload is displayed in the workloads list.
 
 Now you can xref:forecast:import-forecast.adoc#import-a-forecast[import a third-party forecast] to your workload.
 
 [#edit-workloads]
 == Edit workloads
-1. In _Forecast > Workloads_{:.breadcrumbs}, click {icon-edit} **Edit** in the card of the workload that you want to edit.<br>In the **Assign queues** section, you can add or remove queues. If a queue’s interval or channel does not match that of the selected queues, all non-matching queues will be grayed out. If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
-2. Click _Save workload_{:.doc-button}.  
+1. In menu:Forecast[Workloads], click {icon-edit} **Edit** in the card of the workload that you want to edit.<br>In the **Assign queues** section, you can add or remove queues. If a queue’s interval or channel does not match that of the selected queues, all non-matching queues will be grayed out. If you remove a queue, the imported data is not deleted and the queue can still be added to other workloads.
+2. Click btn:[Save workload].  
    The new configuration may update the forecast.
 
 [#delete-workloads]
 == Delete workloads
-1. In _Forecast > Workloads_{:.breadcrumbs}, click {icon-delete} **Delete** in the card of the workload that you want to delete.
-2. In the confirmation window, click _Delete workload_{:.doc-button}.  
+1. In menu:Forecast[Workloads], click {icon-delete} **Delete** in the card of the workload that you want to delete.
+2. In the confirmation window, click btn:[Delete workload].  
    Peopleware stores the associated historical data. To reuse the data, add the queue or queues to another workload.
 
 [#navigate-workloads]
 == Navigate workloads
-In _Forecast > Workloads_{:.breadcrumbs}, select a workload to open the workload details page. The page includes the following three sections:
+In menu:Forecast[Workloads], select a workload to open the workload details page. The page includes the following three sections:
 
 - The volume section
 - The **AHT** section (hidden by default)
@@ -149,7 +149,7 @@ Each section includes a graph and edit functionalities.
 By default, the graphs display data from the current week.
 
 - To choose a different time range, use the date picker. Click a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
-- Use _<_{:.doc-button} and _>_{:.doc-button} to navigate to the past and to the future of the selected time range.
+- Use btn:[<] and btn:[>] to navigate to the past and to the future of the selected time range.
 
 == Historical and forecast data in graphs
 
@@ -189,7 +189,7 @@ Learn how to use xref:forecast:task-save-staff-requirements.adoc#use-staff-requi
 |Question
 |Answer
 |Why are the graphs on a workload details page empty?
-|The forecast is generated for up to 24 months after the last data import (up to 365 days for customers on the Classic and Essential WFM plans). If the graphs on a workload page do not display data for a specific time range in the future, check if your integration is still importing data in _Account > Integrations_{:.breadcrumbs}. Also, check if the right queues are assigned to the workload in the workload configuration. +If you are using a workload without queues based on imported forecast data, check that the selected date range matches the date range in your imported data.
+|The forecast is generated for up to 24 months after the last data import (up to 365 days for customers on the Classic and Essential WFM plans). If the graphs on a workload page do not display data for a specific time range in the future, check if your integration is still importing data in menu:Account[Integrations]. Also, check if the right queues are assigned to the workload in the workload configuration. +If you are using a workload without queues based on imported forecast data, check that the selected date range matches the date range in your imported data.
 |Why do forecasted call volumes disappear from dashboards during the day?
 |The forecasted values are replaced by historical data throughout the day. To compare forecast and actual values throughout the day, save a version of the forecast at the beginning of the day or week. Use this saved version to compare values in the dashboard.
 |===

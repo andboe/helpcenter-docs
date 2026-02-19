@@ -31,7 +31,7 @@ You cannot start new jobs directly from the Job status page. This page provides 
 == Filter jobs
 Filter the job list to find specific jobs:
 
-1. Click _Filter_{:.doc-button}.
+1. Click btn:[Filter].
 2. Select criteria from the available filter fields.
 
 [%header, cols="1a,1a,".rstrip(',')]
@@ -86,11 +86,11 @@ For details on other columns in the job overview table, see xref:account:backgro
 
 Detailed job results for completed jobs are available as a PDF or HTML report.
 
-- In the _Result_{:.label} column, click _Show result_{:.label}.
+- In the *Result* column, click *Show result*.
 
 == Show original background job
 
-If a job was started as a background job in _Account > Background jobs_{:.breadcrumbs}, you can see the background job that triggered it, provided that you have the permissions to access _Account > Background jobs_{:.breadcrumbs}.
+If a job was started as a background job in menu:Account[Background jobs], you can see the background job that triggered it, provided that you have the permissions to access menu:Account[Background jobs].
 
 - Select a job.
 - In the **General** section, click the link below **Triggered by background job:**.
@@ -105,4 +105,4 @@ The Job status page allows you to perform these actions:
 - **Delete**: Cancels selected jobs and removes them from the list.
 
 1. Select one or more jobs.
-2. Click on the desired action: _Restart_{:.label}, _Terminate_{:.label}, or _Delete_{:.label}.
+2. Click on the desired action: *Restart*, *Terminate*, or *Delete*.

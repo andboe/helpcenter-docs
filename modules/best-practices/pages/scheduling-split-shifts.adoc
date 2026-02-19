@@ -79,7 +79,7 @@ Only skilled people will receive the split shift day model in optimized scheduli
 == Use split shifts in shift bidding
 Besides the long day models for split shifts introduced above, xref:scheduling:schedules-shift-bidding.adoc[shift bidding] can also schedule two or more short standard day models per person as separate shifts.
 
-For this, set the scheduling parameter _2613_{:.id-label} **Max. shifts per day** to the value of 2 or higher in the person's contracts
+For this, set the scheduling parameter *2613* **Max. shifts per day** to the value of 2 or higher in the person's contracts
 
 The shifts are generated according to staff requirements. Enter correct numbers in the shift requirements table:
 

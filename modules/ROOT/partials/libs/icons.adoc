@@ -1,7 +1,69 @@
-:icon-context-menu: Context menu image:help-center:ROOT:icons/3_dots_vertical.svg["context menu"]
-:icon-delete: Delete image:help-center:ROOT:icons/trash.svg[delete]
-:icon-duplicate: Duplicate image:help-center:ROOT:icons/overlapping_boxes.svg[duplicate]
+// Icon Attribute Library - Complete Icon Mappings
+// All icons reference SVG files in modules/ROOT/images/icons/
+
+// UI Action Icons
 :icon-edit: Edit image:help-center:ROOT:icons/pencil.svg[edit]
+:icon-delete: Delete image:help-center:ROOT:icons/trash.svg[delete]
+:icon-context-menu: Context menu image:help-center:ROOT:icons/3_dots_vertical.svg[context menu]
+:icon-duplicate: Duplicate image:help-center:ROOT:icons/overlapping_boxes.svg[duplicate]
+:icon-add: Add image:help-center:ROOT:icons/plus.svg[add]
+:icon-plus: Plus image:help-center:ROOT:icons/plus.svg[plus]
+:icon-minus: Minus image:help-center:ROOT:icons/minus.svg[minus]
+:icon-cancel: Cancel image:help-center:ROOT:icons/x.svg[cancel]
+:icon-search: Search image:help-center:ROOT:icons/magnifying_glass.svg[search]
+:icon-filter: Filter image:help-center:ROOT:icons/filter.svg[filter]
+:icon-download: Download image:help-center:ROOT:icons/paper_arrow_down.svg[download]
+:icon-upload: Upload image:help-center:ROOT:icons/cloud_arrow_up.svg[upload]
+
+// Status Icons
+:icon-check: Check image:help-center:ROOT:icons/check.svg[check]
+:icon-check-circle: Check circle image:help-center:ROOT:icons/check_circle.svg[check circle]
+:icon-x-circle: X circle image:help-center:ROOT:icons/x_circle.svg[x circle]
+:icon-info: Info image:help-center:ROOT:icons/info_circle.svg[info]
+:icon-warning: Warning image:help-center:ROOT:icons/exclamation_mark_circle.svg[warning]
+:icon-question: Question image:help-center:ROOT:icons/question_mark_circle.svg[question]
+
+// Navigation & Direction
+:icon-arrow-right: Arrow right image:help-center:ROOT:icons/arrow_right.svg[arrow right]
+:icon-arrow-left: Arrow left image:help-center:ROOT:icons/arrow_left.svg[arrow left]
+:icon-arrow-up: Arrow up image:help-center:ROOT:icons/arrow_up.svg[arrow up]
+:icon-arrow-down: Arrow down image:help-center:ROOT:icons/arrow_down.svg[arrow down]
+:icon-arrow-rotate: Rotate image:help-center:ROOT:icons/rotating_arrows.svg[rotate]
+:icon-center-arrows: Center arrows image:help-center:ROOT:icons/center_pointing_arrows.svg[center arrows]
+:icon-expand: Expand image:help-center:ROOT:icons/arrow_out.svg[expand]
+
+// Common UI Elements
+:icon-calendar: Calendar image:help-center:ROOT:icons/calendar.svg[calendar]
+:icon-clock: Clock image:help-center:ROOT:icons/clock.svg[clock]
+:icon-lock: Lock image:help-center:ROOT:icons/lock.svg[lock]
+:icon-unlock: Unlock image:help-center:ROOT:icons/lock-open.svg[unlock]
+:icon-eye: Eye image:help-center:ROOT:icons/eye.svg[eye]
+:icon-eye-off: Eye off image:help-center:ROOT:icons/eye_slash.svg[eye off]
+
+// Specific Feature Icons
+:icon-filter-plus: Filter plus image:help-center:ROOT:icons/filter_plus.svg[filter plus]
+:icon-play: Play image:help-center:ROOT:icons/play_circle.svg[play]
+:icon-pause: Pause image:help-center:ROOT:icons/pause_circle.svg[pause]
+:icon-stop: Stop image:help-center:ROOT:icons/stop_circle.svg[stop]
+:icon-link: Link image:help-center:ROOT:icons/chain.svg[link]
+:icon-graph: Graph image:help-center:ROOT:icons/graph.svg[graph]
+:icon-table: Table image:help-center:ROOT:icons/table.svg[table]
+:icon-people: People image:help-center:ROOT:icons/people_three.svg[people]
+:icon-person: Person image:help-center:ROOT:icons/person.svg[person]
+:icon-comment: Comment image:help-center:ROOT:icons/speech_bubble.svg[comment]
+:icon-envelope: Envelope image:help-center:ROOT:icons/envelope.svg[envelope]
+:icon-clipboard: Clipboard image:help-center:ROOT:icons/clipboard_check.svg[clipboard]
+:icon-shield: Shield image:help-center:ROOT:icons/check_shield.svg[shield]
+:icon-bell: Bell image:help-center:ROOT:icons/bell.svg[bell]
+
+// Advanced/Specific Icons
+:icon-circles: Connected circles image:help-center:ROOT:icons/connected_circles.svg[circles]
+:icon-file-download: File download image:help-center:ROOT:icons/paper_arrow_down.svg[file download]
+:icon-cloud-download: Cloud download image:help-center:ROOT:icons/cloud_arrow_down.svg[cloud download]
+:icon-two-lines-circles: Two lines with circles image:help-center:ROOT:icons/two_lines_with_circles.svg[two lines circles]
+
+// WFM Legacy Icons (GIFs)
 :icon-wfm-add: Add item image:help-center:ROOT:icons/wfm/item-add.gif[add item]
 :icon-wfm-delete: Delete item image:help-center:ROOT:icons/wfm/item-delete.gif[delete item]
+:icon-wfm-edit: Edit item image:help-center:ROOT:icons/wfm/item-edit.gif[edit item]
 :icon-wfm-reset: Reset image:help-center:ROOT:icons/wfm/asterisk.gif[reset]

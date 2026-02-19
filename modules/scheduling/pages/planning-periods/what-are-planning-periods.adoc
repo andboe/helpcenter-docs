@@ -14,12 +14,12 @@ In this article, you will learn:
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under _Plan > Time Off_{:.breadcrumbs} instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under menu:Plan[Schedules] and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under menu:Plan[Time Off] instead.
 ====
 [#what-are-planning-periods-used-for]
 == What are planning periods used for?
@@ -65,12 +65,12 @@ As you can see, planning periods are used in many different ways. Click one of t
 
 [#filter-and-display-planning-periods]
 == Filter and display planning periods
-If you go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}, you will initially see no planning periods. You first have to set a filter to choose the planning periods you want to display.
+If you go to menu:WFM[Scheduling>SchedulePro>Planning Periods], you will initially see no planning periods. You first have to set a filter to choose the planning periods you want to display.
 
-1. Choose a _Planning Unit_{:.label}.
+1. Choose a *Planning Unit*.
 2. Choose a **Type**.
-3. Choose a _Selection_{:.label} (optional). The selection field is not available in Essential WFM.
-4. Click _Apply_{:.doc-button} to display the corresponding planning periods. If there are no matches with the filter criteria, nothing will be shown.
+3. Choose a *Selection* (optional). The selection field is not available in Essential WFM.
+4. Click btn:[Apply] to display the corresponding planning periods. If there are no matches with the filter criteria, nothing will be shown.
 
 image::what-are-planning-periods/image-1.png[Planning Periods, width=80%]
 
@@ -78,12 +78,12 @@ The _inherited_ column flags planning periods of parent planning units. You can 
 
 [#create-a-new-planning-period]
 == Create a new planning period
-To create a new planning period, use the _![add button](/assets/img/common/item-add.gif)_{:.doc-button-icon} button from the action bar. A dialog to set the time period and status of the new planning period appears. Since this information depends on what you want to achieve with the planning period, you can find more information in the articles at the top on the different use cases.
+To create a new planning period, use the *![add button](/assets/img/common/item-add.gif)* button from the action bar. A dialog to set the time period and status of the new planning period appears. Since this information depends on what you want to achieve with the planning period, you can find more information in the articles at the top on the different use cases.
 
 [#edit-a-planning-period]
 == Edit a planning period
-The typical reason to edit a planning period is to update its status. To edit a planning period, select it. Then click the _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} button from the action bar.
+The typical reason to edit a planning period is to update its status. To edit a planning period, select it. Then click the *![edit button](/assets/img/common/item-edit.gif)* button from the action bar.
 
 [#delete-a-planning-period]
 == Delete a planning period
-To delete a planning period, use the _![delete button](/assets/img/common/item-delete.gif)_{:.doc-button-icon} button from the action bar.
+To delete a planning period, use the *![delete button](/assets/img/common/item-delete.gif)* button from the action bar.

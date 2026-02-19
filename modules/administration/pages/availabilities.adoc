@@ -23,14 +23,14 @@ There are many uses for availabilities, for example:
 By default, availabilities are respected when creating optimized schedules.
 Availabilities are not considered when generating the shifts but when shifts are assigned.
 
-Availabilities are only checked if the scheduling rule _2611_{:.id-label} is activated.
+Availabilities are only checked if the scheduling rule *2611* is activated.
 Deactivate this rule to let your people request and be assigned shifts that are longer than their availability.
 
 [#configure-availabilities]
 == Configure availabilities
 You can configure availabilities in two ways:
 
-- Personal availabilities: Configure temporary or permanent availabilities for individual people in _Plan > Configuration > Employees_{:.breadcrumbs}.
+- Personal availabilities: Configure temporary or permanent availabilities for individual people in menu:Plan[Configuration>Employees].
 - Day model availabilities: Add availabilities to shift sequences to assign the same availability to several people.
 
 Note: Day model availabilities overwrite personal availabilities, as well as availabilities that have been manually inserted.
@@ -39,7 +39,7 @@ Note: Day model availabilities overwrite personal availabilities, as well as ava
 == Configure fixed working days/times for each week
 Example: A person is only available to work on mornings from 8 AM to noon due to childcare responsibilities on Wednesdays and Fridays. You can configure their availability as follows:
 
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Select the person from the list.
 3. In the left-side menu, click **Planning**.
 4. In the **Availability** section, click **+ Add**.
@@ -48,7 +48,7 @@ Example: A person is only available to work on mornings from 8 AM to noon due to
    - **Start time**: Enter 8:00.
    - **End time**: Enter 12:00.
 6. (Optional) Select **Valid from** and **Valid to** dates if you want to add the availabilities only temporarily to the person.
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 [#rotate-availabilities-across-weeks]
 == Rotate availabilities across weeks
@@ -62,7 +62,7 @@ The following subsections explain how to use availabilities to plan for the foll
 
 [#create-day-models-of-type-availability]
 === Create day models of type Availability
-To xref:administration:daymodel-creation.adoc[create day models], go to _Plan > Configuration > Day models_{:.breadcrumbs} and click _Create_{:.doc-button}.<br>The following example shows how to set up two day models to rotate a morning shift and an evening shift.
+To xref:administration:daymodel-creation.adoc[create day models], go to menu:Plan[Configuration>Day models] and click btn:[Create].<br>The following example shows how to set up two day models to rotate a morning shift and an evening shift.
 
 To configure the day model for the morning shift, proceed as follows:
 
@@ -73,7 +73,7 @@ To configure the day model for the morning shift, proceed as follows:
    - (Optional) **Color**: Select a color to help you identify the day model.
    - **Start time**: Enter 8:00.
    - Set a **Total shift duration**. The maximum value is 48 hours.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 To configure the day model for the evening shift, proceed as follows:
 
@@ -84,7 +84,7 @@ To configure the day model for the evening shift, proceed as follows:
    - (Optional) **Color**: Select a color to help you identify the day model.
    - **Start time**: Enter 14:00.
    - Set a **Total shift duration**. The maximum value is 48 hours.
-3. Click _OK_{:.doc-button}.
+3. Click btn:[OK].
 
 [#create-and-assign-a-shift-sequence]
 === Create and assign a shift sequence
@@ -108,20 +108,20 @@ Add the relevant xref:administration:set-a-validity-period.adoc[validity period]
 == Edit availabilities
 You can edit the availabilities you configured for an individual person:
 
-1. Go to _Plan > Configuration > Employees_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Employees].
 2. Select the person for whom you want to edit the availability.
 3. In the right side panel, click **Availability**.
 4. Next to the availability you want to edit, click the {icon-edit}.
 5. Edit the availability.
-6. In the **Availability** window, click _OK_{:.doc-button}.
-7. At the bottom of the right side panel, click _OK_{:.doc-button}.
+6. In the **Availability** window, click btn:[OK].
+7. At the bottom of the right side panel, click btn:[OK].
 
 If you have configured availabilities with day models of type **Availability**, edit the day model:
 
-1. Go to _Plan > Configuration > Day models_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Day models].
 2. Select the day model you want to edit.
 3. Edit the day model.
-4. Click _OK_{:.doc-button}.
+4. Click btn:[OK].
 
 You can also edit availabilities in Shift Center. Learn more about xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-availabilities[how to add and delete availabilities in Shift Center].
 For temporary changes, you can copy and paste personal and day model availabilities to a cell to convert them to manually inserted availabilities.
@@ -134,18 +134,18 @@ In expanded day cells, people's availabilities appear as white bars underlined i
 == Delete availabilities
 You can delete the availabilities you configured for an individual person:
 
-1. Go to _Plan > Configuration > Employees_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Employees].
 2. Select the person for whom you want to delete the availability.
 3. In the right side panel, click **Availability**.
 4. Next to the availability you want to delete, click the {icon-wfm-delete}.
-5. In the **Confirmation** window, click _Yes_{:.doc-button}.
-6. Click _OK_{:.doc-button}.
+5. In the **Confirmation** window, click btn:[Yes].
+6. Click btn:[OK].
 
 If you have configured availabilities with day models of type **Availability**, delete the day model:
 
-1. Go to _Plan > Configuration > Day models_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Day models].
 2. Click the Delete icon {icon-delete} on the row of the day model you want to delete.
-3. Click _Delete_{:.doc-button}.
+3. Click btn:[Delete].
 
 [#availabilities-in-me]
 == Availabilities in Me

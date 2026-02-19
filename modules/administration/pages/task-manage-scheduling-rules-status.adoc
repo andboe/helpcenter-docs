@@ -16,11 +16,11 @@ Scheduling rules can be set up to apply to everyone and overrides can be specifi
 
 == Steps
 
-1. Go to _Plan > Configuration > Scheduling rules_{:.breadcrumbs}).
+1. Go to menu:Plan[Configuration>Scheduling rules]).
 2. Select a scheduling rule.
 3. In the **For everyone** section, select the scheduling rule mode. For more information, see xref:#modes[Standard mode for everyone].
 4. (Optional) Specify the scheduling rule mode for specific user groups or program components in the **Overrides for...** sections. For more information see xref:#overrides[mode overrides].
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#modes]
 == Modes

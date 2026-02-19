@@ -389,7 +389,7 @@ In addition to the internal report name specified by the `cmd` parameter, weekly
 
 [#copy-level]
 === Copy level
-The **Copy level content** functionality can be found under _Plan > Schedules > Scheduling actions_{:.breadcrumbs}.
+The **Copy level content** functionality can be found under menu:Plan[Schedules>Scheduling actions].
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===

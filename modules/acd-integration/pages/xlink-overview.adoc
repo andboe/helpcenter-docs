@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Use the Xlink application to import data into injixo. Learn how to install and configure it.
 :related-articles: xlink-installation-configuration.adoc, xlink-import-mode.adoc
 
-The Xlink application imports data from third-party systems such as telephone systems (ACD). The _Xlink Suite_{:.menu-item} is available for download at [downloads.peopleware.com](https://downloads.peopleware.com).
+The Xlink application imports data from third-party systems such as telephone systems (ACD). The *Xlink Suite* is available for download at [downloads.peopleware.com](https://downloads.peopleware.com).
 
 Xlink imports two different types of data:
 
@@ -50,7 +50,7 @@ image::xlink-overview/image-1.png[Xlink Interface]
 
 The Xlink user interface consists of three areas:
 
-1. _Interface_: External systems created under _WFM_{:.menu-item}.
+1. _Interface_: External systems created under *WFM*.
 2. _iWFM Queues_: Created queues and assigned value types from your injixo tenant.
 3. _Assigned Valuetypes_: Mappings for the selected queue. No entries if no mappings exist.
 

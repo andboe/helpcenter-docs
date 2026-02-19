@@ -18,7 +18,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
   }
 </style>
 
-This article lists all mass update settings available in _People_{:.breadcrumbs}.
+This article lists all mass update settings available in menu:People[].
 For more information about mass updates see:
 
 - xref:people:concept-mass-update.adoc[Mass update overview]

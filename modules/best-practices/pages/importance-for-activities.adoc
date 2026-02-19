@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Use the importance value to prioritize activities during optimized scheduling.
 :related-articles: activity-types-and-properties.adoc
 
-You can define an importance value for each activity in _Plan > Configuration > Activities_{:.breadcrumbs}.
+You can define an importance value for each activity in menu:Plan[Configuration>Activities].
 
 [#why-do-i-need-the-importance-value-for-activities]
 == Why do I need the importance value for activities?

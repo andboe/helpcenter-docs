@@ -1,4 +1,4 @@
 1. Go to *Forecast*{:.menu-item}.
-2. Click **Calculations for Multi-Activity, Constant Requirement and Outbound** 
-3. Select the **Calls - Multiactivity script** from the dropdown menu.<br>
-The script will open in a separate script window. <!-- TODO: This will change next week (Dec 20th) to: Click **Requirement scripts**. On the new page under **Default scripts**, click **Open** on the **Calls - Multiactivity** tile. -->
+2. Click *Calculations for Multi-Activity, Constant Requirement and Outbound* 
+3. Select the *Calls - Multiactivity script* from the dropdown menu. +
+The script will open in a separate script window. <!-- TODO: This will change next week (Dec 20th) to: Click *Requirement scripts*. On the new page under *Default scripts*, click *Open* on the *Calls - Multiactivity* tile. -->

@@ -18,11 +18,11 @@ Before you create a schedule, make sure you have correctly xref:getting-started:
 
 [#1-set-up-an-integration]
 == 1. Set up an integration
-Under _Account > Integrations_{:.breadcrumbs}, set up an xref:acd-integration:how-integrations-work.adoc[integration] with your external system to upload historical data. The integration will upload data to create queues.
+Under menu:Account[Integrations], set up an xref:acd-integration:how-integrations-work.adoc[integration] with your external system to upload historical data. The integration will upload data to create queues.
 
 [#2-set-up-a-workload]
 == 2. Set up a workload
-Under _Forecast_{:.breadcrumbs}, create xref:forecast:create-workloads.adoc[a workload from the queues created by your integration]. A forecast will be generated within minutes.
+Under menu:Forecast[], create xref:forecast:create-workloads.adoc[a workload from the queues created by your integration]. A forecast will be generated within minutes.
 
 Note: To xref:forecast:import-forecast.adoc[import external forecasts] you must select at least one queue. If no queue is present, you must upload at least one data point using a xref:acd-integration:add-csv-integration.adoc[CSV integration].
 

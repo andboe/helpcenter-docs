@@ -26,7 +26,7 @@ Each input channel represents a subactivity and each employee skill a correspond
 
 [#scheduling-result]
 === Scheduling result
-In _Shift Center_{:.menu-item}, the schedule only contains the multiactivity. The subactivities are visible in the parameter window:
+In *Shift Center*, the schedule only contains the multiactivity. The subactivities are visible in the parameter window:
 
 image::how-to-schedule-multiskill-agents/image-2.png[Shift Center with parameters for multiactivity]
 

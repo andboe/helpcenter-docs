@@ -21,7 +21,7 @@ Learn more about [time-off valuation](https://help.peopleware.com/understand-val
 To create an accounting rule, proceed as follows:
 
 1. Go to **Time Off > Accounting rules**.
-2. Click _Create_{:.doc-button} in the top-right corner.
+2. Click btn:[Create] in the top-right corner.
 3. Configure the following elements:
    - **Name**
    - [**Valuation strategy**](https://help.peopleware.com/understand-valuation#valuation-strategies)
@@ -56,10 +56,10 @@ You can have only one accounting rule without any contract assigned but as many 
 
 To add a contract to an accounting rule, proceed as follows:
 
-1. In _Time Off > Accounting rules_{:.breadcrumbs}, select an accounting rule
+1. In menu:Time Off[Accounting rules], select an accounting rule
 2. In the **Contracts** section, click **{icon-edit} Edit**.
 3. Check the checkboxes for all contracts you want to add. Use the search field if necessary.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#adjusted-days]
 == Adjusted days
@@ -69,11 +69,11 @@ Example: In your organization, Easter Monday is considered a half-day working da
 
 To add adjusted days to an accounting rule, xref:#create-accounting-rules[create an accounting rule] first and proceed as follows:
 
-1. In _Time Off > Accounting rules_{:.breadcrumbs}, select an accounting rule.
+1. In menu:Time Off[Accounting rules], select an accounting rule.
 2. In the **Adjusted days** section, click **{icon-plus} Add**.
 3. Select a **Day type**, e.g. Christmas Eve. Only day types with xref:administration:day-types.adoc#holiday-mode[holiday mode] activated are supported.
 4. Select a **Deduction type**:
    - **Absolute**: Select this to define the amount of hours and minutes to be deducted if the full day is requested.
    - **Relative to working times**: Select this to define the percentage of hours and minutes to be deducted if the full day is requested.
 5. **Max. deduction**: Enter the amount or percentage of hours and minutes to be deducted.
-6. Click _Create_{:.doc-button}.
+6. Click btn:[Create].

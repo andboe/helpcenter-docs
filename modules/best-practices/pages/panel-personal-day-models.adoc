@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [#did-you-know]
 ==== Did you know...?
-To force the optimization to use only some of the available day models you don't need to create personal Day Models for each employee. The optimizer uses all the day models that are assigned to the _Planning Unit_{:.css}. It assigns day models to employees when the skills suit the included Activities. It also replaces Activities when the 'replaceable' checkbox is checked.
+To force the optimization to use only some of the available day models you don't need to create personal Day Models for each employee. The optimizer uses all the day models that are assigned to the *Planning Unit*. It assigns day models to employees when the skills suit the included Activities. It also replaces Activities when the 'replaceable' checkbox is checked.
 
 [#what-you-should-do-is]
 ==== What you should do is...?

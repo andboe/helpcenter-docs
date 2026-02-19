@@ -24,13 +24,13 @@ Manual imports do not need an active Cloud Link or SFTP connection.
 
 [#steps]
 == Steps
-1. Go to _Account > Integrations_{:.breadcrumbs}
+1. Go to menu:Account[Integrations]
 2. In the **Current integrations** overview, find the CSV integration entry you want to use for the upload.
 3. Click the {icon-edit} Edit icon. Peopleware opens the integration's details page.
 4. Go to the **Manually upload data** section.
-5. Click _Upload CSV_{:.doc-button}. Peopleware opens the **CSV Upload** window.
+5. Click btn:[Upload CSV]. Peopleware opens the **CSV Upload** window.
 6. If necessary, change the CSV schema to match your CSV import file. By default, Peopleware selects the CSV schema assigned to the CSV integration.
 7. Use the upload facility to submit the CSV import file.
-8. Click _Import_{:.doc-button}.
+8. Click btn:[Import].
 
 Peopleware imports the file and distributes the data to all workloads that are set up to receive data via the CSV integration.

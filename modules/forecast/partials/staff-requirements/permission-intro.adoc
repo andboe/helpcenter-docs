@@ -1,0 +1,6 @@
+=== Permissions
+
+Your role needs to have object permissions for the objects associated with the action:
+
+- The workload for which staff requirements are calculated.
+- The planning unit and activity specified in the workload's staff requirements calculation settings.

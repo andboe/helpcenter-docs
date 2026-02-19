@@ -7,14 +7,14 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Get an overview of how closely people have adhered to their shift schedules throughout the day.
 :related-articles: real-time-adherence.adoc, edit-intraday-activities.adoc
 
-In _Intraday > Intraday Adherence_{:.breadcrumbs}, you can compare people's scheduled activities with the actual activities to identify out-of-adherence periods throughout the day. Intraday adherence uses xref:intraday:real-time-adherence.adoc[real-time adherence] data from your ACD or the Time Tracking app in Me. You can access the adherence data for the current month and the last six months.
+In menu:Intraday[Intraday Adherence], you can compare people's scheduled activities with the actual activities to identify out-of-adherence periods throughout the day. Intraday adherence uses xref:intraday:real-time-adherence.adoc[real-time adherence] data from your ACD or the Time Tracking app in Me. You can access the adherence data for the current month and the last six months.
 
 [#display-data]
 == Display data
 To display adherence data for a specific day, follow these steps:
 
-1. Select a _Planning unit_{:.label} and/or a _Selection_{:.label}.
-2. At the top of the page, select a date by using the date picker, or click _Today_{:.doc-button} or _Yesterday_{:.doc-button}.
+1. Select a *Planning unit* and/or a *Selection*.
+2. At the top of the page, select a date by using the date picker, or click btn:[Today] or btn:[Yesterday].
 
 The page displays the total adherence score, adherence scores by interval, and a table with the details of the adherence data per person for the selected day.
 
@@ -55,17 +55,17 @@ On the right, you can see in detail when this person was scheduled and where the
 
 - **Intraday adherence score**: Calculated using data up to the last completed interval of the current day. Identical to the day score when you hover a date in **Daily overview**.
 - **Scheduled** and **Out of Adherence** durations: Sum of durations for all scheduled activities (activity types Present, Meeting, Break) and deviations in the schedule on the selected date.
-- **Timeline**: Colored bars highlight scheduled activities, actual activities, and out-of-adherence statuses. In the **Out of adherence** row, you can click out-of-adherence time slots to zoom in. Click _Reset zoom_{:.doc-button} to reset the zoom.
+- **Timeline**: Colored bars highlight scheduled activities, actual activities, and out-of-adherence statuses. In the **Out of adherence** row, you can click out-of-adherence time slots to zoom in. Click btn:[Reset zoom] to reset the zoom.
 - **Table**: Each row shows details for out-of-adherence periods. Click a header to sort data by time period, actual activity, status, scheduled activity or out of adherence duration.
 
 [#adherence-report-csv-file]
 == Adherence report (CSV file)
 If you need to analyze adherence and conformance data for individual people over a longer time frame, e.g. to calculate bonus payments, you can download a report as a CSV file that includes aggregated adherence and conformance data. To download the Adherence report file , follow these steps:
 
-1. Select a _Planning unit_{:.label} and/or a _Selection_{:.label}.
-2. Click _Download report_{:.doc-button}.
+1. Select a *Planning unit* and/or a *Selection*.
+2. Click btn:[Download report].
 3. In the **Download report** window, select a date range for the report. You can select any date range from one day to up to six months in the past.
-4. Click _Download report_{:.doc-button}.
+4. Click btn:[Download report].
 
 The table below explains the report columns:
 
@@ -106,7 +106,7 @@ The table below explains the report columns:
 |Actual time for the relevant activity type/total actual time \* 100%
 |===
 
-Each row of data includes a link to display the related data in _Intraday > Intraday Adherence_{:.breadcrumbs}.
+Each row of data includes a link to display the related data in menu:Intraday[Intraday Adherence].
 
 [#frequently-asked-questions]
 == Frequently asked questions
@@ -119,5 +119,5 @@ Each row of data includes a link to display the related data in _Intraday > Intr
 |Why can't I select a specific date?
 |You can access historical adherence data for the six months prior to the current date, plus the current month (e.g. if today is July 15, you can select dates between January 1 and July 15.)
 |Which time zone does Intraday adherence use?
-|Intraday adherence uses the selected planning unit's time zone. If you click a person to see the Agent Intraday Adherence details, all times appear in the _time zone_{:.css} configured in your user profile. The time zone is displayed at the top right of the adherence timeline.
+|Intraday adherence uses the selected planning unit's time zone. If you click a person to see the Agent Intraday Adherence details, all times appear in the *time zone* configured in your user profile. The time zone is displayed at the top right of the adherence timeline.
 |===

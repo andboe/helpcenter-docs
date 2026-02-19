@@ -26,7 +26,7 @@ Click the items in the navigation bar at the top to access the different apps an
 
 [#account]
 == Account
-Users with admin access can access the following functionalities under _Account_{:.menu-item}.  
+Users with admin access can access the following functionalities under *Account*.  
 Learn about xref:account:predefined-user-roles.adoc[access for the predefined user roles].
 
 ---------- | --------
@@ -39,7 +39,7 @@ Learn about xref:account:predefined-user-roles.adoc[access for the predefined us
 
 [NOTE]
 ====
-Grant admin access to a second user in xref:people:configure-people.adoc[_People_{:.breadcrumbs}].
+Grant admin access to a second user in xref:people:configure-people.adoc[menu:People[]].
 ====
 [#your-user-profile]
 == Your user profile
@@ -72,4 +72,4 @@ You can narrow down lists by object with filters. To use filters, proceed as fol
 3. Select the options you want to use for filtering.
 
 Repeat this operation to filter by more than one object.
-To remove a filter, click _x_{:.doc-button}.
+To remove a filter, click btn:[x].

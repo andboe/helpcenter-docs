@@ -27,15 +27,15 @@ To use the **Optimize breaks** functionality, the following conditions need to a
 
 [#run-a-break-optimization]
 == Run a break optimization
-1. Go to _Plan > Schedules_{:.breadcrumbs}.
-2. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Optimize breaks_{:.menu-item}.
+1. Go to menu:Plan[Schedules].
+2. From the btn:[Scheduling actions] drop-down menu, select *Optimize breaks*.
 3. In the **Set up break optimization** section, configure the break optimization:
-   - _Planning unit_{:.label}: The planning unit for which you want to perform the break optimization.
-   - (Optional) _Selection_{:.label}
+   - *Planning unit*: The planning unit for which you want to perform the break optimization.
+   - (Optional) *Selection*
    - **Date range**: You can select from one day up to two months in the future.
    <!-- do NOT explain feature-flag-based *Use Smart Optimization* checkbox-->
 
-4. Click _Optimize breaks_{:.doc-button}. <!-- not handled as job manageable on Job status page -->
+4. Click btn:[Optimize breaks]. <!-- not handled as job manageable on Job status page -->
 
 The optimization process can take up to 60&nbsp;minutes. The process duration is influenced by factors such as the number of people, the number of breaks in the schedule, and the length of the period to be optimized.
 During the optimization process, you cannot edit the schedule for the affected date range.<br>After the optimization is finished, the optimized schedule is saved to the Schedule level<!-- add link to the Levels article https://help.peopleware.com/tips-on-shift-center-usage#tip-9-working-with-different-levels after it's been updated --> and updates the status in the **Break optimization history** section.
@@ -74,7 +74,7 @@ The status Partly optimized schedule is displayed when the break optimization co
 
 [#see-the-optimization-results]
 == See the optimization results
-To see the details for a completed break optimization, click _View results_{:.doc-button}.
+To see the details for a completed break optimization, click btn:[View results].
 In the window that opens, the **Status** tile shows the number of optimized breaks.<br>
 A diagram with two graphs shows the difference between the coverage before the break optimization (represented by a yellow line) and the coverage after the break optimization (represented by a green line).
 
@@ -117,4 +117,4 @@ If you select a period of up to three days, the diagram displays the intervals f
 If you select a period of four days or more, the diagram displays the total values for each day. To display the intervals of a day, proceed as follows:
 
 1. Hover over a day in the diagram and click it.
-2. Click _Back to day-view_{:.doc-button} to return to the daily overview.
+2. Click btn:[Back to day-view] to return to the daily overview.

@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [#did-you-know]
 ==== Did you know...?
-Optimizations are jobs. When you start one, you can manage the job in _Job status_{:.breadcrumbs}. A quicker option is to restart a job which has not been completed.
+Optimizations are jobs. When you start one, you can manage the job in menu:Job status[]. A quicker option is to restart a job which has not been completed.
 
 [#what-you-should-do-is]
 ==== What you should do is...?

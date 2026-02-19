@@ -26,12 +26,12 @@ Selections are commonly used to group people with the following characteristics:
 
 [#create-selections]
 == Create selections
-1. In _Plan > Configuration > Selections_{:.breadcrumbs}, click _Create_{:.doc-button} at the top right.
+1. In menu:Plan[Configuration>Selections], click btn:[Create] at the top right.
 2. Enter the following information:
    - **Name**
    - **Abbreviation**
    - (Optional) **Description**
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 Now, you can add the following configuration data to your selection:
 
@@ -43,27 +43,27 @@ Now, you can add the following configuration data to your selection:
 == Add selections to people
 To add selections to people, you need to xref:administration:selections.adoc#create-selections[create a selection] first.
 
-1. Go to _People > Overview_{:.breadcrumbs}.
+1. Go to menu:People[Overview].
 2. Select a person from the list.
 3. In the left-side menu, click **Planning**.
-4. In the _Selections_{:.label} section, click {icon-plus} **Add**.
+4. In the *Selections* section, click {icon-plus} **Add**.
 5. Select the selections you want to add to the person.
 6. (Optional) Select **Valid from** and **Valid to** dates if you want to add the selections only temporarily to the person.
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 [#remove-selections-from-people]
 == Remove selections from people
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Select a person from the list.
 3. In the left-side menu, click **Planning**.
-4. In the _Selections_{:.label} section, hover over the selection that you want to remove and click the {icon-delete}.
-5. In the confirmation window, click _Remove_{:.doc-button}.
+4. In the *Selections* section, hover over the selection that you want to remove and click the {icon-delete}.
+5. In the confirmation window, click btn:[Remove].
 
 [#manage-people-in-a-selection]
 == Manage people in a selection
-In _People_{:.breadcrumbs}, you can filter people by the selections to which they belong.
+In menu:People[], you can filter people by the selections to which they belong.
 
-To do so, click _{icon-filter} Filter_{:.doc-button} and, in the **Selection** drop-down, select the selection by which you want to filter.
+To do so, click btn:[{icon-filter} Filter] and, in the **Selection** drop-down, select the selection by which you want to filter.
 
 The list updates to show only people in that selection. To access a person's settings, click their row on the list.
 
@@ -76,13 +76,13 @@ To establish a selection hierarchy, xref:administration:selections.adoc#create-s
 
 Then, you can edit a selection to add subselections as follows:
 
-1. Go to _Plan > Configuration > Selections_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Selections].
 2. Click the selection you want to use as a parent selection in the selections list.
 3. In the **Subselections** section, click {icon-plus} **Add**.
 4. Complete the following fields:
    - **Selections**: Select all selections you want to add as subselections.
    - (Optional) **Valid from/Valid to**: Configure these dates if you want to add the subselection only temporarily to the main selection.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 To edit or remove a subselection, hover over it in the **Subselections** list in the configuration window and click the {icon-arrow-up-right-from-square} or the {icon-delete}.
 
@@ -92,11 +92,11 @@ To edit or remove a subselection, hover over it in the **Subselections** list in
 >
 [NOTE]
 ====
-You cannot see that a selection is a subselection or a main selection in the list. To check whether a selection includes subselections, click its row in the list in _Plan > Configuration > Selections_{:.breadcrumbs}.
+You cannot see that a selection is a subselection or a main selection in the list. To check whether a selection includes subselections, click its row in the list in menu:Plan[Configuration>Selections].
 If you often work with subselections, you can name them so that you can recognize their relationship to the main selection.
 ====
 [#delete-a-selection]
 == Delete a selection
-1. Go to _Plan > Configuration > Selections_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Selections].
 2. In the list, hover over the selection you want to delete and click the {icon-delete} on the right.
-3. In the confirmation window, click _Delete_{:.doc-button}.
+3. In the confirmation window, click btn:[Delete].

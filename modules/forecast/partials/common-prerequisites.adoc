@@ -1,0 +1,3 @@
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
+
+* You are familiar with forecasting functionality in {product-generic}.

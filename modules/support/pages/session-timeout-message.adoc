@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Resolve the timeout issue that appears when you access WFM.
 :related-articles: browser-setup.adoc
 
-In this article, you will learn how to resolve the timeout message when clicking the link to _WFM_{:.menu-item} in the navigation bar.
+In this article, you will learn how to resolve the timeout message when clicking the link to *WFM* in the navigation bar.
 
 image::session-timeout-message/image-1.png[Session Timeout, width=50%]
 

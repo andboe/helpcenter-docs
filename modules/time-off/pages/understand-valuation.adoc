@@ -53,7 +53,7 @@ The valuation can be further influenced by the following factors:
 ====
 If no contract is selected, this default accounting rule applies to your entire organization. Additionally, you can create multiple other accounting rules for one or more specific contracts. For each time off request, Peopleware checks which accounting rule applies by identifying the contract assigned to the person during the requested period. The contract-specific rule is applied if it exists. Otherwise, the default rule is used.
 ====
-To see how Peopleware valuates individual days in a multi-day time-off request, go to _Time Off > Plan_{:.breadcrumbs} and click the {icon-svg-viewer} next to a value in the **To be booked** column. Depending on the time unit of the [time-off type](https://help.peopleware.com/time-off-types-beta#create-a-time-off-type), a window displays the number of hours or the fraction of a day to be booked for each day, including days with 0&nbsp;hours. For full-day time-off requests where the time unit is days, Peopleware displays 1&nbsp;day.
+To see how Peopleware valuates individual days in a multi-day time-off request, go to menu:Time Off[Plan] and click the {icon-svg-viewer} next to a value in the **To be booked** column. Depending on the time unit of the [time-off type](https://help.peopleware.com/time-off-types-beta#create-a-time-off-type), a window displays the number of hours or the fraction of a day to be booked for each day, including days with 0&nbsp;hours. For full-day time-off requests where the time unit is days, Peopleware displays 1&nbsp;day.
 
 [#time-off-valuation-based-on-a-persons-schedule]
 === Time-off valuation based on a person's schedule
@@ -131,7 +131,7 @@ To update the valuation, cancel and recreate the time-off request.
 
 Hybrid evaluation does not apply if a person has multiple contracts assigned during the requested time-off period.
 
-In _Time Off > Plan_{:.breadcrumbs}, you can see both the overall valuation strategy and the specific strategy (schedule-based or contract-based) applied to each individual day by hovering over the valuation value.
+In menu:Time Off[Plan], you can see both the overall valuation strategy and the specific strategy (schedule-based or contract-based) applied to each individual day by hovering over the valuation value.
 
 [#time-off-valuation-based-on-a-persons-contract]
 === Time-off valuation based on a person's contract

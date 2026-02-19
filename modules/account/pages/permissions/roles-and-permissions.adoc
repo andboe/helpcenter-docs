@@ -54,4 +54,4 @@ Example:
 - Which selections a role can view or edit
 - Which day models or activities a role can access
 
-You can define object permissions in _WFM > System > Role Authorization_{:.breadcrumbs}. Object permissions for Workloads, Dashboards, and Roles are configured in _Account > Roles_{:.breadcrumbs}.
+You can define object permissions in menu:WFM[System>Role Authorization]. Object permissions for Workloads, Dashboards, and Roles are configured in menu:Account[Roles].

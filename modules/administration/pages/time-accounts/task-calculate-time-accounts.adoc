@@ -41,12 +41,12 @@ You have the following base permissions:
 -->
 
 <!-- ROLES-new - release with go-live of new roles UI
-- _Plan > Configuration > Time accounts_{:.breadcrumbs}
+- menu:Plan[Configuration>Time accounts]
     - **Configure time accounts**
 -->
 
 <!-- LNF-new - release with go-live of left-side nav
-- _Scheduling > Configuration > Time accounts_{:.breadcrumbs}
+- menu:Scheduling[Configuration>Time accounts]
   - **Configure time accounts**
 -->
 
@@ -64,17 +64,17 @@ Also, you cannot delete a balance value for a date once it has been calculated.
 To prevent undue manual overhead, only calculate time accounts at planned dates and try to deviate as little as possible from that plan.
 ====
 <!-- LNF-new
-1. Go to _Scheduling > Configuration > Time accounts_{:.breadcrumbs}.
+1. Go to menu:Scheduling[Configuration>Time accounts].
 -->
 
-1. Go to _Plan > Configuration > Time accounts_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>Time accounts].
 2. Select at least a calculation date and planning unit.<br>
    The time accounts table now displays all people that are members of the planning unit at the selected date.
 3. Optional: Select a selection to further filter the people shown in the table.
 4. Optional: To check the balance history of a person, navigate to that person in the table and click the {icon-edit} Edit icon.
    The balance history shows every event where a time account balance was either calculated or reset.
    To return to the time account overview, click the back button of your browser.
-5. To calculate the time accounts of all people in the planning unit and selection, click _Calculate_{:.doc-button}.
+5. To calculate the time accounts of all people in the planning unit and selection, click btn:[Calculate].
 6. Optional: To adjust calculated balances of individual people, enter a value in the **Correction value** field.
    The correction value is added to or subtracted from the calculated balance.
    Peopleware saves the value automatically once you leave the input field.<br>

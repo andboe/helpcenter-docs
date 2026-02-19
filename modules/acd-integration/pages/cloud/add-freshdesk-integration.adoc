@@ -9,25 +9,25 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Freshdesk integration is a cloud integration that imports contact volumes for email, web forms, chat, and social messaging from Freshdesk tickets.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-freshdesk-integration]
 == Add a Freshdesk integration
 To add a new Freshdesk integration, you need a Pro or Enterprise Freshdesk account.
 
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Freshworks**.
 5. From the **Model name** drop-down menu, select **Freshdesk**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-freshdesk-integration]
 == Set up your Freshdesk integration
 1. In the **Credentials** section, set up the access to your Freshdesk account:
    - **Domain**: Enter your full Freshdesk domain name including the subdomain, e.g. example.freshchat.com.
    - **API key**: Enter a valid API key of a Freshdesk user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
-2. Click _Save_{:.doc-button}.
+2. Click btn:[Save].
 
 [#install-the-peopleware-app]
 == Install the Peopleware app

@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Find information about every report setting.
 :related-articles: concept-reports.adoc, task-create-reports.adoc
 
-This article lists all reports settings available in _Analyze > Reports_{:.breadcrumbs}.
+This article lists all reports settings available in menu:Analyze[Reports].
 For more information about reports see:
 
 - xref:reporting:concept-reports.adoc[Reports]

@@ -25,8 +25,8 @@ You cannot batch-edit entitlement values. You cannot import vacation entitlement
 ====
 [#check-vacation-entitlement]
 == Check vacation entitlement
-1. Go to _Plan > Time Off_{:.breadcrumbs} and click _Edit entitlement_{:.doc-button} to manage people's entitlements.
-2. Select a _Planning unit_{:.label}, optionally a _Selection_{:.label}, and a **Year**.
+1. Go to menu:Plan[Time Off] and click btn:[Edit entitlement] to manage people's entitlements.
+2. Select a *Planning unit*, optionally a *Selection*, and a **Year**.
 3. (Optional) Use **Search** to find specific persons.
 
 image::vacation-entitlement/image-1.png[Vacation entitlement, width=100%]
@@ -58,7 +58,7 @@ table th:nth-of-type(2) {
 
 If employees belong to more than one planning unit throughout a year, the data for the entire year is always displayed, regardless of the filter setting. You only have to enter the data for each employee once.
 
-In Enterprise on-premise, you find the vacation entitlement menu item under _WFM > Scheduling > SchedulePro > Vacation Entitlement_{:.breadcrumbs}. Field names differ and the functionality is limited (no filter, no download option, not the last two columns in the table). You need to save your changes manually.
+In Enterprise on-premise, you find the vacation entitlement menu item under menu:WFM[Scheduling>SchedulePro>Vacation Entitlement]. Field names differ and the functionality is limited (no filter, no download option, not the last two columns in the table). You need to save your changes manually.
 
 [#add-edit-or-delete-vacation-entitlement]
 == Add, edit or delete vacation entitlement
@@ -71,16 +71,16 @@ You can add, edit or delete the values in the **Remain Last Year** and **Current
 == Transfer unused vacation entitlement to the next year
 You can transfer the remaining vacation entitlement for the current year to the following year.
 
-1. Choose a _Planning unit_{:.label} and, optionally, a _Selection_{:.label} to display only the employees whose entitlements you want to transfer. You can use the **Search** field to select individual employees.
+1. Choose a *Planning unit* and, optionally, a *Selection* to display only the employees whose entitlements you want to transfer. You can use the **Search** field to select individual employees.
 2. Choose the **Year** from which you want to transfer the entitlement to the following year.
-3. If you see no values in the **Remain Current Year** column, edit your employees' contracts in _WFM > Administration > Scheduling > Contracts_{:.breadcrumbs}:
-   - In the **Work Time Guidelines** section of the contract for which you want to show the remaining vacation entitlement, enter a target value for weekly working hours in the **Target** field on the **Week** line. Then, click _Ok_{:.doc-button} to save the contract and reload the vacation entitlement page.
+3. If you see no values in the **Remain Current Year** column, edit your employees' contracts in menu:WFM[Administration>Scheduling>Contracts]:
+   - In the **Work Time Guidelines** section of the contract for which you want to show the remaining vacation entitlement, enter a target value for weekly working hours in the **Target** field on the **Week** line. Then, click btn:[Ok] to save the contract and reload the vacation entitlement page.
 
-4. Click _Transfer Entitlement_{:.doc-button}. This will transfer the vacation entitlement for all displayed employees into the next year. The transferred entitlement will appear in the **Remain Last Year** column.
+4. Click btn:[Transfer Entitlement]. This will transfer the vacation entitlement for all displayed employees into the next year. The transferred entitlement will appear in the **Remain Last Year** column.
 
 [#export-vacation-entitlement-as-csv-file]
 == Export vacation entitlement as CSV file
-Click the {icon-file-arrow-down} next to _Transfer Entitlement_{:.doc-button} to export the displayed data to a CSV file in the following format:
+Click the {icon-file-arrow-down} next to btn:[Transfer Entitlement] to export the displayed data to a CSV file in the following format:
 
 ----
 personnelNumber,name,remainingDaysCurrentYear,remainingDaysLastYear,currentYear,percentTaken,year

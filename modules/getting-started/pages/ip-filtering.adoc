@@ -31,17 +31,17 @@ When you activate IP filtering, all active users are logged out. Depending on th
 ====
 - Logout can be immediate
 - Logout happens when data is next loaded or stored
-- Logout is timed (only in Shift Center accessible via _Plan > Shift Center_{:.breadcrumbs})
+- Logout is timed (only in Shift Center accessible via menu:Plan[Shift Center])
 ====
 >
 [NOTE]
 ====
 To continue working with Peopleware, users will have to log in again.
 ====
-1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
 2. In the **Allowed IPs** field, enter a comma-separated list of IPs or IP address ranges in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#:~:text=CIDR%20notation%20specifies%20an%20IP,bits), e.g.:
    - `192.0.2.25,198.51.100.0/24,203.0.113.0/24`
-3. Click _Activate filtering_{:.doc-button}.
+3. Click btn:[Activate filtering].
 
 IP filtering only affects UI interactions. The optionally available Shift Center, accessible via direct URL, and the API are currently not affected by IP filtering.
 
@@ -55,15 +55,15 @@ IP filtering only affects UI interactions. The optionally available Shift Center
 ====
 If you edit the IP address ranges, all users will be logged out when they next interact with Peopleware. To continue working with Peopleware, users will have to log in again.
 ====
-1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
 2. Edit the IP address ranges.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#deactivate-ip-filtering]
 == Deactivate IP filtering
-1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
 2. Delete the IP address ranges.
-3. Click _Deactivate filtering_{:.doc-button}.
+3. Click btn:[Deactivate filtering].
 
 After deactivating IP filtering, users will be able to access Peopleware from any IP address.
 

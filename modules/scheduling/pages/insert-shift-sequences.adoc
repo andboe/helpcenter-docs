@@ -10,29 +10,29 @@ Shift sequences are fixed, repetitive sequences of shifts, activities, or availa
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you are using Essential WFM, Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-insert-shift-sequences.adoc[Insert Shift Sequences] under _Plan > Schedules_{:.breadcrumbs}.
+If you are using Essential WFM, Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-insert-shift-sequences.adoc[Insert Shift Sequences] under menu:Plan[Schedules].
 ====
 [#set-parameters]
 == Set parameters
-Using the following dialog in _WFM > Scheduling > SchedulePro > Insert Shift Sequences_{:.breadcrumbs} you can insert shift sequences:
+Using the following dialog in menu:WFM[Scheduling>SchedulePro>Insert Shift Sequences] you can insert shift sequences:
 
 image::insert-shift-sequences/image-1.png[Insert shift sequences, width=75%]
 
 1. Select **a start and end date** (maximum: 2 years), a planning unit, a selection if necessary, and the target level.
-2. Confirm your parameters with _Create Employee List_{:.doc-button}. The xref:#employee-list[employee list] appears.
+2. Confirm your parameters with btn:[Create Employee List]. The xref:#employee-list[employee list] appears.
 3. Select individual employees with the **checkbox in front of the personnel number** or use the first checkbox in the upper left corner to select all employees.
-4. Click the _Insert Shift Sequences_{:.doc-button}.
+4. Click the btn:[Insert Shift Sequences].
 
 The shift sequences are inserted. At the end, another window appears, this may contain messages detailing errors during the insertion process.
 
 [#options]
 == Options
-In the _Options_{:.menu-item} section there are various options for deleting existing schedule content:
+In the *Options* section there are various options for deleting existing schedule content:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -48,18 +48,18 @@ In the _Options_{:.menu-item} section there are various options for deleting exi
 
 The options are only considered when inserting the first shift sequence of an employee, i.e. if this option is activated, the schedule content is only deleted when inserting the first shift sequence.
 
-Existing full-day activities are generally replaced by full-day activities from a shift sequence if the existing entries are not of the type `Absence`, `Illness`, `Vacation`, or `Meeting`. To prevent full-day activities (for example, vacation) from being overwritten by partial-day activities or shifts from a shift sequence, activate scheduling rule _2645_{:.id-label}_Disallow overwriting of full-day activities with shifts or activities_.
+Existing full-day activities are generally replaced by full-day activities from a shift sequence if the existing entries are not of the type `Absence`, `Illness`, `Vacation`, or `Meeting`. To prevent full-day activities (for example, vacation) from being overwritten by partial-day activities or shifts from a shift sequence, activate scheduling rule *2645*_Disallow overwriting of full-day activities with shifts or activities_.
 
 Other scheduling rules can influence the result:
 
-- _2602_{:.id-label} Max. activity duration
-- _2611_{:.id-label} _Check employee availability_
-- _2613_{:.id-label} Max. shifts per day
-- _2648_{:.id-label} _Write protection for activities in the Shift Center_
+- *2602* Max. activity duration
+- *2611* _Check employee availability_
+- *2613* Max. shifts per day
+- *2648* _Write protection for activities in the Shift Center_
 
 [#employee-list]
 == Employee list
-The employee list, which appears after clicking on _Create Employee List_{:.doc-button}, contains information about every shift sequence of your employees.
+The employee list, which appears after clicking on btn:[Create Employee List], contains information about every shift sequence of your employees.
 
 image::insert-shift-sequences/image-2.png[Employee Shift sequences]
 

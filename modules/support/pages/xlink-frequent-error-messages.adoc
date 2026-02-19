@@ -12,7 +12,7 @@ Here we have compiled the most common error messages or problems with the Xlink 
 == Enterprise Server 1 not available
 **The connection between injixo and the Xlink cannot be established correctly.**
 
-Please check the credentials that are stored in the _DB_{:.menu-item} section of the `isps_ul.ini` file and
+Please check the credentials that are stored in the *DB* section of the `isps_ul.ini` file and
 whether your firewall has enabled the `TCP port 45054` (systems created before 2019 might use port 80).
 In addition, please check the hostname which is entered in the `isps.cfg` in the Xlink directory. This should
 correspond to the first part of the URL displayed when you are in the WFM section.
@@ -29,7 +29,7 @@ the file.
 == Cannot connect to the database
 **The credentials of the Xlink user are not correct.**
 
-Give your Xlink user a new password under _Account_{:.menu-item}. Check whether there is a small lock
+Give your Xlink user a new password under *Account*. Check whether there is a small lock
 next to the user. In this case, the Xlink user was blocked due to too many incorrect logins and you have to unlock
 the Xlink user. Store the new password as a coded string (using `passcode.exe`) in `isps_ul.ini` and restart the Xlink
 service once.

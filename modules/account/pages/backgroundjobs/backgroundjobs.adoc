@@ -18,10 +18,10 @@ You need the following permissions to create a background job:
 
 [#create-job]
 == Create job
-1. Go to _Account > Background jobs_{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Background jobs].
+2. Click btn:[Create].
 3. Specify the general settings of the job. For more information, see xref:#general-settings[General settings].
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 5. Configure:
    - xref:#parameters[Parameters]
    - xref:#schedule[Schedule]
@@ -71,6 +71,6 @@ If no execution date is defined, the job can only be started manually.
 |===
 
 <!-- To edit existing templates, click an item in the list. -->
-<!-- Existing templates with the configured parameters can be edited via _Backgroundjobs_{:.menu-item} at any time. -->
+<!-- Existing templates with the configured parameters can be edited via *Backgroundjobs* at any time. -->
 <!-- outdated for cloud -->
 <!-- image::backgroundjobs/image-1.png[Job Configuration, width=50%] -->

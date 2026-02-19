@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Five9 integration is a cloud integration that imports calls, agent status data, and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#prerequisites]
 == Prerequisites
@@ -33,11 +33,11 @@ For more detailed information on how to customize reports, refer to the Five9 He
 
 [#add-a-five9-integration]
 == Add a Five9 integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Five9**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#set-up-your-adp-integration]
 == Set up your Five9 integration
@@ -48,7 +48,7 @@ For more detailed information on how to customize reports, refer to the Five9 He
 2. In the **Configuration** section, enter the following information:
    - **Account region**: Select the region of your Five9 account.
    - **Group queues by**: Select how you want to group your queues. Note that skill-based grouping requires setting up a custom report in your Five9 account.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 The integration starts importing data. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.
 

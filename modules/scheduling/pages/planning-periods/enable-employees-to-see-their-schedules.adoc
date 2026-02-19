@@ -13,21 +13,21 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[Scheduling Periods] under menu:Plan[Schedules] instead.
 ====
 [#allow-employees-to-see-their-schedules]
 == Allow employees to see their schedules
-1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
-2. Choose the _Planning Unit_{:.label} you want to publish schedules for.
+1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+2. Choose the *Planning Unit* you want to publish schedules for.
 3. Choose the **Type** _Standard_.
-4. Set the _Selection_{:.label} to **[All]** unless you want to limit the publishing of the schedules to a certain group of agents. I you want to limit the publishing, choose the respective selection.
-5. Click _Apply_{:.doc-button}.
-6. Select the planning period with the date range for which you want to publish schedules and click _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar. If there is no planning period for that date range yet, create a new one. Click the {icon-wfm-add}.
+4. Set the *Selection* to **[All]** unless you want to limit the publishing of the schedules to a certain group of agents. I you want to limit the publishing, choose the respective selection.
+5. Click btn:[Apply].
+6. Select the planning period with the date range for which you want to publish schedules and click *![edit button](/assets/img/common/item-edit.gif)* in the action bar. If there is no planning period for that date range yet, create a new one. Click the {icon-wfm-add}.
 
 In both cases, the following dialog appears:
 
@@ -36,6 +36,6 @@ image::enable-employees-to-see-their-schedules/image-3.png[Define Planning Perio
 1. If you created a new planning period, use **Valid From** and **Valid To** to define the time period for which you want to publish the schedules.
 2. Select the **Status** _Information_ if you want your employees to only see the schedules. If the planning period is also used for xref:scheduling:shift-bidding.adoc[shift bidding] and xref:scheduling:enable-employees-to-swap-shifts.adoc[shift swaps] between agents, choose _Enabled_.
 3. Optional: Set a **Deadline** (only for shift bidding and shift swaps). Schedules will still be visible afterwards.
-4. Confirm with _Ok_{:.doc-button}.
+4. Confirm with btn:[Ok].
 
 Your employees will now see their schedules in Me for the time period defined by the planning period.

@@ -1,1 +1,1 @@
-(Optional) Enter a value for **Minimum Staff** and **Maximum Staff** to overwrite calculated values that are too low or too high.
+(Optional) Enter a value for *Minimum Staff* and *Maximum Staff* to overwrite calculated values that are too low or too high.

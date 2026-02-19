@@ -22,8 +22,8 @@ Depending on the action you want to perform, your role needs to have the followi
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|_WFM > Administration > System > Role Authorization > Mass Update_{:.breadcrumbs}
-|_Account > Roles > Functional permissions > People_{:.breadcrumbs}
+|menu:WFM[Administration>System>Role Authorization>Mass Update]
+|menu:Account[Roles>Functional permissions>People]
 |Contracts
 |Edit People
 |Skills
@@ -43,13 +43,13 @@ Depending on the action you want to perform, your role needs to have the followi
 Some types of assignments, such as roles or planning units, may be subject to additional object permissions.
 In this case, you can only mass update assignments of objects that your role has edit permissions for.
 
-To check job result reports of a mass update, your role needs to have **Access to job status** permissions in _Account > Roles > Job Status_{:.breadcrumbs}.
+To check job result reports of a mass update, your role needs to have **Access to job status** permissions in menu:Account[Roles>Job Status].
 
 [#steps]
 == Steps
 [#specify-mass-update-scope]
 === Perform mass update
-1. Go to _People > Overview_{:.breadcrumbs}
+1. Go to menu:People[Overview]
 2. In the People table, activate the checkbox of every person you want to edit assignments for. The page displays a toolbar above the table.
 3. In the toolbar, click **Mass update**. Peopleware opens the **Mass update** page, which includes a section menu for every object assignment you can edit.
 4. In the menu, click the item to display all the mass update actions available for the object type.
@@ -63,7 +63,7 @@ For a detailed overview of the mass update results, including information on fai
 
 [#specify-mass-update-action]
 === Check the results of a mass update
-1. In the navigation bar, click the {icon-context-menu} _Job Status_{:.label}.
+1. In the navigation bar, click the {icon-context-menu} *Job Status*.
 2. In the job table, find your mass update job.
    To make finding the job easier, apply the **User** filter option and click the **Submitted** column header to sort the table by date.
 3. Make sure the job's progress is 100 % before proceeding with the next step.

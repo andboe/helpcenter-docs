@@ -17,7 +17,7 @@ Use the scheduling report to check the optimization result and to get an idea on
 You can find the scheduling report based on your WFM version:
 
 - **Advanced WFM and Enterprise WFM**: Access reports in xref:general:jobstatus.adoc[Job status].
-- **Classic**: Access reports in xref:general:jobstatus.adoc[Job status] and under _WFM > Scheduling > SchedulePro > Optimization_{:.breadcrumbs}.
+- **Classic**: Access reports in xref:general:jobstatus.adoc[Job status] and under menu:WFM[Scheduling>SchedulePro>Optimization].
 - **Enterprise On-Premise**: The report is shown automatically after saving the schedule in the Auto Scheduler.
 
 [#text-colors-in-the-scheduling-report]
@@ -48,7 +48,7 @@ Scheduling errors often relate to your configuration. Check the following settin
 
 [#people-settings]
 === People settings
-Go to _People_{:.breadcrumbs} and select the person whose settings you want to check:
+Go to menu:People[] and select the person whose settings you want to check:
 
 - In the **Staff membership** section under **Work profile**, make sure there is a currently valid staff membership.
 - In the **Suitable activities** section under **Work profile**, check that the correct activities are listed. Otherwise, add further skills to the person in the **Skill levels** section. The suitable activities are updated automatically.
@@ -74,9 +74,9 @@ Potential risk of scheduling errors
 ====
 Changes to scheduling rules are complex and can result in scheduling errors if done incorrectly. We do not recommend changing them yourself. If you need to change a scheduling rule, contact your consultant.
 ====
-- Check your scheduling rule configurations under _WFM > Administration > System > Scheduling Rules_{:.breadcrumbs}.
+- Check your scheduling rule configurations under menu:WFM[Administration>System>Scheduling Rules].
 - Make sure that no activities have been added that might be blocking slots in the schedule. Unpaid full-day activities used as blockers for certain days might be intended.
-- Make sure that the work time pattern models of your employees contain the correct day models. Check this in _WFM > Administration > Scheduling > Work Time Pattern Models_{:.breadcrumbs}.
+- Make sure that the work time pattern models of your employees contain the correct day models. Check this in menu:WFM[Administration>Scheduling>Work Time Pattern Models].
 - Check if the value for working days per week in the contract matches the actual number of working days. You may need to specify a lower value for Minimum Number of Working Days per Week in the contract.
 - Check that the rotation defined for the employee's work time pattern model does not prevent the use of the correct day models. This can happen with xref:administration:work-time-pattern-models.adoc[work time pattern models] of type B, C, and D.
 
@@ -115,8 +115,8 @@ Changes to scheduling rules are complex and can result in scheduling errors if d
 
 - **No valid target working hours have been defined.**<br>Define valid target working times in the employee's contract.<br><br>
 
-- **The maximum number of successive working days (not limited to the days within a week) has not been specified in the contract.**<br>Check the contract and adjust the scheduling rule _2624_{:.id-label} Max. consecutive working days.<br><br>
+- **The maximum number of successive working days (not limited to the days within a week) has not been specified in the contract.**<br>Check the contract and adjust the scheduling rule *2624* Max. consecutive working days.<br><br>
 
-- **The free time between shifts cannot be observed.**<br>Free time refers to the rest period between two shifts. Check the contract and adjust the value of the scheduling rule _2601_{:.id-label} Rest between two workdays.<br><br>
+- **The free time between shifts cannot be observed.**<br>Free time refers to the rest period between two shifts. Check the contract and adjust the value of the scheduling rule *2601* Rest between two workdays.<br><br>
 
 - **Errors occurred while checking the initial data. The optimization process has been stopped. Reason: The planning units cannot be read.**<br> You have permissions for the planning unit you are trying to optimize, but the planning unit may be part of a hierarchy where a parent planning unit is not accessible to you. Add at least read permissions for all planning units in the hierarchy.

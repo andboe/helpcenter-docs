@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to cut, copy, paste, move, expand, and shorten scheduling elements, change day models into activities, undo your actions, and revoke full-day activities.
 :related-articles: add-and-delete-activities-day-models-availabilities-and-comments.adoc, use-keyboard-shortcuts.adoc
 
-If the availability of your people changes or if there are unexpected absences, you might need to manually edit your schedule. In _Plan > Shift Center_{:.breadcrumbs} you can do it in the following two ways:
+If the availability of your people changes or if there are unexpected absences, you might need to manually edit your schedule. In menu:Plan[Shift Center] you can do it in the following two ways:
 
 - Directly in the xref:#edit-the-schedule-in-the-schedule-area[schedule area]
 - In the xref:#edit-the-schedule-in-the-configuration-window[configuration window]
@@ -24,8 +24,8 @@ You can cut, copy, or paste one or multiple day cells, or individual scheduling 
 You can cut, copy, and paste one or several day cells at a time. When you cut or copy a day cell, you copy its whole content. Pasting a cell into another cell overwrites the existing content.
 
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], select a day cell. To select multiple day cells, hold **Shift** while clicking.
-2. Right-click the cell, and select _Copy_{:.label}, or _Cut_{:.label}.
-3. Right-click the cell where you want to paste the copied content, and select _Paste_{:.label}.
+2. Right-click the cell, and select *Copy*, or *Cut*.
+3. Right-click the cell where you want to paste the copied content, and select *Paste*.
 
 [#scheduling-elements]
 === Edit scheduling elements
@@ -33,8 +33,8 @@ You can cut, copy, and paste activities, day models, and availabilities.
 Learn which xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#level-in-the-schedule-area[elements you can edit in each level].
 
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], click a day column header.
-2. Right-click the element that you want to copy, and select _Copy_{:.label}.
-3. Right-click the expanded day cell where you want to paste the element, and select _Paste_{:.label}.
+2. Right-click the element that you want to copy, and select *Copy*.
+3. Right-click the expanded day cell where you want to paste the element, and select *Paste*.
 
 [#move-extend-and-shorten-activities]
 === Move, extend, and shorten activities
@@ -49,7 +49,7 @@ To move, extend, or shorten activities, proceed as follows:
 
 [#move-variable-day-models]
 === Move variable day models
-You can move day models of type _Variable_{:.label} to any available starting time. If a break is defined as a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[break corridor], you can move it within a day model.
+You can move day models of type *Variable* to any available starting time. If a break is defined as a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[break corridor], you can move it within a day model.
 To move a day model or a break, follow the xref:#move-extend-and-shorten-activities[procedure to move activities].
 
 [#edit-the-schedule-in-the-configuration-window]
@@ -58,20 +58,20 @@ To edit the schedule in the configuration window, proceed as follows:
 
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a day cell.
 2. Select one of the following tabs:
-   - _Activities_{:.label}
-   - _Multiactivities_{:.label}
-   - _Day Models_{:.label}
-   - _Full-Day Activities_{:.label}
+   - *Activities*
+   - *Multiactivities*
+   - *Day Models*
+   - *Full-Day Activities*
 
 3. Edit the element(s).
-4. Click _OK_{:.doc-button}.
+4. Click btn:[OK].
 
 Learn xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#booking-date-and-columns---0-+[how to use the booking date and -/0/+ columns].
 
 [#how-are-scheduling-conflicts-solved]
 === How are scheduling conflicts solved?
 When you add or edit activities or day models in the configuration window, the time ranges of new and old scheduling elements may overlap.
-After you click _OK_{:.doc-button}, the scheduling conflicts are handled as follows:
+After you click btn:[OK], the scheduling conflicts are handled as follows:
 
 - If you add or edit one activity that overlaps with existing elements, the new activity will overwrite them during the overlapping period.
 - If you add or edit several activities, all activities are re-inserted according to their start times. If the added or edited activities fully or partially overlap with existing ones, the activities starting at a later time may overwrite those starting earlier. In this scenario, existing activities may (partly) overwrite newly added or edited activities.
@@ -110,7 +110,7 @@ You can split a day model into the sequence of its individual activities. This w
 To split a day model into its activities, proceed as follows:
 
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], right-click a day model.
-2. From the drop-down menu, select _Dissociate Items from Shift Concept_{:.label}.
+2. From the drop-down menu, select *Dissociate Items from Shift Concept*.
 
 [NOTE]
 ====
@@ -118,7 +118,7 @@ To split a day model into its activities, proceed as follows:
 >
 [NOTE]
 ====
-The _Job Optimization_{:.label} and the _Create optimized schedules_{:.label} functionalities split day models into activities.
+The *Job Optimization* and the *Create optimized schedules* functionalities split day models into activities.
 Corridor elements for breaks are kept by default.
 ====
 [#delete-full-day-activities-to-restore-schedules]
@@ -127,7 +127,7 @@ You can use full-day activities to add full-day absences to the schedule. When y
 To delete a full-day activity and restore the overwritten schedule, proceed as follows:
 
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], right-click one or more cells that include full-day activities.
-2. From the drop-down menu, select _Revoke Full-Day Activity_{:.label}.
+2. From the drop-down menu, select *Revoke Full-Day Activity*.
    The overwritten schedule is restored.
 
 Learn how to xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#recover-previous-schedules-states[display and restore previous schedules] for individual people.

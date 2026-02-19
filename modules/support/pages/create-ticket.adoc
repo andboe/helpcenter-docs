@@ -20,7 +20,7 @@ The Peopleware support team is here to help with any issues, from system errors 
 1. Search [Help Center]({{ site.url }}) for answers.
 2. If you still need help, click **Raise a support ticket** on the Help Center start page.
 3. Fill in the form. You cannot add screenshots here but we may ask for them in our next reply.
-4. Click _Submit_{:.doc-button}.
+4. Click btn:[Submit].
    You will receive a confirmation email with your ticket ID.
 
 [#incident-tracking-and-outage-notifications]

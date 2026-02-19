@@ -18,7 +18,7 @@ The import mode is basically configured for all external systems in Xlink. It is
 == Automatic import
 Import data continuously for the current day or once a day retroactively for the previous day.
 
-The described settings can be made separately for the import of call and employee data. In the Xlink interface, select _Auto-Import_{:.menu-item} from the _Settings_{:.menu-item} menu to configure the automatic import.
+The described settings can be made separately for the import of call and employee data. In the Xlink interface, select *Auto-Import* from the *Settings* menu to configure the automatic import.
 
 image::xlink-import-mode/image-1.png[Xlink Auto-Import Settings, width=80%]
 
@@ -38,7 +38,7 @@ Select this option if you do not want to perform automatic import. Usually you u
 
 [#manual-import]
 == Manual import
-You can start a manual import via the menu _File > Start Import > Import Call Data_{:.breadcrumbs}. In addition, the menu provides the following buttons:
+You can start a manual import via the menu menu:File[Start Import>Import Call Data]. In addition, the menu provides the following buttons:
 
 image::xlink-import-mode/image-2.png[Xlink Manual Import, width=25%]
 
@@ -48,7 +48,7 @@ A manual import is necessary whenever historical data has to be re-imported, e.g
 
 [#write-zero-values-writealways-parameter]
 == Write zero values (WriteAlways parameter)
-If the _Settings > Write null values_{:.breadcrumbs} option is activated, 0 calls will be accepted for intervals that do not return any values on import. This will cause any existing values in your WFM queues to be overwritten with 0. A change via the Xlink interface updates the _WriteAlways_ parameter in the `isps_ul.ini` file.
+If the menu:Settings[Write null values] option is activated, 0 calls will be accepted for intervals that do not return any values on import. This will cause any existing values in your WFM queues to be overwritten with 0. A change via the Xlink interface updates the _WriteAlways_ parameter in the `isps_ul.ini` file.
 
 This can be the case if, for example, a period is imported for which your ACD has no more data stored, but can be correct if, for example, you have changed a mapping and you actually want to overwrite existing data with 0.
 

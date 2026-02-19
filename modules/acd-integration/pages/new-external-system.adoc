@@ -26,9 +26,9 @@ The available Universal and CSV interface are more flexible, as you can define a
 
 [#create-an-external-system]
 == Create an external system
-1. Go to _WFM > Administration > System > External System_{:.breadcrumbs}.
+1. Go to menu:WFM[Administration>System>External System].
 2. Click the {icon-wfm-add}.
 3. Under _System Description_, select **CSV Files**, **Universal**, or a **specific interface** for your ACD.
 4. Enter a **Name** to identify the data source.
 5. Check the checkboxes **PhoneLink** (for call data) and **TimeLink** (for agent activity data). Not all interfaces support both options.
-6. Click _OK_{:.doc-button}.
+6. Click btn:[OK].

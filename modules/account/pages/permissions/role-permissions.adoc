@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Define permissions to view, create, edit, and delete roles.
 :related-articles: configure-user-roles.adoc
 
-In _Account > Roles_{:.breadcrumbs}, you can restrict view and edit permissions for certain roles. For example, if you want people with the Planner role to be able to assign the Standard Agent role only, you can edit the role permissions for the Planner role.
+In menu:Account[Roles], you can restrict view and edit permissions for certain roles. For example, if you want people with the Planner role to be able to assign the Standard Agent role only, you can edit the role permissions for the Planner role.
 
 [NOTE]
 ====
@@ -22,9 +22,9 @@ People need a role with the "Edit people" permission to be able to assign any ro
 To allow a role to assign one or more specific roles, proceed as follows:
 
 1. Select the role whose permissions you want to edit.
-2. In the _Account_{:.label} section, click _Configure role permissions_{:.label}.
-3. In the _View_{:.label} column, check the checkboxes next to the roles that the selected role should be able to assign.
-4. Click _Save_{:.doc-button}.
+2. In the *Account* section, click *Configure role permissions*.
+3. In the *View* column, check the checkboxes next to the roles that the selected role should be able to assign.
+4. Click btn:[Save].
 
 The role you edited can only view and assign the roles you have selected in the role permissions. If the role does not have Full access to Roles, it cannot edit roles.
 
@@ -33,7 +33,7 @@ The role you edited can only view and assign the roles you have selected in the 
 To allow a role to assign and edit all roles, proceed as follows:
 
 1. Select the role you want to allow to assign and edit all roles.
-2. In the _Account_{:.label} section, check the checkbox _Full access to Roles_{:.label}.
-3. Click _Save_{:.doc-button}.
+2. In the *Account* section, check the checkbox *Full access to Roles*.
+3. Click btn:[Save].
 
 The role you edited can view, assign and edit all roles.

@@ -12,18 +12,18 @@ Shift bidding allows your employees to actively participate in the scheduling pr
 The important facts in brief:
 
 - You create shifts based on the xref:scheduling:edit-or-delete-staff-requirements.adoc[employee requirements] and the xref:scheduling:shift-requirement.adoc[shift requirements].
-- Your employees can request the generated shifts via _Me_{:.menu-item}.
+- Your employees can request the generated shifts via *Me*.
 - You can lottery the requested shifts.
 - You can assign the remaining shifts (like those that are unpopular).
 
 [NOTE]
 ====
-This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+This article is about menu:WFM[Scheduling>SchedulePro].
 ====
 >
 [NOTE]
 ====
-If you use Advanced WFM or Enterprise WFM, use scheduling periods under _Plan > Schedules_{:.breadcrumbs} for xref:scheduling:schedules-shift-bidding.adoc[shift bidding] instead.
+If you use Advanced WFM or Enterprise WFM, use scheduling periods under menu:Plan[Schedules] for xref:scheduling:schedules-shift-bidding.adoc[shift bidding] instead.
 ====
 Take note:
 
@@ -37,13 +37,13 @@ Complete process:
 
 [#generate-lottery-assign-shifts-with-planning-periods]
 == Generate, lottery, assign shifts with planning periods
-In _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}, when you select a planning period you are presented the **Shifts** navigation block on the right side:
+In menu:WFM[Scheduling>SchedulePro>Planning Periods], when you select a planning period you are presented the **Shifts** navigation block on the right side:
 
 image::shift-bidding/image-2.png[Planning Periods with Shift Functions]
 
 [#preparation]
 == Preparation
-All relevant menu items are in _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+All relevant menu items are in menu:WFM[Scheduling>SchedulePro].
 
 1. Check if xref:scheduling:edit-or-delete-staff-requirements.adoc[employee requirements] exist. They are the basis for shift generation (in combination with the shift requirement).
 
@@ -65,16 +65,16 @@ Remark on the shift requirement:
 Shift generation generates shifts for each day of the planning period and tries to achieve the best possible coverage of the requirement curve. Shifts that already exist in the schedule are taken into account.
 
 1. Select a **planning period** of the type Standard in the overview.
-2. Click _Generate_{:.doc-button} in the **Shifts** section.
+2. Click btn:[Generate] in the **Shifts** section.
 3. The shift generation parameter window opens:
    image::shift-bidding/image-3.png[Parameter window for shift generation, width=50%]
 4. Optionally adjust the following parameters:
    - The **start date**/**end date** of the planning period.
    - The value for the **shift generation requirement**. A value above 100% generates more shifts than specified by the requirement. A value below 100% may be required if the personnel capacity is too low to cover the requirement.
    - The options **of the employee requirement** and **of the contractual hours**. These determine whether the requirement is to be met based on employee requirements or based on the contract hours.
-5. Click _OK_{:.doc-button} to start the shift generation.
+5. Click btn:[OK] to start the shift generation.
 
-Activate the option _Display job results_{:.menu-item} to generate the **result report**. This report contains information, warnings, and errors concerning the configuration data and the shift generation itself (run time, writing of requirement data, violations of scheduling rules). If you click _Close Dialog_{:.doc-button}, the shift generation continues in the background. While the process is running, the scheduling data is protected during the optimization period. You cannot make any changes to the schedule during this time.
+Activate the option *Display job results* to generate the **result report**. This report contains information, warnings, and errors concerning the configuration data and the shift generation itself (run time, writing of requirement data, violations of scheduling rules). If you click btn:[Close Dialog], the shift generation continues in the background. While the process is running, the scheduling data is protected during the optimization period. You cannot make any changes to the schedule during this time.
 
 [#shift-request-of-your-agents]
 == Shift request of your agents
@@ -83,7 +83,7 @@ Change the status of the xref:scheduling:what-are-planning-periods.adoc[planning
 The employees can make an initial request and an alternative request. Several employees can bid on the same shift. They can see how many shifts are needed and how often a certain shift has already been requested. This way they can estimate the probability of getting a shift and, if necessary, find alternative shifts.
 During the lottery, the initial check is whether the normal request can be fulfilled or not.
 Define a deadline in your planning period to determine the time in which your employees can enter their bids.
-The submitted bids appear in the levels Request and Alternative Request in _Schedules_{:.menu-item} or in the _Shift Center_{:.menu-item}.
+The submitted bids appear in the levels Request and Alternative Request in *Schedules* or in the *Shift Center*.
 
 [#schedule-generated-shifts]
 == Schedule generated shifts
@@ -96,9 +96,9 @@ With the lottery, the requested shifts are distributed among the employees. Succ
 Start the lottery:
 
 1. Select the **planning period** in the overview.
-2. Click _Lottery_{:.doc-button} in the shifts section.
+2. Click btn:[Lottery] in the shifts section.
 3. Select the xref:#parameters-for-lottery-and-assignment[relevant parameters] in the pop-up window.
-4. Click _OK_{:.doc-button} to start the lottery.
+4. Click btn:[OK] to start the lottery.
 
 If necessary, check the **Create Lottery Log** checkbox. This report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, target time account, work time account) and raffled shifts and reasons for refusal of normal requests/alternative requests. Also, the results of the lottery for normal/alternative requests and the daily and total quotas per employee in % and the total quota in % for all employees are included.
 
@@ -117,13 +117,13 @@ For a fair distribution, employees' requests can be drawn by selections. If you 
 Start the assignment:
 
 1. Select the **planning period** in the overview.
-2. Click _Assign_{:.doc-button} in the shifts section.
+2. Click btn:[Assign] in the shifts section.
 3. Select the xref:#parameters-for-lottery-and-assignment[relevant parameters] in the pop-up window.
-4. Click _OK_{:.doc-button} to start the assignment.
+4. Click btn:[OK] to start the assignment.
 
 If required, check the **Create Assignment Log** checkbox. The report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, time account, working time account) and assigned shifts and reasons for rejection.
 
-The assignment randomly assigns shifts to employees for which there were no or too few requests in _Me_{:.menu-item}.
+The assignment randomly assigns shifts to employees for which there were no or too few requests in *Me*.
 These shifts remain unoccupied if there are too few employees. If employees cannot perform certain shifts due to skills or shift length, the schedule may remain incomplete. Therefore, check the assignment log and the schedule after the assignment.
 
 [#parameters-for-lottery-and-assignment]
@@ -161,11 +161,11 @@ Set the status of the xref:scheduling:what-are-planning-periods.adoc[planning pe
 
 [#edit-the-generated-shifts]
 == Edit the generated shifts
-In _Plan > Shift Center_{:.breadcrumbs}, you can check the generated shifts by day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
+In menu:Plan[Shift Center], you can check the generated shifts by day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
 
 1. In the parameter area, click the **Day Models** tab.
 2. Right-click a cell and select **Edit Shift Requirement...**.
 3. Select how to display the day models: - To display the day models in alphabetical order, click the {icon-plus} on the left of the row **All shifts according to name**. - To display the day models in chronological order, click the {icon-plus} on the left of the row **All shifts according to time**.
 4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the **Requirement** column.
 5. Click a cell in the **Requirement** column next to a day model and enter a new value.
-6. Click _OK_{:.doc-button} to save your changes.
+6. Click btn:[OK] to save your changes.

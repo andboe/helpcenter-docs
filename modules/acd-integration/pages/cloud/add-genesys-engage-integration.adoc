@@ -11,16 +11,16 @@ A Genesys Engage integration is an on-premise integration that imports call hist
 
 The integration uses xref:acd-integration:install-cloud-link.adoc[Cloud Link].
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-genesys-engage-integration]
 == Add a Genesys Engage integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Genesys**.
 5. From the **Model name** drop-down menu, select **Genesys Engage**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-new-genesys-engage-integration]
 == Set up your new Genesys Engage integration
@@ -33,7 +33,7 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
    - **Configuration database**: Enter the name of the Configuration database, e.g. Genesys_GCME (default). The database should contain the tables `cfg_dn` and `cfg_person` required to join data if your Genesys Engage uses an SQL Server database. You can leave the field blank if it uses a Postgres database.
 
 3. In the **Configuration** section, check **Import agent status data** to import agent status data from Genesys Engage.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 The integration starts importing data. To successfully import agent status data, you first need to xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map external user identifiers and activities].
 

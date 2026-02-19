@@ -15,9 +15,9 @@ New to Time Off? Learn the xref:scheduling:vacation-absences-management.adoc[bas
 
 [#configure-settings-for-suggestions]
 == Configure settings for suggestions
-1. Go to _Plan > Time Off_{:.breadcrumbs}
-2. Click _Configure Suggestions_{:.doc-button}.
-3. (Optional) Check and change the preselected _Planning unit_{:.label}.
+1. Go to menu:Plan[Time Off]
+2. Click btn:[Configure Suggestions].
+3. (Optional) Check and change the preselected *Planning unit*.
 
 [#configure-approval-rules]
 === Configure approval rules
@@ -27,7 +27,7 @@ In the **Approval rules** section, you can activate up to three rules for the su
 - **The daily average staff requirements for the planning unit are covered (including sickness and other planned absences)**: Approvals are possible if enough people are working to cover the daily average xref:scheduling:edit-or-delete-staff-requirements.adoc[staff requirements] for all activities in the planning unit.
 - **There is enough remaining absence quota for the planning unit left**: Approvals are possible if the configured value for the absence quota is not reached yet.
 
-To save the configuration, click _Save Rules_{:.doc-button}.
+To save the configuration, click btn:[Save Rules].
 
 [#quota-settings]
 == Quota settings
@@ -55,12 +55,12 @@ Example: When set as a percentage, a base quota of 10% equals 5 employees for a 
 === Date ranges
 A date range specifies a quota for a specified period and can be named individually. Date ranges overwrite the base quota. Furthermore, the order of the date ranges determines which quota is used in case of overlapping date ranges. The topmost date range has priority.
 
-1. Click _+ Add Date Range_{:.doc-button}.
+1. Click btn:[+ Add Date Range].
 2. Add a **Title** (e.g Christmas Day).
 3. Select a start and end date.
 4. Enter a value for the quota.
 5. Select the option to configure whether the weekly modifiers apply to the date ranges.
-6. Press the _Save Quota_{:.doc-button} button.
+6. Press the btn:[Save Quota] button.
 
 [NOTE]
 ====
@@ -77,7 +77,7 @@ The percentage values in the field next to each weekday are modifiers that are a
 
 A value of 100% will have no effect on the quota, while a value of 120% will increase the quota by 20%. Example: If you set your **Base Quota** as 1 Full-Time Employee, a modifier of 120% to Monday will increase the quota to 1.2 Full-Time Employees on Mondays. A modifier of 80% to Friday will reduce the quota to 0.8 Full-Time Employee on Fridays.
 
-Click _Save Quota_{:.doc-button} when you have finished configuring the quota.
+Click btn:[Save Quota] when you have finished configuring the quota.
 
 [#calendar]
 == Calendar

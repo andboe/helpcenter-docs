@@ -9,15 +9,15 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 The Odigo integration imports real-time agent status and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-an-odigo-integration]
 == Add an Odigo integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Odigo**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#configure-your-odigo-integration]
 == Configure your Odigo integration
@@ -32,32 +32,32 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
    - **Instance**: In Odigo, this field corresponds to x-ws-instance.
    - **Statistics table ID**: In Odigo, this field corresponds to statistics_table_id.
    - **IVR time zone**.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 Now you can generate the URL token to configure the import of agent status data:
 
-1. In the **Agent status data** section, click _Generate_{:.doc-button}.
+1. In the **Agent status data** section, click btn:[Generate].
 2. Copy the URL token to your clipboard.<br>
    The URL token is only shown once. If you cannot finish your setup right away, store it in a safe place, e.g. a password manager.
 3. In the Administration section of your Odigo interface, activate sending notifications to an external server. To do this, contact Odigo.
 4. Paste the copied URL token as notification URL.
 5. Save your settings in Odigo and go back to Peopleware.
 6. Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, Peopleware includes information about the type of break taken (e.g. Break (Lunch break)). Odigo break statuses are available in Peopleware after a maximum of 4&nbsp;hours.<br>Note: If you check this checkbox, you also need to update the xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[activity mapping].
-7. Click _Save_{:.doc-button}.
+7. Click btn:[Save].
 
 To activate the integration, you need to restart the server. To do this, contact Odigo.<br>
 RTA data starts being imported but the data is only visible after you have mapped external identifiers to your people.
 
 [#map-external-identifiers-to-your-people]
 == Map external identifiers to your people
-1. Go to _People_{:.breadcrumbs}.
+1. Go to menu:People[].
 2. Assign external identifiers to your people.
 
 Learn more about xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[mapping external identifiers] to people.
 
 [#map-external-statuses-to-peopleware-activities]
 == Map external statuses to Peopleware activities
-1. Go to _Intraday > Configuration_{:.breadcrumbs}.
+1. Go to menu:Intraday[Configuration].
 2. Map external statuses from Odigo to Peopleware activities.
 
 Learn more about xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[mapping external statuses] to Peopleware activities.

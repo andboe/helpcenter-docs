@@ -18,7 +18,7 @@ You can add attributes to the following configuration data:
 
 [#create-attributes]
 == Create attributes
-1. In _Plan > Configuration > Attributes_{:.breadcrumbs}, click _Create_{:.doc-button} at the top right.
+1. In menu:Plan[Configuration>Attributes], click btn:[Create] at the top right.
 2. Enter the following information:
    - **Name**
    - **Abbreviation**
@@ -26,7 +26,7 @@ You can add attributes to the following configuration data:
    - **Fixed value range**: This checkbox is only relevant if you create an attribute of type xref:#text[text].
    - **Payroll adjustment**: Check this checkbox if you want to use the attribute to mark information relevant for payroll, e.g. whether a day type is a holiday for which people are paid extra.
    - **Available for**: Select the types of configuration data to which you can add this attribute.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#attribute-types]
 == Attribute types
@@ -43,7 +43,7 @@ To configure the values of the value range, first xref:#create-attributes[create
 1. Scroll to the **Value range** section.
 2. Click **{icon-plus} Add**.
 3. In the **Value** field, add a value.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 You can also configure attributes of type text without a fixed value range. In this case, when you add the attribute you must fill out a free text field called **Value**.
 

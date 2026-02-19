@@ -29,8 +29,8 @@ Example: You want to create your schedules two weeks in advance. To prevent your
 
 To prevent people from editing availabilities in Me before a specific date, proceed as follows:
 
-1. Go to _Plan > Configuration > General_{:.breadcrumbs}.
+1. Go to menu:Plan[Configuration>General].
 2. Select a date with the date picker.
-3. Click _Save changes_{:.doc-button}.
+3. Click btn:[Save changes].
 
 Before the specified date, people can still see their availabilities but they cannot edit them. If you do not enter any date, people are always allowed to add or edit their one-time availabilities.

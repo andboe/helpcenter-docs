@@ -52,7 +52,7 @@ The following table presents an overview of the three different options to filte
 |One planning unit and one selection. Repeat for all planning units that you want to filter.
 |===
 
-For all functionalities in _Plan > Schedules > Scheduling actions_{:.breadcrumbs}, you need to select one planning unit and one selection, and apply the scheduling action to each planning unit that you want to filter.
+For all functionalities in menu:Plan[Schedules>Scheduling actions], you need to select one planning unit and one selection, and apply the scheduling action to each planning unit that you want to filter.
 
 The following examples provide more details about the three filtering options for selections as described in the table above.
 
@@ -67,20 +67,20 @@ With the following configuration, you can use the Onboarding selection as a filt
 
 [#filtering-option-1-all-planning-units-and-one-selection]
 === Filtering option 1: All planning units and one selection
-In _Plan > Schedules_{:.breadcrumbs}, you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
+In menu:Plan[Schedules], you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
 
-- _Planning unit_{:.label}: Select **All planning units**.
+- *Planning unit*: Select **All planning units**.
 - **Choose selection**: Select **Onboarding**.  
    If the **Choose selection** drop-down menu is not displayed, click the {icon-filter-u} on the top left.
 
 [#filtering-option-2-one-selection-and-no-planning-unit]
 === Filtering option 2: One selection and no planning unit
-In _Intraday > Real-Time Adherence_{:.breadcrumbs}, you can filter the scheduled activities of the people in the Onboarding selection and compare them with a person's actual status in real time. This is useful to check, for example, if a person is carrying out the activities scheduled for their onboarding phase.
+In menu:Intraday[Real-Time Adherence], you can filter the scheduled activities of the people in the Onboarding selection and compare them with a person's actual status in real time. This is useful to check, for example, if a person is carrying out the activities scheduled for their onboarding phase.
 
 To filter by selection, use the following drop-down menus:
 
-- _Planning unit_{:.label}: Make sure that no planning unit is selected.
-- _Selection_{:.label}: Select **Onboarding**.
+- *Planning unit*: Make sure that no planning unit is selected.
+- *Selection*: Select **Onboarding**.
 
 [#filtering-option-3-one-selection-and-one-planning-unit]
 === Filtering option 3: One selection and one planning unit
@@ -88,14 +88,14 @@ If you have specific time-off conditions for people in the onboarding phase, you
 
 To create specific time-off periods for the Onboarding selection:
 
-1. In _Plan > Time Off_{:.breadcrumbs}, click _Time-off periods_{:.doc-button}.  
+1. In menu:Plan[Time Off], click btn:[Time-off periods].  
    You will be redirected to the **Time-off Periods** page.
-2. Click _Create time-off period_{:.doc-button}.  
+2. Click btn:[Create time-off period].  
    A dialog window opens.
 3. Filter by selection with the following drop-down menus:
-   - _Planning unit_{:.label}: Select **Office 1**.
-   - _Selection_{:.label}: Select **Onboarding**.
+   - *Planning unit*: Select **Office 1**.
+   - *Selection*: Select **Onboarding**.
 4. Complete the remaining fields.  
    Learn more about the configuration of xref:scheduling:time-off-periods-legacy.adoc[time-off periods].
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 6. Repeat the steps 1 to 5 for planning units Office 2 and Office 3.

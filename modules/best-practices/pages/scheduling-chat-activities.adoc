@@ -69,20 +69,20 @@ There are two different ways to calculate staff requirements for chat activities
 === Calculate for block scheduling
 To configure the calculation method and calculate staff requirements, proceed as follows:
 
-1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+1. In menu:Forecast[Workloads], select a workload.
 2. Select a period for which a forecast exists.
-3. Scroll down to the **Staff Requirements** section and click _Edit staff requirements_{:.doc-button}.
+3. Scroll down to the **Staff Requirements** section and click btn:[Edit staff requirements].
 4. In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
    Learn more about the calculation method for chat and required parameters in the article xref:forecast:task-set-up-staff-requirement-calculation.adoc#steps[Calculate staff requirements].
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 The workload details page now displays calculated staff requirements for chat activities.
 
 To use the calculated staff requirements for scheduling, proceed as follows:
 
 1. Go to the top of the page to select an upcoming time period.
-2. In the **Staff requirements** section, click _Use staff requirements_{:.doc-button}.
-3. In the **Use staff requirements** window, click _Save_{:.doc-button}.
+2. In the **Staff requirements** section, click btn:[Use staff requirements].
+3. In the **Use staff requirements** window, click btn:[Save].
 
 [#calculate-for-blended-scheduling]
 === Calculate for blended scheduling
@@ -92,12 +92,12 @@ To transfer staff requirements from a forecast, proceed as follows:
 2. In each workload, select the same calculation period in the future.
 3. From the three-dot menu {icon-context-menu} at the top right, select **Use forecast**.
 4. In the window that opens, select your forecast version.
-5. Click _Use forecast_{:.doc-button}.
+5. Click btn:[Use forecast].
 
 To calculate staff requirements, proceed as follows:
 
-1. Go to _Forecast > Requirement Scripts_{:.breadcrumbs}.
-2. In the **Calls - Multi-Activity** tile, click _Open_{:.doc-button}.  
+1. Go to menu:Forecast[Requirement Scripts].
+2. In the **Calls - Multi-Activity** tile, click btn:[Open].  
    A configuration window with the script parameters opens.
 3. In the script configuration window, complete the form. In the **Planning Unit Parameters** section, select the multiactivity that includes your chat activities.
 4. In the **Assigned activities** section, configure the following parameters for each chat activity:

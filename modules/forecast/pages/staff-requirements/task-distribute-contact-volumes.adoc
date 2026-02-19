@@ -31,22 +31,22 @@ For verification, the calculation also adds two further formulas to the source q
 === Create value types
 To use this feature, you need to create two virtual value types: one for the distribution percentage and one for distributed contacts.
 
-1.  Go to _Analyze > Configuration > Value types_{:.breadcrumbs}.
-2.  Click _Create_{:.doc-button}.
+1.  Go to menu:Analyze[Configuration>Value types].
+2.  Click btn:[Create].
 3.  Fill in the information:
     - **Name** and **Abbreviation**
     - **Aggregation type**: Select **Average** for the distribution percentage and **Sum** for distributed contacts.
-4.  Click _Save_{:.doc-button}.
+4.  Click btn:[Save].
 
 [#assign-value-types-to-queues]
 === Assign value types to queues
 Repeat this process for your source queue and each of your target queues:
 
-1.  Go to _Analyze > Configuration > Queues_{:.breadcrumbs}.
+1.  Go to menu:Analyze[Configuration>Queues].
 2.  Select the queue.
 3.  In the **Value types** section, click **+ Add**.
 4.  Select your distribution percentage and distributed contacts value types.
-5.  Click _Save_{:.doc-button}.
+5.  Click btn:[Save].
 
 [#workflow]
 == Workflow
@@ -54,15 +54,15 @@ Repeat this process for your source queue and each of your target queues:
 === Save your forecast to a version
 This step saves a snapshot of your forecast data into a WFM queue, making it available for the script.
 
-1.  Go to _Forecast > Workloads_{:.breadcrumbs}.
+1.  Go to menu:Forecast[Workloads].
 2.  Select the workload you want to use.
 3.  From the three-dot menu {icon-context-menu}, select **Use forecast**. This automatically creates a queue named with a leading asterisk that the calculation will use as a data source.
 4.  From the **Select version** dropdown, select a version.
-5.  Click _Use forecast_{:.doc-button}.
+5.  Click btn:[Use forecast].
 
 [#run-the-calculation]
 === Run the calculation
-1.  Go to _Forecast > Requirement Calculations_{:.breadcrumbs}.
+1.  Go to menu:Forecast[Requirement Calculations].
 2.  Click on the Distribution - Contacts (time frames) calculation.
 3.  Fill in the **General parameter** section:
     - In the **Version** dropdown, make sure to select the forecast version you saved in the previous step. This version is used for the source, target, and distribution parameters.
@@ -73,7 +73,7 @@ This step saves a snapshot of your forecast data into a WFM queue, making it ava
     - **Value type (percentages)**: Designates the percentages to be stored.
     - **Value type (calculated contacts)**: Designates the formula for calculating the target contacts.
 6.  In the **Percentage distribution** section, enter the distribution percentage for each provider. You must include all involved providers, even if their distribution is temporarily 0%.
-7.  Click _Run_{:.doc-button}.
+7.  Click btn:[Run].
 
 [#check-the-results]
 == Check the results

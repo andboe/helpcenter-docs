@@ -11,7 +11,7 @@ Day types define the days with standard business hours and days with different b
 
 Add day types to your xref:administration:create-and-manage-planning-units.adoc#add-business-hours[planning unit] to set business hours for the standard days of the week and for special days, e.g. if your organization is open on public holidays. The business hours defined for those days are taken into account during schedule optimization.
 
-In _Plan > Configuration > Day types_{:.breadcrumbs} you can do the following:
+In menu:Plan[Configuration>Day types] you can do the following:
 
 - View the default day types (e.g. Monday, Tuesday, etc.).
 - Create, view, edit, and delete custom day types.
@@ -20,10 +20,10 @@ In _Plan > Configuration > Day types_{:.breadcrumbs} you can do the following:
 == Create a custom day type
 On some days, your business hours might differ from the standard, e.g. when there are special promotions or public holidays. To create custom day types for those days, follow these steps:
 
-1. In _Plan > Configuration > Day types_{:.breadcrumbs}, click _Create_{:.doc-button} at the top right.
+1. In menu:Plan[Configuration>Day types], click btn:[Create] at the top right.
 2. Enter a **Name** and **Abbreviation**.
 3. (Optional) Check the **Holiday mode** checkbox.<br>xref:#holiday-mode[Learn more] about how to configure day types for public holidays.
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#holiday-mode]
 == Holiday mode
@@ -49,9 +49,9 @@ Holiday mode reduces people's working hours for the day according to their contr
 ====
 If you activate or deactivate the holiday mode for a day type that is currently in use, you must recalculate time accounts or xref:administration:task-calculate-target-work-times.adoc[target work times].
 ====
-1. In _Plan > Configuration > Day types_{:.breadcrumbs}, select a day type from the list.
+1. In menu:Plan[Configuration>Day types], select a day type from the list.
 2. Edit the data that you want to change.
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].
 
 [#delete-a-day-type]
 == Delete a day type
@@ -63,9 +63,9 @@ If you activate or deactivate the holiday mode for a day type that is currently 
 ====
 Before you delete a day type, xref:administration:configure-planning-calendars.adoc#remove-day-types-from-the-planning-calendar[remove it from all planning calendars]. You cannot delete default day types.
 ====
-1. In _Plan > Configuration > Day types_{:.breadcrumbs}, select a day type from the list.
+1. In menu:Plan[Configuration>Day types], select a day type from the list.
 2. From the {icon-context-menu} at the top right, select **Delete**.
-3. In the confirmation window, click _Delete_{:.doc-button}.
+3. In the confirmation window, click btn:[Delete].
 
 [#day-types-in-scheduling]
 == Day types in scheduling

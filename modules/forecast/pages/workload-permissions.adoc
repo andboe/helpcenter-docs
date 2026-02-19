@@ -8,33 +8,33 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: create-workloads.adoc
 :page-aliases: workload-permissions
 
-In _Account > Roles_{:.breadcrumbs}, you can configure different _permissions_{:.css} for all _workloads_{:.css} in **Forecast**, including future _workloads_{:.css}. This is useful if you want a role to have only view _permissions_{:.css} for all _workloads_{:.css}, and other roles to have both view and edit _permissions_{:.css} for all _workloads_{:.css}.
+In menu:Account[Roles], you can configure different *permissions* for all *workloads* in **Forecast**, including future *workloads*. This is useful if you want a role to have only view *permissions* for all *workloads*, and other roles to have both view and edit *permissions* for all *workloads*.
 
 New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 
 [#configure-workload-permissions]
-== Configure _workload permissions_{:.css}
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Select the role for which you want to edit _workload permissions_{:.css}.
-3. Scroll down to _Forecast_{:.label} and check or uncheck the following checkboxes:
-   - _Create workloads_{:.label}
-   - _Access to Requirement Calculations_{:.label}
-4. Click _Configure workload permissions_{:.label}.
-5. In the **General** section, check the relevant checkboxes for all _workloads_{:.label}.
-6. Click _Save changes_{:.label}.
+== Configure *workload permissions*
+1. Go to menu:Account[Roles].
+2. Select the role for which you want to edit *workload permissions*.
+3. Scroll down to *Forecast* and check or uncheck the following checkboxes:
+   - *Create workloads*
+   - *Access to Requirement Calculations*
+4. Click *Configure workload permissions*.
+5. In the **General** section, check the relevant checkboxes for all *workloads*.
+6. Click *Save changes*.
 
 [#configure-individual-workload-permissions]
 == Configure individual workload permissions
-In Enterprise WFM, you can also configure _permissions_{:.css} for individual _workloads_{:.css}. This allows you to customize view and edit _permissions_{:.css} to specific _workloads_{:.css} for specific roles. For example, you might want a group of planners to have view _permissions_{:.css} only to call _workloads_{:.css}, and another group of planners to have view _permissions_{:.css} only to chat _workloads_{:.css}, while managers have both view and edit _permissions_{:.css} to all _workloads_{:.css}.
+In Enterprise WFM, you can also configure *permissions* for individual *workloads*. This allows you to customize view and edit *permissions* to specific *workloads* for specific roles. For example, you might want a group of planners to have view *permissions* only to call *workloads*, and another group of planners to have view *permissions* only to chat *workloads*, while managers have both view and edit *permissions* to all *workloads*.
 
-To configure _permissions_{:.css} for individual _workloads_{:.css}, proceed as follows:
+To configure *permissions* for individual *workloads*, proceed as follows:
 
-1. Go to _Account > Roles_{:.breadcrumbs}.
-2. Select the role for which you want to edit _workload permissions_{:.css}.
-3. Scroll down to _Forecast_{:.label} and check or uncheck the following checkboxes:
-   - _Create workloads_{:.label}
-   - _Access to Requirement Calculations_{:.label}
-4. Click _Configure workload permissions_{:.label}.
-5. In the **General** section, check the relevant checkboxes for all _workloads_{:.css}.
-6. In the _Workload_{:.label} section, check the relevant checkboxes for each _workload_{:.css} individually. Use the search field to narrow down the _workload_{:.css} list, if necessary.
-7. Click _Save changes_{:.label}.
+1. Go to menu:Account[Roles].
+2. Select the role for which you want to edit *workload permissions*.
+3. Scroll down to *Forecast* and check or uncheck the following checkboxes:
+   - *Create workloads*
+   - *Access to Requirement Calculations*
+4. Click *Configure workload permissions*.
+5. In the **General** section, check the relevant checkboxes for all *workloads*.
+6. In the *Workload* section, check the relevant checkboxes for each *workload* individually. Use the search field to narrow down the *workload* list, if necessary.
+7. Click *Save changes*.

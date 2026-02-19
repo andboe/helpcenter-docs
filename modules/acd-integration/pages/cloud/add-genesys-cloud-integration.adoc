@@ -9,16 +9,16 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Genesys Cloud integration is a cloud integration that imports call, email and chat history as well as agent status and real-time adherence data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-genesys-cloud-integration]
 == Add a Genesys Cloud integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Genesys**.
 5. From the **Model name** drop-down menu, select **Genesys Cloud**.
-6. Click _Save_{:.doc-button}.
+6. Click btn:[Save].
 
 [#set-up-your-genesys-cloud-integration]
 == Set up your Genesys Cloud integration
@@ -28,7 +28,7 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
    - **Import detailed on-queue agent statuses**: Check the checkbox if you want to differentiate between the different agent statuses summarized under on-queue, e.g. communication, interacting, idle, not responding.
 
 3. In the **AHT Metrics** section, select the AHT data type that you want to import for each channel. For details, see xref:#aht-metrics[AHT metrics].
-4. Click _Save_{:.doc-button}.
+4. Click btn:[Save].
 
 [#aht-metrics]
 == AHT Metrics

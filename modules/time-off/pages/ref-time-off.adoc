@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Find information about time-off settings.
 :related-articles: time-off-types.adoc, use-approval-policies.adoc
 
-This article lists **Types** and **Accounting rules** settings available in _Time off_{:.breadcrumbs}.
+This article lists **Types** and **Accounting rules** settings available in menu:Time off[].
 
 == Types
 

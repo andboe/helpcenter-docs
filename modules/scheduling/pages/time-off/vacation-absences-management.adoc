@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 include::help-center:ROOT:partial$reusables/time-off-legacy.adoc[]
 
-_Plan > Time Off_{:.breadcrumbs} provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the **Absence Request** level in Shift Center or Schedules.
+menu:Plan[Time Off] provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the **Absence Request** level in Shift Center or Schedules.
 
 People with the Planner or Supervisor (advanced) xref:account:predefined-user-roles.adoc[role] can do the following:
 
@@ -22,7 +22,7 @@ People with the Planner or Supervisor (advanced) xref:account:predefined-user-ro
 You can view future and past time-off requests as follows:
 
 1. To filter the results, select a planning unit, optionally a selection and a status, and a date range.
-2. Click _Apply filters_{:.doc-button}.<br>
+2. Click btn:[Apply filters].<br>
    By default, requests are sorted by their internal request ID.
 3. (Optional) Search the results by activity or a person's name, or sort the table.<br>
    You can now view, approve, or reject time-off requests.
@@ -68,12 +68,12 @@ The page will show a table with filtered data that has the following columns:
 Before you decide to approve or reject a request, you can click the Start or End cell to xref:scheduling:vacation-absences-management.adoc#taken-quota-and-target-quota[check the quotas] for the days requested at the bottom right of the calendar.
 
 1. In the **Status** column, click **✓** to approve or **✗** to reject a request. Click again to deselect the entry.
-   Click _Mark all as approved_{:.doc-button} or _Mark all as rejected_{:.doc-button} at the top of the list to select all pending requests.
-2. Click _Apply changes_{:.doc-button}.
+   Click btn:[Mark all as approved] or btn:[Mark all as rejected] at the top of the list to select all pending requests.
+2. Click btn:[Apply changes].
 3. (Optional) Add a comment for the approvals and rejections.
    People are notified by email and can see the comments. These email notifications cannot be deactivated. If you approve or reject multiple requests by different people at once, every person will see the same comment.
-4. Click _Approve n requests_{:.doc-button} or _Reject n requests_{:.doc-button}. The button reflects the number of selected entries.
-   By default, Peopleware checks whether approvals would violate rules, e.g. surpassing the remaining vacation entitlement. A red banner with the request ID indicates a rule violation. Click _Reject n requests_{:.doc-button} to deselect all requests marked for rejection.  
+4. Click btn:[Approve n requests] or btn:[Reject n requests]. The button reflects the number of selected entries.
+   By default, Peopleware checks whether approvals would violate rules, e.g. surpassing the remaining vacation entitlement. A red banner with the request ID indicates a rule violation. Click btn:[Reject n requests] to deselect all requests marked for rejection.  
    Check the **Bypass approval rules** checkbox to approve or reject the requests even if they go against approval rules.
 
 [#taken-quota-and-target-quota]
@@ -92,14 +92,14 @@ If **Full-time equivalent** is configured, the values reflect the duration of a 
 == Configure approval suggestions
 Peopleware can suggest requests for approval. Automatic suggestions consider the number of people, staff requirements, as well as planned absences, and configured target quotas for the planning unit. Learn how to configure xref:scheduling:vacation-approval-rules-and-quota-settings.adoc[approval rules and quota settings].
 
-1. To display requests to approve, click _Suggest approvals_{:.doc-button}.<br>
+1. To display requests to approve, click btn:[Suggest approvals].<br>
    The process treats requests that were submitted earlier with a higher priority ("First come, first served").<br>
    Suggested approvals appear in green. You can still deselect rows using the **✗** icon.
 
    > Note
    >
-   > You cannot click _Suggest approvals_{:.doc-button} if you search within the list of requests or haven't selected a planning unit or any requests before.
+   > You cannot click btn:[Suggest approvals] if you search within the list of requests or haven't selected a planning unit or any requests before.
 
-2. Click _Apply n changes_{:.doc-button}. The button name reflects the number of selected entries.
+2. Click btn:[Apply n changes]. The button name reflects the number of selected entries.
 3. (Optional) Enter a comment for approval/rejection.
-4. Click _Approve n requests_{:.doc-button}.
+4. Click btn:[Approve n requests].

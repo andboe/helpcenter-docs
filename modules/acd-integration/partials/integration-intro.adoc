@@ -1,0 +1,1 @@
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.

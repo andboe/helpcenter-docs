@@ -9,15 +9,15 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 A Ujet integration is a cloud integration that imports call history and agent status data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-ujet-integration]
 == Add a Ujet integration
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **UJET**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#set-up-your-ujet-integration]
 == Set up your Ujet integration
@@ -26,4 +26,4 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
    - **Subdomain**: Enter your Ujet subdomain.
    - **Company key** and **Company secret code**: Enter a valid company key and company secret code for your Ujet ACD.
 
-3. Click _Save_{:.doc-button}.
+3. Click btn:[Save].

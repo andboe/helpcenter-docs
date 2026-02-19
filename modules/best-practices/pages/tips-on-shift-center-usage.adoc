@@ -13,11 +13,11 @@ In this article, you will receive useful tips to work with the Shift Center more
 == Tip 1: Adjust the view of the hour scale
 Limit the hour scale to the opening hours of your planning unit by hiding irrelevant time periods:
 
-1. Go to _WFM > Administration > System > Settings_{:.breadcrumbs}.
+1. Go to menu:WFM[Administration>System>Settings].
 2. Scroll to the _SchedulePro_ section (or use the search).
 3. Adjust the default value for the settings below according to your needs:
-   - _48077_{:.id-label} _Start time of the Shift Center hour scale_
-   - _48078_{:.id-label} _End time of the Shift Center hour scale_
+   - *48077* _Start time of the Shift Center hour scale_
+   - *48078* _End time of the Shift Center hour scale_
 
 [#tip-2-shortcuts-for-a-quick-assignment-of-activities]
 == Tip 2: Shortcuts for a quick assignment of activities
@@ -30,10 +30,10 @@ The two available shortcuts types allow letters, numbers, and spaces (max. 5 cha
 
 [#create-shortcuts]
 === Create shortcuts
-1. Go to _Plan > Configuration_{:.breadcrumbs} and select **Activities**.
-2. Select an **activity** or _day model_{:.label}.
+1. Go to menu:Plan[Configuration] and select **Activities**.
+2. Select an **activity** or *day model*.
 3. Enter the shortcut into the **Shortcut** field, e.g. **s** for _sickness_ (default shortcut) or **s#** (instant shortcut).
-4. Click _Ok_{:.doc-button} to save the shortcut.
+4. Click btn:[Ok] to save the shortcut.
 
 Note: Shortcuts require that activities and day models are assigned to the planning unit.
 
@@ -64,7 +64,7 @@ Use the levels contrary to their names:
 
 [#tip-4-sort-shifts-within-the-day-view]
 == Tip 4: Sort shifts within the day view
-When you open the _Shift Center_{:.menu-item}, the day view is always sorted alphabetically by employee name by default. You can xref:scheduling:sort-and-filter-items.adoc#sort-level-items[change the sort order], e.g. ascending or descending by shift start time. When you reopen the _Shift Center_{:.menu-item}, click the **arrow pointing down** to call up the sorting previously used.
+When you open the *Shift Center*, the day view is always sorted alphabetically by employee name by default. You can xref:scheduling:sort-and-filter-items.adoc#sort-level-items[change the sort order], e.g. ascending or descending by shift start time. When you reopen the *Shift Center*, click the **arrow pointing down** to call up the sorting previously used.
 
 [#tip-5-change-the-view-of-the-day-cell]
 == Tip 5: Change the view of the day cell
@@ -92,13 +92,13 @@ To get a better overview, remove various activities from the view and xref:sched
 == Tip 9: Working with different levels
 Display and use different levels to carry out your scheduling even more precisely:
 
-- _Schedule_{:.menu-item}: displays manually or automatically scheduled activities and shifts. xref:scheduling:schedules-shift-bidding.adoc[Shift bidding] and xref:scheduling:schedules-optimized-schedules.adoc[Optimized schedules] write to this level. Job and break optimizations change the content, employees see it in Me.
-- _Actual_{:.menu-item}: contains the actual schedule. xref:#tip-3-copy-the-original-schedule-as-reference[Copy your final schedule] to this level and make any last-minute changes for the day here.
-- _External System_{:.menu-item}: displays xref:acd-integration:import-agent-status-data.adoc[agent status data] imported using an integration (if configured). You can add/edit entries manually if needed.
-- _Request_{:.menu-item}: displays all normal shift requests that employees enter in Me. You can add day models manually, but no individual activities.
-- _Alternative Request_{:.menu-item}: shows all alternative requests employees enter in Me. You can add day models manually, but no individual activities.
-- _Vacation Request/Absence Request_{:.menu-item}: displays any time-off requests employees enter in Me. You can add day models manually, but no individual activities.
-- _Availability_{:.menu-item}: displays employee availabilities. You can also add them manually.
-- _Version 1_{:.menu-item} and _Version 2_{:.menu-item}: can contain schedule backups or approved time-off requests. Use this level for comparison purposes, e.g. for schedules compared to the actual day or for testing/comparing different scheduling scenarios.
+- *Schedule*: displays manually or automatically scheduled activities and shifts. xref:scheduling:schedules-shift-bidding.adoc[Shift bidding] and xref:scheduling:schedules-optimized-schedules.adoc[Optimized schedules] write to this level. Job and break optimizations change the content, employees see it in Me.
+- *Actual*: contains the actual schedule. xref:#tip-3-copy-the-original-schedule-as-reference[Copy your final schedule] to this level and make any last-minute changes for the day here.
+- *External System*: displays xref:acd-integration:import-agent-status-data.adoc[agent status data] imported using an integration (if configured). You can add/edit entries manually if needed.
+- *Request*: displays all normal shift requests that employees enter in Me. You can add day models manually, but no individual activities.
+- *Alternative Request*: shows all alternative requests employees enter in Me. You can add day models manually, but no individual activities.
+- *Vacation Request/Absence Request*: displays any time-off requests employees enter in Me. You can add day models manually, but no individual activities.
+- *Availability*: displays employee availabilities. You can also add them manually.
+- *Version 1* and *Version 2*: can contain schedule backups or approved time-off requests. Use this level for comparison purposes, e.g. for schedules compared to the actual day or for testing/comparing different scheduling scenarios.
 
 Note: Advanced and Enterprise WFM include all levels. You can configure the access to levels via xref:account:configure-user-roles.adoc[roles]. Essential WFM only provides access to the _Schedule_ level.

@@ -17,10 +17,10 @@ You need Windows administrator rights to configure Internet Explorer mode (IE mo
 2. Search for **Internet Options**.
 3. On the **Security** tab, check the **Enable Protected Mode** checkbox for the **Internet** zone.  
    Skip this step on Windows 11 and above.
-4. Click _Sites_{:.doc-button}.
-5. Click _Add_{:.doc-button}.
+4. Click btn:[Sites].
+5. Click btn:[Add].
 6. Add _\*.peopleware.com_ to the trusted sites.
-7. To save your settings, click _OK_{:.doc-button}.
+7. To save your settings, click btn:[OK].
 
 [#configure-internet-explorer-mode-in-edge]
 == Configure Internet Explorer Mode in Edge
@@ -84,7 +84,7 @@ Add the entry **InternetExplorerIntegrationSiteList**:
 5. Enter the path to your site list XML file (e.g. file:///c:/path/to/sitelist.xml).  
    Note: If you host the site list, enter the server URL, e.g. https://your.company.com/sitelist.xml.
 
-To save all changes, click _Ok_{:.doc-button}.
+To save all changes, click btn:[Ok].
 
 Tip: You can see configured registry entries and policies under [edge://policy/](edge://policy/).
 
@@ -94,7 +94,7 @@ To force Edge to use the new site list, proceed as follows:
 
 1. Restart Edge.
 2. To display the site list configuration (and to troubleshoot issues), go to [edge://compat](edge://compat).
-3. To apply the configuration, click **Force update**{:.doc-button}.
+3. To apply the configuration, click btn:[Force update].
 
 The list updates and displays the configured URL under _domain_.
 

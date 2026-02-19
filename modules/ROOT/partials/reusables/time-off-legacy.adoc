@@ -1,3 +1,4 @@
-> Note
->
-> This article refers to the legacy Time Off app available under _Plan > Time off_{:.breadcrumbs}. For questions about the new Time Off app, contact your Peopleware consultant.
+[NOTE]
+====
+This article refers to the legacy Time Off app available under menu:Plan[Time off]. For questions about the new Time Off app, contact your Peopleware consultant.
+====

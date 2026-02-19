@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 An AFAS integration is a cloud integration that imports people data.
 
-New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#prerequisite]
 == Prerequisite
@@ -25,11 +25,11 @@ Before you add an AFAS integration in Peopleware, set up an app connector in the
 ====
 Before the first import run, all personnel numbers in Peopleware must consistently match the `Medewerker` values in AFAS. These personnel numbers serve as the unique identifier between the two systems.
 ====
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **AFAS**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 The AFAS integration synchronizes people and contract data daily.
 

@@ -30,15 +30,15 @@ The Contact Event resource and the Queues resource should not be used in paralle
 == Add a Peopleware API integration
 Users with admin access can add a Peopleware API integration as follows:
 
-1. Go to *Account > Integrations*{:.breadcrumbs}.
-2. Click _Create_{:.doc-button}.
+1. Go to menu:Account[Integrations].
+2. Click btn:[Create].
 3. Enter a unique name for the new integration that identifies the data source.
 4. From the **External system** drop-down menu, select **Peopleware API**.
-5. Click _Save_{:.doc-button}.
+5. Click btn:[Save].
 
 [#set-up-your-peopleware-api-integration]
 == Set up your Peopleware API integration
-1. In the **API access** section, click _Generate_{:.doc-button}.
+1. In the **API access** section, click btn:[Generate].
 
 Authentication also works with personal access tokens that have been created in user profiles in the xref:reporting:api.adoc#authorization-personal-access-token[**Personal access tokens**] section.
 
@@ -58,7 +58,7 @@ To identify the API integration and to authenticate, include the Peopleware key 
 
 1. Add your Peopleware key to the Authorization request header.
 2. Find or copy your integration ID:
-   - Go to _Account > Integrations_{:.breadcrumbs}.
+   - Go to menu:Account[Integrations].
    - Select your API integration section.
    - In the **API Access** section, click the Copy icon \_{icon-clone} next to the integration ID.
 3. Add your integration ID to the **meta** object in the request body.

@@ -11,7 +11,7 @@ With validity periods, you can set a configuration for a limited amount of time.
 
 Validity periods are always optional. If you do not specify a validity period, the configuration will be effective immediately and will not change until you manually edit it.
 
-Validity periods are available in _WFM > Administration > Scheduling_{:.breadcrumbs}.
+Validity periods are available in menu:WFM[Administration>Scheduling].
 
 [NOTE]
 ====
@@ -34,7 +34,7 @@ Example: You want one planning unit to temporarily take over the Calls activity 
 4. Click the {icon-wfm-add}.
 5. Enter a **Valid from** and **Valid to** date. This is the validity period.
 6. Choose the activity and set **From** and **To** hours.
-7. Click _OK_{:.doc-button}.
+7. Click btn:[OK].
 
 [#edit-a-validity-period]
 == Edit a validity period
@@ -47,4 +47,4 @@ Example: You want to extend the contract for a certain person. You can edit the 
 3. Go to the **Contracts** section on the right.
 4. Click the {icon-wfm-edit} next to the contract you want to extend.
 5. Edit the **Valid to** field.
-6. Click _OK_{:.doc-button}.
+6. Click btn:[OK].

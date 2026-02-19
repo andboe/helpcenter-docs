@@ -12,3 +12,95 @@ Welcome to the world of anti-patterns. Here we take you into the amazing world o
 ====
 Only the first section, "Creating schedules manually", applies to Peopleware Essentials customers.
 ====
+
+
+[#creating-schedules-manually]
+== Creating schedules manually
+...rather than inserting Shift Sequences
+
+#### Did you know...? <a name="did-you-know"></a>
+
+It's easy to get into the habit of adding shifts or day models manually rather than creating a shift sequence. But did you know that you can use the same Shift Sequence for multiple employees?
+
+Building the Shift Sequences might seem like a chore, but if you are spending 30 minutes per week copying and pasting schedules for half your Employees, thats 26 hours per year. You can cut down this time with a few simple steps.
+
+#### What you should do is...? <a name="what-you-should-do-is"></a>
+
+*Check if the Employees can use a Shift Sequence you have already created* - See your current Shift Sequences: Can you use one of them for an employee you copy and paste? Start the employees on another week by offsetting the start date.
+
+*Can you use a Week and Work Time Pattern?* - Work time patterns can save you time. See the video below which gives you a quick tour of how to set up a work time pattern. See the article on xref:features/administration/work-time-pattern-models.md [Work time pattern models ]. In Essential WFM, work time pattern models are not available.
+
+*Copy using Scheduling Actions in Schedules* - If it is necessary to copy schedules, use the xref:features/scheduling/schedules/use-levels.md [copy level content ] function. This works for specific employees or a selection of employees. There is no need to copy the schedule of all agents.
+
+*Tip:* You can set 'Exception Days' in your _Week Time Patterns_ for more flexibility.
+
+[#living-with-a-bad-optimization-result]
+== Living with a bad optimization result
+...and spending days fixing the schedule.
+
+#### Did you know...? <a name="did-you-know"></a>
+
+You don’t need to spend days fixing optimisation errors by manually adjusting schedules to correct problems or missing shifts. If you spend an hour a week doing this, thats up to 52 hours per year you spend copying and pasting or moving schedules manually. Just by checking a few things you might be able to find and fix the source of the problem in a few minutes.
+
+#### What you should do is...? <a name="what-you-should-do-is"></a>
+
+*Check for pre-scheduled Activities* - Take a look in *Shift Center* or in *Schedule* to see if activities are already written into the schedule. This will prevent other shifts or activities from being written.
+
+*Check the Employees Contract settings* - Can the work time guidelines per day and week in the contract be met using the existing day models?
+
+*Check the Employees settings* - If you still haven’t identified the issue, you will need to check the configuration for each individual employee who had an error.
+
+*Check the Scheduling Rules* - Another source of error are the scheduling rules. If you or another user recently made changes, revert to your previous settings. If you are not sure if a change was made, try to manually insert a suitable day model for an employee in the *Shift Center*.
+
+*Tip:*
+_Check the scheduling report to identify the cause of errors_ - This report documents the scheduling process and lists any errors. If employees have been completely excluded from schedule generation, they will be listed on the first page. On the next pages, the report lists all employees for whom the schedule creation encountered errors. Check out our article about xref:best-practices/resolve-optimization-issues.md [common error messages ]
+
+[#creating-multiple-selections-to-filter-employees]
+== Creating multiple selections to filter employees
+...rather than using Employee Filters.
+
+#### Did you know...? <a name="did-you-know"></a>
+
+Selections are not the only way to filter employees. Rather than creating selections and assigning them one-by-one to Employees, you can create filters. Employee filters are a powerful method to filter staffs by skills, contract, selection, attributes, employee categories or a combination.
+
+#### What you should do is...? <a name="what-you-should-do-is"></a>
+
+Why not create an employee filter <!-- [employee filter](https://help.peopleware.com/de/employee-filter/) --> <!-- , article not available in EN? --> to get the list of employees you want to edit. Then you can use the mass update <!-- [mass update functionality](https://help.peopleware.com/de/mass-update/) --> <!-- article not available in EN? --> to update the selected employees.
+
+*Tip:* Create a filter with multiple 'queries' such as which *Planning Unit* they are in, which Skill they have, and which Contract you have assigned.
+
+[#personal-day-models-for-every-employee]
+== Personal day models for every employee
+...rather than using Work Time Pattern Models.
+
+#### Did you know...? <a name="did-you-know"></a>
+
+To force the optimization to use only some of the available day models you don't need to create personal Day Models for each employee. The optimizer uses all the day models that are assigned to the *Planning Unit*. It assigns day models to employees when the skills suit the included Activities. It also replaces Activities when the 'replaceable' checkbox is checked.
+
+#### What you should do is...? <a name="what-you-should-do-is"></a>
+
+An easier way to assign these day models to a group of employees is to assign a _Work Time Pattern Model_ to them. Think about how your day models should be organized for groups of employees. Work Time Pattern models can be organized by start time, by duration or the types of activities defined in those Day Models.
+Each of these groups of Day Models is a _Week Time Pattern_, so create one per pattern. Assign each set to a _Work Time Pattern Model_ and this finally to your employees.
+
+*Tip:* You can create a 3 week rotation such as 'Early, Mid, Late' using Week & Work Time Patterns. Remember to choose the right _Rotation_ Type in the Work Time Pattern Model.
+
+[#day-models-with-a-base-activity-other-than-present]
+== Day models with a base activity other than present
+... are used like this:
+
+<img src="/assets/img/en/best-practices/schedule-anti-patterns/image-1.png" width="50%" alt="wrong day model">
+
+#### Did you know...? <a name="did-you-know"></a>
+
+This means that this day model can only be used for that specific activity, and you cannot replace the base activity, you need to recreate the day model.
+
+#### What you should do is...? <a name="what-you-should-do-is"></a>
+
+Always use ‘Present’ as the first activity when creating a day model. The ‘Present’ activity works as a placeholder; if it is marked as replaceable, it will be replaced during a job optimization or full optimization by a plannable activity with a forecasted requirement.
+
+*Tip:* Add other presence and absence activities to the base activity using the {% icon plus %}. Each additional presence and absence activity is placed on top of the base activity. This allows you to place fixed activity blocks in flexible day models. The duration of all other activities must not exceed the duration of the base activity. As example, you can set a fixed telephony or back office activity in a particular time within the day model to cover a constant requirement.
+
+*Example:*  
+Create a Day Model with the base activity 'Present' and add 'Web Chat' as a sub Activity between 9am and 2pm. If you set the duration of 2 hours and an interval of 15 minutes, Web Chat will be scheduled (if needed) for a 2 hour block during that time.
+
+<img src="/assets/img/en/best-practices/schedule-anti-patterns/image-2.png" width="50%" alt="correct day model">

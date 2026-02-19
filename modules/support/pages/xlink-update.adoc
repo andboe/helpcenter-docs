@@ -20,7 +20,7 @@ Open a command line prompt:
 
 1. Open the Windows start menu.
 2. Type in `cmd` (some windows versions require you to use the search field).
-3. Right click and select _Run as Administrator_{:.doc-button}.
+3. Right click and select btn:[Run as Administrator].
 
 [#prepare-the-xlink-update]
 == Prepare the Xlink update

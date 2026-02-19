@@ -7,31 +7,31 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Set your availabilities in the Me portal.
 :page-aliases: add-availabilities-in-me
 
-In _Me > Availability_{:.breadcrumbs}, you can view your current availabilities and manage your one-time availabilities. You can view both your weekly and one-time availabilities, but you can only add, edit and delete one-time availabilities. For example, if your availability deviates from your weekly availabilities on a certain date, you can add a one-time availability in Me.
+In menu:Me[Availability], you can view your current availabilities and manage your one-time availabilities. You can view both your weekly and one-time availabilities, but you can only add, edit and delete one-time availabilities. For example, if your availability deviates from your weekly availabilities on a certain date, you can add a one-time availability in Me.
 
 You cannot add, edit or delete availabilities if the date is grayed out on the availability configuration page. If you still need to add or edit your availability on this date, contact your planner.
 
 [#add-an-availability]
 == Add an availability
-1. Go to _Me > Availability_{:.breadcrumbs}.
-2. Click _+ Add availability_{:.doc-button}.
-3. Select the day for which you want to add your availability.<br>To navigate between past and future months, use _<_{:.doc-button} and _>_{:.doc-button}.
+1. Go to menu:Me[Availability].
+2. Click btn:[+ Add availability].
+3. Select the day for which you want to add your availability.<br>To navigate between past and future months, use btn:[<] and btn:[>].
 4. Enter the **Start time** and **End time** of your availability on that day.<br>To add another time slot, click **Add time slot**.
 
 If you already have a weekly availability on that day, your new one-time availability replaces it.<br>If you already have a one-time availability on that day, you can only add a time slot that does not overlap with the existing one. To extend your availability, xref:#edit-an-availability[edit your availabilities] instead.
 
 [#edit-an-availability]
 == Edit an availability
-1. Go to _Me > Availability_{:.breadcrumbs}.
-2. Select the availability that you want to edit and click the Edit icon {icon-edit}.<br>To navigate between past and future months, use _<_{:.doc-button} and _>_{:.doc-button}.
+1. Go to menu:Me[Availability].
+2. Select the availability that you want to edit and click the Edit icon {icon-edit}.<br>To navigate between past and future months, use btn:[<] and btn:[>].
 3. Edit your availability.<br>To delete a time slot, click the Delete icon {icon-delete} next to it.
-4. Click _Save changes_{:.doc-button}.
+4. Click btn:[Save changes].
 
 [#delete-an-availability]
 == Delete an availability
-1. Go to _Me > Availability_{:.breadcrumbs}.
-2. Navigate to the relevant month using _<_{:.doc-button} and _>_{:.doc-button}.
+1. Go to menu:Me[Availability].
+2. Navigate to the relevant month using btn:[<] and btn:[>].
 3. Click the Delete icon {icon-delete} at the bottom right of the availability tile.
-4. In the confirmation window, click _Delete availability_{:.doc-button}.
+4. In the confirmation window, click btn:[Delete availability].
 
 If you delete a one-time availability, it is replaced by your existing weekly availability (if there is one).

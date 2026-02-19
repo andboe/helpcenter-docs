@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Generate scheduling suggestions for self-learning sessions with reduced impact on the coverage of your schedule in Plan > Meetings.
 :related-articles: meetings-overview.adoc
 
-In _Plan > Meetings_{:.label}, you can generate scheduling suggestions for self-learning sessions with reduced impact on the coverage of your schedule. Self-learning sessions are sessions for only one person, e.g., for e-learning sessions.
+In *Plan > Meetings*, you can generate scheduling suggestions for self-learning sessions with reduced impact on the coverage of your schedule. Self-learning sessions are sessions for only one person, e.g., for e-learning sessions.
 
 New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 
@@ -20,22 +20,22 @@ New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 == Generate suggestions for self-learning sessions
 To generate suggestions for self-learning sessions, follow these steps:
 
-1. In _Plan > Meetings_{:.breadcrumbs}, click _Set up_{:.doc-button} in the _Self-learning sessions_{:.label} tile.
-2. In the _Settings_{:.label} section, configure the following fields:
-   - _Planning unit_{:.label}
-   - _Activity to schedule_{:.label}: Select the meeting activity you created fot self-learning sessions.
-   - _Date range_{:.label}
-   - _Session duration_{:.label}
-   - _Sessions per participant_{:.label}
+1. In menu:Plan[Meetings], click btn:[Set up] in the *Self-learning sessions* tile.
+2. In the *Settings* section, configure the following fields:
+   - *Planning unit*
+   - *Activity to schedule*: Select the meeting activity you created fot self-learning sessions.
+   - *Date range*
+   - *Session duration*
+   - *Sessions per participant*
 
-3. (Optional) In the _Optional settings_{:.label} section, check the checkboxes to activate and configure the following fields:
-   - _Limit the number of sessions per day for each participant to maximum_{:.label}
-   - _Ensure a buffer between sessions for each participant_{:.label}: Minimum period between meetings in minutes.
+3. (Optional) In the *Optional settings* section, check the checkboxes to activate and configure the following fields:
+   - *Limit the number of sessions per day for each participant to maximum*
+   - *Ensure a buffer between sessions for each participant*: Minimum period between meetings in minutes.
 
-4. In the _Self-learning sessions to be scheduled for_{:.label} section, select the people for whom you want to generate suggestions for self-learning sessions. By default, all people assigned to the selected planning unit are displayed and pre-selected:
+4. In the *Self-learning sessions to be scheduled for* section, select the people for whom you want to generate suggestions for self-learning sessions. By default, all people assigned to the selected planning unit are displayed and pre-selected:
    - (Optional) Click the {icon-schedules-filter-employees-u} or the {icon-filter-u} to filter out people. By default, all checkboxes are checked.
-   - Uncheck the checkboxes next to the names of people for whom you do not want to generate suggestions for self-learning lessons. Uncheck the checkbox next to _Name_{:.label} to deselect all people in the list.
+   - Uncheck the checkboxes next to the names of people for whom you do not want to generate suggestions for self-learning lessons. Uncheck the checkbox next to *Name* to deselect all people in the list.
 
-5. Click _Generate suggestions_{:.doc-button}.
+5. Click btn:[Generate suggestions].
 
-You are redirected to the _Meetings_{:.label} page and the generated suggestions for self-learning sessions are displayed in the _Generated suggestions_{:.label} table. You can proceed to xref:scheduling:scheduling-suggestions.adoc[review and apply the meeting suggestions].
+You are redirected to the *Meetings* page and the generated suggestions for self-learning sessions are displayed in the *Generated suggestions* table. You can proceed to xref:scheduling:scheduling-suggestions.adoc[review and apply the meeting suggestions].

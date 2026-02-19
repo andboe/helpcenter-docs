@@ -1,0 +1,4 @@
+include::help-center:ROOT:partial$headings/prerequisites.adoc[]
+
+* You have administrative access to {product-generic}.
+* You are familiar with the administration module.

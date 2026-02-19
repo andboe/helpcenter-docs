@@ -43,17 +43,17 @@ By default, only users with _Admin access_ can create Personal Access Tokens.
 >
 [NOTE]
 ====
-To give this permission to other user roles, xref:account:configure-user-roles.adoc[edit the user role]. In the **Permissions** section, go to _Modules > My Profile > Personal access tokens_{:.breadcrumbs} and check the checkbox.
+To give this permission to other user roles, xref:account:configure-user-roles.adoc[edit the user role]. In the **Permissions** section, go to menu:Modules[My Profile>Personal access tokens] and check the checkbox.
 ====
 Create your Personal Access Token in your **user profile**:
 
 1. Click your **name on the start page**, to get into your **user profile**.
-2. Select the _Personal Access Tokens_{:.menu-item} menu item
-3. Click _Generate new token_{:.doc-button}
+2. Select the *Personal Access Tokens* menu item
+3. Click btn:[Generate new token]
 4. Enter a description for your Personal Access Token
-5. Click _Generate new token_{:.doc-button}
+5. Click btn:[Generate new token]
 6. Copy your generated token
-7. Click _Done_{:.doc-button}
+7. Click btn:[Done]
 
 image::api/image-2.png[copy token, width=40%]
 
