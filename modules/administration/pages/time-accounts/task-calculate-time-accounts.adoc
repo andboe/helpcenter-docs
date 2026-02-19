@@ -25,30 +25,22 @@ Performing the calculation at the end of a given period ensures that the time ac
   For more information, see article xref:administration:concept-time-accounts.adoc[Time accounts]
 - Time accounts can only be calculated for people who meet one of the following criteria:
   - The person is assigned to a planning unit.
-  - The person is an active staff member, i.e. the person's staff membership setting has a **Valid from** date preceding the calculation date of the time account.
-  - The person is assigned to an active contract, i.e. the person-to-contract assignment period's **Valid from** date precedes the calculation date of the time account.
+  - The person is an active staff member, i.e. the person's staff membership setting has a *Valid from* date preceding the calculation date of the time account.
+  - The person is assigned to an active contract, i.e. the person-to-contract assignment period's *Valid from* date precedes the calculation date of the time account.
   - The contract's work time guidelines specify daily or weekly target working hours.
 
 [#permissions]
 === Permissions
 You have the following functional permissions:
 
-- **Plan**
-  - **Full access to Time Accounts in Configuration**
+- *Plan*
+  - *Full access to Time Accounts in Configuration*
 
-<!-- ROLES-new - release with go-live of new roles UI
-You have the following base permissions:
--->
 
-<!-- ROLES-new - release with go-live of new roles UI
-- menu:Plan[Configuration>Time accounts]
-    - **Configure time accounts**
--->
 
-<!-- LNF-new - release with go-live of left-side nav
-- menu:Scheduling[Configuration>Time accounts]
-  - **Configure time accounts**
--->
+
+
+
 
 [#steps]
 == Steps
@@ -59,21 +51,19 @@ However, any subsequent calculation already performed for a later date does not 
 Also, you cannot delete a balance value for a date once it has been calculated.
 To prevent undue manual overhead, only calculate time accounts at planned dates and try to deviate as little as possible from that plan.
 ====
-<!-- LNF-new
-1. Go to menu:Scheduling[Configuration>Time accounts].
--->
+
 
 1. Go to menu:Plan[Configuration>Time accounts].
-2. Select at least a calculation date and planning unit.<br>
-   The time accounts table now displays all people that are members of the planning unit at the selected date.
+2. Select at least a calculation date and planning unit. +
+The time accounts table now displays all people that are members of the planning unit at the selected date.
 3. Optional: Select a selection to further filter the people shown in the table.
 4. Optional: To check the balance history of a person, navigate to that person in the table and click the {icon-edit} Edit icon.
    The balance history shows every event where a time account balance was either calculated or reset.
    To return to the time account overview, click the back button of your browser.
 5. To calculate the time accounts of all people in the planning unit and selection, click btn:[Calculate].
-6. Optional: To adjust calculated balances of individual people, enter a value in the **Correction value** field.
+6. Optional: To adjust calculated balances of individual people, enter a value in the *Correction value* field.
    The correction value is added to or subtracted from the calculated balance.
-   Peopleware saves the value automatically once you leave the input field.<br>
-   Example: If the calculated value for date is 20:00 and the correction value is -15:00, the resulting time account balance for this day is 05:00.
+   Peopleware saves the value automatically once you leave the input field. +
+Example: If the calculated value for date is 20:00 and the correction value is -15:00, the resulting time account balance for this day is 05:00.
 
 The time account balance of all people in the calculation scope for the specified day is now available for evaluation or further processing.

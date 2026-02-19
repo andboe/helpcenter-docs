@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn how to avoid typical mistakes to make your planning life easier.
 
-Welcome to the world of anti-patterns. Here we take you into the amazing world of Peopleware curiosities where you can find strange things that we have discovered. An anti-pattern is just like a pattern, except that instead of a solution it gives something that looks superficially like a solution but isn’t one, here is a [great explanation by Martin Fowler](https://www.martinfowler.com/bliki/AntiPattern.html).
+Welcome to the world of anti-patterns. Here we take you into the amazing world of Peopleware curiosities where you can find strange things that we have discovered. An anti-pattern is just like a pattern, except that instead of a solution it gives something that looks superficially like a solution but isn’t one, here is a link:https://www.martinfowler.com/bliki/AntiPattern.html[great explanation by Martin Fowler].
 
 [NOTE]
 ====
@@ -18,13 +18,13 @@ Only the first section, "Creating schedules manually", applies to Peopleware Ess
 == Creating schedules manually
 ...rather than inserting Shift Sequences
 
-#### Did you know...? <a name="did-you-know"></a>
+#### Did you know...? [#did-you-know]
 
 It's easy to get into the habit of adding shifts or day models manually rather than creating a shift sequence. But did you know that you can use the same Shift Sequence for multiple employees?
 
 Building the Shift Sequences might seem like a chore, but if you are spending 30 minutes per week copying and pasting schedules for half your Employees, thats 26 hours per year. You can cut down this time with a few simple steps.
 
-#### What you should do is...? <a name="what-you-should-do-is"></a>
+#### What you should do is...? [#what-you-should-do-is]
 
 *Check if the Employees can use a Shift Sequence you have already created* - See your current Shift Sequences: Can you use one of them for an employee you copy and paste? Start the employees on another week by offsetting the start date.
 
@@ -38,11 +38,11 @@ Building the Shift Sequences might seem like a chore, but if you are spending 30
 == Living with a bad optimization result
 ...and spending days fixing the schedule.
 
-#### Did you know...? <a name="did-you-know"></a>
+#### Did you know...? [#did-you-know]
 
 You don’t need to spend days fixing optimisation errors by manually adjusting schedules to correct problems or missing shifts. If you spend an hour a week doing this, thats up to 52 hours per year you spend copying and pasting or moving schedules manually. Just by checking a few things you might be able to find and fix the source of the problem in a few minutes.
 
-#### What you should do is...? <a name="what-you-should-do-is"></a>
+#### What you should do is...? [#what-you-should-do-is]
 
 *Check for pre-scheduled Activities* - Take a look in *Shift Center* or in *Schedule* to see if activities are already written into the schedule. This will prevent other shifts or activities from being written.
 
@@ -59,13 +59,13 @@ _Check the scheduling report to identify the cause of errors_ - This report docu
 == Creating multiple selections to filter employees
 ...rather than using Employee Filters.
 
-#### Did you know...? <a name="did-you-know"></a>
+#### Did you know...? [#did-you-know]
 
 Selections are not the only way to filter employees. Rather than creating selections and assigning them one-by-one to Employees, you can create filters. Employee filters are a powerful method to filter staffs by skills, contract, selection, attributes, employee categories or a combination.
 
-#### What you should do is...? <a name="what-you-should-do-is"></a>
+#### What you should do is...? [#what-you-should-do-is]
 
-Why not create an employee filter <!-- [employee filter](https://help.peopleware.com/de/employee-filter/) --> <!-- , article not available in EN? --> to get the list of employees you want to edit. Then you can use the mass update <!-- [mass update functionality](https://help.peopleware.com/de/mass-update/) --> <!-- article not available in EN? --> to update the selected employees.
+Why not create an employee filter   to get the list of employees you want to edit. Then you can use the mass update   to update the selected employees.
 
 *Tip:* Create a filter with multiple 'queries' such as which *Planning Unit* they are in, which Skill they have, and which Contract you have assigned.
 
@@ -73,11 +73,11 @@ Why not create an employee filter <!-- [employee filter](https://help.peopleware
 == Personal day models for every employee
 ...rather than using Work Time Pattern Models.
 
-#### Did you know...? <a name="did-you-know"></a>
+#### Did you know...? [#did-you-know]
 
 To force the optimization to use only some of the available day models you don't need to create personal Day Models for each employee. The optimizer uses all the day models that are assigned to the *Planning Unit*. It assigns day models to employees when the skills suit the included Activities. It also replaces Activities when the 'replaceable' checkbox is checked.
 
-#### What you should do is...? <a name="what-you-should-do-is"></a>
+#### What you should do is...? [#what-you-should-do-is]
 
 An easier way to assign these day models to a group of employees is to assign a _Work Time Pattern Model_ to them. Think about how your day models should be organized for groups of employees. Work Time Pattern models can be organized by start time, by duration or the types of activities defined in those Day Models.
 Each of these groups of Day Models is a _Week Time Pattern_, so create one per pattern. Assign each set to a _Work Time Pattern Model_ and this finally to your employees.
@@ -88,19 +88,19 @@ Each of these groups of Day Models is a _Week Time Pattern_, so create one per p
 == Day models with a base activity other than present
 ... are used like this:
 
-<img src="/assets/img/en/best-practices/schedule-anti-patterns/image-1.png" width="50%" alt="wrong day model">
+image::help-center:ROOT:images/image-1.png[wrong day model, width=50%]
 
-#### Did you know...? <a name="did-you-know"></a>
+#### Did you know...? [#did-you-know]
 
 This means that this day model can only be used for that specific activity, and you cannot replace the base activity, you need to recreate the day model.
 
-#### What you should do is...? <a name="what-you-should-do-is"></a>
+#### What you should do is...? [#what-you-should-do-is]
 
 Always use ‘Present’ as the first activity when creating a day model. The ‘Present’ activity works as a placeholder; if it is marked as replaceable, it will be replaced during a job optimization or full optimization by a plannable activity with a forecasted requirement.
 
-*Tip:* Add other presence and absence activities to the base activity using the {% icon plus %}. Each additional presence and absence activity is placed on top of the base activity. This allows you to place fixed activity blocks in flexible day models. The duration of all other activities must not exceed the duration of the base activity. As example, you can set a fixed telephony or back office activity in a particular time within the day model to cover a constant requirement.
+*Tip:* Add other presence and absence activities to the base activity using the {icon-add}. Each additional presence and absence activity is placed on top of the base activity. This allows you to place fixed activity blocks in flexible day models. The duration of all other activities must not exceed the duration of the base activity. As example, you can set a fixed telephony or back office activity in a particular time within the day model to cover a constant requirement.
 
 *Example:*  
 Create a Day Model with the base activity 'Present' and add 'Web Chat' as a sub Activity between 9am and 2pm. If you set the duration of 2 hours and an interval of 15 minutes, Web Chat will be scheduled (if needed) for a 2 hour block during that time.
 
-<img src="/assets/img/en/best-practices/schedule-anti-patterns/image-2.png" width="50%" alt="correct day model">
+image::help-center:ROOT:images/image-2.png[correct day model, width=50%]

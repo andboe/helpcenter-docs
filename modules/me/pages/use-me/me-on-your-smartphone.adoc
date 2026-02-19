@@ -31,7 +31,7 @@ You can save Me as a favorite on mobile devices.
 2. Login to app.peopleware.com/login with your Peopleware credentials.
 3. Tap the share button at the bottom of the screen.
 4. Scroll to the btn:[Add to Home Screen] option.
-5. (Optional) Change the name of the link. Use **Me** or some other descriptive name.
+5. (Optional) Change the name of the link. Use *Me* or some other descriptive name.
 6. Click btn:[Add] button.
 
 Note: This function won't work with other mobile browsers on iOS.

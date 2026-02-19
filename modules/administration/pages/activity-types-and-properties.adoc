@@ -17,7 +17,7 @@ The activity type influences your scheduling and determines:
 - how optimized scheduling handles the activity.
 - where you can use the activity.
 - how the activity is displayed in Schedules and in Shift Center.
-- whether reports include the activity. <!-- illness, absences, vacation -->
+- whether reports include the activity. 
 
 The following table provides more details about each activity type:
 
@@ -51,13 +51,13 @@ You can set activity properties with the following checkboxes.
 |Paid
 |Activates the working time calculation for scheduled activities. If breaks or absences are paid, they are calculated as working time. If they are unpaid, they are not included in the net working time calculation.
 |Comply with rest period
-|Prevents violations of the rest period configured in the contract. The rest period is only checked if scheduling rule *2601* **Rest between two workdays** is activated.
+|Prevents violations of the rest period configured in the contract. The rest period is only checked if scheduling rule *2601* *Rest between two workdays* is activated.
 |Plannable
 |The activity can be scheduled if you use the Create optimized schedules functionality, or can be optimized during job optimization. We recommend using this property for activities with staff requirements. It is typically not used for activities of the types Absence, Vacation, and Illness.
 |Requestable in Me
 |Allows people to request time off (absences, vacation, and illness) in Me (if there is a xref:scheduling:time-off-periods-legacy.adoc[Time-off period] with status Published). In shift bidding, shifts with activities of the types Presence and Break are automatically requestable.
 |Exchangeable with shift swap
-|Allows people to xref:scheduling:what-are-scheduling-periods.adoc[swap the activity with each other] in Me. For this, all activities (including breaks) included in day models must be configured as **Exchangeable with shift swap**.
+|Allows people to xref:scheduling:what-are-scheduling-periods.adoc[swap the activity with each other] in Me. For this, all activities (including breaks) included in day models must be configured as *Exchangeable with shift swap*.
 |Allow overstaffing if shift requirements are zero
 |The activity can be scheduled even during times with no staff requirements. By default, intervals with 0 requirements will not be covered.
 |Replaceable

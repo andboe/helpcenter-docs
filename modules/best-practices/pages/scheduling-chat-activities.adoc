@@ -22,13 +22,13 @@ To import data for chats and calculate staff requirements in chat-related worklo
 To forecast the chat volume, proceed as follows:
 
 1. xref:forecast:create-workloads.adoc#create-workloads[Create a new workload].
-2. In the **Assign queues** section of the **New Workload** configuration page, select one or more chat queues. The first drop-down menu allows you to filter by queue type.
+2. In the *Assign queues* section of the *New Workload* configuration page, select one or more chat queues. The first drop-down menu allows you to filter by queue type.
 
 Tip: To consider periods with unusually high or low chat volumes, you can xref:forecast:events-and-holidays.adoc[add events and public holidays] to your workload.
 
 [#workaround-for-no-chat-history-or-unreliable-data]
 === Workaround for no chat history or unreliable data
-Even with no or unreliable data to create forecasts, you can create chat staff requirements to schedule a fixed number of employees to handle chats. You can skip forecasting and the staff requirements calculation and run the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[**Other - Constant Requirement** calculation].
+Even with no or unreliable data to create forecasts, you can create chat staff requirements to schedule a fixed number of employees to handle chats. You can skip forecasting and the staff requirements calculation and run the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[*Other - Constant Requirement* calculation].
 
 [#block-vs-blended-scheduling]
 == Block vs. blended scheduling
@@ -48,7 +48,7 @@ Add fixed blocks of chat (and other) activities to day models:
 3. (Optional) If only some people in the planning unit can work on the chat activity, proceed as follows:
    1. xref:administration:work-with-skills.adoc[Create a skill].
    2. xref:administration:work-with-skills.adoc#add-skills-to-activities[Add the skill to the chat activity].
-   3. [Add the skill to the people](/employee-overview#configure-employee-settings) who will work on chat activities.
+   3. xref:ROOT:employee-overview#configure-employee-settings[Add the skill to the people] who will work on chat activities.
 4. Create or update xref:administration:daymodel-basics.adoc[day models] by adding the chat activity to them.
 
 [#set-up-blended-scheduling]
@@ -71,8 +71,8 @@ To configure the calculation method and calculate staff requirements, proceed as
 
 1. {nav-to-forecast-workloads}
 2. Select a period for which a forecast exists.
-3. Scroll down to the **Staff Requirements** section and click btn:[Edit staff requirements].
-4. In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
+3. Scroll down to the *Staff Requirements* section and click btn:[Edit staff requirements].
+4. In the *Staff requirements* configuration window, select *Chat* from the *Calculation method* drop-down menu and complete the form.
    Learn more about the calculation method for chat and required parameters in the article xref:forecast:task-set-up-staff-requirement-calculation.adoc#steps[Calculate staff requirements].
 5. {btn-save}
 
@@ -81,32 +81,32 @@ The workload details page now displays calculated staff requirements for chat ac
 To use the calculated staff requirements for scheduling, proceed as follows:
 
 1. Go to the top of the page to select an upcoming time period.
-2. In the **Staff requirements** section, click btn:[Use staff requirements].
-3. In the **Use staff requirements** window, click btn:[Save].
+2. In the *Staff requirements* section, click btn:[Use staff requirements].
+3. In the *Use staff requirements* window, click btn:[Save].
 
 [#calculate-for-blended-scheduling]
 === Calculate for blended scheduling
 To transfer staff requirements from a forecast, proceed as follows:
 
-1. Go to **Forecast**. Select the workloads for each subactivity of the multiactivity.
+1. Go to *Forecast*. Select the workloads for each subactivity of the multiactivity.
 2. In each workload, select the same calculation period in the future.
-3. From the three-dot menu {icon-context-menu} at the top right, select **Use forecast**.
+3. From the three-dot menu {icon-context-menu} at the top right, select *Use forecast*.
 4. In the window that opens, select your forecast version.
 5. Click btn:[Use forecast].
 
 To calculate staff requirements, proceed as follows:
 
 1. Go to menu:Forecast[Requirement Scripts].
-2. In the **Calls - Multi-Activity** tile, click btn:[Open].  
+2. In the *Calls - Multi-Activity* tile, click btn:[Open].  
    A configuration window with the script parameters opens.
-3. In the script configuration window, complete the form. In the **Planning Unit Parameters** section, select the multiactivity that includes your chat activities.
-4. In the **Assigned activities** section, configure the following parameters for each chat activity:
-   - Under **Queue Parameters**:
+3. In the script configuration window, complete the form. In the *Planning Unit Parameters* section, select the multiactivity that includes your chat activities.
+4. In the *Assigned activities* section, configure the following parameters for each chat activity:
+   - Under *Queue Parameters*:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|**Parameter**
-|**Description**
+|*Parameter*
+|*Description*
 |Calculation method
 |Chat
 |Queue
@@ -119,12 +119,12 @@ To calculate staff requirements, proceed as follows:
 |Chats Average Handle Time
 |===
 
-   - Under **Erlang C Parameters**:
+   - Under *Erlang C Parameters*:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|**Parameter**
-|**Description**
+|*Parameter*
+|*Description*
 |Seq (%)
 |Enter the percentage of AHT that is spent on tasks which cannot be done in parallel, e.g. after-call work.
 |Max Sessions

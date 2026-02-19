@@ -25,7 +25,7 @@ You can create different skill levels for one skill.
 If people do not need specific abilities to work on an activity, you do not need to create a skill for it.
 ====
 1. {btn-create}
-2. Enter a **Name**.
+2. Enter a *Name*.
    The abbreviation is auto-generated, but you can edit it.
 3. {btn-save}
 
@@ -34,10 +34,10 @@ Next, you can xref:#add-skill-levels-to-a-person[assign a skill level to a perso
 [#create-skill-levels]
 == Create skill levels
 1. Select a skill.
-2. In the **Skill levels** section, click **{icon-plus} Add**.
+2. In the *Skill levels* section, click *{icon-plus} Add*.
 3. Configure the following parameters:
-   - **Name**. The abbreviation is auto-generated, but you can edit it.
-   - **Rating**. See also: xref:#calculate-suitability-using-rating-and-weighting[Calculate suitability using rating and weighting].
+   - *Name*. The abbreviation is auto-generated, but you can edit it.
+   - *Rating*. See also: xref:#calculate-suitability-using-rating-and-weighting[Calculate suitability using rating and weighting].
 4. {btn-save}
 
 [#edit-skills-and-skill-levels]
@@ -59,16 +59,16 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate skills].
 [#delete-skill-levels]
 == Delete skill levels
 1. Select a skill from the list.
-2. In the **Skill levels** section, hover over a skill level and click the {icon-delete} next to it.
+2. In the *Skill levels* section, hover over a skill level and click the {icon-delete} next to it.
 3. In the confirmation window, click btn:[Delete].
 
 [#add-skills-to-activities]
 == Add skills to activities
 1. Go to {bc-plan-config-activities}.
 2. Select an activity from the list.
-3. In the **Skills** section, click **{icon-plus} Add**.
+3. In the *Skills* section, click *{icon-plus} Add*.
 4. Select a skill from the drop-down menu.
-5. (Optional) Change the **Weighting**. If you only add one skill, enter 100%.  
+5. (Optional) Change the *Weighting*. If you only add one skill, enter 100%.  
    For activities that require more than one skill, you can xref:#calculate-suitability-using-rating-and-weighting[use weighting] to determine which skill is more important.
 6. {btn-save}
 
@@ -76,13 +76,13 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate skills].
 == Add skill levels to a person
 1. Go to {bc-people-overview}.
 2. {select-person}
-3. In the left-side menu, click **Work profile**.
-4. In the **Skill levels** section, click **{icon-plus} Add**.
+3. In the left-side menu, click *Work profile*.
+4. In the *Skill levels* section, click *{icon-plus} Add*.
 5. Select the skill levels you want to add to the person.
-6. (Optional) Select **Valid from** and \*_Valid to_ dates if you want to add the skill levels only temporarily to the person.
+6. (Optional) Select *Valid from* and \*_Valid to_ dates if you want to add the skill levels only temporarily to the person.
    You cannot assign different skill levels of the same skill to a person for the same validity period.
 7. {btn-save}  
-   The activities that require the skill(s) assigned will appear in the **Activities** section for that person.
+   The activities that require the skill(s) assigned will appear in the *Activities* section for that person.
 
 An activity can require one or more skills.
 To work on an activity that requires several skills, the people assigned to it need to have all the skills.

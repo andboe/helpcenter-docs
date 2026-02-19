@@ -1,8 +1,8 @@
 * General
-** xref:create-csv-schema.adoc
-** xref:create-csv-schema-for-forecast-data.adoc
-** xref:csv-schema-default-schemas.adoc
-** xref:csv-schemas.adoc
-** xref:duplicate-objects.adoc
-** xref:export-csv-data.adoc
+* xref:create-csv-schema.adoc
+* xref:create-csv-schema-for-forecast-data.adoc
+* xref:csv-schema-default-schemas.adoc
+* xref:csv-schemas.adoc
+* xref:duplicate-objects.adoc
+* xref:export-csv-data.adoc
 ** xref:jobstatus.adoc

@@ -15,16 +15,17 @@ You can download forecast data for up to 24 months. You can download the Forecas
 == Download a forecast
 1. {nav-to-forecast-workloads}
 2. Select the time frame using the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
-3. From the {icon-context-menu} at the top right, select **Download as CSV**.
-4. Select the forecast data that you want to download.<br>To select all available versions, check the **All** checkbox.
-5. Click btn:[Download as CSV].<br>
-   The downloaded forecast versions are saved in one file.
+3. From the {icon-context-menu} at the top right, select *Download as CSV*.
+4. Select the forecast data that you want to download. +
+To select all available versions, check the *All* checkbox.
+5. Click btn:[Download as CSV]. +
+The downloaded forecast versions are saved in one file.
 
 [#csv-file-example]
 == CSV file example
 The CSV file name contains the workload name and the channel. For example, the CSV file for the calls workload Orders will be named `Orders-Calls.csv`. The column headers show the forecast version. The file contains timestamps (formatted as YYYY-MM-DD) and values for each forecast, and uses the time zone and interval of the workload. The file does not include information about public holidays, events added to the workload, or any historical data.
 
-If you select **Forecast** and **Operational**, the file will look as follows:
+If you select *Forecast* and *Operational*, the file will look as follows:
 
 ----
 Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational

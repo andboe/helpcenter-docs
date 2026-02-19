@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Browser and desktop requirements for integrations, agents, and planner workstations.
 :related-articles: browser-setup.adoc
 
-Peopleware is a browser-based workforce management SaaS software, available in multiple [WFM plans](https://www.peopleware.com/pricing): Essential WFM, Advanced WFM, and Enterprise WFM.
+Peopleware is a browser-based workforce management SaaS software, available in multiple link:https://www.peopleware.com/pricing[WFM plans]: Essential WFM, Advanced WFM, and Enterprise WFM.
 
 [#browser-requirements]
 == Browser requirements
@@ -22,12 +22,12 @@ We support the two latest versions of the following browsers:
 == Pop-up blocker
 We use pop-ups to display additional dialog boxes. To allow pop-ups for Peopleware, proceed as follows:
 
-- Turn off your pop-up blocker in [Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/block-pop-ups-in-microsoft-edge-1d8ba4f8-f385-9a0b-e944-aa47339b6bb5).
-- Set a pop-up blocker exception in [Google Chrome](https://support.google.com/chrome/answer/95472?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Callow-pop-ups-and-redirects-from-a-site), [Mozilla Firefox](https://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting), and [Apple Safari](https://support.apple.com/guide/safari/block-pop-ups-sfri40696/mac).
+- Turn off your pop-up blocker in link:https://support.microsoft.com/en-us/microsoft-edge/block-pop-ups-in-microsoft-edge-1d8ba4f8-f385-9a0b-e944-aa47339b6bb5[Microsoft Edge].
+- Set a pop-up blocker exception in link:https://support.google.com/chrome/answer/95472?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Callow-pop-ups-and-redirects-from-a-site[Google Chrome], link:https://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting[Mozilla Firefox], and link:https://support.apple.com/guide/safari/block-pop-ups-sfri40696/mac[Apple Safari].
 
 [#microsoft-edge-in-internet-explorer-ie-mode]
 == Microsoft Edge in Internet Explorer (IE) mode
-ActiveX-based features in WFM require xref:support:configure-edge-internet-explorer-mode.adoc[Microsoft Edge in IE mode]. To configure the IE mode, you need a [site list XML file](https://learn.microsoft.com/en-us/deployedge/edge-ie-mode-local-site-list).
+ActiveX-based features in WFM require xref:support:configure-edge-internet-explorer-mode.adoc[Microsoft Edge in IE mode]. To configure the IE mode, you need a link:https://learn.microsoft.com/en-us/deployedge/edge-ie-mode-local-site-list[site list XML file].
 
 <style>
 table {
@@ -67,7 +67,7 @@ xref:me:configure-me.adoc[Me] works with any listed browser, on computers, smart
 == Peopleware client software
 ActiveX-based features in the WFM require the xref:getting-started:browser-setup.adoc[Peopleware client].
 
-You can find the operating system requirements in the download description under [downloads.peopleware.com](https://downloads.peopleware.com).
+You can find the operating system requirements in the download description under link:https://downloads.peopleware.com[downloads.peopleware.com].
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -97,13 +97,13 @@ If you use ActiveX-based features or custom SDK applications, add another firewa
 
 To get the address for the firewall exception, click *WFM* and use the name of your Peopleware host that is visible in the browser address bar, e.g. wfm-123abc.peopleware.com.
 
-To learn more about firewall exceptions in Windows, see [Microsoft documentation](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26#:~:text=Go%20to%20Start%20%3E%20Settings%20%3E%20Update,%2C%20file%20types%2C%20or%20process).
+To learn more about firewall exceptions in Windows, see link:https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26#:~:text=Go%20to%20Start%20%3E%20Settings%20%3E%20Update,%2C%20file%20types%2C%20or%20process[Microsoft documentation].
 
 [#share-urls-for-websockets]
 === Share URLs for WebSockets
 We use WebSockets to send real-time updates to users in Shift Center, Schedules, and Real-Time Adherence.
 
-The TCP-based secure WebSocket protocol allows faster transmissions than HTTP through port&nbsp;443. The browser upgrades a standard HTTP connection to a WebSocket connection. If successful, the browser’s dev tools will show the corresponding HTTP 101 (Switching Protocols) status code when you load the page.
+The TCP-based secure WebSocket protocol allows faster transmissions than HTTP through port 443. The browser upgrades a standard HTTP connection to a WebSocket connection. If successful, the browser’s dev tools will show the corresponding HTTP 101 (Switching Protocols) status code when you load the page.
 
 Shift Center requires WebSockets to work at maximum speed. If WebSockets are not available, AJAX polling is used instead. The other pages do not provide a fallback mechanism and show error messages or reconnection attempts if the WebSocket connection cannot be established.
 

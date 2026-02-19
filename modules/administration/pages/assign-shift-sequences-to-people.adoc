@@ -13,16 +13,16 @@ To assign shift sequences to your people in bulk, use the xref:people:concept-ma
 
 [#prerequisites]
 == Prerequisites
-- You have the **View people** and **Edit people** permissions.
-- You have at least **Read** access to **Shift Sequences** in WFM. Learn more about xref:account:configure-user-roles.adoc#set-wfm-permissions[WFM permissions].
+- You have the *View people* and *Edit people* permissions.
+- You have at least *Read* access to *Shift Sequences* in WFM. Learn more about xref:account:configure-user-roles.adoc#set-wfm-permissions[WFM permissions].
 - You have created xref:administration:create-shift-sequences.adoc[shift sequences].
 
 [#steps]
 == Steps
 1. {nav-to-people}
 2. {select-person}
-3. In the menu on the left, click **Planning**.
-4. In the *Shift sequences* section, click {icon-plus} **Add** .
+3. In the menu on the left, click *Planning*.
+4. In the *Shift sequences* section, click {icon-plus} *Add* .
 5. Configure the xref:#settings[assignment settings].
 6. {btn-save}
 
@@ -48,7 +48,7 @@ To assign shift sequences to your people in bulk, use the xref:people:concept-ma
 
 [NOTE]
 ====
-Starting from the **Reference date**, the shift sequence repeats continuously for as long as it remains valid. If you configure shift sequences as weekly patterns, make sure you set the reference date to the same weekday as the start of the week defined for your tenant. By default, the start of the week is either Sunday or Monday, depending on your region. If you need to change it to a different day, contact your consultant.
+Starting from the *Reference date*, the shift sequence repeats continuously for as long as it remains valid. If you configure shift sequences as weekly patterns, make sure you set the reference date to the same weekday as the start of the week defined for your tenant. By default, the start of the week is either Sunday or Monday, depending on your region. If you need to change it to a different day, contact your consultant.
 ====
 [#next-steps]
 == Next steps

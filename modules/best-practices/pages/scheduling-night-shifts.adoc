@@ -24,11 +24,11 @@ image::scheduling-night-shifts/image-3.png[Shift sequence with distributed night
 
 Then you can create optimized schedules to assign the remaining shifts.
 
-**Advantage:**
+*Advantage:*
 
 - Night shifts are always distributed fairly among all employees.
 
-**Disadvantages:**
+*Disadvantages:*
 
 - High manual effort to keep the shift sequences up to date
 - No flexibility
@@ -46,11 +46,11 @@ Since night shifts are only distributed according to need, some employee can go 
 
 image::scheduling-night-shifts/image-2.png[Possible setup of a work time pattern model with a night shift exception week time pattern, width=80%]
 
-**Advantage:**
+*Advantage:*
 
 - Because most contact centers are typically understaffed and at the limit of their capacities, what should be optional exception days tend to always be scheduled.
 
-**Disadvantages:**
+*Disadvantages:*
 
 - Since employees get their night shifts randomly and you cannot set a rotation for night shifts, there may be an unfair distribution.
 - If understaffing during the day is disproportionately high, night shifts may also be understaffed.
@@ -63,11 +63,11 @@ Create your own week time pattern for the night shift week. However, only add da
 
 image::scheduling-night-shifts/image-1.png[Possible construction of a Work Time Pattern Model with a night shift week, width=80%]
 
-**Advantage:**
+*Advantage:*
 
 - All agents receive a fair distribution of night shifts.
 
-**Disadvantage:**
+*Disadvantage:*
 
 - Night shifts can only be scheduled for full weeks.
 
@@ -81,11 +81,11 @@ You can limit the maximum number of night shifts by adjusting the xref:schedulin
 
 image::scheduling-night-shifts/image-4.png[Adjust the shift requirements table, width=80%]
 
-**Advantage:**
+*Advantage:*
 
 - Perceived fairness because employees can request night shifts themselves
 
-**Disadvantages:**
+*Disadvantages:*
 
 - Night shifts must be scheduled manually if not enough employees requested night shifts.
 - Night shifts must be requested before other shifts can be scheduled.

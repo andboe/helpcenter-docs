@@ -13,8 +13,8 @@ Background jobs are predefined jobs for automated, recurring tasks, such as inse
 
 You need the following permissions to create a background job:
 
-- **Full access to background jobs**
-- **View people**
+- *Full access to background jobs*
+- *View people*
 
 [#create-job]
 == Create job
@@ -39,13 +39,13 @@ You need the following permissions to create a background job:
 |Priority
 |Sets the priority. If more than one job is scheduled, the job with the highest priority is processed first.
 |User
-|Defines whose permissions will apply when this automated job runs. Only users with **Full access to background jobs** permission are selectable. The selected user will appear on the Job status page, and their email notification settings will be used.
+|Defines whose permissions will apply when this automated job runs. Only users with *Full access to background jobs* permission are selectable. The selected user will appear on the Job status page, and their email notification settings will be used.
 |Active
 |Controls whether the job is enabled or disabled. Active jobs are processed as scheduled.
 |Delete job after processing
 |Deletes the job after successful completion from the xref:general:jobstatus.adoc[Job status page]. The job configuration will remain in Background jobs.
 |Reference period
-|Specifies the time period for data processing by the job. +**Absolute**: Defines a specific time period. This is useful when you need to process data for a fixed historical or future time period, regardless of when the job actually runs. +**Relative**: Sets a data time period that adjusts automatically relative to the job's execution date, as defined under **Schedule**. When you select **Relative**, the drop-down menu **Unit** (day, week, month, year) appears. The **From** and **To** fields define the exact period, e.g. -1 for the preceding unit, 0 for the current unit. +To define on which date and time active jobs should run, go to [Schedule] (#schedule).
+|Specifies the time period for data processing by the job. +*Absolute*: Defines a specific time period. This is useful when you need to process data for a fixed historical or future time period, regardless of when the job actually runs. +*Relative*: Sets a data time period that adjusts automatically relative to the job's execution date, as defined under *Schedule*. When you select *Relative*, the drop-down menu *Unit* (day, week, month, year) appears. The *From* and *To* fields define the exact period, e.g. -1 for the preceding unit, 0 for the current unit. +To define on which date and time active jobs should run, go to [Schedule] (#schedule).
 |===
 
 [#parameters]
@@ -70,7 +70,6 @@ If no execution date is defined, the job can only be started manually.
 |Runs the job on the last day of each month at a specific time.
 |===
 
-<!-- To edit existing templates, click an item in the list. -->
-<!-- Existing templates with the configured parameters can be edited via *Backgroundjobs* at any time. -->
-<!-- outdated for cloud -->
-<!-- image::backgroundjobs/image-1.png[Job Configuration, width=50%] -->
+
+
+

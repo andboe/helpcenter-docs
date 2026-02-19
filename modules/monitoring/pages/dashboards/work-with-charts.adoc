@@ -13,7 +13,7 @@ New to Dashboards? Learn xref:monitoring:manage-dashboards.adoc[the basics] firs
 
 [#navigate-charts]
 == Navigate charts
-The following actions are available in **Dashboards**:
+The following actions are available in *Dashboards*:
 
 - To change the date range for which you display data, select a date range from the date picker in the upper right of each chart.
 - To zoom in on a chart, click and drag to select your area of interest.
@@ -28,7 +28,7 @@ The date and time information is localized according to your language settings i
 ====
 [#work-with-time-series]
 == Work with time series
-Time series are sequences of data points recorded over regular time intervals. The following subsections explain how you can use time series in **Dashboards** to use, customize and analyze your data and make informed decisions.
+Time series are sequences of data points recorded over regular time intervals. The following subsections explain how you can use time series in *Dashboards* to use, customize and analyze your data and make informed decisions.
 
 [#highlight-time-series]
 === Highlight time series
@@ -41,20 +41,22 @@ Hide and show other time series by clicking the {icon-eye} or the {icon-eye-slas
 [#customize-time-series]
 === Customize time series
 1. Go to {bc-analyze-dashboards}.
-2. From the {icon-context-menu}, click **Edit**.
+2. From the {icon-context-menu}, click *Edit*.
 3. Hover over the time series name in the legend and click the Edit icon {icon-edit}.
-4. In the **Customize graph** window, edit the time series properties:
-   - Edit the **Name** shown in the legend.
-   - Choose between **Step** or **Histogram** (bar chart) in the **Type** drop-down menu.
-   - Select another predefined **Color**.
-   - Select how data is aggregated in the chart. Choose **By interval** (available for time ranges up to 8 days) to show interval values, or **By day** to show daily values.
-   - Select whether to show the y-axis values on the **Left (default)** or the **Right**.
-5. {btn-save}<br>Click btn:[Close Edit mode] to return to the view mode.
+4. In the *Customize graph* window, edit the time series properties:
+   - Edit the *Name* shown in the legend.
+   - Choose between *Step* or *Histogram* (bar chart) in the *Type* drop-down menu.
+   - Select another predefined *Color*.
+   - Select how data is aggregated in the chart. Choose *By interval* (available for time ranges up to 8 days) to show interval values, or *By day* to show daily values.
+   - Select whether to show the y-axis values on the *Left (default)* or the *Right*.
+5. {btn-save} +
+Click btn:[Close Edit mode] to return to the view mode.
 
 [#delete-time-series]
 === Delete time series
 1. Go to {bc-analyze-dashboards}.
-2. From the {icon-context-menu}, click **Edit**.
+2. From the {icon-context-menu}, click *Edit*.
 3. Hover over the time series name in the legend and click the Edit icon {icon-edit}.
-4. In the **Customize graph** window, click btn:[Delete].
-5. {btn-save}<br>Click btn:[Close Edit mode] to return to the view mode.
+4. In the *Customize graph* window, click btn:[Delete].
+5. {btn-save} +
+Click btn:[Close Edit mode] to return to the view mode.

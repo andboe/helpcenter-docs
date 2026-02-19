@@ -41,9 +41,7 @@ The following table provides an overview of the supported object types and how d
 |CSV integration
 |===
 
-<!-- Time-off quotas are unreleased at the time of writing
 
-| Time-off quota           | Import time-off quotas for planning units.                      | Manual upload in menu:Time Off[Quotas]    |-->
 
 [NOTE]
 ====

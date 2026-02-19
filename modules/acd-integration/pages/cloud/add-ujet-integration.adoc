@@ -16,14 +16,14 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **UJET**.
+4. From the *External system* drop-down menu, select *UJET*.
 5. {btn-save}
 
 [#set-up-your-ujet-integration]
 == Set up your Ujet integration
 1. Enter a unique name for the integration that identifies the data source.
-2. In the **Credentials** section, configure the following information:
-   - **Subdomain**: Enter your Ujet subdomain.
-   - **Company key** and **Company secret code**: Enter a valid company key and company secret code for your Ujet ACD.
+2. In the *Credentials* section, configure the following information:
+   - *Subdomain*: Enter your Ujet subdomain.
+   - *Company key* and *Company secret code*: Enter a valid company key and company secret code for your Ujet ACD.
 
 3. {btn-save}

@@ -7,14 +7,14 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to schedule emails.
 :related-articles: activity-examples.adoc, work-with-skills.adoc
 
-<!-- not sure about multiactivty and essential -->
+
 
 Do you want to schedule emails in addition to telephony, and wonder how it works? In this article, we explain how to do so.
 
 [#create-a-separate-activity]
 == Create a separate activity
 1. Create xref:administration:activities.adoc[a new activity] of type Presence.
-2. Check the checkboxes **Plannable**, **Paid** and **Comply with Rest Period**.
+2. Check the checkboxes *Plannable*, *Paid* and *Comply with Rest Period*.
 3. Assign this activity to the planning unit in which you want to schedule emails.
 
 If not all employees can or should process emails, you need a skill for the email activity. Read more about xref:administration:work-with-skills.adoc[skills].

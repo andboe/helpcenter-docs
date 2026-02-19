@@ -8,4 +8,4 @@ Peopleware isn't working as expected? Here's where you can get help!
 
 And if you can’t find the answer here, you can always xref:support:create-ticket.adoc[send a support request] to the Peopleware team. Our experts will offer their help and advice!
 
-If there are interruptions to service, check the [Peopleware Status page](https://status.peopleware.com/). We post updates there.
+If there are interruptions to service, check the link:https://status.peopleware.com/[Peopleware Status page]. We post updates there.

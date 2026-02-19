@@ -22,7 +22,7 @@ Install the license as follows:
 
 [#update-preparation]
 == Update Preparation
-Download the current [injixo Enterprise on-premise version](https://downloads.injixo.com/en#server-on-premise).
+Download the current link:https://downloads.injixo.com/en#server-on-premise[injixo Enterprise on-premise version].
 
 [IMPORTANT]
 ====
@@ -34,9 +34,9 @@ Download the current [injixo Enterprise on-premise version](https://downloads.in
 The current injixo version uses Unicode (utf-16) as database encoding.
 Check the current encoding with this database query:
 `SELECT vs_version_no, encoding FROM vs_version;`
-If the result is **not utf-16**, a xref:support:unicode-migration.adoc[data conversion from ANSI to Unicode] is required.
+If the result is *not utf-16*, a xref:support:unicode-migration.adoc[data conversion from ANSI to Unicode] is required.
 ====
-This article uses the term **injixo Enterprise installation directory**. The files can be installed in a custom location, the default path is `C:\Program Files\injixo Enterprise\WFM\Server`. The best option to find the right folder is to check the Windows service named _injixo Enterprise WFM_ or _InVision Enterprise WFM_; there you find _Path to Executable_ on the _General_ tab.
+This article uses the term *injixo Enterprise installation directory*. The files can be installed in a custom location, the default path is `C:\Program Files\injixo Enterprise\WFM\Server`. The best option to find the right folder is to check the Windows service named _injixo Enterprise WFM_ or _InVision Enterprise WFM_; there you find _Path to Executable_ on the _General_ tab.
 
 Then prepare the update as follows:
 
@@ -54,7 +54,7 @@ Then prepare the update as follows:
 
 [#microsoft-vc-redist-2010-64-bit]
 == Microsoft VC Redist 2010 (64-Bit)
-Install the [Microsoft Visual C++ 2010 Redistributable Package (x64)](https://www.microsoft.com/en-us/download/details.aspx?id=26999) on the server; if you have components installed on different servers, you will need to install the package on all of them. If the package is not installed, error messages will be displayed when starting the components, e.g. in `ies64.log` regarding the file `msvcr100.dll`.
+Install the link:https://www.microsoft.com/en-us/download/details.aspx?id=26999[Microsoft Visual C++ 2010 Redistributable Package (x64)] on the server; if you have components installed on different servers, you will need to install the package on all of them. If the package is not installed, error messages will be displayed when starting the components, e.g. in `ies64.log` regarding the file `msvcr100.dll`.
 
 [#edit-the-existing-database-connection]
 == Edit the existing Database Connection
@@ -63,7 +63,7 @@ New versions use a new parameter _DBConnectString_ for the database connection. 
 Adjust the configuration as follows:
 
 1. Open _isps.cfg_ in the injixo Enterprise installation directory.
-2. Add one of the following examples to the existing **[InVision General Model Settings]** section below the already existing parameter _DBConnectString_:
+2. Add one of the following examples to the existing *[InVision General Model Settings]* section below the already existing parameter _DBConnectString_:
    - Microsoft SQL
 
      ----
@@ -106,7 +106,7 @@ SERVER=myserver\test;DATABASE=iwfm;UID=sa;PWD=mypassword"
 == Database Version Update
 Check the database version with the following query: `select vs_version_no from vs_version;`
 
-New versions require at least database version _20122001_ or _20130001_. If your database version matches, no further steps are required. If you have an older version, contact your Customer Success team. <!-- Old scripts required, mss_113_114.sql or ora_113_114.sql, next run consist64.exe /update -->
+New versions require at least database version _20122001_ or _20130001_. If your database version matches, no further steps are required. If you have an older version, contact your Customer Success team. 
 
 [#customize-email-server-settings]
 == Customize Email Server Settings
@@ -128,7 +128,7 @@ If the section with `ShortName = ivemail` is already configured in `isps.cfg` by
     SMTPTag = "Your custom topic"
     ```
 
-Permitted values for the **SMTPSecureMode** parameter are SSL, PLAIN, and TLS. **SMTPTag** is optional to add a prefix to the subject of your emails sent from your injixo Enterprise Server, e.g. *Your custom topic*.
+Permitted values for the *SMTPSecureMode* parameter are SSL, PLAIN, and TLS. *SMTPTag* is optional to add a prefix to the subject of your emails sent from your injixo Enterprise Server, e.g. *Your custom topic*.
 
 Test the new configuration by sending a report via e-mail after the update. If there is an error, the error message will be displayed in the report.
 
@@ -164,4 +164,4 @@ Install the new Windows service as follows:
 
 [#your-next-update]
 == Your next update
-Plan [your next, much easier update](/update-new-versions) now to benefit from the latest software updates.
+Plan xref:ROOT:update-new-versions[your next, much easier update] now to benefit from the latest software updates.

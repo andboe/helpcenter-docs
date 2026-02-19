@@ -48,7 +48,7 @@ To analyze the metrics for a single activity or activity type over several days 
    - *Parameters*: Click the metric you want to analyze.
    - *Level*: Click the level for which you want to analyze the chosen activity and metric.
 
-3. After each selection, the view updates to match your filter. <!-- Repeat this step 2 if needed -->
+3. After each selection, the view updates to match your filter. 
 
 Scroll through the intervals and check the values for the selected activity and metric. You can also expand additional weeks to show more data side by side.
 
@@ -84,7 +84,7 @@ If you use xref:scheduling:schedules-shift-bidding.adoc[shift bidding], you may 
    - *Staffing*: Number of generated shifts to which people are assigned
    - *Requirement*: Result of the xref:scheduling:shift-bidding.adoc[shift generation]. Shows how many shifts are required.
 
-<!-- Separate section for separate use cases?  -->
+
 <!-- Not often used. See how the shift generation covers your requirements before activities have been assigned. Good indicator for the shift generation result.
 [%header, cols="1a,1a,".rstrip(',')]
 |===

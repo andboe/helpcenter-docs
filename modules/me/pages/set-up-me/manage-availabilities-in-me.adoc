@@ -11,13 +11,13 @@ Availabilities define when a person is available for scheduling on specific date
 - Using personal xref:administration:availabilities.adoc#configure-availabilities[weekly availabilities]
 - Using xref:administration:availabilities.adoc#rotate-availabilities-across-weeks[day models]
 
-Additionally, people can add [one-time availabilities in inijxo Me](/add-availabilities-in-me#add-an-availability). If you already configured weekly availabilities, one-time availabilities replace them.
+Additionally, people can add xref:ROOT:add-availabilities-in-me#add-an-availability[one-time availabilities in inijxo Me]. If you already configured weekly availabilities, one-time availabilities replace them.
 
 [#give-people-access-to-availabilities]
 == Give people access to availabilities
 To give people access to availabilities in Me, ensure their role has the following functional permissions:
 
-- **Me**: **View Me** and **Edit availabilities**.
+- *Me*: *View Me* and *Edit availabilities*.
 
 The person can start entering their availability in Me the day after they are granted the necessary permissions.
 

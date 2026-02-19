@@ -11,7 +11,7 @@ It is not automatically included in your Enterprise WFM or Advanced WFM plan.
 If your organization is interested in this feature, get in touch with your consultant.
 
 IP filtering ensures that your users can access your Peopleware tenant from specific IP address ranges only.
-Users with IP addresses outside of the defined range will not be able to access Peopleware. We offer a [network access control list](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) (network ACL).
+Users with IP addresses outside of the defined range will not be able to access Peopleware. We offer a link:https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html[network access control list] (network ACL).
 Activate the network ACL if you want to allow access to Peopleware from selected networks only (e.g. your organization's network).
 
 [#activate-ip-filtering]
@@ -34,8 +34,8 @@ When you activate IP filtering, all active users are logged out. Depending on th
 ====
 To continue working with Peopleware, users will have to log in again.
 ====
-1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
-2. In the **Allowed IPs** field, enter a comma-separated list of IPs or IP address ranges in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#:~:text=CIDR%20notation%20specifies%20an%20IP,bits), e.g.:
+1. Go to menu:Account[Security] and scroll to the *IP filtering* section.
+2. In the *Allowed IPs* field, enter a comma-separated list of IPs or IP address ranges in link:https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#:~:text=CIDR%20notation%20specifies%20an%20IP,bits[CIDR notation], e.g.:
    - `192.0.2.25,198.51.100.0/24,203.0.113.0/24`
 3. Click btn:[Activate filtering].
 
@@ -47,13 +47,13 @@ IP filtering only affects UI interactions. The optionally available Shift Center
 ====
 If you edit the IP address ranges, all users will be logged out when they next interact with Peopleware. To continue working with Peopleware, users will have to log in again.
 ====
-1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
+1. Go to menu:Account[Security] and scroll to the *IP filtering* section.
 2. Edit the IP address ranges.
 3. {btn-save}
 
 [#deactivate-ip-filtering]
 == Deactivate IP filtering
-1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
+1. Go to menu:Account[Security] and scroll to the *IP filtering* section.
 2. Delete the IP address ranges.
 3. Click btn:[Deactivate filtering].
 

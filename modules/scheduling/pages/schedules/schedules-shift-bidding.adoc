@@ -36,8 +36,8 @@ In {bc-plan-schedules}, you can generate shifts for scheduling periods as follow
 
 1. Click btn:[Scheduling periods].
 2. From the drop-down menus, select the following:
-   - **Planning unit**
-   - (Optional) **Selection**  
+   - *Planning unit*
+   - (Optional) *Selection*  
      The table displays all scheduling periods for the selected planning unit (and selection).
 3. Hover over the scheduling period for which you want to generate shifts and select btn:[Generate shifts] from the three-dot menu on the right.
 4. Set the *Shift generation requirement* percentage value. A percentage value below 100% creates fewer shifts, e.g. when your planning unit is understaffed. A value over 100% creates additional shifts, e.g. for unexpected time off.
@@ -121,9 +121,10 @@ To run the shift lottery, follow these steps:
 
 5. Click btn:[Start shift lottery].
 
-A job for the shift lottery starts in the background. You see a success or an error message at the top of the page.<br>Go to xref:general:jobstatus.adoc[Job status] to track the progress. When the job is concluded, the shifts assigned by the shift lottery are added to the Schedule level.
+A job for the shift lottery starts in the background. You see a success or an error message at the top of the page. +
+Go to xref:general:jobstatus.adoc[Job status] to track the progress. When the job is concluded, the shifts assigned by the shift lottery are added to the Schedule level.
 
-If the job fails, click the related entry or the report icon to see more information. The report includes the reasons why a bid has not been scheduled as well as daily and total lottery quotas in %. <!-- needs checking -->
+If the job fails, click the related entry or the report icon to see more information. The report includes the reasons why a bid has not been scheduled as well as daily and total lottery quotas in %. 
 
 [#assign-remaining-shifts]
 === Assign the remaining shifts
@@ -141,7 +142,8 @@ After running the shift lottery, some shifts might not have been assigned becaus
 
 5. Click btn:[Assign shifts].
 
-A job for the assignment of the remaining shifts starts in the background. You see a success or an error message at the top of the page.<br>Go to xref:general:jobstatus.adoc[Job status] to track the progress or view a job report. The report lists the assigned and unassigned shifts. When the job is concluded, the assigned shifts are added to the Schedule level.
+A job for the assignment of the remaining shifts starts in the background. You see a success or an error message at the top of the page. +
+Go to xref:general:jobstatus.adoc[Job status] to track the progress or view a job report. The report lists the assigned and unassigned shifts. When the job is concluded, the assigned shifts are added to the Schedule level.
 
 After using the *Assign shifts* functionality, there may still be unassigned shifts, e.g., because there are not enough people with the respective skills to cover the shifts. You can reconfigure the parameters in steps 3 and 4, then reassign shifts or xref:scheduling:schedules-edit.adoc[manually change your schedule]. Alteratively, you can use the xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedule] functionality to assign more shifts based on achieving a higher coverage.
 
@@ -162,12 +164,12 @@ Tolerance represents a time window around the average shift start time of a pers
 == Edit the generated shifts
 In {bc-plan-shift-center}, you can check the generated shifts per day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
 
-1. In the parameter area, click the **Day Models** tab.
-2. Right-click a cell and select **Edit Shift Requirement...**.
+1. In the parameter area, click the *Day Models* tab.
+2. Right-click a cell and select *Edit Shift Requirement...*.
 3. Select how to display the day models:
-   - Alphabetical order: Click the {icon-plus} in the row **All shifts according to name**.
-   - Chronological order: Click the {icon-plus} in the row **All shifts according to time**.
+   - Alphabetical order: Click the {icon-plus} in the row *All shifts according to name*.
+   - Chronological order: Click the {icon-plus} in the row *All shifts according to time*.
 
-4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the **Requirement** column.
-5. Click a cell in the **Requirement** column next to a day model and enter a new value.
+4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the *Requirement* column.
+5. Click a cell in the *Requirement* column next to a day model and enter a new value.
 6. Click btn:[OK] to save your changes.

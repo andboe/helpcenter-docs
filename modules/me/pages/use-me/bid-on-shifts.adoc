@@ -28,7 +28,7 @@ For scheduling periods with the status Shift bidding enabled created by your pla
    >
    > You can only bid on shifts up to 100 days in advance. Even if a corresponding scheduling period exists, you will see a message that no shifts are available on days more than 100 days in the future.
 
-3. Under **Choice**, click btn:[1] next to your preferred shift. To add a second choice, click btn:[2] next to another shift.  
+3. Under *Choice*, click btn:[1] next to your preferred shift. To add a second choice, click btn:[2] next to another shift.  
    You can place up to two bids on each day. Everyone can bid on the same shifts.  
    You can see how many shifts are needed on each day (Required) and how many times your colleagues have already bid on a specific shift (Requested).
 

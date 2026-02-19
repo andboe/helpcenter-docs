@@ -36,20 +36,20 @@ Before running the schedule optimization, you can insert the shift sequence into
 == Optimized rotation: Work time pattern models
 If you want to optimize shifts while applying rotating patterns, use *work time pattern models*.
 
-Work time pattern models let you schedule your employees work early, middle, and late shifts on a rotating weekly basis (for example). In each week, the shifts that may be worked are chosen from a list of **day models** that you specify in a **week time pattern**. The optimization is constrained by the **type** you specify in the work time pattern model - _Flexible Rotation_, _Fixed Rotation_, etc.
+Work time pattern models let you schedule your employees work early, middle, and late shifts on a rotating weekly basis (for example). In each week, the shifts that may be worked are chosen from a list of *day models* that you specify in a *week time pattern*. The optimization is constrained by the *type* you specify in the work time pattern model - _Flexible Rotation_, _Fixed Rotation_, etc.
 
 [#unpopular-shifts-exception-days]
 == Unpopular shifts: Exception days
-If you don’t want to assign unpopular shifts or tasks for entire weeks, but only schedule one or two per week for each employee, you can use *week time patterns* with **exception days**:
+If you don’t want to assign unpopular shifts or tasks for entire weeks, but only schedule one or two per week for each employee, you can use *week time patterns* with *exception days*:
 
-1. Create a **week time pattern** with your standard shifts.
+1. Create a *week time pattern* with your standard shifts.
    image::fair-shift-distribution/image-4.png[week time pattern with day models for standard shifts, width=50%]
-2. In the week time pattern, enter a value of 1 (or more) in the **Maximum Number of Exception Days per Week** field to define how many unpopular shifts an employee can get within a week.
+2. In the week time pattern, enter a value of 1 (or more) in the *Maximum Number of Exception Days per Week* field to define how many unpopular shifts an employee can get within a week.
    image::fair-shift-distribution/image-3.png[Week Time Pattern Model, width=50%]
-3. Create a second **week time pattern** with your unpopular shifts.
+3. Create a second *week time pattern* with your unpopular shifts.
 4. In a work time pattern model, add the week time pattern(s) with your standard shifts.
    image::fair-shift-distribution/image-5.png[work time pattern model with week time pattern(s) for standard shifts, width=50%]
-5. Select the week time pattern with unpopular shifts from the **Week Time Pattern - Exception Days** drop-down menu.
+5. Select the week time pattern with unpopular shifts from the *Week Time Pattern - Exception Days* drop-down menu.
    image::fair-shift-distribution/image-2.png[work time pattern model, width=50%]
 
 [#fairer-shift-bidding]

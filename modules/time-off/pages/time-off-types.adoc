@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
 
-Before your people can request time off in Peopleware Me, you need to create time-off types with the **Requestable** checkbox activated.
+Before your people can request time off in Peopleware Me, you need to create time-off types with the *Requestable* checkbox activated.
 
 [#time-off-types]
 == Time-off types
@@ -43,9 +43,9 @@ To use this option, create an unpaid time-off type first.
 ====
 When a person requests time off of a paid type, the paid absence activity for that type replaces any paid presence activities in the person's schedule for that time. Any unpaid activities, e.g. breaks, remain as scheduled. That means that the person's calendar is empty for the time before and after their time off, and they can be scheduled to work during those times.
 
-To avoid people being scheduled for originally unscheduled times around their time off, create an unpaid time-off type and use it to replace unpaid activities and fill up unscheduled hours. If you check the **Fill up scheduled with** checkbox in the type configuration, Peopleware converts the unpaid type you select into an unpaid absence activity. Existing unpaid activities in the person's schedule are replaced with this unpaid absence activity. Additionally, non-working hours are filled up with this unpaid absence activity to block open times from scheduling.
+To avoid people being scheduled for originally unscheduled times around their time off, create an unpaid time-off type and use it to replace unpaid activities and fill up unscheduled hours. If you check the *Fill up scheduled with* checkbox in the type configuration, Peopleware converts the unpaid type you select into an unpaid absence activity. Existing unpaid activities in the person's schedule are replaced with this unpaid absence activity. Additionally, non-working hours are filled up with this unpaid absence activity to block open times from scheduling.
 
-[Learn more](https://help.peopleware.com/time-off#how-does-approved-time-off-appear-in-the-schedule) about how Peopleware displays approved time off in the schedule, depending on whether or not you used this option and other factors.
+link:https://help.peopleware.com/time-off#how-does-approved-time-off-appear-in-the-schedule[Learn more] about how Peopleware displays approved time off in the schedule, depending on whether or not you used this option and other factors.
 
 [NOTE]
 ====
@@ -61,13 +61,16 @@ You can activate or deactivate the fill-up functionality for any paid type at an
 1. Go to {bc-time-off-types}.
 2. Click btn:[Create type] on the right.
 3. {enter-info}
-   - **Name**
-   - **Time unit**: Select whether you want to calculate the time off taken in hours or days.<br>Depending on national legislation, it may be mandatory to calculate time off in hours or days.<br>You cannot change the time unit after saving the new time-off type.
-   - **Paid**: Check this checkbox if people get paid when they take this type of time off (e.g. Sickness).<br>Depending on national legislation, some time-off types must be paid.
-   - **Fill up schedule with**: Only for paid types. Activate the xref:#replace-unpaid-activities-and-fill-up-non-working-hours[fill-up functionality].
-   - **Requestable**: People can request time off for requestable types only. Planners can add non-requestable types to a person's schedule, e.g. in case of sickness. People can select the non-requestable types, e.g. to see their current balance.
-   - **Deducts from entitlement**: Ensures that approved requests for this type-off type reduce the person’s time-off balance for the associated entitlement.
-   - **Start of leave year**: Defines the start date of a recurring annual entitlement period. Entitlement is granted for or accrued over the leave year.
+   - *Name*
+   - *Time unit*: Select whether you want to calculate the time off taken in hours or days. +
+Depending on national legislation, it may be mandatory to calculate time off in hours or days. +
+You cannot change the time unit after saving the new time-off type.
+   - *Paid*: Check this checkbox if people get paid when they take this type of time off (e.g. Sickness). +
+Depending on national legislation, some time-off types must be paid.
+   - *Fill up schedule with*: Only for paid types. Activate the xref:#replace-unpaid-activities-and-fill-up-non-working-hours[fill-up functionality].
+   - *Requestable*: People can request time off for requestable types only. Planners can add non-requestable types to a person's schedule, e.g. in case of sickness. People can select the non-requestable types, e.g. to see their current balance.
+   - *Deducts from entitlement*: Ensures that approved requests for this type-off type reduce the person’s time-off balance for the associated entitlement.
+   - *Start of leave year*: Defines the start date of a recurring annual entitlement period. Entitlement is granted for or accrued over the leave year.
 4. {btn-save}
 
 [#edit-a-time-off-type]
@@ -104,7 +107,7 @@ After deleting a time-off type or its corresponding absence activity, the follow
 - You can still view, reject and cancel requests created with that type.
 - You can no longer approve requests created with that type. You can handle pending time-off requests that use a deleted type in one of the following two ways:
   - Reject the pending request.
-  - Ask the person to withdraw the request and create a new one.<br>
+  - Ask the person to withdraw the request and create a new one. +
 - You still see the absence activity in schedules that included it.
 - You can no longer plan the absence activity in a new schedule.
 

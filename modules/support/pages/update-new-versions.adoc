@@ -11,7 +11,7 @@ This article explains how to update the injixo Enterprise Server. Depending on t
 
 [#download-the-current-build]
 == Download the current build
-Download the current [injixo Enterprise on-premise version](https://downloads.injixo.com/en#server-on-premise).
+Download the current link:https://downloads.injixo.com/en#server-on-premise[injixo Enterprise on-premise version].
 
 [#create-a-backup]
 == Create a backup
@@ -49,7 +49,7 @@ Unpack the zip file of the update in the *Server* folder in the directory where 
 
 [NOTE]
 ====
-New Builds (> 9737) require the installation of the _Microsoft Visual C++ 2010 Redistributable Package (x64)_ ([Microsoft download](https://www.microsoft.com/en-us/download/details.aspx?id=26999)).
+New Builds (> 9737) require the installation of the _Microsoft Visual C++ 2010 Redistributable Package (x64)_ (link:https://www.microsoft.com/en-us/download/details.aspx?id=26999[Microsoft download]).
 ====
 [#start-the-services]
 == Start the services

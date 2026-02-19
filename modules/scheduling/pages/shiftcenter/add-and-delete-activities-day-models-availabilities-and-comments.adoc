@@ -181,7 +181,7 @@ To add availabilities, follow these steps:
 === Add day model availabilities
 In the xref:#add-availabilities[Availability tab] of the *configuration window*, you can also add availabilites configured as xref:administration:availabilities.adoc#configure-availabilities[day model availabilities]. The *Availability* tab displays the *Day Models (PU)* list with *expandable sections* on the right. The *expandable sections* include day model availabilities sorted by abbreviation or start time. To expand the sections, click the {icon-plus} next to them. To add day model availabilities, follow these steps:
 
-<!-- An availability specifies certain time slots on a day where an employee is available for work. If no availability has been defined, the employee is considered as _available_ for the whole day. -->
+
 
 1. Click the {icon-plus} next to the abbreviation or start time of the day model you want to add.
 2. Double-click the day model availability.  

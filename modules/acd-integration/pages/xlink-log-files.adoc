@@ -10,7 +10,7 @@ Xlink generates log files, which are important in case of problems with the data
 
 [#activate-logging]
 == Activate logging
-The configuration file 'isps_ul.ini' contains a parameter **Protocol** in two places:
+The configuration file 'isps_ul.ini' contains a parameter *Protocol* in two places:
 
 - Section [General]
 - Section [Name of your external system].

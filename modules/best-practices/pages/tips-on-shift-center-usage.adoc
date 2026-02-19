@@ -30,22 +30,22 @@ The two available shortcuts types allow letters, numbers, and spaces (max. 5 cha
 
 [#create-shortcuts]
 === Create shortcuts
-1. Go to menu:Plan[Configuration] and select **Activities**.
-2. Select an **activity** or *day model*.
-3. Enter the shortcut into the **Shortcut** field, e.g. **s** for _sickness_ (default shortcut) or **s#** (instant shortcut).
+1. Go to menu:Plan[Configuration] and select *Activities*.
+2. Select an *activity* or *day model*.
+3. Enter the shortcut into the *Shortcut* field, e.g. *s* for _sickness_ (default shortcut) or *s#* (instant shortcut).
 4. Click btn:[Ok] to save the shortcut.
 
 Note: Shortcuts require that activities and day models are assigned to the planning unit.
 
 [#use-a-default-shortcut]
 === Use a default shortcut
-1. Select one or more **day cells** for an employee in the scheduling window.
-2. Press **s**. The new element is directly added. To enter an element for multiple consecutive days, select **several cells at once**, before pressing **s**. This action overwrites existing elements in the schedule.
+1. Select one or more *day cells* for an employee in the scheduling window.
+2. Press *s*. The new element is directly added. To enter an element for multiple consecutive days, select *several cells at once*, before pressing *s*. This action overwrites existing elements in the schedule.
 
 [#use-an-instant-shortcut]
 === Use an instant shortcut
-1. Select a **day cell** for an employee in the scheduling window.
-2. Press **s** followed by **Enter**. To enter the element for several consecutive days, press a **number key** after the shortcut, e.g. **s** + **3** + **Enter**. This action overwrites existing elements in the schedule.
+1. Select a *day cell* for an employee in the scheduling window.
+2. Press *s* followed by *Enter*. To enter the element for several consecutive days, press a *number key* after the shortcut, e.g. *s* + *3* + *Enter*. This action overwrites existing elements in the schedule.
 
 Tip: The space bar is perfectly suitable as an instant shortcut (e.g. for the activity sickness), because this key is reached fastest. Simply, press space followed by #.
 
@@ -64,13 +64,13 @@ Use the levels contrary to their names:
 
 [#tip-4-sort-shifts-within-the-day-view]
 == Tip 4: Sort shifts within the day view
-When you open the *Shift Center*, the day view is always sorted alphabetically by employee name by default. You can xref:scheduling:sort-and-filter-items.adoc#sort-level-items[change the sort order], e.g. ascending or descending by shift start time. When you reopen the *Shift Center*, click the **arrow pointing down** to call up the sorting previously used.
+When you open the *Shift Center*, the day view is always sorted alphabetically by employee name by default. You can xref:scheduling:sort-and-filter-items.adoc#sort-level-items[change the sort order], e.g. ascending or descending by shift start time. When you reopen the *Shift Center*, click the *arrow pointing down* to call up the sorting previously used.
 
 [#tip-5-change-the-view-of-the-day-cell]
 == Tip 5: Change the view of the day cell
 The day cell offers short information on the day in both closed and open day views. By default, it displays the short name of the first activity of the day, but depending on how you work, it may be useful to adjust the view.
 
-To show the actual working hours (gross working time) or shift start/end times instead of the abbreviation of the first element, right-click a **day cell**, select **Display**, and then choose one of the **options**.
+To show the actual working hours (gross working time) or shift start/end times instead of the abbreviation of the first element, right-click a *day cell*, select *Display*, and then choose one of the *options*.
 
 image::tips-on-shift-center-usage/image-4.png[Setting the day cell display, width=50%]
 

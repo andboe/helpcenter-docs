@@ -26,7 +26,7 @@ Users with admin access can turn off specific notifications:
    > Note
    >
    > If you deactivate email notifications for Me, people will not be able to invite colleagues to swap shifts in Me.
-3. Check or uncheck the **Email** or **Browser Push** checkboxes as required.
+3. Check or uncheck the *Email* or *Browser Push* checkboxes as required.
 
 The notification settings are saved automatically. The selected settings affect all users.
 
@@ -35,8 +35,8 @@ The notification settings are saved automatically. The selected settings affect 
 If notifications are not already set through group policies in the operating system, you can activate notifications for your current browser in your Peopleware user profile.
 Before you start, make sure that your browser allows websites to request permission to send push notifications.
 
-1. In Peopleware, click your **username** at the top right to open your user profile.
-2. In the **Notifications** section, click btn:[Allow Peopleware notifications].
+1. In Peopleware, click your *username* at the top right to open your user profile.
+2. In the *Notifications* section, click btn:[Allow Peopleware notifications].
 3. A pop-up window will open in your browser where you can permanently allow browser push notifications.
 
 [#fix-browser-push-notifications-issues]
@@ -50,18 +50,18 @@ If your browser is not showing notifications from Peopleware, check that your sy
 
 For up-to-date information on how to enable notifications, check the following resources:
 
-**Browsers**
+*Browsers*
 
-- Chrome: [Google Chrome Support](https://support.google.com/chrome/answer/3220216?hl=en-GB)
-- Firefox: [Mozilla Firefox Support](https://support.mozilla.org/en-US/kb/push-notifications-firefox)
-- Safari: [Safari Support](https://support.apple.com/en-gb/guide/safari/sfri40734/15.1/mac/12.0)
+- Chrome: link:https://support.google.com/chrome/answer/3220216?hl=en-GB[Google Chrome Support]
+- Firefox: link:https://support.mozilla.org/en-US/kb/push-notifications-firefox[Mozilla Firefox Support]
+- Safari: link:https://support.apple.com/en-gb/guide/safari/sfri40734/15.1/mac/12.0[Safari Support]
 
-**Operating systems**
+*Operating systems*
 
-- Windows: [Microsoft Windows Support](https://support.microsoft.com/en-us/windows/change-notification-settings-in-windows-8942c744-6198-fe56-4639-34320cf9444e#WindowsVersion=Windows_10)
-- Android: [Android Support](https://support.google.com/android/answer/9079661?hl=en)
-- Mac: [Apple macOS Support](https://support.apple.com/en-us/HT204079)
-- iOS: [Apple iOS Support](https://support.apple.com/en-us/HT201925)
+- Windows: link:https://support.microsoft.com/en-us/windows/change-notification-settings-in-windows-8942c744-6198-fe56-4639-34320cf9444e#WindowsVersion=Windows_10[Microsoft Windows Support]
+- Android: link:https://support.google.com/android/answer/9079661?hl=en[Android Support]
+- Mac: link:https://support.apple.com/en-us/HT204079[Apple macOS Support]
+- iOS: link:https://support.apple.com/en-us/HT201925[Apple iOS Support]
 
 To test if browser push notifications work on your device and with your chosen browser in principle,
 go to <https://www.bennish.net/web-notifications.html/>.

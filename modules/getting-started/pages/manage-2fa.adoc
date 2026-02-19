@@ -35,8 +35,8 @@ Before you enforce 2FA for other people, make sure that they have access to one 
 === Enforce 2FA activation for individual people
 1. {nav-to-people}
 2. Select a person from the list
-3. In the left-side menu, click **Access**.
-4. In the **Password and authentication** section, click btn:[{icon-check-circle} Enforce 2FA].
+3. In the left-side menu, click *Access*.
+4. In the *Password and authentication* section, click btn:[{icon-check-circle} Enforce 2FA].
 
 [#enforce-2fa-activation-for-everyone]
 === Enforce 2FA activation for everyone
@@ -50,5 +50,5 @@ In some cases, you may want to deactivate 2FA temporarily for individual people,
 
 1. {nav-to-people}
 2. {select-person}
-3. In the left-side menu, click **Access**.
-4. In the **Password and authentication** section, click btn:[Revoke 2FA enforcement].
+3. In the left-side menu, click *Access*.
+4. In the *Password and authentication* section, click btn:[Revoke 2FA enforcement].

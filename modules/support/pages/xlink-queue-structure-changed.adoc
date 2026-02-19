@@ -18,11 +18,11 @@ Duplicate mappings may occur if you create new mappings for the queue in the Xli
 == Activate the _AutomaticMappingCorrection_ Parameter
 Note: The parameter _AutomaticMappingCorrection_ is part of the Xlink sample configuration and may already be included in the _isps_ul.ini_ file.
 
-1. Stop the **ISPS Xlink** service on the computer where the Xlink is installed.
+1. Stop the *ISPS Xlink* service on the computer where the Xlink is installed.
 2. Open the file _isps_ul.ini_ in the Xlink folder.
-3. In the section _[GENERAL]_, add the parameter **AutomaticMappingCorrection=1** . If the parameter already exists, change the configured value from 0 to 1 if necessary.
-4. Restart the service **ISPS Xlink**
-5. Open the Xlink user interface **isps_ul.exe** again.
+3. In the section _[GENERAL]_, add the parameter *AutomaticMappingCorrection=1* . If the parameter already exists, change the configured value from 0 to 1 if necessary.
+4. Restart the service *ISPS Xlink*
+5. Open the Xlink user interface *isps_ul.exe* again.
 
 Xlink checks existing mapping entries in the _acd_map.ini_ file. Xlink detects incorrect mappings and corrects or removes them. The current _acd_map.ini_ file is backed up. A dialog window tells you if wrong mappings have been detected.
 
@@ -36,7 +36,7 @@ Any mapping changes are logged to the _isps_ul.log_ file. There are two differen
 Example:
 
 ----
-03/17/22 12:15:48 > ** ANALYSING MAPFILE STARTED **
+03/17/22 12:15:48 > * ANALYSING MAPFILE STARTED *
 
 03/17/22 12:15:48 > Invalid Mapping(s) detected and automatically removed:
 03/17/22 12:15:48 > 	R4-System:1001:1016:1009=$350.BAS
@@ -54,5 +54,5 @@ Example:
 
 03/17/22 12:16:03 > The file 'C:\Program Files\InVision Enterprise WFM\XLink\Acd_map.ini' has been backed up to the file 'C:\Program Files\InVision Enterprise WFM\XLink\Acd_map220317121603.ini'
 
-03/17/22 12:16:03 > ** ANALYSING MAPFILE COMPLETED **
+03/17/22 12:16:03 > * ANALYSING MAPFILE COMPLETED *
 ----

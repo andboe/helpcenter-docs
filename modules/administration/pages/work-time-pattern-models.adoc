@@ -14,7 +14,7 @@ The following image shows the setup of day models and week time patterns in a wo
 
 image::work-time-pattern-models/image-1.png[Structure of a work time pattern model]
 
-With work time pattern models you can create repeating patterns of shifts, and set scheduling constraints for the **Create optimized schedule** functionality.<br>
+With work time pattern models you can create repeating patterns of shifts, and set scheduling constraints for the *Create optimized schedule* functionality. +
 Work time pattern models have the following benefits:
 
 - They define which day models can be used to plan a person.
@@ -35,8 +35,7 @@ To be able to use work time pattern models, make sure the following applies:
 
 [#create-week-time-patterns]
 == Create week time patterns
-A week time pattern is a group of day models. You can group day models by any criteria, e.g. shift length, activities involved, starting time, etc.<br>
-
+A week time pattern is a group of day models. You can group day models by any criteria, e.g. shift length, activities involved, starting time, etc. +
 You can only use week time patterns as part of a work time pattern model. For a working week, people are scheduled according to the day models included in the week time pattern. This way, you can ensure that your people have fairer and more consistent working hours.
 
 To create a week time pattern, follow these steps:
@@ -44,20 +43,20 @@ To create a week time pattern, follow these steps:
 1. Go to menu:Plan[Configuration>Week time patterns].
 2. {btn-create}
 3. Configure the settings of the week time pattern:
-   - **Name**: Enter a unique name (max. 50 characters).
-   - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
-   - **Maximum number of exception days per week**: xref:#exception-days[Exception days] allow to break the rules of the work time pattern model to better meet staff requirements.
+   - *Name*: Enter a unique name (max. 50 characters).
+   - *Abbreviation*: Enter the name or a shorter version of it (max. 25 characters).
+   - *Maximum number of exception days per week*: xref:#exception-days[Exception days] allow to break the rules of the work time pattern model to better meet staff requirements.
 4. {btn-create}
 
 You can now add day models to your week time pattern.
 
 [#add-day-models-to-a-week-time-pattern]
 === Add day models to a week time pattern
-1. In the configuration window of the week time pattern, go to the **Day models** section and click {icon-edit} Edit.
+1. In the configuration window of the week time pattern, go to the *Day models* section and click {icon-edit} Edit.
 2. Select one or more day models from the list.
 3. {btn-save}
 
-You can add both xref:administration:daymodel-basics.adoc#types-of-day-models[fixed and variable day models] to a week time pattern. If you use variable day models, the **Create optimized schedule** functionality can determine the optimal starting time of the shifts within the constraints set by the day model.
+You can add both xref:administration:daymodel-basics.adoc#types-of-day-models[fixed and variable day models] to a week time pattern. If you use variable day models, the *Create optimized schedule* functionality can determine the optimal starting time of the shifts within the constraints set by the day model.
 
 [NOTE]
 ====
@@ -73,11 +72,11 @@ Replaceable activities can be replaced with plannable activities within a shift.
 1. Go to menu:Plan[Configuration>Work time pattern models].
 2. {btn-create}
 3. Configure the settings of the work time pattern model:
-   - **Name**: Enter a unique name (max. 50 characters).
-   - **Abbreviation**: Enter the name or a shorter version of it (max. 25 characters).
-   - **Type**: The xref:#types-of-work-time-pattern-models[type] determines how the work time pattern model is used.
-   - **Week Time Pattern - Exception Days**: Select the week time pattern that should be planned for xref:#exception-days[exception days].
-   - (Optional) **Description**
+   - *Name*: Enter a unique name (max. 50 characters).
+   - *Abbreviation*: Enter the name or a shorter version of it (max. 25 characters).
+   - *Type*: The xref:#types-of-work-time-pattern-models[type] determines how the work time pattern model is used.
+   - *Week Time Pattern - Exception Days*: Select the week time pattern that should be planned for xref:#exception-days[exception days].
+   - (Optional) *Description*
 
 4. {btn-save}
 
@@ -85,9 +84,9 @@ You can now add week time patterns to your work time pattern model.
 
 [#add-week-time-patterns-to-a-work-time-pattern-model]
 === Add week time patterns to a work time pattern model
-1. In the configuration dialog of the work time pattern model, click **+ Add** in the **Week time patterns** section.
-2. Choose a **Week time pattern** from the list.
-3. Set a **Position**.
+1. In the configuration dialog of the work time pattern model, click *+ Add* in the *Week time patterns* section.
+2. Choose a *Week time pattern* from the list.
+3. Set a *Position*.
    If you add several week time patterns, click the {icon-down-arrow-blue} and the {icon-up-arrow-blue} to change the position.
 4. {btn-ok}
 
@@ -113,7 +112,7 @@ The position of week time patterns within work time pattern models is relevant w
 |Peopleware plans the week time patterns in the order defined by their positions.
 |Peopleware chooses one day model for the whole week.
 |Fixed
-|Each person is assigned the same day model for the entire week, e.g. starting at 9&nbsp;AM from Monday to Friday. Define xref:#exception-days[exception days] if you want to plan a different day model. Fixed Rotation is the most consistent shift assignment of all four types.
+|Each person is assigned the same day model for the entire week, e.g. starting at 9 AM from Monday to Friday. Define xref:#exception-days[exception days] if you want to plan a different day model. Fixed Rotation is the most consistent shift assignment of all four types.
 |Variable
 |Peopleware does not respect the defined position of week time patterns.
 |Peopleware chooses one day model for the whole week.
@@ -123,7 +122,7 @@ The position of week time patterns within work time pattern models is relevant w
 |Peopleware respects the position defined for the week time patterns.
 |For each week, Peopleware chooses the day model that best meets the staffing needs.
 |Flexible (within a time frame)
-|Based on staff requirements, Peopleware can schedule people with early shifts to start working between 8&nbsp;AM and 10&nbsp;AM. With this type, Peopleware can schedule more flexibly to best meet staff requirements, while at the same time assigning fairly consistent schedules to your people.
+|Based on staff requirements, Peopleware can schedule people with early shifts to start working between 8 AM and 10 AM. With this type, Peopleware can schedule more flexibly to best meet staff requirements, while at the same time assigning fairly consistent schedules to your people.
 |===
 
 The following graph shows how the different types of work time pattern models influence your schedule.This example includes a work time pattern model with four week time patterns (WTP in the graph), and three day models in each week time pattern.
@@ -132,8 +131,7 @@ image::work-time-pattern-models/image-2.png[Sample schedule with the different w
 
 [#exception-days]
 == Exception days
-Exception days allow to break the rules defined by the xref:#types-of-work-time-pattern-models[work time pattern model type] in use. For example, you could use exception days to plan one night shift in a week in which the person usually works the morning shift.<br>
-
+Exception days allow to break the rules defined by the xref:#types-of-work-time-pattern-models[work time pattern model type] in use. For example, you could use exception days to plan one night shift in a week in which the person usually works the morning shift. +
 Exception days prioritize staff requirements and ensure better coverage. However, they result in less consistent schedules for your people.
 
 To plan exception days, follow these steps:
@@ -148,12 +146,12 @@ When choosing a day model for the week, Peopleware cannot use day models defined
 == Add work time pattern models to people
 1. {nav-to-people}
 2. {select-person}
-3. In the left-side menu, click **Planning**.
-4. In the *Work time pattern models* section, click {icon-plus} **Add**
+3. In the left-side menu, click *Planning*.
+4. In the *Work time pattern models* section, click {icon-plus} *Add*
 5. {configure-info}
-   - **Work time pattern model**
-   - **Reference date**
-   - **Valid from** and **Valid to**: Configure these dates if you want to add the work time pattern model only temporarily to the person.
+   - *Work time pattern model*
+   - *Reference date*
+   - *Valid from* and *Valid to*: Configure these dates if you want to add the work time pattern model only temporarily to the person.
 
 6. {btn-save}
 
@@ -183,9 +181,9 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate work time pattern mod
 === Example A: Fixed rotation with early and late shifts
 Configure a work time pattern model of type B (fixed rotation), and assign three different week time patterns to it. Remember to define the position for the week time patterns.
 
-- Week time pattern 1 (position 1) contains day models for morning shifts (shifts start between 7&nbsp;AM and 9&nbsp;AM).
-- Week time pattern 2 (position 2) contains day models for evening shifts (shifts end at 11&nbsp;PM).
-- Week time pattern 3 (position 3) contains day models for afternoon shifts (shifts start between 11&nbsp;AM and noon).
+- Week time pattern 1 (position 1) contains day models for morning shifts (shifts start between 7 AM and 9 AM).
+- Week time pattern 2 (position 2) contains day models for evening shifts (shifts end at 11 PM).
+- Week time pattern 3 (position 3) contains day models for afternoon shifts (shifts start between 11 AM and noon).
 
 With this work time pattern model, people will rotate consistently between one week with morning shifts, one week with evening shifts, and one week with afternoon shifts.
 
@@ -197,20 +195,12 @@ Configure a work time pattern model with three different week time patterns. Con
 
 - Week time pattern 1 contains day models for morning shifts.
 - Week time pattern 2 contains day models for evening shifts.
-- Week time pattern 3 contains day models for night shifts (select this one in the drop-down menu **Week Time Pattern - Exception Days**).
+- Week time pattern 3 contains day models for night shifts (select this one in the drop-down menu *Week Time Pattern - Exception Days*).
 
 With this work time pattern model, people will alternate between morning shifts in the first week and evening shifts in the following week. However, because you have defined two exception days, people can also be assigned two night shifts per week, if this is the best assignment to meet staff requirements.
 
-<!-- TODO: very special example, add some more context  -->
-<!-- ### Example: Performance-Based Scheduling With WTPMs and Preferred Day Models
 
-Use Work Time Pattern Models and preferred day models  for Performance-Based Shift Assignment.
 
-* Within the Week Time Patterns, assign the shifts according to agents' performance.
-* Assign the Work Time Pattern Model to an agent with a validity period. Adjust it regularly according to performance scores.
 
-For your high achievers you can pick some of the day models and assign them directly to these employees as personal day models. The AutoScheduler will only use these day models while generating schedules. This ensures that out-of-favor shifts are not assigned to high performing agents. -->
 
-<!-- TODO: Example: normal use case scheduling different hours or working days in different weeks -->
-<!-- ### Example: Scheduling Different Number of Working Days or Hours in Different Weeks -->
-<!-- There is a bad German article /de/scheduling-different-wtm/ using WTPM Type B with two WTMs 4x10 and 5x8 hour shifts, with Autoscheduler contract parameter. minimum days per week with value 4 and scheduling parameter 2602 with value 10:00 -->
+

@@ -21,7 +21,7 @@ To add a new Zendesk integration, follow the steps below:
 1. {nav-to-account-integrations}
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Zendesk**.
+4. From the *External system* drop-down menu, select *Zendesk*.
 5. {btn-save}
 
 [#set-up-your-zendesk-integration]
@@ -32,26 +32,26 @@ Zendesk updated their security and policy requirements for third-party apps and 
 As a result, Peopleware no longer supports Basic Authentication to connect to Zendesk.
 If your Zendesk integration still uses Basic Authentication, switch to OAuth as soon as possible.
 ====
-1. In the **Credentials** section, perform the following steps:
-   - **Zendesk domain**:
+1. In the *Credentials* section, perform the following steps:
+   - *Zendesk domain*:
      Enter your Zendesk domain including the subdomain, e.g. example.zendesk.com.
-   - **Authentication method**:
-     Select the **OAuth** option.
+   - *Authentication method*:
+     Select the *OAuth* option.
 
-2. In the **Configuration** section, configure the following information:
-   - **Group the Zendesk Talk call queues by**:
+2. In the *Configuration* section, configure the following information:
+   - *Group the Zendesk Talk call queues by*:
      Select how you want to group Zendesk Talk data into source queues.
      The strategy determines how xref:#queue-names-for-zendesk-talk[the resulting source queues are named].
-     To use the destination group, select **Interactive Voice Response (IVR)**.
-     To name the source queue after the receiving number, select **Phone number**.
+     To use the destination group, select *Interactive Voice Response (IVR)*.
+     To name the source queue after the receiving number, select *Phone number*.
      A call without the relevant information will appear as ungrouped.
      Source queues for Zendesk Support are not affected.
 
    > You cannot change the grouping strategy once you have saved the configuration.
-   - **Import real-time agent status data**: Learn more about the import of agent status data in the xref:#agent-status-data[dedicated section below].
+   - *Import real-time agent status data*: Learn more about the import of agent status data in the xref:#agent-status-data[dedicated section below].
 
 3. {btn-save}
-4. Go back to the **Credentials** section.
+4. Go back to the *Credentials* section.
 5. Click btn:[Authorize with Zendesk].
 6. Enter your Zendesk credentials.
 7. Confirm that you allow Peopleware to access your Zendesk account.
@@ -76,7 +76,7 @@ Note: Adding new Zendesk views after you have saved the integration will auto-ge
 
 [#unsupported-views]
 === Unsupported views
-Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets).
+Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the link:https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets[Zendesk documentation].
 
 The Zendesk integration does not support all fields and operators you can select on the Zendesk view configuration page. In parentheses below, you can see the names used in the Zendesk API. To check if your views are supported, you may need to query the raw view configuration using the Zendesk API.
 
@@ -97,7 +97,7 @@ Any change event on a Zendesk ticket may be counted within multiple Peopleware c
 
 Example: An email will create a ticket which will show up in an email queue in Peopleware. If that same ticket enters a chat view, it will also be counted in a chat queue in Peopleware.
 
-<!-- left-align table -->
+
 
 <style>
 table {
@@ -169,7 +169,7 @@ Examples:
 
 [#agent-status-data]
 === Agent status data
-When you activate the **Import real-time agent status data** checkbox, the integration automatically performs the following steps:
+When you activate the *Import real-time agent status data* checkbox, the integration automatically performs the following steps:
 
 - Create a personal access token in Peopleware for your account
 - Create a webhook in Zendesk, which uses that PAT to authenticate
@@ -187,7 +187,8 @@ Peopleware supports the following unified agent statuses:
 - Online
 - Away
 - Transfer only
-- Offline<br>When Peopleware imports an Offline status, it ends the previous activity.
+- Offline +
+When Peopleware imports an Offline status, it ends the previous activity.
 - Custom states
 
 To monitor your people's adherence to their schedule, xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map Zendesk identifiers to people] and xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[map Zendesk statuses to Peopleware activities].
@@ -201,8 +202,8 @@ When this Zendesk account is deleted, the integration can no longer import histo
 To fix this, perform the authentication steps again to link the integration to a new Zendesk account:
 
 1. Go to {bc-account-integrations}
-2. Select the Zendesk integration in the **Integrations** table.
-3. Go to the **Credentials** section.
+2. Select the Zendesk integration in the *Integrations* table.
+3. Go to the *Credentials* section.
 4. Click btn:[Authorize with Zendesk].
 5. Enter your Zendesk credentials.
 6. Confirm that you allow Peopleware to access your Zendesk account.
@@ -216,10 +217,10 @@ The integration can no longer import real-time agent status data.
 To fix this, perform the following steps:
 
 1. Go to {bc-account-integrations}
-2. Select the Zendesk integration in the **Integrations** table.
-3. In the **Configuration** section, deactivate the **Import real-time agent status data** checkbox.
+2. Select the Zendesk integration in the *Integrations* table.
+3. In the *Configuration* section, deactivate the *Import real-time agent status data* checkbox.
 4. {btn-save}
    Peopleware deletes the obsolete webhook configuration in Zendesk.
-5. In the **Configuration** section, activate the **Import real-time agent status data** checkbox.
+5. In the *Configuration* section, activate the *Import real-time agent status data* checkbox.
    Peopleware creates a new personal access token and sets up a new webhook in Zendesk.
 6. {btn-save}

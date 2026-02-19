@@ -16,7 +16,7 @@ Time-off periods only support the activity types Absence, Vacation, and Illness.
 
 In Me, people can request time off for different reasons, e.g. vacation or illness. People can only create time-off requests for time ranges that are included in a time-off period with the status Published.
 
-Note: To allow people to request time off, go to menu:Me[] in the main navigation and activate the **Time Off Requests** option.
+Note: To allow people to request time off, go to menu:Me[] in the main navigation and activate the *Time Off Requests* option.
 
 Use xref:scheduling:what-are-scheduling-periods.adoc[scheduling periods] to allow people xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[to see their schedules], xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[exchange shifts], and xref:scheduling:schedules-shift-bidding.adoc[bid on shifts].
 
@@ -46,7 +46,7 @@ The list will show the relevant time-off periods divided into two tabs:
 - Ongoing: Time-off periods whose date range lies partly or completely in the future.
 - Expired: Time-off periods whose date range lies completely in the past.
 
-Both tabs show a table with six columns. The **Inherited from** column is only relevant when a time-off period was created for a parent planning unit. In that case, all child planning units inherit the time-off period and the column shows the name of the parent planning unit.
+Both tabs show a table with six columns. The *Inherited from* column is only relevant when a time-off period was created for a parent planning unit. In that case, all child planning units inherit the time-off period and the column shows the name of the parent planning unit.
 
 To sort a column, click the table header. To reverse the sorting order, click again.
 
@@ -65,7 +65,7 @@ If you want to change the status of a time-off period
 
 1. Go to {bc-plan-time-off}.
 2. Click btn:[Time-off periods] on the top right.
-3. To change the status, use the drop-down in the **Status** column. The changed status will be saved automatically.  
+3. To change the status, use the drop-down in the *Status* column. The changed status will be saved automatically.  
    To edit other data, hover over the list item that you want to edit and click the {icon-edit} on the right.
 4. Edit the relevant data.
 5. {btn-save}

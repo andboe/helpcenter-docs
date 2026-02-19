@@ -74,7 +74,7 @@ You have 10 people:
 - 6 full-time people
 - 4 part-time people
 
-You need to create shifts for the following periods<!-- day models? -->:
+You need to create shifts for the following periods:
 
 - 08:00 AM – 12:00 PM (morning shift)
 - 12:00 PM – 04:00 PM (peak time)

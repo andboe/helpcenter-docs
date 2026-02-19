@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 Queues organize and store contact data imported from external systems into Peopleware. Each queue corresponds to a specific contact channel (e.g., calls, emails, chats) and is divided into fixed time intervals (e.g., 15, 30, or 60 minutes), based on how frequently data is imported through the integration.
 
-The imported data in queues is the basis for forecasting. In **Forecast**, queues are grouped into workloads, which aggregate historical data and enable Peopleware to generate accurate forecasts of contact volume and average handle time.
+The imported data in queues is the basis for forecasting. In *Forecast*, queues are grouped into workloads, which aggregate historical data and enable Peopleware to generate accurate forecasts of contact volume and average handle time.
 
 [#event-types]
 == Event types
@@ -21,7 +21,7 @@ Opening hours do not affect the forecast but help define queue availability.
 
 [#value-types]
 == Value types
-Cloud integrations automatically add predefined value types like Offered, Answered, and AHT when you click **Use Forecast** in a workload.
+Cloud integrations automatically add predefined value types like Offered, Answered, and AHT when you click *Use Forecast* in a workload.
 These are based on the queue’s channel, e.g. Calls Offered, Calls Answered, and Calls Average Handling Time for call queues.
 
 You can also add value types manually.
@@ -56,7 +56,7 @@ Example:
 Q1001:1003 * 0.5 + Q1002:1003
 ----
 
-- **Q1001:1003** represents a value type from queue 1001 with value type ID 1003.
+- *Q1001:1003* represents a value type from queue 1001 with value type ID 1003.
 - The formula multiplies the first value by 0.5 and adds the second value.
 
 These calculations allow virtual value types to reflect specific KPIs.

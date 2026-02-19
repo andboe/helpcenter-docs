@@ -54,23 +54,23 @@ If you need to import data from CSV files with different formats (e.g. separator
 1. {nav-to-account-integrations}
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Universal interfaces**.
-5. From the **Model name** drop-down menu, select one of the following options:
-   - To import data from CSV files stored on an on-premise system via Cloud Link, select **CSV (Cloud Link)**.
-   - To import data from CSV files stored on an SFTP server, select **CSV (SFTP)**.
+4. From the *External system* drop-down menu, select *Universal interfaces*.
+5. From the *Model name* drop-down menu, select one of the following options:
+   - To import data from CSV files stored on an on-premise system via Cloud Link, select *CSV (Cloud Link)*.
+   - To import data from CSV files stored on an SFTP server, select *CSV (SFTP)*.
 6. {btn-save}
 
 [#configure-a-new-csv-integration]
 === Configure a new CSV integration
 1. Depending on the CSV integration model, set up Cloud link or provide the SFTP credentials:
-   - Cloud Link: From the **Cloud Link** section, download and xref:acd-integration:install-cloud-link.adoc#install-cloud-link[install the Cloud Link client]. During the installation, your terminal shows a PIN. Enter the PIN on the integration page to proceed. The PIN expires after 5 minutes.
-   - SFTP: Provide your credentials in the **SFTP server credentials** section.
-2. In the **Configuration** section, configure the following settings:
-   - **Type of import data**: You can only select one type per integration. To import data from another type, create a new integration.
-     - **Contact data**: The uploaded data includes all offered and handled volumes recorded by your external system, such as calls, chats, social media, tickets, emails, or documents.
-     - **Agent status**: The uploaded data includes all agent activities recorded by your external system, such as login, logout, on call, after-call work, break, ready, etc.
-     - **Plan data**: The uploaded data includes plan data, such as activities.
-   - **CSV schema**: The CSV schema that will be used for all automatic CSV imports from the Cloud Link or SFTP import folder.
+   - Cloud Link: From the *Cloud Link* section, download and xref:acd-integration:install-cloud-link.adoc#install-cloud-link[install the Cloud Link client]. During the installation, your terminal shows a PIN. Enter the PIN on the integration page to proceed. The PIN expires after 5 minutes.
+   - SFTP: Provide your credentials in the *SFTP server credentials* section.
+2. In the *Configuration* section, configure the following settings:
+   - *Type of import data*: You can only select one type per integration. To import data from another type, create a new integration.
+     - *Contact data*: The uploaded data includes all offered and handled volumes recorded by your external system, such as calls, chats, social media, tickets, emails, or documents.
+     - *Agent status*: The uploaded data includes all agent activities recorded by your external system, such as login, logout, on call, after-call work, break, ready, etc.
+     - *Plan data*: The uploaded data includes plan data, such as activities.
+   - *CSV schema*: The CSV schema that will be used for all automatic CSV imports from the Cloud Link or SFTP import folder.
 3. {btn-save}
    You can now use the xref:#manual-file-import[manual data import] or set up the xref:#automatic-file-import[automatic data import].
 
@@ -85,7 +85,7 @@ For Cloud Link, the source folder is the Cloud Link installation directory (defa
 You can also define a separate xref:acd-integration:install-cloud-link.adoc#import-folder[import folder] for file uploads.
 
 After the data has been uploaded, you can work with it in the relevant app.
-For example, you can xref:forecast:create-workloads.adoc#workloads-and-queues[add new queues to a workload] or see updated data, e.g. in your existing workloads in **Forecast**.
+For example, you can xref:forecast:create-workloads.adoc#workloads-and-queues[add new queues to a workload] or see updated data, e.g. in your existing workloads in *Forecast*.
 
 If you don't find updated data where you expect it, try reuploading the file manually to check for errors.
 

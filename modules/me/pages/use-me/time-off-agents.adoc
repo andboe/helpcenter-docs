@@ -29,21 +29,21 @@ Days in your calendar in {bc-me-time-off} are highlighted differently:
 [#view-your-personal-balance]
 == View your personal balance
 1. Select a time-off type from the drop-down menu in the top left.
-2. The gray tiles at the top show details for the selected time-off type:<br>
-   - **Pending**: Time off requested but not yet approved or rejected
-   - **Current balance**: Time off you can still request within the entitlement period
-   - **Taken**: Time off requested and approved
+2. The gray tiles at the top show details for the selected time-off type: +
+- *Pending*: Time off requested but not yet approved or rejected
+   - *Current balance*: Time off you can still request within the entitlement period
+   - *Taken*: Time off requested and approved
 
 === Value of the Pending tile for cancellation requests
 
-For cancellation requests, the value of the **Requested** tile indicates the time that will be added again to your balance if the request is approved. Your balance will not be modified if you see no value (i.e. **-**). This can happen for different reasons, e.g. if you have other contracts while being off.
+For cancellation requests, the value of the *Requested* tile indicates the time that will be added again to your balance if the request is approved. Your balance will not be modified if you see no value (i.e. *-*). This can happen for different reasons, e.g. if you have other contracts while being off.
 
 [#request-time-off-for-full-days]
 == Request time off for full days
 1. Select a type from the drop-down menu in the top left.
 2. Click btn:[Request].
-3. Define the length of your time off:<br>
-   **Start date**/**End date**: If you only want to take one day off, select the same date in both date range pickers.
+3. Define the length of your time off: +
+*Start date*/*End date*: If you only want to take one day off, select the same date in both date range pickers.
 4. (Optional) Enter a comment.
 5. Click btn:[Request].
 
@@ -53,11 +53,11 @@ You cannot edit a request after submitting it. If you need to edit the details o
 == Request time off for partial days
 1. Select a type from the drop-down menu in the top left.
 2. Click btn:[Request].
-3. Select the day for your time off:<br>
-   **Start date**/**End date**: Select the same date in both date range pickers or two consecutive dates if your requested time off starts before and ends after midnight.
-4. Activate the **Request a part of the day** option.
-5. Define the length of your time off:<br>
-   **Start time**/**End time**: Depending on your organization's settings, requests for a partial day might be rounded to half a day or a full day.
+3. Select the day for your time off: +
+*Start date*/*End date*: Select the same date in both date range pickers or two consecutive dates if your requested time off starts before and ends after midnight.
+4. Activate the *Request a part of the day* option.
+5. Define the length of your time off: +
+*Start time*/*End time*: Depending on your organization's settings, requests for a partial day might be rounded to half a day or a full day.
 6. (Optional) Enter a comment.
 7. Click btn:[Request].
 
@@ -65,7 +65,7 @@ You cannot edit a request after submitting it. If you need to edit the details o
 
 [#how-approved-time-off-is-scheduled]
 == How approved time off is scheduled
-When your planner approved a full day off, an absence for one calendar day is scheduled. This applies to days without night shifts or if you have not been scheduled yet for the day, for example, if you request time off on 25&nbsp;June, your absence starts at midnight on 25&nbsp;June and ends at midnight on 26&nbsp;June.
+When your planner approved a full day off, an absence for one calendar day is scheduled. This applies to days without night shifts or if you have not been scheduled yet for the day, for example, if you request time off on 25 June, your absence starts at midnight on 25 June and ends at midnight on 26 June.
 
 === Night shifts: Requesting the day after
 
@@ -86,29 +86,29 @@ For a quick overview of the different scenarios, see this table:
 |Scheduled night shift
 |Time-off request
 |Time off in schedule
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|26&nbsp;June
-|26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|25&nbsp;June
-|25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM, not scheduled on 27&nbsp;June
-|25&nbsp;June until 29&nbsp;June
-|25&nbsp;June, midnight until 29&nbsp;June, 6&nbsp;AM
+|25 June, 10 PM until 26 June, 6 AM
+|26 June
+|26 June, 6 AM until 27 June midnight (18 hours)
+|25 June, 10 PM until 26 June, 6 AM
+|25 June
+|25 June, midnight until 26 June 6 AM (30 hours)
+|25 June, 10 PM until 26 June, 6 AM and 28 June, 10 PM until 29 June, 6 AM, not scheduled on 27 June
+|25 June until 29 June
+|25 June, midnight until 29 June, 6 AM
 |no scheduled night shift
-|26&nbsp;June
-|26&nbsp;June, midnight until 27&nbsp;June, midnight
+|26 June
+|26 June, midnight until 27 June, midnight
 |===
 
 If you want to take specific hours off instead of a full day, use a xref:#request-time-off-for-partial-days[partial-day time-off request].
 
 [#cancel-approved-time-off]
 == Cancel approved time off
-If time off requests are still pending, you can cancel the request by clicking **{icon-arrow-rotate-left} Withdraw**.
+If time off requests are still pending, you can cancel the request by clicking *{icon-arrow-rotate-left} Withdraw*.
 If time off has already been approved, you cannot cancel it yourself. Instead, submit a cancellation request.
 
-1. In the **Requests** section, click **{icon-circle-xmark} Request cancellation** under the approved request you want to cancel.
-2. (Optional) Enter a **Reason for cancellation**.
+1. In the *Requests* section, click *{icon-circle-xmark} Request cancellation* under the approved request you want to cancel.
+2. (Optional) Enter a *Reason for cancellation*.
 3. Click btn:[Request cancellation].
 
 == Unpaid time off

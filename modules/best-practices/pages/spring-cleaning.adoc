@@ -25,7 +25,7 @@ Employees quit their job, move to another department or retire. Fluctuation is o
 2. Additionally, check for existing configuration items which have been created only for them, such as *Contracts* or *Day Models*.
 
 For a better understanding, we show you the two steps in this gif:
-{{ 1 | image: 'Steps to Delete Employee', '100%', 'gif' }}
+image::help-center:ROOT:images/image-1.gif[Steps to Delete Employee, width=100%]
 
 [#changes-to-shift-setup]
 == Changes to shift setup
@@ -34,13 +34,13 @@ Be careful whenever you delete shifts: Make sure that they are not used for your
 To ensure that the deletions do not cause trouble with your next scheduling period, follow these steps in menu:WFM[Administration>Scheduling]:
 
 1. Check in *Employees* if the day models are directly assigned to any agents.
-2. Check in *Planning Units* in the section **Day Models** if the option _[ALL]_ is used. If not, remove the relevant day models from this list.
+2. Check in *Planning Units* in the section *Day Models* if the option _[ALL]_ is used. If not, remove the relevant day models from this list.
 3. Check in *Shift Sequences* if the day model is assigned to a shift sequence. Delete or replace it.
 4. Check in *Week Time Patterns* if the day model is included in a week time pattern. This is especially relevant if it is the only day model associated with the week time pattern. In this case the Work Time Pattern Model becomes invalid.
 5. Delete the day model in *Day Models*.
 
 Have a look at this visualization to see the accomplishment:
-{{ 3 | image: 'Steps to Delete Day Models', '100%', 'gif' }}
+image::help-center:ROOT:images/image-3.gif[Steps to Delete Day Models, width=100%]
 
 [#organizational-restructuring]
 == Organizational restructuring
@@ -51,4 +51,4 @@ Have you had any organizational restructuring lately? For example, you have take
 3. For the planning units clarify before deleting if the key figures (requirement, staffing, coverage) are still needed. If this is the case, you can copy them from *Dashboards*. Save them externally, e.g. in Excel. Afterwards go to menu:WFM[Administration>Scheduling>Planning Units] and delete the planning unit.
 
 We have visualized the instructions (without copying and saving data from *Dashboards*) in this short video:
-{{ 4 | image: 'Steps to Delete Selection and Planning Unit', '100%', 'gif' }}
+image::help-center:ROOT:images/image-4.gif[Steps to Delete Selection and Planning Unit, width=100%]

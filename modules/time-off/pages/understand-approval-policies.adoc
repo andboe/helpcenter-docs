@@ -12,13 +12,13 @@ Some advanced approval policy features may not be available on your Peopleware t
 ====
 In menu:Time Off[], approval policies define how Peopleware handles time-off requests. Approval policies use xref:#what-are-checks[checks] and configurable thresholds to enforce company rules around time off.
 
-You can configure specific approval policies for each [time-off type](https://help.peopleware.com/time-off-types-beta). When a person submits a time-off request, Peopleware evaluates it against the active approval policy for the selected type.
+You can configure specific approval policies for each link:https://help.peopleware.com/time-off-types-beta[time-off type]. When a person submits a time-off request, Peopleware evaluates it against the active approval policy for the selected type.
 
 An approval policy is a set of rules that determines how the system should handle a time-off request:
 
 - Approve it automatically if all checks pass
-- Trigger manual review if a **Review threshold** is exceeded
-- Prevent that a time-off request is created if a **Prevent threshold** is exceeded
+- Trigger manual review if a *Review threshold* is exceeded
+- Prevent that a time-off request is created if a *Prevent threshold* is exceeded
 
 An approval policy may include one or more checks.
 
@@ -34,7 +34,7 @@ A check evaluates a specific aspect of the time-off request, such as:
 - How far in advance the request was submitted
 - How many days the person wants to take off
 
-Each check can define a **Review threshold**, a **Prevent threshold**, or both.
+Each check can define a *Review threshold*, a *Prevent threshold*, or both.
 
 Example:
 
@@ -50,9 +50,9 @@ When a time-off request is submitted, each check runs independently. The values 
 |Outcome
 |All checks passed
 |Automatically approved
-|Any check exceeds **Review threshold**
+|Any check exceeds *Review threshold*
 |Requires manual review
-|Any check exceeds **Prevent threshold**
+|Any check exceeds *Prevent threshold*
 |Time-off request cannot be created
 |===
 
@@ -60,22 +60,22 @@ When a time-off request is submitted, each check runs independently. The values 
 === Types of checks
 Time Off supports the following types of checks:
 
-- **Consecutive days**: Restricts how many consecutive days off a person can request.
-- **Projected balance**: Ensures the requested time off does not exceed the person’s remaining entitlement.
-- **Lead time in days**: Requires requests to be submitted a certain number of days in advance.
-- **Quota**: Prevents or controls approval of requests that would exceed the projected remaining quota for a planning unit on a given day.
+- *Consecutive days*: Restricts how many consecutive days off a person can request.
+- *Projected balance*: Ensures the requested time off does not exceed the person’s remaining entitlement.
+- *Lead time in days*: Requires requests to be submitted a certain number of days in advance.
+- *Quota*: Prevents or controls approval of requests that would exceed the projected remaining quota for a planning unit on a given day.
   The projected remaining quota is calculated as `Current remaining quota – Quota consumption for time off`.
 
 Each check uses a specific comparison operator (e.g. `<`, `>`) based on its purpose.
 
 [#how-checks-work]
 === How checks work
-Each check analyzes the time-off request to determine if it meets the conditions defined in the time-off approval policy. For example, the **Projected balance** check simulates the person’s entitlement after the request would be booked. The **Lead time in days** check calculates how far in advance the request was made.
+Each check analyzes the time-off request to determine if it meets the conditions defined in the time-off approval policy. For example, the *Projected balance* check simulates the person’s entitlement after the request would be booked. The *Lead time in days* check calculates how far in advance the request was made.
 
 For example:
 
-- **Projected balance**: If the projected entitlement is below the Prevent threshold (e.g. < 0), the request cannot be created.
-- **Quota**: If this value is below the configured threshold, the system applies the corresponding action.
+- *Projected balance*: If the projected entitlement is below the Prevent threshold (e.g. < 0), the request cannot be created.
+- *Quota*: If this value is below the configured threshold, the system applies the corresponding action.
 
 Checks always account for existing bookings when evaluating new requests.
 

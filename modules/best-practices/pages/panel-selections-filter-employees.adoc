@@ -12,6 +12,6 @@ Selections are not the only way to filter employees. Rather than creating select
 
 [#what-you-should-do-is]
 ==== What you should do is...?
-Why not create an employee filter <!-- [employee filter](https://help.peopleware.com/de/employee-filter/) --> <!-- , article not available in EN? --> to get the list of employees you want to edit. Then you can use the mass update <!-- [mass update functionality](https://help.peopleware.com/de/mass-update/) --> <!-- article not available in EN? --> to update the selected employees.
+Why not create an employee filter   to get the list of employees you want to edit. Then you can use the mass update   to update the selected employees.
 
-**Tip:** Create a filter with multiple 'queries' such as which *Planning Unit* they are in, which Skill they have, and which Contract you have assigned.
+*Tip:* Create a filter with multiple 'queries' such as which *Planning Unit* they are in, which Skill they have, and which Contract you have assigned.

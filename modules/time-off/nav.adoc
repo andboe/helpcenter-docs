@@ -1,12 +1,12 @@
 * Time Off
-** xref:balances-time-accounts.adoc
-** xref:configure-accounting-rules.adoc
-** xref:entitlement-policies.adoc
-** xref:ref-time-off.adoc
-** xref:time-off.adoc
-** xref:time-off-periods.adoc
-** xref:time-off-types.adoc
-** xref:understand-approval-policies.adoc
-** xref:understand-quotas.adoc
-** xref:understand-valuation.adoc
+* xref:balances-time-accounts.adoc
+* xref:configure-accounting-rules.adoc
+* xref:entitlement-policies.adoc
+* xref:ref-time-off.adoc
+* xref:time-off.adoc
+* xref:time-off-periods.adoc
+* xref:time-off-types.adoc
+* xref:understand-approval-policies.adoc
+* xref:understand-quotas.adoc
+* xref:understand-valuation.adoc
 ** xref:use-approval-policies.adoc

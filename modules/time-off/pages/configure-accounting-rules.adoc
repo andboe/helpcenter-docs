@@ -10,27 +10,27 @@ include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
 
 Accounting rules determine how time-off requests are evaluated. For time-off types with an entitlement (e.g., Vacation), they calculate how many days or hours are deducted if a request is approved. For other time-off types without entitlement (e.g., Sickness), accounting rules calculate how many hours or days count as "taken" if a request is approved. This is influenced by the following:
 
-- Your [**valuation strategy**](https://help.peopleware.com/understand-valuation#valuation-strategies).
+- Your link:https://help.peopleware.com/understand-valuation#valuation-strategies[*valuation strategy*].
 - Adjustments for holidays, weekends, or specific days.
 - Rounding xref:#rounding[thresholds] for partial-day requests.
 
-Learn more about [time-off valuation](https://help.peopleware.com/understand-valuation).
+Learn more about link:https://help.peopleware.com/understand-valuation[time-off valuation].
 
 [#create-accounting-rules]
 == Create accounting rules
 To create an accounting rule, proceed as follows:
 
-1. Go to **Time Off > Accounting rules**.
+1. Go to *Time Off > Accounting rules*.
 2. Click btn:[Create] in the top-right corner.
 3. Configure the following elements:
-   - **Name**
-   - [**Valuation strategy**](https://help.peopleware.com/understand-valuation#valuation-strategies)
+   - *Name*
+   - link:https://help.peopleware.com/understand-valuation#valuation-strategies[*Valuation strategy*]
    - Optional settings:
-     - [**Consider bank holidays**](https://help.peopleware.com/understand-valuation#how-are-public-holidays-considered)
-     - [**Ignore weekends**](https://help.peopleware.com/understand-valuation#how-are-weekends-considered)
-     - [**Enable rounding**](https://help.peopleware.com/understand-valuation#rounding-). If you checked this checkbox, you can configure a xref:#rounding[**threshold type**].
-   - xref:#contracts-in-accounting-rules[**Contracts**]: Limit the rule to specific contracts only.
-4. Click **Create**.
+     - link:https://help.peopleware.com/understand-valuation#how-are-public-holidays-considered[*Consider bank holidays*]
+     - link:https://help.peopleware.com/understand-valuation#how-are-weekends-considered[*Ignore weekends*]
+     - link:https://help.peopleware.com/understand-valuation#rounding-[*Enable rounding*]. If you checked this checkbox, you can configure a xref:#rounding[*threshold type*].
+   - xref:#contracts-in-accounting-rules[*Contracts*]: Limit the rule to specific contracts only.
+4. Click *Create*.
 
 [#rounding]
 == Rounding
@@ -57,7 +57,7 @@ You can have only one accounting rule without any contract assigned but as many 
 To add a contract to an accounting rule, proceed as follows:
 
 1. In menu:Time Off[Accounting rules], select an accounting rule
-2. In the **Contracts** section, click **{icon-edit} Edit**.
+2. In the *Contracts* section, click *{icon-edit} Edit*.
 3. Check the checkboxes for all contracts you want to add. Use the search field if necessary.
 4. {btn-save}
 
@@ -65,15 +65,15 @@ To add a contract to an accounting rule, proceed as follows:
 == Adjusted days
 Adjusted days let you define days on which only a certain amount of hours is deducted, even if a person requests an entire day off.
 
-Example: In your organization, Easter Monday is considered a half-day working day. If a person requests the entire day off, only half a day should be deducted from their entitlement. To configure the accounting rule accordingly, add Easter Monday as an adjusted day in the accounting rule, select the deduction type **Relative to working times**, and enter a max. deduction of 50%.
+Example: In your organization, Easter Monday is considered a half-day working day. If a person requests the entire day off, only half a day should be deducted from their entitlement. To configure the accounting rule accordingly, add Easter Monday as an adjusted day in the accounting rule, select the deduction type *Relative to working times*, and enter a max. deduction of 50%.
 
 To add adjusted days to an accounting rule, xref:#create-accounting-rules[create an accounting rule] first and proceed as follows:
 
 1. In menu:Time Off[Accounting rules], select an accounting rule.
-2. In the **Adjusted days** section, click **{icon-plus} Add**.
-3. Select a **Day type**, e.g. Christmas Eve. Only day types with xref:administration:day-types.adoc#holiday-mode[holiday mode] activated are supported.
-4. Select a **Deduction type**:
-   - **Absolute**: Select this to define the amount of hours and minutes to be deducted if the full day is requested.
-   - **Relative to working times**: Select this to define the percentage of hours and minutes to be deducted if the full day is requested.
-5. **Max. deduction**: Enter the amount or percentage of hours and minutes to be deducted.
+2. In the *Adjusted days* section, click *{icon-plus} Add*.
+3. Select a *Day type*, e.g. Christmas Eve. Only day types with xref:administration:day-types.adoc#holiday-mode[holiday mode] activated are supported.
+4. Select a *Deduction type*:
+   - *Absolute*: Select this to define the amount of hours and minutes to be deducted if the full day is requested.
+   - *Relative to working times*: Select this to define the percentage of hours and minutes to be deducted if the full day is requested.
+5. *Max. deduction*: Enter the amount or percentage of hours and minutes to be deducted.
 6. {btn-create}

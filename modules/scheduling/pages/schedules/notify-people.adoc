@@ -7,20 +7,20 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Inform employees about schedule changes via email or browser notifications.
 :page-aliases: schedules-notify-scheduling-changes
 
-In {bc-plan-schedules}, you can use the **Notify people** function to send push notifications or emails to your people, for example, if you modified their schedule.
+In {bc-plan-schedules}, you can use the *Notify people* function to send push notifications or emails to your people, for example, if you modified their schedule.
 
 [#notify-schedule-changes]
 == Notify schedule changes
-You can use the **Notify people** function for any xref:scheduling:what-are-scheduling-periods.adoc[scheduling period] with the status Published.
+You can use the *Notify people* function for any xref:scheduling:what-are-scheduling-periods.adoc[scheduling period] with the status Published.
 If you filter people by both planning unit and selection, ensure that a scheduling period with the status Published exists for that combination.
 
 1. {nav-to-plan-schedules}
 2. Click btn:[Notify people].
-3. In the window, select the following elements. If you selected values for these elements in the **Schedules** page, they are preselected in the window.
-   - **Planning unit**
-   - **Selection**
-   - **Date range**
-   - **People**: Check the checkboxes next to the people that you want to notify.
+3. In the window, select the following elements. If you selected values for these elements in the *Schedules* page, they are preselected in the window.
+   - *Planning unit*
+   - *Selection*
+   - *Date range*
+   - *People*: Check the checkboxes next to the people that you want to notify.
 4. Click btn:[Notify n people].
 
 When you notify people, they receive generic push notifications or emails, even if you did not make any changes to the schedule. People are only notified about the date range you selected, but not about specific activity changes. To avoid people receiving irrelevant notifications, you can select individual employees in the configuration window.

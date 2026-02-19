@@ -25,56 +25,58 @@ Use a database integration in the following cases:
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Universal interfaces**.
-5. From the **Model name** drop-down menu, select **Database**.
+4. From the *External system* drop-down menu, select *Universal interfaces*.
+5. From the *Model name* drop-down menu, select *Database*.
 6. {btn-save}
 
 [#set-up-your-database-integration]
 == Set up your database integration
 1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link].
-2. In the **Database type** section, select your database type.
-3. In the **Credentials** section, enter your credentials for the database type you selected.
+2. In the *Database type* section, select your database type.
+3. In the *Credentials* section, enter your credentials for the database type you selected.
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
 |Database type
 |Credentials
-|MS&nbsp;SQL&nbsp;Server +MySQL +PostgreSQL
-|**Database name** +**Host** +**Port**: If you use a named instance on an MS SQL Server connection, do not enter a port. Instead, open UDP port 1434 in your firewall to ensure that the SQL Server browser service can determine the port for Cloud Link. +**Username** +**Password**: Enter valid credentials for a database user that has read access to the database.
+|MS SQL Server +MySQL +PostgreSQL
+|*Database name* +*Host* +*Port*: If you use a named instance on an MS SQL Server connection, do not enter a port. Instead, open UDP port 1434 in your firewall to ensure that the SQL Server browser service can determine the port for Cloud Link. +*Username* +*Password*: Enter valid credentials for a database user that has read access to the database.
 |Other (ODBC)
-|**Connection string**: Connection strings contain parameters required for the integration to connect your database server. You can find a connection string suitable for your database type and ODBC driver at [https://www.connectionstrings.com](https://www.connectionstrings.com). + +Example for an InterSystem Caché database: +`DRIVER={InterSystemsODBC};SERVER=myServerAddress;` `PORT=12345;DATABASE=myDataBase;UID=myUsername;PWD=myPassword;`  + +SQL identifier in queries will be delimited by double quotes. Add additional options to the connection string if your ODBC driver does not support this by default, e.g. for Informix. + +Example for an IBM Informix database: +`DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;` + +You can also create an ODBC datasource, in which you configure the driver, server, database, etc. This allows you to add the below DSN option as the connection string instead of including the connection details in the connection string. You still need to add the options that cannot be configured in the ODBC datasource, e.g. `DELIMIDENT=y`. + +DSN examples: + `DSN=myODBCDatasourceName;` +`DSN=myODBCDatasourceName;DELIMIDENT=y;`
+|*Connection string*: Connection strings contain parameters required for the integration to connect your database server. You can find a connection string suitable for your database type and ODBC driver at link:https://www.connectionstrings.com[https://www.connectionstrings.com]. + +Example for an InterSystem Caché database: +`DRIVER={InterSystemsODBC};SERVER=myServerAddress;` `PORT=12345;DATABASE=myDataBase;UID=myUsername;PWD=myPassword;`  + +SQL identifier in queries will be delimited by double quotes. Add additional options to the connection string if your ODBC driver does not support this by default, e.g. for Informix. + +Example for an IBM Informix database: +`DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;` + +You can also create an ODBC datasource, in which you configure the driver, server, database, etc. This allows you to add the below DSN option as the connection string instead of including the connection details in the connection string. You still need to add the options that cannot be configured in the ODBC datasource, e.g. `DELIMIDENT=y`. + +DSN examples: + `DSN=myODBCDatasourceName;` +`DSN=myODBCDatasourceName;DELIMIDENT=y;`
 |===
 
 [#configure-your-import-data]
 == Configure your import data
-1. In the **Configuration** section, select the type of import data that you want to import from your database:
-   - **Type of import data**: You can only select one type of import data at a time. To import data from another type, create a new integration:
-     - **Contact-based**: For historical contact data with one row per contact
-     - **Interval-based** For historical contact data which is aggregated into intervals. Select an interval of 15 or 30 minutes.
-     - **Agent status**: For agent status data. By default, data is imported every 15 minutes.<br>Check **Import real-time agent status data** to import data every 10 seconds (available only in Advanced and Enterprise WFM).<br>Check **Data reconciliation** to control for which time period the agent status data is imported every 15 minutes. Learn more about xref:#data-reconciliation[data reconciliation].
-   - **Time zone**.
-   - **SQL query**: Enter the SQL query to get the data from your database table or view. Learn more about the xref:#sql-query[SQL Query].
+1. In the *Configuration* section, select the type of import data that you want to import from your database:
+   - *Type of import data*: You can only select one type of import data at a time. To import data from another type, create a new integration:
+     - *Contact-based*: For historical contact data with one row per contact
+     - *Interval-based* For historical contact data which is aggregated into intervals. Select an interval of 15 or 30 minutes.
+     - *Agent status*: For agent status data. By default, data is imported every 15 minutes. +
+Check *Import real-time agent status data* to import data every 10 seconds (available only in Advanced and Enterprise WFM). +
+Check *Data reconciliation* to control for which time period the agent status data is imported every 15 minutes. Learn more about xref:#data-reconciliation[data reconciliation].
+   - *Time zone*.
+   - *SQL query*: Enter the SQL query to get the data from your database table or view. Learn more about the xref:#sql-query[SQL Query].
 
 2. {btn-save}  
    The integration starts importing data. The initial import can take a while.  
-   All queues imported from the connected database are available automatically on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.  
+   All queues imported from the connected database are available automatically on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in *Forecast*.  
    External activities are available in the Present activity (ID 1). To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities].
 
 [#data-reconciliation]
 === Data reconciliation
 Sometimes, it may be necessary to manually correct already imported agent status data. An example is when a team member forgot to clock out and you corrected the data in your database to show their actual working time.
 
-By default, the **Data reconciliation** checkbox is activated. The integration re-imports all data
+By default, the *Data reconciliation* checkbox is activated. The integration re-imports all data
 
-- from the last 24&nbsp;hours
-- every 15&nbsp;minutes
+- from the last 24 hours
+- every 15 minutes
 
 You always have access to the most updated data from the last 24 hours. Only changes to data older than 24 hours will not be included in the re-import.
 
-Your database may struggle with the load of continuous data re-import. If you need to deactivate data reconciliation, the newest data since the last successful import (typically data from the last 15&nbsp;minutes) is imported. In this case, you may need to manually update data that was imported more than 15&nbsp;minutes ago. If possible, keep the checkbox activated, because manual data updates cause significant extra work and can be prone to errors.
+Your database may struggle with the load of continuous data re-import. If you need to deactivate data reconciliation, the newest data since the last successful import (typically data from the last 15 minutes) is imported. In this case, you may need to manually update data that was imported more than 15 minutes ago. If possible, keep the checkbox activated, because manual data updates cause significant extra work and can be prone to errors.
 
-When you pause your integration for less than 24&nbsp;hours, all data is re-imported as soon as you restart the integration. This applies regardless of whether the checkbox is checked or unchecked.  
-When you pause the integration for a longer period, all data older than 24&nbsp;hours will not be re-imported.
+When you pause your integration for less than 24 hours, all data is re-imported as soon as you restart the integration. This applies regardless of whether the checkbox is checked or unchecked.  
+When you pause the integration for a longer period, all data older than 24 hours will not be re-imported.
 
 [#sql-query]
 == SQL query
@@ -245,4 +247,4 @@ When your database details or data structure changes, you can edit the configura
 
 [#known-odbc-driver-issues]
 == Known ODBC driver issues
-To prevent increasing TCP connections in Cloud Link when querying data from Amazon Athena, make sure to use the [Athena ODBC 2.x driver version](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver.html).
+To prevent increasing TCP connections in Cloud Link when querying data from Amazon Athena, make sure to use the link:https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver.html[Athena ODBC 2.x driver version].

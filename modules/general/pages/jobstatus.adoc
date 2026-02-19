@@ -7,12 +7,12 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Use the Job status page to view, restart and cancel running jobs.
 :related-articles: backgroundjobs.adoc
 
-The **Job status** page provides an overview of all background jobs started across various parts of Peopleware. Here, you can manage and monitor these processes, including restarting, terminating, deleting jobs, and viewing detailed reports.
+The *Job status* page provides an overview of all background jobs started across various parts of Peopleware. Here, you can manage and monitor these processes, including restarting, terminating, deleting jobs, and viewing detailed reports.
 
 == Prerequisites
 
-- To view the Job status page, you need the **Access to job status** permission.
-- To see jobs of all users, you also need the **Access to jobs of all users** permission. Without this, you will only see your own jobs.
+- To view the Job status page, you need the *Access to job status* permission.
+- To see jobs of all users, you also need the *Access to jobs of all users* permission. Without this, you will only see your own jobs.
 
 [NOTE]
 ====
@@ -41,7 +41,7 @@ Filter the job list to find specific jobs:
 |User
 |Filters the jobs created by a specific user.
 |Status group
-|Filters jobs based on their current status. +**Processed jobs**: Jobs that are actively running or have reached a final status: Starting, Processing, Completed, Suspended, Terminated, Failed. +**Unprocessed jobs**: Jobs that have not begun: Submitted, Not submitted.
+|Filters jobs based on their current status. +*Processed jobs*: Jobs that are actively running or have reached a final status: Starting, Processing, Completed, Suspended, Terminated, Failed. +*Unprocessed jobs*: Jobs that have not begun: Submitted, Not submitted.
 |Type
 |Filters the jobs by type.
 |===
@@ -50,7 +50,7 @@ Filter the job list to find specific jobs:
 
 Every job progresses through various stages, reflected by its status:
 
-<!-- left-align table -->
+
 
 <style>
 table {
@@ -93,16 +93,16 @@ Detailed job results for completed jobs are available as a PDF or HTML report.
 If a job was started as a background job in menu:Account[Background jobs], you can see the background job that triggered it, provided that you have the permissions to access menu:Account[Background jobs].
 
 - Select a job.
-- In the **General** section, click the link below **Triggered by background job:**.
+- In the *General* section, click the link below *Triggered by background job:*.
   Peopleware will redirect you to the original job.
 
 == Manage jobs
 
 The Job status page allows you to perform these actions:
 
-- **Restart**: Starts selected jobs with their original settings.
-- **Terminate**: Cancels selected jobs.
-- **Delete**: Cancels selected jobs and removes them from the list.
+- *Restart*: Starts selected jobs with their original settings.
+- *Terminate*: Cancels selected jobs.
+- *Delete*: Cancels selected jobs and removes them from the list.
 
 1. Select one or more jobs.
 2. Click on the desired action: *Restart*, *Terminate*, or *Delete*.

@@ -16,7 +16,7 @@ You can create a selection to refine filters within a planning unit or to manage
 
 [#use-selections-to-filter-people-within-planning-units]
 == Use selections to filter people within planning units
-You can find planning unit and selection filters in **Plan** and **Intraday**. After selecting the planning unit, you can additionally filter people by selection.
+You can find planning unit and selection filters in *Plan* and *Intraday*. After selecting the planning unit, you can additionally filter people by selection.
 
 For example, you have three planning units and one of the planning units includes people who are taking part in a training program. You can use selections to group them and manage their schedules separately, e.g. to plan specific meetings.
 
@@ -69,9 +69,9 @@ With the following configuration, you can use the Onboarding selection as a filt
 === Filtering option 1: All planning units and one selection
 In {bc-plan-schedules}, you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
 
-- *Planning unit*: Select **All planning units**.
-- **Choose selection**: Select **Onboarding**.  
-   If the **Choose selection** drop-down menu is not displayed, click the {icon-filter-u} on the top left.
+- *Planning unit*: Select *All planning units*.
+- *Choose selection*: Select *Onboarding*.  
+   If the *Choose selection* drop-down menu is not displayed, click the {icon-filter-u} on the top left.
 
 [#filtering-option-2-one-selection-and-no-planning-unit]
 === Filtering option 2: One selection and no planning unit
@@ -80,7 +80,7 @@ In {bc-intraday-real-time-adherence}, you can filter the scheduled activities of
 To filter by selection, use the following drop-down menus:
 
 - *Planning unit*: Make sure that no planning unit is selected.
-- *Selection*: Select **Onboarding**.
+- *Selection*: Select *Onboarding*.
 
 [#filtering-option-3-one-selection-and-one-planning-unit]
 === Filtering option 3: One selection and one planning unit
@@ -89,12 +89,12 @@ If you have specific time-off conditions for people in the onboarding phase, you
 To create specific time-off periods for the Onboarding selection:
 
 1. In {bc-plan-time-off}, click btn:[Time-off periods].  
-   You will be redirected to the **Time-off Periods** page.
+   You will be redirected to the *Time-off Periods* page.
 2. Click btn:[Create time-off period].  
    A dialog window opens.
 3. Filter by selection with the following drop-down menus:
-   - *Planning unit*: Select **Office 1**.
-   - *Selection*: Select **Onboarding**.
+   - *Planning unit*: Select *Office 1*.
+   - *Selection*: Select *Onboarding*.
 4. Complete the remaining fields.  
    Learn more about the configuration of xref:scheduling:time-off-periods-legacy.adoc[time-off periods].
 5. {btn-save}

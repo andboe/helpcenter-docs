@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Prevent plannable activities from being scheduled with the Create optimized schedule feature.
 :related-articles: schedules-optimized-schedules.adoc, work-with-attributes.adoc, concept-scheduling-rules.adoc
 
-This article explains how to prevent individual, plannable activities from being scheduled with the **Create optimized schedule** feature.
+This article explains how to prevent individual, plannable activities from being scheduled with the *Create optimized schedule* feature.
 For example, use this feature to make sure that a day model's base activity is not written to the actual schedule.
 
 [NOTE]
@@ -25,10 +25,10 @@ For more information, get in touch with your Peopleware representative.
 === Permissions
 Your role needs to have the following functional permissions:
 
-- **Plan**
-  - **Access to Plan Configuration**
-- **People**
-  - **Edit People**
+- *Plan*
+  - *Access to Plan Configuration*
+- *People*
+  - *Edit People*
 
 Additionally, your role needs object permissions to edit the relevant objects:
 
@@ -41,9 +41,9 @@ Additionally, your role needs object permissions to edit the relevant objects:
 
 1. Go to menu:Plan[Configuration>Attributes].
 2. Check if the following attribute already exists:
-   - **Name**: `Optimisation: remove on writing`
-   - **Type**: Yes/No
-   - **Available for**: Activities
+   - *Name*: `Optimisation: remove on writing`
+   - *Type*: Yes/No
+   - *Available for*: Activities
 3. If the attribute does not exist, create it:
    1. In the Attributes overview table, click btn:[Create].
    2. Set the parameters as described in step 2.
@@ -56,15 +56,15 @@ The attribute can now be assigned to activities.
 === Assign attribute to activity
 1. Go to {bc-plan-config-activities}.
 2. Open the activity you want to exclude from scheduling.
-3. Navigate to the **Attributes** section.
+3. Navigate to the *Attributes* section.
 4. {btn-add}
    Configure the new attribute:
-   - **Attribute**: `Optimisation: remove on writing`.
-   - **Value**: Yes
-   - **Priority**: 1
+   - *Attribute*: `Optimisation: remove on writing`.
+   - *Value*: Yes
+   - *Priority*: 1
    - (Optional): Set a validity period for the attribute assignment.
      If you set a validity period, the activity will only be excluded from scheduling during that period.
 5. {btn-save}
 
-**Create optimized schedule** jobs will from now on exclude this activity from scheduling.
+*Create optimized schedule* jobs will from now on exclude this activity from scheduling.
 The jobs' logs contain information about which activities were removed from the schedule based on this attribute.

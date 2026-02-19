@@ -321,7 +321,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 |Name
 |Description
 |Name
-|Name of the person to whom the override value applies. Peopleware uses the override value for people being scheduled by that person when using the **Create optimized schedule** functionality.
+|Name of the person to whom the override value applies. Peopleware uses the override value for people being scheduled by that person when using the *Create optimized schedule* functionality.
 |Value
 |Value that overrides the system value for this person.
 |===

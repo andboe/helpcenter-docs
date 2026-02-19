@@ -15,17 +15,17 @@ This article lists all queue settings available in menu:Analyze[Configuration].
 |===
 |Field
 |Description
-|**Name**
+|*Name*
 |Queue name
-|**Abbreviation**
+|*Abbreviation*
 |Abbreviation for the queue name
-|**Interval**
+|*Interval*
 |Time increments (e.g., 15 min, 30 min, 1 hr) at which Peopleware imports queue data.
-|**Description**
+|*Description*
 |Optional description of the queue
-|**Parent queue**
+|*Parent queue*
 |Primary queue under which the current queue is grouped.
-|**Time zone**
+|*Time zone*
 |Specific geographical region time standard applied to the queue's data.
 |===
 
@@ -39,14 +39,14 @@ The list of event types that apply to the queue.
 |===
 |Field
 |Description
-|**Name**
+|*Name*
 |Event type name
-|**From**
+|*From*
 |Start time of the event type
-|**To**
+|*To*
 |End time of the event type
-|**+Add**
-|Opens the **Add event types** page.
+|*+Add*
+|Opens the *Add event types* page.
 |===
 
 ==== Add event types
@@ -55,11 +55,11 @@ The list of event types that apply to the queue.
 |===
 |Field
 |Description
-|**Search field**
+|*Search field*
 |Allows event type search by name.
-|**From**
+|*From*
 |Edits the event type start time.
-|**To**
+|*To*
 |Edits the event type end time.
 |===
 
@@ -71,12 +71,12 @@ The list of value types that apply to the queue.
 |===
 |Field
 |Description
-|**Name**
+|*Name*
 |Event type name
-|**Formula**
+|*Formula*
 |Value type formula. Only applies to virtual value types.
-|**+Add**
-|Opens the **Add event types** page.
+|*+Add*
+|Opens the *Add event types* page.
 |===
 
 == Value types
@@ -85,9 +85,9 @@ The list of value types that apply to the queue.
 |===
 |Field
 |Description
-|**Search field**
+|*Search field*
 |Allows value type search by name.
-|**ID**
+|*ID*
 |Value type ID
 |===
 
@@ -97,12 +97,12 @@ The list of value types that apply to the queue.
 |===
 |Field
 |Description
-|**Name**
+|*Name*
 |Value type name
-|**Abbreviation**
+|*Abbreviation*
 |Abbreviation for the value type name
-|**Aggregation type**
+|*Aggregation type*
 |Selects an aggregation type.
-|**Description**
+|*Description*
 |Optional description for the value type
 |===

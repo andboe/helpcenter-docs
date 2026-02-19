@@ -28,9 +28,9 @@ Selections are commonly used to group people with the following characteristics:
 == Create selections
 1. In {bc-plan-config-selections}, click btn:[Create] at the top right.
 2. {enter-info}
-   - **Name**
-   - **Abbreviation**
-   - (Optional) **Description**
+   - *Name*
+   - *Abbreviation*
+   - (Optional) *Description*
 3. {btn-save}
 
 Now, you can add the following configuration data to your selection:
@@ -45,17 +45,17 @@ To add selections to people, you need to xref:administration:selections.adoc#cre
 
 1. Go to {bc-people-overview}.
 2. {select-person}
-3. In the left-side menu, click **Planning**.
-4. In the *Selections* section, click {icon-plus} **Add**.
+3. In the left-side menu, click *Planning*.
+4. In the *Selections* section, click {icon-plus} *Add*.
 5. Select the selections you want to add to the person.
-6. (Optional) Select **Valid from** and **Valid to** dates if you want to add the selections only temporarily to the person.
+6. (Optional) Select *Valid from* and *Valid to* dates if you want to add the selections only temporarily to the person.
 7. {btn-save}
 
 [#remove-selections-from-people]
 == Remove selections from people
 1. {nav-to-people}
 2. {select-person}
-3. In the left-side menu, click **Planning**.
+3. In the left-side menu, click *Planning*.
 4. In the *Selections* section, hover over the selection that you want to remove and click the {icon-delete}.
 5. In the confirmation window, click btn:[Remove].
 
@@ -63,7 +63,7 @@ To add selections to people, you need to xref:administration:selections.adoc#cre
 == Manage people in a selection
 In {bc-people}, you can filter people by the selections to which they belong.
 
-To do so, click btn:[{icon-filter} Filter] and, in the **Selection** drop-down, select the selection by which you want to filter.
+To do so, click btn:[{icon-filter} Filter] and, in the *Selection* drop-down, select the selection by which you want to filter.
 
 The list updates to show only people in that selection. To access a person's settings, click their row on the list.
 
@@ -78,13 +78,13 @@ Then, you can edit a selection to add subselections as follows:
 
 1. Go to {bc-plan-config-selections}.
 2. Click the selection you want to use as a parent selection in the selections list.
-3. In the **Subselections** section, click {icon-plus} **Add**.
+3. In the *Subselections* section, click {icon-plus} *Add*.
 4. Complete the following fields:
-   - **Selections**: Select all selections you want to add as subselections.
-   - (Optional) **Valid from/Valid to**: Configure these dates if you want to add the subselection only temporarily to the main selection.
+   - *Selections*: Select all selections you want to add as subselections.
+   - (Optional) *Valid from/Valid to*: Configure these dates if you want to add the subselection only temporarily to the main selection.
 5. {btn-save}
 
-To edit or remove a subselection, hover over it in the **Subselections** list in the configuration window and click the {icon-arrow-up-right-from-square} or the {icon-delete}.
+To edit or remove a subselection, hover over it in the *Subselections* list in the configuration window and click the {icon-arrow-up-right-from-square} or the {icon-delete}.
 
 [NOTE]
 ====

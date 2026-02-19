@@ -26,8 +26,9 @@ To edit day models, you need to have a role with the following object permission
 You can create and edit day models under menu:Plan[Configuration>Day models].
 
 1. To create a new day model, click btn:[Create].
-2. From the **Type** drop-down menu, select the day model type you want to configure.
-3. Configure your day model.<br>To find out more about the configuration options for each day model type, see the following sections.
+2. From the *Type* drop-down menu, select the day model type you want to configure.
+3. Configure your day model. +
+To find out more about the configuration options for each day model type, see the following sections.
 4. To save the day model, click btn:[Save].
 
 Now, you can xref:administration:create-and-manage-planning-units.adoc#limit-day-models[add activities ; features/administration/daymodels/daymodel-creation.md ; #add-activities-to-day-models %} to the new day model.
@@ -40,14 +41,14 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 === Fixed
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|**Parameter**
-|**Description**
+|*Parameter*
+|*Description*
 |Name
 |Unique name to describe the day model. We recommend specifying the day model type and its start and end times, e.g. 8-16:30-fix.
 |Abbreviation
 |This version of the name is displayed in reports and in Schedules. We recommend using the specified name or a shorter version of it.
 |Shortcut
-|Optional keyboard shortcut to help you insert the day model more quickly in Shift Center. Learn more about {% link_new shortcuts].
+|Optional keyboard shortcut to help you insert the day model more quickly in Shift Center. Learn more about xref:ROOT:shortcuts[.
 |Color
 |The color that appears in the schedule and on configuration data pages. +It can help you quickly identify the length, day model type, or included activities.
 |Valid from/Valid to
@@ -55,7 +56,7 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 |Start time
 |Time at which the fixed shift begins.
 |Total shift duration
-|Duration of the shift in hours. +If you configure this value, it will replace the configured end time. +Note: Day models of type Fixed can span up to two days. To create a night shift, add up to 24 hours to the end time when creating the day model, or use the total shift duration. The maximum value is 48:00&nbsp;(h).
+|Duration of the shift in hours. +If you configure this value, it will replace the configured end time. +Note: Day models of type Fixed can span up to two days. To create a night shift, add up to 24 hours to the end time when creating the day model, or use the total shift duration. The maximum value is 48:00 (h).
 |Activity
 |The first activity is the xref:administration:daymodel-basics.adoc[base activity].
 |===
@@ -63,7 +64,7 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 [#change-the-base-activity]
 === Change the base activity
 1. Select a day model.
-2. In the **Assignments** section, click the **Base activity**.
+2. In the *Assignments* section, click the *Base activity*.
 3. {select-activity}
 4. {btn-save}
 
@@ -71,8 +72,8 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 === Variable
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|**Parameter**
-|**Description**
+|*Parameter*
+|*Description*
 |Name
 |Unique name to describe the day model. We recommend specifying the day model type and its start and end times, e.g. var-8-20-8.
 |Abbreviation
@@ -88,7 +89,7 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 |Total shift duration
 |Total shift duration including breaks. The duration must be shorter than the time frame. If the shift duration equals the time frame, the day model automatically becomes a day model of type Fixed.
 |Interval
-|Interval in which a shift can start within the defined time frame. For example, with an interval of 30, the shift can begin every 30&nbsp;minutes within the defined time frame.
+|Interval in which a shift can start within the defined time frame. For example, with an interval of 30, the shift can begin every 30 minutes within the defined time frame.
 |Activity
 |The first activity is the xref:administration:daymodel-basics.adoc[base activity]. +Note: You cannot change the base activity after saving the day model.
 |===
@@ -101,8 +102,8 @@ Learn more about xref:administration:availabilities.adoc[availabilities].
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
-|**Parameter**
-|**Description**
+|*Parameter*
+|*Description*
 |Name
 |Unique name to describe the day model. We recommend specifying the day model type and its start and end times, e.g. avail-8-16.
 |Abbreviation
@@ -114,7 +115,7 @@ Learn more about xref:administration:availabilities.adoc[availabilities].
 |Start time
 |Earliest possible time at which the shift can start.
 |Total shift duration
-|Number of hours between the earliest start and latest end time of the shift. The maximum value is 48&nbsp;hours.
+|Number of hours between the earliest start and latest end time of the shift. The maximum value is 48 hours.
 |===
 
 [#add-activities-to-day-models]
@@ -140,14 +141,19 @@ We recommend using the activity Present as base activity. Find out more about th
 To add a presence or absence activity to an existing day model, proceed as follows:
 
 1. Select a day model.
-2. In the **Assignments** section, click the contextual menu {icon-context-menu} on the **Presences and absences** row.
-3. Click **+ Add**.
+2. In the *Assignments* section, click the contextual menu {icon-context-menu} on the *Presences and absences* row.
+3. Click *+ Add*.
 4. Configure the activity:
-   - Select an **Activity** from the drop-down menu.
-   - **Start** and **End**:<br>If the **Relative to Start of Shift** checkbox is checked: Define the number of hours/minutes after the start of the shift at which you want the activity to start and end (e.g. for 1.5 hours, enter 1:30).<br>If the **Relative to Start of Shift** checkbox is unchecked: Define the exact time after the start of the shift at which you want the activity to start and end (e.g. for 2pm, enter 14:00).
-   - **Total activity duration**: If you configure a duration that is longer than the time between the configured start and end times, you create a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridor] within which the activity can be moved.
-   - **Interval**: We recommend using the same interval as your ACD. The activity length must be divisible by the selected interval.<br>If you enter 0, the start time of the activity is fixed and the activity cannot be moved within a corridor.
-   - **Relative to start of shift**:<br>If checked (default), the activity starts at the defined number of hours/minutes after the shift start. If the shift is moved, the activity is moved as well.<br>If unchecked, the activity starts at the exact configured time. When you move a variable shift, the activities will not move. This can be useful, e.g. when employees with different shifts need to attend a team meeting at the same time.
+   - Select an *Activity* from the drop-down menu.
+   - *Start* and *End*: +
+If the *Relative to Start of Shift* checkbox is checked: Define the number of hours/minutes after the start of the shift at which you want the activity to start and end (e.g. for 1.5 hours, enter 1:30). +
+If the *Relative to Start of Shift* checkbox is unchecked: Define the exact time after the start of the shift at which you want the activity to start and end (e.g. for 2pm, enter 14:00).
+   - *Total activity duration*: If you configure a duration that is longer than the time between the configured start and end times, you create a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridor] within which the activity can be moved.
+   - *Interval*: We recommend using the same interval as your ACD. The activity length must be divisible by the selected interval. +
+If you enter 0, the start time of the activity is fixed and the activity cannot be moved within a corridor.
+   - *Relative to start of shift*: +
+If checked (default), the activity starts at the defined number of hours/minutes after the shift start. If the shift is moved, the activity is moved as well. +
+If unchecked, the activity starts at the exact configured time. When you move a variable shift, the activities will not move. This can be useful, e.g. when employees with different shifts need to attend a team meeting at the same time.
 
 5. {btn-ok}
 
@@ -156,16 +162,21 @@ To add a presence or absence activity to an existing day model, proceed as follo
 To add a break activity for optimized scheduling and shift bidding to an existing variable and fixed day model, proceed as follows:
 
 1. Select a day model.
-2. In the **Assignments** section, click the contextual menu {icon-context-menu} on the **Breaks** row.
-3. Click **+ Add**.
+2. In the *Assignments* section, click the contextual menu {icon-context-menu} on the *Breaks* row.
+3. Click *+ Add*.
 4. Configure the break:
-   - Select a break **Activity** from the drop-down menu.
-   - **Start** and **End**:<br>If the **Relative to Start of Shift** checkbox is checked: Define the number of hours/minutes after the start of the shift at which you want the break to start and end (e.g. for 4.5 hours, enter 4:30). By default, breaks are entered relative to the start of the shift, because they usually start after a certain time at work.<br>If the **Relative to Start of Shift** checkbox is unchecked: Define the exact time after the start of the shift at which you want the break to start and end (e.g. for 1pm, enter 13:00).
-   - **Total activity duration**: If you configure a duration that is longer than the time between the configured start and end times, you create a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridor] within which the break can be moved.
-   - **Interval**: Use the same interval as your ACD. The break length must be divisible by the selected interval.<br>If you enter 0, the start time of the break is fixed and the break cannot be moved within a corridor.
-   - **Relative to Start of Shift**:<br>If checked (default), the break starts at the defined number of hours/minutes after the start of the shift. If the shift is moved, the break is moved as well.<br>If unchecked, the break starts at the exact configured time. When you move a variable shift, the breaks will not move. This can be useful, e.g. if the cafeteria in your contact center is only open for a limited time.
+   - Select a break *Activity* from the drop-down menu.
+   - *Start* and *End*: +
+If the *Relative to Start of Shift* checkbox is checked: Define the number of hours/minutes after the start of the shift at which you want the break to start and end (e.g. for 4.5 hours, enter 4:30). By default, breaks are entered relative to the start of the shift, because they usually start after a certain time at work. +
+If the *Relative to Start of Shift* checkbox is unchecked: Define the exact time after the start of the shift at which you want the break to start and end (e.g. for 1pm, enter 13:00).
+   - *Total activity duration*: If you configure a duration that is longer than the time between the configured start and end times, you create a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridor] within which the break can be moved.
+   - *Interval*: Use the same interval as your ACD. The break length must be divisible by the selected interval. +
+If you enter 0, the start time of the break is fixed and the break cannot be moved within a corridor.
+   - *Relative to Start of Shift*: +
+If checked (default), the break starts at the defined number of hours/minutes after the start of the shift. If the shift is moved, the break is moved as well. +
+If unchecked, the break starts at the exact configured time. When you move a variable shift, the breaks will not move. This can be useful, e.g. if the cafeteria in your contact center is only open for a limited time.
 
-5. Select a break option from the **Break** drop-down menu.
+5. Select a break option from the *Break* drop-down menu.
 6. {btn-ok}
 
 [#how-changes-to-day-models-affect-scheduling]
@@ -184,9 +195,9 @@ Changes to the scheduling-related properties have the following effects:
 == Add day models to people
 1. Go to {bc-people-overview}.
 2. {select-person}
-3. Under **Planning** in the left-side menu, click {icon-plus} **Add** in the *Day models* section.
+3. Under *Planning* in the left-side menu, click {icon-plus} *Add* in the *Day models* section.
 4. Select the day models you want to add to the person.
-5. (Optional) Select **Valid from** and **Valid to** dates if you want to add the day models only temporarily to the person.
+5. (Optional) Select *Valid from* and *Valid to* dates if you want to add the day models only temporarily to the person.
 6. {btn-save}
 
 [#duplicate-day-models]

@@ -18,28 +18,28 @@ To access advanced filters, go to menu:People[Advanced filters].
 [#create-a-filter]
 == Create a filter
 1. In menu:People[Advanced filters], click btn:[Create].
-2. Select a xref:people:advanced-filters.adoc#time-frames[**Time frame**].
-3. Select a **Date range**.
-4. Click btn:[+ Add group]. Learn more about xref:people:advanced-filters.adoc#groups[**groups**].
-5. Click btn:[+Add criterion]. Learn more about xref:people:advanced-filters.adoc#criteria[**Criteria**].
+2. Select a xref:people:advanced-filters.adoc#time-frames[*Time frame*].
+3. Select a *Date range*.
+4. Click btn:[+ Add group]. Learn more about xref:people:advanced-filters.adoc#groups[*groups*].
+5. Click btn:[+Add criterion]. Learn more about xref:people:advanced-filters.adoc#criteria[*Criteria*].
 6. (Optional) Add more groups or criteria.
 7. {btn-save}
 
 [#edit-a-filter]
 == Edit a filter
-1. In the **Advanced filters** section, select a filter or use the search field.
+1. In the *Advanced filters* section, select a filter or use the search field.
 2. Edit the filter.
 3. {btn-save}
 
 [#duplicate-a-filter]
 == Duplicate a filter
-1. In the **Advanced filters** section, select a filter or use the search field.
+1. In the *Advanced filters* section, select a filter or use the search field.
 2. Click the three-dot menu icon {icon-context-menu}.
 3. Click {icon-overlapping-boxes} Duplicate.
 
 [#delete-a-filter]
 == Delete a filter
-1. In the **Advanced filters** section, select a filter or use the search field.
+1. In the *Advanced filters* section, select a filter or use the search field.
 2. Click the three-dot menu icon {icon-context-menu}.
 3. Click {icon-delete} Delete.
 4. To confirm, click btn:[Delete].

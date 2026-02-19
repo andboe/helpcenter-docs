@@ -14,38 +14,46 @@ Adjust the forecast if any of the following conditions apply:
 
 - You do not have enough historical data, or your data is not correct.
 - Your contact volume or AHT values deviate from current trends and you do not expect them to change back. Such deviations could be due, for example, to structural changes in your business.
-- Your contact volumes are unusually high or low during a specific period, for example during a marketing campaign.<br> In this case, remove the irregularities, or xref:forecast:events-and-holidays.adoc#add-an-event-to-a-workload[add an outage] to exclude the period from the forecast calculation.
+- Your contact volumes are unusually high or low during a specific period, for example during a marketing campaign. +
+In this case, remove the irregularities, or xref:forecast:events-and-holidays.adoc#add-an-event-to-a-workload[add an outage] to exclude the period from the forecast calculation.
 
 Manual adjustments change the generated forecast, but new forecast calculations do not overwrite manually adjusted values. You cannot adjust any values for periods with historical data only. If periods contain historical and forecast data, only the forecast data is updated.
 
 [#adjust-the-volume]
 == Adjust the volume
 1. {nav-to-forecast-workloads}
-2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.<br>The time frame you select determines the adjustment options shown.
+2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week. +
+The time frame you select determines the adjustment options shown.
 3. In the volume section, click btn:[Adjust volume].
 4. In the configuration window, configure your adjustment:
-   - **Date range**: Available if you selected a time frame of several days in step 2.
-   - **Start time** and **End time**: Available if you selected a time frame of one day in step 2.
-   - **alter (%)**/**overwrite**: Select one option from the drop-down menu.<br>**alter (%)** adjusts the current volume value by a percentage, that can be a positive or negative number.<br>**overwrite** replaces the current volume value with a new value, that must be a positive whole number.
-   - **Value**: Enter a value to alter or overwrite the volume.<br>Learn xref:#how-do-time-frames-affect-volume-and-aht-adjustments[how volume and AHT values are adjusted].
+   - *Date range*: Available if you selected a time frame of several days in step 2.
+   - *Start time* and *End time*: Available if you selected a time frame of one day in step 2.
+   - *alter (%)*/*overwrite*: Select one option from the drop-down menu. +
+*alter (%)* adjusts the current volume value by a percentage, that can be a positive or negative number. +
+*overwrite* replaces the current volume value with a new value, that must be a positive whole number.
+   - *Value*: Enter a value to alter or overwrite the volume. +
+Learn xref:#how-do-time-frames-affect-volume-and-aht-adjustments[how volume and AHT values are adjusted].
 
-5. Click btn:[Apply adjustment].<br>
-   Changes are highlighted in the volume graph. Hover over the graph to see more details about your contact volume, AHT, staff requirements, and events.
+5. Click btn:[Apply adjustment]. +
+Changes are highlighted in the volume graph. Hover over the graph to see more details about your contact volume, AHT, staff requirements, and events.
 
 [#adjust-the-aht]
 == Adjust the AHT
 1. {nav-to-forecast-workloads}
 2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
-3. Next to **AHT**, click the {icon-eye-slash}.
+3. Next to *AHT*, click the {icon-eye-slash}.
 4. Click btn:[Adjust AHT].
 5. In the configuration window, configure your adjustment:
-   - **Date range**: Available if you selected a time frame of several days in step 2.
-   - **Start time** and **End time**: Available if you selected a time frame of one day in step 2.
-   - **alter (%)**/**overwrite**: Select one option from the drop-down menu.<br>**alter (%)** adjusts the current AHT value by a percentage, that can be a positive or negative number.<br>**overwrite** replaces the current AHT value with a new value, that must be a positive whole number.
-   - **Value**: Enter a value to alter or overwrite the AHT.<br> Learn xref:#how-do-time-frames-affect-volume-and-aht-adjustments[how volume and AHT values are adjusted].
+   - *Date range*: Available if you selected a time frame of several days in step 2.
+   - *Start time* and *End time*: Available if you selected a time frame of one day in step 2.
+   - *alter (%)*/*overwrite*: Select one option from the drop-down menu. +
+*alter (%)* adjusts the current AHT value by a percentage, that can be a positive or negative number. +
+*overwrite* replaces the current AHT value with a new value, that must be a positive whole number.
+   - *Value*: Enter a value to alter or overwrite the AHT. +
+Learn xref:#how-do-time-frames-affect-volume-and-aht-adjustments[how volume and AHT values are adjusted].
 
-6. Click btn:[Apply adjustment].<br>
-   Changes are highlighted in the AHT graph. Hover over the graph to see more details about your contact volume, AHT, staff requirements, and events.
+6. Click btn:[Apply adjustment]. +
+Changes are highlighted in the AHT graph. Hover over the graph to see more details about your contact volume, AHT, staff requirements, and events.
 
 Repeat this procedure to readjust values if there is a significant difference between the generated forecast and your manual adjustment.
 
@@ -64,13 +72,13 @@ Adjustments have a different impact based on the time frame you selected in the 
 |Impact of the adjustment
 |Volume
 |Single day
-|A percentage value decreases or increases the existing values for all intervals within **Start time** and **End time**. + An absolute value overwrites the existing values for all intervals within **Start time** and **End time**.
+|A percentage value decreases or increases the existing values for all intervals within *Start time* and *End time*. + An absolute value overwrites the existing values for all intervals within *Start time* and *End time*.
 |Volume
 |Several days
 |Both a percentage value and an absolute value increase or decrease the total volume. The value distributes proportionally over the selected period, preserving the trends and distribution patterns for all intervals.
 |AHT
 |Single day
-|A percentage value decreases or increases the existing values for the intervals included within **Start time** and **End time**. + An absolute value overwrites the existing values for all intervals included within **Start time** and **End time**.
+|A percentage value decreases or increases the existing values for the intervals included within *Start time* and *End time*. + An absolute value overwrites the existing values for all intervals included within *Start time* and *End time*.
 |AHT
 |Several days
 |Both a percentage value and an absolute value increase or decrease the total weighted average displayed. AHT values are distributed over the selected period, preserving the trends and distribution patterns for all intervals. This may result in higher or lower values on one or more days.
@@ -83,11 +91,11 @@ You can delete adjustments that are no longer relevant.
 1. {nav-to-forecast-workloads}
 2. Select the adjustments you want to delete:
    - In the volume section, click btn:[Adjust volume].
-   - In the **AHT** section, click btn:[Adjust AHT].
+   - In the *AHT* section, click btn:[Adjust AHT].
 
-3. Select a **Date range**.
-4. Click btn:[Delete all adjustments] to remove all adjustments from the selected date range.<br>
-   You see the original forecast values for the selected date range.
+3. Select a *Date range*.
+4. Click btn:[Delete all adjustments] to remove all adjustments from the selected date range. +
+You see the original forecast values for the selected date range.
 
 [#use-staff-requirements-for-scheduling]
 == Use staff requirements for scheduling
@@ -97,7 +105,7 @@ If you xref:forecast:task-set-up-staff-requirement-calculation.adoc[set up the s
 
 To update staff requirement data via manual staff requirement calculations, proceed as follows:
 
-1. From the {icon-context-menu} at the top right, select **Use forecast**.
+1. From the {icon-context-menu} at the top right, select *Use forecast*.
 2. In the configuration window, click btn:[Use forecast].
 3. In {bc-forecast-requirement-calculations}, select a requirement calculation option.
 4. Configure and run the calculation. For more information, see xref:forecast:task-run-requirement-calculations.adoc[Run staff requirement calculations].

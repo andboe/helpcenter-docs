@@ -18,12 +18,13 @@ Cloud integrations fetch data directly from a cloud system. We support a variety
 1. {nav-to-account-integrations} The page shows all available integrations.
 2. Click btn:[Create] and enter the required information. In this example, we're setting up the Five9 integration, but the process for setting up other cloud integrations is similar.
 3. Enter a unique name for your integration. The name should reflect the source of the data.
-4. From the drop-down menu, select your **External system**.<br> Depending on the external system you select, you might be able to select a **Model name** from the drop-down menu.
+4. From the drop-down menu, select your *External system*. +
+Depending on the external system you select, you might be able to select a *Model name* from the drop-down menu.
 5. {btn-save}
 6. Configure further integration-specific details (i.e. the region of your Five9 account and how you would like to group the queues).
 7. Click btn:[Save] to create the integration with the provided information.
 
-The integration now imports data. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.
+The integration now imports data. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in *Forecast*.
 
 If your integration supports the import of agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities] before agent status data can be imported.
 
@@ -36,12 +37,13 @@ On-premise integrations use xref:acd-integration:install-cloud-link.adoc[Cloud L
 1. {nav-to-account-integrations}
 2. {btn-create}
 3. Enter a unique name for your integration. The name should reflect the source of the data.
-4. From the drop-down menu, select your **External system**.<br> Depending on the external system you select, you might be able to select a **Model name** from the drop-down menu.
+4. From the drop-down menu, select your *External system*. +
+Depending on the external system you select, you might be able to select a *Model name* from the drop-down menu.
 5. {btn-save}
 6. Install the xref:acd-integration:install-cloud-link.adoc[Cloud Link client].
 7. Configure further integration-specific details.
 8. {btn-save}
 
-The integration starts importing contact data. The first import can take some time. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.
+The integration starts importing contact data. The first import can take some time. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in *Forecast*.
 
 If your integration supports the import of agent status data, xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities]. The integration can then import agent status data.

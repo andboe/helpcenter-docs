@@ -29,7 +29,7 @@ table th:nth-of-type(2) {
 
 [#Report]
 == Report
-<!-- image::backgroundjobs-examples/image-1.png[Sending Job Manager Report via Email, width=50%] -->
+
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -329,7 +329,7 @@ In addition to the internal report name specified by the `cmd` parameter, weekly
 
 [#insert-shift-sequences]
 == Insert shift sequences
-<!-- image::backgroundjobs-examples/image-2.png[Insert Shift Sequences, width=50%] -->
+
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -361,7 +361,7 @@ In addition to the internal report name specified by the `cmd` parameter, weekly
 
 [#lottery-and-assignment]
 === Lottery and assignment
-<!-- image::backgroundjobs-examples/image-3.png[Lottery or Assignment, width=50%] -->
+
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -378,7 +378,7 @@ In addition to the internal report name specified by the `cmd` parameter, weekly
 |observecorr
 |Take the tolerance value for the start time into account +Values: 0 (no), 1 (yes)
 |periodid
-|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the [API](https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate). If the time period for job processing is set to relative, only the relevant planning period is taken into account.
+|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the link:https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate[API]. If the time period for job processing is set to relative, only the relevant planning period is taken into account.
 |puid
 |Planning unit ID
 |staffcount
@@ -389,14 +389,14 @@ In addition to the internal report name specified by the `cmd` parameter, weekly
 
 [#copy-level]
 === Copy level
-The **Copy level content** functionality can be found under menu:Plan[Schedules>Scheduling actions].
+The *Copy level content* functionality can be found under menu:Plan[Schedules>Scheduling actions].
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
 |Parameter
 |Description
 |copystartdate
-|Start date for inserting the data in [Julian date format](https://www.onlineconversion.com/julian_date.htm). Data is shifted if the date is not the start date of the planning period.
+|Start date for inserting the data in link:https://www.onlineconversion.com/julian_date.htm[Julian date format]. Data is shifted if the date is not the start date of the planning period.
 |deletesource
 |Delete the source level. +Values: 0 (Keep source level), 1 (delete source level)
 |lid
@@ -406,7 +406,7 @@ The **Copy level content** functionality can be found under menu:Plan[Schedules>
 |modelcase
 |Internal ID. +Values: 15 (copy level), 16 (delete level)
 |periodid
-|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the [API](https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate). If the time period for job processing is set to relative, only the relevant planning period is taken into account.
+|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the link:https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate[API]. If the time period for job processing is set to relative, only the relevant planning period is taken into account.
 |puid
 |ID of the planning unit. Can be filtered by ID when separated by a delimiter (-).
 |sourcelevel
@@ -436,7 +436,7 @@ Email parameters are optional. If the email parameters are not configured, the r
 |sendtoall
 |Send a single email to the selected employees +Values: 1 (yes), 0 (no)
 |sendperemp
-|Send an individual email to the selected employee. Not available for all reports <!-- which? --> +Values: 1 (yes), 0 (no)
+|Send an individual email to the selected employee. Not available for all reports  +Values: 1 (yes), 0 (no)
 |email
 |Recipient email address. Multiple email recipients not supported. If needed, use an email distribution list that forwards internally to multiple recipients. The email parameter is not used when the em parameter specifies IDs.
 |emailtype
@@ -447,7 +447,7 @@ Email parameters are optional. If the email parameters are not configured, the r
 
 [#language-id]
 === Language ID
-The **lid** parameter defines the language ID for the resulting report.
+The *lid* parameter defines the language ID for the resulting report.
 
 - 1031 (German)
 - 1033 (English US)
@@ -462,7 +462,7 @@ The **lid** parameter defines the language ID for the resulting report.
 
 [#level-id]
 === Level ID
-The **level** parameter defines the level from which data is read.
+The *level* parameter defines the level from which data is read.
 
 - 1000 (plan)
 - 3000 (current status)

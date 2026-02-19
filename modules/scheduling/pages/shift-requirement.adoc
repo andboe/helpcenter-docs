@@ -29,7 +29,7 @@ The shift requirement is required for the xref:scheduling:shift-bidding.adoc[shi
 Check or edit the shift requirements in menu:WFM[Scheduling>SchedulePro>Shift Requirement].
 
 1. Select a *Planning Unit*.
-2. Click **Apply**.
+2. Click *Apply*.
 
 The shift requirement table shows fixed and variable day models assigned to the planning unit.
 
@@ -40,8 +40,8 @@ You can add xref:administration:day-types.adoc[day types] to the planning unit t
 [#adjust-shift-requirements]
 == Edit shift requirements
 1. Select a *Planning Unit*.
-2. Edit the **Min/Max values** for one or more day models.
-3. Click **Save**.
+2. Edit the *Min/Max values* for one or more day models.
+3. Click *Save*.
 
 [#meaning-of-minimum-and-maximum-values]
 == Meaning of minimum and maximum values
@@ -70,7 +70,7 @@ Hints
 >
 [NOTE]
 ====
-**Shifts in shift sequences**
+*Shifts in shift sequences*
 ====
 >
 [NOTE]
@@ -80,7 +80,7 @@ If a day model is already used twice in shift sequences and you need at least th
 >
 [NOTE]
 ====
-**Interpretation of missing entries**
+*Interpretation of missing entries*
 ====
 >
 [NOTE]
@@ -91,7 +91,7 @@ If you don't enter any values in the table, the shift generation will create as 
 == Key figures in Shift Center
 The Shift Center shows the generated shifts for each individual day model. You can find the key figure _requirement_ in the parameter window on the worksheet _Day Models_ .
 
-<!-- no image but link in DE -->
+
 
 image::shift-requirement/image-2.png[Shift Center Parameter value, width=50%]
 

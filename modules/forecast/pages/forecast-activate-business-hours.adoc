@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: what-is-forecast.adoc, create-workloads.adoc
 :page-aliases: forecast-activate-business-hours
 
-New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
+New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 
 By default, workloads do not take business hours into account, and forecasts are based on the total daily volume. You can configure workloads so that business hours are taken into account and displayed in the forecast. Staff requirements always take business hours into account by default.
 
@@ -19,7 +19,7 @@ The Classic plan supports business hours only in Smart workloads.
 {prereq-intro}
 
 - You have configured valid xref:administration:create-and-manage-planning-units.adoc#add-business-hours[business hours] and xref:administration:activities.adoc[activities] for the planning unit for which you want to activate business hours.
-- You have checked the xref:administration:set-a-validity-period.adoc[**Valid from**/**Valid to**] entries for the planning unit and activity assigned to the workload and removed or changed them, if necessary.
+- You have checked the xref:administration:set-a-validity-period.adoc[*Valid from*/*Valid to*] entries for the planning unit and activity assigned to the workload and removed or changed them, if necessary.
 - You have the necessary permissions to view and edit the relevant planning units.
 - If there is a planning calendar assigned to the planning unit, you also have the necessary xref:account:configure-user-roles.adoc#set-wfm-permissions[permissions] for the planning calendar to display the business hours.
 
@@ -29,13 +29,13 @@ To include volumes outside business hours into the forecast calculation, activat
 
 1. {nav-to-forecast-workloads}
 2. {btn-edit}
-3. In the **Basic configuration** section, select a planning unit and an activity.
-4. Check the **Forecast within business hours only** checkbox.<br>
-   If you update the planning unit's business hours, uncheck and check the checkbox again to update the forecast.
+3. In the *Basic configuration* section, select a planning unit and an activity.
+4. Check the *Forecast within business hours only* checkbox. +
+If you update the planning unit's business hours, uncheck and check the checkbox again to update the forecast.
 5. Click btn:[Save workload].
    A new forecast is calculated. The calculation can take some time.
 
-Once you have activated the business hours, the graph on the **Forecast** page displays periods outside business hours as gray areas.
+Once you have activated the business hours, the graph on the *Forecast* page displays periods outside business hours as gray areas.
 
 [NOTE]
 ====

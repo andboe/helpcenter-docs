@@ -16,9 +16,9 @@ Only roles with the permissions View time off, Full access to Accounts or Full a
 In menu:Time Off[], you have the following options to manage people's time off:
 
 - Approve and reject time-off requests or requests to cancel already approved time off
-- View and edit [personal balances and entitlement](https://help.peopleware.com/time-off-types/#time-off-accounts)
+- View and edit link:https://help.peopleware.com/time-off-types/#time-off-accounts[personal balances and entitlement]
 - Add time off for your people or edit the time range of already approved time off
-- Create new and edit existing [time-off types](https://help.peopleware.com/time-off-types) and [entitlement policies](https://help.peopleware.com/entitlement-policies)
+- Create new and edit existing link:https://help.peopleware.com/time-off-types[time-off types] and link:https://help.peopleware.com/entitlement-policies[entitlement policies]
 
 All actions related to time-off requests and personal balances are recorded for transparency and full traceability.
 
@@ -28,10 +28,10 @@ If your organization works with xref:#recommendations[recommendations], you may 
 == Prerequisites
 For people to be able to request time off in Peopleware Me, the following must apply:
 
-- You have created [time-off types](https://help.peopleware.com/time-off-types#create-a-time-off-type) with an entitlement policy.
-- You have created at least one [enntitlement policy](https://help.peopleware.com/entitlement-policies#create-an-entitlement-policy).
+- You have created link:https://help.peopleware.com/time-off-types#create-a-time-off-type[time-off types] with an entitlement policy.
+- You have created at least one link:https://help.peopleware.com/entitlement-policies#create-an-entitlement-policy[enntitlement policy].
 
-<!-- maybe misplaced -->
+
 
 You can add time off to a person's calendar without a pending request.
 
@@ -47,25 +47,26 @@ To activate recommendations, proceed as follows:
 
 1. Go to {bc-time-off-types}.
 2. {select-time-off-type}
-3. In the **General** section, check the checkbox **Enable recommendations**.
+3. In the *General* section, check the checkbox *Enable recommendations*.
 
- <!-- Add information about smart recommendations when they are available on the UI -->
+ 
 
 [#approve-or-reject-time-off-requests]
 == Approve or reject time-off requests
 1. Go to {bc-time-off-requests}.
-2. Click the tab **Time off requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
-3. In the relevant request, click **Show coverage and time off** and/or **View in plan** to make a better-informed decision. Learn more about these functionalities in the subsections below.
+2. Click the tab *Time off requested*. +
+You can filter the list by selections, planning units, recommendations, etc.
+3. In the relevant request, click *Show coverage and time off* and/or *View in plan* to make a better-informed decision. Learn more about these functionalities in the subsections below.
 4. Click btn:[Approve time off] or btn:[Reject].
 5. In the confirmation window, you can add a comment.
 6. Click btn:[Confirm].
-   The person is notified by email. Rejections are final.<br>
-   Peopleware automatically adds approved time off to the person's schedule.<br>
-   You can see how the time-off or cancellation request is valuated; **Booked** for decided requests, **To be booked** for pending requests.
+   The person is notified by email. Rejections are final. +
+Peopleware automatically adds approved time off to the person's schedule. +
+You can see how the time-off or cancellation request is valuated; *Booked* for decided requests, *To be booked* for pending requests.
 
 [#how-peopleware-displays-time-off-in-the-schedule]
 === How Peopleware displays time off in the schedule
-Depending on what the [time-off valuation is based on](https://help.peopleware.com/understand-valuation), there may be differences in how Peopleware displays time off in the schedule:
+Depending on what the link:https://help.peopleware.com/understand-valuation[time-off valuation is based on], there may be differences in how Peopleware displays time off in the schedule:
 
 - Valuation based on the schedule: All paid activities in the selected time range are replaced with the paid absence activity corresponding to the selected time off.
 - Valuation based on the contract: By default, the beginning of their planning unit's business hours is the start of the time off in the schedule. This allows you to see how your approval affects the planning unit's coverage. For planning units without business hours, time off starts at midnight on the requested day.
@@ -77,7 +78,7 @@ Time off without valuation is not added to the schedule
 >
 [NOTE]
 ====
-If you approve a time-off request for which [there is no valuation](https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-), Peopleware does not add the approved time off to the schedule. [Learn more](https://help.peopleware.com/understand-valuation) about the valuation of people's time off.
+If you approve a time-off request for which link:https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-[there is no valuation], Peopleware does not add the approved time off to the schedule. link:https://help.peopleware.com/understand-valuation[Learn more] about the valuation of people's time off.
 ====
 [#full-day-requests-that-include-night-shifts]
 === Full-day requests that include night shifts
@@ -110,8 +111,8 @@ To ensure consistency and correct valuation, add all absences via the Time Off a
 To view how each day of a time-off request was evaluated:
 
 1. Go to {bc-time-off-requests}.
-2. Click the **Time-off requests** tab.
-3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
+2. Click the *Time-off requests* tab.
+3. In the list of requests, hover over the *To be booked* value in a request and click the {icon-svg-viewer}.
 4. A detailed breakdown is displayed showing:
    - The valuation value for each day
    - The schedule-based or contract-based valuation strategy applied each day. The strategy for a time-off period may vary by day.
@@ -121,42 +122,42 @@ To view how each day of a time-off request was evaluated:
 If you need to overwrite a calculated value or add a missing valuation, you can override the valuation. To do so, proceed as follows:
 
 1. Go to {bc-time-off-requests}.
-2. Click the **Time-off requests** tab.
-3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
-4. In the table, click the cell in the **Override** column corresponding to the time off that you want to edit.
-5. Edit the value in the **Override** field.
+2. Click the *Time-off requests* tab.
+3. In the list of requests, hover over the *To be booked* value in a request and click the {icon-svg-viewer}.
+4. In the table, click the cell in the *Override* column corresponding to the time off that you want to edit.
+5. Edit the value in the *Override* field.
 
 Overriding the valuation has the following consequences:
 
 - Peopleware does not adjust the time off in the schedule after the request has been approved. You must update the schedule manually.
 - If you add an override to days that not did not have a valuation before, Peopleware does not add the time off to the schedule after the request has been approved. You must add the time off to the schedule manually.
-- If xref:time-off:understand-valuation.adoc#why-can-the-hoursdays-to-be-booked-change-until-the-time-off-request-has-been-approved[Peopleware recalculates the **To be booked** value], you will see the recalculated value in the **Valuation** column, but Peopleware will not take it into account. You will have to update the schedule manually.
+- If xref:time-off:understand-valuation.adoc#why-can-the-hoursdays-to-be-booked-change-until-the-time-off-request-has-been-approved[Peopleware recalculates the *To be booked* value], you will see the recalculated value in the *Valuation* column, but Peopleware will not take it into account. You will have to update the schedule manually.
 
 To delete an override, cancel the corresponding time off and add it again.
 
 [#see-how-many-people-are-off]
 === See how many people are off
-You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in {bc-time-off-plan}. Alternatively, click **View in plan** on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
+You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in {bc-time-off-plan}. Alternatively, click *View in plan* on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
 
 You can view time off filtered by different criteria:
 
 1. Go to {bc-time-off-plan}.
 2. Select the level of detail you want to display for the time period:
-   - **Day**
-   - **Week**
-   - **Month**
-   - **Custom**: If you select this option, click the Calendar icon {icon-calendar} and select a start and end date.
+   - *Day*
+   - *Week*
+   - *Month*
+   - *Custom*: If you select this option, click the Calendar icon {icon-calendar} and select a start and end date.
 3. (Optional) Filter people using the following dropdown menus:
-   - **Selection**
-   - **Planning unit**
-   - **Type**
-4. (Optional) Filter time off using the **Status** dropdown menu:
-   - **Requested**: Shows time-off requests. Requests are displayed with a dashed outline.
-   - **Approved**: Shows approved requests.
-   - **Cancellation requests**
+   - *Selection*
+   - *Planning unit*
+   - *Type*
+4. (Optional) Filter time off using the *Status* dropdown menu:
+   - *Requested*: Shows time-off requests. Requests are displayed with a dashed outline.
+   - *Approved*: Shows approved requests.
+   - *Cancellation requests*
 5. Select the data you want to display:
-   - **Evaluation**: Shows the evaluation results for requested and approved time off in hours or days.
-   - **Time off**: Shows the time-off type for each request.
+   - *Evaluation*: Shows the evaluation results for requested and approved time off in hours or days.
+   - *Time off*: Shows the time-off type for each request.
 
 You can see the following values for each day at the bottom of the table:
 
@@ -191,11 +192,11 @@ Time-off quotas apply to time-off activities, such as Absence, Illness, or Vacat
 [#view-quota-consumption]
 === View quota consumption
 1. Go to menu:Time off[Plan].
-2. From the **Data** drop-down, select **Quota**.
+2. From the *Data* drop-down, select *Quota*.
 
 [#show-coverage-and-time-off]
 === Show coverage and time off
-To understand how approving a time-off request affects your schedule, click **Show coverage and people off** in any entry on the **Time-off requests** tab.
+To understand how approving a time-off request affects your schedule, click *Show coverage and people off* in any entry on the *Time-off requests* tab.
 
 Peopleware displays a view of the person's schedule for the requested time range, the coverage for their scheduled activities, and the total number of people off during that time. The scheduled activities are highlighted in the same color used to highlight them in Shift Center.
 
@@ -205,8 +206,9 @@ The number of people off is based on the time off approved in Time Off. Absences
 === Time-off requests for night shifts
 By default, when people request a full day off and you approve it, Peopleware inserts an absence of 24 hours into their schedule, provided that one of the following applies:
 
-- They have requested an unpaid [type](https://help.peopleware.com/time-off-types)
-- They have requested a paid type for which you have activated the [option to replace unpaid activities and fill up non-working hours](https://help.peopleware.com/time-off-types#replace-unpaid-activities-and-fill-up-non-working-hours).<br>For example, if a person requests to be off on 25&nbsp;June, their absence in Peopleware starts at midnight on 25&nbsp;June and ends at midnight on 26&nbsp;June, covering a total absence of 24&nbsp;hours.
+- They have requested an unpaid link:https://help.peopleware.com/time-off-types[type]
+- They have requested a paid type for which you have activated the link:https://help.peopleware.com/time-off-types#replace-unpaid-activities-and-fill-up-non-working-hours[option to replace unpaid activities and fill up non-working hours]. +
+For example, if a person requests to be off on 25 June, their absence in Peopleware starts at midnight on 25 June and ends at midnight on 26 June, covering a total absence of 24 hours.
 
 The above applies to full-day requests without night shifts or if the person is not scheduled for the day requested.
 
@@ -219,18 +221,18 @@ The following table explains different scenarios in which time off is requested 
 |Scheduled night shift
 |Request
 |Time off in schedule
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|26&nbsp;June
-|26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|25&nbsp;June
-|25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM, not scheduled on 27&nbsp;June
-|25&nbsp;June until 29&nbsp;June
-|25&nbsp;June, midnight until 29&nbsp;June, 6&nbsp;AM
+|25 June, 10 PM until 26 June, 6 AM
+|26 June
+|26 June, 6 AM until 27 June midnight (18 hours)
+|25 June, 10 PM until 26 June, 6 AM
+|25 June
+|25 June, midnight until 26 June 6 AM (30 hours)
+|25 June, 10 PM until 26 June, 6 AM and 28 June, 10 PM until 29 June, 6 AM, not scheduled on 27 June
+|25 June until 29 June
+|25 June, midnight until 29 June, 6 AM
 |===
 
-Row&nbsp;3 shows how Peopleware can combine the variants from rows&nbsp;1&nbsp;and&nbsp;2. For requests that include a night shift at the beginning as well as at the end, the time off starts after the end of the first night shift and ends after the end of the last night shift.
+Row 3 shows how Peopleware can combine the variants from rows 1 and 2. For requests that include a night shift at the beginning as well as at the end, the time off starts after the end of the first night shift and ends after the end of the last night shift.
 
 [#email-notifications]
 == Email notifications
@@ -281,7 +283,7 @@ There are different factors that determine how approved time off is displayed in
 |Paid
 |One full day
 |No
-|According to [valuation](https://help.peopleware.com/understand-valuation)
+|According to link:https://help.peopleware.com/understand-valuation[valuation]
 |Paid
 |Only a part of the day, e.g. 4 hours
 |No
@@ -291,25 +293,25 @@ There are different factors that determine how approved time off is displayed in
 |Yes
 |Equals requested time off. Here: 4 hours
 |Paid
-|Several days, e.g. from 25&nbsp;June until 28&nbsp;June
+|Several days, e.g. from 25 June until 28 June
 |Yes
-|Equals requested time off. Here: 25&nbsp;June, midnight until 28&nbsp;June, midnight
+|Equals requested time off. Here: 25 June, midnight until 28 June, midnight
 |Paid
-|Several days, e.g. from 25&nbsp;June until 28&nbsp;June
+|Several days, e.g. from 25 June until 28 June
 |No
 |According to valuation
 |Unpaid
 |One full day
 |--
-|Equals requested time off. Here: 24&nbsp;hours
+|Equals requested time off. Here: 24 hours
 |Unpaid
-|Only a part of the day, e.g. 4&nbsp;hours
+|Only a part of the day, e.g. 4 hours
 |--
-|Equals requested time off. Here: 4&nbsp;hours
+|Equals requested time off. Here: 4 hours
 |Unpaid
-|Several days, e.g. from 25&nbsp;June until 28&nbsp;June
+|Several days, e.g. from 25 June until 28 June
 |--
-|Equals requested time off. Here: 25&nbsp;June, midnight until 28&nbsp;June, midnight
+|Equals requested time off. Here: 25 June, midnight until 28 June, midnight
 |===
 
 If the time-off type is paid but the fill-up functionality is not activated, the schedule displays the approved time off according to the valuation. Depending on whether the valuation is based on the schedule or the contract, the following applies:
@@ -322,12 +324,13 @@ If the time-off type is paid but the fill-up functionality is not activated, the
 People cannot cancel their own time off. Instead, they must submit a cancellation request that needs to be accepted or rejected.
 
 1. Go to {bc-time-off-requests}.
-2. Click the tab **Cancellation requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
+2. Click the tab *Cancellation requested*. +
+You can filter the list by selections, planning units, recommendations, etc.
 3. In the relevant request, click btn:[Cancel time off] or btn:[Reject].
 4. In the confirmation window, you can add a comment.
 5. If you approve the cancellation and the person had previously been scheduled for the days for which they want to cancel their time off, select one of the following options:
-   - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
+   - *Restore*: The person is scheduled again for their original shifts on the selected days.
+   - *Clear*: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
 6. Click btn:[Confirm] or _Confirm cancellation_.
    The person is notified by email.
 
@@ -338,7 +341,7 @@ Update schedules manually when shifts cannot be restored
 >
 [NOTE]
 ====
-There are cases when Peopleware cannot restore previously scheduled shifts. Learn more about those cases in the [dedicated section below](https://help.peopleware.com/time-off#why-cannot-injixo-restore-previous-shifts-when-i-cancel-time-off).
+There are cases when Peopleware cannot restore previously scheduled shifts. Learn more about those cases in the link:https://help.peopleware.com/time-off#why-cannot-injixo-restore-previous-shifts-when-i-cancel-time-off[dedicated section below].
 ====
 [#add-time-off-for-your-people]
 == Add time off for your people
@@ -349,11 +352,11 @@ Add time off directly to the schedule as follows:
 1. Go to {bc-time-off-requests}.
 2. Click btn:[Create time off].
 3. {enter-info}
-   - **Person**
-   - **Time-off type**
-   - **Time range**
-   - (Optional) **Request a part of the day**: Available only when you select a time range of one or two days. Configure a **Start time** and **End time**.
-   - (Optional) **Comment**.
+   - *Person*
+   - *Time-off type*
+   - *Time range*
+   - (Optional) *Request a part of the day*: Available only when you select a time range of one or two days. Configure a *Start time* and *End time*.
+   - (Optional) *Comment*.
 4. Click btn:[Add time off].  
    The person is notified by email.
 
@@ -364,9 +367,10 @@ You may need to extend or reduce a person's planned time off, for example, if si
 Extend or reduce planned time off as follows:
 
 1. Go to {bc-time-off-requests}.
-2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
+2. Click the tab *Decided*. +
+You can filter the list by selections, planning units, recommendations, etc.
 3. In the entry of the relevant time off, click btn:[{icon-edit} Edit time off].
-4. Edit the **Time range**, or the **Start time** and **End time**.
+4. Edit the *Time range*, or the *Start time* and *End time*.
 5. Click btn:[Edit time off].
    The person is notified by email.
 
@@ -379,11 +383,12 @@ You may need to cancel time off you have already approved, e.g. because people n
 Cancel an approved time off as follows:
 
 1. Go to {bc-time-off-requests}.
-2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
+2. Click the tab *Decided*. +
+You can filter the list by selections, planning units, recommendations, etc.
 3. In the entry of the relevant time off, click btn:[Cancel time off].
 4. If the person had previously been scheduled for the days for which you want to cancel their time off, select one of the following options:
-   - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
+   - *Restore*: The person is scheduled again for their original shifts on the selected days.
+   - *Clear*: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
 5. Click btn:[Confirm cancellation].
 
 [#staff-membership-changes]
@@ -421,8 +426,8 @@ Peopleware can send daily time-off reports by email which contain the currently 
 To activate daily status reports, proceed as follows:
 
 1. Go to menu:Account[Notifications].
-2. Click the **Time Off** tab.
-3. Check the checkbox **Status report**.
+2. Click the *Time Off* tab.
+3. Check the checkbox *Status report*.
 
 [#balances-and-time-accounts]
 == Balances and Time accounts
@@ -444,7 +449,7 @@ Accounts summary is a reporting view that summarizes entitlement and taken time 
 == Frequently asked questions
 [#why-cannot-peopleware-restore-previous-shifts-when-i-cancel-time-off]
 === Why can Peopleware not restore previous shifts when I cancel time off?
-When you approve a cancellation request or cancel approved time off for a person who had been scheduled to work on the days for which they then planned time off, you can restore their old shifts or clear their schedule. Peopleware cannot always restore previously scheduled shifts, and you only see the option **Clear**.
+When you approve a cancellation request or cancel approved time off for a person who had been scheduled to work on the days for which they then planned time off, you can restore their old shifts or clear their schedule. Peopleware cannot always restore previously scheduled shifts, and you only see the option *Clear*.
 
 [NOTE]
 ====
@@ -458,7 +463,7 @@ If you want the person to work on the days for which the time off is cancelled, 
 Peopleware cannot restore scheduled shifts in the following cases:
 
 - The time off was originally requested and approved in {bc-plan-time-off} instead of Time Off.
-- The time off was [valuated with 0](https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-) and was not added to the schedule.
+- The time off was link:https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-[valuated with 0] and was not added to the schedule.
 - The time off was revaluated after approval because the person was assigned a new contract.
 - The person has several part-day time off planned for the same day.
-- The time range of the time off had been [edited by a planner](https://help.peopleware.com/time-off#edit-the-time-range-of-approved-time-off).
+- The time range of the time off had been link:https://help.peopleware.com/time-off#edit-the-time-range-of-approved-time-off[edited by a planner].

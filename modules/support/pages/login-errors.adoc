@@ -12,7 +12,7 @@ When logging into an Enterprise on-premise system, various error messages may ap
 ====
 If you see the error message '256905-' during login, update your client first.
 ====
-The error message **The client has not been correctly installed. Number 256907-100** can appear for a variety of reasons.
+The error message *The client has not been correctly installed. Number 256907-100* can appear for a variety of reasons.
 
 - Have you successfully run the file _regdll.bat_ included in the client folder? The client registration must be executed in the context of the currently logged in Windows user. If the client is automatically deployed, run the batch file at Windows startup, e.g. with a logon-script, to register the client in the user context.
 
@@ -20,7 +20,7 @@ The error message **The client has not been correctly installed. Number 256907-1
 
 - In Internet Options, check if your browser is allowed to download and execute ActiveX-elements. Further information can be found in the xref:getting-started:system-requirements.adoc[system requirements] article. The currently loaded add-ons in the Internet Explorer should contain one or two add-ons from InVision. Make sure to add the server address to your trusted sites.
 
-- It may be that certain Class IDs (CLSIDs) are blocked. Check your [Windows Group Policies](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/enable-and-disable-add-ons-using-administrative-templates-and-group-policy).
+- It may be that certain Class IDs (CLSIDs) are blocked. Check your link:https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/enable-and-disable-add-ons-using-administrative-templates-and-group-policy[Windows Group Policies].
 
 If you have tried everything above and the issue is not resolved, xref:support:create-ticket.adoc[create a ticket].
 

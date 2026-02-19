@@ -17,7 +17,7 @@ In {bc-plan-meetings}, you can schedule meetings for the people in your organiza
 
 [#limitations-and-impact-on-the-schedule]
 == Limitations and impact on the schedule
-You can only schedule meetings for time periods in the future.<br>
+You can only schedule meetings for time periods in the future. +
 The *Meetings* functionality does not affect activities that are not configured as Replaceable.
 Furthermore, the *Meetings* functionality does not not affect activities of types other than Presence, even if they are configured as Replaceable.
 
@@ -33,9 +33,9 @@ In {bc-plan-meetings}, you can schedule meetings of the following three types:
 == Generate meeting suggestions
 1. Go to {bc-plan-meetings}.
 2. In the tile with the type of meeting that you want to schedule, click btn:[Set up].
-3. In the window that opens, configure the required **Parameters**, that are different for each type of meeting.
+3. In the window that opens, configure the required *Parameters*, that are different for each type of meeting.
    Learn more about the parameters for xref:scheduling:generate-suggestions-for-1-1-meetings.adoc[1:1 meetings], xref:scheduling:self-learning-sessions.adoc[self-learning sessions], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings].
-4. Click **Generate suggestions**.  
+4. Click *Generate suggestions*.  
    The process can take up to 10 minutes.
 
    Meeting suggestions are generated in the time zone of the planning unit.

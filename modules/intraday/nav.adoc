@@ -1,6 +1,6 @@
 * Intraday
-** xref:adherence-intraday.adoc
-** xref:adherence-matches.adoc
-** xref:edit-intraday-activities.adoc
-** xref:map-external-status.adoc
+* xref:adherence-intraday.adoc
+* xref:adherence-matches.adoc
+* xref:edit-intraday-activities.adoc
+* xref:map-external-status.adoc
 ** xref:real-time-adherence.adoc

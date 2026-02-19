@@ -16,49 +16,35 @@ This article explains how to calculate and adjust target work times for a specif
 - You are familiar with how target work times are calculated and used in Peopleware.
   For more information, see article xref:administration:concept-target-work-times.adoc[Target work time basics]
 - Peopleware calculates target work times for specific scheduling periods of a planning unit.
-  These scheduling periods are set up in Peopleware. <!-- TODO add related article -->
+  These scheduling periods are set up in Peopleware. 
 - To calculate target work times exclusively based on contract settings:
   The person's contract work time guidelines specify daily or weekly target time values.
 - To calculate target work times based on contract settings and time accounts:
   The person's contract work time guidelines specify daily or weekly values for minimum, target and maximum work times.
-  The target work times calculated for a scheduling period observe the daily or weekly work time window defined by these values.<br>
-  Example:<br>
-  The work time guidelines of a person's contract define a weekly target work time of 30 hours and a weekly maximum work time of 40 hours.
+  The target work times calculated for a scheduling period observe the daily or weekly work time window defined by these values. +
+Example: +
+The work time guidelines of a person's contract define a weekly target work time of 30 hours and a weekly maximum work time of 40 hours.
   The scheduling period spans a week.
   The relevant time account balance of the person prior to the start of the scheduling period shows a deficit of 20:00 hours.
   The target work time for this person and scheduling period will be 40 hours, i.e. the weekly maximum target work time as defined by the contract.
 
-<!--
-I was unable to calculate sensible target work times when the contract only specified monthly or annual min/max/target work time values.
-Steffen Rühlemann suspects that these don't actually work, so for now, I assume TWT can only be calculated if the contract defines daily/weekly values.
-This tracks with the results of my tests in the system.
--->
+
 
 [#permissions]
 === Permissions
 You have the following functional permissions:
 
-- **Plan**
-  - **Full access to Target Work Times in Configuration**
+- *Plan*
+  - *Full access to Target Work Times in Configuration*
 
-<!-- ROLES-new - release with go-live of new roles UI
-You have the following base permissions:
--->
 
-<!-- ROLES-new - release with go-live of new roles UI
-- menu:Plan[Configuration>Target work times]
-  - **Configure target work times**
--->
-<!-- LNF-new - release with go-live of left-side nav
-- menu:Scheduling[Configuration>Target work times]
-- **Configure target work times**
--->
+
+
+
 
 [#steps]
 == Calculate target work times
-<!-- LNF-new
-1. Go to menu:Scheduling[Configuration>Target work times].
--->
+
 
 1. Go to menu:Plan[Configuration>Target work times].
 2. Select a planning unit and scheduling period.
@@ -74,16 +60,16 @@ If necessary, you can adjust the calculated target work time.
 == Adjust target work times
 To adjust the calculated target work time of an individual person, proceed as follows:
 
-1. In the **Target work times** table, navigate to the person.
-2. In the **Modified value** field, enter a new target work time.
+1. In the *Target work times* table, navigate to the person.
+2. In the *Modified value* field, enter a new target work time.
    The modified value replaces the calculated value.
 
 To adjust the calculated target work time for multiple people in batch, proceed as follows:
 
-1. In the **Target work times** table, select all the people whose calculated value you want to adjust.
+1. In the *Target work times* table, select all the people whose calculated value you want to adjust.
 2. Click btn:[Adjust].
    Peopleware opens a configuration dialog.
 3. In the dialog, configure how you want to adjust the calculated values.
 4. Click btn:[Adjust].
 
-Peopleware stores the new target work time in the people's respective **Modified value** fields.
+Peopleware stores the new target work time in the people's respective *Modified value* fields.

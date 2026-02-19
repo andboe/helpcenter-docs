@@ -23,8 +23,9 @@ For prioritizing activities with the priority value, the following must be true:
 - The activities that need to be prioritized are configured as xref:administration:activity-types-and-properties.adoc#activity-properties[Replaceable].
 - If they are of type Present, the activities must have staff requirements.
 - Scheduling rule *2660* _Check activity priority_ is activated.
+[#example-1-activity-type-presence-]
 
-== Example 1: Activity type Presence <a name="example-1-activity-type-presence-"></a> <!-- find a better title -->
+== Example 1: Activity type Presence  
 
 - There are two activities: B2B hotline and B2C hotline.
 - Both activities are of the type xref:administration:activity-types-and-properties.adoc#activity-types[Presence].

@@ -18,18 +18,18 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Sikom**.
+4. From the *External system* drop-down menu, select *Sikom*.
 5. {btn-save}
 
 [#set-up-your-sikom-integration]
 == Set up your Sikom integration
 1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link]. During the installation, your terminal shows a PIN that you need to enter in the integrations page to proceed. The PIN expires after 5 minutes.
-2. In the **Credentials** section, set up your integration:
-   - **Host** and **Port**: Enter the host and port of your database.
-   - **Username** and **Password**: Enter valid credentials for a database user with read access to the CCMData database.
-3. In the **Configuration** section:
-   - Enter the **Database time zone**.
-   - Check the **Import agent status data** checkbox to import agent status data from Sikom.
+2. In the *Credentials* section, set up your integration:
+   - *Host* and *Port*: Enter the host and port of your database.
+   - *Username* and *Password*: Enter valid credentials for a database user with read access to the CCMData database.
+3. In the *Configuration* section:
+   - Enter the *Database time zone*.
+   - Check the *Import agent status data* checkbox to import agent status data from Sikom.
 
 4. {btn-save}
 

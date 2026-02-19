@@ -28,11 +28,11 @@ If you are using an Android device, download one of the apps from the Google Pla
 |--------
 |---------
 |Microsoft Authenticator
-|[Apple App Store](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
-|[Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator)
+|link:https://apps.apple.com/us/app/microsoft-authenticator/id983156458[Apple App Store]
+|link:https://play.google.com/store/apps/details?id=com.azure.authenticator[Google Play Store]
 |Authy
-|[Apple App Store](https://apps.apple.com/us/app/authy/id494168017)
-|[Google Play Store](https://play.google.com/store/apps/details?id=com.authy.authy)
+|link:https://apps.apple.com/us/app/authy/id494168017[Apple App Store]
+|link:https://play.google.com/store/apps/details?id=com.authy.authy[Google Play Store]
 |===
 
 [#activate-2fa-for-your-account]
@@ -41,32 +41,33 @@ To activate 2FA for your account, you need access to a main device (e.g. a compu
 On your computer or main device, proceed as follows:
 
 1. Log in to Peopleware and click your user name at the top right in the navigation bar.
-2. Click the **Security** tab.
+2. Click the *Security* tab.
 3. Click btn:[Activate 2FA].
 4. Enter your password.
 5. Click btn:[Continue].
-   The **Activate two-factor authentication** page opens. It lists the steps you need to follow next.
+   The *Activate two-factor authentication* page opens. It lists the steps you need to follow next.
 
 On your personal device, follow the steps listed on the Activate two-factor authentication page:
 
 1. Install one of the xref:#prerequisite-install-an-authenticator-app[supported authenticator apps].
 2. Open the authenticator app on your device, and add a new entry for Peopleware.
    To do this, choose one of the following options:
-   - Scan the QR code on the **Activate two-factor authentication** page with the authenticator app.
-   - Enter the key displayed on the **Activate two-factor authentication** page into the authenticator app.
+   - Scan the QR code on the *Activate two-factor authentication* page with the authenticator app.
+   - Enter the key displayed on the *Activate two-factor authentication* page into the authenticator app.
      Your authenticator app is now set up and starts generating one-time passwords (OTP).
 
 On your computer or main device, proceed as follows:
 
-1. On the **Activate two-factor authentication** page, enter an OTP into the **One-time password** field.
+1. On the *Activate two-factor authentication* page, enter an OTP into the *One-time password* field.
 2. Click btn:[Continue].
-3. Store the backup codes or download them as a file. Click btn:[Download] or btn:[Copy]. If you don't see the backup codes, they have been deactivated for your company account. <!-- feature flag -->
+3. Store the backup codes or download them as a file. Click btn:[Download] or btn:[Copy]. If you don't see the backup codes, they have been deactivated for your company account. 
 
    > Store your backup codes in a safe place
    >
-   > If you lose access to your personal device, you will only be able to access your account by using a backup code.<br>Store your backup codes safely, e.g. in a password manager, or print them out and make sure only you can access them.
+   > If you lose access to your personal device, you will only be able to access your account by using a backup code. +
+Store your backup codes safely, e.g. in a password manager, or print them out and make sure only you can access them.
 
-4. Check the checkbox **I securely stored my backup codes.**
+4. Check the checkbox *I securely stored my backup codes.*
 5. Click btn:[Activate 2FA].
    You will receive an email that informs you about the 2FA activation.
    From now on, you will need both your login credentials and an OTP to log in to Peopleware.
@@ -92,11 +93,11 @@ Only log in with a backup code in case of an emergency. You can use each backup 
 To log in with a backup code instead of an OTP, proceed as follows:
 
 1. Enter your email address and password on the Peopleware login screen and click btn:[Login].
-2. Click the backup code link below the **One-time password** field.
-3. Enter one of your 10-character backup codes in the **Backup code** field.
+2. Click the backup code link below the *One-time password* field.
+3. Enter one of your 10-character backup codes in the *Backup code* field.
 4. Click btn:[Verify] to complete the login process.
 
-<!-- a tag required. configured name used in Peopleware UI link -->
+
 
 [#log-in-without-your-personal-device-and-backup-codes]
 === Log in without your personal device and backup codes
@@ -115,7 +116,7 @@ If you cannot deactivate 2FA yourself, ask a user with admin access to deactivat
 Deactivating 2FA is not recommended. If 2FA has been enforced on your account, you cannot deactivate it.
 ====
 1. Log in to Peopleware and click your user name at the top right in the navigation bar.
-2. Click the **Security** tab.
+2. Click the *Security* tab.
    At the top of the page, you can see the current status of your 2FA settings.
 3. Click btn:[Deactivate 2FA].
 4. Enter your password.

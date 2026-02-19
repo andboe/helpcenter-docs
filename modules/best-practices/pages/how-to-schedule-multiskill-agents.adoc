@@ -22,7 +22,7 @@ Each input channel represents a subactivity and each employee skill a correspond
 
 3. Calculate the multiactivity staff requirements by using the `Calls - Multiactivity` requirement calculation. For more information, see xref:forecast:ref-requirement-calculations.adoc#calls-multi-activity[Staff requirement reference guide].
 
-4. Run the **Create optimized schedule** functionality.
+4. Run the *Create optimized schedule* functionality.
 
 [#scheduling-result]
 === Scheduling result
@@ -44,7 +44,7 @@ You cannot add up the staffing values for each subactivity to calculate the valu
 ====
 The multiactivity staffing always equals the number of people that has been scheduled. The Shift center does not display absolute numbers for subactivities, but the number of people skilled to perform this task. When people are skilled for multiple subactivities, the subactivity staffing values can be as high as the multiactivity staffing at maximum.
 ====
-To see a person's assigned activities for a day, double-click a day cell and select the **Multi-Activities** tab.
+To see a person's assigned activities for a day, double-click a day cell and select the *Multi-Activities* tab.
 
 image::how-to-schedule-multiskill-agents/image-1.png[subactivities in shift center dialog, width=60%]
 

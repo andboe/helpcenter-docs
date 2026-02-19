@@ -19,7 +19,7 @@ In menu:Intraday adherence[], you can edit the actual activities of people. This
 To see adherence data, make sure the following applies:
 
 - xref:acd-integration:import-agent-status-data.adoc[Agent status data] is available, e.g. via an xref:acd-integration:how-integrations-work.adoc[integration].
-- Your role has the **Edit agent status** permission.
+- Your role has the *Edit agent status* permission.
 
 [#steps]
 == Steps
@@ -28,8 +28,8 @@ To edit a person's activities, proceed as follows:
 1. Go to menu:Intraday[Intraday adherence].
 2. Select a planning unit or a selection.
 3. Click the person whose activities you want to edit.
-4. On the **Agent intraday adherence** page, click menu:Edit actual activities[].
-5. Click {icon-context-menu} on the right of the activity and select **{icon-edit} Edit** or **{icon-delete} Delete**. To add an activity, click btn:[Create].
+4. On the *Agent intraday adherence* page, click menu:Edit actual activities[].
+5. Click {icon-context-menu} on the right of the activity and select *{icon-edit} Edit* or *{icon-delete} Delete*. To add an activity, click btn:[Create].
 6. Edit the activity.
 7. {btn-save}
 

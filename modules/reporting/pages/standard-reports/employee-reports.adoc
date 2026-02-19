@@ -14,32 +14,32 @@ New to reports? Learn how to xref:reporting:task-create-reports.adoc[create repo
 == Employee work schedules
 The following reports contain the schedules per person for all selected people, including their daily start and finish times, shifts, activities, and total working hours, for the time period selected:
 
-- **Employee Work Schedule I (List)**: Includes paid or unpaid activities of all types.
-- **Employee Work Schedule I (List) (without Breaks)**: Excludes Break and Illness activities. Shows only days with scheduling data.
-- **Employee Work Schedule II (List)**: Includes paid or unpaid activities of all types. Shows also days without scheduling data.
-- **Employee Work Schedule III (Graph)**: Diagram version of the schedule with colored bars. Includes all activity types and shifts.
-- **Employee Work Schedule IV (6 Weeks)**: Shows six weeks per page and includes all activity types and shifts. Shows individual activities in shifts but not the name of the shift.
-- **Employee Work Schedule IV (6 weeks) (Activities)**: Weeks 3 to 6 contain all activities of the type Presence. Six weeks maximum.
-- **Employee Work Schedule (6 weeks) (no Breaks)**: Excludes Break activities.
+- *Employee Work Schedule I (List)*: Includes paid or unpaid activities of all types.
+- *Employee Work Schedule I (List) (without Breaks)*: Excludes Break and Illness activities. Shows only days with scheduling data.
+- *Employee Work Schedule II (List)*: Includes paid or unpaid activities of all types. Shows also days without scheduling data.
+- *Employee Work Schedule III (Graph)*: Diagram version of the schedule with colored bars. Includes all activity types and shifts.
+- *Employee Work Schedule IV (6 Weeks)*: Shows six weeks per page and includes all activity types and shifts. Shows individual activities in shifts but not the name of the shift.
+- *Employee Work Schedule IV (6 weeks) (Activities)*: Weeks 3 to 6 contain all activities of the type Presence. Six weeks maximum.
+- *Employee Work Schedule (6 weeks) (no Breaks)*: Excludes Break activities.
 
 [#hours-worked-per-employee]
 == Hours worked per employee
-- **Hours Worked per Employee I**: Includes target work time, actual worked time and the difference in hours, and the percentage of the target work time that has been worked.
+- *Hours Worked per Employee I*: Includes target work time, actual worked time and the difference in hours, and the percentage of the target work time that has been worked.
 
-- **Hours Worked per Employee II**: Includes adjusted target working hours, actual working time, and the difference in hours and in percent. The report does not contain monthly values. <!-- Anpassungszeiträume are used --> The annual working time is based on the contract. If the planning periods are still in the future, the report only shows the adjusted target time.
-    <!-- This annual working time is then distributed to the planning periods by the function for adjustment periods as target time. However, these planning periods have different weightings so that there is no distribution 'x/52'.  -->
-    <!-- If these planning periods are in the past and you have already worked with them, the corresponding columns in the report are filled. -->
+- *Hours Worked per Employee II*: Includes adjusted target working hours, actual working time, and the difference in hours and in percent. The report does not contain monthly values.  The annual working time is based on the contract. If the planning periods are still in the future, the report only shows the adjusted target time.
+    
+    
 
 [#other-reports]
 == Other reports
-- **Modifying Master Data**: Logs users' additions, updates, and deletions to selected configuration data in the last 90 days. It shows a comprehensive overview of the changes made to people's data (e.g., name, address, email, date of birth, ID) within the specified timeframe.
-- **Master Data Overview**: All people data available.
-- **Role Authorization**: Access rights to features, menu items and scheduling actions per selection.
-- **Fluctuation I**: Shows the number of hires and departures in chronological order, in total and in percentage. <!-- Employees of one, several or all Planning Units are displayed. A separate page is created for each *Planning Unit*. -->
-- **Holiday Work (Lottery and Assignment)**: Shows all activities of the type Presence or Break, all shifts with these activities that are assigned to people by lottery, plus assignments on public holidays and with shift requests. The data comes from the Request and Alternative Request levels.
-- **Fluctuation II**: Join and leave dates, number of days in the company, selection and contract for each person who left the company.
-- **Organizational Chart**: Shows all people in a planning unit with their skills, resulting activities, assigned contracts and selections.
-- **Anniversaries**: All people's birthdays and anniversaries. <!-- In addition, the employees whose probationary period has expired are specified. A separate table is created for each Planning Unit, whose entries are sorted by date within the anniversaries. -->
-- **Staff by Contract Type**: Number of people per contract type and the resulting number of working days and hours for the selected planning unit and time period.
-- **Staff Shift Sequences**: Assigned shift sequences per employee in the selection you selected.
-- **Employee Absence Schedule with Day Status and Full-Day Activities**: Marks every day when a person is scheduled with an asterisk, per person and year.
+- *Modifying Master Data*: Logs users' additions, updates, and deletions to selected configuration data in the last 90 days. It shows a comprehensive overview of the changes made to people's data (e.g., name, address, email, date of birth, ID) within the specified timeframe.
+- *Master Data Overview*: All people data available.
+- *Role Authorization*: Access rights to features, menu items and scheduling actions per selection.
+- *Fluctuation I*: Shows the number of hires and departures in chronological order, in total and in percentage. 
+- *Holiday Work (Lottery and Assignment)*: Shows all activities of the type Presence or Break, all shifts with these activities that are assigned to people by lottery, plus assignments on public holidays and with shift requests. The data comes from the Request and Alternative Request levels.
+- *Fluctuation II*: Join and leave dates, number of days in the company, selection and contract for each person who left the company.
+- *Organizational Chart*: Shows all people in a planning unit with their skills, resulting activities, assigned contracts and selections.
+- *Anniversaries*: All people's birthdays and anniversaries. 
+- *Staff by Contract Type*: Number of people per contract type and the resulting number of working days and hours for the selected planning unit and time period.
+- *Staff Shift Sequences*: Assigned shift sequences per employee in the selection you selected.
+- *Employee Absence Schedule with Day Status and Full-Day Activities*: Marks every day when a person is scheduled with an asterisk, per person and year.

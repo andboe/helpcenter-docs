@@ -16,7 +16,7 @@ Matches offers advanced mapping options for external statuses to better track ad
 - Match different Peopleware activities to each other, and so effectively map one external status to multiple activities in Peopleware.
 - Match one external status to all activities of a type, e.g. Break.
 
-In **Intraday** you can xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[map each external status to only one activity] in Peopleware. For some setups, this level of detail is not enough and leads to a low adherence score that does not reflect the reality. To solve this, you can create new activities in Peopleware that reflect the level of detail you need but which you do not schedule for your people. You then match those activities to the related activities you use for scheduling. With this setup, **Real-Time Adherence** and **Intraday Adherence** consider the external statuses as being in adherence with the matched activities.
+In *Intraday* you can xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[map each external status to only one activity] in Peopleware. For some setups, this level of detail is not enough and leads to a low adherence score that does not reflect the reality. To solve this, you can create new activities in Peopleware that reflect the level of detail you need but which you do not schedule for your people. You then match those activities to the related activities you use for scheduling. With this setup, *Real-Time Adherence* and *Intraday Adherence* consider the external statuses as being in adherence with the matched activities.
 
 Example: Your external system uses the following three statuses: waiting for call, on a call, and after-call work. In Peopleware, you schedule the general activity Calls but you want to track how much time people spend waiting for a call, actually being on a call, and doing after-call work. In this case, you would create three additional activities in Peopleware for the three external statuses, and match the three new activities to the activity Calls. You can then map each external status to its corresponding activity. As a result, your people are still in adherence when they work on these activities, and you can still track how much time they spend on each sub-task.
 
@@ -26,25 +26,25 @@ Standard reports do not reflect matched activities but only consider the activit
 ====
 [#access-the-activity-matches-page]
 == Access Activity matches
-In {bc-intraday-real-time-adherence}, there are three ways to access the **Activity matches** page:
+In {bc-intraday-real-time-adherence}, there are three ways to access the *Activity matches* page:
 
-- At the top right of the overview table, click the {icon-context-menu} and select **Activity matches**.
-- In the overview table, hover over an activity in the **Actual activity** column and click the {icon-matches} once it appears.
-- In the **Activity overview** section on the left, hover over an activity and click the {icon-matches}.
+- At the top right of the overview table, click the {icon-context-menu} and select *Activity matches*.
+- In the overview table, hover over an activity in the *Actual activity* column and click the {icon-matches} once it appears.
+- In the *Activity overview* section on the left, hover over an activity and click the {icon-matches}.
 
 [#manage-activity-matches]
 == Manage activity matches
 1. xref:#access-the-activity-matches-page[Access the Activity matches page].
-   The cloud icon {icon-cloud-arrow-up-gray} marks activities already mapped to an external status. The **Show only mapped activities** checkbox is checked by default. Uncheck it to see a complete list of your Peopleware activites.
+   The cloud icon {icon-cloud-arrow-up-gray} marks activities already mapped to an external status. The *Show only mapped activities* checkbox is checked by default. Uncheck it to see a complete list of your Peopleware activites.
 2. Select an activity from the list on the left.
-   You see the mapping and match information for that activity on the right of the page. Under **Actual activity** you see a list of all external statuses mapped to that activity, grouped by external system. Under **Scheduled activity** you see all matched activities and activity types, which are considered as being in adherence.
-3. Click btn:[{icon-edit} Manage activity matches] under **Scheduled activity**.
+   You see the mapping and match information for that activity on the right of the page. Under *Actual activity* you see a list of all external statuses mapped to that activity, grouped by external system. Under *Scheduled activity* you see all matched activities and activity types, which are considered as being in adherence.
+3. Click btn:[{icon-edit} Manage activity matches] under *Scheduled activity*.
 4. Select the activities you want to match to the activity you are editing.
 5. {btn-apply}
 
 [#manage-mappings-of-external-statuses]
 === Manage mappings of external statuses
-To edit how external statuses are mapped to activities, click **Edit in Intraday** under **Actual activity**. Peopleware redirects you to {bc-intraday-configuration}, where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
+To edit how external statuses are mapped to activities, click *Edit in Intraday* under *Actual activity*. Peopleware redirects you to {bc-intraday-configuration}, where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
 If you do not have access to {bc-intraday-configuration}, you are redirected to xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-wfm[external status mapping to activities in WFM].
 
 [#default-matches]
@@ -57,6 +57,6 @@ To help you achieve an optimal adherence configuration, the following matches ar
 
 [#the-offline-activity]
 == The Offline activity
-The Offline activity appears in the list of activities on the **Matches** page. It cannot be mapped to regular activities. You can use the Offline activity to improve your adherence score by not registering people as being out of adherence when they need to log out from the external system e.g. for breaks, meetings, or trainings.
+The Offline activity appears in the list of activities on the *Matches* page. It cannot be mapped to regular activities. You can use the Offline activity to improve your adherence score by not registering people as being out of adherence when they need to log out from the external system e.g. for breaks, meetings, or trainings.
 
 To configure the Offline activity for this purpose, follow the steps to xref:#manage-activity-matches[manage activity matches] and select the relevant activities.

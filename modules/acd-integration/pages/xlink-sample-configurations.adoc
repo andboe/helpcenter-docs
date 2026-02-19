@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Use a collection of Xlink sample configurations to help configure your Xlink installation.
 
-<!-- vale off -->
+
 
 The following configurations are samples for the external system section in the `isps_ul.ini` file of your Xlink installation to import _contact data_.
 
@@ -17,7 +17,7 @@ There are different types, universal and standard interfaces:
 - Standard interface means that you need to select the specific ACD from the list of external systems.
 - Universal means that you need to select the Universal interface.
 
-<!-- fix formatting with this hint box -->
+
 
 [NOTE]
 ====
@@ -150,8 +150,9 @@ DisplayVDNValue=0
 DeactivateTimelinkImportYesterday=0
 UseOpenEndTime=1
 ----
+[#avaya-auranortel-symposium]
 
-=== Avaya Aura/Nortel Symposium <a name="avaya-auranortel-symposium"></a>name="avaya-auranortel-symposium-universal"></a>
+=== Avaya Aura/Nortel Symposium name="avaya-auranortel-symposium-universal"></a>
 
 Universal interface
 
@@ -172,8 +173,9 @@ QueueNameType=1
 RetrieveValueTypesUsing=1
 CallDataTable=iApplicationStat
 ----
+[#avaya-auranortel-symposium]
 
-=== Avaya Aura/Nortel Symposium <a name="avaya-auranortel-symposium"></a>name="avaya-auranortel-symposium-standard-interface"></a>
+=== Avaya Aura/Nortel Symposium name="avaya-auranortel-symposium-standard-interface"></a>
 
 Standard Nortel Symposium interface
 
@@ -198,8 +200,9 @@ AgentLoginStat=eAgentLoginStat
 CdnStat=iCDNStat
 AgentBySkillSetStat=AgentBySkillsetStat
 ----
+[#avaya-auranortel-symposium]
 
-=== Avaya Aura/Nortel Symposium <a name="avaya-auranortel-symposium"></a>name="avaya-auranortel-symposium-standard-interface"></a> TalkTime
+=== Avaya Aura/Nortel Symposium name="avaya-auranortel-symposium-standard-interface"></a> TalkTime
 
 Standard Nortel Symposium interface
 
@@ -256,8 +259,9 @@ IncludeNotReadyCodes=0
 MaximumActivityDuration=0
 SequenceNumberSupported=0
 ----
+[#avaya-aura-aacc6]
 
-=== Avaya Aura AACC6 <a name="avaya-aura-aacc6"></a> TalkTime Universal
+=== Avaya Aura AACC6  TalkTime Universal
 
 Universal interface
 
@@ -804,7 +808,7 @@ ActivityStartTimeStampColumn=[time]
 LogOffActivities=10
 ----
 
-**SQL views for Anywhere365**:
+*SQL views for Anywhere365*:
 
 ----
 create view injixo_calls as
@@ -1019,8 +1023,9 @@ AgentActivityTable =
 LogOffActivities=0
 ----
 
-[#twilio-connected]
-=== Twilio <a name="twilio"></a> Connected
+[#twilio-connected][#twilio]
+
+=== Twilio  Connected
 Universal Interface
 
 ----
@@ -1048,8 +1053,9 @@ AgentActivityTable =
 LogOffActivities=0
 ----
 
-[#twilio-selected]
-=== Twilio <a name="twilio"></a>-Selected
+[#twilio-selected][#twilio]
+
+=== Twilio -Selected
 Universal Interface
 
 ----
@@ -1109,8 +1115,9 @@ BufferMaxSize=
 TroubleRestarts=1
 TroubleWaitTime=30000
 ----
+[#cisco-icm]
 
-=== Cisco ICM <a name="cisco-icm"></a> RTA
+=== Cisco ICM  RTA
 
 Executable name: ciscorta.exe
 Configuration file: iWFM_CiscoICM.cfg
@@ -1122,8 +1129,8 @@ Username = xlink@xxxx.com
 Password = xxxxxxxx
 
 PeripheralGateways= "PGone,PGtwo"
-PGone = **IP Address here**
-PGtwo = **IP Address here**
+PGone = *IP Address here*
+PGtwo = *IP Address here*
 
 ExternalSystem = Cisco
 ImportToLevel = 5000
@@ -1160,4 +1167,3 @@ AgentActivityTable= manage_twilio_agent_live_status a INNER JOIN manage_users b 
 ActivityColumn=IF(a.activity_status = 'Idle',1,IF(a.activity_status = 'Offline',2,IF(a.activity_status = 'Reserved',3,IF(a.activity_status = 'Busy',4,0 ))))
 ----
 
-<!-- vale on -->

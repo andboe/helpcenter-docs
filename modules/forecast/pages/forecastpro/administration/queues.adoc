@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 Data about your customer interactions is recorded by your ACD. This contact data is imported via xref:acd-integration:how-integrations-work.adoc[integrations] to create forecasts. Xlink does not create queues automatically, other integrations do. Queues are always associated with a channel and can be selectively added to workloads in Forecast.
 
-When you click **Use Forecast** in a workload that contains queues from a non-Xlink integration, a queue will automatically be created in menu:WFM[Administration>Forecasting>Queues] for specific xref:forecast:task-set-up-staff-requirement-calculation.adoc[staff requirements calculation] methods. This queue will have the name of the workload with a leading asterisk, e.g. \*yourWorkloadName. Forecast data will be available in the version Auto-Forecast.
+When you click *Use Forecast* in a workload that contains queues from a non-Xlink integration, a queue will automatically be created in menu:WFM[Administration>Forecasting>Queues] for specific xref:forecast:task-set-up-staff-requirement-calculation.adoc[staff requirements calculation] methods. This queue will have the name of the workload with a leading asterisk, e.g. \*yourWorkloadName. Forecast data will be available in the version Auto-Forecast.
 
 Depending on your WFM plan, you can also display queues in xref:monitoring:manage-dashboards.adoc[Dashboards].
 
@@ -17,12 +17,12 @@ Depending on your WFM plan, you can also display queues in xref:monitoring:manag
 Xlink does not create queues during imports. To create queues for the Xlink mapping, go to menu:WFM[Administration>Forecasting>Queues] and proceed as follows:
 
 1. Click the {icon-wfm-add} in the action bar.
-2. Enter a **Name** and an **Abbreviation**.
-3. Check the **Active** checkbox. If not checked, Xlink will not import data into this queue.
-4. Select an **Interval**. The interval length should be the same as in your ACD.
-5. (Optional) Enter a **Description**, e.g. to identify what the queue is used for.
-6. (Optional) Select a **Parent Queue**. This can be used to visualize a hierarchy in the list of queues.
-7. Select a **Time Zone**.
+2. Enter a *Name* and an *Abbreviation*.
+3. Check the *Active* checkbox. If not checked, Xlink will not import data into this queue.
+4. Select an *Interval*. The interval length should be the same as in your ACD.
+5. (Optional) Enter a *Description*, e.g. to identify what the queue is used for.
+6. (Optional) Select a *Parent Queue*. This can be used to visualize a hierarchy in the list of queues.
+7. Select a *Time Zone*.
 8. {btn-ok}
    Now, you can add event types and value types to the queue.
 
@@ -36,6 +36,6 @@ Select an event type from the list and add a start time and end time. If you add
 
 [#add-value-types]
 === Add value types
-In Xlink, you need to create and assign value types to a queue. Other integrations add predefined value types for offered and answered volumes and AHT if you click **Use Forecast** in a workload. Such value types are based on the channel of the queue, for example, you will see Calls Offered, Calls Answered, Calls Average Handling Time for call workloads.
+In Xlink, you need to create and assign value types to a queue. Other integrations add predefined value types for offered and answered volumes and AHT if you click *Use Forecast* in a workload. Such value types are based on the channel of the queue, for example, you will see Calls Offered, Calls Answered, Calls Average Handling Time for call workloads.
 
 You can still add additional value types manually. Add missing value types if you cannot transfer staff requirements due to an error message.

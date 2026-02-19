@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 This table lists the Subprocessors we engage when providing Services to you:
 
-**Companies of the InVision group**
+*Companies of the InVision group*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -32,7 +32,7 @@ This table lists the Subprocessors we engage when providing Services to you:
 |London
 |===
 
-**Data Center provider**
+*Data Center provider*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -47,7 +47,7 @@ This table lists the Subprocessors we engage when providing Services to you:
 |Frankfurt am Main
 |===
 
-**Communication and ticket system**
+*Communication and ticket system*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -59,7 +59,7 @@ This table lists the Subprocessors we engage when providing Services to you:
 |Cambridge, Massachusetts
 |===
 
-**Learning management system**
+*Learning management system*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===

@@ -8,9 +8,9 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: create-workloads.adoc, manual-adjustments.adoc, save-forecast-versions.adoc, download-forecast.adoc
 :page-aliases: forecast_overview
 
-**Forecast** applies machine learning to your historical data to generate high-quality forecasts and find trends, patterns, and fluctuations included in your data.
+*Forecast* applies machine learning to your historical data to generate high-quality forecasts and find trends, patterns, and fluctuations included in your data.
 
-**Forecast** generates a forecast for the following time ranges:
+*Forecast* generates a forecast for the following time ranges:
 
 - Advanced and Enterprise WFM plans: 24 months after the data import
 - Essential WFM plan: 12 months after the data import
@@ -24,7 +24,7 @@ For bulk data uploads, forecasts are recalculated if the data introduces a signi
 
 [#data-requirements]
 == Data requirements
-**Forecast** requires that you import offered contacts, average handling time (AHT), and handled contacts.
+*Forecast* requires that you import offered contacts, average handling time (AHT), and handled contacts.
 
 A forecast can be generated from a workload with just a few days of historical data. To identify monthly patterns, at least one month of historical data is required. For yearly patterns, at least a year of historical data is required.
 
@@ -65,7 +65,7 @@ You cannot remove historical data. Contact your Customer Success team if needed.
 ====
 [#forecast-low-volumes]
 == Forecast low volumes
-**Forecast** can generate forecasts for low and high contact volumes. When generating a forecast based on data from low contact volumes, daily patterns may not be recognized. While rare, this may result in no forecast being generated for particular days. For single days, adjust the forecast manually. In a recurring situation, you can:
+*Forecast* can generate forecasts for low and high contact volumes. When generating a forecast based on data from low contact volumes, daily patterns may not be recognized. While rare, this may result in no forecast being generated for particular days. For single days, adjust the forecast manually. In a recurring situation, you can:
 
 - Add multiple queues to the workload (resulting in higher volumes).
 - Use another approach to generate staff requirements for scheduling, e.g. xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[generate constant staff requirements].

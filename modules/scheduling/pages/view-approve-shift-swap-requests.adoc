@@ -11,7 +11,7 @@ In Me, people can swap their shifts or days off with each other, both on the sam
 
 [#prerequisites]
 == Prerequisites
-People with roles that include the **View Me** permission, e.g. standard agent role, can offer shifts if:
+People with roles that include the *View Me* permission, e.g. standard agent role, can offer shifts if:
 
 - xref:me:configure-me.adoc[Shift swap is activated] in Me.
 - All activities included in day models have been configured as xref:administration:activity-types-and-properties.adoc[Exchangeable with shift swap].
@@ -32,31 +32,32 @@ Learn more about the actual steps people must take to swap shifts in Me in xref:
 
 [#approve-or-reject-shift-swaps]
 == Approve or reject shift swaps
-Users with admin access or people with roles that include the **Full access to Schedules** permission can review, approve, or reject shift swap requests as follows:
+Users with admin access or people with roles that include the *Full access to Schedules* permission can review, approve, or reject shift swap requests as follows:
 
 1. Go to {bc-plan-schedules}
-2. From the btn:[Scheduling actions] drop-down menu, select **Approve shift swaps**.
+2. From the btn:[Scheduling actions] drop-down menu, select *Approve shift swaps*.
 3. Select a *planning unit* and, optionally, a *selection* from the drop-down menus.
-4. Select a **date range**.<br>If no date range has been selected in *Schedules*, the date range starts on the current date and ends seven days later.
+4. Select a *date range*. +
+If no date range has been selected in *Schedules*, the date range starts on the current date and ends seven days later.
 5. Check the checkboxes next to the entries you want to approve or reject. Use the checkbox at the top to select all entries at once.
 6. Click btn:[Approve selected] or btn:[Reject selected].  
-   After pending requests have been approved or rejected, they move to the **Information** tab.
+   After pending requests have been approved or rejected, they move to the *Information* tab.
 
 The Exchange Statistics report under menu:WFM[Monitoring>Reports] lists the status of shift swaps (Offered, Not edited, Rejected, and Approved) for a configurable period. Auto-accepted swaps are shown as approved.
 
 [#activate-shift-swap-auto-acceptance]
 === Activate shift swap auto-acceptance
-Shift swap auto-acceptance lets the offering person pre-select preferred shifts and, optionally, colleagues. When a counteroffer matches those preferences, Me accepts the swap automatically on their behalf. Shift swaps display an **Auto-accepted** badge, which indicates that Me confirmed the swap automatically after a matching counteroffer was submitted.
+Shift swap auto-acceptance lets the offering person pre-select preferred shifts and, optionally, colleagues. When a counteroffer matches those preferences, Me accepts the swap automatically on their behalf. Shift swaps display an *Auto-accepted* badge, which indicates that Me confirmed the swap automatically after a matching counteroffer was submitted.
 
 To activate shift swap auto-acceptance, proceed as follows:
 
 1. Go to menu:Plan[Configuration>General].
-2. In the **Shift swaps in Me** section, check the **Enable shift swap auto-acceptance** checkbox.
+2. In the *Shift swaps in Me* section, check the *Enable shift swap auto-acceptance* checkbox.
 3. {btn-save}
 
 [#generate-a-list-of-past-shift-swaps]
 == Generate a list of past shift swaps
-On the **Approve shift swaps** page, the **Information** tab shows which person has swapped which shift and at what time. The list shows approved, rejected and cancelled requests. For more information on cancelled requests, hover over the {icon-info-circle}.
+On the *Approve shift swaps* page, the *Information* tab shows which person has swapped which shift and at what time. The list shows approved, rejected and cancelled requests. For more information on cancelled requests, hover over the {icon-info-circle}.
 
 [#shift-swap-settings]
 == Shift swap settings

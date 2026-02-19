@@ -14,12 +14,13 @@ New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] firs
 == Empty levels
 To empty a level for a specific period, follow these steps:
 
-1. From the btn:[Scheduling actions] drop-down menu, select **Empty levels**.
-2. In the **Settings** section, configure the following fields:
-   - **Planning unit**
-   - **Level(s) to be emptied**
-   - **Date range**
-3. In the **Employees** section, check or uncheck the checkboxes next to the name of the people for whom you want to empty the level.<br>Use the {icon-schedules-filter-employees-u} and the {icon-filter-u} to filter people from the employees list with an employee filter or a selection from the drop-down menu.
+1. From the btn:[Scheduling actions] drop-down menu, select *Empty levels*.
+2. In the *Settings* section, configure the following fields:
+   - *Planning unit*
+   - *Level(s) to be emptied*
+   - *Date range*
+3. In the *Employees* section, check or uncheck the checkboxes next to the name of the people for whom you want to empty the level. +
+Use the {icon-schedules-filter-employees-u} and the {icon-filter-u} to filter people from the employees list with an employee filter or a selection from the drop-down menu.
 4. Click btn:[Empty levels].
 
 [NOTE]
@@ -32,4 +33,5 @@ You cannot recover the content of emptied levels. Make sure that you select the 
 Approved xref:scheduling:vacation-absences-management.adoc[time off] is stored in the Schedule level. Do not empty the Schedule level for a time period in which any of your people have planned time off. If you empty the level, you will delete the approved time off and your people must submit a new time-off request.
 If you want to delete the schedule for a time period with planned time off, xref:scheduling:schedules-edit.adoc[delete the schedule content manually].
 ====
-A job for emptying the selected levels starts in the background. You are redirected to {bc-plan-schedules} and see a success or an error message at the top of the page.<br>Go to xref:general:jobstatus.adoc[Job status] to track the progress. If the job fails, click the related entry to see more information.
+A job for emptying the selected levels starts in the background. You are redirected to {bc-plan-schedules} and see a success or an error message at the top of the page. +
+Go to xref:general:jobstatus.adoc[Job status] to track the progress. If the job fails, click the related entry to see more information.

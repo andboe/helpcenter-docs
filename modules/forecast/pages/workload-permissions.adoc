@@ -8,9 +8,9 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: create-workloads.adoc
 :page-aliases: workload-permissions
 
-In {bc-account-roles}, you can configure different *permissions* for all *workloads* in **Forecast**, including future *workloads*. This is useful if you want a role to have only view *permissions* for all *workloads*, and other roles to have both view and edit *permissions* for all *workloads*.
+In {bc-account-roles}, you can configure different *permissions* for all *workloads* in *Forecast*, including future *workloads*. This is useful if you want a role to have only view *permissions* for all *workloads*, and other roles to have both view and edit *permissions* for all *workloads*.
 
-New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
+New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 
 [#configure-workload-permissions]
 == Configure *workload permissions*
@@ -20,7 +20,7 @@ New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first
    - *Create workloads*
    - *Access to Requirement Calculations*
 4. Click *Configure workload permissions*.
-5. In the **General** section, check the relevant checkboxes for all *workloads*.
+5. In the *General* section, check the relevant checkboxes for all *workloads*.
 6. Click *Save changes*.
 
 [#configure-individual-workload-permissions]
@@ -35,6 +35,6 @@ To configure *permissions* for individual *workloads*, proceed as follows:
    - *Create workloads*
    - *Access to Requirement Calculations*
 4. Click *Configure workload permissions*.
-5. In the **General** section, check the relevant checkboxes for all *workloads*.
+5. In the *General* section, check the relevant checkboxes for all *workloads*.
 6. In the *Workload* section, check the relevant checkboxes for each *workload* individually. Use the search field to narrow down the *workload* list, if necessary.
 7. Click *Save changes*.

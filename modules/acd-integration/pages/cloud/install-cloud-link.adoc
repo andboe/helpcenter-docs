@@ -11,7 +11,7 @@ New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the b
 
 [#what-is-cloud-link]
 == What is Cloud Link?
-Cloud Link is a client software that needs to be installed when setting up on-premise or database integrations. Cloud Link regularly imports data into Peopleware. <!-- Frequency of imports is defined by the feature flag 'integrations_15_minute_imports', available for Advanced and Enterprise customers. For Essential customers, data is imported once a day. --> For CSV integrations, Cloud Link is only required when new files should automatically trigger data imports.
+Cloud Link is a client software that needs to be installed when setting up on-premise or database integrations. Cloud Link regularly imports data into Peopleware.  For CSV integrations, Cloud Link is only required when new files should automatically trigger data imports.
 
 [#prerequisites]
 == Prerequisites
@@ -21,20 +21,20 @@ Cloud Link is a client software that needs to be installed when setting up on-pr
 
 [#install-cloud-link]
 == Install Cloud Link
-When you add or edit xref:acd-integration:add-an-integration.adoc#what-are-on-premise-integrations[on-premise integrations], xref:acd-integration:add-csv-integration.adoc[CSV integrations], and xref:acd-integration:add-database-integration.adoc[database integrations], you can download the client installer for Windows or an archive for Linux in the **Cloud Link** section of the page.
+When you add or edit xref:acd-integration:add-an-integration.adoc#what-are-on-premise-integrations[on-premise integrations], xref:acd-integration:add-csv-integration.adoc[CSV integrations], and xref:acd-integration:add-database-integration.adoc[database integrations], you can download the client installer for Windows or an archive for Linux in the *Cloud Link* section of the page.
 
 [#windows-service-installation]
 === Windows service installation
 Install the first service using the Windows client installer:
 
-1. Click **Download for Windows 64-bit** and run the installer.
-2. Click **Next**.
+1. Click *Download for Windows 64-bit* and run the installer.
+2. Click *Next*.
 3. (Optional) Change the installation directory.
-4. Click **Next**, then **Install**.
+4. Click *Next*, then *Install*.
    A console window displays a PIN that is valid for 5 minutes.
    To xref:#connect-cloud-link-to-your-integration[connect Cloud Link to your integration], follow the instructions in the console window.
-5. Click **Finish** in the installer.
-   The installer creates the **injixo Cloud Link** Windows service.
+5. Click *Finish* in the installer.
+   The installer creates the *injixo Cloud Link* Windows service.
 
 [TIP]
 ====
@@ -50,7 +50,7 @@ You can install up to eight additional services for separate integrations. To av
 
 To install a second Cloud Link service on Windows, add a new integration and proceed as follows:
 
-1. Click **Download for Windows 64-bit**.
+1. Click *Download for Windows 64-bit*.
 2. Open a Windows command prompt (cmd).
 3. For the second instance, run the following command:
 
@@ -63,13 +63,13 @@ To install a second Cloud Link service on Windows, add a new integration and pro
    > For example, the third instance requires `":instance.2"`, the fourth instance`":instance.3"`, and so on.
 
 4. Follow the instructions in the installation procedure.  
-   The installer creates an additional **injixo Cloud Link (Instance {id})** Windows service.
+   The installer creates an additional *injixo Cloud Link (Instance {id})* Windows service.
 
 [#linux-service-installation]
 === Linux service installation
 Install the first service based on the following example:
 
-1. Click **Download for Linux 64-bit** and extract the archive into your preferred installation folder.
+1. Click *Download for Linux 64-bit* and extract the archive into your preferred installation folder.
 2. Open a terminal.
 3. Install the Cloud Link service:
    `sudo ./injixo-cloud-link service install`
@@ -88,7 +88,7 @@ To install more services on Linux, add a new integration and proceed as follows:
 
 1. Create a new directory and copy the files from the original installation directory.
 2. Open the injixo-cloud-link.toml file.
-3. Change the value for **name** in the **[app]** section to a new ID:
+3. Change the value for *name* in the *[app]* section to a new ID:
 
    ```
    [app]
@@ -102,24 +102,24 @@ To install more services on Linux, add a new integration and proceed as follows:
 The Cloud Link installation displays the following message, including a PIN:
 
 ----
-    ** Before you are able to run the client,
-    ** link it to your Peopleware account:
-    **  1) Log in to app.peopleware.com
-    **  2) Visit https://app.peopleware.com/account/integrations
-    **  3) Select an integration you want to connect the client to
-    **  4) Enter your pin: 424242 (expires in 5 minutes)
+    * Before you are able to run the client,
+    * link it to your Peopleware account:
+    *  1) Log in to app.peopleware.com
+    *  2) Visit https://app.peopleware.com/account/integrations
+    *  3) Select an integration you want to connect the client to
+    *  4) Enter your pin: 424242 (expires in 5 minutes)
 ```
 
-1. Return to the **Add a new integration** page in your browser.
-2. In the **injixo Cloud Link** section, enter your PIN in the six-digit input field **PIN shown during installation**.
+1. Return to the *Add a new integration* page in your browser.
+2. In the *injixo Cloud Link* section, enter your PIN in the six-digit input field *PIN shown during installation*.
 3. Click btn:[Connect].  
    Cloud Link connects to Peopleware. You can continue setting up your xref:acd-integration:add-an-integration.adoc#what-are-on-premise-integrations[on-premise integration] or xref:acd-integration:add-csv-integration.adoc[CSV integration].
 
 [#connect-through-a-proxy-server]
 == Connect through a proxy server
-To connect through a proxy server, add the proxy hostname or IP address to the **https_proxy** environment variable in your operating system:
+To connect through a proxy server, add the proxy hostname or IP address to the *https_proxy* environment variable in your operating system:
 
-- Windows: Add the environment variable to the **System variables** section if the service runs as LocalSystem. Otherwise, configure a user variable.
+- Windows: Add the environment variable to the *System variables* section if the service runs as LocalSystem. Otherwise, configure a user variable.
 - Linux: Set the environment variable in `/etc/environment` or in `/etc/profile.d`.
 
 Example: `https_proxy=http://your.proxy.example`
@@ -134,7 +134,7 @@ Ensure your network allows access to the following URLs used by Cloud Link:
 - injixo-\*.s3-eu-west-1.amazonaws.com
 - app.peopleware.com
 
-You cannot share a single IP address. Deployment and update processes periodically change server IP addresses. If Cloud Link cannot connect, [Windows socket error messages](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2) are logged.
+You cannot share a single IP address. Deployment and update processes periodically change server IP addresses. If Cloud Link cannot connect, link:https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2[Windows socket error messages] are logged.
 
 [#logging]
 == Logging
@@ -145,9 +145,8 @@ Cloud Link does not delete log files. You need to set up recurring deletion or d
 [#log-file-rotation]
 === Log file rotation
 1. In the installation directory, open the injixo-cloud-link.toml file.
-2. In the **[app]** section, configure the **logRotationStrategy** and **logRotationSize** options. **logRotationStrategy** is always **"size"**. The maximum size is 100 MiB.<br>
-
-   Example:
+2. In the *[app]* section, configure the *logRotationStrategy* and *logRotationSize* options. *logRotationStrategy* is always *"size"*. The maximum size is 100 MiB. +
+Example:
 
    ```
    [app]
@@ -161,9 +160,8 @@ Cloud Link does not delete log files. You need to set up recurring deletion or d
 [#log-level]
 === Log level
 1. In the installation directory, open the injixo-cloud-link.toml file.
-2. In the **[app]** section, configure the **logLevel** option. Allowed values are: **"info"** (default), **"warn"**, and **"debug"**.<br>
-
-   Example:
+2. In the *[app]* section, configure the *logLevel* option. Allowed values are: *"info"* (default), *"warn"*, and *"debug"*. +
+Example:
 
    ```
    [app]
@@ -176,9 +174,8 @@ Cloud Link does not delete log files. You need to set up recurring deletion or d
 [#log-file-folder]
 === Log file folder
 1. In the installation directory, open the injixo-cloud-link.toml file.
-2. In the **[app]** section, configure the **LogDirectory** option with a relative or absolute path. On Windows, use double backslashes.<br>
-
-   Example (Windows):
+2. In the *[app]* section, configure the *LogDirectory* option with a relative or absolute path. On Windows, use double backslashes. +
+Example (Windows):
 
    ```
    [app]
@@ -193,7 +190,7 @@ Cloud Link does not delete log files. You need to set up recurring deletion or d
 By default, Cloud Link uploads files for CSV integrations from its installation folder. You can change this folder as follows:
 
 1. In the installation directory, open the injixo-cloud-link.toml file.
-2. In the **[app]** section, configure the **importDirectory** option with a relative or absolute path. On Windows, use double backslashes.
+2. In the *[app]* section, configure the *importDirectory* option with a relative or absolute path. On Windows, use double backslashes.
 
    Example (Windows):
 
@@ -221,11 +218,11 @@ table th:nth-of-type(2) {
 |Question
 |Answer
 |How do I get a new PIN if the old one has expired?
-|Restart Cloud Link. Enter the new PIN from the log file in the six-digit input field in the **injixo Cloud Link** section on the configuration page.
+|Restart Cloud Link. Enter the new PIN from the log file in the six-digit input field in the *injixo Cloud Link* section on the configuration page.
 |How do I delete Cloud Link from my system?
-|1. Re-run the Cloud Link installer or go to menu:Programs[Programs and Features] in Windows. +2. Right-click the **injixo Cloud Link** entry in the list and select **Uninstall** or **Uninstall/Change**. +3. Follow the on-screen instructions. + +To uninstall additional instances, go to menu:Programs[Programs and Features] in Windows and follow steps 2 and 3.
+|1. Re-run the Cloud Link installer or go to menu:Programs[Programs and Features] in Windows. +2. Right-click the *injixo Cloud Link* entry in the list and select *Uninstall* or *Uninstall/Change*. +3. Follow the on-screen instructions. + +To uninstall additional instances, go to menu:Programs[Programs and Features] in Windows and follow steps 2 and 3.
 |How do I move Cloud Link to a new server?
-|1. Click the {icon-edit} to the right of an integration to edit it. +2. Click **Connect a new installation of Cloud Link**. +3. Download Cloud Link again if needed and install the software on the new server.
+|1. Click the {icon-edit} to the right of an integration to edit it. +2. Click *Connect a new installation of Cloud Link*. +3. Download Cloud Link again if needed and install the software on the new server.
 |How do I change the integration for an existing Cloud Link installation?
 |1. Go to the installation directory and copy the PIN from the log file. +2. Delete the existing integration and create a new integration. +3. Connect your running Cloud Link to the new integration. For this, enter the PIN during the configuration process for the new integration.
 |===

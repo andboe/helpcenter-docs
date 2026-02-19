@@ -19,9 +19,9 @@ If you don't have the Classic WFM plan, use the xref:scheduling:break-optimizati
 ====
 [#three-optimization-types]
 == Three optimization types
-- **Optimized scheduling:** Create an optimized schedule based on your configuration and staff requirements.
-- **Job optimization:** Optimize activities and breaks in an existing schedule. The Job optimization functionality replaces replaceable activities with plannable activities and moves breaks that are placed in xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridors within day models].
-- **Break optimization:** Optimize the position of breaks after you have made changes to an existing schedule.
+- *Optimized scheduling:* Create an optimized schedule based on your configuration and staff requirements.
+- *Job optimization:* Optimize activities and breaks in an existing schedule. The Job optimization functionality replaces replaceable activities with plannable activities and moves breaks that are placed in xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridors within day models].
+- *Break optimization:* Optimize the position of breaks after you have made changes to an existing schedule.
 
 Depending on the amount of data and the selected time period, running an optimization may take longer. During this time, you cannot change the schedule for the optimization period. The schedule is saved automatically.
 
@@ -46,11 +46,11 @@ The Fully optimized schedules functionality (AutoScheduler) automatically create
 === Create optimized schedules
 1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Fully Optimized Schedule].
-3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
+3. Under *Time Period*, set a *Start date* and *End date*. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.
-5. (Optional) Under *Selection*, use the default **[All]** or pick a selection from the drop-down menu.
+5. (Optional) Under *Selection*, use the default *[All]* or pick a selection from the drop-down menu.
    All employees are optimized but the results are saved only for the employees in the selection.
-6. (Optional) Check **Optimize again** to run the optimization on an existing schedule that has been created based on work time pattern models of type C. This will reshuffle the order of weekdays previously used. In any other case, delete the existing schedule before you create a new one.
+6. (Optional) Check *Optimize again* to run the optimization on an existing schedule that has been created based on work time pattern models of type C. This will reshuffle the order of weekdays previously used. In any other case, delete the existing schedule before you create a new one.
 7. Click btn:[Ok].
 
 [#what-is-the-job-optimization]
@@ -78,9 +78,9 @@ Tip: When you use shift bidding, only use the Present activity (ID 1) in your da
 === Run the Job optimization
 1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Job Optimization].
-3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
+3. Under *Time Period*, set a *Start date* and *End date*. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.
-5. (Optional) Under *Selection*, use the default **[All]** or pick a selection from the drop-down menu.
+5. (Optional) Under *Selection*, use the default *[All]* or pick a selection from the drop-down menu.
    All employees are optimized but the results are saved only for the employees in the selection.
 6. Click btn:[Ok].
 
@@ -94,11 +94,11 @@ Example: Two employees have got a shift with a break from 12:00 to 13:00. The br
 === Run the Break optimization
 1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Break Optimization].
-3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
+3. Under *Time Period*, set a *Start date* and *End date*. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.
-5. (Optional) Under *Selection*, use the default **[All]** or pick a selection from the drop-down menu. All employees are optimized but the results are saved only for the employees in the selection.
+5. (Optional) Under *Selection*, use the default *[All]* or pick a selection from the drop-down menu. All employees are optimized but the results are saved only for the employees in the selection.
 6. Click btn:[Ok].
 
 [#optimizations-in-enterprise-on-premise]
 == Optimizations in Enterprise on-premise
-In Enterprise on-premise, the Fully optimized schedules functionality is called AutoScheduler. The AutoScheduler is not manageable via xref:general:jobstatus.adoc[Job status]. To start the AutoScheduler, go to menu:WFM[Scheduling>SchedulePro>Shift Center] and click the icons in the menu bar. The job and break optimization can also be started from the xref:scheduling:what-are-planning-periods.adoc[planning periods] page. To write the optimization result into the schedule and show the scheduling report, click **Save**. Your changes are not saved automatically.
+In Enterprise on-premise, the Fully optimized schedules functionality is called AutoScheduler. The AutoScheduler is not manageable via xref:general:jobstatus.adoc[Job status]. To start the AutoScheduler, go to menu:WFM[Scheduling>SchedulePro>Shift Center] and click the icons in the menu bar. The job and break optimization can also be started from the xref:scheduling:what-are-planning-periods.adoc[planning periods] page. To write the optimization result into the schedule and show the scheduling report, click *Save*. Your changes are not saved automatically.

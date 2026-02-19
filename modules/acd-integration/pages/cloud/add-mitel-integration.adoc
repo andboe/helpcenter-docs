@@ -18,17 +18,17 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Mitel**.
+4. From the *External system* drop-down menu, select *Mitel*.
 5. {btn-save}
 
 [#set-up-your-mitel-integration]
 == Set up your Mitel integration
 1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link]. During the installation, your terminal shows a PIN that you need to enter in the integrations page to proceed. The PIN expires after 5 minutes.
-2. In the **Credentials** section, set up your integration:
-   - **Host** and **Port**: Enter the host and port of your database.
-   - **Username** and **Password**: Enter valid credentials for a database user with read access to the CCMData database.
-3. In the **Regional settings** section, select your **ACD time zone**, in the case that the system running your Mitel ACD is not set up in UTC±00:00,.
-4. In the **Configuration** section, check **Import agent status data** to import agent status data from Mitel.
+2. In the *Credentials* section, set up your integration:
+   - *Host* and *Port*: Enter the host and port of your database.
+   - *Username* and *Password*: Enter valid credentials for a database user with read access to the CCMData database.
+3. In the *Regional settings* section, select your *ACD time zone*, in the case that the system running your Mitel ACD is not set up in UTC±00:00,.
+4. In the *Configuration* section, check *Import agent status data* to import agent status data from Mitel.
 5. {btn-save}
 
 The integration starts importing data. To successfully import agent status data, you first need to xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map external user identifiers and activities].

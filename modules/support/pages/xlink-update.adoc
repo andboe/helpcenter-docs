@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Steps to update your Xlink installation with a new version.
 
-We release new Xlink versions with bug fixes on the [download page](https://downloads.peopleware.com/en#xlink-software-documentation). To check your current Xlink version, open the **version.txt** file or right-click the **isps_ul.exe** file and choose Properties. Then, navigate to the Details tab.
+We release new Xlink versions with bug fixes on the link:https://downloads.peopleware.com/en#xlink-software-documentation[download page]. To check your current Xlink version, open the *version.txt* file or right-click the *isps_ul.exe* file and choose Properties. Then, navigate to the Details tab.
 
 [#open-windows-services-and-command-line]
 == Open Windows services and command line
@@ -31,13 +31,13 @@ Open a command line prompt:
    - acd_map.ini
    - all \*.bas files
 
-2. Download the _Xlink Suite_ from [downloads.peopleware.com](https://downloads.peopleware.com) and unzip the archive.
+2. Download the _Xlink Suite_ from link:https://downloads.peopleware.com[downloads.peopleware.com] and unzip the archive.
 3. Stop the `ISPS Xlink` service.
 
 [#update-xlink]
 == Update Xlink
 1. Overwrite your current Xlink installation using the files from the subfolder `xlink`.
-2. In the Windows services, right-click the `ISPS Xlink` service and select _Properties_. To see if the service is running with the local system or a special user account, go to the **Login** tab.
+2. In the Windows services, right-click the `ISPS Xlink` service and select _Properties_. To see if the service is running with the local system or a special user account, go to the *Login* tab.
 
    > Note
    >
@@ -59,7 +59,7 @@ Open a command line prompt:
 
 [#xlink-and-user-account-control]
 == Xlink and User Account Control
-[User Account Control](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works) (UAC) is a key part of Windows security. But due to UAC, Xlink may be unable to update the isps_ul.ini file in the Xlink installation directory. Instead, Windows creates a copy of the isps_ul.ini file in the VirtualStore directory (user/appdata/local/virtualstore).
+link:https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works[User Account Control] (UAC) is a key part of Windows security. But due to UAC, Xlink may be unable to update the isps_ul.ini file in the Xlink installation directory. Instead, Windows creates a copy of the isps_ul.ini file in the VirtualStore directory (user/appdata/local/virtualstore).
 
 This can happen when you change the general settings using the isps_ul.exe file. As a consequence, Xlink will not read the correct configuration file.
 
@@ -75,17 +75,17 @@ After that, you can either run the isps_ul.exe file as admin or xref:#adjust-use
 Starting the isps_ul.exe file with elevated privileges allows direct access to the Xlink installation directory, thus bypassing the VirtualStore.
 
 1. Navigate to the Xlink installation directory.
-2. Right-click the **isps_ul.exe** file.
-3. In the context menu, select **Run as administrator**.
-4. If UAC prompts you, select **Yes** or **Continue**.
+2. Right-click the *isps_ul.exe* file.
+3. In the context menu, select *Run as administrator*.
+4. If UAC prompts you, select *Yes* or *Continue*.
 
 [#adjust-users-folder-permissions]
 === Adjust users' folder permissions
 Change the permissions of the application's installation folder to give write access to standard Windows users. They can then avoid using the VirtualStore.
 
 1. In the Windows Explorer, go to the Xlink installation directory.
-2. Right-click the directory and select **Properties**.
-3. In the **Security** tab, click the **Edit...** button to change permissions.
-4. From the **Group or user names** list, select **Users**.
-5. In the **Permissions for Users** section, check the **Write** checkbox under the **Allow** column.
-6. Click **Apply**, then **OK**.
+2. Right-click the directory and select *Properties*.
+3. In the *Security* tab, click the *Edit...* button to change permissions.
+4. From the *Group or user names* list, select *Users*.
+5. In the *Permissions for Users* section, check the *Write* checkbox under the *Allow* column.
+6. Click *Apply*, then *OK*.

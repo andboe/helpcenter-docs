@@ -25,12 +25,12 @@ If your organization is on the Essential WFM plan, you will not be able to send 
 [#offer-a-shift]
 === Offer a shift
 1. Go to {bc-me-calendar} or to {bc-me-dashboard}.
-2. In **My Calendar**, click btn:[Day] to switch to the daily view.
-3. In the section **7 Day Agenda**, click the offer icon *![Offer Button](/assets/img/common/injixo-me/offer.png)* next to the shift you want to offer. The offer icon is visible if xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[shift swaps] are allowed for this period and shift.
+2. In *My Calendar*, click btn:[Day] to switch to the daily view.
+3. In the section *7 Day Agenda*, click the offer icon *!xref:ROOT:assets/img/common/injixo-me/offer.png[Offer Button]* next to the shift you want to offer. The offer icon is visible if xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[shift swaps] are allowed for this period and shift.
    A dialog window opens.
 4. Click btn:[Swap].  
    A drop-down menu opens where you can select one or multiple days that you would like to swap your shift on.
-5. Click btn:[Swap]. If the **Auto-accept counter offers from invited people** checkbox is enabled, counteroffers are accepted automatically once you receive them.
+5. Click btn:[Swap]. If the *Auto-accept counter offers from invited people* checkbox is enabled, counteroffers are accepted automatically once you receive them.
 6. (Optional) To send a notification to all colleagues of the selected shift(s), click btn:[Send invitation(s)]. You may also see entries for people who are not scheduled for a shift on the day or who are scheduled for a full-day activity. Click btn:[Skip invitation(s)] to not send notifications.
 
    > Note
@@ -40,7 +40,7 @@ If your organization is on the Essential WFM plan, you will not be able to send 
 7. (Optional) To leave a comment, click the {icon-comment} next to the offered shift.
 8. {btn-close}
 
-The icon next to the offered shift turns green in your overview. Your colleagues will see your offer in the **7 Day Agenda** section and can place a counteroffer.
+The icon next to the offered shift turns green in your overview. Your colleagues will see your offer in the *7 Day Agenda* section and can place a counteroffer.
 
 [#place-a-counteroffer]
 === Place a counteroffer
@@ -48,20 +48,20 @@ To place a counteroffer for an offered shift, you can offer your own shift:
 
 1. Go to {bc-me-calendar}.
 2. Click btn:[Day] to switch to the daily view.
-3. In the **7 Day Agenda** section, click the counteroffer icon *![Button Counteroffer](/assets/img/common/injixo-me/counter-offer.png)* next to the shift that you want to offer.
-4. Under **Other Shifts**, click btn:[Offer] to offer your shift as a counteroffer.
+3. In the *7 Day Agenda* section, click the counteroffer icon *!xref:ROOT:assets/img/common/injixo-me/counter-offer.png[Button Counteroffer]* next to the shift that you want to offer.
+4. Under *Other Shifts*, click btn:[Offer] to offer your shift as a counteroffer.
    The employee who offered the shift will be informed about your counteroffer.
 5. {btn-close}
 
 [#accept-a-counteroffer]
 === Accept a counteroffer
-If you offered a shift and received a counteroffer, you will see a **Shift Offer Received** notification in {bc-me-dashboard}. To accept the counteroffer, proceed as follows:
+If you offered a shift and received a counteroffer, you will see a *Shift Offer Received* notification in {bc-me-dashboard}. To accept the counteroffer, proceed as follows:
 
 1. Go to {bc-me-dashboard}.
-2. In the **Notices** section, click btn:[View] next to the **Shift Offer Received** notification.
+2. In the *Notices* section, click btn:[View] next to the *Shift Offer Received* notification.
    A dialog window opens.
-3. Under **Shift Offers**, click btn:[Accept].  
-   If you need planner approval for the swap, a yellow banner shows the following message: This shift swap is pending approval. The counteroffer icon *![Available Shifts To Swap Button](/assets/img/common/injixo-me/counter-offer.png)* turns yellow.  
+3. Under *Shift Offers*, click btn:[Accept].  
+   If you need planner approval for the swap, a yellow banner shows the following message: This shift swap is pending approval. The counteroffer icon *!xref:ROOT:assets/img/common/injixo-me/counter-offer.png[Available Shifts To Swap Button]* turns yellow.  
    If a counteroffer was auto-accepted for you, the swap is already confirmed on your behalf.
 4. {btn-close}
 
@@ -70,17 +70,17 @@ If you offered a shift and received a counteroffer, you will see a **Shift Offer
 To reject a counteroffer and cancel a shift swap, proceed as follows:
 
 1. Go to {bc-me-dashboard}.
-2. In the **Notices** section, click btn:[View] next to the **Shift Offer Received** notification.  
+2. In the *Notices* section, click btn:[View] next to the *Shift Offer Received* notification.  
    A dialog window opens.
-3. Under **Your Shifts**, click btn:[Retain].
+3. Under *Your Shifts*, click btn:[Retain].
 4. {btn-close}
 
 [#cancel-a-shift-offer]
 === Cancel a shift offer
 1. Go to {bc-me-dashboard}.
-2. In the **7 Day Agenda** section, click the green offer icon *![Offer Button](/assets/img/common/injixo-me/offer.png)* next to an offered shift.  
+2. In the *7 Day Agenda* section, click the green offer icon *!xref:ROOT:assets/img/common/injixo-me/offer.png[Offer Button]* next to an offered shift.  
    A dialog window opens.
-3. Under **Your Shifts**, click btn:[Retain].
+3. Under *Your Shifts*, click btn:[Retain].
 4. {btn-close}  
    The offer icon next to your shift turns grey.
 

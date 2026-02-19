@@ -24,8 +24,8 @@ Quota consumption measures how much of the defined time-off quota is used or pro
 
 [#consumption-types]
 === Quota consumption types
-- **Consumed quota**: Time off that has been approved or is pending cancellation.
-- **Projected consumed quota**: Includes all approved time-off and pending requests.
+- *Consumed quota*: Time off that has been approved or is pending cancellation.
+- *Projected consumed quota*: Includes all approved time-off and pending requests.
 
 [#quota-consumption-updates]
 === Quota consumption updates
@@ -44,4 +44,4 @@ Each xref:time-off:time-off-types.adoc[time-off type] can be configured to eithe
 
 [#view-quota-usage]
 === View Quota Usage
-You can view both consumption and projected consumption directly in the Time Off xref:time-off:time-off.adoc#view-quota-consumption[**Plan** view].
+You can view both consumption and projected consumption directly in the Time Off xref:time-off:time-off.adoc#view-quota-consumption[*Plan* view].

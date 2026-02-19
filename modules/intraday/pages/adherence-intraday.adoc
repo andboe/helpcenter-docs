@@ -22,15 +22,15 @@ The page displays the total adherence score, adherence scores by interval, and a
 === Adherence score
 The page shows different adherence score details:
 
-- **Adherence**: Percentage of working time spent on scheduled activities. If the day has not ended, the score is calculated up to the last updated timestamp, which is displayed above the score. If the score falls below the xref:intraday:real-time-adherence.adoc#target-adherence-score[the target adherence score], it is highlighted in red.
-- **Scores by interval**: Vertical blue bars represent scores by interval. Scores lower than 100&nbsp;% represent intervals during which people’s actual activities deviate from their scheduled activities.
-- **Target adherence score**: The dashed line in the graph shows the configured target score.
+- *Adherence*: Percentage of working time spent on scheduled activities. If the day has not ended, the score is calculated up to the last updated timestamp, which is displayed above the score. If the score falls below the xref:intraday:real-time-adherence.adoc#target-adherence-score[the target adherence score], it is highlighted in red.
+- *Scores by interval*: Vertical blue bars represent scores by interval. Scores lower than 100 % represent intervals during which people’s actual activities deviate from their scheduled activities.
+- *Target adherence score*: The dashed line in the graph shows the configured target score.
 
-<!-- Adherence in %	Percentage of working time spent in activities that comply with the scheduled activities	Minutes in adherence/scheduled minutes * 100% -->
+
 
 [#staff-overview-table]
 === Staff overview table
-Under the total adherence score and the scores by interval, a table displays adherence details for the selected day. To sort the table by adherence score, click the **Adherence** header. To sort the table by name, click the **Name** header.
+Under the total adherence score and the scores by interval, a table displays adherence details for the selected day. To sort the table by adherence score, click the *Adherence* header. To sort the table by name, click the *Name* header.
 
 Each row shows a person's adherence score. Differences between the person's scheduled activities and their actual activities are highlighted.
 
@@ -48,15 +48,15 @@ To see the details of a person's intraday adherence in a new window, click their
 
 On the left, two boxes display an overview of the selected month:
 
-- **Person name**: Shows the person's adherence score, how long they were scheduled, and adherence details for the selected month. The values include the data up to the last completed interval of the current day.
-- **Daily overview**: Days for which adherence scores are available are highlighted in red. Hover over a date to see the adherence score of the selected person. Click a date to see the details.
+- *Person name*: Shows the person's adherence score, how long they were scheduled, and adherence details for the selected month. The values include the data up to the last completed interval of the current day.
+- *Daily overview*: Days for which adherence scores are available are highlighted in red. Hover over a date to see the adherence score of the selected person. Click a date to see the details.
 
 On the right, you can see in detail when this person was scheduled and where they did not adhere to the schedule:
 
-- **Intraday adherence score**: Calculated using data up to the last completed interval of the current day. Identical to the day score when you hover a date in **Daily overview**.
-- **Scheduled** and **Out of Adherence** durations: Sum of durations for all scheduled activities (activity types Present, Meeting, Break) and deviations in the schedule on the selected date.
-- **Timeline**: Colored bars highlight scheduled activities, actual activities, and out-of-adherence statuses. In the **Out of adherence** row, you can click out-of-adherence time slots to zoom in. Click btn:[Reset zoom] to reset the zoom.
-- **Table**: Each row shows details for out-of-adherence periods. Click a header to sort data by time period, actual activity, status, scheduled activity or out of adherence duration.
+- *Intraday adherence score*: Calculated using data up to the last completed interval of the current day. Identical to the day score when you hover a date in *Daily overview*.
+- *Scheduled* and *Out of Adherence* durations: Sum of durations for all scheduled activities (activity types Present, Meeting, Break) and deviations in the schedule on the selected date.
+- *Timeline*: Colored bars highlight scheduled activities, actual activities, and out-of-adherence statuses. In the *Out of adherence* row, you can click out-of-adherence time slots to zoom in. Click btn:[Reset zoom] to reset the zoom.
+- *Table*: Each row shows details for out-of-adherence periods. Click a header to sort data by time period, actual activity, status, scheduled activity or out of adherence duration.
 
 [#adherence-report-csv-file]
 == Adherence report (CSV file)
@@ -64,7 +64,7 @@ If you need to analyze adherence and conformance data for individual people over
 
 1. Select a *Planning unit* and/or a *Selection*.
 2. Click btn:[Download report].
-3. In the **Download report** window, select a date range for the report. You can select any date range from one day to up to six months in the past.
+3. In the *Download report* window, select a date range for the report. You can select any date range from one day to up to six months in the past.
 4. Click btn:[Download report].
 
 The table below explains the report columns:

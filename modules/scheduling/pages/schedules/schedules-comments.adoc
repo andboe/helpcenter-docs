@@ -13,15 +13,14 @@ New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] and 
 
 [#add-a-comment]
 == Add a comment
-You can add one comment to each level for each person per day.<br>
+You can add one comment to each level for each person per day. +
 To allow people to see comments in Me, follow the steps in the xref:#allow-people-to-see-comments[dedicated section below].
 
 1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click an hour or day cell.
-3. In the **Comment** section on the left, enter a comment with a maximum length of 250 characters.
-4. At the bottom left, click btn:[Save].<br>
-
-In the xref:scheduling:schedules-overview.adoc#schedule-area[schedule area], hover over a cell with a {icon-comment} to see the comment.<br>
+3. In the *Comment* section on the left, enter a comment with a maximum length of 250 characters.
+4. At the bottom left, click btn:[Save]. +
+In the xref:scheduling:schedules-overview.adoc#schedule-area[schedule area], hover over a cell with a {icon-comment} to see the comment. +
 In xref:scheduling:schedules-overview.adoc#single-day-view-with-hour-columns[single-day view], the {icon-comment} is only displayed in the hour cell with the first scheduled activity.
 
 You can also see or xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-comments[add comments in Shift Center].
@@ -30,7 +29,7 @@ You can also see or xref:scheduling:add-and-delete-activities-day-models-availab
 == Edit or delete a comment
 1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click an hour or day cell marked with a {icon-comment}.
-3. In the **Comment** section on the left, edit or delete the comment text.
+3. In the *Comment* section on the left, edit or delete the comment text.
 4. At the bottom left, click btn:[Save].
 
 [#allow-people-to-see-comments]
@@ -40,7 +39,7 @@ To allow people to see the comments you add to their schedules, proceed as follo
 1. Make sure that the day to which you want to add a comment is included within a scheduling period with the status Published or Shift bidding enabled.
 2. xref:#add-a-comment[Add your comment] to an hour or day cell in the xref:scheduling:schedules-overview.adoc#level-column[Schedule level].
 
-People can see your comments in {bc-me-calendar} by selecting the xref:me:explore-me.adoc#see-your-schedule-my-calendar[daily view] and clicking the {icon-comment} in the **7 Day Agenda** section on the left.
+People can see your comments in {bc-me-calendar} by selecting the xref:me:explore-me.adoc#see-your-schedule-my-calendar[daily view] and clicking the {icon-comment} in the *7 Day Agenda* section on the left.
 
 [#frequently-asked-questions]
 == Frequently asked questions

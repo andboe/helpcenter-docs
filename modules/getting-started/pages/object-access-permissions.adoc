@@ -32,8 +32,8 @@ image::object-access-permissions/image-0.png[Navigate to object access screen, w
 === Create a New Object Access Group
 1. Go to menu:Account[Object access]
 2. {btn-create} The _New object access_ configuration screen opens.
-3. Enter a **Name** for the new object group.
-4. Enter a **Description** (optional). The description appears in the object access overview.
+3. Enter a *Name* for the new object group.
+4. Enter a *Description* (optional). The description appears in the object access overview.
 
 image::object-access-permissions/image-1.png[New object access configuration screen, width=80%]
 
@@ -41,8 +41,8 @@ image::object-access-permissions/image-1.png[New object access configuration scr
 === Restrict Access In an Object Access Group
 By default, any new _Object Access Group_ grants full access to all current and future objects. To restrict the user access, add the objects that the group members will have access to:
 
-1. Check **Restrict access** for the element in the _Accessible objects_ section. This will open the object configuration.
-2. Check the **checkboxes** of the elements that should be accessible by the group members. You can also search for elements.
+1. Check *Restrict access* for the element in the _Accessible objects_ section. This will open the object configuration.
+2. Check the *checkboxes* of the elements that should be accessible by the group members. You can also search for elements.
 3. Click btn:[Create] to save the new object group.
 
 image::object-access-permissions/image-2.png[Accessible objects with restricted access, width=80%]
@@ -62,6 +62,6 @@ In {bc-people}, you can assign an object group to your people:
 
 1. {nav-to-people}
 2. Click a person's tile.
-3. Under **Access** in the left-side menu, click **{icon-edit} Edit** in the **Object access** section.
-4. Select a **group of access objects** from the drop-down menu.
+3. Under *Access* in the left-side menu, click *{icon-edit} Edit* in the *Object access* section.
+4. Select a *group of access objects* from the drop-down menu.
 5. {btn-save}

@@ -21,7 +21,7 @@ The following roles are predefined:
 |Standard Planner
 |A role for people that create and edit forecasts and schedules, generate reports and add user accounts.
 |Standard Agent
-|A default role that grants access to the features available in **Me**. Which features are available depends on how an admin set up **Me**.
+|A default role that grants access to the features available in *Me*. Which features are available depends on how an admin set up *Me*.
 |Standard Supervisor basic
 |A role for supervisors that need to view schedules, view time-off and vacation data, check adherence or create reports.
 |Standard Supervisor advanced

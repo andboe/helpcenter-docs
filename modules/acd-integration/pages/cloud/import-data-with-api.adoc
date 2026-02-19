@@ -14,9 +14,9 @@ We offer vendor-specific and universal integrations to import contact and agent 
 == What is an Peopleware API integration?
 In Advanced and Enterprise WFM, Peopleware API integrations allow you to send API requests to import data (e.g. when there is no standard integration for your external system). For this purpose, the Peopleware API provides the following resources:
 
-- [Contact Event resource](https://api.peopleware.com/resources/contact-store/contact-events): Contact events are recorded when customers contact your company via call, email, or chat. This data is stored in queues grouped by queue name and channel.
-- [Queue resource](https://api.peopleware.com/resources/queue-store/queues): Queues group historical data by interval and channel. This data is used for forecasting and scheduling.
-- [Agent Status resource](https://api.peopleware.com/resources/agent-status-store/agent-status): Agent status data is recorded when employees switch from one activity to the next, e.g. login, wrap-up time, or logout.
+- link:https://api.peopleware.com/resources/contact-store/contact-events[Contact Event resource]: Contact events are recorded when customers contact your company via call, email, or chat. This data is stored in queues grouped by queue name and channel.
+- link:https://api.peopleware.com/resources/queue-store/queues[Queue resource]: Queues group historical data by interval and channel. This data is used for forecasting and scheduling.
+- link:https://api.peopleware.com/resources/agent-status-store/agent-status[Agent Status resource]: Agent status data is recorded when employees switch from one activity to the next, e.g. login, wrap-up time, or logout.
 
 [NOTE]
 ====
@@ -29,14 +29,14 @@ Users with admin access can add a Peopleware API integration as follows:
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Peopleware API**.
+4. From the *External system* drop-down menu, select *Peopleware API*.
 5. {btn-save}
 
 [#set-up-your-peopleware-api-integration]
 == Set up your Peopleware API integration
-1. In the **API access** section, click btn:[Generate].
+1. In the *API access* section, click btn:[Generate].
 
-Authentication also works with personal access tokens that have been created in user profiles in the xref:reporting:api.adoc#authorization-personal-access-token[**Personal access tokens**] section.
+Authentication also works with personal access tokens that have been created in user profiles in the xref:reporting:api.adoc#authorization-personal-access-token[*Personal access tokens*] section.
 
 [NOTE]
 ====
@@ -56,10 +56,10 @@ To identify the API integration and to authenticate, include the Peopleware key 
 2. Find or copy your integration ID:
    - {nav-to-account-integrations}
    - Select your API integration section.
-   - In the **API Access** section, click the Copy icon \_{icon-clone} next to the integration ID.
-3. Add your integration ID to the **meta** object in the request body.
+   - In the *API Access* section, click the Copy icon \_{icon-clone} next to the integration ID.
+3. Add your integration ID to the *meta* object in the request body.
 
-To import data from your external system regularly, you need to run your own application. For sample scripts in Ruby and Python, check the user guides in the [Peopleware API documentation](https://api.peopleware.com).
+To import data from your external system regularly, you need to run your own application. For sample scripts in Ruby and Python, check the user guides in the link:https://api.peopleware.com[Peopleware API documentation].
 
 [#testing-data-imports]
 == Testing data imports
@@ -69,7 +69,7 @@ The API only supports HTTPS. Send your requests to https://api.peopleware.com to
 
 [#curl-on-the-command-line]
 === cURL on the command line
-The following examples show how to send data to the API using [cURL](https://curl.se/). cURL is a command line tool that exchanges data with a server through a terminal.
+The following examples show how to send data to the API using link:https://curl.se/[cURL]. cURL is a command line tool that exchanges data with a server through a terminal.
 
 Contact events:
 
@@ -95,7 +95,7 @@ curl -X POST \
 
 [#rest-clients]
 === REST clients
-The following examples show how to send data to the API using a REST client, such as [Postman](https://www.postman.com/downloads/).
+The following examples show how to send data to the API using a REST client, such as link:https://www.postman.com/downloads/[Postman].
 
 1. Include a JSON request header:
 
@@ -106,9 +106,9 @@ The following examples show how to send data to the API using a REST client, suc
    }
    ```
 
-2. Include a different JSON request body for contact events and agent status data.<br><br>
-
-   Example request body for contact events: `/external-systems/contact-events`:
+2. Include a different JSON request body for contact events and agent status data. +
+ +
+Example request body for contact events: `/external-systems/contact-events`:
 
    ```
    {
@@ -151,5 +151,5 @@ The following examples show how to send data to the API using a REST client, suc
 == Your first API request - what next?
 After you have sent a successful API request, you need to wait before you can see data in Peopleware. You can work with the imported data as follows:
 
-- Contact events requests: In **Forecast**, the **New workload** and **Edit workload** pages will display the imported queues when data has been processed.
+- Contact events requests: In *Forecast*, the *New workload* and *Edit workload* pages will display the imported queues when data has been processed.
 - Agent status data requests: The first request with new agent IDs will not result in actual agent status data in Shift Center. To see data, xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map at least one external identifier] (sent as agentIdentifier) to a person. You need to send another request to display the data.

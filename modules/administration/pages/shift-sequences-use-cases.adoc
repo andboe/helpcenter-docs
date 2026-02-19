@@ -45,9 +45,9 @@ To schedule early and late shifts for different groups of people, create two dif
 
 1. Go to {bc-plan-config-shift-sequences}.
 2. {btn-create}
-3. Specify the general settings. In the **Rows** field, enter **2**.
+3. Specify the general settings. In the *Rows* field, enter *2*.
 4. {btn-save}
-5. (Optional) In the **Assignments** section, rename the rows to improve clarity (e.g. **Early shifts** and **Late shifts**).
+5. (Optional) In the *Assignments* section, rename the rows to improve clarity (e.g. *Early shifts* and *Late shifts*).
 6. Assign the day models to the relevant days in the rows.
 
 == Use case 2 - Schedule recurring activities
@@ -56,13 +56,13 @@ To schedule weekly meetings, create as many rows as the number of teams for whic
 
 1. Go to {bc-plan-config-shift-sequences}.
 2. {btn-create}
-3. Specify the general settings. In the **Rows** field, enter the number of teams for which you want to schedule weekly meetings.
+3. Specify the general settings. In the *Rows* field, enter the number of teams for which you want to schedule weekly meetings.
 4. {btn-save}
-5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a team.
+5. (Optional) In the *Assignments* section, rename the rows to improve clarity. Each row corresponds to a team.
 6. Assign the meeting activity to the relevant days in the rows.
 
 - Select the activity in the drop-down menu.
-- In the **From** and **To** fields, set the activity start and end time.
+- In the *From* and *To* fields, set the activity start and end time.
 
 == Use case 3 - Specify days when people do not work
 
@@ -80,7 +80,7 @@ To schedule people with varying availability, proceed as follows:
 
 1. Go to {bc-plan-config-shift-sequences}.
 2. {btn-create}
-3. Specify the general settings. In the **Rows** field, enter the number of people for whom you want to schedule varying availabilities.
+3. Specify the general settings. In the *Rows* field, enter the number of people for whom you want to schedule varying availabilities.
 4. {btn-save}
-5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a person.
+5. (Optional) In the *Assignments* section, rename the rows to improve clarity. Each row corresponds to a person.
 6. Assign the relevant Availability day model to the relevant days in the rows.

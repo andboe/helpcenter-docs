@@ -23,7 +23,7 @@ You can cut, copy, or paste one or multiple day cells, or individual scheduling 
 === Edit day cells
 You can cut, copy, and paste one or several day cells at a time. When you cut or copy a day cell, you copy its whole content. Pasting a cell into another cell overwrites the existing content.
 
-1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], select a day cell. To select multiple day cells, hold **Shift** while clicking.
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], select a day cell. To select multiple day cells, hold *Shift* while clicking.
 2. Right-click the cell, and select *Copy*, or *Cut*.
 3. Right-click the cell where you want to paste the copied content, and select *Paste*.
 
@@ -44,7 +44,7 @@ To move, extend, or shorten activities, proceed as follows:
 2. To increase or reduce the time scale size, use the black arrow buttons in the column header.
 3. Click the activity that you want to edit.
    - To move the activity to a different time within the day, hover over the activity until a white {icon-arrows-left-right} is displayed, then drag it to the left or to the right.  
-     Neighbouring elements are shortened or extended accordingly. To detach an activity from neighbouring elements, press **CTRL** while dragging it. To move all activities in a day cell together, press **Shift** while dragging them.
+     Neighbouring elements are shortened or extended accordingly. To detach an activity from neighbouring elements, press *CTRL* while dragging it. To move all activities in a day cell together, press *Shift* while dragging them.
    - To extend or shorten the activity, hover over its left or right edge until a double black arrow is displayed, and drag and drop the arrow.
 
 [#move-variable-day-models]
@@ -105,7 +105,7 @@ xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[Moveable co
 == Split day models into activities
 You can split a day model into the sequence of its individual activities. This way, you can edit the individual activities.
 
-<!-- Automatic scheduling processes like the _Fully Optimized Plan_ always split shifts into their individual activities. obsolete?-->
+
 
 To split a day model into its activities, proceed as follows:
 

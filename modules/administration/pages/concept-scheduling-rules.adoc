@@ -16,7 +16,7 @@ For more information about contract-specific scheduling parameters, see xref:adm
 
 [NOTE]
 ====
-**Example**
+*Example*
 ====
 >
 [NOTE]

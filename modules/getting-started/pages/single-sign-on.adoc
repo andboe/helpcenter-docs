@@ -30,19 +30,19 @@ Only users with admin access can activate SSO.
 
 1. Register Peopleware as a new SAML or SSO application in your IdP.
 
-   You can download [this Peopleware logo](/assets/img/common/logo.png) to add it to the web application page.
+   You can download xref:ROOT:assets/img/common/logo.png[this Peopleware logo] to add it to the web application page.
 
-2. In Peopleware, go to menu:Account[Security] and configure SSO under **Single Sign-On**.
+2. In Peopleware, go to menu:Account[Security] and configure SSO under *Single Sign-On*.
 
-3. In the **Peopleware SAML Metadata** section, you have two options, depending on whether your IdP supports file uploads:
+3. In the *Peopleware SAML Metadata* section, you have two options, depending on whether your IdP supports file uploads:
    - File uploads supported: Click btn:[{icon-download} Download] and complete the IdP configuration with the downloaded XML file.
-   - File uploads not supported: Click **Service Provider details** and add the displayed URLs to your IdP configuration.
+   - File uploads not supported: Click *Service Provider details* and add the displayed URLs to your IdP configuration.
 
-4. (Optional) For encrypted SAML assertions, click btn:[{icon-download} Download] in the **Token encryption** section, and add the downloaded certificates to your IdP configuration. The certificate has a limited validity. Our engineers replace the certificate with a new one six weeks in advance of the end of the validity. Both certificates are supported during the six-week period.
+4. (Optional) For encrypted SAML assertions, click btn:[{icon-download} Download] in the *Token encryption* section, and add the downloaded certificates to your IdP configuration. The certificate has a limited validity. Our engineers replace the certificate with a new one six weeks in advance of the end of the validity. Both certificates are supported during the six-week period.
 
 5. Depending on whether your IdP provides an URL for federation metadata, finish the configuration as follows:
-   - IdP provides federation metadata URL: Copy your federation metadata URL for the registered application from your IdP. Paste the URL into the **Federation Metadata URL** field in the **Identity Provider** section.
-   - IdP does not provide federation metadata URL: Download the Federation Metadata XML file and host it yourself. As an example, learn how to set up your own custom [SAML application with Google](https://support.google.com/a/answer/6087519?hl=en).
+   - IdP provides federation metadata URL: Copy your federation metadata URL for the registered application from your IdP. Paste the URL into the *Federation Metadata URL* field in the *Identity Provider* section.
+   - IdP does not provide federation metadata URL: Download the Federation Metadata XML file and host it yourself. As an example, learn how to set up your own custom link:https://support.google.com/a/answer/6087519?hl=en[SAML application with Google].
 
 6. Click btn:[Save configuration].
 
@@ -86,7 +86,7 @@ Once SSO is enforced, it is no longer possible to do the following:
 - Reset passwords inside Peopleware (neither by user nor by admin).
 - Manage access to Peopleware outside the IdP.
 
-Enforce SSO in the **3. Enforcement** section. The button btn:[Enforce] is selectable after you have tested your SSO configuration successfully. You may need to deactivate SSO again by clicking btn:[Disable] first.
+Enforce SSO in the *3. Enforcement* section. The button btn:[Enforce] is selectable after you have tested your SSO configuration successfully. You may need to deactivate SSO again by clicking btn:[Disable] first.
 
 [#change-email-addresses-when-sso-is-enforced]
 == Change email addresses when SSO is enforced
@@ -96,7 +96,7 @@ Only admin users can change email addresses in Peopleware.
 
 [#log-in-using-sso]
 == Log in using SSO
-When SSO is set up, your users can log in via [https://app.peopleware.com/login/sso](https://app.peopleware.com/login/sso). They need to enter their email address and are redirected to the IdP's login screen. If users are already logged in, they will be automatically redirected back to Peopleware. Otherwise, they need to enter the IdP password.
+When SSO is set up, your users can log in via link:https://app.peopleware.com/login/sso[https://app.peopleware.com/login/sso]. They need to enter their email address and are redirected to the IdP's login screen. If users are already logged in, they will be automatically redirected back to Peopleware. Otherwise, they need to enter the IdP password.
 
 If SSO login fails, check user existence, email match, and app assignment in the IdP.
 
@@ -112,7 +112,7 @@ Note that revoking the user's access in your IdP does not deactivate them in Peo
 
 [#deactivate-sso]
 == Deactivate SSO
-To deactivate SSO and allow logins with username and password again, users with admin access can deactivate SSO. This will delete the IdP connection and all entered configuration details. After SSO has been deactivated, all active users receive an email to set a new password. Afterwards, logging in with user name and password via [https://app.peopleware.com/login](https://app.peopleware.com/login) is possible again.
+To deactivate SSO and allow logins with username and password again, users with admin access can deactivate SSO. This will delete the IdP connection and all entered configuration details. After SSO has been deactivated, all active users receive an email to set a new password. Afterwards, logging in with user name and password via link:https://app.peopleware.com/login[https://app.peopleware.com/login] is possible again.
 
 [#use-sso-on-multiple-tenants]
 == Use SSO on multiple tenants
@@ -122,12 +122,11 @@ To add a UPN to a person, proceed as follows:
 
 1. {nav-to-people}
 2. Click the person who needs to have access to multiple tenants.
-3. In the left-side menu, click **Access**.
-4. In the **Single sign-on** section, enter a user principal name.
+3. In the left-side menu, click *Access*.
+4. In the *Single sign-on* section, enter a user principal name.
 5. {btn-save}
 
-The user's Peopleware email address, and not their UPN, is used for all email verification processes and for notifications or reports. The email address must be unique for each tenant. You can use [plus addressing](https://en.wikipedia.org/wiki/Email_address#Sub-addressing).
+The user's Peopleware email address, and not their UPN, is used for all email verification processes and for notifications or reports. The email address must be unique for each tenant. You can use link:https://en.wikipedia.org/wiki/Email_address#Sub-addressing[plus addressing].
 
 SSO for multiple tenants is available to customers on the Advanced and Enterprise WFM plans. If you don't have access to SSO, the UPN field is still displayed on the page. Any input is ignored.
 
-<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

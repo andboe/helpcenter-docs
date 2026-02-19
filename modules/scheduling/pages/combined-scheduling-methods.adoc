@@ -28,7 +28,8 @@ To plan your people using this combination, you first need to configure the conf
 To schedule your people, follow these steps:
 
 1. Insert your shift sequences.
-2. Use the **Create optimized schedule** functionality.<br>Your rotating and fully flexible shifts are scheduled in a way that complements the coverage provided by the shift sequences.
+2. Use the *Create optimized schedule* functionality. +
+Your rotating and fully flexible shifts are scheduled in a way that complements the coverage provided by the shift sequences.
 
 [#use-case-2-people-with-rotating-shifts-plus-people-with-flexible-shifts]
 == Use case 2: People with rotating shifts plus people with flexible shifts
@@ -44,7 +45,8 @@ To plan your people using this combination, you first need to assign the configu
 |Assign work time pattern models of type A to them.
 |===
 
-Use the **Create optimized schedule** functionality.<br>People with rotating flexible shifts will be assigned the rotation defined by their work time pattern models, and people with fully flexible shifts will fill up the rest of the schedule.
+Use the *Create optimized schedule* functionality. +
+People with rotating flexible shifts will be assigned the rotation defined by their work time pattern models, and people with fully flexible shifts will fill up the rest of the schedule.
 
 [#use-case-3-people-with-rotating-shifts-and-restricted-availability]
 == Use case 3: People with rotating shifts and restricted availability
@@ -55,13 +57,15 @@ For this use case, you can combine availabilities and rotating flexible shifts.
 1. Configure xref:administration:availabilities.adoc[availabilities] for your people that define when they cannot work. In this case, they are available on Wednesdays only until 5 PM.
 2. Assign to them the relevant work time pattern models.
 
-For weeks when the person works the morning shift, they will be scheduled on Wednesday.<br>For weeks when the person works the evening shift, they will not be scheduled on Wednesday, and they will be planned for other days of the week.
+For weeks when the person works the morning shift, they will be scheduled on Wednesday. +
+For weeks when the person works the evening shift, they will not be scheduled on Wednesday, and they will be planned for other days of the week.
 
 [#use-case-4-people-with-fixed-shifts-and-punctually-restricted-availability]
 == Use case 4: People with fixed shifts and punctually restricted availability
 This use case refers to people who work fixed shifts but have a more restricted availability on some particular days, e.g. they work night shifts, or during the weekend, but only every other week.
 
-For this use case, you can add xref:administration:daymodel-basics.adoc#types-of-day-models[day models of the type Availability] to xref:administration:shift-sequences.adoc[shift sequences] to influence the scheduling result on particular days.<br>See the two examples below.
+For this use case, you can add xref:administration:daymodel-basics.adoc#types-of-day-models[day models of the type Availability] to xref:administration:shift-sequences.adoc[shift sequences] to influence the scheduling result on particular days. +
+See the two examples below.
 
 To plan people to work shifts every other weekend, follow these steps:
 
@@ -69,7 +73,7 @@ To plan people to work shifts every other weekend, follow these steps:
 2. Add the day model to one weekend in a shift sequence with 14 days, and leave all other days blank.
 3. Assign the shift sequence to the relevant people.
 4. Insert the shift sequence into your schedule.
-5. Use the **Create optimized schedule** functionality.
+5. Use the *Create optimized schedule* functionality.
 
 Every other weekend, no shifts are scheduled and the remaining days are optimized accordingly.
 
@@ -79,7 +83,7 @@ To plan people to work night shifts every other week, follow these steps:
 2. Add the day model to each day of a week in a shift sequence with 14 days, and leave all other days blank.
 3. Assign the shift sequence to the relevant people.
 4. Insert the shift sequence into your schedule.
-5. Use the **Create optimized schedule** functionality.
+5. Use the *Create optimized schedule* functionality.
 
 In the weeks when people are available, the night shift is scheduled following the work time pattern model assigned to each person.
 

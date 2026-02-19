@@ -64,5 +64,5 @@ Before applying any xref:scheduling:modify-items.adoc[manual changes] to your or
 == Publish the schedule and allow shift swaps
 1. Create a scheduling period to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[allow people to see their schedule] in Me.
 2. (Optional) xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Allow people to swap shifts].  
-   By default, you need to xref:scheduling:view-approve-shift-swap-requests.adoc[view and approve any pending shift swaps], but you can also allow automatic swaps between people with the *48152* **Exchange Mode** setting.
+   By default, you need to xref:scheduling:view-approve-shift-swap-requests.adoc[view and approve any pending shift swaps], but you can also allow automatic swaps between people with the *48152* *Exchange Mode* setting.
 3. Share the article xref:me:explore-me.adoc[Explore Me] with your people.

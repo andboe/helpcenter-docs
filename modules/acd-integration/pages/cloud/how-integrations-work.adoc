@@ -55,7 +55,7 @@ Prerequisite to display agent status data
 ====
 To see agent status data in Intraday, xref:acd-integration:import-agent-status-data.adoc[map external user and activity IDs]. To do this, pause the data import of your integration first.
 ====
-<!-- add list of articles? or generic steps? -->
+
 
 [#pause-the-data-import]
 == Pause the data import

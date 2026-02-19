@@ -18,29 +18,28 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Avaya**.
+4. From the *External system* drop-down menu, select *Avaya*.
 5. {btn-save}
 
 [#set-up-your-new-avaya-cms-integration]
 == Set up your new Avaya CMS integration
 1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link]. During the installation, your terminal shows a PIN that you need to enter in the integrations page to proceed. The PIN expires after 5 minutes.
-2. In the **Configuration** section, set up your integration:
-   - **Connection string**: Enter a xref:#connection-string[connection string] with the specific parameters for your database type and ODBC driver to connect to your Avaya CMS database.
-   - **Database time zone**.
-   - **Import detailed agent statuses**: Check this checkbox to add information about skills (agent profile) and splits (call routing) to imported agent statuses.
-   - **Import real-time agent status data**: Check this checkbox to import agent status data in real time. In this case, enter a port number in the field below.
-   - **Port**: Cloud Link will open a listening TCP socket on the specified port. The Avaya Generic RTA service will connect to this port and start streaming real-time agent status data. The Avaya Generic RTA service is licensed and configured in Avaya.
+2. In the *Configuration* section, set up your integration:
+   - *Connection string*: Enter a xref:#connection-string[connection string] with the specific parameters for your database type and ODBC driver to connect to your Avaya CMS database.
+   - *Database time zone*.
+   - *Import detailed agent statuses*: Check this checkbox to add information about skills (agent profile) and splits (call routing) to imported agent statuses.
+   - *Import real-time agent status data*: Check this checkbox to import agent status data in real time. In this case, enter a port number in the field below.
+   - *Port*: Cloud Link will open a listening TCP socket on the specified port. The Avaya Generic RTA service will connect to this port and start streaming real-time agent status data. The Avaya Generic RTA service is licensed and configured in Avaya.
 
 3. {btn-save}
 
-The integration starts importing data. To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities] once your Avaya integration is set up. If you have activated the **Import real-time data** option before, pause your integration.
+The integration starts importing data. To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities] once your Avaya integration is set up. If you have activated the *Import real-time data* option before, pause your integration.
 
 [#connection-string]
 == Connection string
 The Avaya CMS integration needs the connection string to connect to your Avaya CMS database. Because Avaya CMS typically uses an IBM Informix database, you need to use a special connection string.
 
-Connection string examples that use the IBM Informix ODBC Driver:<br>
-
+Connection string examples that use the IBM Informix ODBC Driver: +
 - `DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;` (native access via ODBC driver)
 - `DSN=AvayaCMS;DELIMIDENT=y;` (requires an ODBC connection named AvayaCMS)
   If your Avaya CMS does not use an IBM Informix database, you need to obtain the appropriate connection string for your specific database type and ODBC driver. Avaya only supports ODBC connectivity.

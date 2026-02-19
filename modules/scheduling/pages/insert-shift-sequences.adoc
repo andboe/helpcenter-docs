@@ -23,9 +23,9 @@ Using the following dialog in menu:WFM[Scheduling>SchedulePro>Insert Shift Seque
 
 image::insert-shift-sequences/image-1.png[Insert shift sequences, width=75%]
 
-1. Select **a start and end date** (maximum: 2 years), a planning unit, a selection if necessary, and the target level.
+1. Select *a start and end date* (maximum: 2 years), a planning unit, a selection if necessary, and the target level.
 2. Confirm your parameters with btn:[Create Employee List]. The xref:#employee-list[employee list] appears.
-3. Select individual employees with the **checkbox in front of the personnel number** or use the first checkbox in the upper left corner to select all employees.
+3. Select individual employees with the *checkbox in front of the personnel number* or use the first checkbox in the upper left corner to select all employees.
 4. Click the btn:[Insert Shift Sequences].
 
 The shift sequences are inserted. At the end, another window appears, this may contain messages detailing errors during the insertion process.

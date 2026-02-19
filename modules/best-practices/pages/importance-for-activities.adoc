@@ -24,11 +24,11 @@ Activities that can be overstaffed in your schedule should have a lower importan
 == Prerequisites
 For prioritizing activities with the importance value, the following must be true:
 
-- The activities that need to be prioritized are configured as **Plannable** and **Replaceable**.
-- The employees who need to work on the prioritized activities are scheduled on the **Present** activity (ID 1).
+- The activities that need to be prioritized are configured as *Plannable* and *Replaceable*.
+- The employees who need to work on the prioritized activities are scheduled on the *Present* activity (ID 1).
 
 If your employees are scheduled for other, non-replaceable activities or if there is a pre-scheduled activity block in their day model, the importance value has no effect. The job optimization then cannot change the activity for the day or certain intervals.
-Also, your employees' skills or the activity's properties such as the **Plannable** option could prevent the job optimization from allocating more resources to this activity.
+Also, your employees' skills or the activity's properties such as the *Plannable* option could prevent the job optimization from allocating more resources to this activity.
 
 [#example]
 == Example

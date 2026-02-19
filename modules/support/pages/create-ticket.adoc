@@ -17,13 +17,13 @@ The Peopleware support team is here to help with any issues, from system errors 
 
 [#creating-a-new-ticket]
 == Create a new ticket
-1. Search [Help Center]({{ site.url }}) for answers.
-2. If you still need help, click **Raise a support ticket** on the Help Center start page.
+1. Search link:https://help.peopleware.com[Help Center] for answers.
+2. If you still need help, click *Raise a support ticket* on the Help Center start page.
 3. Fill in the form. You cannot add screenshots here but we may ask for them in our next reply.
 4. Click btn:[Submit].
    You will receive a confirmation email with your ticket ID.
 
 [#incident-tracking-and-outage-notifications]
 == Incident tracking and outage notifications
-For service-wide outages or widespread issues, visit [status.peopleware.com](https://status.peopleware.com).
-Click **Subscribe to updates** to receive notifications about future incidents.
+For service-wide outages or widespread issues, visit link:https://status.peopleware.com[status.peopleware.com].
+Click *Subscribe to updates* to receive notifications about future incidents.

@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn what an optimized schedule is, how to optimize your configuration, and how to create an optimized schedule.
 
-In {bc-plan-schedules}, you can use the **Create optimized schedule** functionality to automatically create a full schedule with the best possible coverage for all plannable activities. Your schedule is optimized based on your staff requirements and constraints, such as contracts, skills, and day models.
+In {bc-plan-schedules}, you can use the *Create optimized schedule* functionality to automatically create a full schedule with the best possible coverage for all plannable activities. Your schedule is optimized based on your staff requirements and constraints, such as contracts, skills, and day models.
 
 [#prerequisites]
 == Prerequisites
@@ -61,15 +61,15 @@ During optimization, only the xref:administration:work-time-pattern-models.adoc[
 == Create an optimized schedule
 1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling actions] in the upper right.
-3. Click **Create optimized schedule** and configure the following elements:
-   - Select the **Date range** for which you want to optimize the schedule. The date range is pre-filled with the date range currently selected in the Schedules page.
+3. Click *Create optimized schedule* and configure the following elements:
+   - Select the *Date range* for which you want to optimize the schedule. The date range is pre-filled with the date range currently selected in the Schedules page.
    - Select a *Planning unit*.
    - (Optional) Select a *Selection* if you want to limit the optimization to a selection of employees.
-   - (Optional) Check the **Optimize again** checkbox.
+   - (Optional) Check the *Optimize again* checkbox.
 
      > Note
      >
-     > Check the **Optimize again** checkbox if all the following conditions apply:
+     > Check the *Optimize again* checkbox if all the following conditions apply:
      >
      > - You have created an optimized schedule with work time pattern models of type C.
      > - Your staff requirements have changed.

@@ -52,7 +52,7 @@ In your new planning unit, configure the following:
 
 [#Create-a-planning-unit-for-staff-requirements]
 === Create a planning unit for staff requirements
-**Centralize shared staff rerquirements in a dedicated Requirements planning unit**
+*Centralize shared staff rerquirements in a dedicated Requirements planning unit*
 
 You can centralize shared staff requirements by creating a new Requirements planning unit with no agents assigned. This setup is useful when you want to manage total staffing needs in one place, e.g. for cross-site or company-wide planning.
 
@@ -65,15 +65,15 @@ Configure the following in the Requirements planning unit:
   - Requirements: Mon-Sat from 08:00-18:00
 - Do not add people, day models, or planning calendars. They are read from the child planning units for your business locations.
 
-**Overflow scenearios without dedicated Requirements planning unit**
+*Overflow scenearios without dedicated Requirements planning unit*
 
 You do not need a dedicated Requirements planning unit to schedule overflow. In this case, save staff requirements directly in the individual child planning units. When you run Create optimized schedules on the parent planning unit, calls are primarily assigned within their own planning unit. If there are not enough people available or left to cover the staff requirements, appropriately skilled agents from other planning units will be considered automatically.
 
-<!-- is this the only one real use case for priority 1 and 2 planning units? -- we'd need to test and add this if it applies here -->
+
 
 [#restructure-your-planning-units]
 === Restructure your planning units
-Edit your location-based planning units and select the virtual planning unit as **Parent planning unit**.
+Edit your location-based planning units and select the virtual planning unit as *Parent planning unit*.
 
 [#forecasting-and-scheduling]
 === Forecasting and scheduling

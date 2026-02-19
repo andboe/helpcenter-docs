@@ -25,11 +25,11 @@ Do not confuse scheduling periods with time-off periods. xref:scheduling:time-of
 2. Click btn:[Scheduling periods].
 3. Click btn:[Create scheduling period] in the upper right.
 4. {configure-fields}
-   - **Planning unit**
-   - (Optional) **Selection**
-   - **Date range**
-   - (Optional) **Deadline**: Last day on which people can swap or bid on shifts.
-   - **Status**: xref:#status[Learn more about the different possible statuses and what they mean].
+   - *Planning unit*
+   - (Optional) *Selection*
+   - *Date range*
+   - (Optional) *Deadline*: Last day on which people can swap or bid on shifts.
+   - *Status*: xref:#status[Learn more about the different possible statuses and what they mean].
 
 5. {btn-save}
 
@@ -57,16 +57,16 @@ To see all scheduling periods created for a specific planning unit and/or select
 
 1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling periods].
-3. Select a **Planning unit** and, optionally, a **Selection**.
-   The table displays all scheduling periods for your selected planning unit (and selection), if there are any.<br>
-   Learn more about the xref:#ongoing-and-expired-tabs[tabs] and xref:#table-columns[table columns] below.
+3. Select a *Planning unit* and, optionally, a *Selection*.
+   The table displays all scheduling periods for your selected planning unit (and selection), if there are any. +
+Learn more about the xref:#ongoing-and-expired-tabs[tabs] and xref:#table-columns[table columns] below.
 
 [#ongoing-and-expired-tabs]
 === Ongoing and Expired tabs
 In the table, scheduling periods are divided into two tabs:
 
-- **Ongoing**: Scheduling periods that lie partly or completely in the future.
-- **Expired**: scheduling periods that lie completely in the past.
+- *Ongoing*: Scheduling periods that lie partly or completely in the future.
+- *Expired*: scheduling periods that lie completely in the past.
 
 [#table-columns]
 === Table columns
@@ -92,7 +92,7 @@ You can sort the list by any column by clicking the respective header. To revers
 
 [#edit-scheduling-periods]
 == Edit scheduling periods
-To update only the status of a scheduling period, select a new status from the drop-down menu in the **Status** column. The new status is automatically saved.
+To update only the status of a scheduling period, select a new status from the drop-down menu in the *Status* column. The new status is automatically saved.
 
 To edit all parameters of a scheduling period (including the status), follow these steps:
 

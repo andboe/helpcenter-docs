@@ -23,16 +23,16 @@ Job optimization works for future dates and the current day from the current tim
 === Prerequisites
 To run a job optimization, the following conditions need to apply:
 
-- Your schedule in the Schedule xref:scheduling:use-levels.adoc[level]<!-- add link to levels once it's been reworked https://help.peopleware.com/tips-on-shift-center-usage#tip-9-working-with-different-levels --> includes activities configured as Replaceable for the periods that you want to optimize.
-- You have calculated staff requirements for the activities configured as Plannable, or you have configured activities as Plannable with the **Allow overstaffing if shift requirements are zero** property.
+- Your schedule in the Schedule xref:scheduling:use-levels.adoc[level] includes activities configured as Replaceable for the periods that you want to optimize.
+- You have calculated staff requirements for the activities configured as Plannable, or you have configured activities as Plannable with the *Allow overstaffing if shift requirements are zero* property.
 
-If all staff requirements for other activities are fully covered, the job optimization uses plannable activities that have the **Allow overstaffing if shift requirements are zero** property even if there are no staff requirements for them.
+If all staff requirements for other activities are fully covered, the job optimization uses plannable activities that have the *Allow overstaffing if shift requirements are zero* property even if there are no staff requirements for them.
 
 [#further-consequences-of-a-job-optimization]
 === Further consequences of a job optimization
 The table below shows how a job optimization affects other scheduling elements:
 
-<!-- left-align table -->
+
 <style>
 table {
    margin-left: 0px;
@@ -63,14 +63,15 @@ Learn how the xref:best-practices:importance-for-activities.adoc[importance], xr
 2. Select a date range from the date picker. You can select from one day up to two months in the future.
 3. From the btn:[Scheduling Actions] drop-down menu on the right, select btn:[Job optimization].
 4. In the window that opens, configure the job optimization:
-   - **Date range**: The pre-selected date range is the one you selected in step 2. You can select a different date range.
+   - *Date range*: The pre-selected date range is the one you selected in step 2. You can select a different date range.
    - *Planning unit*
    - (Optional) *Selection*
-5. Click **Start job optimization**.
+5. Click *Start job optimization*.
 
-A process starts in the background. In {bc-plan-schedules}, a green notification is displayed at the top if the process started successfully, and a red one if the process could not start.<br>
-The optimization process can take some time, depending on the data amount and the selected period's length.<br>
-During the optimization process, you cannot edit the schedule of the selected planning unit and period.<br>After the optimization, the optimized schedule is saved automatically.
+A process starts in the background. In {bc-plan-schedules}, a green notification is displayed at the top if the process started successfully, and a red one if the process could not start. +
+The optimization process can take some time, depending on the data amount and the selected period's length. +
+During the optimization process, you cannot edit the schedule of the selected planning unit and period. +
+After the optimization, the optimized schedule is saved automatically.
 
 [NOTE]
 ====

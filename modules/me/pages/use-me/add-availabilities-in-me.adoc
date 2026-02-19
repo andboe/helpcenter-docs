@@ -15,16 +15,21 @@ You cannot add, edit or delete availabilities if the date is grayed out on the a
 == Add an availability
 1. Go to {bc-me-availability}.
 2. Click btn:[+ Add availability].
-3. Select the day for which you want to add your availability.<br>To navigate between past and future months, use btn:[<] and btn:[>].
-4. Enter the **Start time** and **End time** of your availability on that day.<br>To add another time slot, click **Add time slot**.
+3. Select the day for which you want to add your availability. +
+To navigate between past and future months, use btn:[<] and btn:[>].
+4. Enter the *Start time* and *End time* of your availability on that day. +
+To add another time slot, click *Add time slot*.
 
-If you already have a weekly availability on that day, your new one-time availability replaces it.<br>If you already have a one-time availability on that day, you can only add a time slot that does not overlap with the existing one. To extend your availability, xref:#edit-an-availability[edit your availabilities] instead.
+If you already have a weekly availability on that day, your new one-time availability replaces it. +
+If you already have a one-time availability on that day, you can only add a time slot that does not overlap with the existing one. To extend your availability, xref:#edit-an-availability[edit your availabilities] instead.
 
 [#edit-an-availability]
 == Edit an availability
 1. Go to {bc-me-availability}.
-2. Select the availability that you want to edit and click the Edit icon {icon-edit}.<br>To navigate between past and future months, use btn:[<] and btn:[>].
-3. Edit your availability.<br>To delete a time slot, click the Delete icon {icon-delete} next to it.
+2. Select the availability that you want to edit and click the Edit icon {icon-edit}. +
+To navigate between past and future months, use btn:[<] and btn:[>].
+3. Edit your availability. +
+To delete a time slot, click the Delete icon {icon-delete} next to it.
 4. Click btn:[Save changes].
 
 [#delete-an-availability]

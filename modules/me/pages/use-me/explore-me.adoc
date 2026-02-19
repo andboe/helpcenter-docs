@@ -57,14 +57,14 @@ You can synchronize your Me calendar with other calendar apps by using an ICS li
 
 1. Go to {bc-me-calendar}.
 2. Click btn:[Subscribe] in the upper right.
-   - Windows: Click **view subscription link**. Open the link in your browser to open your calendar app, e.g. Outlook. Updates depend on the app. Tip: Double-click the downloaded ICS file to create a new, separate Peopleware calendar. Right-click and "Open with". This allows you to select Outlook and to add the events to an existing calendar, e.g., your primary Outlook calendar.
-   - Android (Samsung/Google Calendar): Click **view subscription link** to copy the ICS URL.
+   - Windows: Click *view subscription link*. Open the link in your browser to open your calendar app, e.g. Outlook. Updates depend on the app. Tip: Double-click the downloaded ICS file to create a new, separate Peopleware calendar. Right-click and "Open with". This allows you to select Outlook and to add the events to an existing calendar, e.g., your primary Outlook calendar.
+   - Android (Samsung/Google Calendar): Click *view subscription link* to copy the ICS URL.
      - The default Android calendar apps cannot subscribe to ICS links. Imported calendars will add events but not update automatically.
-     - To keep the calendar synchronized, open [Google Calendar](https://calendar.google.com) on a desktop PC and add the ICS URL as a new calendar. Google Calendar updates approximately every 24 hours; other apps may vary. Alternatively, use a third-party app such as ICSx⁵. Updates are automatic.
+     - To keep the calendar synchronized, open link:https://calendar.google.com[Google Calendar] on a desktop PC and add the ICS URL as a new calendar. Google Calendar updates approximately every 24 hours; other apps may vary. Alternatively, use a third-party app such as ICSx⁵. Updates are automatic.
    - iOS/macOS: Click btn:[Subscribe now] to open the default calendar app.
 3. {btn-close}
 
-When the schedule changes, your calendar app will periodically pull new data from the ICS URL. Some calendar applications allow you to manually refresh the calendar and configure the auto-refresh interval. In [Google Calendar](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop) and [Outlook.com](https://support.microsoft.com/en-US/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c), the interval is not configurable, and updates can take around 24 hours.
+When the schedule changes, your calendar app will periodically pull new data from the ICS URL. Some calendar applications allow you to manually refresh the calendar and configure the auto-refresh interval. In link:https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop[Google Calendar] and link:https://support.microsoft.com/en-US/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c[Outlook.com], the interval is not configurable, and updates can take around 24 hours.
 
 [#download-your-schedule]
 === Download your schedule
@@ -72,17 +72,17 @@ If your schedule has been published, you can download it as a PDF or as an ICS f
 
 1. Go to {bc-me-calendar}.
 2. Click the {icon-cloud-arrow-down} in the upper right.
-3. (Optional) Edit the **Start Date** and the **End Date**.
+3. (Optional) Edit the *Start Date* and the *End Date*.
    The downloaded calendar displays a maximum of 100 days in the future, even if you have selected a larger time frame.
-4. From the drop-down menu **Format**, select your schedule's structure and file format:
-   - **List view (PDF)**: Download a list of your scheduled activities.
-   - **Block view (PDF)**: Get an overview of your scheduled activities in a timeline. Each activity is displayed with the same color that you can see in your schedule in Me.
-   - **Calendar file (ICS)**: Download your schedule and import it into your calendar application.
+4. From the drop-down menu *Format*, select your schedule's structure and file format:
+   - *List view (PDF)*: Download a list of your scheduled activities.
+   - *Block view (PDF)*: Get an overview of your scheduled activities in a timeline. Each activity is displayed with the same color that you can see in your schedule in Me.
+   - *Calendar file (ICS)*: Download your schedule and import it into your calendar application.
 5. Click btn:[Download].
 
 [NOTE]
 ====
-In the block view report, shifts that end past midnight are displayed entirely in the row of the day on which the shift starts. The time displayed on the **End** column refers to the day on which the shift ends.
+In the block view report, shifts that end past midnight are displayed entirely in the row of the day on which the shift starts. The time displayed on the *End* column refers to the day on which the shift ends.
 ====
 [#see-your-teams-schedule-team-calendar]
 == See your team's schedule: Team calendar
@@ -97,15 +97,15 @@ In {bc-me-time-off}, you can view your time off, check your requests, and submit
 1. Go to {bc-me-time-off}.
 2. From the drop-down menu at the top left, select a time-off type.
 3. (Optional) Adjust the time period.
-   You can view all time off, including requests of the selected time-off type, in the calendar and under **Requests**.
+   You can view all time off, including requests of the selected time-off type, in the calendar and under *Requests*.
 
 To view all time off, including requests of different time-off types, see xref:#download-time-off-overview[Download time-off overview].
 
-**Your time-off calendar**
+*Your time-off calendar*
 
-- **Bold dates**: Your scheduled workdays.
-- **Light grey**: Not available for time-off requests (no time-off period is published yet).
-- **Dark grey**: You're off or have requested time off.
+- *Bold dates*: Your scheduled workdays.
+- *Light grey*: Not available for time-off requests (no time-off period is published yet).
+- *Dark grey*: You're off or have requested time off.
 
 [#request-time-off]
 === Request time off
@@ -116,11 +116,11 @@ You can only request days that are included in a published time-off period.
 3. You can request time off in two ways:
    - In the calendar, select individual available days. Days with a white background are available.
    - Click btn:[Request] on the right. The selected period defaults to today.
-4. (Optional) In the window, under **Time range**, change the desired period for your time-off request.
+4. (Optional) In the window, under *Time range*, change the desired period for your time-off request.
    Part-day requests are only available for single-day selections.
 5. (Optional) Add a comment for your planner.
 6. Click btn:[Request].  
-   Your pending request is displayed in the calendar and under **Requests**.
+   Your pending request is displayed in the calendar and under *Requests*.
 
 [#delete-a-time-off-request]
 === Delete a time-off request
@@ -134,7 +134,7 @@ The time-off overview is a detailed summary of your time off. It allows you to f
 
 1. Go to {bc-me-time-off}.
 2. Click the Download icon {icon-cloud-arrow-down}.
-3. Select the **Request statuses** and **Time-off types** to include.
+3. Select the *Request statuses* and *Time-off types* to include.
 4. Click btn:[Download].  
    The time-off overview is downloaded as a PDF.
 
@@ -149,25 +149,25 @@ In {bc-me-availability} you can set up to 14 availabilities.
 1. Go to {bc-me-availability}.
 2. Click btn:[Set Availability] or select a day in the calendar.
    A dialog window opens.
-3. Set the **Available** toggle:
-   - To **True** to enter time periods in which you are available.
-   - To **No** to enter time periods in which you are not available.
-4. Enter a **Start Time** and an **End Time**.
-5. (Optional) Define the **Valid From** and **Valid To** dates of the period during which the restriction should apply.
+3. Set the *Available* toggle:
+   - To *True* to enter time periods in which you are available.
+   - To *No* to enter time periods in which you are not available.
+4. Enter a *Start Time* and an *End Time*.
+5. (Optional) Define the *Valid From* and *Valid To* dates of the period during which the restriction should apply.
 6. Click btn:[Set Availability].
    Your availabilities will be considered for scheduling. There are exceptions to this process. Speak to your planner or supervisor to see if they apply to you.
 
 [#edit-an-availability]
 === Edit an availability
 1. Go to {bc-me-availability}.
-2. In the **Availabilities** section, click the {icon-edit} next to the availability that you want to edit.
+2. In the *Availabilities* section, click the {icon-edit} next to the availability that you want to edit.
 3. Make your changes.
 4. Click btn:[Edit Availability] to save the changes.
 
 [#delete-an-availability]
 === Delete an availability
 1. Go to {bc-me-availability}.
-2. In the **Availabilities** section, click the {icon-delete} next to the availability that you want to delete.
+2. In the *Availabilities* section, click the {icon-delete} next to the availability that you want to delete.
 
 [#clock-in-and-track-your-activities-time-recording]
 == Clock in and track your activities: Time Recording
@@ -203,6 +203,6 @@ To clock out, proceed as follows:
 
 [#see-an-overview-of-the-time-you-spent-on-activities]
 === See an overview of the time you spent on activities
-In {bc-me-time-recording}, in the **Time Statistics** section, use the buttons to filter the view by activity type or by activity, and by time period.
+In {bc-me-time-recording}, in the *Time Statistics* section, use the buttons to filter the view by activity type or by activity, and by time period.
 
-In the **Time Recording** section, you can see start time, end time, and duration of the activities that you recorded. You can also see the total amount of time that you recorded.
+In the *Time Recording* section, you can see start time, end time, and duration of the activities that you recorded. You can also see the total amount of time that you recorded.

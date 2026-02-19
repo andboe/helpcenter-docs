@@ -20,12 +20,12 @@ You can add attributes to the following configuration data:
 == Create attributes
 1. In menu:Plan[Configuration>Attributes], click btn:[Create] at the top right.
 2. {enter-info}
-   - **Name**
-   - **Abbreviation**
-   - xref:#attribute-types[**Type**]
-   - **Fixed value range**: This checkbox is only relevant if you create an attribute of type xref:#text[text].
-   - **Payroll adjustment**: Check this checkbox if you want to use the attribute to mark information relevant for payroll, e.g. whether a day type is a holiday for which people are paid extra.
-   - **Available for**: Select the types of configuration data to which you can add this attribute.
+   - *Name*
+   - *Abbreviation*
+   - xref:#attribute-types[*Type*]
+   - *Fixed value range*: This checkbox is only relevant if you create an attribute of type xref:#text[text].
+   - *Payroll adjustment*: Check this checkbox if you want to use the attribute to mark information relevant for payroll, e.g. whether a day type is a holiday for which people are paid extra.
+   - *Available for*: Select the types of configuration data to which you can add this attribute.
 3. {btn-save}
 
 [#attribute-types]
@@ -34,18 +34,18 @@ There are five different types of attributes that you can configure:
 
 [#text]
 === Text
-Attributes of type text are the only ones for which you can check the **Fixed value range** checkbox. This means that you must define a range of fixed values (at least one) for the attribute, from which you choose one when adding it to other data.
+Attributes of type text are the only ones for which you can check the *Fixed value range* checkbox. This means that you must define a range of fixed values (at least one) for the attribute, from which you choose one when adding it to other data.
 
 For example, if you want to add an attribute to your people that marks their place of work, you could create an attribute of type text called Location and then add to it three values, e.g. London, Paris, Berlin. When you add this attribute to people, you must select one of these values.
 
 To configure the values of the value range, first xref:#create-attributes[create the attribute]. Once the attribute is created, proceed as follows for each value:
 
-1. Scroll to the **Value range** section.
-2. Click **{icon-plus} Add**.
-3. In the **Value** field, add a value.
+1. Scroll to the *Value range* section.
+2. Click *{icon-plus} Add*.
+3. In the *Value* field, add a value.
 4. {btn-save}
 
-You can also configure attributes of type text without a fixed value range. In this case, when you add the attribute you must fill out a free text field called **Value**.
+You can also configure attributes of type text without a fixed value range. In this case, when you add the attribute you must fill out a free text field called *Value*.
 
 [#number]
 === Number

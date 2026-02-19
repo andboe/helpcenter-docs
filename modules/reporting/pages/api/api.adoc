@@ -26,11 +26,11 @@ URL change: This API is now accessible via legacy-api.peopleware.com
 >
 [NOTE]
 ====
-The URL of this API has been changed to **legacy-api.peopleware.com**. The old URL remains valid for now, giving you enough time to change your current API queries. The new Peopleware API documentation is available at [https://api.peopleware.com](https://api.peopleware.com).
+The URL of this API has been changed to *legacy-api.peopleware.com*. The old URL remains valid for now, giving you enough time to change your current API queries. The new Peopleware API documentation is available at link:https://api.peopleware.com[https://api.peopleware.com].
 ====
 [#api-reference-available-endpoints]
 == API reference: Available endpoints
-The API reference [legacy-api.peopleware.com](https://legacy-api.peopleware.com) describes all available endpoints and associated parameters. To learn more about the query parameters and return values, select an endpoint and click the green bar in the middle. To show the full URL, click the **text field showing the endpoint** in the upper right.
+The API reference link:https://legacy-api.peopleware.com[legacy-api.peopleware.com] describes all available endpoints and associated parameters. To learn more about the query parameters and return values, select an endpoint and click the green bar in the middle. To show the full URL, click the *text field showing the endpoint* in the upper right.
 
 [#authorization-personal-access-token]
 == Authorization: Personal access token
@@ -43,11 +43,11 @@ By default, only users with _Admin access_ can create Personal Access Tokens.
 >
 [NOTE]
 ====
-To give this permission to other user roles, xref:account:configure-user-roles.adoc[edit the user role]. In the **Permissions** section, go to menu:Modules[My Profile>Personal access tokens] and check the checkbox.
+To give this permission to other user roles, xref:account:configure-user-roles.adoc[edit the user role]. In the *Permissions* section, go to menu:Modules[My Profile>Personal access tokens] and check the checkbox.
 ====
-Create your Personal Access Token in your **user profile**:
+Create your Personal Access Token in your *user profile*:
 
-1. Click your **name on the start page**, to get into your **user profile**.
+1. Click your *name on the start page*, to get into your *user profile*.
 2. Select the *Personal Access Tokens* menu item
 3. Click btn:[Generate new token]
 4. Enter a description for your Personal Access Token
@@ -68,7 +68,7 @@ Use two request headers for each data query:
 - `content-Type: application/json`
 - `authorization: Bearer {your-personal-access-token}`
 
-The following screenshot shows the two headers in [Advanced Rest Client](https://install.advancedrestclient.com/install) (ARC):
+The following screenshot shows the two headers in link:https://install.advancedrestclient.com/install[Advanced Rest Client] (ARC):
 
 image::api/image-3.png[ARC example GET Request - Endpoint `/v1/planning_units` Planning unit with ID 1001]
 
@@ -76,17 +76,17 @@ image::api/image-3.png[ARC example GET Request - Endpoint `/v1/planning_units` P
 === Path and query parameters
 The request URL needs further parameters that determine which data is requested and what the result looks like.
 
-- **Path parameters are required**.  
+- *Path parameters are required*.  
   These often contain IDs or a start date and refer to entities from the WFM area. Use Peopleware to determine the correct ID. Date parameters always have the format _YYYY-MM-DD_, e.g. `/v1/planning_units/1001/planning_units/2020-01-01`.
 
-- **Query parameters are optional**.  
-  They can restrict or extend the result of a query, e.g. the length of a period via _length_ or _end_date_. Use **?** for the first and **&** for all other parameters, e.g. `?end_date=2020-03-31&paid=true`.
+- *Query parameters are optional*.  
+  They can restrict or extend the result of a query, e.g. the length of a period via _length_ or _end_date_. Use *?* for the first and *&* for all other parameters, e.g. `?end_date=2020-03-31&paid=true`.
 
   image::api/image-4.png[Query and Path parameter example, width=75%]
 
 [#display-parameter]
 === Display= parameter
-Normally, the query result contains all available fields (which can differ per endpoint). To return only certain fields, use the **display=** parameter, e.g. `activities?display=activity_id,name,paid` will only return three fields.
+Normally, the query result contains all available fields (which can differ per endpoint). To return only certain fields, use the *display=* parameter, e.g. `activities?display=activity_id,name,paid` will only return three fields.
 
 [#access-data-in-levels]
 === Access data in levels

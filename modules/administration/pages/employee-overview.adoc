@@ -13,9 +13,9 @@ There are two places where you can create and edit a person's account, depending
 |===
 |Place
 |Possible actions
-|**People**
+|*People*
 |- xref:people:configure-people.adoc[Create and manage people] +- Manage people's contact and address information +- Manage access rights via roles +- Unlock locked people +- Set a new password for people +
-|**Plan > Configuration > Employees**
+|*Plan > Configuration > Employees*
 |xref:administration:employee-overview.adoc[Configure employees for scheduling]. Employees without assigned planning units do not appear in the list.
 |===
 
@@ -26,7 +26,7 @@ The list in {bc-plan-config-employees} does not automatically show all employees
 >
 [NOTE]
 ====
-In {bc-plan-config-employees}, people without admin access can only see employees assigned to the planning units for which they have at least read access. If employees are not assigned to such a planning unit or if their xref:people:configure-people.adoc[assignment to such planning unit is not valid] for the current day, they do not appear in the list, even if **All** is selected in the planning unit and selection drop-down menus. People with admin access can always see all employees in the organization.
+In {bc-plan-config-employees}, people without admin access can only see employees assigned to the planning units for which they have at least read access. If employees are not assigned to such a planning unit or if their xref:people:configure-people.adoc[assignment to such planning unit is not valid] for the current day, they do not appear in the list, even if *All* is selected in the planning unit and selection drop-down menus. People with admin access can always see all employees in the organization.
 ====
 Users and people are synchronized, so you only have to create a person once.
 
@@ -37,15 +37,17 @@ To create an employee with the basic settings, follow the steps below:
 
 1. Go to {bc-plan-config-employees}.
 2. In the action bar, click the {icon-wfm-add}.
-3. In the **General** section, add a unique **Personnel number**.
-4. In the **Personal data** section, add the **Last name** of the employee.
-5. In the **Peopleware Login (Email)** field, enter the email address the employee is going to use for Peopleware. A user login for Me is automatically created.
-6. xref:me:give-employees-access-to-me.adoc[Set a password] for the employee, so that they can log in to Peopleware.<br>You can do this after finishing the basic configuration of the employee.
-7. {btn-ok}<br>The system automatically sets the join date to the current day. You can manually change it later in the xref:#other-settings[Staff membership section].
+3. In the *General* section, add a unique *Personnel number*.
+4. In the *Personal data* section, add the *Last name* of the employee.
+5. In the *Peopleware Login (Email)* field, enter the email address the employee is going to use for Peopleware. A user login for Me is automatically created.
+6. xref:me:give-employees-access-to-me.adoc[Set a password] for the employee, so that they can log in to Peopleware. +
+You can do this after finishing the basic configuration of the employee.
+7. {btn-ok} +
+The system automatically sets the join date to the current day. You can manually change it later in the xref:#other-settings[Staff membership section].
 
 When you create an employee, Peopleware automatically creates a user with the Standard Agent role.
 
-<!-- in Enterprise on-premise, you need to set the correct join date for the employee in the Employment Period section manually. To automatically create a linked user in the Users section, you need to add a User name and a Password in the Employee section. The Peopleware Login (Email) field is called Email 1 here and is not mandatory. --->
+
 
 [#configure-employee-settings]
 == Configure employee settings
@@ -53,9 +55,10 @@ After you have created an employee with the mandatory basic settings, you can co
 
 Prerequisite: You have set up xref:getting-started:set-up-base-configuration.adoc#required-configuration-elements[all elements required for scheduling].
 
-1. Click an employee in the list.<br>
-   You can use the blue quick links in the upper right to quickly navigate to a section.
-2. Click the {icon-wfm-add} in a section to add a new setting. To edit an existing setting, click the {icon-wfm-edit}.<br>Learn more about the xref:#overview-of-employee-settings[individual setting options].
+1. Click an employee in the list. +
+You can use the blue quick links in the upper right to quickly navigate to a section.
+2. Click the {icon-wfm-add} in a section to add a new setting. To edit an existing setting, click the {icon-wfm-edit}. +
+Learn more about the xref:#overview-of-employee-settings[individual setting options].
 3. (Optional) In some sections, you can configure xref:administration:set-a-validity-period.adoc[Valid From and Valid To dates] that limit the validity period for a setting.
 4. To save your changes, click btn:[OK].
 
@@ -139,7 +142,7 @@ During the delegation period, the new planning unit automatically takes priority
 To delegate an employee, follow the steps below.
 
 1. Select an employee.
-2. Go to the **Planning units** section.
+2. Go to the *Planning units* section.
 3. In the section header, click the {icon-delegate-employees}.
 4. Select the planning unit the employee is delegated to.
 5. Enter a start date and an end date for the delegation period.

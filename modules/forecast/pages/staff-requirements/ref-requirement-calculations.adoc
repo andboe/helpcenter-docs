@@ -43,7 +43,7 @@ This section describes the requirement calculation settings available in menu:Fo
 |Yes
 |Yes
 |Fixed average handle time (AHT)
-|Enter a value to overwrite the forecasted AHT. +Check the checkbox **Apply the fixed AHT only when no AHT value is available** to use the fixed AHT value only for periods without AHT data. By default, the staff requirements calculation uses the AHT values from the forecast.
+|Enter a value to overwrite the forecasted AHT. +Check the checkbox *Apply the fixed AHT only when no AHT value is available* to use the fixed AHT value only for periods without AHT data. By default, the staff requirements calculation uses the AHT values from the forecast.
 |Yes
 |Yes
 |Yes
@@ -53,7 +53,7 @@ This section describes the requirement calculation settings available in menu:Fo
 |Yes
 |No
 |Overhead
-|Percentage of AHT that a person must spend on tasks that they cannot do in parallel, i.e. adding after-call notes to the CRM system. This parameter will not be considered if you enter 1 in the **Maximum sessions** field.
+|Percentage of AHT that a person must spend on tasks that they cannot do in parallel, i.e. adding after-call notes to the CRM system. This parameter will not be considered if you enter 1 in the *Maximum sessions* field.
 |No
 |Yes
 |No
@@ -67,7 +67,7 @@ This section lists the requirement calculation settings available in {bc-forecas
 === Backoffice - Linear
 Use this calculation for asynchronous work, like emails or tickets, that needs to be handled within a predefined time frame. The script calculates staff requirements by spreading the workload evenly across the selected days and hours.
 
-**Date**
+*Date*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -79,7 +79,7 @@ Use this calculation for asynchronous work, like emails or tickets, that needs t
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -95,7 +95,7 @@ Use this calculation for asynchronous work, like emails or tickets, that needs t
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -109,7 +109,7 @@ Use this calculation for asynchronous work, like emails or tickets, that needs t
 |Adds the calculation results to your existing staff requirement for the same planning unit and activity.
 |===
 
-**Back office job parameters**
+*Back office job parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -135,7 +135,7 @@ Use this calculation for asynchronous work, like emails or tickets, that needs t
 === Calls - Abandonment rate
 Use this calculation for incoming call queues for which you want to take abandoned contacts into account. This option calculates staff requirements using Erlang C, while factoring in a target abandon rate and maximum wait time.
 
-**General**
+*General*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -147,7 +147,7 @@ Use this calculation for incoming call queues for which you want to take abandon
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -163,7 +163,7 @@ Use this calculation for incoming call queues for which you want to take abandon
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -175,7 +175,7 @@ Use this calculation for incoming call queues for which you want to take abandon
 |The activity to which the calculation applies
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -199,7 +199,7 @@ Use this calculation for incoming call queues for which you want to take abandon
 === Calls - Average speed of answer
 Use this calculation for inbound call queues where staffing is based on keeping the average wait time within a defined threshold. This option calculates the number of people required to answer calls within the target ASA while respecting handle times.
 
-**General**
+*General*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -211,7 +211,7 @@ Use this calculation for inbound call queues where staffing is based on keeping 
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -227,7 +227,7 @@ Use this calculation for inbound call queues where staffing is based on keeping 
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -239,7 +239,7 @@ Use this calculation for inbound call queues where staffing is based on keeping 
 |The activity to which the calculation applies
 |===
 
-**Requirement parameters**
+*Requirement parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -261,7 +261,7 @@ Use this calculation for inbound call queues where staffing is based on keeping 
 === Calls - Multi-activity
 Use this calculation to schedule multi-skilled agents.
 
-**Date**
+*Date*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -273,7 +273,7 @@ Use this calculation to schedule multi-skilled agents.
 |The number of days to include in the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -301,7 +301,7 @@ Use this calculation to schedule multi-skilled agents.
 |The forecast version used as basis for the calculation per subactivity.
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -329,7 +329,7 @@ Use this calculation to schedule multi-skilled agents.
 === Calls - Outbound
 Use this calculation for outbound campaigns where the workload is based on the number of records to dial. This option factors in contact rates, redials, right-party connect rates, and handling times to calculate staff requirements over the campaign period.
 
-**Campaign data**
+*Campaign data*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -355,7 +355,7 @@ Use this calculation for outbound campaigns where the workload is based on the n
 |Percentage of paid time where people are unproductive, e.g. break, sickness.
 |===
 
-**Average handling time**
+*Average handling time*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -369,7 +369,7 @@ Use this calculation for outbound campaigns where the workload is based on the n
 |Handling time in seconds for wrong-party contacts.
 |===
 
-**Employee workload**
+*Employee workload*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -389,7 +389,7 @@ Use this calculation for outbound campaigns where the workload is based on the n
 === Calls - Single activity
 Use this calculation for inbound call queues. Staff requirements are calculated using Erlang C against a defined service level target, e.g., 80% of calls answered within 20 seconds. This option calculates required agents based on call volume, handle times, and staffing constraints.
 
-**General**
+*General*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -401,7 +401,7 @@ Use this calculation for inbound call queues. Staff requirements are calculated 
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -417,7 +417,7 @@ Use this calculation for inbound call queues. Staff requirements are calculated 
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -429,7 +429,7 @@ Use this calculation for inbound call queues. Staff requirements are calculated 
 |The activity to which the calculation applies
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -453,7 +453,7 @@ Use this calculation for inbound call queues. Staff requirements are calculated 
 === Chat - WebChat
 Use this calculation for inbound web chat queues where agents can handle multiple sessions at once. This option uses Erlang C with service level targets, factoring in parameters like maximum sessions per person and sequence percentage to calculate staff requirements.
 
-**General**
+*General*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -465,7 +465,7 @@ Use this calculation for inbound web chat queues where agents can handle multipl
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -481,7 +481,7 @@ Use this calculation for inbound web chat queues where agents can handle multipl
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -493,7 +493,7 @@ Use this calculation for inbound web chat queues where agents can handle multipl
 |The activity to which the calculation applies
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -521,7 +521,7 @@ Use this calculation for inbound web chat queues where agents can handle multipl
 === Distribution - Contacts (time frames)
 Use this calculation to distribute inbound contacts from a source queue across multiple target queues, representing service providers, or internal teams. The allocation is based on specific percentage distribution values that you can define for each day and time span. Once configured, the calculation adds formulas to the value type to display the results of the distributed contacts.
 
-**Calculation parameters**
+*Calculation parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -543,7 +543,7 @@ Use this calculation to distribute inbound contacts from a source queue across m
 |The forecast version used as basis for the calculation.
 |===
 
-**Source parameters**
+*Source parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -555,7 +555,7 @@ Use this calculation to distribute inbound contacts from a source queue across m
 |The value type from the source queue.
 |===
 
-**Target parameters**
+*Target parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -567,7 +567,7 @@ Use this calculation to distribute inbound contacts from a source queue across m
 |The resulting number of contacts per target.
 |===
 
-**Percentage distribution**
+*Percentage distribution*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -589,7 +589,7 @@ Use this calculation to distribute inbound contacts from a source queue across m
 === Distribution - Requirement (simple)
 Use this calculation to distribute calculated staff requirements across one or more planning units. This option takes a base requirement and allocates it proportionally, to split workload between up to five planning units without complex rules.
 
-**Calculation parameters**
+*Calculation parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -601,7 +601,7 @@ Use this calculation to distribute calculated staff requirements across one or m
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -617,7 +617,7 @@ Use this calculation to distribute calculated staff requirements across one or m
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -631,7 +631,7 @@ Use this calculation to distribute calculated staff requirements across one or m
 |The activity to which the calculation applies
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -655,7 +655,7 @@ Use this calculation to distribute calculated staff requirements across one or m
 === Distribution - Requirement (time frames)
 Use this calculation to distribute staffing requirements across multiple planning units and time spans. This option takes a base requirement and allocates it by percentages or maximum call volumes within defined daily intervals, to share resources appropriately over time and across units.
 
-**Time periods and options**
+*Time periods and options*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -679,7 +679,7 @@ Use this calculation to distribute staffing requirements across multiple plannin
 |Applies requirements only during the business hours of each planning unit.
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -699,7 +699,7 @@ Use this calculation to distribute staffing requirements across multiple plannin
 |Overwrites the AHT from the forecast with a constant value.
 |===
 
-**Division of work volume**
+*Division of work volume*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -711,7 +711,7 @@ Use this calculation to distribute staffing requirements across multiple plannin
 |Splits requirement by absolute max call volumes instead of percentages.
 |===
 
-**Day/time frames**
+*Day/time frames*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -727,7 +727,7 @@ Use this calculation to distribute staffing requirements across multiple plannin
 === Other - Constant requirement
 Use this calculation to define a fixed number of people needed during specific times, regardless of the forecast. This option sets constant staffing levels by day and time span, which can be added to other calculated requirements to cover activities like monitoring, admin tasks, or fixed service commitments.
 
-**Date**
+*Date*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -753,7 +753,7 @@ Use this calculation to define a fixed number of people needed during specific t
 |Applies requirements only during the business hours of each planning unit.
 |===
 
-**Data**
+*Data*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -769,7 +769,7 @@ Use this calculation to define a fixed number of people needed during specific t
 |The required number of people for that timespan.
 |===
 
-**Day rows**
+*Day rows*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -783,7 +783,7 @@ Use this calculation to define a fixed number of people needed during specific t
 === Other - Linear requirement
 Use this calculation to create simple, fixed staff requirements that increase or decrease linearly over a selected period. This option sets minimum and maximum staffing levels and distributes them evenly across the timeframe, regardless of the forecast.
 
-**Date**
+*Date*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -795,7 +795,7 @@ Use this calculation to create simple, fixed staff requirements that increase or
 |The number of days to include in the calculation.
 |===
 
-**Queue parameters**
+*Queue parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -811,7 +811,7 @@ Use this calculation to create simple, fixed staff requirements that increase or
 |The forecast version used as basis for the calculation.
 |===
 
-**Planning unit parameters**
+*Planning unit parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -825,7 +825,7 @@ Use this calculation to create simple, fixed staff requirements that increase or
 |Adds the calculation results to your existing staff requirement for the same planning unit and activity.
 |===
 
-**Erlang C parameters**
+*Erlang C parameters*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===

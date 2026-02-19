@@ -23,7 +23,7 @@ There are three different types of day models.
 
 [NOTE]
 ====
-- Day models of type Fixed are also called fixed day models.<br>
+- Day models of type Fixed are also called fixed day models. +
 - Day models of type Variable are also called variable day models.
 ====
 [%header, cols="1a,1a,".rstrip(',')]
@@ -60,7 +60,7 @@ The base activity covers the total time a scheduled person is present during a s
 The total time of a scheduled shift including breaks is the gross shift duration. After deducting unpaid activities, such as breaks or set-up times, the resulting working time is the net shift duration. You can see the net shift duration under the name Actual time in Schedules and in Shift Center. Note that contracts also specify net times.
 
 The length of a day model must comply with the working hours in your xref:administration:create-contracts.adoc[contracts].
-For example, a contract with 40&nbsp;hours of weekly working time distributed over 5&nbsp;days a week requires a day model with a net working time of 8&nbsp;hours per day. A contract with 37.5&nbsp;hours per week needs one with 7.5&nbsp;hours.
+For example, a contract with 40 hours of weekly working time distributed over 5 days a week requires a day model with a net working time of 8 hours per day. A contract with 37.5 hours per week needs one with 7.5 hours.
 
 Use the Present activity (ID 1) as base activity and make sure it is configured as Replaceable. Then, the Job optimization and Create optimized schedules functionalities can replace the Present activity with other activities, as long as they have xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculated staff requirements] and are configured as Plannable.
 

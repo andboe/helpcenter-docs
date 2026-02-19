@@ -18,31 +18,31 @@ To add a new Freshdesk integration, you need a Pro or Enterprise Freshdesk accou
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Freshworks**.
-5. From the **Model name** drop-down menu, select **Freshdesk**.
+4. From the *External system* drop-down menu, select *Freshworks*.
+5. From the *Model name* drop-down menu, select *Freshdesk*.
 6. {btn-save}
 
 [#set-up-your-freshdesk-integration]
 == Set up your Freshdesk integration
-1. In the **Credentials** section, set up the access to your Freshdesk account:
-   - **Domain**: Enter your full Freshdesk domain name including the subdomain, e.g. example.freshchat.com.
-   - **API key**: Enter a valid API key of a Freshdesk user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
+1. In the *Credentials* section, set up the access to your Freshdesk account:
+   - *Domain*: Enter your full Freshdesk domain name including the subdomain, e.g. example.freshchat.com.
+   - *API key*: Enter a valid API key of a Freshdesk user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
 2. {btn-save}
 
 [#install-the-peopleware-app]
 == Install the Peopleware app
 Peopleware can only receive data from Freshdesk when you set up the Peopleware Freshdesk app in your Freshworks account:
 
-1. In the **Install the Peopleware app** section, generate and copy the **Peopleware API key**.
-2. Set up the app in the [Freshworks marketplace](https://www.freshworks.com/apps/injixo_1).
+1. In the *Install the Peopleware app* section, generate and copy the *Peopleware API key*.
+2. Set up the app in the link:https://www.freshworks.com/apps/injixo_1[Freshworks marketplace].
 3. In the Peopleware app installation page, paste the copied API key.
 
 After you have installed the app, you can see new queues in your workloads and Forecast.
 
 [#freshdesk-data-in-peopleware]
 == Freshdesk data in Peopleware
-Peopleware imports all ticket data from Freshdesk. Tickets usually contain multiple conversations that take place between your team members and customers.<br>
-Note: Peopleware cannot import ticket durations from Freshdesk. This is why you won't see the AHT graph for workloads with Freshdesk queues in **Forecast**.
+Peopleware imports all ticket data from Freshdesk. Tickets usually contain multiple conversations that take place between your team members and customers. +
+Note: Peopleware cannot import ticket durations from Freshdesk. This is why you won't see the AHT graph for workloads with Freshdesk queues in *Forecast*.
 
 [#tickets-and-conversations]
 === Tickets and conversations
@@ -85,6 +85,6 @@ The group name and source name cannot be determined when a ticket is changed tha
 |===
 |Question
 |Answer
-|Suddenly, Peopleware stops displaying new Freshdesk data but the page in **Account > Integrations** still shows the status Operational for my Freshdesk integration. What can I do?
+|Suddenly, Peopleware stops displaying new Freshdesk data but the page in *Account > Integrations* still shows the status Operational for my Freshdesk integration. What can I do?
 |the Peopleware app gets Freshdesk data and sends events to Peopleware. In the event of communication errors between the Peopleware app and Peopleware, Freshdesk data may no longer be displayed. The Freshdesk integration cannot detect such communication errors. + +Check that the Peopleware API key you entered when setting up the Peopleware app in your Freshdesk account is still valid. If the API key is invalid, update the Peopleware API key on the Peopleware app installation page. If the API key is still valid, contact our support team.
 |===

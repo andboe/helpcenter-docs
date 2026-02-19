@@ -10,8 +10,7 @@ When you run the injixo client installer, you may see the error message: There i
 
 This can happen if the original installation directory has already been deleted or required files are missing.
 
-<!-- very specific on-premise content, a bit dated:
-If you run the client installer on a computer where the server has been installed with the original r4.306 installer, the client installer will try to unregister the client twice. In this case, you cannot recreate the _unregister.bat_ file. Go to solution 3. -->
+
 
 There are different options to solve the problem:
 
@@ -73,6 +72,6 @@ Modifying the Windows registry can cause issues with the operating system. Creat
 To delete the entries created by the client installer:
 
 1. Open the Windows registry (`Start > Run > regedit`).
-2. Go to the key **HKEY_CURRENT_USER\Software\Microsoft\Installer\Products**.
+2. Go to the key *HKEY_CURRENT_USER\Software\Microsoft\Installer\Products*.
 3. Delete the directory `1B19A99FB16314A459325F171A154DCE` from the tree.
 4. Close the registry and run the installer again to install the client.

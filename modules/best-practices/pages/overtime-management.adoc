@@ -18,13 +18,13 @@ Overtime should be scheduled manually in Shift Center or Schedules as an additio
 == Create activities for overtime
 The example below uses a new activity named Calls. Follow these steps for all activities that you want to be able to schedule as overtime work, i.e. for Calls or Emails, but not for Illness or Public holiday.
 
-1. xref:administration:activities.adoc[Create and configure the activity] **Calls**.
-2. Duplicate the activity **Calls** and name the new one **Calls overtime**. You do not need to add skills to this activity.
-   - Check the checkbox **Special handling in Schedule optimization**.
-   - Make sure that the checkbox **Requestable in Me** is not checked.
+1. xref:administration:activities.adoc[Create and configure the activity] *Calls*.
+2. Duplicate the activity *Calls* and name the new one *Calls overtime*. You do not need to add skills to this activity.
+   - Check the checkbox *Special handling in Schedule optimization*.
+   - Make sure that the checkbox *Requestable in Me* is not checked.
 
-3. In **Calls overtime**, add **Calls** as a subactivity.
-   **Calls overtime** is now a multiactivity.
+3. In *Calls overtime*, add *Calls* as a subactivity.
+   *Calls overtime* is now a multiactivity.
 4. Add both activities to the relevant planning unit. Do not add the overtime activity to any day model.
 
 With this configuration, the activity Calls overtime can only be scheduled manually, and it cannot be replaced during schedule optimization. People will not be able to request this activity in Me.
@@ -38,7 +38,7 @@ You can manually schedule overtime either in {bc-plan-shift-center} or in {bc-pl
 To add overtime activities in Shift Center, follow these steps:
 
 1. Choose the planning unit and, optionally, the selection to which the person you want to schedule for overtime work belongs.
-2. Double-click that person's cell for the day on which they should work overtime. Click the **Multi-Activities** tab and select **Calls overtime**.
+2. Double-click that person's cell for the day on which they should work overtime. Click the *Multi-Activities* tab and select *Calls overtime*.
 3. Set a start and end time for the activity.
 4. {btn-ok}
 
@@ -49,10 +49,10 @@ To add overtime activities in {bc-plan-schedules}, follow these steps:
 1. Double-click a cell in the schedule to open the edit view.
 2. Click btn:[Add new Activity].
    A new row with the activity is added to the right.
-3. In the new row, select **Calls overtime** from the drop-down menu.
+3. In the new row, select *Calls overtime* from the drop-down menu.
 4. Set a start and end time for the activity.
 5. {btn-save}
 
 [#reporting]
 == Reporting
-The report **Activities in hours** will reflect that the person worked overtime, thanks to the activity name including that information. This way, all worked overtime is documented and can be seen by all relevant people, e.g. the finance department who needs to handle the extra pay.
+The report *Activities in hours* will reflect that the person worked overtime, thanks to the activity name including that information. This way, all worked overtime is documented and can be seen by all relevant people, e.g. the finance department who needs to handle the extra pay.

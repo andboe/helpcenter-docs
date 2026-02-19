@@ -13,8 +13,8 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 A role groups people with the same set of permissions for the apps and features in Peopleware, e.g. *Forecast*, or to the features in WFM, e.g. menu:WFM[Administration].
 
 Every role can be marked as a default role in the role settings.
-Peopleware assigns roles with the **Default role** setting to every new user account.
-All roles except the predefined **Everyone** role can be unassigned from any user account at any time.
+Peopleware assigns roles with the *Default role* setting to every new user account.
+All roles except the predefined *Everyone* role can be unassigned from any user account at any time.
 For more information see xref:account:predefined-user-roles.adoc[Predefined roles].
 
 [NOTE]
@@ -25,8 +25,8 @@ In Essential WFM and Advanced WFM, you can configure xref:forecast:workload-perm
 == Manage roles
 === Prerequisites
 
-To manage and configure roles, your role needs the **Full access to Roles** permission.
-To configure WFM permissions, your role also needs the **Enable access to WFM** permission.
+To manage and configure roles, your role needs the *Full access to Roles* permission.
+To configure WFM permissions, your role also needs the *Enable access to WFM* permission.
 
 [#create-a-new-role]
 === Create a new role from scratch
@@ -35,8 +35,8 @@ To create a new role and configure all its settings from scratch, proceed as fol
 1. Go to {bc-account-roles}.
 2. Click btn:[Create role].
 3. In the *Basic information* section, configure the following fields:
-   - **Name**
-   - (Optional) **Description**
+   - *Name*
+   - (Optional) *Description*
 4. Edit the role *permissions*. To grant *permissions*, check the checkbox of the feature.
 5. {btn-save}
 
@@ -46,7 +46,7 @@ Duplicating an existing role transfers all its settings, including permission se
 To duplicate a role, proceed as follows:
 
 1. Go to {bc-account-roles}.
-2. Find the role in the **Roles** table.
+2. Find the role in the *Roles* table.
 3. In the role entry, click the {icon-context-menu} on the right to display the role entry menu.
 4. Click {icon-overlapping-boxes} Duplicate to immediately create the new, duplicated role.
 5. (Optional) Edit the role settings as needed.
@@ -55,8 +55,8 @@ To duplicate a role, proceed as follows:
 === Assign roles to people
 1. {nav-to-people}
 2. {select-person}
-3. In the left-side menu, click **Access**.
-4. In the *Roles and admin access* section, click {icon-edit} **Edit**.
+3. In the left-side menu, click *Access*.
+4. In the *Roles and admin access* section, click {icon-edit} *Edit*.
 5. Check the relevant checkboxes in the list.
    To limit the displayed roles, use the search field.
 6. {btn-save}
@@ -77,9 +77,9 @@ To duplicate a role, proceed as follows:
 [#set-wfm-permissions]
 == Set WFM *permissions*
 1. Under {bc-account-roles}, select a role.
-2. In the **WFM** section, click *Show in WFM*.
+2. In the *WFM* section, click *Show in WFM*.
    You will be redirected to menu:WFM[Administration>System>Role authorization].
-3. In the **Navigator** section on the right, check or uncheck the checkboxes to add or remove *permissions*.
+3. In the *Navigator* section on the right, check or uncheck the checkboxes to add or remove *permissions*.
 
 [NOTE]
 ====
@@ -99,7 +99,7 @@ To reset specific *permissions*, you may need to temporarily remove admin access
 == Manage team access: Restrict access to configuration data
 If your organization includes several teams and you want to restrict access to the teams' data, you can add more than one role to a person. The *permissions* defined by different roles are combined. You can restrict access to elements such as *planning units*, *day models*, activities, or reports.
 
-**Example**
+*Example*
 
 If all your planners should have access to the *schedule* but each planner should only be able to edit the data of their own *planning unit*, you can assign two roles to each planner.
 
@@ -107,7 +107,7 @@ You can create a new role with no access to specific *planning units*, or remove
 
 1. Go to {bc-account-roles}.
 2. Select the role.
-3. In the **WFM** section, click *View in WFM*.
+3. In the *WFM* section, click *View in WFM*.
 4. On the right, scroll to the *Planning Units* section (or use the quick link on top).
 5. Click the {icon-wfm-delete} next to the [ALL] entry to delete access to all *planning units*.
 6. {btn-ok}
@@ -116,8 +116,8 @@ Add access to the specific *planning unit* to other roles as follows:
 
 1. Select the second role.
 2. In the *Planning Units* section, click the {icon-wfm-add}.
-3. Select the planning unit(s) from the list. Press **CTRL** or **Shift** while clicking to select multiple *planning units*.
-4. Under *Access Authorization*, check one or more checkboxes to set **Read**, **Edit**, and **Delete** rights.
+3. Select the planning unit(s) from the list. Press *CTRL* or *Shift* while clicking to select multiple *planning units*.
+4. Under *Access Authorization*, check one or more checkboxes to set *Read*, *Edit*, and *Delete* rights.
 5. {btn-ok}
 
 To complete the configuration, go to {bc-people} and xref:#assign-roles-to-people[assign the roles to your people].

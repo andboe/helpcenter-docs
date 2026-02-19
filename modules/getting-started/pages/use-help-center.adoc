@@ -32,7 +32,7 @@ If a Help Center article does not answer your question, you can access the suppo
 
 [#download-software-and-technical-manuals]
 == Download software and technical manuals
-From the homepage, you can also access the [downloads page](https://downloads.peopleware.com/en), where you can find up-to-date installers, tools, and technical documentation that you might need when working with Peopleware.
+From the homepage, you can also access the link:https://downloads.peopleware.com/en[downloads page], where you can find up-to-date installers, tools, and technical documentation that you might need when working with Peopleware.
 
 [#read-the-terms-and-conditions]
 == Read the terms and conditions

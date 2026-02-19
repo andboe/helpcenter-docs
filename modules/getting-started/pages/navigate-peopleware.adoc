@@ -16,13 +16,13 @@ You may not be able to see all the features listed in this article. Read more ab
 Click the items in the navigation bar at the top to access the different apps and features.
 
 ------- | --------
-**WFM** | Create the configuration data required to xref:getting-started:set-up-base-configuration.adoc[map out your company], xref:reporting:task-create-reports.adoc[run reports], and configure settings and xref:administration:create-contracts.adoc[scheduling rules].
-**Forecast** | xref:forecast:create-workloads.adoc[Create workloads] to xref:forecast:what-is-forecast.adoc[generate forecasts] based on imported historical data.
-**Plan** | xref:scheduling:schedules-overview.adoc[Create schedules], xref:scheduling:time-off-periods-legacy.adoc[manage time-off periods and requests], and xref:scheduling:meetings-overview.adoc[schedule meetings]. Go to xref:scheduling:shift-center-overview.adoc[Shift Center] to view and manually adjust your schedules. Add configuration data such as xref:administration:work-with-skills.adoc[skills].
-**Intraday** | In xref:intraday:real-time-adherence.adoc[Real-Time Adherence] you can see details on each employee's current adherence status. This helps you identify and react to unforeseen events and maintain your service level.
-**Analyze** | Go to xref:monitoring:manage-dashboards.adoc[Dashboards] to analyze historical and forecasted data, and to view and compare your data in graphs.
-**People** | Go to xref:people:configure-people.adoc[People] to create, edit, and delete people. Assign roles to your people, unlock locked people, and manage other xref:people:configure-people.adoc[people settings].
-**Me** | People can xref:me:explore-me.adoc[access their schedules, request time off, swap shifts, and bid on shifts]. Users with admin access can xref:me:configure-me.adoc[turn features on or off].
+*WFM* | Create the configuration data required to xref:getting-started:set-up-base-configuration.adoc[map out your company], xref:reporting:task-create-reports.adoc[run reports], and configure settings and xref:administration:create-contracts.adoc[scheduling rules].
+*Forecast* | xref:forecast:create-workloads.adoc[Create workloads] to xref:forecast:what-is-forecast.adoc[generate forecasts] based on imported historical data.
+*Plan* | xref:scheduling:schedules-overview.adoc[Create schedules], xref:scheduling:time-off-periods-legacy.adoc[manage time-off periods and requests], and xref:scheduling:meetings-overview.adoc[schedule meetings]. Go to xref:scheduling:shift-center-overview.adoc[Shift Center] to view and manually adjust your schedules. Add configuration data such as xref:administration:work-with-skills.adoc[skills].
+*Intraday* | In xref:intraday:real-time-adherence.adoc[Real-Time Adherence] you can see details on each employee's current adherence status. This helps you identify and react to unforeseen events and maintain your service level.
+*Analyze* | Go to xref:monitoring:manage-dashboards.adoc[Dashboards] to analyze historical and forecasted data, and to view and compare your data in graphs.
+*People* | Go to xref:people:configure-people.adoc[People] to create, edit, and delete people. Assign roles to your people, unlock locked people, and manage other xref:people:configure-people.adoc[people settings].
+*Me* | People can xref:me:explore-me.adoc[access their schedules, request time off, swap shifts, and bid on shifts]. Users with admin access can xref:me:configure-me.adoc[turn features on or off].
 
 [#account]
 == Account
@@ -30,12 +30,12 @@ Users with admin access can access the following functionalities under *Account*
 Learn about xref:account:predefined-user-roles.adoc[access for the predefined user roles].
 
 ---------- | --------
-**Roles** | xref:account:configure-user-roles.adoc[Create new roles and manage existing ones].
-**Billing** | View your current number of active users. For more information, see xref:account:check-active-user-counts.adoc[Check active user counts].
-**System settings** | Change your company's name and country. Change your tenant's timezone and language.
-**Integrations** | xref:acd-integration:how-integrations-work.adoc[Set up integrations] to import data.
-**Security** | xref:getting-started:manage-2fa.adoc[Enforce two-factor authentication] for all users. xref:getting-started:single-sign-on.adoc[Activate single sign-on] for your account and for all users' accounts.
-**Notifications** | xref:getting-started:notifications.adoc[Configure email and browser push notifications] for other users' accounts.
+*Roles* | xref:account:configure-user-roles.adoc[Create new roles and manage existing ones].
+*Billing* | View your current number of active users. For more information, see xref:account:check-active-user-counts.adoc[Check active user counts].
+*System settings* | Change your company's name and country. Change your tenant's timezone and language.
+*Integrations* | xref:acd-integration:how-integrations-work.adoc[Set up integrations] to import data.
+*Security* | xref:getting-started:manage-2fa.adoc[Enforce two-factor authentication] for all users. xref:getting-started:single-sign-on.adoc[Activate single sign-on] for your account and for all users' accounts.
+*Notifications* | xref:getting-started:notifications.adoc[Configure email and browser push notifications] for other users' accounts.
 
 [NOTE]
 ====
@@ -43,12 +43,13 @@ Grant admin access to a second user in xref:people:configure-people.adoc[{bc-peo
 ====
 [#your-user-profile]
 == Your user profile
-Click your **user name** at the top right to open your user profile.
+Click your *user name* at the top right to open your user profile.
 
 ---------- | --------
-**My Profile** | Change your name, and the email address that you use to log in. Set your language. Set the timezone to correctly display scheduling data (this change is effective after the next login). Allow xref:getting-started:notifications.adoc[browser notifications] from Peopleware.
-**Security** | Change your password. Activate xref:getting-started:use-two-factor-authentication.adoc[two-factor authentication].
-**Personal access tokens** | Create a token to access the xref:reporting:api.adoc[API].<br>By default, only users with admin access can create personal access tokens. Users with admin access can xref:reporting:api.adoc[allow other user roles to create personal access tokens].
+*My Profile* | Change your name, and the email address that you use to log in. Set your language. Set the timezone to correctly display scheduling data (this change is effective after the next login). Allow xref:getting-started:notifications.adoc[browser notifications] from Peopleware.
+*Security* | Change your password. Activate xref:getting-started:use-two-factor-authentication.adoc[two-factor authentication].
+*Personal access tokens* | Create a token to access the xref:reporting:api.adoc[API]. +
+By default, only users with admin access can create personal access tokens. Users with admin access can xref:reporting:api.adoc[allow other user roles to create personal access tokens].
 
 [#product-updates]
 == Product updates

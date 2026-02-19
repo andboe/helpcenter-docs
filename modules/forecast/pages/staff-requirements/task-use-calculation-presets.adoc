@@ -15,18 +15,18 @@ This article describes how to use presets for the manual calculation of staff re
 === Permissions
 Your role needs to have the following functional permissions:
 
-- Full access to requirement calculations under **Forecast**.
+- Full access to requirement calculations under *Forecast*.
 
 [#create-a-requirement-calculation-preset]
 == Create a requirement calculation preset
 1.  Go to {bc-forecast-requirement-calculations}.
 2.  Select the calculation for which you need to create a preset.
-3.  In the navigation menu, click **Presets**.
-4.  Click **+ Add**.
+3.  In the navigation menu, click *Presets*.
+4.  Click *+ Add*.
 5.  Fill in the parameters:
 
 - Enter a name.
-- (Optional) Check the **Private** checkbox. This makes the preset available only to the currently logged in user.
+- (Optional) Check the *Private* checkbox. This makes the preset available only to the currently logged in user.
 - Fill in the configuration parameters.
 
 6.  {btn-save}

@@ -33,11 +33,11 @@ Take note:
 
 Complete process:
 
-- [Workflow Shift Bidding](/assets/img/en/features/shift-bidding/image-1.png)
+- xref:ROOT:assets/img/en/features/shift-bidding/image-1.png[Workflow Shift Bidding]
 
 [#generate-lottery-assign-shifts-with-planning-periods]
 == Generate, lottery, assign shifts with planning periods
-In {bc-wfm-scheduling-schedulepro-periods}, when you select a planning period you are presented the **Shifts** navigation block on the right side:
+In {bc-wfm-scheduling-schedulepro-periods}, when you select a planning period you are presented the *Shifts* navigation block on the right side:
 
 image::shift-bidding/image-2.png[Planning Periods with Shift Functions]
 
@@ -64,17 +64,17 @@ Remark on the shift requirement:
 == Create shifts for bidding
 Shift generation generates shifts for each day of the planning period and tries to achieve the best possible coverage of the requirement curve. Shifts that already exist in the schedule are taken into account.
 
-1. Select a **planning period** of the type Standard in the overview.
-2. Click btn:[Generate] in the **Shifts** section.
+1. Select a *planning period* of the type Standard in the overview.
+2. Click btn:[Generate] in the *Shifts* section.
 3. The shift generation parameter window opens:
    image::shift-bidding/image-3.png[Parameter window for shift generation, width=50%]
 4. Optionally adjust the following parameters:
-   - The **start date**/**end date** of the planning period.
-   - The value for the **shift generation requirement**. A value above 100% generates more shifts than specified by the requirement. A value below 100% may be required if the personnel capacity is too low to cover the requirement.
-   - The options **of the employee requirement** and **of the contractual hours**. These determine whether the requirement is to be met based on employee requirements or based on the contract hours.
+   - The *start date*/*end date* of the planning period.
+   - The value for the *shift generation requirement*. A value above 100% generates more shifts than specified by the requirement. A value below 100% may be required if the personnel capacity is too low to cover the requirement.
+   - The options *of the employee requirement* and *of the contractual hours*. These determine whether the requirement is to be met based on employee requirements or based on the contract hours.
 5. Click btn:[OK] to start the shift generation.
 
-Activate the option *Display job results* to generate the **result report**. This report contains information, warnings, and errors concerning the configuration data and the shift generation itself (run time, writing of requirement data, violations of scheduling rules). If you click btn:[Close Dialog], the shift generation continues in the background. While the process is running, the scheduling data is protected during the optimization period. You cannot make any changes to the schedule during this time.
+Activate the option *Display job results* to generate the *result report*. This report contains information, warnings, and errors concerning the configuration data and the shift generation itself (run time, writing of requirement data, violations of scheduling rules). If you click btn:[Close Dialog], the shift generation continues in the background. While the process is running, the scheduling data is protected during the optimization period. You cannot make any changes to the schedule during this time.
 
 [#shift-request-of-your-agents]
 == Shift request of your agents
@@ -95,12 +95,12 @@ With the lottery, the requested shifts are distributed among the employees. Succ
 
 Start the lottery:
 
-1. Select the **planning period** in the overview.
+1. Select the *planning period* in the overview.
 2. Click btn:[Lottery] in the shifts section.
 3. Select the xref:#parameters-for-lottery-and-assignment[relevant parameters] in the pop-up window.
 4. Click btn:[OK] to start the lottery.
 
-If necessary, check the **Create Lottery Log** checkbox. This report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, target time account, work time account) and raffled shifts and reasons for refusal of normal requests/alternative requests. Also, the results of the lottery for normal/alternative requests and the daily and total quotas per employee in % and the total quota in % for all employees are included.
+If necessary, check the *Create Lottery Log* checkbox. This report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, target time account, work time account) and raffled shifts and reasons for refusal of normal requests/alternative requests. Also, the results of the lottery for normal/alternative requests and the daily and total quotas per employee in % and the total quota in % for all employees are included.
 
 [NOTE]
 ====
@@ -112,12 +112,12 @@ For a fair distribution, employees' requests can be drawn by selections. If you 
 === Assignment of remaining shifts
 Start the assignment:
 
-1. Select the **planning period** in the overview.
+1. Select the *planning period* in the overview.
 2. Click btn:[Assign] in the shifts section.
 3. Select the xref:#parameters-for-lottery-and-assignment[relevant parameters] in the pop-up window.
 4. Click btn:[OK] to start the assignment.
 
-If required, check the **Create Assignment Log** checkbox. The report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, time account, working time account) and assigned shifts and reasons for rejection.
+If required, check the *Create Assignment Log* checkbox. The report contains the selected parameters (user name, planning unit, start date and end date), information about employees (personnel number, time account, working time account) and assigned shifts and reasons for rejection.
 
 The assignment randomly assigns shifts to employees for which there were no or too few requests in *Me*.
 These shifts remain unoccupied if there are too few employees. If employees cannot perform certain shifts due to skills or shift length, the schedule may remain incomplete. Therefore, check the assignment log and the schedule after the assignment.
@@ -133,9 +133,9 @@ You have the following options:
 - Choose all employees, individual employees, or selections.
 - Change the start or end date.
 - Create a protocol in PDF format.
-- Activate the consideration of an average start time for other shifts. Enter the **Tolerance** in HH:MM format. In this range, the shifts may deviate from the average shift start.
+- Activate the consideration of an average start time for other shifts. Enter the *Tolerance* in HH:MM format. In this range, the shifts may deviate from the average shift start.
 
-The time corridor for the **Tolerance** behaves differently, depending on whether shifts are already present in the schedule or not:
+The time corridor for the *Tolerance* behaves differently, depending on whether shifts are already present in the schedule or not:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -159,9 +159,9 @@ Set the status of the xref:scheduling:what-are-planning-periods.adoc[planning pe
 == Edit the generated shifts
 In {bc-plan-shift-center}, you can check the generated shifts by day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
 
-1. In the parameter area, click the **Day Models** tab.
-2. Right-click a cell and select **Edit Shift Requirement...**.
-3. Select how to display the day models: - To display the day models in alphabetical order, click the {icon-plus} on the left of the row **All shifts according to name**. - To display the day models in chronological order, click the {icon-plus} on the left of the row **All shifts according to time**.
-4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the **Requirement** column.
-5. Click a cell in the **Requirement** column next to a day model and enter a new value.
+1. In the parameter area, click the *Day Models* tab.
+2. Right-click a cell and select *Edit Shift Requirement...*.
+3. Select how to display the day models: - To display the day models in alphabetical order, click the {icon-plus} on the left of the row *All shifts according to name*. - To display the day models in chronological order, click the {icon-plus} on the left of the row *All shifts according to time*.
+4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the *Requirement* column.
+5. Click a cell in the *Requirement* column next to a day model and enter a new value.
 6. Click btn:[OK] to save your changes.

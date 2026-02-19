@@ -13,7 +13,7 @@ Time-off entitlement is the basis for planning absences from the workplace with 
 
 The working time subtracted from the yearly vacation entitlement for a full-day vacation depends on the person's contract. The formula for the calculation is: Weekly target hours divided by the number of working days per week. You can manually insert vacation as full-day or regular activities with a start and end time. Vacation requests for part days are calculated on an exact pro rata basis.
 
-People can only request time off in Me if there is a xref:scheduling:time-off-periods-legacy.adoc[time-off period] published for the time range (xref:scheduling:enable-time-off-and-request-sick-leave.adoc[planning period of the type Vacation] in Classic). The activity of type Vacation must be configured as **Requestable in Me**. The activity must be assigned to the same planning unit as the person.
+People can only request time off in Me if there is a xref:scheduling:time-off-periods-legacy.adoc[time-off period] published for the time range (xref:scheduling:enable-time-off-and-request-sick-leave.adoc[planning period of the type Vacation] in Classic). The activity of type Vacation must be configured as *Requestable in Me*. The activity must be assigned to the same planning unit as the person.
 
 [NOTE]
 ====
@@ -22,8 +22,8 @@ You cannot batch-edit entitlement values. You cannot import vacation entitlement
 [#check-vacation-entitlement]
 == Check vacation entitlement
 1. Go to {bc-plan-time-off} and click btn:[Edit entitlement] to manage people's entitlements.
-2. Select a *Planning unit*, optionally a *Selection*, and a **Year**.
-3. (Optional) Use **Search** to find specific persons.
+2. Select a *Planning unit*, optionally a *Selection*, and a *Year*.
+3. (Optional) Use *Search* to find specific persons.
 
 image::vacation-entitlement/image-1.png[Vacation entitlement, width=100%]
 
@@ -58,7 +58,7 @@ In Enterprise on-premise, you find the vacation entitlement menu item under menu
 
 [#add-edit-or-delete-vacation-entitlement]
 == Add, edit or delete vacation entitlement
-You can add, edit or delete the values in the **Remain Last Year** and **Current Year** columns.
+You can add, edit or delete the values in the *Remain Last Year* and *Current Year* columns.
 
 1. Click a field and press Tab to navigate through the list.
 2. Type in a value or use the arrows in the field. Press the delete key to remove values. The data will be saved automatically.
@@ -67,12 +67,12 @@ You can add, edit or delete the values in the **Remain Last Year** and **Current
 == Transfer unused vacation entitlement to the next year
 You can transfer the remaining vacation entitlement for the current year to the following year.
 
-1. Choose a *Planning unit* and, optionally, a *Selection* to display only the employees whose entitlements you want to transfer. You can use the **Search** field to select individual employees.
-2. Choose the **Year** from which you want to transfer the entitlement to the following year.
-3. If you see no values in the **Remain Current Year** column, edit your employees' contracts in menu:WFM[Administration>Scheduling>Contracts]:
-   - In the **Work Time Guidelines** section of the contract for which you want to show the remaining vacation entitlement, enter a target value for weekly working hours in the **Target** field on the **Week** line. Then, click btn:[Ok] to save the contract and reload the vacation entitlement page.
+1. Choose a *Planning unit* and, optionally, a *Selection* to display only the employees whose entitlements you want to transfer. You can use the *Search* field to select individual employees.
+2. Choose the *Year* from which you want to transfer the entitlement to the following year.
+3. If you see no values in the *Remain Current Year* column, edit your employees' contracts in menu:WFM[Administration>Scheduling>Contracts]:
+   - In the *Work Time Guidelines* section of the contract for which you want to show the remaining vacation entitlement, enter a target value for weekly working hours in the *Target* field on the *Week* line. Then, click btn:[Ok] to save the contract and reload the vacation entitlement page.
 
-4. Click btn:[Transfer Entitlement]. This will transfer the vacation entitlement for all displayed employees into the next year. The transferred entitlement will appear in the **Remain Last Year** column.
+4. Click btn:[Transfer Entitlement]. This will transfer the vacation entitlement for all displayed employees into the next year. The transferred entitlement will appear in the *Remain Last Year* column.
 
 [#export-vacation-entitlement-as-csv-file]
 == Export vacation entitlement as CSV file

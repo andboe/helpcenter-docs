@@ -24,7 +24,7 @@ Once inserted, you cannot remove an entire template. If you inserted the wrong t
 == Create a planning calendar
 1. Go to menu:Plan[Configuration>Planning calendar].
 2. {btn-create}
-3. Enter a **Name**.
+3. Enter a *Name*.
 4. {btn-save}
 5. Add xref:#add-a-day-type[day types] and/or a xref:#add-a-template[template].
 
@@ -32,15 +32,15 @@ Peopleware automatically saves the changes.
 
 [#add-a-day-type]
 === Add a day type
-1. In the **Calendar** section, select a **Year** or use btn:[<] and btn:[>] to navigate to a past or future year.
-2. Select a **Day type**.
+1. In the *Calendar* section, select a *Year* or use btn:[<] and btn:[>] to navigate to a past or future year.
+2. Select a *Day type*.
 3. Add the selected day type to a day of the month. If you click a cell that already contains a day type, it is overwritten.
 
 [#add-a-template]
 === Add a template
 1. Click the three-dot menu {% icon ellipsis_v ; icon-only %}.
-2. Click **+ Insert template**.
-3. Select a **Public holiday region**.
+2. Click *+ Insert template*.
+3. Select a *Public holiday region*.
 4. Click btn:[Insert].
 
 [#remove-day-types-from-the-planning-calendar]
@@ -68,8 +68,9 @@ To use a planning calendar for scheduling, proceed as follows:
 
 1. Go to {bc-plan-config-planning-units}.
 2. Select the planning unit to which you want to assign the planning calendar.
-3. In the **Planning Calendar** section, click **+ Add**.
-4. In the **Planning Calendar** configuration window, select a planning calendar.<br>You can choose a single calendar that spans several years, for example if you create a schedule that exceeds one year. If you want to assign different planning calendars for each year, choose one calendar at a time and use the **Valid from** and **Valid To** fields to set the time period when it should be used. Note that single-year planning calendars only work for single-year schedules.
+3. In the *Planning Calendar* section, click *+ Add*.
+4. In the *Planning Calendar* configuration window, select a planning calendar. +
+You can choose a single calendar that spans several years, for example if you create a schedule that exceeds one year. If you want to assign different planning calendars for each year, choose one calendar at a time and use the *Valid from* and *Valid To* fields to set the time period when it should be used. Note that single-year planning calendars only work for single-year schedules.
 5. Click btn:[OK]
 
 [NOTE]
@@ -82,12 +83,12 @@ You can also add planning calendars to individual people, which overwrites any a
 
 1. {nav-to-people}
 2. {select-person}
-3. In the left-side menu, click **Planning**.
-4. In the **Planning calendars** section, click **+ Add**.
+3. In the left-side menu, click *Planning*.
+4. In the *Planning calendars* section, click *+ Add*.
 5. {configure-info}
-   - **Planning calendars**
-   - **Reference date**
-   - **Valid from** and **Valid to**: Configure these dates if you want to add the planning calendar only temporarily to the person.
+   - *Planning calendars*
+   - *Reference date*
+   - *Valid from* and *Valid to*: Configure these dates if you want to add the planning calendar only temporarily to the person.
 6. {btn-save}
 
 [#duplicate-planning-calendars]

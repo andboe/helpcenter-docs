@@ -41,68 +41,69 @@ Example: A person is only available to work on mornings from 8 AM to noon due to
 
 1. Go to {bc-people-overview}.
 2. Select the person from the list.
-3. In the left-side menu, click **Planning**.
-4. In the **Availability** section, click **+ Add**.
+3. In the left-side menu, click *Planning*.
+4. In the *Availability* section, click *+ Add*.
 5. Configure the availability:
-   - **Day Types**: Select Wednesday and Friday.
-   - **Start time**: Enter 8:00.
-   - **End time**: Enter 12:00.
-6. (Optional) Select **Valid from** and **Valid to** dates if you want to add the availabilities only temporarily to the person.
+   - *Day Types*: Select Wednesday and Friday.
+   - *Start time*: Enter 8:00.
+   - *End time*: Enter 12:00.
+6. (Optional) Select *Valid from* and *Valid to* dates if you want to add the availabilities only temporarily to the person.
 7. {btn-save}
 
 [#rotate-availabilities-across-weeks]
 == Rotate availabilities across weeks
 The following subsections explain how to use availabilities to plan for the following example, or for similar use cases:
 
-- Your contact center is open from 8&nbsp;AM to 8&nbsp;PM.
+- Your contact center is open from 8 AM to 8 PM.
 - On even weeks, planning unit A works morning shifts and planning unit B works evening shifts.
 - On odd weeks, planning unit B works morning shifts and planning unit A works evening shifts.
-- The morning shift is from 8&nbsp;AM to 2&nbsp;PM.
-- The evening shift is from 2&nbsp;PM to 8&nbsp;PM.
+- The morning shift is from 8 AM to 2 PM.
+- The evening shift is from 2 PM to 8 PM.
 
 [#create-day-models-of-type-availability]
 === Create day models of type Availability
-To xref:administration:daymodel-creation.adoc[create day models], go to menu:Plan[Configuration>Day models] and click btn:[Create].<br>The following example shows how to set up two day models to rotate a morning shift and an evening shift.
+To xref:administration:daymodel-creation.adoc[create day models], go to menu:Plan[Configuration>Day models] and click btn:[Create]. +
+The following example shows how to set up two day models to rotate a morning shift and an evening shift.
 
 To configure the day model for the morning shift, proceed as follows:
 
 1. Create a new day model.
 2. Configure the day model:
-   - **Type**: Select **Availability**.
-   - **Name** and **Abbreviation**: Enter a unique name and abbreviation, e.g. Availability 8&nbsp;AM - 2&nbsp;PM and Avail 8AM-2PM.
-   - (Optional) **Color**: Select a color to help you identify the day model.
-   - **Start time**: Enter 8:00.
-   - Set a **Total shift duration**. The maximum value is 48 hours.
+   - *Type*: Select *Availability*.
+   - *Name* and *Abbreviation*: Enter a unique name and abbreviation, e.g. Availability 8 AM - 2 PM and Avail 8AM-2PM.
+   - (Optional) *Color*: Select a color to help you identify the day model.
+   - *Start time*: Enter 8:00.
+   - Set a *Total shift duration*. The maximum value is 48 hours.
 3. {btn-save}
 
 To configure the day model for the evening shift, proceed as follows:
 
 1. Create a new day model.
 2. Configure the day model:
-   - **Type**: Select **Availability**.
-   - **Name** and **Abbreviation**: Enter a unique name and abbreviation e.g. Availability 2&nbsp;PM - 8&nbsp;PM and Avail 2PM-8PM.
-   - (Optional) **Color**: Select a color to help you identify the day model.
-   - **Start time**: Enter 14:00.
-   - Set a **Total shift duration**. The maximum value is 48 hours.
+   - *Type*: Select *Availability*.
+   - *Name* and *Abbreviation*: Enter a unique name and abbreviation e.g. Availability 2 PM - 8 PM and Avail 2PM-8PM.
+   - (Optional) *Color*: Select a color to help you identify the day model.
+   - *Start time*: Enter 14:00.
+   - Set a *Total shift duration*. The maximum value is 48 hours.
 3. {btn-ok}
 
 [#create-and-assign-a-shift-sequence]
 === Create and assign a shift sequence
 To use the two day models you just created for planning, follow these steps:
 
-1. xref:administration:create-shift-sequences.adoc[Create a shift sequence] with two **Employee rows** and a **Duration** of 14 days.<br>
+1. xref:administration:create-shift-sequences.adoc[Create a shift sequence] with two *Employee rows* and a *Duration* of 14 days. +
 2. In the shift sequence, insert the day models alternating. In row 1, add the morning day model in week 1, and the evening day model in week 2. Add the day models in the reverse order in row 2.
 3. xref:administration:assign-shift-sequences-to-people.adoc[Assign the shift sequence] to your people:
    - For people in planning unit A, select the first employee row.
    - For people in planning unit B, select the second employee row.
-   - Set a **reference date** to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
+   - Set a *reference date* to define when the shift sequence starts to be planned. Set the reference date to the day of the week when your scheduling week begins, e.g. Monday.
 4. xref:scheduling:schedules-insert-shift-sequences.adoc#insert-shift-sequences[Insert the shift sequence] into your schedule.
 
 [#configure-temporarily-available-people]
 == Configure temporarily available people
-Example: One of your people is only available to work from 9&nbsp;AM to 12&nbsp;PM on a certain week.<br>
+Example: One of your people is only available to work from 9 AM to 12 PM on a certain week. +
 To configure their availability accordingly, follow the steps to xref:#configure-fixed-working-daystimes-for-each-week[configure fixed working days/times for each week].
-Add the relevant xref:administration:set-a-validity-period.adoc[validity period] and the correct **From** and **To** values.
+Add the relevant xref:administration:set-a-validity-period.adoc[validity period] and the correct *From* and *To* values.
 
 [#edit-availabilities]
 == Edit availabilities
@@ -110,13 +111,13 @@ You can edit the availabilities you configured for an individual person:
 
 1. Go to {bc-plan-config-employees}.
 2. Select the person for whom you want to edit the availability.
-3. In the right side panel, click **Availability**.
+3. In the right side panel, click *Availability*.
 4. Next to the availability you want to edit, click the {icon-edit}.
 5. Edit the availability.
-6. In the **Availability** window, click btn:[OK].
+6. In the *Availability* window, click btn:[OK].
 7. At the bottom of the right side panel, click btn:[OK].
 
-If you have configured availabilities with day models of type **Availability**, edit the day model:
+If you have configured availabilities with day models of type *Availability*, edit the day model:
 
 1. Go to menu:Plan[Configuration>Day models].
 2. Select the day model you want to edit.
@@ -136,12 +137,12 @@ You can delete the availabilities you configured for an individual person:
 
 1. Go to {bc-plan-config-employees}.
 2. Select the person for whom you want to delete the availability.
-3. In the right side panel, click **Availability**.
+3. In the right side panel, click *Availability*.
 4. Next to the availability you want to delete, click the {icon-wfm-delete}.
-5. In the **Confirmation** window, click btn:[Yes].
+5. In the *Confirmation* window, click btn:[Yes].
 6. {btn-ok}
 
-If you have configured availabilities with day models of type **Availability**, delete the day model:
+If you have configured availabilities with day models of type *Availability*, delete the day model:
 
 1. Go to menu:Plan[Configuration>Day models].
 2. Click the Delete icon {icon-delete} on the row of the day model you want to delete.
@@ -155,8 +156,8 @@ You must regularly delete any obsolete entries from the list before creating a s
 
 To allow people to enter their availabilities in Me, follow these steps:
 
-1. Go to **Me**.
-2. Activate the **Availabilities** option.
+1. Go to *Me*.
+2. Activate the *Availabilities* option.
 
 People can then add or edit their weekly availabilities in Me.
 Their availability will appear in their configuration data.

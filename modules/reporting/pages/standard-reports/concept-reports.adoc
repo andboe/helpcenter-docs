@@ -20,7 +20,7 @@ Reports are organized into two categories:
 - Planning Unit Reports: Focus on planning unit data.
 - Employee Reports: Focus on individual employee data such as configuration and activity.
 
-You can filter reports by category using the **Category** drop-down in the **Reports** section.
+You can filter reports by category using the *Category* drop-down in the *Reports* section.
 
 [#displayed-data-and-filters]
 == Displayed data and filters

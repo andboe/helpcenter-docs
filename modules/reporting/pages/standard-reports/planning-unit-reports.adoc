@@ -22,86 +22,86 @@ Make sure that the activities you want to display are xref:administration:create
 ====
 [#most-used-reports]
 == Most used reports
-- **Activities in Hours**: Shows people's paid worked hours and the total amount of worked hours for the given time period (sorted by person). Also includes a breakdown of the individual activities, and the sum of all people's worked hours for each activity.
-- **Activities in Percent**: Overview of the total paid worked hours for all added activities in a planning unit, plus the worked hours for all activities selected for the report.
-- **Time Worked per planning unit**: Overview of the time worked by each person selected for each planning unit in which they are scheduled. It includes the target work time, the actual time worked, the difference between them in hours, and the percentage of the target work time that has been worked for each planning unit during the period selected for the report.
-- **Exchange Statistics**: Processing status of the exchanges (offered, not edited, rejected and exchanged requests).
+- *Activities in Hours*: Shows people's paid worked hours and the total amount of worked hours for the given time period (sorted by person). Also includes a breakdown of the individual activities, and the sum of all people's worked hours for each activity.
+- *Activities in Percent*: Overview of the total paid worked hours for all added activities in a planning unit, plus the worked hours for all activities selected for the report.
+- *Time Worked per planning unit*: Overview of the time worked by each person selected for each planning unit in which they are scheduled. It includes the target work time, the actual time worked, the difference between them in hours, and the percentage of the target work time that has been worked for each planning unit during the period selected for the report.
+- *Exchange Statistics*: Processing status of the exchanges (offered, not edited, rejected and exchanged requests).
 
 [#weekly-schedules]
 == Weekly schedules
 The following reports provide a weekly overview of assigned paid and unpaid activities, shifts, and the resulting weekly working times:
 
-- **Weekly Schedule I**: Sorted by planning unit and people's names.
-- **Weekly Schedule I with Filter**: As above, but with additional filter options.
-- **Weekly Schedule I (without Full-Day Activities)**
-- **Weekly Schedule II**: As above but selection-based version, sorted by selection name.
-- **Weekly Schedule II (without Full-Day Activities)**
-- **Weekly Schedule II (without Breaks)**
-- **Weekly Schedule II (without Breaks or Full-Day Activities)**
+- *Weekly Schedule I*: Sorted by planning unit and people's names.
+- *Weekly Schedule I with Filter*: As above, but with additional filter options.
+- *Weekly Schedule I (without Full-Day Activities)*
+- *Weekly Schedule II*: As above but selection-based version, sorted by selection name.
+- *Weekly Schedule II (without Full-Day Activities)*
+- *Weekly Schedule II (without Breaks)*
+- *Weekly Schedule II (without Breaks or Full-Day Activities)*
 
-- **Weekly Schedule III**: As above but selection-based version. Sorted by people's names.
-- **Weekly Schedule III (without Full-Day Activities)**
+- *Weekly Schedule III*: As above but selection-based version. Sorted by people's names.
+- *Weekly Schedule III (without Full-Day Activities)*
 
 [#daily-schedules]
 == Daily schedules
 Daily reports include information about paid and unpaid activities and shifts, the resulting daily working time, and the start and end times of the working day:
 
-- **Daily Schedule I**: Sorted by people's names.
-- **Daily Schedule I with Breaks**: As above, but with an additional column for break times.
-- **Daily Schedule I (without Absences, Illnesses or Vacations)**
+- *Daily Schedule I*: Sorted by people's names.
+- *Daily Schedule I with Breaks*: As above, but with an additional column for break times.
+- *Daily Schedule I (without Absences, Illnesses or Vacations)*
 
-- **Daily Schedule II**: Sorted by start times.
-- **Daily Schedule II with Breaks**
-- **Daily Schedule II with Shift Summary**
-- **Daily Schedule II with Shift Summary and Breaks**
+- *Daily Schedule II*: Sorted by start times.
+- *Daily Schedule II with Breaks*
+- *Daily Schedule II with Shift Summary*
+- *Daily Schedule II with Shift Summary and Breaks*
 
-- **Daily Schedule III**: Sorted by activity names.
-- **Daily Schedule III with Breaks**: Extra column with the break times.
+- *Daily Schedule III*: Sorted by activity names.
+- *Daily Schedule III with Breaks*: Extra column with the break times.
 
-- **Daily Schedule IV**: Selection-based. Sorted by people's names.
-- **Daily Schedule V**: Selection-based. Sorted by start times.
-- **Daily Schedule VI**: Selection-based. Sorted by activity names.
+- *Daily Schedule IV*: Selection-based. Sorted by people's names.
+- *Daily Schedule V*: Selection-based. Sorted by start times.
+- *Daily Schedule VI*: Selection-based. Sorted by activity names.
 
 [#absence-vacation-and-break-schedules]
 == Absence, vacation, and break schedules
 Monthly reports about paid and unpaid non-presence activities. The report name shows which activity type is considered, e.g. Absence Statistics only includes activities of type Absence.
 
-- **General Absence Schedule**: Monthly overview of each person's total hours worked for assigned non-presence activities for the selected time period. All paid and unpaid activities of the types Absence, Vacation, Illness, and Meeting are taken into account.
-- **Absence Schedule**: Monthly overview of the selected time period by planning unit, including the hourly totals of each person's assigned absences. All paid and unpaid activities of type Absence are taken into account.
-- **Absence Schedule with Day Status and Full-Day Activities**: Displays the day statuses and full-day activities.
-- **Vacation Schedule I**: Monthly overview of the report time period displaying taken vacation days, remaining vacation entitlement, and total vacation entitlement of each person. All paid activities of the type Vacation are taken into account.
-- **Vacation Schedule I with Full-Time Equivalent**: Monthly overview with information on the total of approved vacation days, the total vacation entitlement and the remaining vacation entitlement of each person. All paid activities of type Vacation are taken into account. An additional row includes the number of absent people for each activity of type Absence, standardised to a full-time person (full-time equivalent).
-- **Vacation Schedule II**: Monthly overview of approved days off for each person by planning unit. All paid and unpaid activities of type Vacation are taken into account.
-- **Break Schedule I**: Daily overview of all break times, individually and in total. One line per person with start and end time, and all breaks.
-- **Break Schedule II**: Daily overview of all breaks assigned to people during the selected time period, sorted by planning unit and selection. All paid or unpaid activities of type Break are taken into account. People are listed several times if their working days include several breaks. Excludes information on entire working or break periods.
-- **Break Schedule III**: Lists sorted by planning unit and selection, with information about the daily breaks. All paid and unpaid activities of type Break are taken into account. Excludes information on entire working or break periods.
+- *General Absence Schedule*: Monthly overview of each person's total hours worked for assigned non-presence activities for the selected time period. All paid and unpaid activities of the types Absence, Vacation, Illness, and Meeting are taken into account.
+- *Absence Schedule*: Monthly overview of the selected time period by planning unit, including the hourly totals of each person's assigned absences. All paid and unpaid activities of type Absence are taken into account.
+- *Absence Schedule with Day Status and Full-Day Activities*: Displays the day statuses and full-day activities.
+- *Vacation Schedule I*: Monthly overview of the report time period displaying taken vacation days, remaining vacation entitlement, and total vacation entitlement of each person. All paid activities of the type Vacation are taken into account.
+- *Vacation Schedule I with Full-Time Equivalent*: Monthly overview with information on the total of approved vacation days, the total vacation entitlement and the remaining vacation entitlement of each person. All paid activities of type Vacation are taken into account. An additional row includes the number of absent people for each activity of type Absence, standardised to a full-time person (full-time equivalent).
+- *Vacation Schedule II*: Monthly overview of approved days off for each person by planning unit. All paid and unpaid activities of type Vacation are taken into account.
+- *Break Schedule I*: Daily overview of all break times, individually and in total. One line per person with start and end time, and all breaks.
+- *Break Schedule II*: Daily overview of all breaks assigned to people during the selected time period, sorted by planning unit and selection. All paid or unpaid activities of type Break are taken into account. People are listed several times if their working days include several breaks. Excludes information on entire working or break periods.
+- *Break Schedule III*: Lists sorted by planning unit and selection, with information about the daily breaks. All paid and unpaid activities of type Break are taken into account. Excludes information on entire working or break periods.
 
 [#monthly-statistics-reports]
 == Monthly statistics reports
 Additional monthly reports provide information regarding the number of activities like absences, vacation, illness, and breaks in your schedule. These reports consider both paid and unpaid activities. The report name indicates which activity type is included, e.g. Absence Statistics only includes activities of type Absence.
 
-- **Activity Statistics**: Daily overview of how often and for how long a person performs an activity for each planning unit. It also shows the weekly totals, and the totals for all the activities selected in the Select Activities window.
-- **Absence Statistics**: Monthly overview (in hours and days) of the total absences assigned to each person in the selected time period, listed by planning unit. Includes all paid and unpaid activities of type Absence.
-- **Absence Statistics with Total Amount Column**: Separate absence statistics for each planning unit. The overview contains information about each persons's assigned absence times during the report period, both in total and per absence, in hours and days. Both paid and unpaid activities of type Absence are taken into account.
-- **Absence Statistics with Full-Time Equivalent**: Separate absence statistics per planning unit. Shows an overview of each person's total assigned absence times in total and per absence, in hours and days for the selected report period. Both unpaid and paid activities are taken into account. An additional row indicates the equivalent of absent full-time people.
-- **Vacation Statistics**: Monthly overview (in hours and days) of the total vacation assigned to each person in the selected time period, arranged by planning unit. Includes all paid and unpaid activities of type Vacation.
-- **Vacation Statistics with Total Amount Column**: Monthly overview of the selected time period by planning unit showing the total duration in hours and days of each person's assigned vacation. Includes all paid and unpaid activities of type Vacation.
-- **Vacation Statistics with Full-Time Equivalent**: Monthly overview of the selected time period by planning unit. It shows the total hours and days of each person's assigned vacation, in total and per vacation. Includes all paid and unpaid activities of type Vacation. An additional row shows the equivalent number of absent full-time people.
-- **Illness Statistics**: Monthly overview of the selected time period by planning unit. It shows the totals in hours and days of each person's assigned illnesses. Includes all paid and unpaid activities of type Illness.
-- **Illness Statistics with Total Amount Column**: Same as above, plus a totals column.
+- *Activity Statistics*: Daily overview of how often and for how long a person performs an activity for each planning unit. It also shows the weekly totals, and the totals for all the activities selected in the Select Activities window.
+- *Absence Statistics*: Monthly overview (in hours and days) of the total absences assigned to each person in the selected time period, listed by planning unit. Includes all paid and unpaid activities of type Absence.
+- *Absence Statistics with Total Amount Column*: Separate absence statistics for each planning unit. The overview contains information about each persons's assigned absence times during the report period, both in total and per absence, in hours and days. Both paid and unpaid activities of type Absence are taken into account.
+- *Absence Statistics with Full-Time Equivalent*: Separate absence statistics per planning unit. Shows an overview of each person's total assigned absence times in total and per absence, in hours and days for the selected report period. Both unpaid and paid activities are taken into account. An additional row indicates the equivalent of absent full-time people.
+- *Vacation Statistics*: Monthly overview (in hours and days) of the total vacation assigned to each person in the selected time period, arranged by planning unit. Includes all paid and unpaid activities of type Vacation.
+- *Vacation Statistics with Total Amount Column*: Monthly overview of the selected time period by planning unit showing the total duration in hours and days of each person's assigned vacation. Includes all paid and unpaid activities of type Vacation.
+- *Vacation Statistics with Full-Time Equivalent*: Monthly overview of the selected time period by planning unit. It shows the total hours and days of each person's assigned vacation, in total and per vacation. Includes all paid and unpaid activities of type Vacation. An additional row shows the equivalent number of absent full-time people.
+- *Illness Statistics*: Monthly overview of the selected time period by planning unit. It shows the totals in hours and days of each person's assigned illnesses. Includes all paid and unpaid activities of type Illness.
+- *Illness Statistics with Total Amount Column*: Same as above, plus a totals column.
 
 [#other-reports]
 == Other reports
 Some more reports offering different information depending on the use cases:
 
-- **Activity Analysis**: Overview of people's total working hours, broken down into all activities assigned to the planning unit. It shows the total hours spent on the selected activities, the weekly excess or shortage of hours, and the number of hours devoted to the individual activities. Only selected activities are taken into account.
-- **Difference in Working Times Between Levels**: Overview of the working time, as well as the working time difference between two levels per day and person.
-- **Shifts with a Requirement**: Overview of the generated shifts with staff requirements for the selected time period.
-- **Capacities According to Contract Type**: Overview of the gross and net people capacity for selected contracts, per planning unit, by contract type. Data is arranged according to the date, within the defined report period.
-- **Scheduling Rules Configuration**: Scheduling rule settings valid for all users.
-- **Yearly Working Hours Analysis**: Includes information on the report year and the report period. Shows information on each individual person, i.e. their scheduled working hours in relation to their target contractual working hours.
-- **Vacation Overview**: Hourly and daily overview of activities of type Vacation. All paid and unpaid activities of type Vacation are taken into account, including the ones on weekends and holidays.
-- **Shift Overview**: Overview of shifts assigned to the people selected for the report period. It includes assigned paid and unpaid activities of type Presence, Absence, Vacation, Illness, and Meeting. Shifts are classified as early, middle, late or night shifts, depending on the start time defined in setting [48187]. All shifts containing activities of type Presence and all activities of type Presence are taken into account. Activities of other types are identified by the first two characters of their name. If there are two shifts or activities on one day, the report only takes into account the first one. It also includes a summary of the daily number of shifts per shift category.
+- *Activity Analysis*: Overview of people's total working hours, broken down into all activities assigned to the planning unit. It shows the total hours spent on the selected activities, the weekly excess or shortage of hours, and the number of hours devoted to the individual activities. Only selected activities are taken into account.
+- *Difference in Working Times Between Levels*: Overview of the working time, as well as the working time difference between two levels per day and person.
+- *Shifts with a Requirement*: Overview of the generated shifts with staff requirements for the selected time period.
+- *Capacities According to Contract Type*: Overview of the gross and net people capacity for selected contracts, per planning unit, by contract type. Data is arranged according to the date, within the defined report period.
+- *Scheduling Rules Configuration*: Scheduling rule settings valid for all users.
+- *Yearly Working Hours Analysis*: Includes information on the report year and the report period. Shows information on each individual person, i.e. their scheduled working hours in relation to their target contractual working hours.
+- *Vacation Overview*: Hourly and daily overview of activities of type Vacation. All paid and unpaid activities of type Vacation are taken into account, including the ones on weekends and holidays.
+- *Shift Overview*: Overview of shifts assigned to the people selected for the report period. It includes assigned paid and unpaid activities of type Presence, Absence, Vacation, Illness, and Meeting. Shifts are classified as early, middle, late or night shifts, depending on the start time defined in setting [48187]. All shifts containing activities of type Presence and all activities of type Presence are taken into account. Activities of other types are identified by the first two characters of their name. If there are two shifts or activities on one day, the report only takes into account the first one. It also includes a summary of the daily number of shifts per shift category.
 
 [#adherence-and-conformance]
 == Adherence and conformance

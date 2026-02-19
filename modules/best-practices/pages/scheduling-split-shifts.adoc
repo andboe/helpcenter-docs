@@ -46,7 +46,7 @@ image::scheduling-split-shifts/image-2.png[Split shift day model of type Variabl
 Split shifts are unpopular with most people. To set a maximum number of split shifts per week, you can use work time pattern models with exception days:
 
 1. Create a xref:administration:work-time-pattern-models.adoc[week time pattern] and add the standard day models you want to use for scheduling.
-2. Set the **Maximum number of exception days per week** to the number of allowed split shifts per person per week.
+2. Set the *Maximum number of exception days per week* to the number of allowed split shifts per person per week.
 
    image::scheduling-split-shifts/image-3.png[Week time pattern standard, width=50%]
 
@@ -56,7 +56,7 @@ Split shifts are unpopular with most people. To set a maximum number of split sh
 
 4. Create a xref:administration:work-time-pattern-models.adoc[work time pattern model].
 
-5. In the **Week time pattern - exception days** drop-down menu, select the week time pattern that contains the split shifts which will be used to schedule exception days.
+5. In the *Week time pattern - exception days* drop-down menu, select the week time pattern that contains the split shifts which will be used to schedule exception days.
 
    image::scheduling-split-shifts/image-5.png[Work time pattern model with split shifts, width=50%]
 
@@ -79,7 +79,7 @@ Only skilled people will receive the split shift day model in optimized scheduli
 == Use split shifts in shift bidding
 Besides the long day models for split shifts introduced above, xref:scheduling:schedules-shift-bidding.adoc[shift bidding] can also schedule two or more short standard day models per person as separate shifts.
 
-For this, set the scheduling parameter *2613* **Max. shifts per day** to the value of 2 or higher in the person's contracts
+For this, set the scheduling parameter *2613* *Max. shifts per day* to the value of 2 or higher in the person's contracts
 
 The shifts are generated according to staff requirements. Enter correct numbers in the shift requirements table:
 

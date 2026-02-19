@@ -41,7 +41,7 @@ Use _standard planning_ periods if you want to:
 - xref:scheduling:copy-and-back-up-schedules.adoc[copy or back up schedules].
 - xref:scheduling:delete-schedules.adoc[delete schedules].
 
-Use _activity-based planning periods_ if you want to allow employees to xref:scheduling:enable-time-off-and-request-sick-leave.adoc[request time off or to add sick leave]. Activity-based planning periods use activities that have been configured as **Requestable in Me**. These are activities of the type _Absence_, _Vacation_, or _Illness_. You have to create a separate planning period for each activity, e.g. one for adding vacation requests and one for adding sick leave.
+Use _activity-based planning periods_ if you want to allow employees to xref:scheduling:enable-time-off-and-request-sick-leave.adoc[request time off or to add sick leave]. Activity-based planning periods use activities that have been configured as *Requestable in Me*. These are activities of the type _Absence_, _Vacation_, or _Illness_. You have to create a separate planning period for each activity, e.g. one for adding vacation requests and one for adding sick leave.
 
 [#status]
 === Status
@@ -68,7 +68,7 @@ As you can see, planning periods are used in many different ways. Click one of t
 If you go to {bc-wfm-scheduling-schedulepro-periods}, you will initially see no planning periods. You first have to set a filter to choose the planning periods you want to display.
 
 1. Choose a *Planning Unit*.
-2. Choose a **Type**.
+2. Choose a *Type*.
 3. Choose a *Selection* (optional). The selection field is not available in Essential WFM.
 4. Click btn:[Apply] to display the corresponding planning periods. If there are no matches with the filter criteria, nothing will be shown.
 
@@ -78,12 +78,12 @@ The _inherited_ column flags planning periods of parent planning units. You can 
 
 [#create-a-new-planning-period]
 == Create a new planning period
-To create a new planning period, use the *![add button](/assets/img/common/item-add.gif)* button from the action bar. A dialog to set the time period and status of the new planning period appears. Since this information depends on what you want to achieve with the planning period, you can find more information in the articles at the top on the different use cases.
+To create a new planning period, use the *!xref:ROOT:assets/img/common/item-add.gif[add button]* button from the action bar. A dialog to set the time period and status of the new planning period appears. Since this information depends on what you want to achieve with the planning period, you can find more information in the articles at the top on the different use cases.
 
 [#edit-a-planning-period]
 == Edit a planning period
-The typical reason to edit a planning period is to update its status. To edit a planning period, select it. Then click the *![edit button](/assets/img/common/item-edit.gif)* button from the action bar.
+The typical reason to edit a planning period is to update its status. To edit a planning period, select it. Then click the *!xref:ROOT:assets/img/common/item-edit.gif[edit button]* button from the action bar.
 
 [#delete-a-planning-period]
 == Delete a planning period
-To delete a planning period, use the *![delete button](/assets/img/common/item-delete.gif)* button from the action bar.
+To delete a planning period, use the *!xref:ROOT:assets/img/common/item-delete.gif[delete button]* button from the action bar.

@@ -17,7 +17,7 @@ The page provides the following information:
 
 For a more detailed view on active user numbers for a selected month, proceed as follows:
 
-1. In the **History** section, select the month and the year.
+1. In the *History* section, select the month and the year.
    The active user data for that month is displayed in the chart.
 2. To view the active user count for a specific day, move your cursor to the corresponding position in the chart.
 

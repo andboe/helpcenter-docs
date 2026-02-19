@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [NOTE]
 ====
-Functional permissions that have corresponding object permissions are deactivated when setting object permissions, and vice versa. Example: Setting object permissions on individual dashboards deactivates the **View all dashboards** permission for the role.
+Functional permissions that have corresponding object permissions are deactivated when setting object permissions, and vice versa. Example: Setting object permissions on individual dashboards deactivates the *View all dashboards* permission for the role.
 ====
 == General
 
@@ -53,7 +53,7 @@ Functional permissions that have corresponding object permissions are deactivate
 
 === Plan
 
-<!-- TODO: Find out exactly what "View schedules" "FA to Schedules" "Insert Shift sequences" (Schedules vs. Shift Center, access to features etc.) does -->
+
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -62,7 +62,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |View schedules
 |Grants view permissions for schedules in {bc-plan-schedules} and {bc-plan-shift-center}.
 |Full access to Schedules
-|Allows people with the role to use all **Schedules** features.
+|Allows people with the role to use all *Schedules* features.
 |Insert shift sequences
 |Allows people with the role to insert shift sequences.
 |Full access to Meetings
@@ -72,7 +72,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |Full access to Time Off
 |Allows people with the role to use all features in menu:Plan[Time off].
 |Full access to Shift Center
-|Allows people with the role to use all **Shift Center** features.
+|Allows people with the role to use all *Shift Center* features.
 |Full access to Configuration
 |Grants access to menu:Plan[Configuration]. Access to configuration data types must be granted in menu:WFM[System>Role authorization>Navigator>Administration>Scheduling].
 |===
@@ -84,11 +84,11 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |Configure adherence settings
-|<!-- what does it do? Does nothing in intraday if checked -->
+|
 |View Real-Time Adherence
 |Grants view permissions for {bc-intraday-real-time-adherence}.
 |View Intraday Adherence
-|Grants view permissions for menu:Intraday[Intraday Adherence]. Requires the **View Real-Time Adherence** permission.
+|Grants view permissions for menu:Intraday[Intraday Adherence]. Requires the *View Real-Time Adherence* permission.
 |Edit agent status
 |Allows people with the role to edit actual activities in menu:Intraday[Intraday Adherence].
 |===
@@ -107,7 +107,7 @@ Functional permissions that have corresponding object permissions are deactivate
 
 === People
 
-<!-- Which permissions allow the user to see people? All permissions on People do not grant view access to all people, even with access to planning units and selections. -->
+
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -158,9 +158,9 @@ Functional permissions that have corresponding object permissions are deactivate
 |Full access to time-off quotas
 |Grants view and edit permissions on menu:Time Off[Quotas].
 |View Configuration
-|Grants view access to **Periods**, **Accounting rules**, and **Types**.
+|Grants view access to *Periods*, *Accounting rules*, and *Types*.
 |Full access to Configuration
-|Grants view and edit access to **Periods**, **Accounting rules**, and **Types**.
+|Grants view and edit access to *Periods*, *Accounting rules*, and *Types*.
 |===
 
 === Me
@@ -170,9 +170,9 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |Configure Me
-|Allows people with the role to access the configuration page in **Me**.
+|Allows people with the role to access the configuration page in *Me*.
 |View Me
-|Allows people with the role to access the **Me** portal.
+|Allows people with the role to access the *Me* portal.
 |Edit availabilities
 |Allows people with the role to add and edit availabilities in {bc-me-availability}.
 |===
@@ -184,21 +184,21 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View roles
-|Grants view permissions on **Roles**.
+|Grants view permissions on *Roles*.
 |Full access to Roles
-|Allows people with the role to configure **Roles**.
+|Allows people with the role to configure *Roles*.
 |View Billing
-|Grants view permissions on **Billing**.
+|Grants view permissions on *Billing*.
 |Configure System settings
 |Grants access to System settings
 |Configure Integrations
-|Allows people with the role to access and configure **Integrations**.
+|Allows people with the role to access and configure *Integrations*.
 |Configure Security settings
-|Allows people with the role to access and configure **Security**.
+|Allows people with the role to access and configure *Security*.
 |Configure Notifications
-|Allows people with the role to access and configure **Notifications**.
+|Allows people with the role to access and configure *Notifications*.
 |Configure CSV schemas
-|Allows people with the role to access and configure **CSV Schemas**.
+|Allows people with the role to access and configure *CSV Schemas*.
 |Full access to background jobs
 |Allows people with the role to view, start and delete background jobs.
 |===

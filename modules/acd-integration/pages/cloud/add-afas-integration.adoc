@@ -24,7 +24,7 @@ Before the first import run, all personnel numbers in Peopleware must consistent
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **AFAS**.
+4. From the *External system* drop-down menu, select *AFAS*.
 5. {btn-save}
 
 The AFAS integration synchronizes people and contract data daily.
@@ -127,9 +127,9 @@ The contract's start and end dates are sourced from the following AFAS fields:
 
 New contracts use the following naming convention:
 
-- **Without long-term absence**: `{personnel number} {working days per week}/{working hours per week}`  
+- *Without long-term absence*: `{personnel number} {working days per week}/{working hours per week}`  
   Example: `123456 4.0/32.0`
-- **With long-term absence** (using the `Uren ouderschapsverlof per week` field): `{personnel number} {working days per week}/{working hours per week}-{long-term absence}`  
+- *With long-term absence* (using the `Uren ouderschapsverlof per week` field): `{personnel number} {working days per week}/{working hours per week}-{long-term absence}`  
   Example: `123456 4.0/32.0-8`
 
 [NOTE]

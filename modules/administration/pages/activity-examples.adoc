@@ -16,7 +16,7 @@ Below, you will find configuration examples for frequently used activities, thei
 This table covers setup examples for the activity types Presence, Break, Illness and Vacation.
 The Present activity is a pre-configured standard activity. You can use it for all activities your people work on and that are based on staff requirements, e.g. calls.
 
-<div class="table__wrapper" markdown="1">
+
 
 <style>
 table {
@@ -26,12 +26,12 @@ table {
 
 [%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
 |===
-|&nbsp;
+| 
 |Present
 |Lunch break
 |Illness
 |Vacation
-|**Type**
+|*Type*
 |Presence
 |Break
 |Illness
@@ -69,7 +69,7 @@ table {
 |<i class="icon-check">
 |===
 
-</div>
+
 
 Depending on your organization's policy, contracts or labor regulations, some breaks may also be unpaid. In this case, uncheck the Paid checkbox.
 
@@ -79,16 +79,16 @@ This table covers setup examples for the activity types Absence and Meeting.
 Paid absences are typically used to compensate overtime or as a blocker to xref:best-practices:scheduling-public-holidays.adoc[schedule public holidays].
 If there are days when an employee cannot work under any circumstances, you can block those days using the configuration setup under Unpaid absence.
 
-<div class="table__wrapper" markdown="1">
+
 
 [%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
 |===
-|&nbsp;
+| 
 |Paid absence
 |Unpaid absence
 |Full-day meeting
 |Training
-|**Type**
+|*Type*
 |Absence
 |Absence
 |Meeting
@@ -125,7 +125,7 @@ If there are days when an employee cannot work under any circumstances, you can 
 |<i class="icon-check">
 |===
 
-</div>
 
-You can also use paid absences as compensation days for overtime or as paid blocker when xref:best-practices:scheduling-public-holidays.adoc[scheduling public holidays].<br>
+
+You can also use paid absences as compensation days for overtime or as paid blocker when xref:best-practices:scheduling-public-holidays.adoc[scheduling public holidays]. +
 The Unpaid Absence activity can also be used to flexibly determine on which days an employee will not work under any circumstances.

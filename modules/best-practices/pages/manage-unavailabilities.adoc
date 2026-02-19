@@ -22,10 +22,10 @@ This article provides an overview of the process. You can use it as a checklist.
 == 1. Create the activity Unavailable
 1. In menu:Plan[Configuration] create a xref:administration:activities.adoc#create-an-activity[new activity].
 2. Configure your activity as follows:
-   - **Name**: Enter Unavailable. An abbreviation is generated automatically.
-   - **Type**: Select **Absence**.
-   - Check the **Requestable in Me** checkbox.
-   - (Optional) Check the **Allow as full-day activity** checkbox.
+   - *Name*: Enter Unavailable. An abbreviation is generated automatically.
+   - *Type*: Select *Absence*.
+   - Check the *Requestable in Me* checkbox.
+   - (Optional) Check the *Allow as full-day activity* checkbox.
 3. Click btn:[Create activity].
 
 [#2-create-a-time-off-period]
@@ -34,9 +34,9 @@ This article provides an overview of the process. You can use it as a checklist.
 2. Enter the general information for your time-off period:
    - *Planning unit*.
    - (Optional) *Selection*.
-   - **Activity**: Select **Unavailable**.
-   - (Optional): **Deadline**.
-   - **Status**: Select **Published**.
+   - *Activity*: Select *Unavailable*.
+   - (Optional): *Deadline*.
+   - *Status*: Select *Published*.
 3. Click btn:[Create time-off period].
 
 [#3-people-submit-their-requests]
@@ -45,17 +45,17 @@ In {bc-me-time-off}, people can xref:me:explore-me.adoc#request-time-off[submit 
 
 [#4-approve-or-reject-requests]
 == 4. Approve or reject requests
-In {bc-plan-time-off}, xref:scheduling:vacation-absences-management.adoc[approve or reject time-off requests] for the activity Unavailable.<br>
-After you approve a person's request, the Schedule window in Shift Center shows a red cell with the abbreviation of the Unavailability activity for the time slot of the approved request. If you use **Create optimized schedules** or **Job optimization**, the person is not scheduled during the blocked time slot.
+In {bc-plan-time-off}, xref:scheduling:vacation-absences-management.adoc[approve or reject time-off requests] for the activity Unavailable. +
+After you approve a person's request, the Schedule window in Shift Center shows a red cell with the abbreviation of the Unavailability activity for the time slot of the approved request. If you use *Create optimized schedules* or *Job optimization*, the person is not scheduled during the blocked time slot.
 
 [#keep-track-of-the-requests]
 == Keep track of the requests
 In {bc-plan-shift-center}, you can see the details of approved time-off requests for the activity Unavailable.
 
-1. Click the **Activities - Requirements** tab under the table. At the top, select a date range from the date picker and click btn:[Apply].
+1. Click the *Activities - Requirements* tab under the table. At the top, select a date range from the date picker and click btn:[Apply].
 2. Expand the relevant planning unit in the top table.
 3. Double-click a red cell labelled as Unavailable.
-4. Click the **History** tab.
+4. Click the *History* tab.
    You will see the details of the time-off request's approval:
    - Date/Time: Date and time of the approval.
    - Action: The action performed. In this case, Approve request.

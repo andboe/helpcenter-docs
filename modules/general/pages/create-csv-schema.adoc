@@ -11,7 +11,7 @@ This article explains how to create a CSV schema.
 
 [#prerequisites]
 == Prerequisities
-- You have the **Configure CSV schemas** permission.
+- You have the *Configure CSV schemas* permission.
 - You have a CSV sample file that is representative of the CSV files that will be imported with the CSV schema. The CSV sample file includes all the columns and header rows and at least one data row.
 
 [#steps]
@@ -37,10 +37,10 @@ Peopleware saves the CSV schema draft and opens the details page.
 The schema type controls which columns need to be mapped to target fields in Peopleware.
 Usually, mapping is required for date and time values and for data specific to the object type, e.g. forecasts.
 
-1. On the details page of the CSV schema draft, go to the **Date and time columns** section.
-2. If the CSV sample file stores date and time data in a single column, activate the **Date and time in one column** setting.
+1. On the details page of the CSV schema draft, go to the *Date and time columns* section.
+2. If the CSV sample file stores date and time data in a single column, activate the *Date and time in one column* setting.
 3. For every date or time field, assign the corresponding CSV column and specify the value format.
-4. Go to the **Data column mapping and processing** section.
+4. Go to the *Data column mapping and processing* section.
 5. Assign the target fields to their corresponding CSV column.
 6. Click btn:[Save]
 
@@ -57,7 +57,7 @@ Depending on the schema type, the CSV schema can now be used to import CSV data 
 |Schema type
 |Controls what kind of data can be imported with the CSV schema and which data Peopleware expects in the CSV import file.
 |Schema subtype
-|For schema type **Contact data** only. + Controls which data layout Peopleware expects and how data needs to be mapped. For more information see section xref:#schema-subtypes[Schema subtypes for contact data]
+|For schema type *Contact data* only. + Controls which data layout Peopleware expects and how data needs to be mapped. For more information see section xref:#schema-subtypes[Schema subtypes for contact data]
 |Name
 |Identifies the CSV schema.
 |Description
@@ -66,19 +66,19 @@ Depending on the schema type, the CSV schema can now be used to import CSV data 
 
 [#schema-subtypes]
 ==== Schema subtypes for contact data
-CSV schemas with schema type **Contact data** must specify a schema subtype.
+CSV schemas with schema type *Contact data* must specify a schema subtype.
 Schema subtypes are either interval-based or contact-based:
 
-- **Interval based**: The CSV schema expects all contact data to be provided in aggregated form on one line per interval.
-- **Contact based**: The CSV schema expects all data to be provided on one line per contact.
+- *Interval based*: The CSV schema expects all contact data to be provided in aggregated form on one line per interval.
+- *Contact based*: The CSV schema expects all data to be provided on one line per contact.
 
 Additionally, schema subtypes control how the data provided in the CSV files needs to be mapped:
 
-- **SQL**: The CSV schema maps CSV file columns to Peopleware target fields via an SQL query. Select this option if one of the following applies:
+- *SQL*: The CSV schema maps CSV file columns to Peopleware target fields via an SQL query. Select this option if one of the following applies:
   - At least one of the required Peopleware target fields is not available as a column in the CSV import file.
   - The CSV import file includes values in an unsupported format that needs to be converted to a supported format.
   - You want to perform calculations on the data provided in the CSV import file and save the results in a target field.
-- **column mappings**: The CSV schema maps CSV file columns directly to target fields in Peopleware.
+- *column mappings*: The CSV schema maps CSV file columns directly to target fields in Peopleware.
 
 For information on how to perform SQL mapping, see section xref:#sql-mapping[Use SQL to map contact data].
 
@@ -89,7 +89,7 @@ For information on how to perform SQL mapping, see section xref:#sql-mapping[Use
 |Field
 |Description
 |Separator
-|Specifies which separator character is used in the CSV import files. Select **Auto-detect** to let Peopleware detect the separator automatically based on the CSV sample file.
+|Specifies which separator character is used in the CSV import files. Select *Auto-detect* to let Peopleware detect the separator automatically based on the CSV sample file.
 |File has no header row
 |Specifies if the CSV import files have a header row. If not, Peopleware identifies each row with a letter to enable CSV column mapping.
 |Skip first x rows
@@ -100,12 +100,12 @@ For information on how to perform SQL mapping, see section xref:#sql-mapping[Use
 
 === Date and time columns
 
-The **Date and time columns** section serves to specify how date and time values are provided in the CSV import file.
+The *Date and time columns* section serves to specify how date and time values are provided in the CSV import file.
 The available configuration options depend on the schema type.
 
 === Data column mapping and processing
 
-The **Data column mapping and processing** section serves to map CSV columns to the corresponding Peopleware target fields.
+The *Data column mapping and processing* section serves to map CSV columns to the corresponding Peopleware target fields.
 The relevant target fields depend on the schema type.
 
 [#contact-data-target-fields]
@@ -114,32 +114,32 @@ The relevant target fields depend on the schema type.
 |===
 |Field
 |Description
-|**Timezone**
+|*Timezone*
 |Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00)
-|**Date**
+|*Date*
 |Date values
-|**Date format**
+|*Date format*
 |Format of the date values. Select one of the predefined options or specify your own format.
-|**Time**
+|*Time*
 |Time values
-|**Time format**
+|*Time format*
 |Format of the time values.
-|**Timestamp**
-|The field is only available if option **Date and time in one column** is active. +Timestamp values
-|**Timestamp format**
-|The field is only available if option **Date and time in one column** is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
-|**Interval length**
+|*Timestamp*
+|The field is only available if option *Date and time in one column* is active. +Timestamp values
+|*Timestamp format*
+|The field is only available if option *Date and time in one column* is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
+|*Interval length*
 |The length of the data intervals provided in the CSV import file. +The field is only available for interval-based data.
-|**Queue name**
+|*Queue name*
 |Name of the queue from which data is imported
-|**Offered**
+|*Offered*
 |Offered contacts (per interval for interval-based data) +Supports whole numbers or decimals with decimal point.
-|**Handled**
+|*Handled*
 |Answered contacts (per interval for interval-based data) +Supports whole numbers and decimals with decimal point. +For contact-based data, the value for handled contacts can only be 0 or 1 or corresponding decimal values.
-|**Duration**
+|*Duration*
 |Duration of the record in seconds (whole number). +The field is only available for contact-based data.
-|**Channel**
-|Name of the channel. Use the **Fixed channel** option to set a fixed channel for all data in the CSV import file.
+|*Channel*
+|Name of the channel. Use the *Fixed channel* option to set a fixed channel for all data in the CSV import file.
 |===
 
 [#agent-status-target-fields]
@@ -148,29 +148,29 @@ The relevant target fields depend on the schema type.
 |===
 |Field
 |Description
-|**Timezone**
+|*Timezone*
 |Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00)
-|**Start date**
+|*Start date*
 |Date at which the agent started the activity
-|**End date**
+|*End date*
 |Date at which the agent stopped the activity
-|**Date format**
-|Format of the **Start date** and **End date** values
-|**Start time**
+|*Date format*
+|Format of the *Start date* and *End date* values
+|*Start time*
 |Time at which the agent started the activity
-|**End time**
+|*End time*
 |Time at which the agent stopped the activity
-|**Time format**
-|Format of the **Start time** and **End time** values
-|**Start timestamp**
-|The field is only available if option **Date and time in one column** is active. +Date and time at which the agent started the activity.
-|**End timestamp**
-|The field is only available if option **Date and time in one column** is active. +Date and time at which the agent stopped the activity.
-|**Timestamp format**
-|The field is only available if option **Date and time in one column** is active. +Format of the **Start timestamp** and **End timestamp** values.
-|**Agent identifier**
+|*Time format*
+|Format of the *Start time* and *End time* values
+|*Start timestamp*
+|The field is only available if option *Date and time in one column* is active. +Date and time at which the agent started the activity.
+|*End timestamp*
+|The field is only available if option *Date and time in one column* is active. +Date and time at which the agent stopped the activity.
+|*Timestamp format*
+|The field is only available if option *Date and time in one column* is active. +Format of the *Start timestamp* and *End timestamp* values.
+|*Agent identifier*
 |Unique identifier for the agent, e.g. ID or name
-|**Activity identifier**
+|*Activity identifier*
 |Activity the agent is working on
 |===
 
@@ -180,21 +180,21 @@ The relevant target fields depend on the schema type.
 |===
 |Field
 |Description
-|**Date**
+|*Date*
 |Date values
-|**Date format**
+|*Date format*
 |Format of the date values. Select one of the predefined options or specify your own format.
-|**Time**
+|*Time*
 |Time values
-|**Time format**
+|*Time format*
 |Format of the time values.
-|**Timestamp**
-|The field is only available if option **Date and time in one column** is active. +Timestamp values
-|**Timestamp format**
-|The field is only available if option **Date and time in one column** is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
-|**Offered**
+|*Timestamp*
+|The field is only available if option *Date and time in one column* is active. +Timestamp values
+|*Timestamp format*
+|The field is only available if option *Date and time in one column* is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
+|*Offered*
 |Offered contacts in the interval
-|**AHT**
+|*AHT*
 |Average handling time of handled contacts in the interval
 |===
 
@@ -208,29 +208,29 @@ Plan data CSV schemas are a paid feature. Get in touch with your Peopleware cons
 |===
 |Field
 |Description
-|**Timezone**
+|*Timezone*
 |Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00).
-|**Booking date**
+|*Booking date*
 |Booking date of the activity.
-|**Date**
-|Date of the activity. For cases where the **End time** value is before the **Start time** value, Peopleware assumes a nightshift and puts the end date in the following day.
-|**Date format**
+|*Date*
+|Date of the activity. For cases where the *End time* value is before the *Start time* value, Peopleware assumes a nightshift and puts the end date in the following day.
+|*Date format*
 |Format of the date values. Select one of the predefined options or specify your own format.
-|**Personnel number**
+|*Personnel number*
 |The personnel number of the person as specified in the person's Peopleware profile.
-|**Start time**
+|*Start time*
 |Start time of the activity in the schedule.
-|**End time**
+|*End time*
 |End time of the activity in the schedule.
-|**Time format**
+|*Time format*
 |Format of the time values.
-|**Planning unit identifier**
+|*Planning unit identifier*
 |Specifies the ID of the person's planning unit. If no value is provided, Peopleware uses the planning unit with the highest priority assigned to the person for that day.
-|**Activity identifier**
-|The ID or name of the Peopleware activity. Which means of identification is used is controlled by setting **Name as activity identifier**.
-|**Full-day activity flag**
-|Controls if Peopleware imports the activity as a full day activity. If an activity is imported as a full day activity, Peopleware ignores the **Start time** and **End time** values. Supported values: +- `t`: Activity is imported as a full-day activity +-`f`: Activity is imported as a partial-day activity
-|**Name as activity identifier**
+|*Activity identifier*
+|The ID or name of the Peopleware activity. Which means of identification is used is controlled by setting *Name as activity identifier*.
+|*Full-day activity flag*
+|Controls if Peopleware imports the activity as a full day activity. If an activity is imported as a full day activity, Peopleware ignores the *Start time* and *End time* values. Supported values: +- `t`: Activity is imported as a full-day activity +-`f`: Activity is imported as a partial-day activity
+|*Name as activity identifier*
 |Controls if Peopleware uses the ID or the name to identify the activity. Activate the setting to use the abbreviation.
 |===
 
@@ -240,25 +240,25 @@ Plan data CSV schemas are a paid feature. Get in touch with your Peopleware cons
 |===
 |Field
 |Description
-|**Date**
+|*Date*
 |Date values
-|**Date format**
+|*Date format*
 |Format of the date values. Select one of the predefined options or specify your own format.
-|**Person ID**
+|*Person ID*
 |The internal ID of the person in Peopleware.
-|**Time-off type ID**
+|*Time-off type ID*
 |ID of the time-off type.
-|**Entitlement balance**
+|*Entitlement balance*
 |The person's total time-off entitlement in hours or days. The unit is specified in the time-off type.
-|**Taken balance**
+|*Taken balance*
 |The time-off amount taken in days or hours. The unit is specified in the time-off type.
-|**Reason for modification**
+|*Reason for modification*
 |A comment that explains the change.
 |===
 
 [#sql-mapping]
 == Special use case: Use SQL queries to map contact data
-The schema type **Contact data** supports mapping using SQL queries.
+The schema type *Contact data* supports mapping using SQL queries.
 Consider SQL mapping in the following cases:
 
 - The CSV import files do not provide the required data in a dedicted column.
@@ -268,23 +268,23 @@ SQL mapping allows you to add default values for missing columns, convert data u
 
 [NOTE]
 ====
-See [sqlite.org](https://www.sqlite.org) for details and limitations on functions and conversions:
+See link:https://www.sqlite.org[sqlite.org] for details and limitations on functions and conversions:
 ====
 >
 [NOTE]
 ====
-- [numeric precision](https://www.sqlite.org/datatype3.html)
-- [math functions](https://www.sqlite.org/lang_mathfunc.html)
-- [implicit data conversions](https://www.sqlite.org/datatype3.html#affinity)
-- [date and time functions](https://www.sqlite.org/lang_datefunc.html)
-- [string manipulation](https://www.sqlite.org/lang_corefunc.html#string_functions)
+- link:https://www.sqlite.org/datatype3.html[numeric precision]
+- link:https://www.sqlite.org/lang_mathfunc.html[math functions]
+- link:https://www.sqlite.org/datatype3.html#affinity[implicit data conversions]
+- link:https://www.sqlite.org/lang_datefunc.html[date and time functions]
+- link:https://www.sqlite.org/lang_corefunc.html#string_functions[string manipulation]
 ====
-To use SQL mapping instead of mapping target fields directly, select the **Contact data** schema type and then one of the following schema subtypes:
+To use SQL mapping instead of mapping target fields directly, select the *Contact data* schema type and then one of the following schema subtypes:
 
-- **Interval based - SQL**
-- **Contact based - SQL**
+- *Interval based - SQL*
+- *Contact based - SQL*
 
-For these schema subtypes, Peopleware displays an SQL query field in the **Data column mapping and processing** section instead mapping target fields.
+For these schema subtypes, Peopleware displays an SQL query field in the *Data column mapping and processing* section instead mapping target fields.
 
 [#columns-required-in-sql-query]
 === Columns required in SQL query
@@ -380,7 +380,7 @@ Note the following requirements:
 
 - Use `uploaded_file` as table name.
 - Use lowercase column names (also if you refer to different column names in column aliases), e.g. `QueueNameColumn as queue`.
-- Use a date formatted as `YYYY-MM-DD hh:mm:ss` or convert your date to this format. <!-- before it said, datetime required. This is not true for CSV but only for database integrations -->
+- Use a date formatted as `YYYY-MM-DD hh:mm:ss` or convert your date to this format. 
 
 [#example-1-combine-separate-date-and-time-column]
 ==== Example 1 (combine separate date and time column)
@@ -472,8 +472,8 @@ FROM uploaded_file
 
 Alternatively, you can replace the header row by using the following file processing options:
 
-- **Skip first x rows**: Enter `1`to remove the original header.
-- **File has no header row**: Check to add column headers with letters
+- *Skip first x rows*: Enter `1`to remove the original header.
+- *File has no header row*: Check to add column headers with letters
 
 [source,sql]
 ----

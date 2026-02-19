@@ -19,8 +19,8 @@ To export your Peopleware data to a CSV file, follow these steps:
 3. Select the entries you want to export:
    - To select entries individually, check the corresponding checkbox.
    - To select all entries on the page, check the top checkbox.
-   - To select all entries in the table, click **Select all**.
-4. Click **{icon-cloud-arrow-down} Download CSV**.  
+   - To select all entries in the table, click *Select all*.
+4. Click *{icon-cloud-arrow-down} Download CSV*.  
    If you do not see this option, make sure you have selected at least one item.
 
 Your browser either saves the file to the default download folder or asks you to choose a download folder, depending on your settings.

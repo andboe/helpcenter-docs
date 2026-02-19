@@ -21,9 +21,9 @@ Request any special ODBC drivers which could be required for the connection from
 
 [#configure-a-standard-interface]
 == Configure a standard interface
-1. Double-click the file **isps_ul.exe** to open the Xlink user interface.
+1. Double-click the file *isps_ul.exe* to open the Xlink user interface.
 2. Right-click the configured _external system_ on the left and select *configuration* to open the configuration dialog.
-3. Enter the **ODBC connection name**, the database user and the password.
+3. Enter the *ODBC connection name*, the database user and the password.
 4. Click btn:[Ok] to save the settings.
 
 After you have performed these steps, the corresponding configuration section is created in the configuration file _isps_ul.ini_.
@@ -34,15 +34,15 @@ The left side of the Xlink application shows a tree structure under the external
 == Configure the Universal interface
 The Universal interface supports the following database systems: Oracle, Microsoft SQL Server, MySQL, Caché DBMS, Microsoft Access, Informix, and PostgreSQL.
 
-The Universal Interface parameters for call and agent status import are described in the documentation available at [downloads.peopleware.com](https://downloads.peopleware.com).
+The Universal Interface parameters for call and agent status import are described in the documentation available at link:https://downloads.peopleware.com[downloads.peopleware.com].
 
 This is how you create the initial configuration:
 
-1. Double-click the file **isps_ul.exe** to open the Xlink user interface.
+1. Double-click the file *isps_ul.exe* to open the Xlink user interface.
 2. Right-click the configured _external system_ on the left and select *configuration* to open the configuration dialog.
-3. Enter the **ODBC connection name**, the **database user** and the **password**.
+3. Enter the *ODBC connection name*, the *database user* and the *password*.
 4. Click btn:[Ok] to save the settings.
-5. Open the configuration file **isps_ul.ini** and add the following lines to the existing section _[your external system name]_:
+5. Open the configuration file *isps_ul.ini* and add the following lines to the existing section _[your external system name]_:
 
    ```
    QueueSQL = select queue_name from queue_table order by queue_name
@@ -62,11 +62,11 @@ This is how you create the initial configuration:
    AgentActivityTable = source table name
    ```
 
-6. Adapt the individual columns and table or view names to your source database. The example above is for illustration only. You must replace the values for the database fields for **queue_name**, **queue_table**, **valuetype\_\***, **start_date_column**, **queue_name_column** and **source_table_name** with the corresponding source database or table. The same applies to the fields of the **Activity\* parameters**.
+6. Adapt the individual columns and table or view names to your source database. The example above is for illustration only. You must replace the values for the database fields for *queue_name*, *queue_table*, *valuetype\_\**, *start_date_column*, *queue_name_column* and *source_table_name* with the corresponding source database or table. The same applies to the fields of the **Activity\* parameters*.
 7. Change the value for the _Protocol_ parameter from 0 to 1.
 8. Save the change to the file.
-9. Restart the **ISPS XLink** service.
-10. Reopen the **isps_ul.exe**.
+9. Restart the *ISPS XLink* service.
+10. Reopen the *isps_ul.exe*.
 
 After you have performed these steps, the corresponding configuration section is created in the configuration file _isps_ul.ini_.
 
@@ -76,7 +76,7 @@ The left side of the Xlink application shows a tree structure under the external
 === Customize the Universal interface configuration
 To be able to configure the Universal interface, you need to know the structure or columns and the data types in the table from which the data is read.
 
-You can customize the PhoneLink and TimeLink parameters according to your needs. Information about the parameters can be found in the documentation available at [downloads.peopleware.com](https://downloads.peopleware.com).
+You can customize the PhoneLink and TimeLink parameters according to your needs. Information about the parameters can be found in the documentation available at link:https://downloads.peopleware.com[downloads.peopleware.com].
 
 Some additional useful tips:
 
@@ -93,11 +93,11 @@ _ActivityStartTimeStampColumn_ defines the column containing the start time of a
 
 [#phonelink-universal-interface-example-for-avaya-aura]
 === PhoneLink Universal interface example for Avaya Aura
-1. Double-click the file **isps_ul.exe** to open the Xlink user interface.
+1. Double-click the file *isps_ul.exe** to open the Xlink user interface.
 2. Right-click the configured _external system_ on the left and select *configuration* to open the configuration dialog.
-3. Enter the **ODBC connection name**, the **database user** and the **password**.
+3. Enter the *ODBC connection name*, the *database user* and the *password*.
 4. Click btn:[Ok] to save the settings.
-5. Open the configuration file **isps_ul.ini** and the following lines to the section _[external system name]_:
+5. Open the configuration file *isps_ul.ini* and the following lines to the section _[external system name]_:
 
    ```
    QueueSQL=select Name from Application order by Name
@@ -112,10 +112,10 @@ _ActivityStartTimeStampColumn_ defines the column containing the start time of a
    ```
 
 6. Save your changes.
-7. Restart the **ISPS Xlink** service.
+7. Restart the *ISPS Xlink* service.
 8. Open _isps_ul.exe_ again. A tree structure under the configured external system on the left shows queues and value types. If not, check the database connection and the log files.
 
-<!-- misplaced -->
-<!-- No tree structure is displayed for TimeLink, check in the Xlink interface under menu:View[Activities] which activities from the external system have been assigned to the Peopleware activities. -->
+
+
 
 Create mappings between your ACD and injixo to import specific data. Check the log files for possible SQL errors caused by an incorrect configuration. Adjust the configuration, restart the service, and run multiple imports to fix all errors and ensure the correct data import.

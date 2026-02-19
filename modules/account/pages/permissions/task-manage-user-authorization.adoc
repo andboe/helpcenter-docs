@@ -21,7 +21,7 @@ Learn more about xref:account:concept-user-authorization.adoc[user authorization
 
 === Functional permissions
 
-- Your role needs the **Access to User Authorization** permission for **People**.
+- Your role needs the *Access to User Authorization* permission for *People*.
 
 === Object permissions
 
@@ -30,7 +30,7 @@ Learn more about xref:account:concept-user-authorization.adoc[user authorization
 1. {nav-to-people}
 2. Select the person for whom you want to edit user authorization settings.
 3. Click menu:Access[].
-4. In the **User authorization** section, click **Access user authorization of this person**.
+4. In the *User authorization* section, click *Access user authorization of this person*.
 
 == Functional permissions
 

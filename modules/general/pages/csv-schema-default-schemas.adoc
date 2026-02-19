@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Find out how the CSV default schemas provied by Peopleware are set up.
 :related-articles: csv-schemas.adoc, create-csv-schema.adoc
 
-<!-- left-align all tables -->
+
 <style>
 table {
    margin-left: 0px;
@@ -23,7 +23,7 @@ Your organization can change or delete the default CSV schema as provided by Peo
 ====
 [#forecast]
 == Forecast
-This default schema imports forecast data to the **Imported** time series of a workload.
+This default schema imports forecast data to the *Imported* time series of a workload.
 
 The CSV schema settings are as follows:
 
@@ -105,44 +105,3 @@ The mapping of the default schema is as follows:
 |`Reason`
 |===
 
-<!--
-[#time-off-quota]
-== Time off quota
-This default schema imports daily time off quota data.
-
-The CSV schema settings are as follows:
-
-[%header, cols="1a,1a,".rstrip(',')]
-|===
-|Setting
-|Option
-|Schema type
-|`Time off quota`
-|Name
-|`DEFAULT`
-|Separator
-|`Auto-detect`
-|File has no header row
-|Disabled
-|Skip first x rows
-|Empty
-|Skip rows containing
-|Empty
-|===
-
-The mapping of the default schema is as follows:
-
-[%header, cols="1a,1a,".rstrip(',')]
-|===
-|Target field
-|CSV column name
-|Date
-|`date`
-|Date format
-|`YYYY-MM-DD`
-|Plannung unit identifier
-|`plannung_unit_id`
-|Quota
-|`quota`
-|===
--->

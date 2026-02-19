@@ -16,36 +16,38 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Odigo**.
+4. From the *External system* drop-down menu, select *Odigo*.
 5. {btn-save}
 
 [#configure-your-odigo-integration]
 == Configure your Odigo integration
-1. In the **Credentials** section, enter the following information:
-   - **Odigo URL**: enter your Odigo URL including the tenant ID, e.g. https://example.odigo.cx/odigo-tenant-id.
-   - **Web service user** and **Web service password**: Enter your credentials from Odigo. Contact Odigo if you need assistance.
-   - **Tech account** and **Tech password**: Enter the information you find in Odigo under pef-tech-account and pef-tech-password.
-2. In the **Contact data** section, enter the following information:
-   - **Username**: In Odigo, this field corresponds to odigo-user-id.
-   - **App ID**: In Odigo, this field corresponds to pef-app-id.
-   - **API domain**: In Odigo, this field corresponds to pef-api-domain.
-   - **Instance**: In Odigo, this field corresponds to x-ws-instance.
-   - **Statistics table ID**: In Odigo, this field corresponds to statistics_table_id.
-   - **IVR time zone**.
+1. In the *Credentials* section, enter the following information:
+   - *Odigo URL*: enter your Odigo URL including the tenant ID, e.g. https://example.odigo.cx/odigo-tenant-id.
+   - *Web service user* and *Web service password*: Enter your credentials from Odigo. Contact Odigo if you need assistance.
+   - *Tech account* and *Tech password*: Enter the information you find in Odigo under pef-tech-account and pef-tech-password.
+2. In the *Contact data* section, enter the following information:
+   - *Username*: In Odigo, this field corresponds to odigo-user-id.
+   - *App ID*: In Odigo, this field corresponds to pef-app-id.
+   - *API domain*: In Odigo, this field corresponds to pef-api-domain.
+   - *Instance*: In Odigo, this field corresponds to x-ws-instance.
+   - *Statistics table ID*: In Odigo, this field corresponds to statistics_table_id.
+   - *IVR time zone*.
 3. {btn-save}
 
 Now you can generate the URL token to configure the import of agent status data:
 
-1. In the **Agent status data** section, click btn:[Generate].
-2. Copy the URL token to your clipboard.<br>
-   The URL token is only shown once. If you cannot finish your setup right away, store it in a safe place, e.g. a password manager.
+1. In the *Agent status data* section, click btn:[Generate].
+2. Copy the URL token to your clipboard. +
+The URL token is only shown once. If you cannot finish your setup right away, store it in a safe place, e.g. a password manager.
 3. In the Administration section of your Odigo interface, activate sending notifications to an external server. To do this, contact Odigo.
 4. Paste the copied URL token as notification URL.
 5. Save your settings in Odigo and go back to Peopleware.
-6. Check the checkbox **Import detailed break agent statuses**.<br>When importing break statuses, Peopleware includes information about the type of break taken (e.g. Break (Lunch break)). Odigo break statuses are available in Peopleware after a maximum of 4&nbsp;hours.<br>Note: If you check this checkbox, you also need to update the xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[activity mapping].
+6. Check the checkbox *Import detailed break agent statuses*. +
+When importing break statuses, Peopleware includes information about the type of break taken (e.g. Break (Lunch break)). Odigo break statuses are available in Peopleware after a maximum of 4 hours. +
+Note: If you check this checkbox, you also need to update the xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[activity mapping].
 7. {btn-save}
 
-To activate the integration, you need to restart the server. To do this, contact Odigo.<br>
+To activate the integration, you need to restart the server. To do this, contact Odigo. +
 RTA data starts being imported but the data is only visible after you have mapped external identifiers to your people.
 
 [#map-external-identifiers-to-your-people]

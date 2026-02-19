@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 include::help-center:ROOT:partial$reusables/time-off-legacy.adoc[]
 
-{bc-plan-time-off} provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the **Absence Request** level in Shift Center or Schedules.
+{bc-plan-time-off} provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the *Absence Request* level in Shift Center or Schedules.
 
 People with the Planner or Supervisor (advanced) xref:account:predefined-user-roles.adoc[role] can do the following:
 
@@ -22,10 +22,10 @@ People with the Planner or Supervisor (advanced) xref:account:predefined-user-ro
 You can view future and past time-off requests as follows:
 
 1. To filter the results, select a planning unit, optionally a selection and a status, and a date range.
-2. Click btn:[Apply filters].<br>
-   By default, requests are sorted by their internal request ID.
-3. (Optional) Search the results by activity or a person's name, or sort the table.<br>
-   You can now view, approve, or reject time-off requests.
+2. Click btn:[Apply filters]. +
+By default, requests are sorted by their internal request ID.
+3. (Optional) Search the results by activity or a person's name, or sort the table. +
+You can now view, approve, or reject time-off requests.
 
 The page will show a table with filtered data that has the following columns:
 
@@ -38,7 +38,7 @@ The page will show a table with filtered data that has the following columns:
 |Open, rejected, and approved requests
 |Yes
 |Created
-|Timestamp for all requests submitted in Me. The timestamp shows when the request was entered by a person. Hover over a cell to see the exact time. Unknown for requests inserted in the **Absence Request** level in Shift Center or Schedules (or submitted in Me before 2 November 2021). Hover over an Unknown value to see its request ID.
+|Timestamp for all requests submitted in Me. The timestamp shows when the request was entered by a person. Hover over a cell to see the exact time. Unknown for requests inserted in the *Absence Request* level in Shift Center or Schedules (or submitted in Me before 2 November 2021). Hover over an Unknown value to see its request ID.
 |Yes
 |Name
 |Name of the person requesting time-off
@@ -67,34 +67,35 @@ The page will show a table with filtered data that has the following columns:
 == Approve or reject requests
 Before you decide to approve or reject a request, you can click the Start or End cell to xref:scheduling:vacation-absences-management.adoc#taken-quota-and-target-quota[check the quotas] for the days requested at the bottom right of the calendar.
 
-1. In the **Status** column, click **✓** to approve or **✗** to reject a request. Click again to deselect the entry.
+1. In the *Status* column, click *✓* to approve or *✗* to reject a request. Click again to deselect the entry.
    Click btn:[Mark all as approved] or btn:[Mark all as rejected] at the top of the list to select all pending requests.
 2. Click btn:[Apply changes].
 3. (Optional) Add a comment for the approvals and rejections.
    People are notified by email and can see the comments. These email notifications cannot be deactivated. If you approve or reject multiple requests by different people at once, every person will see the same comment.
 4. Click btn:[Approve n requests] or btn:[Reject n requests]. The button reflects the number of selected entries.
    By default, Peopleware checks whether approvals would violate rules, e.g. surpassing the remaining vacation entitlement. A red banner with the request ID indicates a rule violation. Click btn:[Reject n requests] to deselect all requests marked for rejection.  
-   Check the **Bypass approval rules** checkbox to approve or reject the requests even if they go against approval rules.
+   Check the *Bypass approval rules* checkbox to approve or reject the requests even if they go against approval rules.
 
 [#taken-quota-and-target-quota]
 === Taken quota and Target quota
 The footer of the calendar displays two rows with weekly quotas:
 
-- **Taken quota**: Number or percentage of people with approved time off on this day.<br>The **Taken quota** value includes all activities of type holiday, absence, and sickness marked as **Requestable in Me**.
-- **Target quota**: Number or percentage of people needed for the day as configured in the xref:scheduling:vacation-approval-rules-and-quota-settings.adoc#base-quota[base quota configuration].
+- *Taken quota*: Number or percentage of people with approved time off on this day. +
+The *Taken quota* value includes all activities of type holiday, absence, and sickness marked as *Requestable in Me*.
+- *Target quota*: Number or percentage of people needed for the day as configured in the xref:scheduling:vacation-approval-rules-and-quota-settings.adoc#base-quota[base quota configuration].
 
-Use the radio buttons on the left of the footer to show the values as **Percentage** or as **Number of employees**/**Number of full-time employees** (depending on the base quota configuration).
+Use the radio buttons on the left of the footer to show the values as *Percentage* or as *Number of employees*/*Number of full-time employees* (depending on the base quota configuration).
 To see a tooltip with the number of people and the number of pending requests, hover over a cell.
 
-If **Full-time equivalent** is configured, the values reflect the duration of a time-off request in relation to a full-time contract. Without **Full-time equivalent**, each time-off request counts the same, regardless of its length.
+If *Full-time equivalent* is configured, the values reflect the duration of a time-off request in relation to a full-time contract. Without *Full-time equivalent*, each time-off request counts the same, regardless of its length.
 
 [#configure-approval-suggestions]
 == Configure approval suggestions
 Peopleware can suggest requests for approval. Automatic suggestions consider the number of people, staff requirements, as well as planned absences, and configured target quotas for the planning unit. Learn how to configure xref:scheduling:vacation-approval-rules-and-quota-settings.adoc[approval rules and quota settings].
 
-1. To display requests to approve, click btn:[Suggest approvals].<br>
-   The process treats requests that were submitted earlier with a higher priority ("First come, first served").<br>
-   Suggested approvals appear in green. You can still deselect rows using the **✗** icon.
+1. To display requests to approve, click btn:[Suggest approvals]. +
+The process treats requests that were submitted earlier with a higher priority ("First come, first served"). +
+Suggested approvals appear in green. You can still deselect rows using the *✗* icon.
 
    > Note
    >

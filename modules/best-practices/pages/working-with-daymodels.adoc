@@ -37,11 +37,11 @@ All you need to start is information on what contracts are assigned to your empl
 
 1. Create a single day model for all shifts with the same working hours per day. The number of working days and the total hours per week are determined by the employee's contract.
 
-   So, in theory the 12-, 24- and 30-hour contracts only need a single 6-hour day model, if the employees work the same number of hours per day, and all other activities included in the day model are the same.<br><br>
-
-   In reality, contracts are often more flexible, allowing employees to work more hours on busy days and fewer hours on slow days. For example, your employees may be allowed to work shifts between 6 and 8 hours long to reach a target working time of 37.5 hours per week. Thus, depending on the desired flexibility, several day models may be required.<br><br>
-
-   Fixed activities within a shift (such as daily huddles) may require a separate day model, even though the daily working time is the same.
+   So, in theory the 12-, 24- and 30-hour contracts only need a single 6-hour day model, if the employees work the same number of hours per day, and all other activities included in the day model are the same. +
+ +
+In reality, contracts are often more flexible, allowing employees to work more hours on busy days and fewer hours on slow days. For example, your employees may be allowed to work shifts between 6 and 8 hours long to reach a target working time of 37.5 hours per week. Thus, depending on the desired flexibility, several day models may be required. +
+ +
+Fixed activities within a shift (such as daily huddles) may require a separate day model, even though the daily working time is the same.
 
 2. Define for all your day models
    - Total working hours

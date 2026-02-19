@@ -60,5 +60,5 @@ You can also view our full list of reports below:
 
 [#recommended-reading]
 == Recommended reading
-- [Pros and cons of home working](https://www.monster.com/career-advice/article/the-benefits-of-working-from-home)
-- [6 top tips for coping with the coronavirus in your contact center](https://blog.peopleware.com/wfm-strategy/wfm-and-coronavirus-6-lessons-learned?utm_content=124144596&utm_medium=social&utm_source=linkedin&hss_channel=lcp-3192081)
+- link:https://www.monster.com/career-advice/article/the-benefits-of-working-from-home[Pros and cons of home working]
+- link:https://blog.peopleware.com/wfm-strategy/wfm-and-coronavirus-6-lessons-learned?utm_content=124144596&utm_medium=social&utm_source=linkedin&hss_channel=lcp-3192081[6 top tips for coping with the coronavirus in your contact center]

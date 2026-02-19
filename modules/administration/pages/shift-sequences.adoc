@@ -14,7 +14,7 @@ Insert shift sequences into your schedule and have Peopleware optimize the rest 
 
 Each shift sequence can include a number of patterns of day models or activities. Such patterns are defined as rows.
 Day models and activities are assigned to rows.
-Rows are assigned to people.<br>
+Rows are assigned to people. +
 Shift sequences are inserted into the schedule.
 
 Learn more about:

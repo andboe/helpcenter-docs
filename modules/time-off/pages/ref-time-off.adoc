@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Find information about time-off settings.
 :related-articles: time-off-types.adoc, use-approval-policies.adoc
 
-This article lists **Types** and **Accounting rules** settings available in menu:Time off[].
+This article lists *Types* and *Accounting rules* settings available in menu:Time off[].
 
 == Types
 
@@ -26,7 +26,7 @@ This article lists **Types** and **Accounting rules** settings available in menu
 |Paid
 |Indicates whether people are paid when taking this type of time off.
 |Fill up schedule with
-|Available only if you check the **Paid** checkbox. Replaces unpaid activities and blocks unscheduled hours with an unpaid absence, preventing people from being scheduled during their time off.
+|Available only if you check the *Paid* checkbox. Replaces unpaid activities and blocks unscheduled hours with an unpaid absence, preventing people from being scheduled during their time off.
 |Requestable
 |Allows people to submit their own requests for this time-off type in Me.
 |Consider in quotas
@@ -52,7 +52,7 @@ This article lists **Types** and **Accounting rules** settings available in menu
 |Name
 |Description
 |Approve requests automatically if all checks pass
-|If this box is checked, Peopleware automatically approves time-off requests that pass all the checks defined in the **Checks** section.
+|If this box is checked, Peopleware automatically approves time-off requests that pass all the checks defined in the *Checks* section.
 |===
 
 ==== Checks
@@ -62,9 +62,9 @@ This article lists **Types** and **Accounting rules** settings available in menu
 |Name
 |Description
 |Check
-|Type of check: +- **Consecutive days**: Verifies the number of days requested in a row. +- **Projected balance**: Verifies the requesting person's remaining time-off balance after the request is approved. +- **Lead time in days**: Verifies the number of days between the request date and the first day off. +- **Quota**: <!-- tbc -->
+|Type of check: +- *Consecutive days*: Verifies the number of days requested in a row. +- *Projected balance*: Verifies the requesting person's remaining time-off balance after the request is approved. +- *Lead time in days*: Verifies the number of days between the request date and the first day off. +- *Quota*: 
 |Condition
-|- **>**: Greater than. Activates the check if the value requested is greater than the value entered in the threshold fields. +- **<**: Smaller than. Activates the check if the value requested is smaller than the value entered in the threshold fields.
+|- *>*: Greater than. Activates the check if the value requested is greater than the value entered in the threshold fields. +- *<*: Smaller than. Activates the check if the value requested is smaller than the value entered in the threshold fields.
 |Review threshold
 |The limit value at which a time-off request needs to be manually reviewed before approval or refusal. Example: If the Review threshold for Consecutive days is 10, any time-off request for more than 10 days needs manual approval.
 |Prevent threshold
@@ -99,19 +99,19 @@ This article lists **Types** and **Accounting rules** settings available in menu
 |Accrual
 |Adds time off gradually (weekly, bi-weekly, or monthly) throughout the leave year. Entitlement must be used within that same year. Carry over is not allowed.
 |Entitlement amount
-|Available only if you select **Yearly renewal** as an entitlement strategy. Number of days or hours a person receives under a policy. Defines how much time off people are granted or can accrue.
+|Available only if you select *Yearly renewal* as an entitlement strategy. Number of days or hours a person receives under a policy. Defines how much time off people are granted or can accrue.
 |Renewal date
-|Available only if you select **Yearly renewal** as an entitlement strategy. Scheduled day on which an entitlement policy runs and creates the corresponding time-off entitlement for people.
+|Available only if you select *Yearly renewal* as an entitlement strategy. Scheduled day on which an entitlement policy runs and creates the corresponding time-off entitlement for people.
 |Carry over
-|Available only if you select **Yearly renewal** as an entitlement strategy. Portion of unused time-off entitlement that can be transferred into the next leave year, up to a defined maximum and validity period.
+|Available only if you select *Yearly renewal* as an entitlement strategy. Portion of unused time-off entitlement that can be transferred into the next leave year, up to a defined maximum and validity period.
 |Max. carry over amount
-|Available only if you check the **Carry over** checkbox. Maximum number of unused days that can be transferred from one leave year to the next under a carry over rule.
+|Available only if you check the *Carry over* checkbox. Maximum number of unused days that can be transferred from one leave year to the next under a carry over rule.
 |Carry over expiration date
-|Available only if you check the **Carry over** checkbox. Last date by which carried-over time-off must be used before it automatically expires.
+|Available only if you check the *Carry over* checkbox. Last date by which carried-over time-off must be used before it automatically expires.
 |Accrual amount
-|Available only if you select **Accrual** as an entitlement strategy. Fixed number of days or hours a person earns at the beginning of each accrual cycle.
+|Available only if you select *Accrual* as an entitlement strategy. Fixed number of days or hours a person earns at the beginning of each accrual cycle.
 |Accrual frequency
-|Available only if you select **Accrual** as an entitlement strategy. How often entitlement is added.
+|Available only if you select *Accrual* as an entitlement strategy. How often entitlement is added.
 |===
 
 == Accounting rules

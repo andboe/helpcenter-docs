@@ -29,8 +29,8 @@ The combination of the time zones of the elements and the time zone set for your
 == Set your user time zone
 Your user time zone controls how data is displayed in features like the Shift Center, Schedules, and Dashboards. Change your user time zone to display data from the perspective of any time zone you want:
 
-1. Click your **username** in the upper right.
-2. Select a **Time Zone**.
+1. Click your *username* in the upper right.
+2. Select a *Time Zone*.
 3. Click btn:[Save Profile].
 
 If you re-enter a feature, the data will shift according to your new user time zone.
@@ -63,7 +63,7 @@ If you edit a day, the data is shown in the planning unit time zone during the e
 === Dashboards
 The Dashboards feature under {bc-analyze-dashboards} displays the data in the user time zone. You can see the current user time zone in the bottom right corner.
 
-If you enter the editing mode by clicking on *![Context menu](/assets/img/common/dashboards/context-menu.png)* and then on **Edit**, the navigator opens to the left. To the right of the elements in the navigator, you can see the time zone of the respective planning unit or workload.
+If you enter the editing mode by clicking on *!xref:ROOT:assets/img/common/dashboards/context-menu.png[Context menu]* and then on *Edit*, the navigator opens to the left. To the right of the elements in the navigator, you can see the time zone of the respective planning unit or workload.
 
 image::working-with-timezones/image-12.png[Dashboards navigator - tree view, width=80%]
 
@@ -81,7 +81,7 @@ image::working-with-timezones/image-7.png[Planing unit time zone and offset for 
 === Forecast
 The workload feature under menu:Forecast[] shows data in the time zone set for the workload. The time zone of the workload is displayed to the right of the workload name in the drop-down menu.
 
-**Forecast** displays data using the time zone that is set for the workload. You can see the time zone of the workload in these places:
+*Forecast* displays data using the time zone that is set for the workload. You can see the time zone of the workload in these places:
 
 - the workloads list
 - next to the workload name in the drop-down menu

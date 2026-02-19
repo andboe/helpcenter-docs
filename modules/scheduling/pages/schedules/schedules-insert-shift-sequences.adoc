@@ -23,14 +23,14 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 [#filter-shift-sequences]
 == Filter shift sequences
 1. {nav-to-plan-schedules}
-2. From the **Scheduling Actions** drop-down menu on the right, select btn:[Insert shift sequences].
+2. From the *Scheduling Actions* drop-down menu on the right, select btn:[Insert shift sequences].
 3. {select-planning-unit}
 4. (Optional) Pick a selection.
 5. Set a time period.
 
    > You can insert shift sequences for up to two years.
 
-The **Overview** section shows shift sequences that match your filter. The table displays data that is set when you assign an existing shift sequence to a person:
+The *Overview* section shows shift sequences that match your filter. The table displays data that is set when you assign an existing shift sequence to a person:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -55,7 +55,7 @@ The **Overview** section shows shift sequences that match your filter. The table
 [#insert-shift-sequences]
 == Insert shift sequences
 1. To select an employee, check the checkbox next to their row. To select all employees, check the checkbox in the header row.
-2. (Optional) Expand the **Options** drop-down menu at the bottom of the overview table, and select how existing schedules should be handled when inserting shift sequences.
+2. (Optional) Expand the *Options* drop-down menu at the bottom of the overview table, and select how existing schedules should be handled when inserting shift sequences.
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -80,9 +80,9 @@ If deleted day models are still present in a shift sequence, they are still inse
 ====
 [#access-result-reports]
 == Access result reports
-In the **History** section, you can access reports for the current and previous runs of inserting shift sequences. Click the **View details** link to check why shifts or activities could not be inserted. A four-digit ID at the beginning of a row refers to a scheduling rule that blocks the shift sequence from being inserted.
+In the *History* section, you can access reports for the current and previous runs of inserting shift sequences. Click the *View details* link to check why shifts or activities could not be inserted. A four-digit ID at the beginning of a row refers to a scheduling rule that blocks the shift sequence from being inserted.
 
-To delete entries from the **History** section, check the checkboxes next to an entry and click btn:[Delete entries]. To select all entries at once, check the checkbox at the top.
+To delete entries from the *History* section, check the checkboxes next to an entry and click btn:[Delete entries]. To select all entries at once, check the checkbox at the top.
 
 [#prevent-overwriting-of-scheduled-activities]
 == Prevent overwriting of scheduled activities
@@ -90,7 +90,7 @@ By default, when you insert full-day activities into the schedule using shift se
 
 By default, partial-day activities of the types Absence, Illness, Vacation, or Meeting are not overwritten.
 
-To delete activities of all types when inserting a shift sequence, check the checkbox **Delete all activities and shifts** to avoid errors related to the scheduling rule *2648* _Write protection for activities in the Shift Center_, which is always active for shift sequence insertion.
+To delete activities of all types when inserting a shift sequence, check the checkbox *Delete all activities and shifts* to avoid errors related to the scheduling rule *2648* _Write protection for activities in the Shift Center_, which is always active for shift sequence insertion.
 
 [NOTE]
 ====

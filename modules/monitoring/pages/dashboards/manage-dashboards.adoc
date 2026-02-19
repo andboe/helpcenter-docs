@@ -24,7 +24,7 @@ In Enterprise and Advanced WFM, you can configure view, edit, and delete permiss
 2. Select the role for which you want to edit dashboard permissions.
 3. Scroll down to *Analyze* and check or uncheck the *Create dashboards* checkbox.
 4. Click *Configure dashboard permissions*.
-5. To give blanket permissions for all dashboards, check the corresponding checkboxes in the **All existing and future Dashboards** entry.
+5. To give blanket permissions for all dashboards, check the corresponding checkboxes in the *All existing and future Dashboards* entry.
 6. To fine-tune permissions for individual dashboards, check the checkboxes of the individual dashboards instead.
 7. Click *Save*.
 
@@ -35,25 +35,26 @@ Whether people can see workload data in dashboards depends on the workload permi
 [#create-dashboards]
 == Create dashboards
 1. Go to {bc-analyze-dashboards}.
-2. From the {icon-context-menu} on the right, select **Create New Dashboard**.
+2. From the {icon-context-menu} on the right, select *Create New Dashboard*.
 3. {configure-fields}
-   - **Name**: Unique name for your dashboard.
-   - **Layout**: Select the number and layout of your charts.
-   - **Untitled Chart**: Name for each chart. The names do not have to be unique.
+   - *Name*: Unique name for your dashboard.
+   - *Layout*: Select the number and layout of your charts.
+   - *Untitled Chart*: Name for each chart. The names do not have to be unique.
 
-4. Select a **date range** for each chart.
-5. (Optional) Activate the **Use Rolling Dates** option to shift the start date by one day every day.
+4. Select a *date range* for each chart.
+5. (Optional) Activate the *Use Rolling Dates* option to shift the start date by one day every day.
 6. From the tree view on the left, drag and drop time series into the charts to visualize different key figures:
-   - **Workloads**: History, Forecast, Import, and xref:forecast:save-forecast-versions.adoc[forecast versions].
-   - **Planning units**: Staffing, staff requirements, and coverage for scheduled shifts and activities, plus shifts requested in Me.
-   - **WFM Queues**: Workload data in WFM queues that you saved by clicking btn:[Use forecast] in the workload page. The option may not be available, depending on your WFM plan.
+   - *Workloads*: History, Forecast, Import, and xref:forecast:save-forecast-versions.adoc[forecast versions].
+   - *Planning units*: Staffing, staff requirements, and coverage for scheduled shifts and activities, plus shifts requested in Me.
+   - *WFM Queues*: Workload data in WFM queues that you saved by clicking btn:[Use forecast] in the workload page. The option may not be available, depending on your WFM plan.
 
      > Note
      >
      > - The {icon-exclamation} in the legend of a chart is displayed if you have no data for a period.
-     > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a [Genesys Cloud integration](/add-genesys-cloud-integration/), you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
+     > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a xref:ROOT:add-genesys-cloud-integration/[Genesys Cloud integration], you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
 
-7. {btn-save}<br>To return to the view mode, click btn:[Close Edit mode].
+7. {btn-save} +
+To return to the view mode, click btn:[Close Edit mode].
 
 [#duplicate-a-dashboard]
 === Duplicate a dashboard
@@ -61,19 +62,20 @@ To create a new dashboard with the same general properties as an existing dashbo
 
 1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
-3. From the {icon-context-menu}, select **Duplicate Dashboard**.
+3. From the {icon-context-menu}, select *Duplicate Dashboard*.
 4. Edit the name and configuration details, if needed.
 5. {btn-save}
 
 [#auto-refresh-dashboards]
 === Auto-refresh dashboards
-You can automatically refresh the selected dashboard. To do so, select an interval from the drop-down menu on the right and click btn:[{icon-rotate} Auto-Refresh].<br>In the lower left of the page, you can see when the dashboard was last updated.
+You can automatically refresh the selected dashboard. To do so, select an interval from the drop-down menu on the right and click btn:[{icon-rotate} Auto-Refresh]. +
+In the lower left of the page, you can see when the dashboard was last updated.
 
 [#edit-dashboards]
 == Edit dashboards
 1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
-3. From the {icon-context-menu} on the right, select **Edit**.
+3. From the {icon-context-menu} on the right, select *Edit*.
 4. Edit the dashboard, xref:monitoring:work-with-charts.adoc#customize-time-series[customize time series] or xref:monitoring:work-with-charts.adoc#delete-time-series[delete] them.
 5. {btn-save} To return to the view mode, click btn:[Close Edit mode].
 
@@ -81,8 +83,9 @@ You can automatically refresh the selected dashboard. To do so, select an interv
 == Delete dashboards
 1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
-3. From the {icon-context-menu} on the right, select **Edit**.
+3. From the {icon-context-menu} on the right, select *Edit*.
 4. Click btn:[Delete] at the bottom right.
-5. In the confirmation window, click btn:[Delete Dashboard].<br> To cancel the deletion, click btn:[Keep Dashboard].
+5. In the confirmation window, click btn:[Delete Dashboard]. +
+To cancel the deletion, click btn:[Keep Dashboard].
 
 If you delete the last remaining dashboard, the page shows the edit mode until you xref:#create-dashboards[create a new dashboard].

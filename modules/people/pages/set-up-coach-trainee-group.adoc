@@ -25,9 +25,9 @@ To set up a coach-trainee group, proceed as follows:
 3. On the person's details page, go to menu:Planning[Coach/Trainee].
 4. Make sure the person is not assigned to a coach.
    You cannot assign trainees to a person that is already assigned to a coach.
-5. Click {icon-plus} **Add**.
+5. Click {icon-plus} *Add*.
 6. (Optional) Specify a validity period.
-7. In the **Assignees** section, select the trainees from the list. To filter the list, use the filter options.
-8. Click **Create**.
+7. In the *Assignees* section, select the trainees from the list. To filter the list, use the filter options.
+8. Click *Create*.
 
 You have set up the coach trainee group.

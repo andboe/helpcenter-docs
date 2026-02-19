@@ -21,8 +21,8 @@ Duplicating an activity does not include its assigned objects.
 
 {role-needs-permissions}
 
-- **Access to Plan Configuration**
-- **Create** permission for the object type you want to duplicate.
+- *Access to Plan Configuration*
+- *Create* permission for the object type you want to duplicate.
 
 Your role needs object permissions for the object you want to duplicate and its assigned objects.
 
@@ -31,7 +31,7 @@ Your role needs object permissions for the object you want to duplicate and its 
 1. Go to menu:Plan[Configuration].
 2. Select an object type, e.g. activities, day models or week time patterns.
 3. In the row of the object you want to duplicate, click the contextual menu {icon-context-menu}.
-4. Click **Duplicate**.
+4. Click *Duplicate*.
 
 The configuration page for the duplicated object opens immediately.
 Peopleware adds a number in brackets to the original name.

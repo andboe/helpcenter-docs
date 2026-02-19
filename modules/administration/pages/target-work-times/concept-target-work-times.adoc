@@ -38,10 +38,10 @@ After calculation, the following tasks can be performed:
 
 - Review the target work time values for each person
 - Make manual adjustments to modify the calculated values
-- Use **Create optimized schedule** feature to schedule people based on target work times
+- Use *Create optimized schedule* feature to schedule people based on target work times
 
 [NOTE]
 ====
-**Create optimized schedule** generates schedules based on target work times if the contract's AutoScheduler parameter **Use target work times** is activated.
+*Create optimized schedule* generates schedules based on target work times if the contract's AutoScheduler parameter *Use target work times* is activated.
 For more information, see article xref:administration:create-contracts.adoc[Create contracts].
 ====

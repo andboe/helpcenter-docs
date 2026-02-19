@@ -1,7 +1,7 @@
 * Monitoring
-** xref:concept-queues.adoc
-** xref:ref-queues.adoc
-** Dashboards
-*** xref:dashboards/dashboards-examples.adoc
-*** xref:dashboards/manage-dashboards.adoc
-*** xref:dashboards/work-with-charts.adoc
+* xref:concept-queues.adoc
+* xref:ref-queues.adoc
+* Dashboards
+** xref:dashboards/dashboards-examples.adoc
+** xref:dashboards/manage-dashboards.adoc
+** xref:dashboards/work-with-charts.adoc

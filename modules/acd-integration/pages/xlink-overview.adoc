@@ -7,12 +7,12 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Use the Xlink application to import data into injixo. Learn how to install and configure it.
 :related-articles: xlink-installation-configuration.adoc, xlink-import-mode.adoc
 
-The Xlink application imports data from third-party systems such as telephone systems (ACD). The *Xlink Suite* is available for download at [downloads.peopleware.com](https://downloads.peopleware.com).
+The Xlink application imports data from third-party systems such as telephone systems (ACD). The *Xlink Suite* is available for download at link:https://downloads.peopleware.com[downloads.peopleware.com].
 
 Xlink imports two different types of data:
 
-- call or contact data into queues (**PhoneLink**)
-- employee-related login/logout/status change data (**TimeLink**)
+- call or contact data into queues (*PhoneLink*)
+- employee-related login/logout/status change data (*TimeLink*)
 
 Note: To import data into workloads, use a xref:acd-integration:how-integrations-work.adoc[native integration] as an alternative, which is easier to configure. If your ACD is not listed, use Xlink and let your Customer Success Manager know that your specific ACD is not supported yet.
 
@@ -29,7 +29,7 @@ Note: XLink can be deployed on a virtualized environment.
 === ISPS Xlink Windows service (isps_uls.exe)
 Xlink uses a Windows service for data import. The service named _ISPS XLink_ always imports all data of a whole day. The service can be installed only once on the same computer and starts automatically after installation.
 
-Type **isps_uls.exe** in the Windows command line to see the available parameters:
+Type *isps_uls.exe* in the Windows command line to see the available parameters:
 
 - _-install_/_-remove_: installs or uninstalls the _ISPS XLink_ service. During installation, the _startup type_ parameter defaults to _automatic_ to ensure a service restart after a server restart.
 - _-console_: starts the service in console mode. This mode uses the user account associated with the Windows session. You can use this option to identify configuration problems.
@@ -44,7 +44,7 @@ Xlink has a user interface where you can configure settings, xref:acd-integratio
 
 Note: The user interface defaults to English. To change this, copy the two files from your preferred language sub folders into the installation directory. Overwrite the existing files.
 
-Run the file **isps_ul.exe** to start the user interface.
+Run the file *isps_ul.exe* to start the user interface.
 
 image::xlink-overview/image-1.png[Xlink Interface]
 

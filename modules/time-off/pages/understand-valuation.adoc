@@ -13,9 +13,9 @@ When people request time off, Peopleware differentiates between the following:
 - The actual time off, i.e. the time range that a person is absent from work
 - The valuated time off, i.e. the time that is deducted from a person's entitlement, and for which they are compensated if they requested paid time off.
 
-Time off can be valuated in hours or days, depending on the [time unit of the time-off type](https://help.peopleware.com/time-off-types-beta#create-a-time-off-type).
+Time off can be valuated in hours or days, depending on the link:https://help.peopleware.com/time-off-types-beta#create-a-time-off-type[time unit of the time-off type].
 
-For example, for a type calculated in hours, when a person with a full-time contract is absent for one day, which would result in an actual absence of 24&nbsp;hours, Peopleware valuates 8&nbsp;hours to be deducted from the person's entitlement.
+For example, for a type calculated in hours, when a person with a full-time contract is absent for one day, which would result in an actual absence of 24 hours, Peopleware valuates 8 hours to be deducted from the person's entitlement.
 
 [#accounting-rules]
 == Accounting rules
@@ -27,7 +27,7 @@ Accounting rules impact the following:
 - How special scenarios, like public holidays or partial days, are handled.
 - Which contracts the rules apply to.
 
-<!-- Learn more about accounting rules. (add link) -->
+
 
 [#valuation-strategies]
 == Valuation strategies
@@ -49,7 +49,7 @@ The valuation can be further influenced by the following factors:
 ====
 If no contract is selected, this default accounting rule applies to your entire organization. Additionally, you can create multiple other accounting rules for one or more specific contracts. For each time off request, Peopleware checks which accounting rule applies by identifying the contract assigned to the person during the requested period. The contract-specific rule is applied if it exists. Otherwise, the default rule is used.
 ====
-To see how Peopleware valuates individual days in a multi-day time-off request, go to {bc-time-off-plan} and click the {icon-svg-viewer} next to a value in the **To be booked** column. Depending on the time unit of the [time-off type](https://help.peopleware.com/time-off-types-beta#create-a-time-off-type), a window displays the number of hours or the fraction of a day to be booked for each day, including days with 0&nbsp;hours. For full-day time-off requests where the time unit is days, Peopleware displays 1&nbsp;day.
+To see how Peopleware valuates individual days in a multi-day time-off request, go to {bc-time-off-plan} and click the {icon-svg-viewer} next to a value in the *To be booked* column. Depending on the time unit of the link:https://help.peopleware.com/time-off-types-beta#create-a-time-off-type[time-off type], a window displays the number of hours or the fraction of a day to be booked for each day, including days with 0 hours. For full-day time-off requests where the time unit is days, Peopleware displays 1 day.
 
 [#time-off-valuation-based-on-a-persons-schedule]
 === Time-off valuation based on a person's schedule
@@ -59,7 +59,7 @@ If your organization schedules people using shift sequences only, e.g. because y
 
 [NOTE]
 ====
-For schedule-based valuations, overlap checks use the **effective time range** that is calculated during valuation. If a night shift crosses midnight, Peopleware xref:time-off:time-off.adoc#full-day-requests-that-include-night-shifts[moves a full-day request] so it begins or ends immediately after that shift. This keeps full-day requests from overlapping. Part-day requests keep the exact hours you entered, so they may still need manual adjustments.
+For schedule-based valuations, overlap checks use the *effective time range* that is calculated during valuation. If a night shift crosses midnight, Peopleware xref:time-off:time-off.adoc#full-day-requests-that-include-night-shifts[moves a full-day request] so it begins or ends immediately after that shift. This keeps full-day requests from overlapping. Part-day requests keep the exact hours you entered, so they may still need manual adjustments.
 ====
 The following table provides several examples with different parameters of a time-off request:
 
@@ -78,12 +78,12 @@ The following table provides several examples with different parameters of a tim
 |One day
 |one day
 |Hours
-|From 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h)
-|From 9&nbsp;AM to 12&nbsp;PM (3h)
+|From 9 AM to 5 PM with a 30-minute unpaid break starting at 12 PM (7.5h)
+|From 9 AM to 12 PM (3h)
 |three hours
 |Days
-|From 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h)
-|From 9&nbsp;AM to 12&nbsp;PM (3h)
+|From 9 AM to 5 PM with a 30-minute unpaid break starting at 12 PM (7.5h)
+|From 9 AM to 12 PM (3h)
 |0.4 days
 |Hours/days
 |No scheduled activities
@@ -127,8 +127,7 @@ In {bc-time-off-plan}, you can see both the overall valuation strategy and the s
 
 [#time-off-valuation-based-on-a-persons-contract]
 === Time-off valuation based on a person's contract
-There are two types of contracts the valuation can be based on:<br>
-
+There are two types of contracts the valuation can be based on: +
 - Standard: The contract states how many days in a week are working days. These days are defined once and never change.
 - Flexible: The contract states how many days in a week are working days. It does not specify on which days the person is working. The days do not need to be consecutive and they can change from one week to the next.
 
@@ -161,12 +160,12 @@ The following table provides several examples with different parameters of a tim
 |One day
 |One day
 |Hours
-|From 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h)
-|From 9&nbsp;AM to 12&nbsp;PM (3h)
+|From 9 AM to 5 PM with a 30-minute unpaid break starting at 12 PM (7.5h)
+|From 9 AM to 12 PM (3h)
 |Three hours
 |Days
-|From 9&nbsp;AM to 5&nbsp;PM with a 30-minute unpaid break starting at 12&nbsp;PM (7.5h)
-|From 9&nbsp;AM to 12&nbsp;PM (3h)
+|From 9 AM to 5 PM with a 30-minute unpaid break starting at 12 PM (7.5h)
+|From 9 AM to 12 PM (3h)
 |0.4 days
 |Hours/days
 |No scheduled activities
@@ -179,14 +178,14 @@ The following table provides several examples with different parameters of a tim
 In standard contracts, the daily target working time determines the time that is deducted from a person's entitlement and for which they are compensated when they take paid time off.
 
 - If the time-off type is calculated in hours, the corresponding amount of hours is deducted.
-- If the time-off type is calculated in days, either a full day or a fraction of a day is deducted, depending on whether the time-off request is for a full day or a partial day.<br>
-  Depending on the defined working days in a person's contract, Peopleware starts the time-off valuation on the first day of the time-off request and continues from there, valuating only regular working days and dismissing regular days off. For example, if a part-time person works from Monday until Thursday and requests two weeks off, eight days or the corresponding amount of hours is deducted from their entitlement.
+- If the time-off type is calculated in days, either a full day or a fraction of a day is deducted, depending on whether the time-off request is for a full day or a partial day. +
+Depending on the defined working days in a person's contract, Peopleware starts the time-off valuation on the first day of the time-off request and continues from there, valuating only regular working days and dismissing regular days off. For example, if a part-time person works from Monday until Thursday and requests two weeks off, eight days or the corresponding amount of hours is deducted from their entitlement.
 
 [#flexible-contracts]
 === Flexible contracts
 When a person with a flexible contract requests time off, Peopleware starts the time-off valuation on the first day of the time-off request and valuates the consecutive days as working days up to the total number of weekly working days. For example, when a person who works three days per week requests time off from Wednesday-Saturday, Peopleware valuates Wednesday-Friday as working days that are deducted from the person's entitlement and for which the person receives compensation.
 
-When the time-off valuation is based on a person's contract, Peopleware does not consider the person's schedule for time-off valuation. However, for flexible contracts, Peopleware considers already approved paid time off in the person's schedule if it falls into the same week as the new time-off request. The amount of approved time off is then valuated as the corresponding number of working days or hours. For example, a person who only works three days per week requests two days off. After you have [approved their time-off request](https://help.peopleware.com/time-off#approve-or-reject-time-off-requests), they submit another time-off request for two more days within the same week. Peopleware then considers that there is already a paid absence for two days in the person's schedule and only deducts one more day from their entitlement. If a person submits several time-off requests for one week and you haven't approved any of them yet, you need to handle them one at a time. You cannot approve them in bulk.
+When the time-off valuation is based on a person's contract, Peopleware does not consider the person's schedule for time-off valuation. However, for flexible contracts, Peopleware considers already approved paid time off in the person's schedule if it falls into the same week as the new time-off request. The amount of approved time off is then valuated as the corresponding number of working days or hours. For example, a person who only works three days per week requests two days off. After you have link:https://help.peopleware.com/time-off#approve-or-reject-time-off-requests[approved their time-off request], they submit another time-off request for two more days within the same week. Peopleware then considers that there is already a paid absence for two days in the person's schedule and only deducts one more day from their entitlement. If a person submits several time-off requests for one week and you haven't approved any of them yet, you need to handle them one at a time. You cannot approve them in bulk.
 
 [#time-off-valuation-in-days-versus-hours]
 == Time-off valuation in days versus hours
@@ -202,7 +201,7 @@ For example, a part-time person with a flexible contract has different working h
 If the valuation is based on the schedule, Peopleware uses the number of paid hours in a shift as the basis for valuation.
 For example, if a part-time person was scheduled for two paid hours on a specific day and they request two hours of time off for that day instead of submitting a full-day time-off request, a full day is still deducted because it equals all of their working hours on that day. If they were scheduled for four hours on that day and they request two hours of time off, only half a day is deducted.
 
-If the valuation is based on the contract, the target working time per day equals the number of paid time. If a person requests a partial day off, Peopleware displays a decimal value by default. For example, if a full-time person working 8&nbsp;hours per day requests two hours off, Peopleware displays 0.25 days in the **To be booked** column. This can be avoided with the rounding functionality.
+If the valuation is based on the contract, the target working time per day equals the number of paid time. If a person requests a partial day off, Peopleware displays a decimal value by default. For example, if a full-time person working 8 hours per day requests two hours off, Peopleware displays 0.25 days in the *To be booked* column. This can be avoided with the rounding functionality.
 
 [#rounding]
 === Rounding
@@ -210,7 +209,7 @@ Rounding works for valuation in days based on contracts or schedules. You can de
 
 [#time-off-valuation-for-night-shifts]
 == Time-off valuation for night shifts
-If a person is scheduled to work a night shift that starts before midnight of one day and ends after midnight of the following day, and they request a day off, Peopleware handles their time-off request differently than the [default setting](https://help.peopleware.com/time-off#time-off-requests-for-night-shifts).
+If a person is scheduled to work a night shift that starts before midnight of one day and ends after midnight of the following day, and they request a day off, Peopleware handles their time-off request differently than the link:https://help.peopleware.com/time-off#time-off-requests-for-night-shifts[default setting].
 
 The following table provides several examples for requested time off:
 
@@ -220,22 +219,22 @@ The following table provides several examples for requested time off:
 |Time-off request
 |Time off in schedule
 |Valuated time (hours/days)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|26&nbsp;June
-|26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours)
-|Eight&nbsp;hours (one&nbsp;day)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
-|25&nbsp;June
-|25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours)
-|Eight&nbsp;hours (one&nbsp;day)
-|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM
-|25&nbsp;June until 29&nbsp;June
-|25&nbsp;June, midnight until 29&nbsp;June 6&nbsp;AM
-|16&nbsp;hours (two&nbsp;days)
+|25 June, 10 PM until 26 June, 6 AM
+|26 June
+|26 June, 6 AM until 27 June midnight (18 hours)
+|Eight hours (one day)
+|25 June, 10 PM until 26 June, 6 AM
+|25 June
+|25 June, midnight until 26 June 6 AM (30 hours)
+|Eight hours (one day)
+|25 June, 10 PM until 26 June, 6 AM and 28 June, 10 PM until 29 June, 6 AM
+|25 June until 29 June
+|25 June, midnight until 29 June 6 AM
+|16 hours (two days)
 |No scheduled night shift but scheduled during the day
-|26&nbsp;June
-|26&nbsp;June, midnight until 27&nbsp;June, midnight
-|Eight&nbsp;hours (one&nbsp;day)
+|26 June
+|26 June, midnight until 27 June, midnight
+|Eight hours (one day)
 |===
 
 [#your-optimal-setup]
@@ -263,8 +262,8 @@ If the valuation is xref:#time-off-valuation-based-on-a-persons-schedule[based o
 
 If the valuation is xref:#time-off-valuation-based-on-a-persons-schedule-and-their-contract[based on both a person's schedule and their contract]
 
-- A person requests time off for a time range that is only partially covered by a published scheduling period, and there is no published scheduling period for the rest of the time range.<br>
-  Note: The request is valuated normally if the time range selected is covered by two different published scheduling periods.
+- A person requests time off for a time range that is only partially covered by a published scheduling period, and there is no published scheduling period for the rest of the time range. +
+Note: The request is valuated normally if the time range selected is covered by two different published scheduling periods.
 
 If the valuation is xref:#time-off-valuation-based-on-a-persons-contract[based on the person's contract]:
 
@@ -276,9 +275,9 @@ In all cases without valuation, Peopleware does not update personal balances.
 
 [#why-can-the-hoursdays-to-be-booked-change-until-the-time-off-request-has-been-approved]
 === Why can the hours/days to be booked change until the time-off request has been approved?
-- Scenario&nbsp;1: If you haven't published the schedule before a person requests time off (e.g. before a weekend), the basis for valuation is the contract, unless the option to always use the schedule is activated. If you publish the schedule while the time-off request is pending, the basis for valuation automatically changes from contract to schedule. As a result, the hours/days to be booked can change.<br>
-- Scenario&nbsp;2: If the basis for valuation is the schedule, changes to the schedule can affect the time to be booked, e.g. if you delete a shift or change an unpaid activity to a paid one.
-- Scenario&nbsp;3: If the basis for valuation is a person's contract, and, for the requested period, you assign them a different contract than the one they had assigned when they submitted the time-off request, Peopleware recalculates the hours or days to be booked according to the new target working hours and days.
+- Scenario 1: If you haven't published the schedule before a person requests time off (e.g. before a weekend), the basis for valuation is the contract, unless the option to always use the schedule is activated. If you publish the schedule while the time-off request is pending, the basis for valuation automatically changes from contract to schedule. As a result, the hours/days to be booked can change. +
+- Scenario 2: If the basis for valuation is the schedule, changes to the schedule can affect the time to be booked, e.g. if you delete a shift or change an unpaid activity to a paid one.
+- Scenario 3: If the basis for valuation is a person's contract, and, for the requested period, you assign them a different contract than the one they had assigned when they submitted the time-off request, Peopleware recalculates the hours or days to be booked according to the new target working hours and days.
 
 [#why-can-the-hoursdays-booked-for-approved-time-off-change]
 === Why can the hours/days booked for approved time off change?

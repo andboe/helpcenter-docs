@@ -14,5 +14,5 @@ Optimizations are jobs. When you start one, you can manage the job in menu:Job s
 ==== What you should do is...?
 You can stop your full optimization run if you realize part way through that you need to repeat it anyway once it is completed, e.g. if you missed inserting your shift sequences. Go to xref:general:jobstatus.adoc[Job status] and terminate the job before it actually completes.
 
-**Tip:**
+*Tip:*
 You can terminate, delete or restart jobs via the Job status page. See xref:general:jobstatus.adoc[Job status page].

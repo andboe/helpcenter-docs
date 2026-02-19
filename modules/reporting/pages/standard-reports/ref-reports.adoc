@@ -84,7 +84,7 @@ For more information about reports see:
 |Format
 |Report format: PDF or HTML
 |Send report to
-|Defines how to email the report:  +- **Do not send**: Does not send the report. + - **Selected recipients**: Sends the report to the recipients defined in the report configuration. + - **Selected people (shared CC)**: Sends the report to the selected people, all CC’d on the same email thread. +- **Custom email address**: Sends the report to one or more manually entered email addresses.
+|Defines how to email the report:  +- *Do not send*: Does not send the report. + - *Selected recipients*: Sends the report to the recipients defined in the report configuration. + - *Selected people (shared CC)*: Sends the report to the selected people, all CC’d on the same email thread. +- *Custom email address*: Sends the report to one or more manually entered email addresses.
 |Export as anonymous report
 |Hides personal identifiers such as people names and personnel numbers in the report.
 |===

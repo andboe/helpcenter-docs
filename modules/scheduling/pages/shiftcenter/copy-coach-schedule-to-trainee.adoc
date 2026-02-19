@@ -19,13 +19,13 @@ To apply the activities or day models scheduled for the coach to trainees of the
 3. In the relevant planning unit, find the coach entry.
    The schedule area displays trainees assigned to the same planning unit as the coach as child entries of that coach.
 4. Right-click a day cell in the coach row to open the context menu.
-5. Click **Copy Coach's Shift**.
+5. Click *Copy Coach's Shift*.
    Peopleware opens a configuration popup.
 6. In the popup, specify the following fields:
-   - **Start date** and **End date**: Defines a period in days. Peopleware copies the coach's shift settings for each day in that period.
-   - **List of Assigned Trainees**: Shows all the trainees assigned to the coach. Peopleware copies the coach's shift settings to the selected trainees.
-   - **Copy activities**: Specifies which activities Peopleware copies to the trainees. The **Standard activity** option is a deprecated feature of Peopleware Classic and is no longer supported in Essential WFM, Advanced WFM and Enterprise WFM.
-   - **Retain Existing Schedules**: Controls if Peopleware overwrites trainees' existing schedules.
-7. Click **OK**.
+   - *Start date* and *End date*: Defines a period in days. Peopleware copies the coach's shift settings for each day in that period.
+   - *List of Assigned Trainees*: Shows all the trainees assigned to the coach. Peopleware copies the coach's shift settings to the selected trainees.
+   - *Copy activities*: Specifies which activities Peopleware copies to the trainees. The *Standard activity* option is a deprecated feature of Peopleware Classic and is no longer supported in Essential WFM, Advanced WFM and Enterprise WFM.
+   - *Retain Existing Schedules*: Controls if Peopleware overwrites trainees' existing schedules.
+7. Click *OK*.
 
 Peopleware copies the shift settings of the coach to the selected trainees.

@@ -10,7 +10,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 Add events to your historical data and the generated *forecast* to improve the *forecast* results. Besides data, events are the second most important driver for forecast quality.
 
-New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
+New to *Forecast*? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 
 [#what-are-events]
 == What are events?
@@ -28,17 +28,16 @@ Public holidays are created and added to your *workloads* automatically when you
 == Create an event
 1. Go to menu:Forecast[Events].
 2. Click btn:[Create event].
-3. Enter a **Name**.
+3. Enter a *Name*.
 4. (Optional) Check the checkbox *Mark as an outlier* if you want to ignore the event from the *forecast*, e.g. because you know that the contact volume or data will not be representative on that day. Leave the checkbox unchecked if you want to use the contact volume or data generated on the day of the event when creating the forecast.
-5. {btn-save}<br>
-   The event appears in the event list. In the event list, you can see if the event is marked as an outlier, and how many *workloads* it affects.
+5. {btn-save} +
+The event appears in the event list. In the event list, you can see if the event is marked as an outlier, and how many *workloads* it affects.
 
 You can edit the event, e.g. to mark it as an outlier, at any time.
 
 [#add-an-event-to-a-workload]
 == Add an event to a *workload*
-<!--Add all known events to past and future dates. Omit longer periods with uncommon patterns, as these periods and patterns degrade the quality of the forecast over time.
-Smart workloads consider an event's impact up to two days before and after the event date. Basic workloads only consider the event's impact on the actual day. (@Jose, do we still need this here?)-->
+
 
 You need to add the created events to all relevant *workloads* so that they are considered when calculating the *forecast*.
 
@@ -48,10 +47,10 @@ To add an event to a *workload*, proceed as follows:
 2. From the {icon-context-menu} at the top right, select *Manage events*.
 3. Click *+ Add event* and enter the relevant information:
    - *Event*: Select an event from the drop-down menu. Outliers are marked with the word Outlier in brackets next to the event name. You can only see events within the date range of the selected workload.
-   - *Date range*: Select the date range to which you want to add the event. You can only add events within the *date range* of the selected *workload*.<br>
-     You cannot add overlapping events to the same *workload*. If the *date range* of the new event overlaps with an existing event, adjust the dates or remove one of the events.
-4. {btn-save}<br>
-   The event appears in the window. Events are color-coded. The color code is the same in the *workload* graphs.
+   - *Date range*: Select the date range to which you want to add the event. You can only add events within the *date range* of the selected *workload*. +
+You cannot add overlapping events to the same *workload*. If the *date range* of the new event overlaps with an existing event, adjust the dates or remove one of the events.
+4. {btn-save} +
+The event appears in the window. Events are color-coded. The color code is the same in the *workload* graphs.
 5. {btn-close}
 
 [NOTE]
@@ -60,8 +59,7 @@ To exclude a past day from the forecast calculation, add an event that is marked
 ====
 [#add-an-event-to-several-workloads]
 == Add an event to several *workloads*
-<!--Add all known events to past and future dates. Omit longer periods with uncommon patterns, as these periods and patterns degrade the quality of the forecast over time.
-Smart workloads consider an event's impact up to two days before and after the event date. Basic workloads only consider the event's impact on the actual day. (@Jose, do we still need this here?)-->
+
 
 You can add an event to several *workloads* at a time. This makes it easier to manage events across different *workloads*, for example when you work with a large number of *workloads*. To add an event to several *workloads*, proceed as follows:
 
@@ -75,7 +73,7 @@ You can add an event to several *workloads* at a time. This makes it easier to m
 
    > Note
    >
-   > You can only see *workloads* for which you have edit rights. <!-- add WL permissions link when live -->
+   > You can only see *workloads* for which you have edit rights. 
 
 [#remove-an-event-from-a-workload]
 == Remove an event from a *workload*
@@ -85,7 +83,7 @@ To remove an event from a *workload*, proceed as follows:
 2. From the {icon-context-menu} at the top right, select *Manage events*.
 3. Click the {icon-delete} next to the event you want to remove.
 4. {btn-close}
-   The *forecast* will be recalculated.<!--Is this true?-->
+   The *forecast* will be recalculated.
 
 [#remove-an-event-from-several-workloads]
 == Remove an event from several *workloads*
@@ -93,8 +91,8 @@ To remove an event from several *workloads*, proceed as follows:
 
 1. In menu:Forecast[Events], select an event.
 2. In the *Calendar entries* section, select a calendar entry.
-3. Uncheck the checkboxes next to the *workloads* from which you want to remove the calendar entry.<br>
-   Removing the calendar entry from all *workloads* removes the calendar entry from the list but does not delete the event.
+3. Uncheck the checkboxes next to the *workloads* from which you want to remove the calendar entry. +
+Removing the calendar entry from all *workloads* removes the calendar entry from the list but does not delete the event.
 4. {btn-save}
 
 [#delete-an-event]
@@ -117,7 +115,7 @@ To change the holiday region and associated public holiday events, proceed as fo
 
 1. In {bc-forecast-workloads}, select a *workload*.
 2. Click btn:[Edit] at the top right.
-3. Select a **Holiday region** from the drop-down menu.
+3. Select a *Holiday region* from the drop-down menu.
 4. Click btn:[Save workload].
 
 [#see-events-and-public-holidays-in-the-workload-graphs]

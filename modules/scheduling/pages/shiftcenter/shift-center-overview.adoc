@@ -177,11 +177,12 @@ The *Time Account* column displays the xref:administration:concept-target-work-t
 == Parameter area
 The parameter area consists of the lower table with tabs at the bottom. It displays parameters from your scheduled *day models* and *activities*, e.g. *staff requirements*, *staffing*, and *coverage*.
 
-In the *Day Models* and *Activity* tabs, the day cells display the total parameter value.<br>The expanded day cells display the parameters in intervals throughout the day. By default, the expanded day cells display the parameters in 1-hour intervals. To view the parameters in 30- or 15-minute intervals, xref:#day-week-month-and-year-columns[increase the size of the expanded day cell's time scale].
+In the *Day Models* and *Activity* tabs, the day cells display the total parameter value. +
+The expanded day cells display the parameters in intervals throughout the day. By default, the expanded day cells display the parameters in 1-hour intervals. To view the parameters in 30- or 15-minute intervals, xref:#day-week-month-and-year-columns[increase the size of the expanded day cell's time scale].
 
 The expanded day cells are color-coded as shown below. The more intense the color, the greater the difference between the *staff requirements* and the *staffing*.
 
-<!-- left-align table -->
+
 <style>
 table {
    margin-left: 0px;
@@ -244,7 +245,7 @@ To select the *activity* or *activity type*, the parameter, and the *level* that
 
 [#message-area]
 == Message area
-The message area consists of the bottom area with a board. The message area displays warning and error messages when scheduling rules are violated. To display or hide the message area, press *CTRL + K* or right-click any day cell in the schedule area to open the context menu. Then, select **Message window**.
+The message area consists of the bottom area with a board. The message area displays warning and error messages when scheduling rules are violated. To display or hide the message area, press *CTRL + K* or right-click any day cell in the schedule area to open the context menu. Then, select *Message window*.
 
 To delete a message, click the message and press *Delete*. You can also select multiple messages.
 

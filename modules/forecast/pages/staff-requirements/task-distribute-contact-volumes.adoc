@@ -22,8 +22,8 @@ For verification, the calculation also adds two further formulas to the source q
 - You have access to Virtual value types.
 - You have access to WFM Queue data in Dashboards.
 - You have created two xref:#create-value-types[specific value types]:
-  - A value type for the distribution percentage with aggregation type **Average**
-  - A value type for the distributed contacts with aggregation type: **Sum**
+  - A value type for the distribution percentage with aggregation type *Average*
+  - A value type for the distributed contacts with aggregation type: *Sum*
 - You have created a dedicated queue for each provider or internal team.
 - You have xref:#assign-value-types-to-queues[assigned the two value types] to the source queue and to each of the target queues.
 
@@ -34,8 +34,8 @@ To use this feature, you need to create two virtual value types: one for the dis
 1.  Go to menu:Analyze[Configuration>Value types].
 2.  {btn-create}
 3.  Fill in the information:
-    - **Name** and **Abbreviation**
-    - **Aggregation type**: Select **Average** for the distribution percentage and **Sum** for distributed contacts.
+    - *Name* and *Abbreviation*
+    - *Aggregation type*: Select *Average* for the distribution percentage and *Sum* for distributed contacts.
 4.  {btn-save}
 
 [#assign-value-types-to-queues]
@@ -44,7 +44,7 @@ Repeat this process for your source queue and each of your target queues:
 
 1.  Go to menu:Analyze[Configuration>Queues].
 2.  Select the queue.
-3.  In the **Value types** section, click **+ Add**.
+3.  In the *Value types* section, click *+ Add*.
 4.  Select your distribution percentage and distributed contacts value types.
 5.  {btn-save}
 
@@ -56,23 +56,23 @@ This step saves a snapshot of your forecast data into a WFM queue, making it ava
 
 1.  Go to {bc-forecast-workloads}.
 2.  Select the workload you want to use.
-3.  From the three-dot menu {icon-context-menu}, select **Use forecast**. This automatically creates a queue named with a leading asterisk that the calculation will use as a data source.
-4.  From the **Select version** dropdown, select a version.
+3.  From the three-dot menu {icon-context-menu}, select *Use forecast*. This automatically creates a queue named with a leading asterisk that the calculation will use as a data source.
+4.  From the *Select version* dropdown, select a version.
 5.  Click btn:[Use forecast].
 
 [#run-the-calculation]
 === Run the calculation
 1.  Go to {bc-forecast-requirement-calculations}.
 2.  Click on the Distribution - Contacts (time frames) calculation.
-3.  Fill in the **General parameter** section:
-    - In the **Version** dropdown, make sure to select the forecast version you saved in the previous step. This version is used for the source, target, and distribution parameters.
-4.  Fill in the **Source parameter** section:
-    - **Queue**: Designates the source of the contacts to be distributed. The timezone of this queue is used as a reference for the time spans.
-    - **Value type (contacts)**: Designates the contacts to be distributed from the source queue.
-5.  Fill in the **Target parameter** section:
-    - **Value type (percentages)**: Designates the percentages to be stored.
-    - **Value type (calculated contacts)**: Designates the formula for calculating the target contacts.
-6.  In the **Percentage distribution** section, enter the distribution percentage for each provider. You must include all involved providers, even if their distribution is temporarily 0%.
+3.  Fill in the *General parameter* section:
+    - In the *Version* dropdown, make sure to select the forecast version you saved in the previous step. This version is used for the source, target, and distribution parameters.
+4.  Fill in the *Source parameter* section:
+    - *Queue*: Designates the source of the contacts to be distributed. The timezone of this queue is used as a reference for the time spans.
+    - *Value type (contacts)*: Designates the contacts to be distributed from the source queue.
+5.  Fill in the *Target parameter* section:
+    - *Value type (percentages)*: Designates the percentages to be stored.
+    - *Value type (calculated contacts)*: Designates the formula for calculating the target contacts.
+6.  In the *Percentage distribution* section, enter the distribution percentage for each provider. You must include all involved providers, even if their distribution is temporarily 0%.
 7.  Click btn:[Run].
 
 [#check-the-results]

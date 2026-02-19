@@ -19,28 +19,28 @@ To add a new Freshdesk Contact Center integration, you need a Pro or Enterprise 
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Freshworks**.
-5. From the **Model name** drop-down menu, select **Freshcaller**.
+4. From the *External system* drop-down menu, select *Freshworks*.
+5. From the *Model name* drop-down menu, select *Freshcaller*.
 6. {btn-save}
 
 [#set-up-your-freshdesk-contact-center-integration]
 == Set up your Freshdesk Contact Center integration
-1. In the **Credentials** section, set up the access to your Freshdesk Contact Center account:
-   - **Domain**: Enter your full Freshdesk Contact Center domain name including the subdomain, e.g. example.freshchat.com.
-   - **API key**: Enter a valid API key of a Freshdesk Contact Center user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
-2. In the **Configuration** section, select the xref:#queue-names-by-grouping-strategy[grouping strategy for imported queues].
+1. In the *Credentials* section, set up the access to your Freshdesk Contact Center account:
+   - *Domain*: Enter your full Freshdesk Contact Center domain name including the subdomain, e.g. example.freshchat.com.
+   - *API key*: Enter a valid API key of a Freshdesk Contact Center user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
+2. In the *Configuration* section, select the xref:#queue-names-by-grouping-strategy[grouping strategy for imported queues].
 3. {btn-save}
 
-After you have saved the configuration, proceed in the **Install the Peopleware app** section on the page.
+After you have saved the configuration, proceed in the *Install the Peopleware app* section on the page.
 
 [#install-the-peopleware-app]
 == Install the Peopleware app
 Peopleware can only receive data from Freshdesk Contact Center when you set up the Peopleware Freshcaller app in your Freshworks account:
 
-1. In the **Install the Peopleware app** section, generate and copy the **Peopleware API key**.
-2. Set up the app in the [Freshworks marketplace](https://www.freshworks.com/apps/injixo_1/).
+1. In the *Install the Peopleware app* section, generate and copy the *Peopleware API key*.
+2. Set up the app in the link:https://www.freshworks.com/apps/injixo_1/[Freshworks marketplace].
 3. In the Peopleware app installation page, paste the copied API key.
-4. To import data in real time, check the **Export real-time agent status data** checkbox in the app installation page of the Freshworks marketplace.
+4. To import data in real time, check the *Export real-time agent status data* checkbox in the app installation page of the Freshworks marketplace.
 
 After you have installed the app, you can see new queues in your workloads and Forecast and xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map external identifiers] to your people in Peopleware.
 
@@ -72,6 +72,6 @@ For calls that have no group in Freshdesk Contact Center, the queue name is Unde
 |===
 |Question
 |Answer
-|Suddenly, Peopleware stops displaying new Freshdesk Contact Center data but the page in **Account > Integrations** still shows the status Operational for my Freshdesk Contact Center integration. What can I do?
+|Suddenly, Peopleware stops displaying new Freshdesk Contact Center data but the page in *Account > Integrations* still shows the status Operational for my Freshdesk Contact Center integration. What can I do?
 |The Peopleware app gets Freshdesk Contact Center data and sends events to Peopleware. In the event of communication errors between the Peopleware app and Peopleware, Freshdesk Contact Center data may no longer be displayed. The Freshdesk Contact Center integration cannot detect such communication errors . + +Check that the Peopleware API key you entered when setting up the Peopleware app in your Freshdesk Contact Center account is still valid. If the API key is invalid, update the Peopleware API key on the Peopleware app installation page. If the API key is still valid, contact our support team.
 |===

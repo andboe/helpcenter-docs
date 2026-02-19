@@ -61,7 +61,7 @@ Operators define how values are matched. Available operators depend on the selec
 |Excludes partial matches using a xref:#wildcard-characters[wildcard] search
 |===
 
-Some fields, like **Planning Unit**, **Employee Category**, or **Skill**, support **Priority** or **Skill level** filtering using relational operators:
+Some fields, like *Planning Unit*, *Employee Category*, or *Skill*, support *Priority* or *Skill level* filtering using relational operators:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -83,7 +83,7 @@ Some fields, like **Planning Unit**, **Employee Category**, or **Skill**, suppor
 
 [#wildcard-characters]
 === Wildcard characters
-Wildcard characters match partial values when using **Is like** or **Is not like** operators. You can use them to find variations in spelling or structure.
+Wildcard characters match partial values when using *Is like* or *Is not like* operators. You can use them to find variations in spelling or structure.
 
 [%header, cols="1a,1a,1a,1a,".rstrip(',')]
 |===
@@ -117,12 +117,12 @@ Wildcard support depends on the selected field. Always test your filter to ensur
 
 [#groups]
 == Groups
-A group combines multiple criteria. Every group applies logical operators (**AND** or **OR**) to its criteria.
+A group combines multiple criteria. Every group applies logical operators (*AND* or *OR*) to its criteria.
 
-- Use **AND** when the list of people should match all criteria in the group.
-- Use **OR** when the list of people should match at least one of the criteria in the group.
+- Use *AND* when the list of people should match all criteria in the group.
+- Use *OR* when the list of people should match at least one of the criteria in the group.
 
-To exclude all people who match the criteria combined in a group, check **NOT**.
+To exclude all people who match the criteria combined in a group, check *NOT*.
 
 Example:
 
@@ -146,9 +146,9 @@ Use OR to include people who match at least one group.
 == Time frames
 Filters can be time-bound using one of the following time frame types:
 
-- **Relative**: Dynamic period like "next month" or "previous week"
-- **Custom**: Custom start and end date
-- **Contextual**: The time period adjusts depending on where you use the filter:
+- *Relative*: Dynamic period like "next month" or "previous week"
+- *Custom*: Custom start and end date
+- *Contextual*: The time period adjusts depending on where you use the filter:
   - In {bc-people}: Automatically uses the current day.
   - In menu:WFM[Monitoring>Reports], {bc-plan-shift-center} and {bc-plan-schedules}: Uses the date range currently applied.
 
@@ -156,9 +156,9 @@ Filters can be time-bound using one of the following time frame types:
 == Example filter
 To include:
 
-- All people in the **New York** planning unit
-- Who do **not** have a **Full Time 40h** contract
-- And are **not** part of the **Extra Hours** selection
+- All people in the *New York* planning unit
+- Who do *not* have a *Full Time 40h* contract
+- And are *not* part of the *Extra Hours* selection
 
 The correct filter structure would be:
 

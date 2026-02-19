@@ -54,7 +54,7 @@ This way, assignments can be tailored to match scenarios such as:
 
 If the new assignment overlaps with or completely covers the validity period of an existing assignment, the validity period of the existing assignment is automatically adjusted or terminated to accommodate the new assignment.
 
-**Example:**
+*Example:*
 
 A number of people are assigned to planning unit Hamburg.
 Due to external factors, every member of that planning unit needs to be reassigned to planning unit Berlin for a few months.
@@ -92,53 +92,58 @@ For most object types supported by the mass update feature, the Add action by de
 For example, consider an Add action that assigns the Berlin planning unit to Person A and Person B from 1 Jan to 31 Dec.
 With the default settings, the results are:
 
-**Person A**
+*Person A*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Planning unit<br>(before)
-|Planning Unit<br>(after)
+|Planning unit +
+(before)
+|Planning Unit +
+(after)
 |1 Jan to 31 Mar
 |Hamburg
 |Hamburg
 |1 Apr to 31 Aug
 |_no assignment_
-|**Berlin**
+|*Berlin*
 |1 Sep to 31 Dec
 |Hamburg
 |Hamburg
 |===
 
-**Person B**
+*Person B*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Planning unit<br>(before)
-|Planning Unit<br>(after)
+|Planning unit +
+(before)
+|Planning Unit +
+(after)
 |1 Jan to 31 Mar
 |_no assignment_
-|**Berlin**
+|*Berlin*
 |1 Apr to 31 Aug
 |Munich
 |Munich
 |1 Sep to 31 Dec
 |_no assignment_
-|**Berlin**
+|*Berlin*
 |===
 
 As an alternative, the Add action can be set up to overwrite existing assignments.
 In this case, the Add action would yield the following planning unit assignment:
 
-**Person A and Person B**
+*Person A and Person B*
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Planning unit<br>(after)
-|**1 Jan to 31 Dec**
-|**Berlin**
+|Planning unit +
+(after)
+|*1 Jan to 31 Dec*
+|*Berlin*
 |===
 
 Note that overwriting existing assignments with the Add action affects all assignments in the period specified for the mass update.
@@ -150,34 +155,38 @@ The Replace action by default only affects the selected assignments.
 For example, consider a Replace action that in the period from 1 Jan to 31 Dec replaces the full-time contracts assigned to Person A and Person B with the part-time contract.
 With the default settings, the results are:
 
-**Person A**
+*Person A*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Contract<br>(before)
-|Contract<br>(after)
+|Contract +
+(before)
+|Contract +
+(after)
 |1 Jan to 31 Aug
 |_no assignment_
 |_no assignment_
 |1 Sep to 31 Dec
 |Full-time
-|**Part-time**
+|*Part-time*
 |===
 
-**Person B**
+*Person B*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Contract<br>(before)
-|Contract<br>(after)
+|Contract +
+(before)
+|Contract +
+(after)
 |1 Jan to 31 Mar
 |Temporary
 |Temporary
 |1 Apr to 31 Aug
 |Full-time
-|**Part-time**
+|*Part-time*
 |1 Sep to 31 Dec
 |_no assignment_
 |_no assignment_
@@ -186,35 +195,39 @@ With the default settings, the results are:
 For some object types, the Replace action can be set up to also add the new assignments to periods with no object assignment.
 In this case, the Replace action would yield the following contract assignments:
 
-**Person A**
+*Person A*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Contract<br>(before)
-|Contract<br>(after)
+|Contract +
+(before)
+|Contract +
+(after)
 |1 Jan to 31 Aug
 |_no assignment_
-|**Part-time**
+|*Part-time*
 |1 Sep to 31 Dec
 |Full-time
-|**Part-time**
+|*Part-time*
 |===
 
-**Person B**
+*Person B*
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Assignment period
-|Contract<br>(before)
-|Contract<br>(after)
+|Contract +
+(before)
+|Contract +
+(after)
 |1 Jan to 31 Mar
 |Temporary
 |Temporary
 |1 Apr to 31 Aug
 |Full-time
-|**Part-time**
+|*Part-time*
 |1 Sep to 31 Dec
 |_no assignment_
-|**Part-time**
+|*Part-time*
 |===

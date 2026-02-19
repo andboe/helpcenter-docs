@@ -43,7 +43,7 @@ Depending on the action you want to perform, your role needs to have the followi
 Some types of assignments, such as roles or planning units, may be subject to additional object permissions.
 In this case, you can only mass update assignments of objects that your role has edit permissions for.
 
-To check job result reports of a mass update, your role needs to have **Access to job status** permissions in menu:Account[Roles>Job Status].
+To check job result reports of a mass update, your role needs to have *Access to job status* permissions in menu:Account[Roles>Job Status].
 
 [#steps]
 == Steps
@@ -51,11 +51,11 @@ To check job result reports of a mass update, your role needs to have **Access t
 === Perform mass update
 1. Go to {bc-people-overview}
 2. In the People table, activate the checkbox of every person you want to edit assignments for. The page displays a toolbar above the table.
-3. In the toolbar, click **Mass update**. Peopleware opens the **Mass update** page, which includes a section menu for every object assignment you can edit.
+3. In the toolbar, click *Mass update*. Peopleware opens the *Mass update* page, which includes a section menu for every object assignment you can edit.
 4. In the menu, click the item to display all the mass update actions available for the object type.
 5. Click an action of your choice. Peopleware opens the action's configuration page.
 6. Configure the action as needed. For an overview of all mass update settings, see xref:people:ref-mass-update-settings.adoc[Mass update settings].
-7. Click **Apply**.
+7. Click *Apply*.
 
 Peopleware triggers a job that applies the changes to all selected people.
 In cases where a mass update would lead to inconsistent or nonsensical assignments, the job skips the update for individual persons or assignments.
@@ -65,9 +65,9 @@ For a detailed overview of the mass update results, including information on fai
 === Check the results of a mass update
 1. In the navigation bar, click the {icon-context-menu} *Job Status*.
 2. In the job table, find your mass update job.
-   To make finding the job easier, apply the **User** filter option and click the **Submitted** column header to sort the table by date.
+   To make finding the job easier, apply the *User* filter option and click the *Submitted* column header to sort the table by date.
 3. Make sure the job's progress is 100 % before proceeding with the next step.
-4. In the **Result** column, click **Show result**. Peopleware opens the job's results report.
+4. In the *Result* column, click *Show result*. Peopleware opens the job's results report.
 5. Check the report to make sure all the changes were applied as intended.
 
 The report states the reason for every instance where the changes could not be applied.

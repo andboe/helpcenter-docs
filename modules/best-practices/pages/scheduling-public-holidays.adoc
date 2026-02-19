@@ -25,11 +25,11 @@ If your contact center is open on a public holiday, but has different business h
 1. Create a xref:administration:configure-planning-calendars.adoc[Planning calendar].
 2. Add all relevant public holidays. If your planning unit is closed on weekends, do not add any holidays on weekends.
 3. Assign the Planning calendar xref:administration:create-and-manage-planning-units.adoc[to your planning unit].
-4. In the **Business Hours** section of the planning unit, add the public holidays.
-5. In the **From** and **To** fields, enter the business hours for each day.  
+4. In the *Business Hours* section of the planning unit, add the public holidays.
+5. In the *From* and *To* fields, enter the business hours for each day.  
    On public holidays, Peopleware only generates staff requirements and schedule people within the business hours. Other days will not be affected.
 
-Note: Scheduling rule *2631* **Do not schedule on holidays** checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
+Note: Scheduling rule *2631* *Do not schedule on holidays* checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
 
 [TIP]
 ====
@@ -45,10 +45,10 @@ If you use the planning calendar and holiday mode, but your planning unit is clo
 If your planning unit is closed on public holidays, schedule a paid full-day activity of type Absence to prevent the creation of a schedule for such days:
 
 1. Create an activity of type Absence, such as Public Holiday.
-2. Check the checkboxes **Paid** and **Allow as Full-Day Activity**.
+2. Check the checkboxes *Paid* and *Allow as Full-Day Activity*.
 3. Assign the activity to your planning unit.
 4. Schedule the Public Holiday activity for all employees on public holidays.  
-   Tip: To add the activity, you can use the **Employee** tab in the dialog in Shift Center. Learn more about xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-activities-day-models-availabilities-or-comments-to-multiple-people[adding multiple items at once].
+   Tip: To add the activity, you can use the *Employee* tab in the dialog in Shift Center. Learn more about xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-activities-day-models-availabilities-or-comments-to-multiple-people[adding multiple items at once].
 
 The target working time for these days is determined as follows:
 
@@ -73,7 +73,7 @@ Public holidays reduce the working hours per week and using a planning calendar 
 - Working time per week of 40 hours over five days
 - Minimum and target working time per day of eight hours
 
-With one public holiday in a week, the schedule can only include four working days with eight hours each. **Create optimized schedules** cannot schedule people where the contractual minimum working hours (of 40 hours) per week cannot be met. Even if the minimum number of four working days could be adhered to, no schedule will be created.
+With one public holiday in a week, the schedule can only include four working days with eight hours each. *Create optimized schedules* cannot schedule people where the contractual minimum working hours (of 40 hours) per week cannot be met. Even if the minimum number of four working days could be adhered to, no schedule will be created.
 
 Calculation example for the above contract:
 
@@ -84,7 +84,7 @@ To create a schedule, you would need to lower the values for the minimum working
 
 To avoid the need to change contracts on a regular basis, better use the paid full-day absence activities described above.
 
-Note: If the contractual working time is defined in the **Working hours for each day of the week** section, use a paid full-day absence. Otherwise, optimized scheduling cannot create a schedule for such contracts. On the one hand, optimization must schedule a certain number of working hours on certain days, and on the other hand, there are no opening hours on one of these days.
+Note: If the contractual working time is defined in the *Working hours for each day of the week* section, use a paid full-day absence. Otherwise, optimized scheduling cannot create a schedule for such contracts. On the one hand, optimization must schedule a certain number of working hours on certain days, and on the other hand, there are no opening hours on one of these days.
 
 [#visualize-public-holidays-shift-center]
 == Visualize public holidays (Shift Center)

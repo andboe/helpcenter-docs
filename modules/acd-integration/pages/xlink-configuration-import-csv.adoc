@@ -166,7 +166,7 @@ It is best to proceed as follows:
 4. Restart the 'ISPS XLink' service to apply the changes.
 5. Open the Xlink interface 'isps_ul.exe' again.
 
-A tree structure should now appear in the part of the user interface. This is generated from groups and the configured column positions. Start now to create the mapping<!--link ? -->, which is necessary for the first import.
+A tree structure should now appear in the part of the user interface. This is generated from groups and the configured column positions. Start now to create the mapping, which is necessary for the first import.
 
 [#import-of-agent-status-data]
 == Import of agent status data

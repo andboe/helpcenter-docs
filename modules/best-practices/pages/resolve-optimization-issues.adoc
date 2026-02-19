@@ -16,9 +16,9 @@ Use the scheduling report to check the optimization result and to get an idea on
 
 You can find the scheduling report based on your WFM version:
 
-- **Advanced WFM and Enterprise WFM**: Access reports in xref:general:jobstatus.adoc[Job status].
-- **Classic**: Access reports in xref:general:jobstatus.adoc[Job status] and under {bc-wfm-scheduling-schedulepro-optimization}.
-- **Enterprise On-Premise**: The report is shown automatically after saving the schedule in the Auto Scheduler.
+- *Advanced WFM and Enterprise WFM*: Access reports in xref:general:jobstatus.adoc[Job status].
+- *Classic*: Access reports in xref:general:jobstatus.adoc[Job status] and under {bc-wfm-scheduling-schedulepro-optimization}.
+- *Enterprise On-Premise*: The report is shown automatically after saving the schedule in the Auto Scheduler.
 
 [#text-colors-in-the-scheduling-report]
 === Text colors in the Scheduling report
@@ -35,7 +35,7 @@ You can find the scheduling report based on your WFM version:
 == Analyze issues in the message window in Shift Center
 If a day model was not assigned, or an employee was left out from schedule optimization, you can use the message window in Shift Center to find the underlying cause:
 
-1. Press **CTRL + K** to open the Shift Center message window at the bottom of the screen.
+1. Press *CTRL + K* to open the Shift Center message window at the bottom of the screen.
 2. In the schedule window at the top, insert the day model that has been left out of Schedule optimization according to the Scheduling report. A pop-up or message in the message window may appear showing which rule prevents the shift from being added. In many cases, this is also the rule that has prevented the addition of the day model during the automatic scheduling process.
 
 Note: The automatic schedule generation may work differently than the manual insertion of shifts as the xref:administration:create-contracts.adoc[scheduling rule configuration] can differ per user.
@@ -50,15 +50,15 @@ Scheduling errors often relate to your configuration. Check the following settin
 === People settings
 Go to {bc-people} and select the person whose settings you want to check:
 
-- In the **Staff membership** section under **Work profile**, make sure there is a currently valid staff membership.
-- In the **Suitable activities** section under **Work profile**, check that the correct activities are listed. Otherwise, add further skills to the person in the **Skill levels** section. The suitable activities are updated automatically.
-- Under **Planning**, go to the **Day models** section and check if there are personal day models added to the person. These limit the optimization to only using those day models for the person. Remove personal day models from the person to let the optimization use all day models assigned to their planning unit.
-- In the **Availability** section under **Work profile**, make sure that the available day models fit the personal restrictions configured here.
-- Under **Planning**, go to the **General** section and make sure that the checkbox **Include the person in scheduling** is checked.
+- In the *Staff membership* section under *Work profile*, make sure there is a currently valid staff membership.
+- In the *Suitable activities* section under *Work profile*, check that the correct activities are listed. Otherwise, add further skills to the person in the *Skill levels* section. The suitable activities are updated automatically.
+- Under *Planning*, go to the *Day models* section and check if there are personal day models added to the person. These limit the optimization to only using those day models for the person. Remove personal day models from the person to let the optimization use all day models assigned to their planning unit.
+- In the *Availability* section under *Work profile*, make sure that the available day models fit the personal restrictions configured here.
+- Under *Planning*, go to the *General* section and make sure that the checkbox *Include the person in scheduling* is checked.
 
 [#contract-and-day-model-settings]
 === Contract and day model settings
-- Assign all day models to your planning unit by adding **[All]** to the **Day Models** section of the planning unit.
+- Assign all day models to your planning unit by adding *[All]* to the *Day Models* section of the planning unit.
 - Make sure that you have calculated and saved xref:forecast:task-set-up-staff-requirement-calculation.adoc[staff requirements] for the activity you want to schedule.
 - Check if you have created the right xref:administration:daymodel-creation.adoc[day models]. Their length must suit the work time guidelines defined in the xref:administration:create-contracts.adoc[contract]. Day models specify a gross total working time, while contracts only count net working time. To get the correct net working time, you may need to subtract breaks or other unpaid activities from the gross working time.
 - Check other contract parameters.
@@ -82,41 +82,58 @@ Changes to scheduling rules are complex and can result in scheduling errors if d
 
 [#resolve-common-error-messages]
 == Resolve common error messages
-- **The employee does not have a valid contract.**<br>Make sure the right contract has been assigned to the employee and that the contract has been configured properly.<br><br>
-
-- **No shifts available that comply with this contract.**<br>After reading the day models assigned to the planning unit to be optimized, no suitable shifts or shift combinations are left that meet the auto-scheduling requirements. Usually, this is due to one of the following reasons:
+- *The employee does not have a valid contract.* +
+Make sure the right contract has been assigned to the employee and that the contract has been configured properly. +
+ +
+- *No shifts available that comply with this contract.* +
+After reading the day models assigned to the planning unit to be optimized, no suitable shifts or shift combinations are left that meet the auto-scheduling requirements. Usually, this is due to one of the following reasons:
   - Day models contain an unpaid activity of type Presence. If you need unpaid activities, recreate the day models and use a type other than Presence.
   - Day models contain activities of type Presence that are not plannable.
-  - Day models contain one or more paid and plannable activities of type Presence, but no staff requirements are specified. To resolve this, specify staff requirements or activate the **Allow overstaffing if staff requirements are zero** option. This is not necessary for the default activity Present.
+  - Day models contain one or more paid and plannable activities of type Presence, but no staff requirements are specified. To resolve this, specify staff requirements or activate the *Allow overstaffing if staff requirements are zero* option. This is not necessary for the default activity Present.
   - The length of day models or availabilities does not match the work time guidelines specified for a person's contract.
-  - Day models contain activities that require a skill that no one has.<br><br>
-
-- **The number of working days per week cannot be met.**<br>The message often appears if all previous checks fail. Any combination of the existing day models cannot meet the contractual working hours. Reasons can be prescheduled days within the week, shifts conflicting with a person's configured availability, or a day model that has not been assigned to the planning unit or week time patterns (if the non-scheduled person has a work time pattern model assigned). Day models must have the correct gross duration (unpaid breaks reduce it) and fit in with the planning unit's business hours. The Present activity must always be paid.<br><br>
-
-- **The employee is locked from scheduling or is not yet/no longer part of the company.**<br>Check if the employee is barred from scheduling in the **Barred From Scheduling** section in the employee settings. Also, check that the leave date in the **Staff Membership** section is not in the past.<br><br>
-
-- **Shift distribution is not activated.**<br>In the **Schedule exclusion** section of the **Planning** tab, make sure the checkbox **Include the person in scheduling** is checked.<br><br>
-
-- **The existing scheduling content cannot be optimised.**<br>Check if there are pre-scheduled activities in the employee's schedule which could block the automatic scheduling.<br><br>
-
-- **This day is a holiday that does not allow the placing of activities or shifts.**<br>Deactivate the holiday mode in the settings of the respective xref:administration:day-types.adoc[day type] or remove the day from the planning calendar, if you want to schedule your employees to work during a public holiday.<br><br>
-
-- **The employee was given a scheduling model with no week models.**<br>Check the employee's work time pattern model. Assign at least one xref:administration:work-time-pattern-models.adoc[week time pattern].<br><br>
-
-- **The day cannot be scheduled due to an existing full-day activity.**<br>Typically just a warning. The employee has a _Day Off_, _Vacation_ or another unpaid full-day activity in their schedule.<br><br>
-
-- **The contract does not contain a value that would guarantee the week working hours.**<br>Weekly working hours and available day models must fit together. The employee must be able to meet their weekly working hours using the day models assigned to the planning unit and the number of working days in the employee's contract. Normally you can just multiply the net working hours for the day model by the maximum working days per week in the contract.<br><br>
-
-- **You are not allowed to enter an incomplete specification of the working hours for each day of the week.**<br>If you use Working hours for each day of the week in the contract, enter a value for each day. Use 00:00 for days on which the employee should not work.<br><br>
-
-- **The weekly working hours do not allow keeping the quota of minimum or maximum weekly working hours.**<br>Adjust the Working hours for each day of the week or the minimum or maximum work time per week in the employee's contract.<br><br>
-
-- **One or more days cannot be scheduled due to there being no shifts with the necessary duration.**<br>Check the expected shift lengths in the contract. Create another day model that corresponds to the needed duration.<br><br> <!-- net vs. gros times? -->
-
-- **No valid target working hours have been defined.**<br>Define valid target working times in the employee's contract.<br><br>
-
-- **The maximum number of successive working days (not limited to the days within a week) has not been specified in the contract.**<br>Check the contract and adjust the scheduling rule *2624* Max. consecutive working days.<br><br>
-
-- **The free time between shifts cannot be observed.**<br>Free time refers to the rest period between two shifts. Check the contract and adjust the value of the scheduling rule *2601* Rest between two workdays.<br><br>
-
-- **Errors occurred while checking the initial data. The optimization process has been stopped. Reason: The planning units cannot be read.**<br> You have permissions for the planning unit you are trying to optimize, but the planning unit may be part of a hierarchy where a parent planning unit is not accessible to you. Add at least read permissions for all planning units in the hierarchy.
+  - Day models contain activities that require a skill that no one has. +
+ +
+- *The number of working days per week cannot be met.* +
+The message often appears if all previous checks fail. Any combination of the existing day models cannot meet the contractual working hours. Reasons can be prescheduled days within the week, shifts conflicting with a person's configured availability, or a day model that has not been assigned to the planning unit or week time patterns (if the non-scheduled person has a work time pattern model assigned). Day models must have the correct gross duration (unpaid breaks reduce it) and fit in with the planning unit's business hours. The Present activity must always be paid. +
+ +
+- *The employee is locked from scheduling or is not yet/no longer part of the company.* +
+Check if the employee is barred from scheduling in the *Barred From Scheduling* section in the employee settings. Also, check that the leave date in the *Staff Membership* section is not in the past. +
+ +
+- *Shift distribution is not activated.* +
+In the *Schedule exclusion* section of the *Planning* tab, make sure the checkbox *Include the person in scheduling* is checked. +
+ +
+- *The existing scheduling content cannot be optimised.* +
+Check if there are pre-scheduled activities in the employee's schedule which could block the automatic scheduling. +
+ +
+- *This day is a holiday that does not allow the placing of activities or shifts.* +
+Deactivate the holiday mode in the settings of the respective xref:administration:day-types.adoc[day type] or remove the day from the planning calendar, if you want to schedule your employees to work during a public holiday. +
+ +
+- *The employee was given a scheduling model with no week models.* +
+Check the employee's work time pattern model. Assign at least one xref:administration:work-time-pattern-models.adoc[week time pattern]. +
+ +
+- *The day cannot be scheduled due to an existing full-day activity.* +
+Typically just a warning. The employee has a _Day Off_, _Vacation_ or another unpaid full-day activity in their schedule. +
+ +
+- *The contract does not contain a value that would guarantee the week working hours.* +
+Weekly working hours and available day models must fit together. The employee must be able to meet their weekly working hours using the day models assigned to the planning unit and the number of working days in the employee's contract. Normally you can just multiply the net working hours for the day model by the maximum working days per week in the contract. +
+ +
+- *You are not allowed to enter an incomplete specification of the working hours for each day of the week.* +
+If you use Working hours for each day of the week in the contract, enter a value for each day. Use 00:00 for days on which the employee should not work. +
+ +
+- *The weekly working hours do not allow keeping the quota of minimum or maximum weekly working hours.* +
+Adjust the Working hours for each day of the week or the minimum or maximum work time per week in the employee's contract. +
+ +
+- *One or more days cannot be scheduled due to there being no shifts with the necessary duration.* +
+Check the expected shift lengths in the contract. Create another day model that corresponds to the needed duration. +
+ +
+- *No valid target working hours have been defined.* +
+Define valid target working times in the employee's contract. +
+ +
+- *The maximum number of successive working days (not limited to the days within a week) has not been specified in the contract.* +
+Check the contract and adjust the scheduling rule *2624* Max. consecutive working days. +
+ +
+- *The free time between shifts cannot be observed.* +
+Free time refers to the rest period between two shifts. Check the contract and adjust the value of the scheduling rule *2601* Rest between two workdays. +
+ +
+- *Errors occurred while checking the initial data. The optimization process has been stopped. Reason: The planning units cannot be read.* +
+You have permissions for the planning unit you are trying to optimize, but the planning unit may be part of a hierarchy where a parent planning unit is not accessible to you. Add at least read permissions for all planning units in the hierarchy.

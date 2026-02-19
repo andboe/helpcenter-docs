@@ -20,15 +20,15 @@ Manual imports do not need an active Cloud Link or SFTP connection.
 - The CSV file does not exceed the following limits:
   - File size: 10 MB
   - Number of rows: 20000
-- Your role has the **Configure Integrations** permission.
+- Your role has the *Configure Integrations* permission.
 
 [#steps]
 == Steps
 1. Go to {bc-account-integrations}
-2. In the **Current integrations** overview, find the CSV integration entry you want to use for the upload.
+2. In the *Current integrations* overview, find the CSV integration entry you want to use for the upload.
 3. Click the {icon-edit} Edit icon. Peopleware opens the integration's details page.
-4. Go to the **Manually upload data** section.
-5. Click btn:[Upload CSV]. Peopleware opens the **CSV Upload** window.
+4. Go to the *Manually upload data* section.
+5. Click btn:[Upload CSV]. Peopleware opens the *CSV Upload* window.
 6. If necessary, change the CSV schema to match your CSV import file. By default, Peopleware selects the CSV schema assigned to the CSV integration.
 7. Use the upload facility to submit the CSV import file.
 8. Click btn:[Import].

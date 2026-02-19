@@ -27,7 +27,7 @@ To see the results of reports created by other users, your role needs the follow
 [#see-a-description-of-each-report]
 == See a description of each report
 1. Go to menu:Analyze[Reports].
-2. Hover over the report description in the **Reports** section.
+2. Hover over the report description in the *Reports* section.
 
 [#create-reports]
 == Create reports
@@ -41,12 +41,12 @@ To see the results of reports created by other users, your role needs the follow
 6. Select a report.
 7. Click btn:[Create report].
 
-In the **Create report** window that opens, select a xref:reporting:ref-reports.adoc#settings[level] and the xref:reporting:ref-reports.adoc#format-delivery[delivery format].
+In the *Create report* window that opens, select a xref:reporting:ref-reports.adoc#settings[level] and the xref:reporting:ref-reports.adoc#format-delivery[delivery format].
 
 [#view-generated-reports]
 == View generated reports
 1. In the navigation bar, click the {icon-jobstatus} Job Status icon.
 2. Find the job matching the report you want to display.
-3. In the **Result** column, click **Show result**.
+3. In the *Result* column, click *Show result*.
 
 Peopleware displays the generated report in a new tab.

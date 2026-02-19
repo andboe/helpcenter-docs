@@ -52,7 +52,7 @@ To inform people by email about the fact that they can request time-off in a tim
 1. Go to menu:Time Off[Periods].
 2. Select an existing time-off period or create a new one.
 3. Make sure the status of the time-off period is set to Published.
-4. Activate the **Send notification** checkbox.
+4. Activate the *Send notification* checkbox.
 5. Optional: Enter a comment. The comment will be included in the notification email.
 6. {btn-save}
 
@@ -73,7 +73,7 @@ Peopleware clears the notification settings, including the comment, after saving
 
 The table shows information for all time-off periods that match the filter criteria.
 
-The time-off periods marked with {icon-info-circle} **Inherited** are time-off periods created for a parent planning unit.
+The time-off periods marked with {icon-info-circle} *Inherited* are time-off periods created for a parent planning unit.
 All child planning units inherit the time-off period and the column shows the name of the relevant parent planning unit.
 
 To sort a column, click the table header. To reverse the sorting order, click again.

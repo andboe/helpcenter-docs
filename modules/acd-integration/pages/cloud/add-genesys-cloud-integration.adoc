@@ -16,18 +16,19 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 1. Go to {bc-account-integrations}.
 2. {btn-create}
 3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
-4. From the **External system** drop-down menu, select **Genesys**.
-5. From the **Model name** drop-down menu, select **Genesys Cloud**.
+4. From the *External system* drop-down menu, select *Genesys*.
+5. From the *Model name* drop-down menu, select *Genesys Cloud*.
 6. {btn-save}
 
 [#set-up-your-genesys-cloud-integration]
 == Set up your Genesys Cloud integration
-1. In the **Credentials** section, copy and paste your Genesys Cloud OAuth client_id and client_secret.<br>The following permissions are required in Genesys Cloud: "analytics:userDetail:view", "analytics:userObservation:view", "analytics:conversationAggregate:view", "analytics:conversationDetail:view","presence:presenceDefinition:view", and "routing:queue:view".
-2. In the **Configuration** section, set up your integration:
-   - **Account region**: Select the region of your Genesys Cloud account.
-   - **Import detailed on-queue agent statuses**: Check the checkbox if you want to differentiate between the different agent statuses summarized under on-queue, e.g. communication, interacting, idle, not responding.
+1. In the *Credentials* section, copy and paste your Genesys Cloud OAuth client_id and client_secret. +
+The following permissions are required in Genesys Cloud: "analytics:userDetail:view", "analytics:userObservation:view", "analytics:conversationAggregate:view", "analytics:conversationDetail:view","presence:presenceDefinition:view", and "routing:queue:view".
+2. In the *Configuration* section, set up your integration:
+   - *Account region*: Select the region of your Genesys Cloud account.
+   - *Import detailed on-queue agent statuses*: Check the checkbox if you want to differentiate between the different agent statuses summarized under on-queue, e.g. communication, interacting, idle, not responding.
 
-3. In the **AHT Metrics** section, select the AHT data type that you want to import for each channel. For details, see xref:#aht-metrics[AHT metrics].
+3. In the *AHT Metrics* section, select the AHT data type that you want to import for each channel. For details, see xref:#aht-metrics[AHT metrics].
 4. {btn-save}
 
 [#aht-metrics]

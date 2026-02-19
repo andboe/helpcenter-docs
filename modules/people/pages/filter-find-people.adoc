@@ -43,4 +43,4 @@ To use an advanced filter, go to {bc-people} and proceed as follows:
 
 The list updates automatically.
 To clear the filter, click btn:[{icon-circle-xmark}].
-To edit your advanced filters, click **Manage advanced filter** in the advanced filter dropdown.
+To edit your advanced filters, click *Manage advanced filter* in the advanced filter dropdown.
