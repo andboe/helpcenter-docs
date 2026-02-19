@@ -29,8 +29,8 @@ To configure if and to whom the report is sent by e-mail, select one of the foll
 == Email address
 In the **E-mail address** drop-down menu, you can specify the e-mail address to which the report is sent. The options are the following:
 
-- **Peopleware Login (Email)**: The e-mail address you entered in the **Basic information** section in menu:People[]
-- **E-mail 2**: The alternate e-mail address you entered in the **Contact data** section in menu:People[]
+- **Peopleware Login (Email)**: The e-mail address you entered in the **Basic information** section in {bc-people}
+- **E-mail 2**: The alternate e-mail address you entered in the **Contact data** section in {bc-people}
 - **Both**
 
 In Enterprise on-premise, the **Peopleware Login (Email)** field is named **E-Mail 1**.

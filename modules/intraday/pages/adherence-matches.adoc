@@ -22,15 +22,11 @@ Example: Your external system uses the following three statuses: waiting for cal
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Standard reports do not reflect matched activities but only consider the activity mapping.
 ====
 [#access-the-activity-matches-page]
 == Access Activity matches
-In menu:Intraday[Real-Time Adherence], there are three ways to access the **Activity matches** page:
+In {bc-intraday-real-time-adherence}, there are three ways to access the **Activity matches** page:
 
 - At the top right of the overview table, click the {icon-context-menu} and select **Activity matches**.
 - In the overview table, hover over an activity in the **Actual activity** column and click the {icon-matches} once it appears.
@@ -44,12 +40,12 @@ In menu:Intraday[Real-Time Adherence], there are three ways to access the **Acti
    You see the mapping and match information for that activity on the right of the page. Under **Actual activity** you see a list of all external statuses mapped to that activity, grouped by external system. Under **Scheduled activity** you see all matched activities and activity types, which are considered as being in adherence.
 3. Click btn:[{icon-edit} Manage activity matches] under **Scheduled activity**.
 4. Select the activities you want to match to the activity you are editing.
-5. Click btn:[Apply].
+5. {btn-apply}
 
 [#manage-mappings-of-external-statuses]
 === Manage mappings of external statuses
-To edit how external statuses are mapped to activities, click **Edit in Intraday** under **Actual activity**. Peopleware redirects you to menu:Intraday[Configuration], where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
-If you do not have access to menu:Intraday[Configuration], you are redirected to xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-wfm[external status mapping to activities in WFM].
+To edit how external statuses are mapped to activities, click **Edit in Intraday** under **Actual activity**. Peopleware redirects you to {bc-intraday-configuration}, where you can xref:intraday:map-external-status.adoc#remap-already-mapped-external-statuses[remap the external statuses].
+If you do not have access to {bc-intraday-configuration}, you are redirected to xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-wfm[external status mapping to activities in WFM].
 
 [#default-matches]
 === Matches configured by default

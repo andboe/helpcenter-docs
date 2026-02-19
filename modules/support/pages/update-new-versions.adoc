@@ -49,10 +49,6 @@ Unpack the zip file of the update in the *Server* folder in the directory where 
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 New Builds (> 9737) require the installation of the _Microsoft Visual C++ 2010 Redistributable Package (x64)_ ([Microsoft download](https://www.microsoft.com/en-us/download/details.aspx?id=26999)).
 ====
 [#start-the-services]

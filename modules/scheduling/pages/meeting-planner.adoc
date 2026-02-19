@@ -15,16 +15,12 @@ This article is about menu:WFM[Scheduling>SchedulePro>Meeting Planner].
 >
 [NOTE]
 ====
-If you are using Advanced WFM or Enterprise WFM, use the xref:scheduling:meetings-overview.adoc[Meetings] feature under menu:Plan[Meetings] instead.
+If you are using Advanced WFM or Enterprise WFM, use the xref:scheduling:meetings-overview.adoc[Meetings] feature under {bc-plan-meetings} instead.
 ====
 Using the meeting parameters that you define and the people you select, the page displays possible meeting times containing a certain activity. Select one or more of the meeting time suggestions and insert the meeting information in the _Schedule_ level of the *Shift Center*.
 
 The program tries to find potential meeting times that match the parameters you enter. To reflect the two different search criteria, the program window is divided into two parts: the Meeting Parameters and Employees sections.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Only Employees who are already scheduled for the period for which you want to schedule a meeting will be included in the search.
@@ -93,10 +89,6 @@ After setting the meeting parameters, select which employees should be considere
 |Select the end date for the period during which you want to check for a meeting that has been scheduled with the same activity.
 |===
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 You must select a minimum of one planning unit, selection or employee for the search as the simultaneous selection of `[All]` for all three fields is not permitted.

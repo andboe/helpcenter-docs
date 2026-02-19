@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to protect activities from being overwritten by other activities.
 :related-articles: activity-types-and-properties.adoc, importance-for-activities.adoc
 
-You can define a priority value for each activity in menu:Plan[Configuration>Activities].
+You can define a priority value for each activity in {bc-plan-config-activities}.
 The priority value defines which activities can be overwritten by other activities during manual schedule updates or job optimization.
 
 [#why-do-i-need-the-priority-value-for-activities]

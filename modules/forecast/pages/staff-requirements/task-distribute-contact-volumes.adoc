@@ -32,11 +32,11 @@ For verification, the calculation also adds two further formulas to the source q
 To use this feature, you need to create two virtual value types: one for the distribution percentage and one for distributed contacts.
 
 1.  Go to menu:Analyze[Configuration>Value types].
-2.  Click btn:[Create].
+2.  {btn-create}
 3.  Fill in the information:
     - **Name** and **Abbreviation**
     - **Aggregation type**: Select **Average** for the distribution percentage and **Sum** for distributed contacts.
-4.  Click btn:[Save].
+4.  {btn-save}
 
 [#assign-value-types-to-queues]
 === Assign value types to queues
@@ -46,7 +46,7 @@ Repeat this process for your source queue and each of your target queues:
 2.  Select the queue.
 3.  In the **Value types** section, click **+ Add**.
 4.  Select your distribution percentage and distributed contacts value types.
-5.  Click btn:[Save].
+5.  {btn-save}
 
 [#workflow]
 == Workflow
@@ -54,7 +54,7 @@ Repeat this process for your source queue and each of your target queues:
 === Save your forecast to a version
 This step saves a snapshot of your forecast data into a WFM queue, making it available for the script.
 
-1.  Go to menu:Forecast[Workloads].
+1.  Go to {bc-forecast-workloads}.
 2.  Select the workload you want to use.
 3.  From the three-dot menu {icon-context-menu}, select **Use forecast**. This automatically creates a queue named with a leading asterisk that the calculation will use as a data source.
 4.  From the **Select version** dropdown, select a version.
@@ -62,7 +62,7 @@ This step saves a snapshot of your forecast data into a WFM queue, making it ava
 
 [#run-the-calculation]
 === Run the calculation
-1.  Go to menu:Forecast[Requirement Calculations].
+1.  Go to {bc-forecast-requirement-calculations}.
 2.  Click on the Distribution - Contacts (time frames) calculation.
 3.  Fill in the **General parameter** section:
     - In the **Version** dropdown, make sure to select the forecast version you saved in the previous step. This version is used for the source, target, and distribution parameters.

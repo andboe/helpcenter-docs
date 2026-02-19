@@ -25,7 +25,7 @@ The CSV schema will only be available for manual CSV imports and CSV integration
 [#create-csv-schema-draft]
 === Create CSV schema draft
 1. Go to menu:Account[CSV Schemas]
-2. Click btn:[Create].
+2. {btn-create}
 3. Configure general and file processing settings as needed.
 4. Upload the CSV sample file.
 5. Click btn:[Save]
@@ -202,10 +202,6 @@ The relevant target fields depend on the schema type.
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Plan data CSV schemas are a paid feature. Get in touch with your Peopleware consultant for more information.
 ====
 [%header, cols="1a,1a,".rstrip(',')]
@@ -270,10 +266,6 @@ Consider SQL mapping in the following cases:
 
 SQL mapping allows you to add default values for missing columns, convert data using SQLite functions, or run calculations.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 See [sqlite.org](https://www.sqlite.org) for details and limitations on functions and conversions:

@@ -15,11 +15,11 @@ Shift bidding allows you to take part in the scheduling process by expressing yo
 - You have been given access to the shift bidding functionality by a user with Admin access.
 - A scheduling period with the status Shift bidding enabled has been created by your planner.
 
-For scheduling periods with the status Shift bidding enabled created by your planner, you will see a notification in the Notices section in menu:Me[Dashboard], and a banner in menu:Me[My Calendar].
+For scheduling periods with the status Shift bidding enabled created by your planner, you will see a notification in the Notices section in {bc-me-dashboard}, and a banner in {bc-me-calendar}.
 
 [#bid-on-shifts]
 == Bid on shifts
-1. In menu:Me[Dashboard], click btn:[Bid] in a shift bidding notification.  
+1. In {bc-me-dashboard}, click btn:[Bid] in a shift bidding notification.  
    A dialog window opens.
 2. Select a week from the drop-down menu, then a day.  
    You will see the available shifts for that day.

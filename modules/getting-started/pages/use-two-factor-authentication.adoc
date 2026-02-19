@@ -87,10 +87,6 @@ During the 2FA setup for your account, you receive 10 backup codes. If you don't
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Only log in with a backup code in case of an emergency. You can use each backup code only once. By default, you should always log in using an OTP.
 ====
 To log in with a backup code instead of an OTP, proceed as follows:
@@ -114,10 +110,6 @@ If you cannot deactivate 2FA yourself, ask a user with admin access to deactivat
 
 [#deactivate-2fa-for-your-account]
 == Deactivate 2FA for your account
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Deactivating 2FA is not recommended. If 2FA has been enforced on your account, you cannot deactivate it.

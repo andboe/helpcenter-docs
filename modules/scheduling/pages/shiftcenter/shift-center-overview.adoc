@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn what Shift Center is used for and how to customize the display of data.
 
-In menu:Plan[Shift Center], you can see and manage your *people*'s *shifts*.
+In {bc-plan-shift-center}, you can see and manage your *people*'s *shifts*.
 
 Use *Shift Center* to do the following:
 
@@ -45,12 +45,8 @@ On the right side of the action bar, select the period in which you want to see 
 1. Select a start date with the date picker.
 2. In the field next to the date picker, enter the number of time units (days, weeks, months, or years).
 3. Select a time unit from the drop-down menu. This affects xref:#day-week-month-and-year-columns[how the table in the schedule area shows schedules].
-4. Click btn:[Apply].
+4. {btn-apply}
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 You can enter up to 371 days, 53 weeks, 24 months, or 2 years.
@@ -79,10 +75,6 @@ Next to the *Level* column, you see the day, week, month, and year columns. The 
   The table displays expandable day columns that correspond to that week, month, or year, the xref:#contractual-time-actual-time-and-diff-columns[Contractual Time, Actual, and Diff. columns], and the xref:#time-account-column[Time Account column] at the right end.  
   To collapse the day columns, click the week, month, or year column's header.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Empty day cells can have two different background shades. The shade indicates if *business hours* are configured:
@@ -149,10 +141,6 @@ In the day columns, markers indicate *activities*, xref:administration:daymodel-
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 A gray day cell, *day model*, or *activity* means that the *person* is assigned to more than one *planning unit*, and the *day model* or *activity* is scheduled in another *planning unit*'s *schedule*.
 ====
 [#contractual-time-actual-time-and-diff-columns]
@@ -171,10 +159,6 @@ The following table provides an overview of the *Contractual Time*, *Actual Time
 |The difference between the values in the *Contractual Time* and the *Actual Time* columns
 |===
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Whenever your *schedules* change, the color of the numbers in the *Actual Time* and *Diff.* columns turn orange. The values in orange are not up to date. Update the values in your table as follows:

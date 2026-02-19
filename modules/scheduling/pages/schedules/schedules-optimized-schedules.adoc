@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn what an optimized schedule is, how to optimize your configuration, and how to create an optimized schedule.
 
-In menu:Plan[Schedules], you can use the **Create optimized schedule** functionality to automatically create a full schedule with the best possible coverage for all plannable activities. Your schedule is optimized based on your staff requirements and constraints, such as contracts, skills, and day models.
+In {bc-plan-schedules}, you can use the **Create optimized schedule** functionality to automatically create a full schedule with the best possible coverage for all plannable activities. Your schedule is optimized based on your staff requirements and constraints, such as contracts, skills, and day models.
 
 [#prerequisites]
 == Prerequisites
@@ -22,7 +22,7 @@ To produce the best results when optimizing your schedule, the above data should
 
 [#people-configuration]
 === People configuration
-In menu:Plan[Configuration>Employees], configure or check the configuration of your xref:administration:employee-overview.adoc[people]. The optimization takes the following data into account:
+In {bc-plan-config-employees}, configure or check the configuration of your xref:administration:employee-overview.adoc[people]. The optimization takes the following data into account:
 
 - xref:administration:employee-overview.adoc#other-settings[Staff membership]
 - xref:administration:create-contracts.adoc[Contracts]
@@ -41,7 +41,7 @@ In menu:Plan[Configuration>Contracts], configure or check the configuration of y
 
 [#activities-configuration]
 === Activities configuration
-In menu:Plan[Configuration>Activities], configure or check the configuration of your xref:administration:activities.adoc[activities]. The optimization takes the following data into account:
+In {bc-plan-config-activities}, configure or check the configuration of your xref:administration:activities.adoc[activities]. The optimization takes the following data into account:
 
 - Plannable: Only the activities configured as Plannable are optimized.
 - Replaceable: Activities configured as Replaceable can be replaced during optimization.
@@ -59,7 +59,7 @@ During optimization, only the xref:administration:work-time-pattern-models.adoc[
 
 [#create-an-optimized-schedule]
 == Create an optimized schedule
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling actions] in the upper right.
 3. Click **Create optimized schedule** and configure the following elements:
    - Select the **Date range** for which you want to optimize the schedule. The date range is pre-filled with the date range currently selected in the Schedules page.
@@ -83,10 +83,6 @@ Optimization processes may take time. This depends on the number of people, the 
 
 Go to xref:general:jobstatus.adoc[Job status] to track the progress.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Setting minimum and maximum working hours per day in your contracts reduces the complexity and speeds up the optimization.

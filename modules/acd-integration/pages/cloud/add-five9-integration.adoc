@@ -19,10 +19,6 @@ If you are grouping your queues by skill, the integration needs a custom call lo
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Five9 distinguishes between lowercase and uppercase in folder and report names. Use the exact case for folder and report names as mentioned in the following steps.
 ====
 1. Create a new shared report folder named **Shared Reports (injixo)**.
@@ -33,11 +29,11 @@ For more detailed information on how to customize reports, refer to the Five9 He
 
 [#add-a-five9-integration]
 == Add a Five9 integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Five9**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-adp-integration]
 == Set up your Five9 integration
@@ -48,7 +44,7 @@ For more detailed information on how to customize reports, refer to the Five9 He
 2. In the **Configuration** section, enter the following information:
    - **Account region**: Select the region of your Five9 account.
    - **Group queues by**: Select how you want to group your queues. Note that skill-based grouping requires setting up a custom report in your Five9 account.
-3. Click btn:[Save].
+3. {btn-save}
 
 The integration starts importing data. The initial import can take up to 15 minutes. All queues from the connected system will automatically be available for mapping on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.
 

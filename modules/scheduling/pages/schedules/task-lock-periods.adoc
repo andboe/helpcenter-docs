@@ -41,7 +41,7 @@ Make sure that you have at least `Read` permissions for the relevant planning un
 [#lock-a-level-for-editing]
 === Lock a level for editing
 1. Go to menu:Plan[Configuration>Locked periods].
-2. Click btn:[Create].
+2. {btn-create}
 3. Select the following configuration data:
    - **Planning unit**:
      The planning unit for which you want to lock a level.
@@ -51,7 +51,7 @@ Make sure that you have at least `Read` permissions for the relevant planning un
      The date range of the level data that cannot be edited.
      Example:
      If you select the entire month of January, the level data cannot be edited for that period.
-4. Click btn:[Save].
+4. {btn-save}
 5. In the **Locked periods** overview page, click the contextual menu icon {icon-context-menu} next to the locked period you just created.
 6. Select {icon-lock} **Lock**.
 
@@ -59,10 +59,6 @@ Make sure that you have at least `Read` permissions for the relevant planning un
 === Copy and lock a level
 The **Copy and lock** option allows you to copy the data from the main scheduling level into a target level and lock the target level, creating a backup of your main scheduling level. In most cases, your main scheduling level is the **Schedule** level.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 You can only use the following as target levels:
@@ -78,7 +74,7 @@ You can only use the following as target levels:
 ====
 1. Go to menu:Plan[Configuration>Locked periods].
 2. Create a locked period. In the **Locked level** field, select the target level into which you want to copy the data from your main scheduling level.
-3. Click btn:[Save].
+3. {btn-save}
 4. In the **Locked periods** overview page, click the contextual menu icon {icon-context-menu} next to the locked period you just created.
 5. Select {icon-lock} **Copy and lock**.
    A confirmation window specifies your main scheduling level.

@@ -33,7 +33,7 @@ Alternatively, make the changes in the Xlink user interface:
 2. Click the external system you want to change on the left.
 3. Go to menu:Settings[ACD] in the menu bar, or right-click the selected external system and click **Configuration**.
 4. In the configuration dialog, change the ODBC information.
-5. Click btn:[OK].  
+5. {btn-ok}  
    The changes will be applied on the next import.
 
 [#is-a-new-mapping-required]

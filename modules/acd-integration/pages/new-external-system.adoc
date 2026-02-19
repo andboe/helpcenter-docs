@@ -31,4 +31,4 @@ The available Universal and CSV interface are more flexible, as you can define a
 3. Under _System Description_, select **CSV Files**, **Universal**, or a **specific interface** for your ACD.
 4. Enter a **Name** to identify the data source.
 5. Check the checkboxes **PhoneLink** (for call data) and **TimeLink** (for agent activity data). Not all interfaces support both options.
-6. Click btn:[OK].
+6. {btn-ok}

@@ -1,12 +1,59 @@
+// ACCOUNT MENU
 :bc-account-billing: menu:Account[Billing]
 :bc-account-integrations: menu:Account[Integrations]
 :bc-account-roles: menu:Account[Roles]
-:bc-analyze-configuration: menu:Analyze[Configuration > Queues]
-:bc-forecast-requirementcalculations: menu:Forecast[Requirement Calculations]
-:bc-forecast-workloads: menu:Forecast[Workloads]
-:bc-people: menu:People[]
+
+// PLAN MENU - Primary Navigation
 :bc-plan-schedules: menu:Plan[Schedules]
 :bc-plan-shift-center: menu:Plan[Shift Center]
+:bc-plan-time-off: menu:Plan[Time Off]
+:bc-plan-meetings: menu:Plan[Meetings]
+
+// PLAN CONFIGURATION SUBMENU
+:bc-plan-config-activities: menu:Plan[Configuration > Activities]
+:bc-plan-config-shift-sequences: menu:Plan[Configuration > Shift sequences]
+:bc-plan-config-planning-units: menu:Plan[Configuration > Planning units]
+:bc-plan-config-employees: menu:Plan[Configuration > Employees]
+:bc-plan-config-selections: menu:Plan[Configuration > Selections]
+
+// FORECAST MENU
+:bc-forecast-workloads: menu:Forecast[Workloads]
+:bc-forecast-requirement-calculations: menu:Forecast[Requirement calculations]
+
+// WFM MENU - Administration
 :bc-wfm-administration: menu:WFM[Administration]
-:bc-wfm-administration-system-roleauthorization: menu:WFM[Administration > System > Role authorization]
-:bc-wfm-administration-system-userauthorization: menu:WFM[Administration > System > User authorization]
+:bc-wfm-admin-system-roleauth: menu:WFM[Administration > System > Role authorization]
+:bc-wfm-admin-system-userauth: menu:WFM[Administration > System > User authorization]
+
+// WFM SCHEDULING SUBMENU
+:bc-wfm-scheduling-schedulepro: menu:WFM[Scheduling > SchedulePro]
+:bc-wfm-scheduling-schedulepro-periods: menu:WFM[Scheduling > SchedulePro > Planning Periods]
+:bc-wfm-scheduling-schedulepro-optimization: menu:WFM[Scheduling > SchedulePro > Optimization]
+
+// WFM MONITORING SUBMENU
+:bc-wfm-monitoring-reports: menu:WFM[Monitoring > Reports]
+
+// ANALYZE MENU
+:bc-analyze-dashboards: menu:Analyze[Dashboards]
+:bc-analyze-configuration-queues: menu:Analyze[Configuration > Queues]
+
+// PEOPLE MENU
+:bc-people: menu:People[]
+:bc-people-overview: menu:People[Overview]
+
+// TIME OFF MENU
+:bc-time-off-types: menu:Time Off[Types]
+:bc-time-off-requests: menu:Time Off[Requests]
+:bc-time-off-plan: menu:Time Off[Plan]
+
+// ME MENU
+:bc-me-availability: menu:Me[Availability]
+:bc-me-time-off: menu:Me[Time Off]
+:bc-me-time-recording: menu:Me[Time Recording]
+:bc-me-calendar: menu:Me[My Calendar]
+:bc-me-dashboard: menu:Me[Dashboard]
+
+// INTRADAY MENU
+:bc-intraday-configuration: menu:Intraday[Configuration]
+:bc-intraday-real-time-adherence: menu:Intraday[Real-Time Adherence]
+

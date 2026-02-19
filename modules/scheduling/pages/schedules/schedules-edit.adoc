@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to manage activities and shifts in your schedule.
 :page-aliases: schedules-history
 
-In menu:Plan[Schedules], you can add, edit, and delete activities in your schedule. You can also copy, cut, paste, and delete shifts.
+In {bc-plan-schedules}, you can add, edit, and delete activities in your schedule. You can also copy, cut, paste, and delete shifts.
 
 New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] first.
 
@@ -15,7 +15,7 @@ New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] firs
 == Manage activities
 [#add-activities]
 === Add activities
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click the hour or day cell to which you want to add an activity.
 3. (Optional) Filter the activities by type. In the page that opens, select an **Activity Type** from the drop-down menu. The default option is **All**.
 4. Click btn:[Add new Activity] to create a new activity for which you can define a start and end time or btn:[Add new Full-Day Activity] to create a new xref:administration:activity-types-and-properties.adoc#activity-properties[full-day activity].<br>
@@ -26,14 +26,14 @@ New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] firs
 
 [#edit-activities]
 === Edit activities
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click the hour or day cell with the activity or activities that you want to edit.
 3. In the page that opens, edit the activity information.
 4. At the bottom left, click btn:[Save].
 
 [#delete-activities]
 === Delete activities
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click the hour or day cell with the activity or activities that you want to delete.
 3. Click the {icon-x} next to the activity or activities that you want to delete. Click the icon again to deselect the activity or activities. <br> To delete all activities currently displayed on the page, click btn:[Delete all Activities].
 4. At the bottom left, click btn:[Save].
@@ -49,7 +49,7 @@ To edit or delete individual days within a block of approved time-off activities
 == Manage shifts
 Use keyboard shortcuts to edit the shifts directly in the schedule.
 
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. Select a time frame between three and 32 days from the date picker.
 3. In a person's row, click the hour or day cell with the shift that you want to edit.
 4. Use the keyboard shortcuts listed in the table below.
@@ -76,7 +76,7 @@ Use keyboard shortcuts to edit the shifts directly in the schedule.
 == See and restore schedule changes in the History tab
 You can see and restore past changes to the schedule made by you or other people with the planner role. You can restore a schedule change for an individual person for one day at a time.
 
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options] for your schedule.
 2. In a person's row, double-click an hour or day cell.
 3. In the page that opens, click the **History** tab.<br>At the top right of the page, you can see the person's current shift. Below, you see a table with five columns:
    - Checkbox column

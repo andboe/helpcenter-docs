@@ -8,43 +8,39 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Some advanced approval policy features may not be available on your Peopleware tenant. If you have questions regarding availability get in touch with your Peopleware consultant.
 ====
 [#view-approval-policies-for-a-time-off-type]
 == View approval policies for a time-off type
-1. Go to menu:Time Off[Types].
-2. Select a time-off type.
+1. Go to {bc-time-off-types}.
+2. {select-time-off-type}
 3. Scroll down to **Approval policies**.
 
 [#create-an-approval-policy]
 == Create an approval policy
-1. Go to menu:Time Off[Types].
-2. Select a time-off type.
+1. Go to {bc-time-off-types}.
+2. {select-time-off-type}
 3. Scroll down to **Approval policies**.
 4. Click **+ Add**.
 5. Enter the general information:
    - **Name**
    - (Optional) **Validity period**
-6. Click btn:[Create].
+6. {btn-create}
 
 [#add-checks-to-an-approval-policy]
 == Add checks to an approval policy
-1. Go to menu:Time Off[Types]
-2. Select a time-off type.
+1. Go to {bc-time-off-types}
+2. {select-time-off-type}
 3. Scroll down to **Approval policies**.
 4. Select an approval policy.
 5. In the **Checks** section, configure the **Review threshold** or **Prevent threshold** or both for the checks you want Peopleware to perform, e.g. **Consecutive days**.
-6. Click btn:[Save].
+6. {btn-save}
 
 [#delete-a-check-from-an-approval-policy]
 == Deactivate a check from an approval policy
-1. Go to menu:Time Off[Types]
-2. Select a time-off type.
+1. Go to {bc-time-off-types}
+2. {select-time-off-type}
 3. Scroll down to **Approval policies**.
 4. Select an approval policy.
 5. In the **Checks** section, remove both threshold values from the row of the desired check. You cannot deactivate a check if it has already been applied to time off.
-6. Click btn:[Save].
+6. {btn-save}

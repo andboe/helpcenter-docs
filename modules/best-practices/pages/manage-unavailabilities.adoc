@@ -30,7 +30,7 @@ This article provides an overview of the process. You can use it as a checklist.
 
 [#2-create-a-time-off-period]
 == 2. Create a time-off period
-1. In menu:Plan[Time Off], create a xref:scheduling:time-off-periods-legacy.adoc#create-a-time-off-period[time-off period].
+1. In {bc-plan-time-off}, create a xref:scheduling:time-off-periods-legacy.adoc#create-a-time-off-period[time-off period].
 2. Enter the general information for your time-off period:
    - *Planning unit*.
    - (Optional) *Selection*.
@@ -41,16 +41,16 @@ This article provides an overview of the process. You can use it as a checklist.
 
 [#3-people-submit-their-requests]
 == 3. People submit their requests
-In menu:Me[Time Off], people can xref:me:explore-me.adoc#request-time-off[submit requests] for the activity Unavailable.
+In {bc-me-time-off}, people can xref:me:explore-me.adoc#request-time-off[submit requests] for the activity Unavailable.
 
 [#4-approve-or-reject-requests]
 == 4. Approve or reject requests
-In menu:Plan[Time Off], xref:scheduling:vacation-absences-management.adoc[approve or reject time-off requests] for the activity Unavailable.<br>
+In {bc-plan-time-off}, xref:scheduling:vacation-absences-management.adoc[approve or reject time-off requests] for the activity Unavailable.<br>
 After you approve a person's request, the Schedule window in Shift Center shows a red cell with the abbreviation of the Unavailability activity for the time slot of the approved request. If you use **Create optimized schedules** or **Job optimization**, the person is not scheduled during the blocked time slot.
 
 [#keep-track-of-the-requests]
 == Keep track of the requests
-In menu:Plan[Shift Center], you can see the details of approved time-off requests for the activity Unavailable.
+In {bc-plan-shift-center}, you can see the details of approved time-off requests for the activity Unavailable.
 
 1. Click the **Activities - Requirements** tab under the table. At the top, select a date range from the date picker and click btn:[Apply].
 2. Expand the relevant planning unit in the top table.
@@ -60,6 +60,6 @@ In menu:Plan[Shift Center], you can see the details of approved time-off request
    - Date/Time: Date and time of the approval.
    - Action: The action performed. In this case, Approve request.
    - User: The person who approved the request.
-5. Click btn:[OK].
+5. {btn-ok}
 
-Go to menu:Plan[Time Off] to xref:scheduling:vacation-absences-management.adoc#view-requests[see approved, pending and rejected requests].
+Go to {bc-plan-time-off} to xref:scheduling:vacation-absences-management.adoc#view-requests[see approved, pending and rejected requests].

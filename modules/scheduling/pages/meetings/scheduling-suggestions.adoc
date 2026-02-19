@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: View suggestions for meetings and self-learning sessions and apply them to your schedule.
 :related-articles: meetings-overview.adoc
 
-In menu:Plan[Meetings], you can generate suggestions for xref:ROOT:generate-suggestions-for-1-1-meetings.adoc[1:1&nbsp], xref:scheduling:self-learning-sessions.adoc[self-learning lessons], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings]. After generating suggestions, you can view the generated suggestions and schedule meetings.
+In {bc-plan-meetings}, you can generate suggestions for xref:ROOT:generate-suggestions-for-1-1-meetings.adoc[1:1&nbsp], xref:scheduling:self-learning-sessions.adoc[self-learning lessons], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings]. After generating suggestions, you can view the generated suggestions and schedule meetings.
 
 New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 
@@ -67,10 +67,6 @@ The *Suggestions* page includes a table with the following details about the sug
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The impact on the coverage is calculated automatically when you generate suggestions. Any changes you make to the schedule after generating suggestions will not affect the values in the *Resulting coverage* column.
 ====
 To check people's schedules before scheduling meetings, click *View schedule* next to the suggestion.
@@ -100,11 +96,11 @@ The *Results* page includes the following tabs with information about which meet
 |Suggestions that were deselected before scheduling the meetings. You cannot click the tab if you did not deselect any suggestion.
 |===
 
-If necessary, xref:scheduling:meetings-overview.adoc#generate-meeting-suggestions[regenerate the suggestions] for the meetings listed in the *Failed* and *Excluded* tabs with different settings or xref:scheduling:schedules-edit.adoc#add-activities[add a meeting activity manually to your schedules] in menu:Plan[Schedules].
+If necessary, xref:scheduling:meetings-overview.adoc#generate-meeting-suggestions[regenerate the suggestions] for the meetings listed in the *Failed* and *Excluded* tabs with different settings or xref:scheduling:schedules-edit.adoc#add-activities[add a meeting activity manually to your schedules] in {bc-plan-schedules}.
 
 == Delete suggestions <a name="delete-meeting-suggestions">
 
 To delete suggestions, follow these steps:
 
-1. In menu:Plan[Meetings], check the checkbox next to the suggestions you want to delete in the *Generated suggestions* table. To select all suggestions, check the checkbox next to *Initiated on*.
+1. In {bc-plan-meetings}, check the checkbox next to the suggestions you want to delete in the *Generated suggestions* table. To select all suggestions, check the checkbox next to *Initiated on*.
 2. Click btn:[Delete entry].

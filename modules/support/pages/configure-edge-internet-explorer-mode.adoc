@@ -18,7 +18,7 @@ You need Windows administrator rights to configure Internet Explorer mode (IE mo
 3. On the **Security** tab, check the **Enable Protected Mode** checkbox for the **Internet** zone.  
    Skip this step on Windows 11 and above.
 4. Click btn:[Sites].
-5. Click btn:[Add].
+5. {btn-add}
 6. Add _\*.peopleware.com_ to the trusted sites.
 7. To save your settings, click btn:[OK].
 

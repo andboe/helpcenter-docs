@@ -18,8 +18,8 @@ You can view staff requirements in the following four places:
 
 - *Forecast*
 - menu:Analyze[Dashboard]
-- menu:Plan[Schedules]
-- menu:Plan[Shift Center]
+- {bc-plan-schedules}
+- {bc-plan-shift-center}
 
 The following table includes details about the options available in each place:
 
@@ -43,11 +43,11 @@ table {
 |Yes
 |No
 |No
-|menu:Plan[Schedules]
+|{bc-plan-schedules}
 |Yes
 |No
 |No
-|menu:Plan[Shift Center]
+|{bc-plan-shift-center}
 |Yes
 |Yes
 |No
@@ -55,7 +55,7 @@ table {
 
 [#edit-staff-requirements-in-shift-center]
 === Edit staff requirements in Shift Center
-1. Go to menu:Plan[Shift Center].
+1. Go to {bc-plan-shift-center}.
 2. At the bottom of the panel, select the **Activities - Requirement** or the **Activity Overview** tab.<br>
 
    > No Data message in a cell
@@ -68,7 +68,7 @@ table {
    You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
 
 6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
-7. Click btn:[OK].
+7. {btn-ok}
 
 [#edit-staff-requirements-in-forecast]
 === Edit staff requirements in Forecast

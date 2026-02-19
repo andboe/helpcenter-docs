@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to automatically schedule 1:1 meetings, group meetings, and self-learning sessions for the people in your organization.
 :related-articles: scheduling-suggestions.adoc
 
-In menu:Plan[Meetings], you can schedule meetings for the people in your organization. Peopleware finds the best slots to minimize the impact on the coverage of existing activities and generates meeting suggestions. You can then review and apply these suggestions to the schedule.
+In {bc-plan-meetings}, you can schedule meetings for the people in your organization. Peopleware finds the best slots to minimize the impact on the coverage of existing activities and generates meeting suggestions. You can then review and apply these suggestions to the schedule.
 
 [#prerequisites]
 == Prerequisites
@@ -23,7 +23,7 @@ Furthermore, the *Meetings* functionality does not not affect activities of type
 
 [#meeting-types]
 == Meeting types
-In menu:Plan[Meetings], you can schedule meetings of the following three types:
+In {bc-plan-meetings}, you can schedule meetings of the following three types:
 
 - xref:scheduling:generate-suggestions-for-1-1-meetings.adoc[1:1 meetings]: One-on-one meetings with a host.
 - xref:scheduling:self-learning-sessions.adoc[Self-learning sessions]: Individual training sessions.
@@ -31,7 +31,7 @@ In menu:Plan[Meetings], you can schedule meetings of the following three types:
 
 [#generate-meeting-suggestions]
 == Generate meeting suggestions
-1. Go to menu:Plan[Meetings].
+1. Go to {bc-plan-meetings}.
 2. In the tile with the type of meeting that you want to schedule, click btn:[Set up].
 3. In the window that opens, configure the required **Parameters**, that are different for each type of meeting.
    Learn more about the parameters for xref:scheduling:generate-suggestions-for-1-1-meetings.adoc[1:1 meetings], xref:scheduling:self-learning-sessions.adoc[self-learning sessions], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings].

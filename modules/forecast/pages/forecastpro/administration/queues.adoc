@@ -23,7 +23,7 @@ Xlink does not create queues during imports. To create queues for the Xlink mapp
 5. (Optional) Enter a **Description**, e.g. to identify what the queue is used for.
 6. (Optional) Select a **Parent Queue**. This can be used to visualize a hierarchy in the list of queues.
 7. Select a **Time Zone**.
-8. Click btn:[OK].
+8. {btn-ok}
    Now, you can add event types and value types to the queue.
 
 Tip: Map single ACD queues to Peopleware queues to be able to combine volumes later by selecting the queues in workloads.

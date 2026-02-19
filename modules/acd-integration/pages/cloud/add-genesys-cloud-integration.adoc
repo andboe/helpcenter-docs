@@ -13,12 +13,12 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-genesys-cloud-integration]
 == Add a Genesys Cloud integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Genesys**.
 5. From the **Model name** drop-down menu, select **Genesys Cloud**.
-6. Click btn:[Save].
+6. {btn-save}
 
 [#set-up-your-genesys-cloud-integration]
 == Set up your Genesys Cloud integration
@@ -28,7 +28,7 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
    - **Import detailed on-queue agent statuses**: Check the checkbox if you want to differentiate between the different agent statuses summarized under on-queue, e.g. communication, interacting, idle, not responding.
 
 3. In the **AHT Metrics** section, select the AHT data type that you want to import for each channel. For details, see xref:#aht-metrics[AHT metrics].
-4. Click btn:[Save].
+4. {btn-save}
 
 [#aht-metrics]
 == AHT Metrics
@@ -46,10 +46,6 @@ Genesys Cloud calculates AHT values using different metrics. In Peopleware, you 
 
 You can select the AHT metric for each channel during integration setup. You can edit AHT metrics at any time. Changes will be applied from the next import session onwards.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 When you edit the AHT metrics, the changes apply to future imports only. Already imported data is not affected.

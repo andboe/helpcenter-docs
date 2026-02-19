@@ -19,7 +19,7 @@ Your role needs to have the following functional permissions:
 
 [#create-a-requirement-calculation-preset]
 == Create a requirement calculation preset
-1.  Go to menu:Forecast[Requirement calculations].
+1.  Go to {bc-forecast-requirement-calculations}.
 2.  Select the calculation for which you need to create a preset.
 3.  In the navigation menu, click **Presets**.
 4.  Click **+ Add**.
@@ -29,4 +29,4 @@ Your role needs to have the following functional permissions:
 - (Optional) Check the **Private** checkbox. This makes the preset available only to the currently logged in user.
 - Fill in the configuration parameters.
 
-6.  Click btn:[Save].
+6.  {btn-save}

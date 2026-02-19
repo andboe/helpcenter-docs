@@ -20,10 +20,10 @@ This article explains how to create, edit, and delete shift sequences, and gener
 == Create a shift sequence
 [#enter-the-basic-information]
 === Enter the basic information
-1. Go to menu:Plan[Configuration>Shift sequences].
-2. Click btn:[Create].
+1. Go to {bc-plan-config-shift-sequences}.
+2. {btn-create}
 3. Specify the general settings for the shift sequence. For more information see xref:#general-settings[General settings].
-4. Click btn:[Save].
+4. {btn-save}
 
 [#assign-activities-and-day-models-to-the-shift-sequence]
 === Assign activities and day models to the shift sequence
@@ -39,7 +39,7 @@ You can now xref:administration:assign-shift-sequences-to-people.adoc[assign shi
 
 [#edit-a-shift-sequence]
 == Edit a shift sequence
-1. Go to menu:Plan[Configuration>Shift sequences].
+1. Go to {bc-plan-config-shift-sequences}.
 2. Click on the name of the shift sequence that you want to edit.
 3. Make the changes.
 
@@ -48,7 +48,7 @@ You can now xref:administration:assign-shift-sequences-to-people.adoc[assign shi
 
 [#delete-a-shift-sequence]
 == Delete a shift sequence
-1. Go to menu:Plan[Configuration>Shift sequences].
+1. Go to {bc-plan-config-shift-sequences}.
 2. In the row corresponding to the shift sequence that you want to delete, click the three-dot menu {icon-context-menu}.
 3. From the drop-down menu, select {icon-delete} Delete.
 4. In the window that opens, click btn:[Delete].
@@ -63,7 +63,7 @@ Learn how to xref:general:duplicate-objects.adoc[duplicate shift sequences].
 == Generate a report
 For each shift sequence, you can generate a PDF report that includes shift sequence data. For more information on the data included in the report, see the xref:#addendum[addendums].
 
-1. Go to menu:Plan[Configuration>Shift sequences].
+1. Go to {bc-plan-config-shift-sequences}.
 2. In the row corresponding to the shift sequence for which you want to create a report, click the three-dot menu {icon-context-menu}.
 3. From the drop-down menu, select btn:[Create report].
 

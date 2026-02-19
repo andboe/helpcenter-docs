@@ -11,7 +11,7 @@ Shift requirements define the minimum and maximum number of shifts that must be 
 
 [#display-shift-requirements]
 == Display shift requirements
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling periods].
 3. Select a *Planning unit* and, optionally, a *Selection*.
 4. Hover over a scheduling period and click the {icon-context-menu}.
@@ -103,7 +103,7 @@ You only need 1 shift for the full day, set both the minimum and maximum to 1 sh
 
 [#key-figures-in-shift-center]
 == Key figures in Shift Center
-Find further information on shift requirements and staffing in menu:Plan[Shift Center]. On the Activities tab at the bottom of the table, right-click a cell to display the following figures:
+Find further information on shift requirements and staffing in {bc-plan-shift-center}. On the Activities tab at the bottom of the table, right-click a cell to display the following figures:
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -123,7 +123,7 @@ Find further information on shift requirements and staffing in menu:Plan[Shift C
 
 [#key-figures-in-dashboards]
 == Key figures in Dashboards
-In xref:monitoring:manage-dashboards.adoc[menu:Analyze[Dashboards]], you can configure dashboards to display the following figures:
+In xref:monitoring:manage-dashboards.adoc[{bc-analyze-dashboards}], you can configure dashboards to display the following figures:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===

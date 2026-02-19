@@ -16,7 +16,7 @@ The Classic plan supports business hours only in Smart workloads.
 
 [#prerequisites]
 == Prerequisites
-Make sure the following applies:
+{prereq-intro}
 
 - You have configured valid xref:administration:create-and-manage-planning-units.adoc#add-business-hours[business hours] and xref:administration:activities.adoc[activities] for the planning unit for which you want to activate business hours.
 - You have checked the xref:administration:set-a-validity-period.adoc[**Valid from**/**Valid to**] entries for the planning unit and activity assigned to the workload and removed or changed them, if necessary.
@@ -27,8 +27,8 @@ Make sure the following applies:
 == Activate business hours
 To include volumes outside business hours into the forecast calculation, activate business hours separately for each workload.
 
-1. In menu:Forecast[Workloads], select a workload.
-2. Click btn:[Edit].
+1. {nav-to-forecast-workloads}
+2. {btn-edit}
 3. In the **Basic configuration** section, select a planning unit and an activity.
 4. Check the **Forecast within business hours only** checkbox.<br>
    If you update the planning unit's business hours, uncheck and check the checkbox again to update the forecast.
@@ -37,10 +37,6 @@ To include volumes outside business hours into the forecast calculation, activat
 
 Once you have activated the business hours, the graph on the **Forecast** page displays periods outside business hours as gray areas.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Forecasts and staff requirements are generated only if the xref:administration:create-and-manage-planning-units.adoc#add-business-hours-[business hours] and the xref:administration:create-and-manage-planning-units.adoc#add-activities-[activity] configured for the workload specify date and time values that apply to the forecasting period.

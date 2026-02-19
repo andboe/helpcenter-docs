@@ -19,7 +19,7 @@ Adjustments to the schedule can be necessary in the following situations:
 
 [#copy-a-schedule-to-another-level]
 == Copy a schedule to another level
-1. Go to menu:Plan[Schedules] and select the date range of the schedule you want to copy.
+1. Go to {bc-plan-schedules} and select the date range of the schedule you want to copy.
 2. From the btn:[Scheduling actions] menu, click **Copy level content**.
 3. In the **Settings** section, configure the following fields:
    - **Planning unit**

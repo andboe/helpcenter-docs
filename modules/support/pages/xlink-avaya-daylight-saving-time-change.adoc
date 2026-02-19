@@ -12,10 +12,6 @@ The examples used in the article are valid for Germany. The deviation from Coord
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The article refers exclusively to the Lucent/Avaya CMS interface and the problem described here only appears if your CMS database is set to UTC and time is not adjusted automatically.
 ====
 [#cause]

@@ -13,20 +13,20 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[Scheduling Periods] under menu:Plan[Schedules] instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[Scheduling Periods] under {bc-plan-schedules} instead.
 ====
 [#allow-employees-to-see-their-schedules]
 == Allow employees to see their schedules
-1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+1. Go to {bc-wfm-scheduling-schedulepro-periods}.
 2. Choose the *Planning Unit* you want to publish schedules for.
 3. Choose the **Type** _Standard_.
 4. Set the *Selection* to **[All]** unless you want to limit the publishing of the schedules to a certain group of agents. I you want to limit the publishing, choose the respective selection.
-5. Click btn:[Apply].
+5. {btn-apply}
 6. Select the planning period with the date range for which you want to publish schedules and click *![edit button](/assets/img/common/item-edit.gif)* in the action bar. If there is no planning period for that date range yet, create a new one. Click the {icon-wfm-add}.
 
 In both cases, the following dialog appears:

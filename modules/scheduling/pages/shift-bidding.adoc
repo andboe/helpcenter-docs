@@ -18,12 +18,12 @@ The important facts in brief:
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you use Advanced WFM or Enterprise WFM, use scheduling periods under menu:Plan[Schedules] for xref:scheduling:schedules-shift-bidding.adoc[shift bidding] instead.
+If you use Advanced WFM or Enterprise WFM, use scheduling periods under {bc-plan-schedules} for xref:scheduling:schedules-shift-bidding.adoc[shift bidding] instead.
 ====
 Take note:
 
@@ -37,13 +37,13 @@ Complete process:
 
 [#generate-lottery-assign-shifts-with-planning-periods]
 == Generate, lottery, assign shifts with planning periods
-In menu:WFM[Scheduling>SchedulePro>Planning Periods], when you select a planning period you are presented the **Shifts** navigation block on the right side:
+In {bc-wfm-scheduling-schedulepro-periods}, when you select a planning period you are presented the **Shifts** navigation block on the right side:
 
 image::shift-bidding/image-2.png[Planning Periods with Shift Functions]
 
 [#preparation]
 == Preparation
-All relevant menu items are in menu:WFM[Scheduling>SchedulePro].
+All relevant menu items are in {bc-wfm-scheduling-schedulepro}.
 
 1. Check if xref:scheduling:edit-or-delete-staff-requirements.adoc[employee requirements] exist. They are the basis for shift generation (in combination with the shift requirement).
 
@@ -104,10 +104,6 @@ If necessary, check the **Create Lottery Log** checkbox. This report contains th
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 A new shift generation deletes already submitted requests.
 ====
 For a fair distribution, employees' requests can be drawn by selections. If you rotate over the selections in each planning period, you ensure that one group is always preferred and has a higher chance to get the requested shifts.
@@ -161,7 +157,7 @@ Set the status of the xref:scheduling:what-are-planning-periods.adoc[planning pe
 
 [#edit-the-generated-shifts]
 == Edit the generated shifts
-In menu:Plan[Shift Center], you can check the generated shifts by day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
+In {bc-plan-shift-center}, you can check the generated shifts by day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
 
 1. In the parameter area, click the **Day Models** tab.
 2. Right-click a cell and select **Edit Shift Requirement...**.

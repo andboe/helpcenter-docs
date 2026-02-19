@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to create a coach-trainee group.
 :related-articles: copy-coach-schedule-to-trainee.adoc
 
-In menu:People[], people can be set up to form a coach-trainee group.
+In {bc-people}, people can be set up to form a coach-trainee group.
 A coach-trainee group serves to copy a coach's activities or day models to the trainees' schedules.
 Every coach-trainee group is made up of one coach and any number of trainees.
 
@@ -20,7 +20,7 @@ The following restrictions apply:
 
 To set up a coach-trainee group, proceed as follows:
 
-1. Go to menu:People[]
+1. Go to {bc-people}
 2. Select the person that should be the coach.
 3. On the person's details page, go to menu:Planning[Coach/Trainee].
 4. Make sure the person is not assigned to a coach.

@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Manually add or delete activities, day models, availabilities, and comments in your peoples' shifts in Shift Center.
 :page-aliases: add-and-delete-items
 
-In menu:Plan[Shift Center], you can manually add and delete the following *entries* to your schedule:
+In {bc-plan-shift-center}, you can manually add and delete the following *entries* to your schedule:
 
 - xref:administration:activities.adoc[Activities]
 - xref:administration:daymodel-basics.adoc[Day models]
@@ -108,7 +108,7 @@ To add activities, follow these steps:
    The *configuration window* opens in the *Activities* tab.  
    The *Activities* tab displays a table with the scheduled activities, if there are any.
 2. Select an activity type from the *Type* drop-down menu.
-3. Click btn:[Add].  
+3. {btn-add}  
    A row for the activity type is added to the table if at least one activity of this type is available. Activities can be unavailable because they are not set up for the selected activity type, they are not assigned to the person's planning unit or because the person does not have the skills required for the activity.
 4. Configure the activity in the following columns:
    - *Activity*
@@ -116,7 +116,7 @@ To add activities, follow these steps:
    - *End time*
    - *-/0/+*: Select the xref:#booking-date-and-columns---0-+[Booking Date], or the previous or following day.
 
-5. Click btn:[OK].
+5. {btn-ok}
 
 [#add-multiactivities]
 === Add multiactivities
@@ -140,14 +140,14 @@ If you have xref:administration:activity-types-and-properties.adoc#activity-prop
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], double-click a *day cell*, and click the *Full-Day Activities* tab in the *configuration window*.  
    The *configuration window* displays a table with the scheduled *full-day activities*, if there are any. To display all *full-day activities* of the year for the relevant person, check the *Display All Full-Day Activities of the Year* checkbox.
 2. Select an activity type from the *Type* drop-down menu.
-3. Click btn:[Add].  
+3. {btn-add}  
    A row for the full-day activity is added to the table.
 4. Configure the full-day activity in the following columns:
    - *Activity*
    - *Start Date*
    - *End Date*
 
-5. Click btn:[OK].
+5. {btn-ok}
 
 [#add-day-models]
 == Add day models
@@ -160,7 +160,7 @@ To add day models, follow these steps:
 3. Double-click the day model time.  
    A row for the day model is added to the table. To display the day model details, click the {icon-plus} next to the day model.
 4. (Optional) For variable day models, click the cell in the *Start Time* column and set the start time with the drop-down menu. The *End Time* changes according to the duration of the day model.
-5. Click btn:[OK].
+5. {btn-ok}
 
 [#add-availabilities]
 == Add availabilities
@@ -195,10 +195,6 @@ In the xref:#add-availabilities[Availability tab] of the *configuration window*,
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If you add a day model availability, it overwrites other availabilities, except other day model availabilities.
 ====
 >
@@ -212,13 +208,13 @@ In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], 
 
 1. Double-click a *day cell*, and click the *Comments* tab in the *configuration window*.
 2. Enter a comment with a maximum length of 250 characters.
-3. Click btn:[OK].  
+3. {btn-ok}  
    The *day cell* you commented is highlighted with a thicker border. To see the comment, hover over the *day cell*.
 
 You can see the comments you add in different parts of Peopleware:
 
 - The xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area] in *Shift Center*
-- The xref:scheduling:schedules-overview.adoc#schedule-area[schedule area] in menu:Plan[Schedules]
+- The xref:scheduling:schedules-overview.adoc#schedule-area[schedule area] in {bc-plan-schedules}
 - In xref:me:explore-me.adoc#see-your-schedule-my-calendar[Me] if you add the comment to a day within a scheduling period with the status Published or Shift bidding enabled.
 
 [#add-activities-day-models-availabilities-or-comments-to-multiple-people]
@@ -230,10 +226,6 @@ You can add the same activity, day model, availability, or comments to the sched
 3. Click the tab that corresponds to the *entry* you want to add, e.g. the *Activities* tab.
 4. Add an xref:#add-activities[activity], xref:#add-day-models[day model], xref:#add-availabilities[availability], or xref:#add-comments[comment].
 
-[WARNING]
-====
-====
->
 [NOTE]
 ====
 Users with Admin access or the *Planner* role can update schedules regardless of any scheduling rule violations. If they update the schedule of multiple people at once, check if any scheduling rule was violated in the xref:scheduling:shift-center-overview.adoc#message-area[message area].
@@ -267,10 +259,6 @@ To delete comments, follow these steps:
 === Delete all entries of a day cell
 To delete all *entries* of a *day cell*, right-click the *day cell* and select *Delete All Entries*.
 
-[WARNING]
-====
-====
->
 [NOTE]
 ====
 *Entries* are deleted without prior confirmation. To recover deleted *entries*, use the xref:#recover-previous-schedules-states[History tab].
@@ -283,7 +271,7 @@ Whenever you create or update a schedule, or delete *entries*, the schedule stat
    The *History* tab includes a table with the current schedule on the top and previous schedules states sorted by chronological order.
 2. Click the number of the schedule state you want to recover in the *Layer* column.  
    The schedule state is replicated above the current schedule.
-3. Click btn:[OK].
+3. {btn-ok}
 
 [#booking-date-and-columns---0-+]
 == Booking date and columns -/0/+

@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: import-agent-status-data.adoc, adherence-matches.adoc, adherence-intraday.adoc
 :page-aliases: adherence
 
-menu:Intraday[Real-Time Adherence] compares *people*'s *scheduled activities* with their *actual activity* in real time. When *people* track their work in an *external system*, e.g. an ACD, for which you have configured an xref:acd-integration:how-integrations-work.adoc[integration], Peopleware imports their *status data*, and compares it with their *schedule* in Peopleware. In menu:Real-Time Adherence[] you can see if *people* work in adherence with their *schedule* and take timely action when they deviate from it.
+{bc-intraday-real-time-adherence} compares *people*'s *scheduled activities* with their *actual activity* in real time. When *people* track their work in an *external system*, e.g. an ACD, for which you have configured an xref:acd-integration:how-integrations-work.adoc[integration], Peopleware imports their *status data*, and compares it with their *schedule* in Peopleware. In menu:Real-Time Adherence[] you can see if *people* work in adherence with their *schedule* and take timely action when they deviate from it.
 
 [#prerequisites]
 == Prerequisites
@@ -20,7 +20,7 @@ For more adherence details, map external activities to activities in Peopleware.
 
 [#adherence-statuses]
 == Adherence statuses
-In menu:Intraday[Real-Time Adherence], each person has a status based on the comparison between their scheduled and their actual activity:
+In {bc-intraday-real-time-adherence}, each person has a status based on the comparison between their scheduled and their actual activity:
 
 [%header, cols="1a,1a,".rstrip(',')]
 |===
@@ -32,10 +32,6 @@ In menu:Intraday[Real-Time Adherence], each person has a status based on the com
 |The type of the scheduled activity does not match the type of the actual activity. The row is highlighted in red.
 |===
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If you have not configured an integration and mapped *external identifiers*, the following applies:
@@ -88,10 +84,6 @@ image::real-time-adherence/image-3.png[Intraday Adherence graphs, width=45%]
 
 Click the section title to open a more detailed view on an independent tab. The detail view displays a table with a timeline for individual *people*. You can click a person's name in the table to open their data on an independent tab.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Times are displayed in the xref:best-practices:working-with-timezones.adoc[time zone] of the selected *planning unit*. If you have only chosen a *selection*, and have planning units with different time zones, all times appear in the *time zone* configured in your user profile. The graphs display the xref:administration:create-and-manage-planning-units.adoc#add-business-hours[business hours] of the selected *planning unit* where applicable.
@@ -175,7 +167,7 @@ To configure or edit the *buffer time*, follow these steps:
 1. At the top right of the overview table, click the {icon-context-menu}.
 2. Select *Adjust your buffer time*.
 3. Select values for the *Not present*, *Wrong activity* and *Not scheduled* subtypes from the drop-down menus.
-4. Click btn:[Apply].
+4. {btn-apply}
 
 [NOTE]
 ====
@@ -190,7 +182,7 @@ Users with admin access can edit the *target adherence score* by following these
 1. At the top right of the overview table, click the {icon-context-menu}.
 2. Select *Adjust your target adherence score*.
 3. Enter a new value.
-4. Click btn:[Apply].
+4. {btn-apply}
 
 [NOTE]
 ====

@@ -9,10 +9,6 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Functional permissions that have corresponding object permissions are deactivated when setting object permissions, and vice versa. Example: Setting object permissions on individual dashboards deactivates the **View all dashboards** permission for the role.
 ====
 == General
@@ -64,13 +60,13 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View schedules
-|Grants view permissions for schedules in menu:Plan[Schedules] and menu:Plan[Shift Center].
+|Grants view permissions for schedules in {bc-plan-schedules} and {bc-plan-shift-center}.
 |Full access to Schedules
 |Allows people with the role to use all **Schedules** features.
 |Insert shift sequences
 |Allows people with the role to insert shift sequences.
 |Full access to Meetings
-|Allows people with the role to use all menu:Plan[Meetings] features.
+|Allows people with the role to use all {bc-plan-meetings} features.
 |View time off
 |Grants view permissions for time-off data in menu:Plan[Time off].
 |Full access to Time Off
@@ -90,7 +86,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |Configure adherence settings
 |<!-- what does it do? Does nothing in intraday if checked -->
 |View Real-Time Adherence
-|Grants view permissions for menu:Intraday[Real-Time Adherence].
+|Grants view permissions for {bc-intraday-real-time-adherence}.
 |View Intraday Adherence
 |Grants view permissions for menu:Intraday[Intraday Adherence]. Requires the **View Real-Time Adherence** permission.
 |Edit agent status
@@ -140,7 +136,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |Name
 |Description
 |View time off
-|Grants view permissions on menu:Time Off[Requests] and menu:Time Off[Plan].
+|Grants view permissions on {bc-time-off-requests} and {bc-time-off-plan}.
 |Create time off
 |Allows people with the role to create time off.
 |Edit time range
@@ -178,7 +174,7 @@ Functional permissions that have corresponding object permissions are deactivate
 |View Me
 |Allows people with the role to access the **Me** portal.
 |Edit availabilities
-|Allows people with the role to add and edit availabilities in menu:Me[Availability].
+|Allows people with the role to add and edit availabilities in {bc-me-availability}.
 |===
 
 === Account

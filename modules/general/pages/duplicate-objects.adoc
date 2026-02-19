@@ -13,17 +13,13 @@ Duplicating a configuration object includes its assigned objects, for example pl
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Duplicating an activity does not include its assigned objects.
 ====
 == Prerequisites
 
 === Permissions
 
-Your role needs the following functional permissions:
+{role-needs-permissions}
 
 - **Access to Plan Configuration**
 - **Create** permission for the object type you want to duplicate.

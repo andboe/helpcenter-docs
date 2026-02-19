@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Analyze the coverage, staffing, and requirement for your activities, properly use the Day Models tab, and more.
 
-In menu:Plan[Shift Center], you can analyze *metrics* for your activities and day models. This is useful e.g. to find which activities or day models are understaffed or overstaffed, and schedule more or fewer people if necessary. You have the following options:
+In {bc-plan-shift-center}, you can analyze *metrics* for your activities and day models. This is useful e.g. to find which activities or day models are understaffed or overstaffed, and schedule more or fewer people if necessary. You have the following options:
 
 - Analyze the coverage, staffing, and requirement for your activities
 - Display requirement and staffing as graphs

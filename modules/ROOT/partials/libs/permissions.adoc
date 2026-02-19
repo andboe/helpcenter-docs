@@ -1,3 +1,18 @@
 :permissions-wfm-enable-access-to-wfm: Enable access to WFM
 :permissions-account-full-access-to-roles: Full access to Roles
 :permissions-people-edit-people: Edit people
+
+// Common permission types
+:perm-view: view permission
+:perm-edit: edit permission
+:perm-view-edit: view and edit permission
+:perm-view-access: view access
+:perm-admin-access: admin access
+:perm-full-access: full access
+:perm-object-permissions: object permissions
+:perm-functional-permissions: functional permissions
+
+// Permission combinations
+:perm-read-only: read-only access
+:perm-view-only: view-only permission
+:perm-admin-edit: admin edit permission

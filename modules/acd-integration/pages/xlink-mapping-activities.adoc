@@ -25,7 +25,7 @@ Create a separate new activity for each activity which has been stored in _Prese
 3. For each of these activities, xref:administration:activities.adoc#create-an-activity[create a new activity] if it doesn't exist already.
 4. Click the **Present** activity, then click **External System**.
 5. Click *![remove button](/assets/img/common/item-delete.gif)* on every **activity** to remove it from the **Present** activity.
-6. Click btn:[OK].
+6. {btn-ok}
 
 Now, you can map the activities from the external system with the newly created activities:
 
@@ -34,7 +34,7 @@ Now, you can map the activities from the external system with the newly created 
 3. For **External System**, select your external system.
 4. For **External Activity**, select the external activity you want to connect with the current activity.
 5. Select _1_ for **Classification**.
-6. Click btn:[OK].
+6. {btn-ok}
 7. Modify all activities you created in the same way.
 
 [NOTE]
@@ -52,7 +52,7 @@ Your employees have a unique ID in the external system with which they log in. G
 3. Click the {icon-wfm-add} to add an external system. A new window opens.
 4. For **External System**, select the external system you have set up in advance.
 5. For **Employee ID in External System**, add the ACD login ID for the employee. The ID may only contain numbers.
-6. Click btn:[OK].
+6. {btn-ok}
 
 Repeat the process for all employees. A missing or wrong user identifier will lead to no data import. After you have added the external user identifier for all employees, you can import data.
 

@@ -8,13 +8,13 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: create-workloads.adoc
 :page-aliases: workload-permissions
 
-In menu:Account[Roles], you can configure different *permissions* for all *workloads* in **Forecast**, including future *workloads*. This is useful if you want a role to have only view *permissions* for all *workloads*, and other roles to have both view and edit *permissions* for all *workloads*.
+In {bc-account-roles}, you can configure different *permissions* for all *workloads* in **Forecast**, including future *workloads*. This is useful if you want a role to have only view *permissions* for all *workloads*, and other roles to have both view and edit *permissions* for all *workloads*.
 
 New to **Forecast**? Learn xref:forecast:what-is-forecast.adoc[the basics] first.
 
 [#configure-workload-permissions]
 == Configure *workload permissions*
-1. Go to menu:Account[Roles].
+1. Go to {bc-account-roles}.
 2. Select the role for which you want to edit *workload permissions*.
 3. Scroll down to *Forecast* and check or uncheck the following checkboxes:
    - *Create workloads*
@@ -29,7 +29,7 @@ In Enterprise WFM, you can also configure *permissions* for individual *workload
 
 To configure *permissions* for individual *workloads*, proceed as follows:
 
-1. Go to menu:Account[Roles].
+1. Go to {bc-account-roles}.
 2. Select the role for which you want to edit *workload permissions*.
 3. Scroll down to *Forecast* and check or uncheck the following checkboxes:
    - *Create workloads*

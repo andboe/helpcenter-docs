@@ -44,10 +44,6 @@ Delete the file `isps_ul.log` from the Xlink directory and restart the ISPS Xlin
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The size of interface log files is not limited. Interface log files must be deleted manually. Xlink only generates interface log files if the parameter `Protocol=1` has been configured for external systems in at least one section of the file `isps_ul.ini`. If the protocol is only activated in the \[General\] section, Xlink does not generate interface log files.
 ====
 [#manual-import-does-not-start-progress-bar-remains-at-0nbsp]

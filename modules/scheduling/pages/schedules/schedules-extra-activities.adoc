@@ -26,7 +26,7 @@ To use the **Schedule extra activities** functionality, the following conditions
 
 [#generate-scheduling-suggestions]
 == Generate scheduling suggestions
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. From the btn:[Scheduling actions] drop-down menu, select *Schedule extra activities*.
 3. Click btn:[Set up new extra activity] at the bottom left.
 4. In the **Settings** section, configure the extra activity that you want to schedule:
@@ -102,7 +102,7 @@ To see the scheduling results, click **View results** in the **Scheduling histor
 
 [#delete-an-entry-from-the-scheduling-suggestions-history]
 == Delete an entry from the scheduling suggestions history
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. From the btn:[Scheduling actions] drop-down menu, select *Schedule extra activities*.
 3. In the **Scheduling history** section, check the checkbox next to the entry that you want to delete. Check the checkbox in the table header to select all entries.
 4. Click btn:[Delete entries].<br>

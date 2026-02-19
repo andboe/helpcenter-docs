@@ -67,7 +67,7 @@ To resume the data import when the mapping is done, click the {icon-play-circle}
 == Delete an integration
 Deleting an integration does not delete the imported data. The queues remain assigned to your workloads. You cannot delete the queues created by an integration.
 
-1. Go to menu:Account[Integrations].
+1. {nav-to-account-integrations}
 2. Click the {icon-edit} next to the integration that you want to delete.
 3. In the bottom right corner, click btn:[Delete integration].
 4. In the confirmation window, click btn:[Yes, really delete].

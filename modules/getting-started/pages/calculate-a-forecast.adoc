@@ -18,7 +18,7 @@ Before you create a schedule, make sure you have correctly xref:getting-started:
 
 [#1-set-up-an-integration]
 == 1. Set up an integration
-Under menu:Account[Integrations], set up an xref:acd-integration:how-integrations-work.adoc[integration] with your external system to upload historical data. The integration will upload data to create queues.
+Under {bc-account-integrations}, set up an xref:acd-integration:how-integrations-work.adoc[integration] with your external system to upload historical data. The integration will upload data to create queues.
 
 [#2-set-up-a-workload]
 == 2. Set up a workload

@@ -18,18 +18,14 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 == Add a Zendesk integration
 To add a new Zendesk integration, follow the steps below:
 
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. {nav-to-account-integrations}
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Zendesk**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-zendesk-integration]
 == Set up your Zendesk integration
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Zendesk updated their security and policy requirements for third-party apps and integrations, effective February 11, 2026.
@@ -54,7 +50,7 @@ If your Zendesk integration still uses Basic Authentication, switch to OAuth as 
    > You cannot change the grouping strategy once you have saved the configuration.
    - **Import real-time agent status data**: Learn more about the import of agent status data in the xref:#agent-status-data[dedicated section below].
 
-3. Click btn:[Save].
+3. {btn-save}
 4. Go back to the **Credentials** section.
 5. Click btn:[Authorize with Zendesk].
 6. Enter your Zendesk credentials.
@@ -182,10 +178,6 @@ The webhook serves to import the agent availability event type "zen:event-type:a
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Peopleware imports changes to the unified agent status in Zendesk. Omnichannel routing must be set up in Zendesk. Status changes per channel for messaging and live chat are not supported.
 ====
 The webhooks name is `Peopleware - Zendesk {integration ID}`. You can find the integration ID as part of the URL when you edit your Zendesk integration.
@@ -208,7 +200,7 @@ The Zendesk integration links Peopleware to a Zendesk account.
 When this Zendesk account is deleted, the integration can no longer import historical volume data.
 To fix this, perform the authentication steps again to link the integration to a new Zendesk account:
 
-1. Go to menu:Account[Integrations]
+1. Go to {bc-account-integrations}
 2. Select the Zendesk integration in the **Integrations** table.
 3. Go to the **Credentials** section.
 4. Click btn:[Authorize with Zendesk].
@@ -223,11 +215,11 @@ Deleting the Peopleware user account invalidates the personal access token.
 The integration can no longer import real-time agent status data.
 To fix this, perform the following steps:
 
-1. Go to menu:Account[Integrations]
+1. Go to {bc-account-integrations}
 2. Select the Zendesk integration in the **Integrations** table.
 3. In the **Configuration** section, deactivate the **Import real-time agent status data** checkbox.
-4. Click btn:[Save].
+4. {btn-save}
    Peopleware deletes the obsolete webhook configuration in Zendesk.
 5. In the **Configuration** section, activate the **Import real-time agent status data** checkbox.
    Peopleware creates a new personal access token and sets up a new webhook in Zendesk.
-6. Click btn:[Save].
+6. {btn-save}

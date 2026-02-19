@@ -20,11 +20,11 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-an-adp-integration]
 == Add an ADP integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **ADP**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-adp-integration]
 == Set up your ADP integration
@@ -112,10 +112,6 @@ The integration checks the SFTP server for files to be imported every 15 minutes
 == Entitlements data
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Entitlement imports require the new Time Off app. To learn more, contact your Peopleware consultant.
 ====
 The integration imports time-off entitlements from ADP into account in Time Off.<br>
@@ -201,10 +197,6 @@ See the following table:
 == Time Tracking data
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Time Tracking and punches imports require the Time Tracking app. To learn more about Time Tracking, contact your Peopleware consultant.
 ====
 The integration imports punches from ADP into Peopleware as time-tracking data. The imported data appears in Intraday Adherence and Shift Center, and is used as the default source for adherence monitoring.<br>
@@ -286,7 +278,7 @@ See how the fields in the CSV file map to Peopleware fields:
 === How Peopleware handles imported people data
 Peopleware handles imported people data as follows:
 
-If the ADP Associate ID does not match any existing personnel number, Peopleware creates a new person with the role/s set as **Default role** in menu:Account[Roles].<br>
+If the ADP Associate ID does not match any existing personnel number, Peopleware creates a new person with the role/s set as **Default role** in {bc-account-roles}.<br>
 If the ADP Associate ID matches an existing personnel number, Peopleware overwrites the existing information with the imported data.
 
 Peopleware creates a placeholder email addresses for the people imported from ADP.<br> The email address is constructed as follows:

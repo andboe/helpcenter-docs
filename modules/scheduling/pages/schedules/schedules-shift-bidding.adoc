@@ -32,7 +32,7 @@ The shift bidding process includes the following steps:
 
 [#generate-shifts]
 === Generate shifts
-In menu:Plan[Schedules], you can generate shifts for scheduling periods as follows:
+In {bc-plan-schedules}, you can generate shifts for scheduling periods as follows:
 
 1. Click btn:[Scheduling periods].
 2. From the drop-down menus, select the following:
@@ -57,7 +57,7 @@ To change the shift generation result, xref:scheduling:schedules-shift-requireme
 
 === Key figures related to the shift generation result
 
-In menu:Plan[Shift Center], you can find key figures related to the shift generation result. On the *Activities* and *Day models* tabs at the bottom of the table, right-click a cell to display the following figures:
+In {bc-plan-shift-center}, you can find key figures related to the shift generation result. On the *Activities* and *Day models* tabs at the bottom of the table, right-click a cell to display the following figures:
 
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
@@ -79,19 +79,19 @@ In menu:Plan[Shift Center], you can find key figures related to the shift genera
 === Invite people to bid on shifts
 Scheduling periods allow you to manage which planning units or selections can bid on shifts. To invite people to bid on shifts, follow these steps:
 
-1. In menu:Plan[Schedules], click btn:[Scheduling periods].
+1. In {bc-plan-schedules}, click btn:[Scheduling periods].
 2. Hover over the scheduling period for which you want to allow shift bidding and click the {icon-edit} on the right.
 
    > Note
    >
    > Bids are limited to a maximum of 100 days in advance even if scheduling periods are longer than 100 days.
 
-3. Configure the following fields:
+3. {configure-fields}
    - (Optional) *Selection*: Additional option to limit who can bid on shifts in the planning unit.
    - (Optional) *Deadline*: Date by which people can place their shift bids.
    - *Status*: Select *Shift bidding enabled* for periods with no deadline or a deadline in the future.
 
-4. Click btn:[Save].  
+4. {btn-save}  
    Peopleware sends a xref:getting-started:notifications.adoc[notification] about the scheduling period status to all the relevant people.
 
 To close the bidding period again, set the scheduling period status to *Unpublished*.
@@ -100,8 +100,8 @@ To close the bidding period again, set the scheduling period status to *Unpublis
 
 To see the placed bids, add the Request and Alternative Request levels to the view as follows:
 
-- In menu:Plan[Schedules], xref:scheduling:schedules-overview.adoc#level-column[use the filter in the *Level* column].
-- In menu:Plan[Shift Center], xref:scheduling:shift-center-overview.adoc#action-bar[use the *Levels* filter in the action bar].
+- In {bc-plan-schedules}, xref:scheduling:schedules-overview.adoc#level-column[use the filter in the *Level* column].
+- In {bc-plan-shift-center}, xref:scheduling:shift-center-overview.adoc#action-bar[use the *Levels* filter in the action bar].
 
 [#run-the-shift-lottery]
 === Run the shift lottery
@@ -109,7 +109,7 @@ After the deadline has passed or you have stopped the shift bidding, assign shif
 
 To run the shift lottery, follow these steps:
 
-1. In menu:Plan[Schedules], click btn:[Scheduling periods].
+1. In {bc-plan-schedules}, click btn:[Scheduling periods].
 2. Hover over the scheduling period for which you want to run the shift lottery and select btn:[Start shift lottery] from the three-dot menu {icon-context-menu} on the right.
 3. In the window that opens, configure the following parameters:
    - *Consider average start time of other shifts*: If activated, the average shift start time is considered as a reference when assigning shifts.
@@ -129,7 +129,7 @@ If the job fails, click the related entry or the report icon to see more informa
 === Assign the remaining shifts
 After running the shift lottery, some shifts might not have been assigned because no one bid on them. In this case, use the *Assign shifts* functionality to assign the remaining shifts to people who received no or not enough shifts:
 
-1. In menu:Plan[Schedules], click btn:[Scheduling periods]
+1. In {bc-plan-schedules}, click btn:[Scheduling periods]
 2. Hover over the scheduling period for which you want to assign shifts and select btn:[Assign shifts] from the three-dot menu {icon-context-menu} on the right.
 3. In the window that opens, configure the following parameters:
    - *Consider average start time of other shifts*: If activated, the average shift start time is considered as a reference when assigning shifts.
@@ -160,7 +160,7 @@ Tolerance represents a time window around the average shift start time of a pers
 
 [#edit-the-generated-shifts]
 == Edit the generated shifts
-In menu:Plan[Shift Center], you can check the generated shifts per day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
+In {bc-plan-shift-center}, you can check the generated shifts per day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
 
 1. In the parameter area, click the **Day Models** tab.
 2. Right-click a cell and select **Edit Shift Requirement...**.

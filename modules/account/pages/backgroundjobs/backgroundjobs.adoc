@@ -19,9 +19,9 @@ You need the following permissions to create a background job:
 [#create-job]
 == Create job
 1. Go to menu:Account[Background jobs].
-2. Click btn:[Create].
+2. {btn-create}
 3. Specify the general settings of the job. For more information, see xref:#general-settings[General settings].
-4. Click btn:[Save].
+4. {btn-save}
 5. Configure:
    - xref:#parameters[Parameters]
    - xref:#schedule[Schedule]

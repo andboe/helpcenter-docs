@@ -97,9 +97,5 @@ The Create optimized schedules functionality can schedule multiactivities if you
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If you do not use the Create optimized schedules functionality but only run the job optimization, replaceable activities can be replaced with multiactivities on the condition that a person can carry out at least one subactivity of the multiactivity.
 ====

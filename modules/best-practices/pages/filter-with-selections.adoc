@@ -67,7 +67,7 @@ With the following configuration, you can use the Onboarding selection as a filt
 
 [#filtering-option-1-all-planning-units-and-one-selection]
 === Filtering option 1: All planning units and one selection
-In menu:Plan[Schedules], you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
+In {bc-plan-schedules}, you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
 
 - *Planning unit*: Select **All planning units**.
 - **Choose selection**: Select **Onboarding**.  
@@ -75,7 +75,7 @@ In menu:Plan[Schedules], you can filter the schedules of people in the Onboardin
 
 [#filtering-option-2-one-selection-and-no-planning-unit]
 === Filtering option 2: One selection and no planning unit
-In menu:Intraday[Real-Time Adherence], you can filter the scheduled activities of the people in the Onboarding selection and compare them with a person's actual status in real time. This is useful to check, for example, if a person is carrying out the activities scheduled for their onboarding phase.
+In {bc-intraday-real-time-adherence}, you can filter the scheduled activities of the people in the Onboarding selection and compare them with a person's actual status in real time. This is useful to check, for example, if a person is carrying out the activities scheduled for their onboarding phase.
 
 To filter by selection, use the following drop-down menus:
 
@@ -88,7 +88,7 @@ If you have specific time-off conditions for people in the onboarding phase, you
 
 To create specific time-off periods for the Onboarding selection:
 
-1. In menu:Plan[Time Off], click btn:[Time-off periods].  
+1. In {bc-plan-time-off}, click btn:[Time-off periods].  
    You will be redirected to the **Time-off Periods** page.
 2. Click btn:[Create time-off period].  
    A dialog window opens.
@@ -97,5 +97,5 @@ To create specific time-off periods for the Onboarding selection:
    - *Selection*: Select **Onboarding**.
 4. Complete the remaining fields.  
    Learn more about the configuration of xref:scheduling:time-off-periods-legacy.adoc[time-off periods].
-5. Click btn:[Save].
+5. {btn-save}
 6. Repeat the steps 1 to 5 for planning units Office 2 and Office 3.

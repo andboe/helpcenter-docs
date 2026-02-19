@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 include::help-center:ROOT:partial$reusables/time-off-legacy.adoc[]
 
-menu:Plan[Time Off] provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the **Absence Request** level in Shift Center or Schedules.
+{bc-plan-time-off} provides an overview of all time-off requests (activities of type Absence, Illness, or Vacation) that have been submitted by people in Me. The page also shows activities that have been manually entered in the **Absence Request** level in Shift Center or Schedules.
 
 People with the Planner or Supervisor (advanced) xref:account:predefined-user-roles.adoc[role] can do the following:
 

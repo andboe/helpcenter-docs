@@ -17,15 +17,11 @@ People can only request time off in Me if there is a xref:scheduling:time-off-pe
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 You cannot batch-edit entitlement values. You cannot import vacation entitlement.
 ====
 [#check-vacation-entitlement]
 == Check vacation entitlement
-1. Go to menu:Plan[Time Off] and click btn:[Edit entitlement] to manage people's entitlements.
+1. Go to {bc-plan-time-off} and click btn:[Edit entitlement] to manage people's entitlements.
 2. Select a *Planning unit*, optionally a *Selection*, and a **Year**.
 3. (Optional) Use **Search** to find specific persons.
 

@@ -39,7 +39,7 @@ Learn about xref:account:predefined-user-roles.adoc[access for the predefined us
 
 [NOTE]
 ====
-Grant admin access to a second user in xref:people:configure-people.adoc[menu:People[]].
+Grant admin access to a second user in xref:people:configure-people.adoc[{bc-people}].
 ====
 [#your-user-profile]
 == Your user profile

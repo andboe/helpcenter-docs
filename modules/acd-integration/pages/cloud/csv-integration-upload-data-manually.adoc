@@ -24,7 +24,7 @@ Manual imports do not need an active Cloud Link or SFTP connection.
 
 [#steps]
 == Steps
-1. Go to menu:Account[Integrations]
+1. Go to {bc-account-integrations}
 2. In the **Current integrations** overview, find the CSV integration entry you want to use for the upload.
 3. Click the {icon-edit} Edit icon. Peopleware opens the integration's details page.
 4. Go to the **Manually upload data** section.

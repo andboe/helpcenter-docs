@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: work-with-charts.adoc, dashboards-examples.adoc
 :page-aliases: dashboards-overview
 
-In menu:Analyze[Dashboards], you can create and display dashboards with up to four different charts. Each chart can display graphs for multiple time series and date ranges. If you do not have a dashboard yet, the page shows the edit mode, and you can xref:#create-dashboards[create a dashboard].
+In {bc-analyze-dashboards}, you can create and display dashboards with up to four different charts. Each chart can display graphs for multiple time series and date ranges. If you do not have a dashboard yet, the page shows the edit mode, and you can xref:#create-dashboards[create a dashboard].
 
 - To display an existing dashboard, select a dashboard from the drop-down menu, or type in the field to filter.
 - To display the values for a specific interval, hover over a graph in the dashboard.
@@ -20,7 +20,7 @@ You can also xref:monitoring:work-with-charts.adoc#navigate-charts[switch betwee
 == Configure dashboard permissions
 In Enterprise and Advanced WFM, you can configure view, edit, and delete permissions for individual dashboards. These permissions are based on roles. To configure permissions for individual dashboards for a role, proceed as follows:
 
-1. Go to menu:Account[Roles].
+1. Go to {bc-account-roles}.
 2. Select the role for which you want to edit dashboard permissions.
 3. Scroll down to *Analyze* and check or uncheck the *Create dashboards* checkbox.
 4. Click *Configure dashboard permissions*.
@@ -30,17 +30,13 @@ In Enterprise and Advanced WFM, you can configure view, edit, and delete permiss
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Whether people can see workload data in dashboards depends on the workload permissions configured for each person's role. Learn more about xref:forecast:workload-permissions.adoc[workload permissions] and xref:forecast:workload-permissions.adoc#configure-individual-workload-permissions[individual workload permissions].
 ====
 [#create-dashboards]
 == Create dashboards
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the {icon-context-menu} on the right, select **Create New Dashboard**.
-3. Configure the following fields:
+3. {configure-fields}
    - **Name**: Unique name for your dashboard.
    - **Layout**: Select the number and layout of your charts.
    - **Untitled Chart**: Name for each chart. The names do not have to be unique.
@@ -57,17 +53,17 @@ Whether people can see workload data in dashboards depends on the workload permi
      > - The {icon-exclamation} in the legend of a chart is displayed if you have no data for a period.
      > - In workloads, you may see special key figures depending on your integration, e.g. if your workloads only contain queues from a [Genesys Cloud integration](/add-genesys-cloud-integration/), you will see information related to abandoned calls, average speed of answer, and calls answered within service level.
 
-7. Click btn:[Save].<br>To return to the view mode, click btn:[Close Edit mode].
+7. {btn-save}<br>To return to the view mode, click btn:[Close Edit mode].
 
 [#duplicate-a-dashboard]
 === Duplicate a dashboard
 To create a new dashboard with the same general properties as an existing dashboard, follow these steps:
 
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu}, select **Duplicate Dashboard**.
 4. Edit the name and configuration details, if needed.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#auto-refresh-dashboards]
 === Auto-refresh dashboards
@@ -75,15 +71,15 @@ You can automatically refresh the selected dashboard. To do so, select an interv
 
 [#edit-dashboards]
 == Edit dashboards
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu} on the right, select **Edit**.
 4. Edit the dashboard, xref:monitoring:work-with-charts.adoc#customize-time-series[customize time series] or xref:monitoring:work-with-charts.adoc#delete-time-series[delete] them.
-5. Click btn:[Save]. To return to the view mode, click btn:[Close Edit mode].
+5. {btn-save} To return to the view mode, click btn:[Close Edit mode].
 
 [#delete-dashboards]
 == Delete dashboards
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the drop-down menu, select a dashboard.
 3. From the {icon-context-menu} on the right, select **Edit**.
 4. Click btn:[Delete] at the bottom right.

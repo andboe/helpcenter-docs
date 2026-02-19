@@ -61,7 +61,7 @@ This section describes the requirement calculation settings available in menu:Fo
 
 [#manual-requirement-calculation]
 == Manual requirement calculation
-This section lists the requirement calculation settings available in menu:Forecast[Requirement calculations].
+This section lists the requirement calculation settings available in {bc-forecast-requirement-calculations}.
 
 [#backoffice-linear]
 === Backoffice - Linear

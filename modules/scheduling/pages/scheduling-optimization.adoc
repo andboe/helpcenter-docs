@@ -10,12 +10,12 @@ We offer three different processes to optimize your scheduling. In the Classic p
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you don't have the Classic WFM plan, use the xref:scheduling:break-optimization.adoc[Optimize breaks], xref:scheduling:schedules-job-optimization.adoc[Job optimization] and xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedules] functionality under menu:Plan[Schedules] instead.
+If you don't have the Classic WFM plan, use the xref:scheduling:break-optimization.adoc[Optimize breaks], xref:scheduling:schedules-job-optimization.adoc[Job optimization] and xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedules] functionality under {bc-plan-schedules} instead.
 ====
 [#three-optimization-types]
 == Three optimization types
@@ -25,7 +25,7 @@ If you don't have the Classic WFM plan, use the xref:scheduling:break-optimizati
 
 Depending on the amount of data and the selected time period, running an optimization may take longer. During this time, you cannot change the schedule for the optimization period. The schedule is saved automatically.
 
-Under menu:WFM[Scheduling>SchedulePro>Optimization], finished optimizations display a report icon that links to the xref:best-practices:resolve-optimization-issues.adoc[scheduling report]. The report helps you to understand any scheduling errors in case they occur.
+Under {bc-wfm-scheduling-schedulepro-optimization}, finished optimizations display a report icon that links to the xref:best-practices:resolve-optimization-issues.adoc[scheduling report]. The report helps you to understand any scheduling errors in case they occur.
 
 [#what-are-fully-optimized-schedules]
 == What are fully optimized schedules?
@@ -44,7 +44,7 @@ The Fully optimized schedules functionality (AutoScheduler) automatically create
 
 [#create-optimized-schedules]
 === Create optimized schedules
-1. Go to menu:WFM[Scheduling>SchedulePro>Optimization].
+1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Fully Optimized Schedule].
 3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.
@@ -76,7 +76,7 @@ Tip: When you use shift bidding, only use the Present activity (ID 1) in your da
 
 [#run-the-job-optimization]
 === Run the Job optimization
-1. Go to menu:WFM[Scheduling>SchedulePro>Optimization].
+1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Job Optimization].
 3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.
@@ -92,7 +92,7 @@ Example: Two employees have got a shift with a break from 12:00 to 13:00. The br
 
 [#run-the-break-optimization]
 === Run the Break optimization
-1. Go to menu:WFM[Scheduling>SchedulePro>Optimization].
+1. Go to {bc-wfm-scheduling-schedulepro-optimization}.
 2. In the menu bar, select btn:[Break Optimization].
 3. Under **Time Period**, set a **Start date** and **End date**. The maximum period is 10 weeks.
 4. Select a *Planning Unit*.

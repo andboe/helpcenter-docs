@@ -23,9 +23,5 @@ For a more detailed view on active user numbers for a selected month, proceed as
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 For any billing related inquiries, e. g. regarding invoice copies or address changes, contact finance@peopleware.com.
 ====

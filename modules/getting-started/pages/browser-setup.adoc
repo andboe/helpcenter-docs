@@ -36,7 +36,7 @@ Adjust the security zone level for the trusted sites:
    Note: This checkbox is no longer available in Windows 11 and above.
 
 4. On the **Security** tab, adjust the security level for **Trusted Sites** to **Medium** or **Medium-Low**. Medium-Low allows you to skip steps 6 to 9.
-5. Click btn:[OK].
+5. {btn-ok}
 6. Click btn:[Custom level...].
 7. In the **Security Settings** dialog window, change the following settings:
 
@@ -54,7 +54,7 @@ Adjust the security zone level for the trusted sites:
 |ENABLED
 |===
 
-8. Click btn:[OK].
+8. {btn-ok}
 
    The following message appears: Are you sure you want to change the settings for this zone?
 

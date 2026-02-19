@@ -15,7 +15,7 @@ New to Time Off? Learn the xref:scheduling:vacation-absences-management.adoc[bas
 
 [#configure-settings-for-suggestions]
 == Configure settings for suggestions
-1. Go to menu:Plan[Time Off]
+1. Go to {bc-plan-time-off}
 2. Click btn:[Configure Suggestions].
 3. (Optional) Check and change the preselected *Planning unit*.
 

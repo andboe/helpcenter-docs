@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Sort and filter items of a level on a given day.
 
-In menu:Plan[Shift Center], you can filter and sort xref:scheduling:use-levels.adoc[level] items as follows:
+In {bc-plan-shift-center}, you can filter and sort xref:scheduling:use-levels.adoc[level] items as follows:
 
 - Sort by start time, schedule position or activity
 - Filter by activity or time

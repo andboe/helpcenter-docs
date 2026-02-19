@@ -34,10 +34,6 @@ Now, you can xref:administration:create-and-manage-planning-units.adoc#limit-day
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited number of day models in your planning unit], you may need to assign new day models to your planning unit. If you use work time pattern models, update the week time pattern(s).
 ====
 [#fixed]
@@ -68,8 +64,8 @@ If you work with a xref:best-practices:tips-on-shift-center-usage.adoc[limited n
 === Change the base activity
 1. Select a day model.
 2. In the **Assignments** section, click the **Base activity**.
-3. Select an activity.
-4. Click btn:[Save].
+3. {select-activity}
+4. {btn-save}
 
 [#variable]
 === Variable
@@ -136,10 +132,6 @@ To keep the optimization as flexible as possible and to avoid scheduling errors,
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The first activity you add to a day model is automatically the base activity. You cannot change or delete a base activity after saving the day model.
 We recommend using the activity Present as base activity. Find out more about the xref:administration:daymodel-basics.adoc#base-activity-and-shift-duration[base activity].
 ====
@@ -157,7 +149,7 @@ To add a presence or absence activity to an existing day model, proceed as follo
    - **Interval**: We recommend using the same interval as your ACD. The activity length must be divisible by the selected interval.<br>If you enter 0, the start time of the activity is fixed and the activity cannot be moved within a corridor.
    - **Relative to start of shift**:<br>If checked (default), the activity starts at the defined number of hours/minutes after the shift start. If the shift is moved, the activity is moved as well.<br>If unchecked, the activity starts at the exact configured time. When you move a variable shift, the activities will not move. This can be useful, e.g. when employees with different shifts need to attend a team meeting at the same time.
 
-5. Click btn:[OK].
+5. {btn-ok}
 
 [#add-a-break-activity]
 === Add a break activity
@@ -174,7 +166,7 @@ To add a break activity for optimized scheduling and shift bidding to an existin
    - **Relative to Start of Shift**:<br>If checked (default), the break starts at the defined number of hours/minutes after the start of the shift. If the shift is moved, the break is moved as well.<br>If unchecked, the break starts at the exact configured time. When you move a variable shift, the breaks will not move. This can be useful, e.g. if the cafeteria in your contact center is only open for a limited time.
 
 5. Select a break option from the **Break** drop-down menu.
-6. Click btn:[OK].
+6. {btn-ok}
 
 [#how-changes-to-day-models-affect-scheduling]
 == How changes to day models affect scheduling
@@ -190,12 +182,12 @@ Changes to the scheduling-related properties have the following effects:
 
 [#add-day-models-to-people]
 == Add day models to people
-1. Go to menu:People[Overview].
-2. Select a person from the list.
+1. Go to {bc-people-overview}.
+2. {select-person}
 3. Under **Planning** in the left-side menu, click {icon-plus} **Add** in the *Day models* section.
 4. Select the day models you want to add to the person.
 5. (Optional) Select **Valid from** and **Valid to** dates if you want to add the day models only temporarily to the person.
-6. Click btn:[Save].
+6. {btn-save}
 
 [#duplicate-day-models]
 == Duplicate day models

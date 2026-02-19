@@ -29,10 +29,6 @@ There are different calculation methods:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The modulation period feature is subject to individual licensing agreements.
 Get in touch with your Peopleware consultant to learn more.
 ====
@@ -44,10 +40,6 @@ After calculation, the following tasks can be performed:
 - Make manual adjustments to modify the calculated values
 - Use **Create optimized schedule** feature to schedule people based on target work times
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 **Create optimized schedule** generates schedules based on target work times if the contract's AutoScheduler parameter **Use target work times** is activated.

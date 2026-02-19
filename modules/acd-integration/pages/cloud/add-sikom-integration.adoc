@@ -15,11 +15,11 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-sikom-integration]
 == Add a Sikom integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Sikom**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-sikom-integration]
 == Set up your Sikom integration
@@ -31,7 +31,7 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
    - Enter the **Database time zone**.
    - Check the **Import agent status data** checkbox to import agent status data from Sikom.
 
-4. Click btn:[Save].
+4. {btn-save}
 
 The integration starts importing data. To successfully import agent status data, you first need to xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map external user identifiers and activities].
 

@@ -18,10 +18,6 @@ In Advanced and Enterprise WFM, Peopleware API integrations allow you to send AP
 - [Queue resource](https://api.peopleware.com/resources/queue-store/queues): Queues group historical data by interval and channel. This data is used for forecasting and scheduling.
 - [Agent Status resource](https://api.peopleware.com/resources/agent-status-store/agent-status): Agent status data is recorded when employees switch from one activity to the next, e.g. login, wrap-up time, or logout.
 
-[WARNING]
-====
-====
->
 [NOTE]
 ====
 The Contact Event resource and the Queues resource should not be used in parallel to send data for the same queue. This will result in data corruption and may cause data loss.
@@ -30,11 +26,11 @@ The Contact Event resource and the Queues resource should not be used in paralle
 == Add a Peopleware API integration
 Users with admin access can add a Peopleware API integration as follows:
 
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Peopleware API**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-peopleware-api-integration]
 == Set up your Peopleware API integration
@@ -58,7 +54,7 @@ To identify the API integration and to authenticate, include the Peopleware key 
 
 1. Add your Peopleware key to the Authorization request header.
 2. Find or copy your integration ID:
-   - Go to menu:Account[Integrations].
+   - {nav-to-account-integrations}
    - Select your API integration section.
    - In the **API Access** section, click the Copy icon \_{icon-clone} next to the integration ID.
 3. Add your integration ID to the **meta** object in the request body.

@@ -16,20 +16,20 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you use Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-empty-levels.adoc[Empty level] under menu:Plan[Schedules] instead.
+If you use Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-empty-levels.adoc[Empty level] under {bc-plan-schedules} instead.
 ====
 [#select-or-create-a-planning-period]
 == Select or create a planning period
-1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+1. Go to {bc-wfm-scheduling-schedulepro-periods}.
 2. Choose the *Planning Unit*.
 3. Choose the **Type** _Standard_.
 4. For *Selection* choose **[All]**.
-5. Click btn:[Apply].
+5. {btn-apply}
 6. Find a planning period that contains the correct date range for which you want to delete schedules. It doesn't have to match the date range exactly.
 7. Click *![edit button](/assets/img/common/item-edit.gif)*.
 8. Select the **Status** _Locked_ to make sure that employees cannot access the schedule.

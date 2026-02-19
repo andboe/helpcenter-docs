@@ -12,24 +12,20 @@ A time account is a ledger of a person’s time-off records. To increase or redu
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Time account balances for time-off types without a defined entitlement can be negative.
 ====
 [#edit-entitlement]
 == Edit entitlement
 1. Go to menu:Time Off[Time accounts].
 2. Select a person and a time account.
-3. Click btn:[Create].
-4. Enter the following information:
+3. {btn-create}
+4. {enter-info}
    - Reason: Select **Manual entitlement**. This directly impacts the entitlement for that person and time-off type, but not their taken time off.
    - Select a **Booking date**
    - (Optional) Select an **Expiration date**.
    - Enter a **Value in days**: Enter the value by which you want to increase or decrease the entitlement. To increase the entitlement by 5 days, enter 5. As a result, the remaining balance increases by 5 days. To decrease the entitlement by 5 days, enter -5. As a result, the balance decreases by 5 days.
    - (Optional) Enter a comment.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#check-the-result-of-your-entitlement-edits]
 === Check the result of your entitlement edits
@@ -41,15 +37,15 @@ Time account balances for time-off types without a defined entitlement can be ne
 == Edit taken time off
 1. Go to menu:Time Off[Time accounts].
 2. Select a person and a time account.
-3. Click btn:[Create].
-4. Enter the following information:
+3. {btn-create}
+4. {enter-info}
    - Reason: Select **Manual correction**. This directly impacts the taken time off for that person and time-off type, but not their entitlement.
    - Select a **Booking date**
    - (Optional) Select an **Expiration date**.
    - Enter a **Value in days** or **Value in hours**: Enter the value by which you want to increase or decrease the taken time off. The unit depends on the time-off type.  
      Example for days: To increase the taken time off by 5 days, enter -5. As a result, the remaining balance decreases by 5 days. To decrease the taken time off by 5 days, enter 5. As a result, the remaining balance increases by 5 days.
    - (Optional) Enter a comment.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#check-the-result-of-your-taken-time-off-edits]
 === Check the result of your taken time off edits

@@ -1,0 +1,18 @@
+// Product plan qualifiers
+:prod-essential: Essential WFM
+:prod-advanced: Advanced WFM
+:prod-enterprise: Enterprise WFM
+:prod-classic: Classic WFM
+:prod-classic-advanced: Classic and Advanced WFM
+:prod-classic-enterprise: Classic and Enterprise WFM
+:prod-all: Essential, Advanced, and Enterprise WFM
+:prod-all-classic: Essential, Advanced, Enterprise, and Classic WFM
+
+// Feature availability
+:feature-cloud: available in the cloud version only
+:feature-on-premise: available in on-premise versions only
+:feature-essentials-plus: available in Essential WFM and above
+
+// Integrations and add-ons
+:addon-cloud-link: Cloud Link integration
+:addon-wfm-module: WFM module

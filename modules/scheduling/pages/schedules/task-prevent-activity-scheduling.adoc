@@ -11,19 +11,11 @@ For example, use this feature to make sure that a day model's base activity is n
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Excluding an activity from scheduling can lead to schedules that no longer comply with applicable scheduling rules related to minimum work hours, minimum period between activities and others.
 In such cases, Peopleware can only create an optimized schedule if the person that triggers the optimization job has the permissions required to violate these scheduling rules.
 ====
 [#prerequisites]
 == Prerequisites
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 This is an add-on feature that needs to be licensed separately.
@@ -56,23 +48,23 @@ Additionally, your role needs object permissions to edit the relevant objects:
    1. In the Attributes overview table, click btn:[Create].
    2. Set the parameters as described in step 2.
       Make sure that the attribute name matches exactly, including capitalization and spacing.
-   3. Click btn:[Save].
+   3. {btn-save}
 
 The attribute can now be assigned to activities.
 
 [#assign-attribute-activity]
 === Assign attribute to activity
-1. Go to menu:Plan[Configuration>Activities].
+1. Go to {bc-plan-config-activities}.
 2. Open the activity you want to exclude from scheduling.
 3. Navigate to the **Attributes** section.
-4. Click btn:[Add].
+4. {btn-add}
    Configure the new attribute:
    - **Attribute**: `Optimisation: remove on writing`.
    - **Value**: Yes
    - **Priority**: 1
    - (Optional): Set a validity period for the attribute assignment.
      If you set a validity period, the activity will only be excluded from scheduling during that period.
-5. Click btn:[Save].
+5. {btn-save}
 
 **Create optimized schedule** jobs will from now on exclude this activity from scheduling.
 The jobs' logs contain information about which activities were removed from the schedule based on this attribute.

@@ -21,10 +21,6 @@ Each xref:administration:create-and-manage-planning-units.adoc[planning unit], x
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Peopleware ensures that time zone settings are always applied correctly. For technical reasons, Peopleware sometimes changes the name of the time zone selected when you create an item, e.g. a planning unit. This does not affect the functionality.
 ====
 The combination of the time zones of the elements and the time zone set for your user account determines how Peopleware displays data in the various features and functionalities.
@@ -57,7 +53,7 @@ image::working-with-timezones/image-4.png[Time in edit menu - planning unit time
 
 [#schedules]
 === Schedules
-The Schedules feature under menu:Plan[Schedules] displays data in the user time zone. If there is a time offset between the time zone of the user and the planning unit, it is displayed next to the name of the planning unit.
+The Schedules feature under {bc-plan-schedules} displays data in the user time zone. If there is a time offset between the time zone of the user and the planning unit, it is displayed next to the name of the planning unit.
 
 image::working-with-timezones/image-11.png[Schedules Time Difference, width=80%]
 
@@ -65,7 +61,7 @@ If you edit a day, the data is shown in the planning unit time zone during the e
 
 [#dashboards]
 === Dashboards
-The Dashboards feature under menu:Analyze[Dashboards] displays the data in the user time zone. You can see the current user time zone in the bottom right corner.
+The Dashboards feature under {bc-analyze-dashboards} displays the data in the user time zone. You can see the current user time zone in the bottom right corner.
 
 If you enter the editing mode by clicking on *![Context menu](/assets/img/common/dashboards/context-menu.png)* and then on **Edit**, the navigator opens to the left. To the right of the elements in the navigator, you can see the time zone of the respective planning unit or workload.
 
@@ -90,7 +86,7 @@ The workload feature under menu:Forecast[] shows data in the time zone set for t
 - the workloads list
 - next to the workload name in the drop-down menu
 
-The values in the volume and AHT graphs in workloads do not default to the time zone set in xref:getting-started:navigate-peopleware.adoc#your-user-profile[your user profile]. To see values according to your profile's time zone, go to menu:Analyze[Dashboards] and add workload data to a dashboard.
+The values in the volume and AHT graphs in workloads do not default to the time zone set in xref:getting-started:navigate-peopleware.adoc#your-user-profile[your user profile]. To see values according to your profile's time zone, go to {bc-analyze-dashboards} and add workload data to a dashboard.
 
 [#requirements-calculation-window]
 === Requirements calculation window

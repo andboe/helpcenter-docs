@@ -19,17 +19,13 @@ Before you add an AFAS integration in Peopleware, set up an app connector in the
 == Add an AFAS integration
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Before the first import run, all personnel numbers in Peopleware must consistently match the `Medewerker` values in AFAS. These personnel numbers serve as the unique identifier between the two systems.
 ====
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **AFAS**.
-5. Click btn:[Save].
+5. {btn-save}
 
 The AFAS integration synchronizes people and contract data daily.
 
@@ -136,10 +132,6 @@ New contracts use the following naming convention:
 - **With long-term absence** (using the `Uren ouderschapsverlof per week` field): `{personnel number} {working days per week}/{working hours per week}-{long-term absence}`  
   Example: `123456 4.0/32.0-8`
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Before you import data from AFAS for the first time, assign a separate contract to each person in Peopleware. Make sure the contract names match the expected format. This helps the integration recognize and match existing contracts correctly, and avoids creating duplicates.

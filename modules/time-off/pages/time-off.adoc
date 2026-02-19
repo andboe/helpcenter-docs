@@ -11,11 +11,7 @@ include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
-Only roles with the permissions View time off, Full access to Accounts or Full access to configuration can access menu:Time Off[]. To configure role permissions for Time Off, go to menu:Account[Roles]. Learn more about xref:account:configure-user-roles.adoc[roles].
+Only roles with the permissions View time off, Full access to Accounts or Full access to configuration can access menu:Time Off[]. To configure role permissions for Time Off, go to {bc-account-roles}. Learn more about xref:account:configure-user-roles.adoc[roles].
 ====
 In menu:Time Off[], you have the following options to manage people's time off:
 
@@ -49,15 +45,15 @@ By default, Time Off is set up without recommendations, and planners can view an
 
 To activate recommendations, proceed as follows:
 
-1. Go to menu:Time Off[Types].
-2. Select a time-off type.
+1. Go to {bc-time-off-types}.
+2. {select-time-off-type}
 3. In the **General** section, check the checkbox **Enable recommendations**.
 
  <!-- Add information about smart recommendations when they are available on the UI -->
 
 [#approve-or-reject-time-off-requests]
 == Approve or reject time-off requests
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the tab **Time off requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
 3. In the relevant request, click **Show coverage and time off** and/or **View in plan** to make a better-informed decision. Learn more about these functionalities in the subsections below.
 4. Click btn:[Approve time off] or btn:[Reject].
@@ -113,7 +109,7 @@ To ensure consistency and correct valuation, add all absences via the Time Off a
 
 To view how each day of a time-off request was evaluated:
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the **Time-off requests** tab.
 3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
 4. A detailed breakdown is displayed showing:
@@ -124,7 +120,7 @@ To view how each day of a time-off request was evaluated:
 === Edit the valuation
 If you need to overwrite a calculated value or add a missing valuation, you can override the valuation. To do so, proceed as follows:
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the **Time-off requests** tab.
 3. In the list of requests, hover over the **To be booked** value in a request and click the {icon-svg-viewer}.
 4. In the table, click the cell in the **Override** column corresponding to the time off that you want to edit.
@@ -140,11 +136,11 @@ To delete an override, cancel the corresponding time off and add it again.
 
 [#see-how-many-people-are-off]
 === See how many people are off
-You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in menu:Time Off[Plan]. Alternatively, click **View in plan** on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
+You can get an overview of how many people have time off, and how many have requested time off for a specific day, week, month, or custom time range in {bc-time-off-plan}. Alternatively, click **View in plan** on a specific entry in the list view to access the plan view and see that specific request or approved time off highlighted.
 
 You can view time off filtered by different criteria:
 
-1. Go to menu:Time Off[Plan].
+1. Go to {bc-time-off-plan}.
 2. Select the level of detail you want to display for the time period:
    - **Day**
    - **Week**
@@ -176,7 +172,7 @@ Time-off quotas apply to time-off activities, such as Absence, Illness, or Vacat
 [#edit-quotas]
 === Edit quota for a specific date
 1. Go to menu:Time off[Quotas]
-2. Select a planning unit.
+2. {select-planning-unit}
 3. Use the date picker to select the relevant date range.
 4. Click the date you want to edit.
 5. Enter the quota for the date.
@@ -185,12 +181,12 @@ Time-off quotas apply to time-off activities, such as Absence, Illness, or Vacat
 [#bulk-edit-quotas]
 === Bulk edit quotas
 1. Go to menu:Time off[Quotas]
-2. Select a planning unit.
+2. {select-planning-unit}
 3. Click btn:[Bulk edit]
 4. Use the date picker to select the relevant date range.
 5. Enter the quota for the date range.
 6. Check or uncheck the days of the week for which you want to apply the quota.
-7. Click btn:[Save].
+7. {btn-save}
 
 [#view-quota-consumption]
 === View quota consumption
@@ -325,13 +321,13 @@ If the time-off type is paid but the fill-up functionality is not activated, the
 == Approve or reject a cancellation request
 People cannot cancel their own time off. Instead, they must submit a cancellation request that needs to be accepted or rejected.
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the tab **Cancellation requested**.<br>You can filter the list by selections, planning units, recommendations, etc.
 3. In the relevant request, click btn:[Cancel time off] or btn:[Reject].
 4. In the confirmation window, you can add a comment.
 5. If you approve the cancellation and the person had previously been scheduled for the days for which they want to cancel their time off, select one of the following options:
    - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in menu:Plan[Schedules].
+   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
 6. Click btn:[Confirm] or _Confirm cancellation_.
    The person is notified by email.
 
@@ -350,9 +346,9 @@ You can add time off directly to your people's schedules. This may be needed, fo
 
 Add time off directly to the schedule as follows:
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click btn:[Create time off].
-3. Enter the following information:
+3. {enter-info}
    - **Person**
    - **Time-off type**
    - **Time range**
@@ -367,7 +363,7 @@ You may need to extend or reduce a person's planned time off, for example, if si
 
 Extend or reduce planned time off as follows:
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
 3. In the entry of the relevant time off, click btn:[{icon-edit} Edit time off].
 4. Edit the **Time range**, or the **Start time** and **End time**.
@@ -382,12 +378,12 @@ You may need to cancel time off you have already approved, e.g. because people n
 
 Cancel an approved time off as follows:
 
-1. Go to menu:Time Off[Requests].
+1. Go to {bc-time-off-requests}.
 2. Click the tab **Decided**.<br>You can filter the list by selections, planning units, recommendations, etc.
 3. In the entry of the relevant time off, click btn:[Cancel time off].
 4. If the person had previously been scheduled for the days for which you want to cancel their time off, select one of the following options:
    - **Restore**: The person is scheduled again for their original shifts on the selected days.
-   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in menu:Plan[Schedules].
+   - **Clear**: The person is no longer scheduled for the selected days. You can update their schedule manually in {bc-plan-schedules}.
 5. Click btn:[Confirm cancellation].
 
 [#staff-membership-changes]
@@ -396,26 +392,22 @@ Changing the staff membership end date for a person affects their time-off reque
 
 If the staff membership end date lies before the requested period starts, the following applies:
 
-- Approved time off is no longer displayed in menu:Time Off[Plan].
+- Approved time off is no longer displayed in {bc-time-off-plan}.
 - For approved time off, the person's balance and time account are adjusted.
 - For approved time off, quotas are adjusted accordingly.
-- Pending time-off requests are rejected and removed from menu:Time Off[Requests].
+- Pending time-off requests are rejected and removed from {bc-time-off-requests}.
 
 If the staff membership end date falls within the requested period, the following applies:
 
-- Approved time off remains visible in menu:Time Off[Plan].
+- Approved time off remains visible in {bc-time-off-plan}.
 - For approved time off, the person's balance and time account are adjusted for the days up to their staff membership end date. Time Off only values the part of the request that lies before the before the staff memberhsip end date.
 - For approved time off, quotas are adjusted accordingly.
-- Pending requests remain in menu:Time Off[Requests] and need to be manually rejected.
+- Pending requests remain in {bc-time-off-requests} and need to be manually rejected.
 
 People can still request time off that falls outside their staff membership.
 
 [#daily-status-report]
 == Daily status report
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Time-off status reports are available in Enterprise tenants only. If you have questions regarding availability get in touch with your Peopleware consultant.
@@ -461,11 +453,11 @@ Update schedules manually when shifts cannot be restored
 >
 [NOTE]
 ====
-If you want the person to work on the days for which the time off is cancelled, xref:scheduling:schedules-edit.adoc[update their schedule manually in menu:Plan[Schedules]].
+If you want the person to work on the days for which the time off is cancelled, xref:scheduling:schedules-edit.adoc[update their schedule manually in {bc-plan-schedules}].
 ====
 Peopleware cannot restore scheduled shifts in the following cases:
 
-- The time off was originally requested and approved in menu:Plan[Time Off] instead of Time Off.
+- The time off was originally requested and approved in {bc-plan-time-off} instead of Time Off.
 - The time off was [valuated with 0](https://help.peopleware.com/understand-valuation#why-do-i-not-see-a-valuation-for-a-time-off-request-) and was not added to the schedule.
 - The time off was revaluated after approval because the person was assigned a new contract.
 - The person has several part-day time off planned for the same day.

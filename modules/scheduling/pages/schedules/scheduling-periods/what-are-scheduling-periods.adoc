@@ -17,25 +17,21 @@ You need scheduling periods for the following use cases:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Do not confuse scheduling periods with time-off periods. xref:scheduling:time-off-periods-legacy.adoc[Time-off periods] are used to organize your people's time-off entitlement and when they can request time off.
 ====
 [#create-scheduling-periods]
 == Create scheduling periods
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling periods].
 3. Click btn:[Create scheduling period] in the upper right.
-4. Configure the following fields:
+4. {configure-fields}
    - **Planning unit**
    - (Optional) **Selection**
    - **Date range**
    - (Optional) **Deadline**: Last day on which people can swap or bid on shifts.
    - **Status**: xref:#status[Learn more about the different possible statuses and what they mean].
 
-5. Click btn:[Save].
+5. {btn-save}
 
 [#status]
 == Status
@@ -59,7 +55,7 @@ All scheduling periods have a status. The status unlocks or restricts certain op
 == Display scheduling periods
 To see all scheduling periods created for a specific planning unit and/or selection, follow these steps:
 
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. Click btn:[Scheduling periods].
 3. Select a **Planning unit** and, optionally, a **Selection**.
    The table displays all scheduling periods for your selected planning unit (and selection), if there are any.<br>
@@ -102,7 +98,7 @@ To edit all parameters of a scheduling period (including the status), follow the
 
 1. In the table, hover over the relevant scheduling period and click the {icon-edit} on the right.
 2. Edit the relevant parameters.
-3. Click btn:[Save].
+3. {btn-save}
 
 [#delete-scheduling-periods]
 == Delete scheduling periods

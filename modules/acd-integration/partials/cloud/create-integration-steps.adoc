@@ -1,7 +1,7 @@
 == Add an integration
 
-. Go to menu:Account[Integrations].
-. Click btn:[Create].
+. {nav-to-account-integrations}
+. {btn-create}
 . Enter a unique name for the new integration that identifies the data source.
 . From the **External system** drop-down menu, select your integration type.
-. Click btn:[Save].
+. {btn-save}

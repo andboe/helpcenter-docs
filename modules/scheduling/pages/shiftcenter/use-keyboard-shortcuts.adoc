@@ -6,7 +6,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :topic-type-concept:
 :description: Learn about the various keyboard shortcuts that can speed up your usage of the Shift Center.
 
-In menu:Plan[Shift Center], you can use keyboard shortcuts to save time on your Shift Center usage.
+In {bc-plan-shift-center}, you can use keyboard shortcuts to save time on your Shift Center usage.
 
 New to the Shift Center? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
 

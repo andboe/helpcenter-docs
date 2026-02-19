@@ -13,11 +13,11 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-a-vonage-integration]
 == Add a Vonage integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Vonage**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-vonage-integration]
 == Set up your Vonage integration
@@ -26,4 +26,4 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 2. In the **Configuration** section, configure the following fields:
    - **Account region**: Select the region of your Vonage account.
    - **Group queues by**: Select how you want to group your queues. The selection cannot be changed once it has been saved. The Vonage queues option combines data from queue type, queue name, and interaction plan.
-3. Click btn:[Save].
+3. {btn-save}

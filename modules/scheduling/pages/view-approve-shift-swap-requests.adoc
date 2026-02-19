@@ -34,7 +34,7 @@ Learn more about the actual steps people must take to swap shifts in Me in xref:
 == Approve or reject shift swaps
 Users with admin access or people with roles that include the **Full access to Schedules** permission can review, approve, or reject shift swap requests as follows:
 
-1. Go to menu:Plan[Schedules]
+1. Go to {bc-plan-schedules}
 2. From the btn:[Scheduling actions] drop-down menu, select **Approve shift swaps**.
 3. Select a *planning unit* and, optionally, a *selection* from the drop-down menus.
 4. Select a **date range**.<br>If no date range has been selected in *Schedules*, the date range starts on the current date and ends seven days later.
@@ -52,7 +52,7 @@ To activate shift swap auto-acceptance, proceed as follows:
 
 1. Go to menu:Plan[Configuration>General].
 2. In the **Shift swaps in Me** section, check the **Enable shift swap auto-acceptance** checkbox.
-3. Click btn:[Save].
+3. {btn-save}
 
 [#generate-a-list-of-past-shift-swaps]
 == Generate a list of past shift swaps

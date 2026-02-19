@@ -12,19 +12,15 @@ This article explains how to create a contract.
 [#create-a-contract]
 == Steps
 1. Go to menu:Plan[Configuration].
-2. Click btn:[Create].
+2. {btn-create}
 3. Enter general details, see xref:#general[General].
-4. Click btn:[Save].
+4. {btn-save}
 
 The contract is shown. To ensure accurate scheduling, configure the following:
 
 - xref:#work-time-guidelines[Work time guidelines]
 - xref:#work-hours-per-day[Work hours per day]
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If you set **Work hours per day**, **Work time guidelines** will be ignored during scheduling.

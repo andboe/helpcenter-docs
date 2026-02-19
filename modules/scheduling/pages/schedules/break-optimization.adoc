@@ -27,7 +27,7 @@ To use the **Optimize breaks** functionality, the following conditions need to a
 
 [#run-a-break-optimization]
 == Run a break optimization
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. From the btn:[Scheduling actions] drop-down menu, select *Optimize breaks*.
 3. In the **Set up break optimization** section, configure the break optimization:
    - *Planning unit*: The planning unit for which you want to perform the break optimization.

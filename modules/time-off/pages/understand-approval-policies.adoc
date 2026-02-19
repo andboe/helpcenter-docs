@@ -8,10 +8,6 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Some advanced approval policy features may not be available on your Peopleware tenant. If you have questions regarding availability, get in touch with your Peopleware consultant.
 ====
 In menu:Time Off[], approval policies define how Peopleware handles time-off requests. Approval policies use xref:#what-are-checks[checks] and configurable thresholds to enforce company rules around time off.
@@ -26,10 +22,6 @@ An approval policy is a set of rules that determines how the system should handl
 
 An approval policy may include one or more checks.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If no approval policy is configured for a time-off type, the request is not processed automatically and must be reviewed manually.

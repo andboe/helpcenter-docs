@@ -26,7 +26,7 @@ To access the different pages for this task, your role needs to have the followi
 [%header, cols="1a,1a,1a,".rstrip(',')]
 |===
 |Page
-|Permissions required in menu:Account[Roles]
+|Permissions required in {bc-account-roles}
 |Permissions required in menu:WFM[Administration>System>Role authorization>Time Management]
 |menu:Time Management[Account Statistics]
 |- View Balances and Account statistics
@@ -86,7 +86,7 @@ Use **Balances** to check people's balances per account group, account, planning
    - Select a date range
    - Select a time
    - Select an operation type
-7. Click btn:[Create].
+7. {btn-create}
 
 [#recalculate]
 === Recalculate balances

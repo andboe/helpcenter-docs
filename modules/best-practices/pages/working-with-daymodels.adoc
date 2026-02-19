@@ -23,10 +23,6 @@ In our example, your Contact Center is open between 07:00-19:00. For your call v
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 For simplicity, this example does not include breaks. When you create day models, you must take breaks into account and add them to the total working time. For example, an unpaid 30-minute break per day increases the total working time for an employee who works 8 hours a day to 8.5 hours.
 ====
 [#representation-in-peopleware]

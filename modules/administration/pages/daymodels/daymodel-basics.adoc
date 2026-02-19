@@ -23,10 +23,6 @@ There are three different types of day models.
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 - Day models of type Fixed are also called fixed day models.<br>
 - Day models of type Variable are also called variable day models.
 ====

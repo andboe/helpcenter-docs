@@ -14,12 +14,12 @@ In this article, you will learn:
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under menu:Plan[Schedules] and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under menu:Plan[Time Off] instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under {bc-plan-schedules} and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under {bc-plan-time-off} instead.
 ====
 [#what-are-planning-periods-used-for]
 == What are planning periods used for?
@@ -65,7 +65,7 @@ As you can see, planning periods are used in many different ways. Click one of t
 
 [#filter-and-display-planning-periods]
 == Filter and display planning periods
-If you go to menu:WFM[Scheduling>SchedulePro>Planning Periods], you will initially see no planning periods. You first have to set a filter to choose the planning periods you want to display.
+If you go to {bc-wfm-scheduling-schedulepro-periods}, you will initially see no planning periods. You first have to set a filter to choose the planning periods you want to display.
 
 1. Choose a *Planning Unit*.
 2. Choose a **Type**.

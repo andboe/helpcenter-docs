@@ -18,12 +18,8 @@ Once a time-off period is set up and published, people in the assigned planning 
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Only people with a role that grants the Access time off permission can request time off.
-Roles are assigned to people in menu:Account[Roles].
+Roles are assigned to people in {bc-account-roles}.
 Learn more about xref:account:role-permissions.adoc[role permissions].
 ====
 Use
@@ -58,7 +54,7 @@ To inform people by email about the fact that they can request time-off in a tim
 3. Make sure the status of the time-off period is set to Published.
 4. Activate the **Send notification** checkbox.
 5. Optional: Enter a comment. The comment will be included in the notification email.
-6. Click btn:[Save].
+6. {btn-save}
 
 Peopleware sends a notification email to all people that meet the following criteria:
 
@@ -66,10 +62,6 @@ Peopleware sends a notification email to all people that meet the following crit
 - If applicable, the person is assigned to the selection specified for the time-off period.
 - The assignments are valid at any point within the time-off period.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Peopleware clears the notification settings, including the comment, after saving the time-off period.

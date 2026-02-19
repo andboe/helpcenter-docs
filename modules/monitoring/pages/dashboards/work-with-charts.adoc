@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to work with charts in a dashboard.
 :related-articles: dashboards-examples.adoc
 
-In menu:Analyze[Dashboards], you can work with charts and time series to analyse your data. Start by selecting a dashboard from the drop-down menu at the top.
+In {bc-analyze-dashboards}, you can work with charts and time series to analyse your data. Start by selecting a dashboard from the drop-down menu at the top.
 
 New to Dashboards? Learn xref:monitoring:manage-dashboards.adoc[the basics] first.
 
@@ -22,10 +22,6 @@ The following actions are available in **Dashboards**:
 - To switch back to chart view, click the Show chart icon {icon-chart-view}.
 - To copy data to the clipboard, click the Copy icon {icon-clone}.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 The date and time information is localized according to your language settings in Peopleware. This could cause problems if you copy data into an Excel or Google Sheets document that uses another language.
@@ -44,7 +40,7 @@ Hide and show other time series by clicking the {icon-eye} or the {icon-eye-slas
 
 [#customize-time-series]
 === Customize time series
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the {icon-context-menu}, click **Edit**.
 3. Hover over the time series name in the legend and click the Edit icon {icon-edit}.
 4. In the **Customize graph** window, edit the time series properties:
@@ -53,12 +49,12 @@ Hide and show other time series by clicking the {icon-eye} or the {icon-eye-slas
    - Select another predefined **Color**.
    - Select how data is aggregated in the chart. Choose **By interval** (available for time ranges up to 8 days) to show interval values, or **By day** to show daily values.
    - Select whether to show the y-axis values on the **Left (default)** or the **Right**.
-5. Click btn:[Save].<br>Click btn:[Close Edit mode] to return to the view mode.
+5. {btn-save}<br>Click btn:[Close Edit mode] to return to the view mode.
 
 [#delete-time-series]
 === Delete time series
-1. Go to menu:Analyze[Dashboards].
+1. Go to {bc-analyze-dashboards}.
 2. From the {icon-context-menu}, click **Edit**.
 3. Hover over the time series name in the legend and click the Edit icon {icon-edit}.
 4. In the **Customize graph** window, click btn:[Delete].
-5. Click btn:[Save].<br>Click btn:[Close Edit mode] to return to the view mode.
+5. {btn-save}<br>Click btn:[Close Edit mode] to return to the view mode.

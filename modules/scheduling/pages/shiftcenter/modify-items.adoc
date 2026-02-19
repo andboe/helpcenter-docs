@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to cut, copy, paste, move, expand, and shorten scheduling elements, change day models into activities, undo your actions, and revoke full-day activities.
 :related-articles: add-and-delete-activities-day-models-availabilities-and-comments.adoc, use-keyboard-shortcuts.adoc
 
-If the availability of your people changes or if there are unexpected absences, you might need to manually edit your schedule. In menu:Plan[Shift Center] you can do it in the following two ways:
+If the availability of your people changes or if there are unexpected absences, you might need to manually edit your schedule. In {bc-plan-shift-center} you can do it in the following two ways:
 
 - Directly in the xref:#edit-the-schedule-in-the-schedule-area[schedule area]
 - In the xref:#edit-the-schedule-in-the-configuration-window[configuration window]
@@ -64,7 +64,7 @@ To edit the schedule in the configuration window, proceed as follows:
    - *Full-Day Activities*
 
 3. Edit the element(s).
-4. Click btn:[OK].
+4. {btn-ok}
 
 Learn xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#booking-date-and-columns---0-+[how to use the booking date and -/0/+ columns].
 
@@ -112,10 +112,6 @@ To split a day model into its activities, proceed as follows:
 1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], right-click a day model.
 2. From the drop-down menu, select *Dissociate Items from Shift Concept*.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 The *Job Optimization* and the *Create optimized schedules* functionalities split day models into activities.

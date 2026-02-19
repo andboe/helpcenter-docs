@@ -17,7 +17,7 @@ To use the **Replace activities** functionality, the following conditions need t
 
 [#batch-replace-an-activity]
 == Batch replace an activity
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. Select a date range from the date picker.
 3. From the btn:[Scheduling actions] drop-down menu, select *Replace activities*.
 4. In the page that opens, configure the replacing process.<br>In the **Settings** section configure the following parameters:
@@ -31,5 +31,5 @@ To use the **Replace activities** functionality, the following conditions need t
    - Uncheck the checkboxes next to the names of the people that you want to exclude. Uncheck the checkbox next to **Name** in the header to deselect all entries in the list.
 5. At the bottom left, click btn:[Replace activities].
 
-A process starts in the background. You are redirected to menu:Plan[Schedules] and see a success or an error message at the top of the page.<br>
+A process starts in the background. You are redirected to {bc-plan-schedules} and see a success or an error message at the top of the page.<br>
 Go to xref:general:jobstatus.adoc[Job status] to track the progress of the process. If the process fails, click the related entry to see the job details and the cause of the failure.

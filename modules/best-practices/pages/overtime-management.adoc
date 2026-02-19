@@ -33,25 +33,25 @@ By adding "overtime" to the name of the multiactivity, you and your people can c
 
 [#schedule-overtime]
 == Schedule overtime
-You can manually schedule overtime either in menu:Plan[Shift Center] or in menu:Plan[Schedules].
+You can manually schedule overtime either in {bc-plan-shift-center} or in {bc-plan-schedules}.
 
 To add overtime activities in Shift Center, follow these steps:
 
 1. Choose the planning unit and, optionally, the selection to which the person you want to schedule for overtime work belongs.
 2. Double-click that person's cell for the day on which they should work overtime. Click the **Multi-Activities** tab and select **Calls overtime**.
 3. Set a start and end time for the activity.
-4. Click btn:[OK].
+4. {btn-ok}
 
 The planned overtime is immediately reflected in the Schedule window and on the Activities tab in the xref:scheduling:shift-center-overview.adoc#parameter-area[parameter window]. If you configure the Activities tab to show the coverage, the heat map will update and reflect the overtime planned.
 
-To add overtime activities in menu:Plan[Schedules], follow these steps:
+To add overtime activities in {bc-plan-schedules}, follow these steps:
 
 1. Double-click a cell in the schedule to open the edit view.
 2. Click btn:[Add new Activity].
    A new row with the activity is added to the right.
 3. In the new row, select **Calls overtime** from the drop-down menu.
 4. Set a start and end time for the activity.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#reporting]
 == Reporting

@@ -54,10 +54,6 @@ You have the following base permissions:
 == Steps
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 You can trigger a time account calculation for any given date.
 However, any subsequent calculation already performed for a later date does not automatically update and will have to be retriggered to reflect the results of previous calculations.
 Also, you cannot delete a balance value for a date once it has been calculated.

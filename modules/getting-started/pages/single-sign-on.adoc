@@ -12,10 +12,6 @@ During the login process, Peopleware as the service provider (SP) redirects them
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The SAML assertion exchanged between IdP and SP contains sensitive user details. To improve security, enable encrypted assertions (widely supported) or token encryption (less common) in your IdP settings. Both protect sensitive data during transmission.
 ====
 [#requirements]
@@ -52,10 +48,6 @@ Only users with admin access can activate SSO.
 
 7. Click btn:[Test configuration] to test the login through the IdP. The IdP generates a SAML response that is sent to Peopleware. You are redirected to your IdP's login page, where you enter the IdP credentials. If the IdP configuration is correct and the authentication process is successful, you will be logged in to Peopleware.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 SSO is now active in test mode. Users can still log in with their username and password. For a higher level of security, you can xref:#enforce-sso-for-all-users[enforce SSO for all users].
@@ -110,10 +102,6 @@ If SSO login fails, check user existence, email match, and app assignment in the
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Peopleware does not support IdP-initiated SSO. Users must start the login process from the Peopleware login page (SP-initiated SSO). Starting the login process in the IdP will result in login errors.
 ====
 [#revoke-access-to-peopleware]
@@ -132,11 +120,11 @@ If your organization has multiple Peopleware tenants, and you want some or all o
 
 To add a UPN to a person, proceed as follows:
 
-1. Go to menu:People[].
+1. {nav-to-people}
 2. Click the person who needs to have access to multiple tenants.
 3. In the left-side menu, click **Access**.
 4. In the **Single sign-on** section, enter a user principal name.
-5. Click btn:[Save].
+5. {btn-save}
 
 The user's Peopleware email address, and not their UPN, is used for all email verification processes and for notifications or reports. The email address must be unique for each tenant. You can use [plus addressing](https://en.wikipedia.org/wiki/Email_address#Sub-addressing).
 

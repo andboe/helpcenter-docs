@@ -23,7 +23,7 @@ On some days, your business hours might differ from the standard, e.g. when ther
 1. In menu:Plan[Configuration>Day types], click btn:[Create] at the top right.
 2. Enter a **Name** and **Abbreviation**.
 3. (Optional) Check the **Holiday mode** checkbox.<br>xref:#holiday-mode[Learn more] about how to configure day types for public holidays.
-4. Click btn:[Save].
+4. {btn-save}
 
 [#holiday-mode]
 == Holiday mode
@@ -41,24 +41,16 @@ Holiday mode reduces people's working hours for the day according to their contr
 
 [#edit-a-day-type]
 == Edit a day type
-[WARNING]
-====
-====
->
 [NOTE]
 ====
 If you activate or deactivate the holiday mode for a day type that is currently in use, you must recalculate time accounts or xref:administration:task-calculate-target-work-times.adoc[target work times].
 ====
 1. In menu:Plan[Configuration>Day types], select a day type from the list.
 2. Edit the data that you want to change.
-3. Click btn:[Save].
+3. {btn-save}
 
 [#delete-a-day-type]
 == Delete a day type
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Before you delete a day type, xref:administration:configure-planning-calendars.adoc#remove-day-types-from-the-planning-calendar[remove it from all planning calendars]. You cannot delete default day types.

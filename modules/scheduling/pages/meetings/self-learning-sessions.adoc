@@ -20,7 +20,7 @@ New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 == Generate suggestions for self-learning sessions
 To generate suggestions for self-learning sessions, follow these steps:
 
-1. In menu:Plan[Meetings], click btn:[Set up] in the *Self-learning sessions* tile.
+1. In {bc-plan-meetings}, click btn:[Set up] in the *Self-learning sessions* tile.
 2. In the *Settings* section, configure the following fields:
    - *Planning unit*
    - *Activity to schedule*: Select the meeting activity you created fot self-learning sessions.

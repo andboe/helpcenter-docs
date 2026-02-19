@@ -1,0 +1,17 @@
+// Common UI dialog/window patterns
+:in-confirmation-window: In the confirmation window, click btn:[{btn-text}].
+:in-dialog: In the dialog, click btn:[{btn-text}].
+:in-confirmation-dialog: In the confirmation dialog, click btn:[{btn-text}].
+:in-section: In the **{section-name}** section, click btn:[{btn-text}].
+
+// Common result/outcome statements
+:result-created: The {object} is created.
+:result-saved: The {object} is saved.
+:result-deleted: The {object} is deleted.
+:result-added: The {object} is added.
+:result-updated: The {object} has been updated.
+
+// Common transition patterns
+:next-step-can-now: You can now xref:{module}:{page}[{action}].
+:learn-more-about: Learn more about xref:{module}:{page}[{topic}].
+:learn-how-to: Learn how to xref:{module}:{page}[{action}].

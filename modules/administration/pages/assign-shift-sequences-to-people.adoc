@@ -19,12 +19,12 @@ To assign shift sequences to your people in bulk, use the xref:people:concept-ma
 
 [#steps]
 == Steps
-1. Go to menu:People[].
-2. Select a person from the list.
+1. {nav-to-people}
+2. {select-person}
 3. In the menu on the left, click **Planning**.
 4. In the *Shift sequences* section, click {icon-plus} **Add** .
 5. Configure the xref:#settings[assignment settings].
-6. Click btn:[Save].
+6. {btn-save}
 
 [#settings]
 == Settings
@@ -46,10 +46,6 @@ To assign shift sequences to your people in bulk, use the xref:people:concept-ma
 |Specifies the end of the period in which the shift sequence is available to schedule the person.
 |===
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Starting from the **Reference date**, the shift sequence repeats continuously for as long as it remains valid. If you configure shift sequences as weekly patterns, make sure you set the reference date to the same weekday as the start of the week defined for your tenant. By default, the start of the week is either Sunday or Monday, depending on your region. If you need to change it to a different day, contact your consultant.

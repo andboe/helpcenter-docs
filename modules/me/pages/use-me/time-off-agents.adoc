@@ -9,7 +9,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
 
-Time off represents absences from the workplace. The amount and type of time off you can take and whether you are paid during your absence depends on your organization's regulations and your contract. Go to menu:Me[Time Off] to do the following:
+Time off represents absences from the workplace. The amount and type of time off you can take and whether you are paid during your absence depends on your organization's regulations and your contract. Go to {bc-me-time-off} to do the following:
 
 - Request time off for the different available time-off types (e.g. Sickness or Vacation)
 - See submitted requests and their status
@@ -18,7 +18,7 @@ Time off represents absences from the workplace. The amount and type of time off
 
 == The calendar
 
-Days in your calendar in menu:Me[Time Off] are highlighted differently:
+Days in your calendar in {bc-me-time-off} are highlighted differently:
 
 - White: You can request time off. If there is already a published schedule, the days for which you are scheduled to work are bold.
 - Green: Days with approved time off.

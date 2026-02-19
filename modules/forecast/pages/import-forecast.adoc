@@ -27,10 +27,6 @@ Timestamp;Offered;AHT
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 You cannot import one single daily value, but interval data is required.
 ====
 [#import-data-requirements]
@@ -47,10 +43,6 @@ In addition to the format requirements specified by the CSV schema, the CSV impo
 - The maximum file size is 20 MB or 20.000 rows.
 - The maximum date range is 1 year.
 
-[WARNING]
-====
-====
->
 [NOTE]
 ====
 When the AHT column is not included or values are 0, Forecast may unable to calculate staff requirements with certain calculation methods. However, you can still use a fixed value to overwrite the imported AHT.
@@ -82,7 +74,7 @@ Timestamp;Offered;AHT
 
 [#import-a-forecast]
 == Import a forecast
-1. In menu:Forecast[Workloads], select the workload for which you want to import the external forecast data.
+1. In {bc-forecast-workloads}, select the workload for which you want to import the external forecast data.
 2. From the three-dot menu {icon-context-menu} at the top right, select **Import forecast data**.
 3. In the CSV schema field, select the CSV schema you want to use to import the data.
 4. Provide the CSV file in the upload dialog.

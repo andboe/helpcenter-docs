@@ -8,9 +8,9 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 
 In menu:People[Advanced filters], you can create dynamic lists of people based on one or more conditions. These filters are used to identify subsets of people who match specific criteria in the following applications:
 
-- menu:People[]
-- menu:Plan[Schedules]
-- menu:Plan[Shift Center]
+- {bc-people}
+- {bc-plan-schedules}
+- {bc-plan-shift-center}
 - menu:WFM[Monitoring>Reports]
 
 Filters are composed of the following elements:
@@ -149,8 +149,8 @@ Filters can be time-bound using one of the following time frame types:
 - **Relative**: Dynamic period like "next month" or "previous week"
 - **Custom**: Custom start and end date
 - **Contextual**: The time period adjusts depending on where you use the filter:
-  - In menu:People[]: Automatically uses the current day.
-  - In menu:WFM[Monitoring>Reports], menu:Plan[Shift Center] and menu:Plan[Schedules]: Uses the date range currently applied.
+  - In {bc-people}: Automatically uses the current day.
+  - In menu:WFM[Monitoring>Reports], {bc-plan-shift-center} and {bc-plan-schedules}: Uses the date range currently applied.
 
 [#example-filter]
 == Example filter

@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: View and edit shifts, activities and other scheduling elements like time-off requests.
 :related-articles: analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc, schedules-edit.adoc, schedules-comments.adoc
 
-In menu:Plan[Schedules], you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
+In {bc-plan-schedules}, you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
 The Schedules page consists of an action bar, the schedules area and the activities area. The different sections of this article explain what you can do on each part of the page.
 
 [#prerequisites]
@@ -68,10 +68,6 @@ Use the search field above the column to search for specific people. Use commas 
 
 Click the column header to sort alphabetically by last name. Click a person's name to open a popover with their contract and skill information. Click the person's name in blue inside the popover to open the person's details in edit mode in a new browser tab.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If you have configured a join or leave date for a person, the person is only displayed between those dates.

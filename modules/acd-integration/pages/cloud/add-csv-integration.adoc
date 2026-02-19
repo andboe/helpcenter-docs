@@ -33,10 +33,6 @@ Additionally, the following file size limits apply per CSV file:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The CSV (SFTP) model supports file sizes of up to 32 MB for automatic imports.
 Manual imports are still limited to 10 MB per file.
 ====
@@ -55,14 +51,14 @@ Use UTF-8 to avoid generic error messages.
 == Add a CSV integration
 If you need to import data from CSV files with different formats (e.g. separators, date formats, or column names), set up a separate integration for each. To set up an integration, proceed as follows:
 
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. {nav-to-account-integrations}
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **Universal interfaces**.
 5. From the **Model name** drop-down menu, select one of the following options:
    - To import data from CSV files stored on an on-premise system via Cloud Link, select **CSV (Cloud Link)**.
    - To import data from CSV files stored on an SFTP server, select **CSV (SFTP)**.
-6. Click btn:[Save].
+6. {btn-save}
 
 [#configure-a-new-csv-integration]
 === Configure a new CSV integration
@@ -75,7 +71,7 @@ If you need to import data from CSV files with different formats (e.g. separator
      - **Agent status**: The uploaded data includes all agent activities recorded by your external system, such as login, logout, on call, after-call work, break, ready, etc.
      - **Plan data**: The uploaded data includes plan data, such as activities.
    - **CSV schema**: The CSV schema that will be used for all automatic CSV imports from the Cloud Link or SFTP import folder.
-3. Click btn:[Save].
+3. {btn-save}
    You can now use the xref:#manual-file-import[manual data import] or set up the xref:#automatic-file-import[automatic data import].
 
 [#import-csv-files]

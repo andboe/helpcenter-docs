@@ -54,7 +54,7 @@ To create a new role and configure all its settings from scratch, proceed as fol
 * Optional: *Description*
 . Edit the role permissions.
 To grant permissions, check the checkbox of the feature.
-. Click btn:[Save].
+. {btn-save}
 
 [#duplicate-existing-role]
 === Duplicate an existing role
@@ -72,7 +72,7 @@ To duplicate a role, proceed as follows:
 === Assign roles to people
 
 . Go to {bc-people}.
-. Select a person from the list.
+. {select-person}
 . In the left-side menu, click *Access*.
 . In the *Roles and admin access* section, click icon {icon-edit}.
 . Check the relevant checkboxes in the list.

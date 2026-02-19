@@ -27,16 +27,12 @@ include::help-center:forecast:partial$staff-requirements/permission-table-staff-
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
-Object permissions for workloads are set up in menu:Account[Roles].<br>
+Object permissions for workloads are set up in {bc-account-roles}.<br>
 Object permissions for planning units and activities are set up in menu:WFM[Administration>System>Role Authorization]
 ====
 [#steps]
 == Steps
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. In the **Staff requirements** section, click btn:[Edit staff requirements].
 3. From the **Calculation method** drop-down menu, select an option:
    - **Erlang-C**
@@ -45,7 +41,7 @@ Object permissions for planning units and activities are set up in menu:WFM[Admi
 4. In the **Calculation parameters** section, configure the calculation settings.
    For more information see the xref:forecast:ref-requirement-calculations.adoc#automatic-requirement-calculations[staff requirements reference guide].
 5. In the **Associated planning unit and activity** section, configure where Peopleware should save the staff requirement data. By default, staff requirement data is saved for the planning unit and the activity specified in the workload.
-6. Click btn:[Save].
+6. {btn-save}
 
 Peopleware now calculates staff requirements for all forecast versions of this workload.
 To check the results, see the graph in the staff requirements section.

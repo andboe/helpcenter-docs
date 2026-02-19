@@ -31,7 +31,7 @@ To edit a person's activities, proceed as follows:
 4. On the **Agent intraday adherence** page, click menu:Edit actual activities[].
 5. Click {icon-context-menu} on the right of the activity and select **{icon-edit} Edit** or **{icon-delete} Delete**. To add an activity, click btn:[Create].
 6. Edit the activity.
-7. Click btn:[Save].
+7. {btn-save}
 
 Activity updates may take a few minutes.
 If you delete or shorten an activity, a gap may appear.

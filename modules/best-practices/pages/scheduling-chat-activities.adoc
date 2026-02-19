@@ -69,12 +69,12 @@ There are two different ways to calculate staff requirements for chat activities
 === Calculate for block scheduling
 To configure the calculation method and calculate staff requirements, proceed as follows:
 
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select a period for which a forecast exists.
 3. Scroll down to the **Staff Requirements** section and click btn:[Edit staff requirements].
 4. In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
    Learn more about the calculation method for chat and required parameters in the article xref:forecast:task-set-up-staff-requirement-calculation.adoc#steps[Calculate staff requirements].
-5. Click btn:[Save].
+5. {btn-save}
 
 The workload details page now displays calculated staff requirements for chat activities.
 

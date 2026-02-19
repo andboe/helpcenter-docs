@@ -19,7 +19,7 @@ New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 
 [#generate-suggestions-for-group-meetings]
 == Generate suggestions for group meetings
-1. In menu:Plan[Meetings], click btn:[Set up] in the *Group meetings* tile.
+1. In {bc-plan-meetings}, click btn:[Set up] in the *Group meetings* tile.
 2. In the *Settings* section, configure the following fields:
    - *Planning unit*
    - *Activity to schedule*: Select the meeting activity you created for group meetings.

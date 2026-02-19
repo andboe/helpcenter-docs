@@ -36,30 +36,22 @@ include::help-center:forecast:partial$staff-requirements/permission-intro.adoc[]
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
-Object permissions for workloads are set up in menu:Account[Roles].<br>
+Object permissions for workloads are set up in {bc-account-roles}.<br>
 Object permissions for planning units and activities are set up in menu:WFM[Administration>System>Role Authorization]
 ====
 [#steps]
 == Steps
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 - Saving staff requirements overwrites existing data.
 - You cannot save staff requirements for parent planning units.
 ====
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select a period with the date picker. Peopleware will save the staff requirement data for this period.
 3. In the **Staff requirements** section, select a forecast version from the **Basis for the staff requirements calculation** drop-down field.
 4. Click btn:[Save staff requirements].
 5. In the **Save staff requirements** window, click btn:[Save].
 
 Peopleware saves the staff requirements for the planning unit and activity specified in the staff requirements calculation settings and the period that you selected on the workload page.
-The staff requirements are available for scheduling tasks, e.g. in menu:Plan[Schedules].
-You can check the calculation results in menu:Plan[Schedules] and menu:Plan[Shift Center].
+The staff requirements are available for scheduling tasks, e.g. in {bc-plan-schedules}.
+You can check the calculation results in {bc-plan-schedules} and {bc-plan-shift-center}.

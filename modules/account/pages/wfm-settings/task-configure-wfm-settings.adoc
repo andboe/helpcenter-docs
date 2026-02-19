@@ -33,4 +33,4 @@ Overrides let you apply a different setting value for specific people, instead o
 3. In the **Overrides for individual people** section, click **+Add**.
 4. Select people. To shorten the list of people, use the search field.
 5. Enter an override value.
-6. Click btn:[Save].
+6. {btn-save}

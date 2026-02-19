@@ -17,7 +17,7 @@ Use the scheduling report to check the optimization result and to get an idea on
 You can find the scheduling report based on your WFM version:
 
 - **Advanced WFM and Enterprise WFM**: Access reports in xref:general:jobstatus.adoc[Job status].
-- **Classic**: Access reports in xref:general:jobstatus.adoc[Job status] and under menu:WFM[Scheduling>SchedulePro>Optimization].
+- **Classic**: Access reports in xref:general:jobstatus.adoc[Job status] and under {bc-wfm-scheduling-schedulepro-optimization}.
 - **Enterprise On-Premise**: The report is shown automatically after saving the schedule in the Auto Scheduler.
 
 [#text-colors-in-the-scheduling-report]
@@ -48,7 +48,7 @@ Scheduling errors often relate to your configuration. Check the following settin
 
 [#people-settings]
 === People settings
-Go to menu:People[] and select the person whose settings you want to check:
+Go to {bc-people} and select the person whose settings you want to check:
 
 - In the **Staff membership** section under **Work profile**, make sure there is a currently valid staff membership.
 - In the **Suitable activities** section under **Work profile**, check that the correct activities are listed. Otherwise, add further skills to the person in the **Skill levels** section. The suitable activities are updated automatically.

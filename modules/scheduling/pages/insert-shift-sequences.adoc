@@ -10,12 +10,12 @@ Shift sequences are fixed, repetitive sequences of shifts, activities, or availa
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you are using Essential WFM, Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-insert-shift-sequences.adoc[Insert Shift Sequences] under menu:Plan[Schedules].
+If you are using Essential WFM, Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-insert-shift-sequences.adoc[Insert Shift Sequences] under {bc-plan-schedules}.
 ====
 [#set-parameters]
 == Set parameters

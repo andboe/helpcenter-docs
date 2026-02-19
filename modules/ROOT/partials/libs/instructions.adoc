@@ -1,0 +1,40 @@
+// Common UI action instructions
+:btn-save: Click btn:[Save].
+:btn-create: Click btn:[Create].
+:btn-ok: Click btn:[OK].
+:btn-apply: Click btn:[Apply].
+:btn-close: Click btn:[Close].
+:btn-delete: Click btn:[Delete].
+:btn-edit: Click btn:[Edit].
+:btn-add: Click btn:[Add].
+:btn-cancel: Click btn:[Cancel].
+
+// Common navigation instructions
+:nav-to-people: Go to menu:People[].
+:nav-to-account-integrations: Go to menu:Account[Integrations].
+:nav-to-plan-schedules: Go to menu:Plan[Schedules].
+:nav-to-forecast-workloads: In menu:Forecast[Workloads], select a workload.
+:nav-to-admin: Go to menu:WFM[Administration].
+
+// Common selection instructions
+:select-person: Select a person from the list.
+:select-time-off-type: Select a time-off type.
+:select-planning-unit: Select a planning unit.
+:select-workload: Select a workload.
+:select-activity: Select an activity.
+
+// Common data entry instructions
+:enter-info: Enter the following information:
+:configure-info: Configure the following information:
+:configure-fields: Configure the following fields:
+
+// Common prerequisite intros
+:prereq-intro: Make sure the following applies:
+:have-permissions: You need the following permissions:
+:role-needs-permissions: Your role needs the following functional permissions:
+
+// Common instruction introductions
+:proceed-as-follows: proceed as follows:
+:to-do-this: To do this, proceed as follows:
+:follow-these-steps: Follow these steps:
+:complete-these-steps: Complete these steps:

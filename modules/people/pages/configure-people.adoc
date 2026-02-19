@@ -7,14 +7,14 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to create, view, edit and delete people.
 :related-articles: deactivate-people.adoc
 
-menu:People[] is the central place to create, configure, edit, and delete people. As part of the configuration, you can add different elements to people:
+{bc-people} is the central place to create, configure, edit, and delete people. As part of the configuration, you can add different elements to people:
 
 - Basic information, e.g. name, e-mail, or address
 - Work profile data, e.g. contracts, skills, or external identifiers
 - Scheduling data, e.g. planning units, selections, or day models
 - Access data, e.g. roles, password, or 2FA
 
-People with admin access can access menu:People[] by default. Depending on your role configuration, you may need to xref:account:configure-user-roles.adoc[grant permissions for **People** to other people] in your organization.
+People with admin access can access {bc-people} by default. Depending on your role configuration, you may need to xref:account:configure-user-roles.adoc[grant permissions for **People** to other people] in your organization.
 
 The **People** page shows an overview list of all people in your organization with key information such as name or employee ID, or whether they have admin access. A {icon-envelope-arrow-right} next to a person's email address indicates they haven't verified it yet.
 
@@ -22,16 +22,12 @@ The **People** page shows an overview list of all people in your organization wi
 == Create a person
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 You cannot go back to a previous step during the creation process. Before you click btn:[Next] at any step, make sure the information you entered is correct and complete. To change any information from a previous step, finish the creation process first, and edit the person.
 ====
-1. Go to menu:People[].
+1. {nav-to-people}
 2. On the top right, click btn:[Create].
 3. Follow the steps in the configuration window. Click the links to learn more about how to configure the xref:#basic-information[basic information], xref:#staff-membership[staff membership], and xref:#roles[roles].
-4. Click btn:[Save].
+4. {btn-save}
 
 The person is created. You can now further configure the person's settings as needed.
 
@@ -49,10 +45,6 @@ The person is created. You can now further configure the person's settings as ne
 |Automatically generate a unique identifier for the person or enter one manually.
 |===
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 When you click btn:[Next] at the bottom of the **Basic information** page, the person is created with an active staff membership right away. If you have opted for the welcome email, the person can log in to Peopleware. You can no longer cancel the creation process. After completing the creation process, you can xref:#view-or-edit-a-person[edit] or xref:people:deactivate-people.adoc#delete-a-person[delete] the person.
@@ -77,14 +69,14 @@ In the Roles list, use the search field to find a specific role or scroll the li
 
 [#view-or-edit-a-person]
 == View or edit a person
-1. Go to menu:People[].
+1. {nav-to-people}
 2. Click a person in the table. Use the search field or the filter options to reduce the entries shown.
 
    > Note
    >
    > If you change a person's email address, they can no longer log in to Peopleware with the old email address.
 
-3. Click btn:[Save].
+3. {btn-save}
 
 [#profile]
 === Profile
@@ -133,10 +125,6 @@ In this section, you can do the following:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 The **Access** section is only available to users who have verified their email address. Learn more in the xref:#how-do-people-verify-their-email-addresses[dedicated section below].
 ====
 For non-admin users, the section content depends on the role permissions for People:
@@ -155,7 +143,7 @@ For non-admin users, the section content depends on the role permissions for Peo
 === Grant admin access
 To grant admin access to a person, proceed as follows:
 
-1. Go to menu:People[] and select the person.
+1. Go to {bc-people} and select the person.
 2. Go to the **Access** section.
 3. In the **Admin access** section, Check the **Grant admin access** checkbox.
 4. Click {icon-check} **Save**.
@@ -175,7 +163,7 @@ If you do not have admin access, there may be different reasons why you cannot f
 === How do I unlock a person?
 People are locked after three failed login attempts with a wrong password. To unlock people, proceed as follows:
 
-1. Go to menu:People[] and select the person you want to unlock.
+1. Go to {bc-people} and select the person you want to unlock.
    The list shows a {icon-lock} next to every locked person's name.
 2. In the left-side menu, click menu:Access[].
 3. In the menu:Authentication and password[] section, click {icon-edit} **Edit**.
@@ -187,7 +175,7 @@ xref:people:deactivate-people.adoc#delete-a-person[Here] you can find the proces
 
 [#how-do-people-verify-their-email-addresses]
 === How do people verify their email addresses?
-People need to verify their email addresses to receive emails from Peopleware. Admins can see the **Access** tab in menu:People[].
+People need to verify their email addresses to receive emails from Peopleware. Admins can see the **Access** tab in {bc-people}.
 
 The email address is verified when new people click the link in the welcome email to set their password.
 
@@ -196,4 +184,4 @@ Alternatively, people can do the following:
 - Click the **Forgot password?** link on the login page.
 - Click the **Resend verification email** link in their user profile.
 
-In menu:People[], an {icon-envelope-arrow-right} next to a person's email address indicates they haven't verified it yet.
+In {bc-people}, an {icon-envelope-arrow-right} next to a person's email address indicates they haven't verified it yet.

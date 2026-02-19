@@ -32,10 +32,6 @@ Check the following checkboxes:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If home office is not exchangeable, shifts can still be exchanged, but not the home office day status.
 ====
 When you add the home office activity to your schedule, scheduled activities are preserved and home office is inserted in the background:

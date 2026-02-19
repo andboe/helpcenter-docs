@@ -13,17 +13,17 @@ include::help-center:acd-integration:partial$integration-intro.adoc[]
 
 [#add-an-8X8-integration]
 == Add an 8X8 integration
-1. Go to menu:Account[Integrations].
-2. Click btn:[Create].
-3. Enter a unique name for the new integration that identifies the data source.
+1. Go to {bc-account-integrations}.
+2. {btn-create}
+3. include::ROOT:partial$ui-interactions/enter-integration-name.adoc[]
 4. From the **External system** drop-down menu, select **8X8**.
-5. Click btn:[Save].
+5. {btn-save}
 
 [#set-up-your-8x8-integration]
 == Set up your 8X8 integration
 1. In the **Credentials** section, enter the xref:#credentials[required information].
 2. In the **Configuration** section, enter the xref:#configuration[required information]
-3. Click btn:[Save].
+3. {btn-save}
 
 [#credentials]
 === Credentials

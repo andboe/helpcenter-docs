@@ -33,10 +33,6 @@ These can include:
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Reports based on selections only show content if people are assigned to at least one selection.
 ====
 [#time-zones-in-reports]

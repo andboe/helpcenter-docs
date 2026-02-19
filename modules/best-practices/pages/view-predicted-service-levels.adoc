@@ -11,10 +11,6 @@ You only need to set up the configuration once for each relevant activity to dis
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 You can only view predicted service levels for individual activities, not for multiactivities.
 ====
 [#prerequisites]
@@ -29,7 +25,7 @@ Before you can view the calculated values for predicted service levels, you need
 === Transfer forecast and staff requirements data
 To display the workload data in Shift Center, proceed as follows:
 
-1. Go to menu:Forecast[Workloads] and select the relevant workload.<br>The Workloads details page opens.
+1. Go to {bc-forecast-workloads} and select the relevant workload.<br>The Workloads details page opens.
 2. Select the period for which you want to transfer the forecast.
 3. Click the three-dot menu on the right and select the **Use forecast** option.
 4. In the dialog window, click btn:[Use forecast] to confirm.
@@ -43,7 +39,7 @@ To display the workload data in Shift Center, proceed as follows:
 3. In the queue configuration window, go the the **Value Types** section.
 4. To add a new value type, click the {icon-wfm-add}.
 5. In the **Value Types** dialog window, select a value type. The name of the value type must match the channel of your workload. The name starts with the channel and ends in Predicted Service Level, e.g. **Calls Predicted Service Level** for a call workload.
-6. Click btn:[OK].
+6. {btn-ok}
 
 Repeat this procedure for every queue for which you want to view predicted service levels.
 
@@ -59,7 +55,7 @@ For all Predicted Service Level value types, define the target answer time.
    - *Planning unit* and **Activity**: From the drop-down menus, select the planning unit and activity for which you want to view the predicted service levels.
    - **Target Answer Time**: Enter the time in seconds according to your organization's Service Level Agreements.
 
-6. Click btn:[OK].
+6. {btn-ok}
 
 [#configure-how-predicted-service-levels-are-displayed]
 == Configure how predicted service levels are displayed
@@ -73,7 +69,7 @@ For all Predicted Service Level value types, define the target answer time.
    - **Display Heatmap** section: Make sure the checkbox is checked. Define an upper and lower limit for the service level value. Select the colors in which the values will be displayed in Shift Center. Find out more about the xref:#ranges-of-values[ranges of values].
    - **Display in Infothek**: Make sure the checkbox is unchecked.
 
-6. Click btn:[OK].
+6. {btn-ok}
 
 [#ranges-of-values]
 === Ranges of values
@@ -82,7 +78,7 @@ You can color-code values that exceed the upper or do not meet the lower limit. 
 
 [#view-predicted-service-levels-in-shift-center]
 == View predicted service levels in Shift Center
-1. Go to menu:Plan[Shift Center].
+1. Go to {bc-plan-shift-center}.
 2. Select the planning unit for which you want to view the predicted service levels.
 3. At the bottom of the screen, select the **User-Defined Parameters** tab.  
    The screen shows a heatmap of the values you configured.

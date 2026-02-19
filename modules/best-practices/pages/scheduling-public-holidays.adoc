@@ -62,7 +62,7 @@ The target working time for these days is determined as follows:
 |Peopleware considers the value entered for the weekday
 |===
 
-Users with the Agent role can see the public holidays in their calendars in menu:Me[My Calendar].
+Users with the Agent role can see the public holidays in their calendars in {bc-me-calendar}.
 
 [#closed-use-the-planning-calendar]
 == Closed: Use the planning calendar

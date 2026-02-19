@@ -7,13 +7,13 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Download forecasts as CSV files from Forecast. Learn how these files are formatted.
 :page-aliases: download-forecast
 
-In menu:Forecast[Workloads], you can download your forecast data as a CSV file.
+In {bc-forecast-workloads}, you can download your forecast data as a CSV file.
 
 You can download forecast data for up to 24 months. You can download the Forecast xref:forecast:save-forecast-versions.adoc#save-a-forecast-version[version] data by itself, or together with any other versions.
 
 [#download-a-forecast]
 == Download a forecast
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select the time frame using the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. From the {icon-context-menu} at the top right, select **Download as CSV**.
 4. Select the forecast data that you want to download.<br>To select all available versions, check the **All** checkbox.

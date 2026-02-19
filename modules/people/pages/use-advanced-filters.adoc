@@ -23,13 +23,13 @@ To access advanced filters, go to menu:People[Advanced filters].
 4. Click btn:[+ Add group]. Learn more about xref:people:advanced-filters.adoc#groups[**groups**].
 5. Click btn:[+Add criterion]. Learn more about xref:people:advanced-filters.adoc#criteria[**Criteria**].
 6. (Optional) Add more groups or criteria.
-7. Click btn:[Save].
+7. {btn-save}
 
 [#edit-a-filter]
 == Edit a filter
 1. In the **Advanced filters** section, select a filter or use the search field.
 2. Edit the filter.
-3. Click btn:[Save].
+3. {btn-save}
 
 [#duplicate-a-filter]
 == Duplicate a filter

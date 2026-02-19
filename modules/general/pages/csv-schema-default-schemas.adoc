@@ -19,10 +19,6 @@ For more information on CSV schemas see article xref:general:csv-schemas.adoc[CS
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Your organization can change or delete the default CSV schema as provided by Peopleware.
 ====
 [#forecast]

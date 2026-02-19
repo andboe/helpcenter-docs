@@ -49,7 +49,7 @@ To check job result reports of a mass update, your role needs to have **Access t
 == Steps
 [#specify-mass-update-scope]
 === Perform mass update
-1. Go to menu:People[Overview]
+1. Go to {bc-people-overview}
 2. In the People table, activate the checkbox of every person you want to edit assignments for. The page displays a toolbar above the table.
 3. In the toolbar, click **Mass update**. Peopleware opens the **Mass update** page, which includes a section menu for every object assignment you can edit.
 4. In the menu, click the item to display all the mass update actions available for the object type.

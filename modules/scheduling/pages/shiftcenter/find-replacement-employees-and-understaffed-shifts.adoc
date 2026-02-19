@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Find people to cover absences or understaffed shifts. Learn also how to exchange shifts between two people.
 :related-articles: use-keyboard-shortcuts.adoc, shift-center-overview.adoc
 
-If a scheduled person cannot perform a certain activity or shift or cannot work for a full day (e.g. due to sick leave), you may need to find a person to replace them, or exchange their shift with another person. In menu:Plan[Shift Center], you can perform the following actions:
+If a scheduled person cannot perform a certain activity or shift or cannot work for a full day (e.g. due to sick leave), you may need to find a person to replace them, or exchange their shift with another person. In {bc-plan-shift-center}, you can perform the following actions:
 
 - Schedule a replacement for a certain activity or shift or for a full day
 - Find people for understaffed shifts
@@ -36,7 +36,7 @@ To find a replacement person, proceed as follows:
 
 4. Click the *Replacement Employee* tab. The list shows the people matching your criteria.
 5. Click the person you want to schedule as a replacement.
-6. Click btn:[OK].
+6. {btn-ok}
 
 If the action does not violate any scheduling rule, people's schedules are updated accordingly.
 
@@ -50,7 +50,7 @@ To find a person for an understaffed shift, proceed as follows:
    - *Ignore*: Show people regardless of their scheduled activities or shifts.
    - *None on the same booking day*: Show only people who are not scheduled on that day.
 4. Click the *Employees* tab and select a person.
-5. Click btn:[OK].
+5. {btn-ok}
    If the action does not violate any scheduling rule, people's schedules are updated accordingly.
 
 [#exchange-shifts-between-two-people]
@@ -71,6 +71,6 @@ You can exchange all activities and shifts of a given day between two people.
      - *No placement on the same scheduled day*: Show people with no scheduled activities on that day
 
 5. Click the *Find Exchange Partner* tab and select a person.
-6. Click btn:[OK].
+6. {btn-ok}
 
 If the action does not violate any scheduling rule, people's schedules are updated accordingly.

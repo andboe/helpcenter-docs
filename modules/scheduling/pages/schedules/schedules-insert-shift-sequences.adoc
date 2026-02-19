@@ -22,9 +22,9 @@ Before you can insert shift sequences into your schedule, you need to do the fol
 
 [#filter-shift-sequences]
 == Filter shift sequences
-1. Go to menu:Plan[Schedules].
+1. {nav-to-plan-schedules}
 2. From the **Scheduling Actions** drop-down menu on the right, select btn:[Insert shift sequences].
-3. Select a planning unit.
+3. {select-planning-unit}
 4. (Optional) Pick a selection.
 5. Set a time period.
 
@@ -76,10 +76,6 @@ The **Overview** section shows shift sequences that match your filter. The table
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If deleted day models are still present in a shift sequence, they are still inserted into the schedule (marked with a dashed border in Schedules and Shift Center).
 ====
 [#access-result-reports]
@@ -96,10 +92,6 @@ By default, partial-day activities of the types Absence, Illness, Vacation, or M
 
 To delete activities of all types when inserting a shift sequence, check the checkbox **Delete all activities and shifts** to avoid errors related to the scheduling rule *2648* _Write protection for activities in the Shift Center_, which is always active for shift sequence insertion.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 Shift sequences are inserted with the currently logged-in user account. Scheduling rules can be configured differently per user. If you have several accounts, check whether you are logged in with the correct account.

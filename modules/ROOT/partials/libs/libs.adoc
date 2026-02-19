@@ -1,5 +1,7 @@
 include::partial$libs/breadcrumbs.adoc[]
 include::partial$libs/icons.adoc[]
 include::partial$libs/permissions.adoc[]
+include::partial$libs/products.adoc[]
+include::partial$libs/instructions.adoc[]
 include::partial$libs/section-names.adoc[]
 include::partial$libs/buttons.adoc[]

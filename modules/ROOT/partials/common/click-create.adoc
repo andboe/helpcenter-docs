@@ -1,1 +1,1 @@
-. Click btn:[Create].
+. {btn-create}

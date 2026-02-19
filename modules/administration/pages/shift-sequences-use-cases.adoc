@@ -43,10 +43,10 @@ This use case applies when you want to schedule people with varying availabiliti
 
 To schedule early and late shifts for different groups of people, create two different rows.
 
-1. Go to menu:Plan[Configuration>Shift sequences].
-2. Click btn:[Create].
+1. Go to {bc-plan-config-shift-sequences}.
+2. {btn-create}
 3. Specify the general settings. In the **Rows** field, enter **2**.
-4. Click btn:[Save].
+4. {btn-save}
 5. (Optional) In the **Assignments** section, rename the rows to improve clarity (e.g. **Early shifts** and **Late shifts**).
 6. Assign the day models to the relevant days in the rows.
 
@@ -54,10 +54,10 @@ To schedule early and late shifts for different groups of people, create two dif
 
 To schedule weekly meetings, create as many rows as the number of teams for which you want to schedule weekly meetings.
 
-1. Go to menu:Plan[Configuration>Shift sequences].
-2. Click btn:[Create].
+1. Go to {bc-plan-config-shift-sequences}.
+2. {btn-create}
 3. Specify the general settings. In the **Rows** field, enter the number of teams for which you want to schedule weekly meetings.
-4. Click btn:[Save].
+4. {btn-save}
 5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a team.
 6. Assign the meeting activity to the relevant days in the rows.
 
@@ -68,19 +68,19 @@ To schedule weekly meetings, create as many rows as the number of teams for whic
 
 To schedule specific patterns of days off for a person, proceed as follows:
 
-1. Go to menu:Plan[Configuration>Shift sequences].
-2. Click btn:[Create].
+1. Go to {bc-plan-config-shift-sequences}.
+2. {btn-create}
 3. Specify the general settings.
-4. Click btn:[Save].
+4. {btn-save}
 5. Assign the absence activity to the relevant days in the rows.
 
 == Use case 4 - Specify when shifts can be scheduled based on people’s availabilities
 
 To schedule people with varying availability, proceed as follows:
 
-1. Go to menu:Plan[Configuration>Shift sequences].
-2. Click btn:[Create].
+1. Go to {bc-plan-config-shift-sequences}.
+2. {btn-create}
 3. Specify the general settings. In the **Rows** field, enter the number of people for whom you want to schedule varying availabilities.
-4. Click btn:[Save].
+4. {btn-save}
 5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a person.
 6. Assign the relevant Availability day model to the relevant days in the rows.

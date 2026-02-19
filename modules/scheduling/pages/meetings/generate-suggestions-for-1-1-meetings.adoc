@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Generate scheduling suggestions for one-on-one meetings with reduced impact on the coverage of your schedule in Plan > Meetings.
 :page-aliases: one-on-ones
 
-In menu:Plan[Meetings], you can generate scheduling suggestions for one-on-one meetings (1:1 meetings) with reduced impact on the coverage of your schedule. 1:1 meetings are meetings between a meeting host, typically a team leader, and another team member.
+In {bc-plan-meetings}, you can generate scheduling suggestions for one-on-one meetings (1:1 meetings) with reduced impact on the coverage of your schedule. 1:1 meetings are meetings between a meeting host, typically a team leader, and another team member.
 
 New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 
@@ -21,7 +21,7 @@ New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
 == Generate suggestions for 1:1 meetings
 To generate suggestions for 1:1 meetings, follow these steps:
 
-1. In menu:Plan[Meetings], click btn:[Set up] in the *1:1 meetings* tile.
+1. In {bc-plan-meetings}, click btn:[Set up] in the *1:1 meetings* tile.
 2. In the *Settings* section, configure the following fields:
    - *Planning unit*
    - *Activity to schedule*: Select the meeting activity you created for 1:1 meetings.

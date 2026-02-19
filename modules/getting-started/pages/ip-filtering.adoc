@@ -20,10 +20,6 @@ Only users with admin access can activate IP filtering.
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 When you activate IP filtering, all active users are logged out. Depending on the product area, the time frame varies:
 ====
 >
@@ -31,7 +27,7 @@ When you activate IP filtering, all active users are logged out. Depending on th
 ====
 - Logout can be immediate
 - Logout happens when data is next loaded or stored
-- Logout is timed (only in Shift Center accessible via menu:Plan[Shift Center])
+- Logout is timed (only in Shift Center accessible via {bc-plan-shift-center})
 ====
 >
 [NOTE]
@@ -49,15 +45,11 @@ IP filtering only affects UI interactions. The optionally available Shift Center
 == Edit the IP address ranges
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 If you edit the IP address ranges, all users will be logged out when they next interact with Peopleware. To continue working with Peopleware, users will have to log in again.
 ====
 1. Go to menu:Account[Security] and scroll to the **IP filtering** section.
 2. Edit the IP address ranges.
-3. Click btn:[Save].
+3. {btn-save}
 
 [#deactivate-ip-filtering]
 == Deactivate IP filtering
@@ -67,10 +59,6 @@ If you edit the IP address ranges, all users will be logged out when they next i
 
 After deactivating IP filtering, users will be able to access Peopleware from any IP address.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If you deactivate IP filtering, all users will be logged out. To continue working with Peopleware, users will have to log in again.

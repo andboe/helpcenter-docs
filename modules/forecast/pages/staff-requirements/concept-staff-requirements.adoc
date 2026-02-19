@@ -23,7 +23,7 @@ In Peopleware, staff requirement data is generated in two distinct ways:
 
 [#automatic-requirement-calculations]
 == Automatic requirement calculations
-Automatic requirement calculations are set up per workload in menu:Forecast[Workloads].
+Automatic requirement calculations are set up per workload in {bc-forecast-workloads}.
 Once set up, these calculations continuously provide staff requirement data based on a number of input parameters, such as forecasted contact volume and average handling time data.
 The data required for the staff requirements calculation is saved in queues in menu:Analyze[Configuration>Queues].
 The queues have the name of the corresponding workload with a leading asterisk, e.g. _\*yourWorkloadName_.
@@ -41,7 +41,7 @@ For more information, see xref:forecast:task-set-up-staff-requirement-calculatio
 
 [#manual-requirement-calculations]
 == Manual requirement calculations
-You can trigger requirement calculations manually in menu:Forecast[Requirement calculations].
+You can trigger requirement calculations manually in {bc-forecast-requirement-calculations}.
 Unlike automatic requirement calculations, manual calculations are always performed for a specific period only and use parameters specifically set up for a calculation run.
 Manual calculations cover specific use cases that cannot be modelled with automatic calculations.
 

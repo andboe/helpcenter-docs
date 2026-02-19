@@ -21,10 +21,6 @@ As a user with _Admin access_, you can turn Me features on or off. For this, go 
 
 [NOTE]
 ====
-====
->
-[NOTE]
-====
 Employees need to get their Peopleware account to access Me and benefit from the features described. Learn how to xref:me:give-employees-access-to-me.adoc[create an account for them].
 ====
 [#shift-bidding]

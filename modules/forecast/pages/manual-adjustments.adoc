@@ -20,7 +20,7 @@ Manual adjustments change the generated forecast, but new forecast calculations 
 
 [#adjust-the-volume]
 == Adjust the volume
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.<br>The time frame you select determines the adjustment options shown.
 3. In the volume section, click btn:[Adjust volume].
 4. In the configuration window, configure your adjustment:
@@ -34,7 +34,7 @@ Manual adjustments change the generated forecast, but new forecast calculations 
 
 [#adjust-the-aht]
 == Adjust the AHT
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select a time frame from the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
 3. Next to **AHT**, click the {icon-eye-slash}.
 4. Click btn:[Adjust AHT].
@@ -49,10 +49,6 @@ Manual adjustments change the generated forecast, but new forecast calculations 
 
 Repeat this procedure to readjust values if there is a significant difference between the generated forecast and your manual adjustment.
 
-[NOTE]
-====
-====
->
 [NOTE]
 ====
 If you readjust volume or AHT values, the configuration window does not show the values you entered previously. Another percentage increase or decrease for a period updates the value adjusted before, not the original value.
@@ -84,7 +80,7 @@ Adjustments have a different impact based on the time frame you selected in the 
 == Delete adjustments
 You can delete adjustments that are no longer relevant.
 
-1. In menu:Forecast[Workloads], select a workload.
+1. {nav-to-forecast-workloads}
 2. Select the adjustments you want to delete:
    - In the volume section, click btn:[Adjust volume].
    - In the **AHT** section, click btn:[Adjust AHT].
@@ -103,5 +99,5 @@ To update staff requirement data via manual staff requirement calculations, proc
 
 1. From the {icon-context-menu} at the top right, select **Use forecast**.
 2. In the configuration window, click btn:[Use forecast].
-3. In menu:Forecast[Requirement calculations], select a requirement calculation option.
+3. In {bc-forecast-requirement-calculations}, select a requirement calculation option.
 4. Configure and run the calculation. For more information, see xref:forecast:task-run-requirement-calculations.adoc[Run staff requirement calculations].

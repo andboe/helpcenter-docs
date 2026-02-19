@@ -7,7 +7,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :description: Learn how to analyze the coverage, staffing, and staff requirements for your activities and activity types.
 :page-aliases: schedules-activity-coverage
 
-In menu:Plan[Schedules], you can analyze the coverage, staffing, and staff requirements for your scheduled activities and activity types.
+In {bc-plan-schedules}, you can analyze the coverage, staffing, and staff requirements for your scheduled activities and activity types.
 
 [#prerequisites]
 == Prerequisites
@@ -18,14 +18,14 @@ New to Schedules? Learn xref:scheduling:schedules-overview.adoc[the basics] firs
 
 [#display-the-activities-area]
 == Display the activities area
-1. In menu:Plan[Schedules], set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options].
+1. In {bc-plan-schedules}, set the xref:scheduling:schedules-overview.adoc#filter-data[filters] and the xref:scheduling:schedules-overview.adoc#schedule-area[view options].
 2. In the schedule area, expand the planning unit(s) for which you want to analyze activity data.
 3. In the xref:#activity-data-table[activities area], click a tab:
    - **Activities - Coverage**: The difference between the number of scheduled people and the staff requirements
    - **Activities - Staffing**: The number of scheduled people
    - **Activities - Requirements**: The saved staff requirements
 
-4. To select activities and activity types, use the filter icon {icon-filter} in the header of the **Activity** column.<br>An <em class="multiactivity-icon"></em> icon is displayed next to multiactivities. Subactivities are indented below the multiactivity.<br>If you delete an activity in menu:Plan[Configuration>Activities] and you don't remove it from the planning unit(s) to which it was assigned, the deleted activity is displayed in italics.
+4. To select activities and activity types, use the filter icon {icon-filter} in the header of the **Activity** column.<br>An <em class="multiactivity-icon"></em> icon is displayed next to multiactivities. Subactivities are indented below the multiactivity.<br>If you delete an activity in {bc-plan-config-activities} and you don't remove it from the planning unit(s) to which it was assigned, the deleted activity is displayed in italics.
    - Check the checkboxes next to the items that you want to display. You can select multiactivities or activities that are not subactivities. You cannot select individual subactivities. Use the search field to search for individual subactivities, multiactivities or other individual activities by their names.
    - (Optional) Use the search field. To search for several terms at once, use commas between the terms.
 

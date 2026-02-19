@@ -13,22 +13,22 @@ To do this, you will use planning periods. Read the article xref:scheduling:what
 
 [NOTE]
 ====
-This article is about menu:WFM[Scheduling>SchedulePro].
+This article is about {bc-wfm-scheduling-schedulepro}.
 ====
 >
 [NOTE]
 ====
-If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Scheduling Periods] under menu:Plan[Schedules] instead.
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Scheduling Periods] under {bc-plan-schedules} instead.
 ====
 [#allow-employees-to-swap-shifts]
 == Allow employees to swap shifts
 To allow shift swaps, you first have to activate the option in Me. Click menu:Me[] in the main navigation and turn on **Shift swap**.
 
-1. Go to menu:WFM[Scheduling>SchedulePro>Planning Periods].
+1. Go to {bc-wfm-scheduling-schedulepro-periods}.
 2. Select the *Planning Unit* for which you want to allow shift swaps among employees.
 3. Select the **Type** _Standard_.
 4. Pick a *Selection* if you want to limit the option to swap shifts to a certain group of agents. Otherwise, keep **[All]**.
-5. Click btn:[Apply].
+5. {btn-apply}
 6. Select the planning period with the date range for which you want to allow shift swaps and click *![edit button](/assets/img/common/item-edit.gif)* in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add}.
 
 In both cases, the following dialog appears:

@@ -8,7 +8,7 @@ include::help-center:ROOT:partial$libs/libs.adoc[]
 :related-articles: activity-examples.adoc, activity-types-and-properties.adoc, work-with-skills.adoc
 :page-aliases: creating-activities
 
-To create, edit and delete activities, go to menu:Plan[Configuration>Activities].
+To create, edit and delete activities, go to {bc-plan-config-activities}.
 
 Activities represent all tasks that are scheduled and reported on in your company, such as telephony, break, time off, or meetings. You can create as many activities as you want. The number of activities depends only on how many tasks you want to distinguish and the desired level of detail.
 
@@ -21,7 +21,7 @@ Peopleware includes two pre-configured (non-deletable) activities:
 
 [#create-an-activity]
 == Create an activity
-1. In menu:Plan[Configuration>Activities], click btn:[Create].
+1. In {bc-plan-config-activities}, click btn:[Create].
 2. Enter the general information for your activity:
    - **Name**: Unique name to describe your activity. The abbreviation is automatically generated.
    - **Type**: The activity type determines how Peopleware uses activities in scheduling and how they are displayed in other modules and reporting. Learn more about the different xref:administration:activity-types-and-properties.adoc[activity types].
@@ -31,7 +31,7 @@ Peopleware includes two pre-configured (non-deletable) activities:
 3. Check one or more checkboxes to set different xref:administration:activity-types-and-properties.adoc[activity properties].
    If you check Plannable, you can edit the xref:best-practices:importance-for-activities.adoc[importance value].
    If you check Replaceable, you can edit the xref:best-practices:priority-for-activities.adoc[priority value].
-4. Click btn:[Save].
+4. {btn-save}
 
 [#multiactivities-and-subactivities]
 == Multiactivities and subactivities
@@ -47,15 +47,15 @@ You can only assign subactivities to an activity after you have created it.
 === Create a new multiactivity
 To create a multiactivity from scratch, proceed as follows:
 
-1. In menu:Plan[Configuration>Activities], create all the activities that you want to use as subactivities. Ensure that your configuration meets xref:administration:activity-types-and-properties.adoc[these conditions].
+1. In {bc-plan-config-activities}, create all the activities that you want to use as subactivities. Ensure that your configuration meets xref:administration:activity-types-and-properties.adoc[these conditions].
 2. Create the activity that you want to turn into a multiactivity.
 3. In the **Subactivities** section, click **+ Add**.
 4. From the drop-down menu **Subactivities**, select the activity that you want to use as a subactivity.
-5. Click btn:[Save].
+5. {btn-save}
 6. (Optional) To add more subactivities, repeat steps 3 to 5.
 
 The **Subactivities** section shows the names and IDs of the assigned activities.<br>
-In menu:Plan[Configuration>Activities], an <em class="multiactivity-icon"></em> is shown next to the name of the multiactivity.
+In {bc-plan-config-activities}, an <em class="multiactivity-icon"></em> is shown next to the name of the multiactivity.
 
 You can now xref:administration:create-and-manage-planning-units.adoc[assign the subactivities and the multiactivity to your planning unit].
 
@@ -65,7 +65,7 @@ You can map external statuses from external systems (e.g. an ACD) to an activity
 The following procedure provides an overview of the configuration steps. For a more detailed explanation, go to xref:intraday:map-external-status.adoc[Map external statuses to activities].
 
 1. Select an activity from the list, scroll to the section **External statuses**, and click **Map external statuses in Intraday**.  
-   Peopleware redirects you to menu:Intraday[Configuration].
+   Peopleware redirects you to {bc-intraday-configuration}.
 2. Click the integration with the external system whose external statuses you want to map.
 3. In the **External statuses** section, select all statuses that you want to map to your activity.
 4. Click btn:[Save changes].
