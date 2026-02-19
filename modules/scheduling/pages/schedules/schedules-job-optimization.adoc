@@ -1,0 +1,83 @@
+= Run a job optimization
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what a job optimization is and how to run it.
+:related-articles: activity-types-and-properties.adoc, importance-for-activities.adoc, priority-for-activities.adoc, daymodel-basics.adoc
+
+The job optimization improves coverage by replacing activities configured as Replaceable with activities configured as Plannable for which you calculated staff requirements.
+
+[#when-should-i-run-a-job-optimization]
+=== When should I run a job optimization?
+Run a job optimization if any of the following applies:
+
+- Your schedule includes the activity Present (ID: 1) or other activities configured as Replaceable, and you use the xref:scheduling:scheduling-methods.adoc#fixed-scheduling[fixed scheduling method] or xref:scheduling:scheduling-methods.adoc#shift-bidding[shift bidding].
+- The staff requirements for one or more activities have changed and you want to optimize coverage again.
+- You have edited your schedule to reflect last-minute changes, like unplanned sick leaves, and you want to optimize coverage again.
+
+Job optimization works for future dates and the current day from the current time. You do not need to run a job optimization if you use the xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedules functionality] because the functionality includes a job optimization.
+
+[#prerequisites]
+=== Prerequisites
+To run a job optimization, the following conditions need to apply:
+
+- Your schedule in the Schedule xref:scheduling:use-levels.adoc[level]<!-- add link to levels once it's been reworked https://help.peopleware.com/tips-on-shift-center-usage#tip-9-working-with-different-levels --> includes activities configured as Replaceable for the periods that you want to optimize.
+- You have calculated staff requirements for the activities configured as Plannable, or you have configured activities as Plannable with the **Allow overstaffing if shift requirements are zero** property.
+
+If all staff requirements for other activities are fully covered, the job optimization uses plannable activities that have the **Allow overstaffing if shift requirements are zero** property even if there are no staff requirements for them.
+
+[#further-consequences-of-a-job-optimization]
+=== Further consequences of a job optimization
+The table below shows how a job optimization affects other scheduling elements:
+
+<!-- left-align table -->
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Scheduling element
+|Effect of the job optimization
+|Start and end times of shifts
+|None
+|Full day and day-status activities
+|None
+|Corridor elements
+|None
+|Breaks
+|The job optimization optimizes break positions to improve the coverage of other plannable activities.
+|Day models
+|The job optimization splits day models into individual activities.
+|===
+
+Learn how the xref:best-practices:importance-for-activities.adoc[importance], xref:best-practices:priority-for-activities.adoc[priority], and the activity properties xref:administration:activity-types-and-properties.adoc#special-handling-in-optimized-scheduling[Allow overstaffing if shift requirements are zero] and xref:administration:activity-types-and-properties.adoc#special-handling-in-optimized-scheduling[Special handling in optimized scheduling] can impact the job optimization.
+
+[#run-a-job-optimization]
+== Run a job optimization
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Select a date range from the date picker. You can select from one day up to two months in the future.
+3. From the _Scheduling Actions_{:.doc-button} drop-down menu on the right, select _Job optimization_{:.doc-button}.
+4. In the window that opens, configure the job optimization:
+   - **Date range**: The pre-selected date range is the one you selected in step 2. You can select a different date range.
+   - _Planning unit_{:.label}
+   - (Optional) _Selection_{:.label}
+5. Click **Start job optimization**.
+
+A process starts in the background. In _Plan > Schedules_{:.breadcrumbs}, a green notification is displayed at the top if the process started successfully, and a red one if the process could not start.<br>
+The optimization process can take some time, depending on the data amount and the selected period's length.<br>
+During the optimization process, you cannot edit the schedule of the selected planning unit and period.<br>After the optimization, the optimized schedule is saved automatically.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you run the job optimization for a specific selection, only the people assigned to this selection are optimized. When people are not skilled in any of your Plannable activities, they will also remain scheduled as before, i.e. they may still be scheduled on Present or the activity you configured in your day models.
+====
+Go to xref:general:jobstatus.adoc[Job status] to track the progress of a job optimization and view a job report.

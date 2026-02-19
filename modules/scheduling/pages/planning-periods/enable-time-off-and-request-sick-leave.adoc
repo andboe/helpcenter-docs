@@ -1,0 +1,42 @@
+= Allow time-off requests and sick leave
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: classic
+:topic-type-concept:
+:description: Allow employees to request time off or add sick leave in Me.
+:related-articles: give-employees-access-to-me.adoc, shift-bidding.adoc, concept-target-work-times.adoc
+
+In this article, you will learn how to allow employees to request time off or add sick leave.
+
+To do this, you will use planning periods. Read the article xref:scheduling:what-are-planning-periods.adoc[What are planning periods?] first.
+
+[NOTE]
+====
+This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+====
+>
+[NOTE]
+====
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} and xref:scheduling:time-off-periods-legacy.adoc[Time-Off Periods] under _Plan > Time Off_{:.breadcrumbs} instead.
+====
+[#allow-time-off-requests-and-sick-leave]
+== Allow time-off requests and sick leave
+To allow _time-off requests_ or sick leave, you first have to activate the option in Me. Click _Me_{:.breadcrumbs} in the main navigation and turn on **Time Off Requests**.
+
+1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
+2. Choose the _Planning Unit_{:.label} you want to allow time-off requests for.
+3. As **Type**, choose one of your requestable activities. Learn how to configure an xref:administration:activities.adoc[activity as **Requestable in Me**]. Then add the activity to the xref:administration:create-and-manage-planning-units.adoc[planning unit].
+4. Choose a _Selection_{:.label} if you want to limit time-off requests to a certain group of agents. Otherwise, keep **[All]**.
+5. Click _Apply_{:.doc-button}.
+6. If a matching planning period exists, select it and click the _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} button in the action bar. If there is no suitable planning period in the list, create a new one by clicking the {icon-wfm-add} button in the action bar.
+
+In both cases, the following dialog appears:
+
+image::enable-time-off-and-request-sick-leave/image-3.png[Define Planning Period, width=60%]
+
+1. Use **Valid From** and **Valid To** to define a time period, e.g. three months or the entire year. A planning period for vacation or other absences is usually longer than just a week.
+2. Select the **Status** _Enabled_.
+3. Optional: Set a **Deadline**. Until that date, employees can request time off.
+
+Your employees will now see the option to request time off in Me for the time period defined by the planning period. As a planner, you can then xref:scheduling:vacation-absences-management.adoc[approve or reject] time-off requests.

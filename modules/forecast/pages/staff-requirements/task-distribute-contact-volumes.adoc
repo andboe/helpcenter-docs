@@ -1,0 +1,83 @@
+= Distribute contact volumes
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: None
+:topic-type-task:
+:description: Learn how to take a single forecast and distribute it across multiple service providers or internal teams.
+:related-articles: concept-staff-requirements.adoc, task-set-up-staff-requirement-calculation.adoc, task-save-staff-requirements.adoc, ref-requirement-calculations.adoc
+:page-aliases: features/forecast/requirement-scripts/concept-contact-volume-split.md
+
+The Contact volume distribution calculation is a paid feature. If your organization is interested in this feature, get in touch with your consultant.
+
+The Contact volume distribution calculation allows you to take a single forecast, generated from a workload, and distribute it across up to 13 service providers or internal teams. This creates service provider- or team-specific contact volumes you can export or download, or for staffing and reporting.
+
+The calculation provides an interface for you to enter the percentage distribution for each provider. Once you run the calculation, it automatically adds formulas to the target queues to calculate the distributed contact volumes based on the source forecast and the percentages you entered.
+
+For verification, the calculation also adds two further formulas to the source queue: one that sums up the distribution percentages, and a second that sums up the distributed contact volumes. This allows you to easily cross-check that the total distribution equals 100% and matches the original forecast contact volumes.
+
+[#prerequisites]
+== Prerequisites
+- A forecast exists.
+- You have access to Virtual value types.
+- You have access to WFM Queue data in Dashboards.
+- You have created two xref:#create-value-types[specific value types]:
+  - A value type for the distribution percentage with aggregation type **Average**
+  - A value type for the distributed contacts with aggregation type: **Sum**
+- You have created a dedicated queue for each provider or internal team.
+- You have xref:#assign-value-types-to-queues[assigned the two value types] to the source queue and to each of the target queues.
+
+[#create-value-types]
+=== Create value types
+To use this feature, you need to create two virtual value types: one for the distribution percentage and one for distributed contacts.
+
+1.  Go to _Analyze > Configuration > Value types_{:.breadcrumbs}.
+2.  Click _Create_{:.doc-button}.
+3.  Fill in the information:
+    - **Name** and **Abbreviation**
+    - **Aggregation type**: Select **Average** for the distribution percentage and **Sum** for distributed contacts.
+4.  Click _Save_{:.doc-button}.
+
+[#assign-value-types-to-queues]
+=== Assign value types to queues
+Repeat this process for your source queue and each of your target queues:
+
+1.  Go to _Analyze > Configuration > Queues_{:.breadcrumbs}.
+2.  Select the queue.
+3.  In the **Value types** section, click **+ Add**.
+4.  Select your distribution percentage and distributed contacts value types.
+5.  Click _Save_{:.doc-button}.
+
+[#workflow]
+== Workflow
+[#save-your-forecast-to-a-version]
+=== Save your forecast to a version
+This step saves a snapshot of your forecast data into a WFM queue, making it available for the script.
+
+1.  Go to _Forecast > Workloads_{:.breadcrumbs}.
+2.  Select the workload you want to use.
+3.  From the three-dot menu {icon-context-menu}, select **Use forecast**. This automatically creates a queue named with a leading asterisk that the calculation will use as a data source.
+4.  From the **Select version** dropdown, select a version.
+5.  Click _Use forecast_{:.doc-button}.
+
+[#run-the-calculation]
+=== Run the calculation
+1.  Go to _Forecast > Requirement Calculations_{:.breadcrumbs}.
+2.  Click on the Distribution - Contacts (time frames) calculation.
+3.  Fill in the **General parameter** section:
+    - In the **Version** dropdown, make sure to select the forecast version you saved in the previous step. This version is used for the source, target, and distribution parameters.
+4.  Fill in the **Source parameter** section:
+    - **Queue**: Designates the source of the contacts to be distributed. The timezone of this queue is used as a reference for the time spans.
+    - **Value type (contacts)**: Designates the contacts to be distributed from the source queue.
+5.  Fill in the **Target parameter** section:
+    - **Value type (percentages)**: Designates the percentages to be stored.
+    - **Value type (calculated contacts)**: Designates the formula for calculating the target contacts.
+6.  In the **Percentage distribution** section, enter the distribution percentage for each provider. You must include all involved providers, even if their distribution is temporarily 0%.
+7.  Click _Run_{:.doc-button}.
+
+[#check-the-results]
+== Check the results
+After running the calculation, you can verify the results in the following ways:
+
+- Check the source queue: The distribution percentage value type in the source queue should show a value of 100%. If it doesn't, there may be an issue with your distribution setup.
+- Check the target queues in Dashboards: You can visualize the distributed contact volumes for each provider in a dashboard to compare them with the source forecast. The distributed contacts value type in each target queue shows the calculated contact volume for that provider. The distribution percentage values can also be verified in each target queue with the percentage distribution value type.

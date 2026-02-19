@@ -1,0 +1,112 @@
+= Add a CSV integration
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Import historical data from CSV files.
+:related-articles: how-integrations-work.adoc, install-cloud-link.adoc, csv-schemas.adoc
+:page-aliases: csv-format
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#what-is-a-csv-integration]
+== What is a CSV integration?
+A CSV integration imports historical contact, agent status or plan data from CSV files. Use a CSV integration if your system can't connect with any other integration.
+
+Setting up a CSV integration includes the following steps:
+
+- Create a CSV integration
+- Assign a CSV schema
+- Import CSV files
+
+[#csv-file-prerequisites]
+== CSV file prerequisites
+Every CSV file processed by a CSV integration must conform to requirements specified in the CSV schema that is assigned to the CSV integration.
+
+For more information on CSV schemas see xref:general:csv-schemas.adoc[CSV schemas].
+For information on how to create a CSV schema see xref:general:create-csv-schema.adoc[Create CSV schema]
+
+Additionally, the following file size limits apply per CSV file:
+
+- Maximum file size: 10 MB
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The CSV (SFTP) model supports file sizes of up to 32 MB for automatic imports.
+Manual imports are still limited to 10 MB per file.
+====
+[#supported-file-encodings]
+=== Supported file encodings
+The following file encodings are supported:
+
+- UTF-8
+- ISO-8859-1/Latin-1
+- ISO-8859-9
+- Windows-1252
+
+Use UTF-8 to avoid generic error messages.
+
+[#add-a-csv-integration]
+== Add a CSV integration
+If you need to import data from CSV files with different formats (e.g. separators, date formats, or column names), set up a separate integration for each. To set up an integration, proceed as follows:
+
+1. Go to _Account > Integrations_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Universal interfaces**.
+5. From the **Model name** drop-down menu, select one of the following options:
+   - To import data from CSV files stored on an on-premise system via Cloud Link, select **CSV (Cloud Link)**.
+   - To import data from CSV files stored on an SFTP server, select **CSV (SFTP)**.
+6. Click _Save_{:.doc-button}.
+
+[#configure-a-new-csv-integration]
+=== Configure a new CSV integration
+1. Depending on the CSV integration model, set up Cloud link or provide the SFTP credentials:
+   - Cloud Link: From the **Cloud Link** section, download and xref:acd-integration:install-cloud-link.adoc#install-cloud-link[install the Cloud Link client]. During the installation, your terminal shows a PIN. Enter the PIN on the integration page to proceed. The PIN expires after 5 minutes.
+   - SFTP: Provide your credentials in the **SFTP server credentials** section.
+2. In the **Configuration** section, configure the following settings:
+   - **Type of import data**: You can only select one type per integration. To import data from another type, create a new integration.
+     - **Contact data**: The uploaded data includes all offered and handled volumes recorded by your external system, such as calls, chats, social media, tickets, emails, or documents.
+     - **Agent status**: The uploaded data includes all agent activities recorded by your external system, such as login, logout, on call, after-call work, break, ready, etc.
+     - **Plan data**: The uploaded data includes plan data, such as activities.
+   - **CSV schema**: The CSV schema that will be used for all automatic CSV imports from the Cloud Link or SFTP import folder.
+3. Click _Save_{:.doc-button}.
+   You can now use the xref:#manual-file-import[manual data import] or set up the xref:#automatic-file-import[automatic data import].
+
+[#import-csv-files]
+== Import CSV files
+Once you saved your CSV integration, you can start importing CSV files.
+
+[#automatic-file-import]
+=== Automatic file import
+The integration regularly checks the source folder for new files and uploads their content to Peopleware.
+For Cloud Link, the source folder is the Cloud Link installation directory (default: C:\Program Files\injixo Cloud Link).
+You can also define a separate xref:acd-integration:install-cloud-link.adoc#import-folder[import folder] for file uploads.
+
+After the data has been uploaded, you can work with it in the relevant app.
+For example, you can xref:forecast:create-workloads.adoc#workloads-and-queues[add new queues to a workload] or see updated data, e.g. in your existing workloads in **Forecast**.
+
+If you don't find updated data where you expect it, try reuploading the file manually to check for errors.
+
+[#manual-file-import]
+=== Manual file import
+See xref:acd-integration:csv-integration-upload-data-manually.adoc[Import data via an integration manually]
+
+[#frequently-asked-questions]
+== Frequently asked questions
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Question
+|Answer
+|Can I import the same file twice?
+|Yes, if you import data manually. No, if you are using Cloud Link. To detect duplicate files, checksums are calculated during the import. Imported files with the same checksum will not be imported again. However, if the file has the same name but different content, the checksum will change and the file will be imported again.
+|Are automatically imported CSV files deleted after the import?
+|No. Imported files will remain in the Cloud Link client directory. You can manually delete them or set up a recurring task yourself.
+|Can I import a CSV file that contains future data?
+|Yes, it is possible. However, keep in mind that future data is not skipped but stored as historical data. You can still calculate a forecast but the graphs for history and forecast will overlap.
+|===

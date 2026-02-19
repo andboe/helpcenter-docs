@@ -1,0 +1,114 @@
+= What is Schedules?
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: View and edit shifts, activities and other scheduling elements like time-off requests.
+:related-articles: analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc, schedules-edit.adoc, schedules-comments.adoc
+
+In _Plan > Schedules_{:.breadcrumbs}, you can see and manage your people's shifts. You can notify people of changes in their schedule, create and manage scheduling periods, and perform all available scheduling actions.
+The Schedules page consists of an action bar, the schedules area and the activities area. The different sections of this article explain what you can do on each part of the page.
+
+[#prerequisites]
+== Prerequisites
+To get the most out of the options available in **Schedules**, make sure the following applies:
+
+- You have created at least one xref:administration:selections.adoc[selection].
+- You have configured your firewall to allow xref:getting-started:system-requirements.adoc#share-urls-for-websockets[WebSocket connections] for Peopleware. This is required for real-time updates. If the required WebSocket connection cannot be opened due to firewalls or is closed due to an unstable network connection, you see an error message.
+
+[#action-bar]
+== Action bar
+[#filter-data]
+=== Filter data
+On the left side of the top bar, you have different filtering options:
+
+- Filter by planning unit: Select one or more planning units from the drop-down menu on the left.
+- Filter by selection: Click the {icon-filter-u} and use the drop-down menu on the right to select one.
+- Filter by xref:people:advanced-filters.adoc[employee filter]: Click the {icon-schedules-filter-employees-u} and use the drop-down menu on the right to select a pre-configured employee filter.
+
+[#notify-people]
+=== Notify people
+Click _Notify people_{:.doc-button} to xref:scheduling:notify-people.adoc[let people know about changes made to their schedule] via push notifications or emails.
+
+[#scheduling-periods]
+=== Scheduling periods
+Click _Scheduling periods_{:.doc-button} to xref:scheduling:what-are-scheduling-periods.adoc[configure scheduling periods].
+
+[#scheduling-actions]
+=== Scheduling actions
+From the drop-down menu on the far right of the action bar, select one of the following scheduling actions:
+
+- xref:scheduling:schedules-insert-shift-sequences.adoc[Insert shift sequences]: Insert fixed, recurring sequences of shifts, activities, or availabilities into your schedule.
+- xref:scheduling:schedules-job-optimization.adoc[Job optimization]: Replace activities to improve coverage.
+- xref:scheduling:break-optimization.adoc[Optimize breaks]: Reshuffle the break positions in your schedule to improve coverage.
+- xref:scheduling:schedules-replace-activities.adoc[Replace activities]: Batch replace an activity with another activity in an existing schedule to react to changed needs.
+- xref:scheduling:schedules-empty-levels.adoc[Empty levels]: Delete the contents of a level.
+- xref:scheduling:use-levels.adoc[Copy level content]: Copy or back up your schedules and other elements in a level.
+- xref:scheduling:view-approve-shift-swap-requests.adoc[Approve shift swaps]: Approve or reject your people's shift swap requests.
+
+The following scheduling actions are only available in Advanced WFM and Enterprise WFM:
+
+- xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedule]: Automatically create a full schedule with the best possible coverage for all activities.
+- xref:scheduling:schedules-extra-activities.adoc[Schedule extra activities]: Schedule storable activities like email and back-office tasks by replacing existing activities.
+
+[#full-screen-mode]
+=== Full-screen mode
+Click the full screen mode icon _![full-screen mode icon](/assets/img/common/full-screen-mode.png)_{:.doc-button-icon} to switch to full-screen mode. When in full-screen mode, move the cursor to the arrow icon at the top of the screen to see the action bar. Click the {icon-full-screen-exit} or press the Esc key to leave the full-screen mode.
+
+[#schedule-area]
+== Schedule area
+The schedule area consists of a table that shows scheduled shifts for the people included in the planning units, selection and/or employee filter that you selected in the action bar.<br>Hover over a shift to see more details. If a shift contains corridors, e.g. for breaks, the detail view shows the corridor as the last item of the list, regardless of its actual position in the schedule.
+
+[#employee-name-column]
+=== Employee name column
+The **Employee Name** column is the first column from the left. It displays the planning units according to your filter. Click _>_{:.doc-button} to the left of a planning unit's name to expand it.
+
+Use the search field above the column to search for specific people. Use commas to separate the names if you want to search for more than one person at a time. You can only see a person's row if you expand the planning unit they are assigned to.
+
+Click the column header to sort alphabetically by last name. Click a person's name to open a popover with their contract and skill information. Click the person's name in blue inside the popover to open the person's details in edit mode in a new browser tab.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you have configured a join or leave date for a person, the person is only displayed between those dates.
+If the person's planning unit has a validity period, and their assignment to the planning unit ends on the same date, their schedule after that date is not displayed. You can see schedules past that date in Shift Center, where the cells are grayed out for days after the person's leave date.
+====
+[#level-column]
+=== Level column
+The Schedule level is selected by default. To change the levels displayed, click the filter icon {icon-filter}. In Essential WFM, only the Schedule level is available. You can collapse or expand the **Level** column using the arrows _<_{:.doc-button} and _>_{:.doc-button} next to the Search employees field.
+
+To sort a day column by shift start times, click {icon-context-menu} in each day's column header if you selected xref:#multi-day-view-with-day-columns[between two and seven days]. If applicable, choose the level with the data you want to sort.
+
+[#working-hours-column]
+=== Working hours column
+The Working hours column is the third column from the left. You can collapse or expand it using the arrows _<_{:.doc-button} and _>_{:.doc-button}. It contains three sections: Difference, Actual and Contractual. These sections display peoples's contractual and actual working times, plus the difference between those values.<br>The Difference value is color-coded as follows:
+
+- Red: Fewer hours scheduled than contractually required
+- Blue: More hours scheduled than contractually required
+- Gray: As many hours scheduled as contractually required
+
+To sort the table by people's working time data, click the tags **Difference**, **Actual** or **Contractual**.
+
+[#multi-day-view-with-day-columns]
+=== Multi-day view with day columns
+Use the date picker at the top right to select the date range displayed in the table. If you select more than one day, the table displays a column for each day in the date range, up to a maximum of 32 days. Each day cell shows the start and end time of the person's shift, displayed in the color of their first activity scheduled for the day.
+
+To sort a day column by shift start times, click the {icon-context-menu} in the header of a day column. If applicable, choose the level with the data you want to sort.
+
+Click the header of a day column to switch to the daily view with hour columns.
+
+[#single-day-view-with-hour-columns]
+=== Single-day view with hour columns
+If you select a single day with the date picker or if you click the header of a day column, the table displays columns for each hour of the selected day.
+
+To display data in 30-minute intervals, hover in between two columns. When the {icon-magnifying-glass} appears, click it. <br>To see 15-minute intervals, hover over the 30 mark, and click the {icon-magnifying-glass} when it appears.<br>To go back to displaying hour columns, click any full-hour mark.
+
+To sort data by shift start in this view, click the {icon-context-menu} to the right of the date picker. If applicable, choose the level with the data you want to sort.
+
+[#activities-area]
+== Activities area
+Click _^_{:.doc-button} on the bottom left to display a table with activity data that you can use to xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[analyze staffing, coverage and staff requirements].<br>Click the different tabs to change between them. Click the filter icon {icon-filter} in the **Activity** column to select the activities you want to display.

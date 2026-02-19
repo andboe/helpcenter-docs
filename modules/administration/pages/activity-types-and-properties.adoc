@@ -1,4 +1,105 @@
-== Activity types and properties
+= Activity types and properties
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn about the different types of activities and the purpose of each activity configuration option.
+:related-articles: activity-examples.adoc, create-and-manage-planning-units.adoc, how-to-schedule-multiskill-agents.adoc
+:page-aliases: activity-properties
 
-[#multiactivity]
-== Multiactivity
+When xref:administration:activities.adoc[creating and editing activities], the different configuration options influence how activities are used and displayed in your schedules and reports.
+
+[#activity-types]
+== Activity types
+The activity type influences your scheduling and determines:
+
+- how optimized scheduling handles the activity.
+- where you can use the activity.
+- how the activity is displayed in Schedules and in Shift Center.
+- whether reports include the activity. <!-- illness, absences, vacation -->
+
+The following table provides more details about each activity type:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Type
+|Description
+|Presence
+|All activities on which people work. +Activities of the type Presence are scheduled based on staff requirements.
+|Break
+|Paid or unpaid breaks within a shift. +Only activities of the type Break can be configured in day models as break activities. You can use the xref:scheduling:break-optimization.adoc[break optimization] functionality to distribute breaks within the schedules so that you achieve optimal coverage for activities with staff requirements.
+|Illness
+|Paid or unpaid absences such as a sick day or a doctor's appointment. +Only activities of the type Illness appear in the Illness reports.
+|Vacation
+|Paid or unpaid vacation, company leave, etc. + Only activities of the type Vacation appear in the vacation reports.
+|Absence
+|Other absences that affect the schedule, for example, offsite training, overtime leave, etc. +Absence reports only show activities of the type Absence.
+|Meeting
+|Activity type to xref:scheduling:meetings-overview.adoc[schedule meetings].
+|===
+
+[#activity-properties]
+== Activity properties
+Activity properties impact your schedule and how you can use the activity.
+You can set activity properties with the following checkboxes.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Property
+|Effect
+|Paid
+|Activates the working time calculation for scheduled activities. If breaks or absences are paid, they are calculated as working time. If they are unpaid, they are not included in the net working time calculation.
+|Comply with rest period
+|Prevents violations of the rest period configured in the contract. The rest period is only checked if scheduling rule _2601_{:.id-label} **Rest between two workdays** is activated.
+|Plannable
+|The activity can be scheduled if you use the Create optimized schedules functionality, or can be optimized during job optimization. We recommend using this property for activities with staff requirements. It is typically not used for activities of the types Absence, Vacation, and Illness.
+|Requestable in Me
+|Allows people to request time off (absences, vacation, and illness) in Me (if there is a xref:scheduling:time-off-periods-legacy.adoc[Time-off period] with status Published). In shift bidding, shifts with activities of the types Presence and Break are automatically requestable.
+|Exchangeable with shift swap
+|Allows people to xref:scheduling:what-are-scheduling-periods.adoc[swap the activity with each other] in Me. For this, all activities (including breaks) included in day models must be configured as **Exchangeable with shift swap**.
+|Allow overstaffing if shift requirements are zero
+|The activity can be scheduled even during times with no staff requirements. By default, intervals with 0 requirements will not be covered.
+|Replaceable
+|The activity can be replaced with plannable activities with staff requirements. This is required to xref:scheduling:meetings-overview.adoc[schedule meetings] on this activity. The xref:best-practices:priority-for-activities.adoc[priority value] becomes editable.
+|Allow as full-day activity
+|Allows you to schedule the activity for a full day in Schedules or Shift Center. Required to allow people to request the activity as a full-day activity in Me where working time is credited for paid activities.
+|Can be a day status
+|Only available for full-day activities. Day status allows you to manually schedule the activity in the Shift Center as a day status on the Full-Day Activities tab. This preserves the replaced schedule entry for future reference. As a result, people scheduled for an activity with this property are excluded from the coverage calculation but the original schedule entry remains visible.
+|Special handling in optimized scheduling
+|Only available for existing activities of the type Presence. Activities with this property can only be scheduled strictly as they are configured. The activities cannot be replaced and their duration is not flexible. +Learn more in the xref:#special-handling-in-optimized-scheduling[dedicated section below].
+|===
+
+[#special-handling-in-optimized-scheduling]
+== Special handling in optimized scheduling
+This activity property is used for paid presence activities without staff requirements, e.g. for scheduling setup time or back-office (option 1), or overtime (option 2). The Create optimized schedules functionality and job optimization can only schedule the activity strictly as it is configured; the activity cannot be replaced.
+
+Option 1: The activity is part of a day model. Add an activity, e.g. for back-office or setup time, as a fixed element or a corridor to your day models. The activity can only be scheduled for the configured duration and within the period defined in the day model. Optimized scheduling cannot use the activity to replace other replaceable activities.
+
+How the Create optimized schedules functionality handles the activity depends on xref:administration:daymodel-creation.adoc#add-a-presence-or-absence-activity[how the activity is configured within the day model]:
+
+- Fixed element: The activity will only be scheduled for the exact time for which it is configured.
+- Corridor element: The activity can be moved within the defined corridor to a time slot where it has the least impact on the coverage to optimize the coverage of other activities.
+
+Option 2: The activity is not part of a day model. In this case, you can schedule the activity, e.g. for overtime, manually when necessary. You always have complete control over when the activity is scheduled, for how long, and to whom it is assigned. Optimized scheduling cannot schedule the activity automatically, and cannot use it to replace other replaceable activities.
+
+[#subactivities]
+== Subactivities
+You can assign activities to other activities. The activity to which activities are assigned becomes a multiactivity. The assigned activities are the subactivities of the multiactivity. Multiactivities allow you to schedule people with several skills when one of their skills is needed. In the list of activities, multiactivities are marked with an <em class="multiactivity-icon"></em> icon.
+
+The Create optimized schedules functionality can schedule multiactivities if you ensure the following:
+
+- Select the Presence type for the multiactivities and all subactivities.
+- Configure both multiactivities and subactivities as paid and plannable.
+- Assign all subactivities (and the multiactivity in a second step) to your planning unit.
+- To control who can be scheduled, assign a different skill to each subactivity.
+- (Optional) Assign a skill to the multiactivity. In this case, people must have this additional skill to perform the multiactivity. By default, the multiactivity itself does not require skills.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you do not use the Create optimized schedules functionality but only run the job optimization, replaceable activities can be replaced with multiactivities on the condition that a person can carry out at least one subactivity of the multiactivity.
+====

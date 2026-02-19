@@ -1,0 +1,87 @@
+= Schedule employees at multiple locations
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Schedule employees from several planning units all at once to handle volume across multiple locations.
+:page-aliases: best-practice-virtual-planning-units
+
+[#scenario]
+== Scenario
+You want to staff agents across two or more virtual or real locations to handle one common call volume. Calls are routed to any agent with the appropriate skills, regardless of their location. Virtual planning units allow you to handle the following:
+
+- Share staff requirements across planning units
+- Enable overflow scenarios, where one planning unit is staffed first, and others provide backup once it reaches capacity
+
+[#representation-in-peopleware]
+== Representation in Peopleware
+=== Prerequisites
+
+- You have created two or more xref:administration:create-and-manage-planning-units.adoc[planning units] that represent your virtual or phyical locations.
+- In Enterprise on-premise, activate the following settings to use the functionality:
+  - _48103_{:.id-label} _Consolidate key figures for higher-level planning units_
+  - _48399_{:.id-label} _Plannability of virtual planning units in AutoScheduler_
+
+[NOTE]
+====
+Peopleware cloud versions have activated the settings by default.
+====
+=== Planning units
+
+Add one or two additional planning units with the same interval as your existing planning units:
+
+- Virtual plannning unit: A xref:#create-a-parent-planning-unit[parent planning unit] representing your entire business spread across multiple locations.
+- Requirements planning units: A planning unit with no people assigned in which you will save the staff requirements.
+
+You end up with a structure like this:
+
+- Motibot Technology Co.
+  - Berlin
+  - New York
+  - Requirements
+
+[#recommended-approach]
+== Recommended approach
+[#create-a-parent-planning-unit]
+=== Create a parent planning unit
+In your new planning unit, configure the following:
+
+- Add all activities assigned to at least one other planning unit.
+- Do not add business hours. During scheduling, each child planning unit's business hours are taken into account individually.
+
+[#Create-a-planning-unit-for-staff-requirements]
+=== Create a planning unit for staff requirements
+**Centralize shared staff rerquirements in a dedicated Requirements planning unit**
+
+You can centralize shared staff requirements by creating a new Requirements planning unit with no agents assigned. This setup is useful when you want to manage total staffing needs in one place, e.g. for cross-site or company-wide planning.
+
+Configure the following in the Requirements planning unit:
+
+- Add all activities performed by at least one other planning unit.
+- Set the business hours to include the business hours of all other planning units, for example:
+  - Berlin: Mon-Fri from 08:00-18:00
+  - New York: Mon-Sat from 09:00-18:00
+  - Requirements: Mon-Sat from 08:00-18:00
+- Do not add people, day models, or planning calendars. They are read from the child planning units for your business locations.
+
+**Overflow scenearios without dedicated Requirements planning unit**
+
+You do not need a dedicated Requirements planning unit to schedule overflow. In this case, save staff requirements directly in the individual child planning units. When you run Create optimized schedules on the parent planning unit, calls are primarily assigned within their own planning unit. If there are not enough people available or left to cover the staff requirements, appropriately skilled agents from other planning units will be considered automatically.
+
+<!-- is this the only one real use case for priority 1 and 2 planning units? -- we'd need to test and add this if it applies here -->
+
+[#restructure-your-planning-units]
+=== Restructure your planning units
+Edit your location-based planning units and select the virtual planning unit as **Parent planning unit**.
+
+[#forecasting-and-scheduling]
+=== Forecasting and scheduling
+You can now create optimized schedules on your virtual/parent planning unit. Shift generation, job optimizations, and break optimization do not work.
+
+1. Calculate staff requirements for your activities and save the result in the Requirements planning unit.
+2. Run Create optimized schedules on the parent planning unit, which will create schedules for all child planning units.
+
+[#scheduling-result]
+== Scheduling result
+People in each child planning unit will be scheduled according to your staff requirements, saved either in the childs or the Requirement planning unit, optimizing coverage across all sites. You can see the resulting coverage in the heat map of the parent planning unit. The schedules are still visible in the child planning units only.

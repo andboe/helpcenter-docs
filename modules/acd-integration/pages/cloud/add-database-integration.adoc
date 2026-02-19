@@ -1,0 +1,252 @@
+= Add a database integration
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Connect your database to import data.
+:related-articles: how-integrations-work.adoc, install-cloud-link.adoc, import-agent-status-data.adoc
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#what-is-a-database-integration]
+== What is a database integration?
+To import contact data or agent status data, database integrations can run SQL queries on a database of your choice. Define an SQL query to query a table or view while you set up the integration.
+Install xref:acd-integration:install-cloud-link.adoc[Cloud Link] on a computer in your network. When the Cloud Link service is started, the Cloud Link instance will be periodically asked to query the database.
+
+Use a database integration in the following cases:
+
+- You have a database that contains your contact data or agent status data, but other vendor-specific cloud or on-premise integrations do not work.
+- You cannot or do not want to implement real-time data imports using an xref:acd-integration:import-data-with-api.adoc[API integration].
+- You do not want to import CSV files with a xref:acd-integration:add-csv-integration.adoc[CSV integration] that were exported from another system.
+
+[#add-a-database-integration]
+== Add a database integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Universal interfaces**.
+5. From the **Model name** drop-down menu, select **Database**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-database-integration]
+== Set up your database integration
+1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link].
+2. In the **Database type** section, select your database type.
+3. In the **Credentials** section, enter your credentials for the database type you selected.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Database type
+|Credentials
+|MS&nbsp;SQL&nbsp;Server +MySQL +PostgreSQL
+|**Database name** +**Host** +**Port**: If you use a named instance on an MS SQL Server connection, do not enter a port. Instead, open UDP port 1434 in your firewall to ensure that the SQL Server browser service can determine the port for Cloud Link. +**Username** +**Password**: Enter valid credentials for a database user that has read access to the database.
+|Other (ODBC)
+|**Connection string**: Connection strings contain parameters required for the integration to connect your database server. You can find a connection string suitable for your database type and ODBC driver at [https://www.connectionstrings.com](https://www.connectionstrings.com). + +Example for an InterSystem Caché database: +`DRIVER={InterSystemsODBC};SERVER=myServerAddress;` `PORT=12345;DATABASE=myDataBase;UID=myUsername;PWD=myPassword;`  + +SQL identifier in queries will be delimited by double quotes. Add additional options to the connection string if your ODBC driver does not support this by default, e.g. for Informix. + +Example for an IBM Informix database: +`DRIVER={IBM INFORMIX ODBC DRIVER};SERVER=myServerAddress;DATABASE=myDatabase;HOST=myHost;SERVICE=myService;UID=myUsername;PWD=myPassword;PROTOCOL=onsoctcp;DELIMIDENT=y;` + +You can also create an ODBC datasource, in which you configure the driver, server, database, etc. This allows you to add the below DSN option as the connection string instead of including the connection details in the connection string. You still need to add the options that cannot be configured in the ODBC datasource, e.g. `DELIMIDENT=y`. + +DSN examples: + `DSN=myODBCDatasourceName;` +`DSN=myODBCDatasourceName;DELIMIDENT=y;`
+|===
+
+[#configure-your-import-data]
+== Configure your import data
+1. In the **Configuration** section, select the type of import data that you want to import from your database:
+   - **Type of import data**: You can only select one type of import data at a time. To import data from another type, create a new integration:
+     - **Contact-based**: For historical contact data with one row per contact
+     - **Interval-based** For historical contact data which is aggregated into intervals. Select an interval of 15 or 30 minutes.
+     - **Agent status**: For agent status data. By default, data is imported every 15 minutes.<br>Check **Import real-time agent status data** to import data every 10 seconds (available only in Advanced and Enterprise WFM).<br>Check **Data reconciliation** to control for which time period the agent status data is imported every 15 minutes. Learn more about xref:#data-reconciliation[data reconciliation].
+   - **Time zone**.
+   - **SQL query**: Enter the SQL query to get the data from your database table or view. Learn more about the xref:#sql-query[SQL Query].
+
+2. Click _Save_{:.doc-button}.  
+   The integration starts importing data. The initial import can take a while.  
+   All queues imported from the connected database are available automatically on the xref:forecast:create-workloads.adoc#create-workloads[workload configuration screen] in **Forecast**.  
+   External activities are available in the Present activity (ID 1). To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities].
+
+[#data-reconciliation]
+=== Data reconciliation
+Sometimes, it may be necessary to manually correct already imported agent status data. An example is when a team member forgot to clock out and you corrected the data in your database to show their actual working time.
+
+By default, the **Data reconciliation** checkbox is activated. The integration re-imports all data
+
+- from the last 24&nbsp;hours
+- every 15&nbsp;minutes
+
+You always have access to the most updated data from the last 24 hours. Only changes to data older than 24 hours will not be included in the re-import.
+
+Your database may struggle with the load of continuous data re-import. If you need to deactivate data reconciliation, the newest data since the last successful import (typically data from the last 15&nbsp;minutes) is imported. In this case, you may need to manually update data that was imported more than 15&nbsp;minutes ago. If possible, keep the checkbox activated, because manual data updates cause significant extra work and can be prone to errors.
+
+When you pause your integration for less than 24&nbsp;hours, all data is re-imported as soon as you restart the integration. This applies regardless of whether the checkbox is checked or unchecked.  
+When you pause the integration for a longer period, all data older than 24&nbsp;hours will not be re-imported.
+
+[#sql-query]
+== SQL query
+The SQL query for a database integration must contain specific column names. The selected import data type determines the expected columns but you can define the table name.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Your database table may not contain the expected column names. To resolve this, add the required column names as column aliases to the query or by creating a separate view in your database.
+====
+If you plan to use a database view, the simplest SQL queries you can run are the following:
+
+<style>
+table th:first-of-type {
+   width: 20%;
+}
+table th:nth-of-type(4) {
+   width: 50%;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Import data type
+|Sample query
+|Interval-based
+|SELECT queueidentifier, queuename, timestamp, offered, answered, handlingtime, channel FROM table
+|Contact-based
+|SELECT queueidentifier, queuename, timestamp, answered, duration, channel FROM table
+|Agent status
+|SELECT agentidentifier, starttime, endtime, activity FROM table
+|===
+
+Extend the sample queries to get and filter data from your custom table:
+
+----
+SELECT
+  Start as "timestamp",
+  Id as queueidentifier,
+  Name as queuename,
+  SUM(CASE countId WHEN 1000 THEN val ELSE 0 END) as offered,
+  SUM(CASE countId WHEN 1001 THEN val ELSE 0 END) as answered,
+  SUM(CASE countId WHEN 1002 THEN val ELSE 0 END) as handlingtime,
+  calls as channel
+FROM table
+WHERE countId IN (1000, 1001, 1002)
+GROUP BY Start, Name
+----
+
+[#column-details]
+== Column details
+The tables below show the details for the expected columns separated by import type.
+
+[#agent-status]
+=== Agent status
+<style>
+
+table {
+   width: 100%;
+}  
+table th:first-of-type {
+   width: 20%;
+}
+table th:nth-of-type(4) {
+   width: 50%;
+}
+</style>
+
+[%header, cols="1a,1a,1a,1a,".rstrip(',')]
+|===
+|Column
+|Data type
+|Required
+|Details
+|agentidentifier
+|String
+|Yes
+|Unique identifier for the agent
+|starttime
+|Datetime
+|Yes
+|Start of the agent status activity
+|endtime
+|Datetime
+|No
+|End of the agent status activity +Do not use if the activity is ongoing.
+|activity
+|String
+|Yes
+|Identifier for the external activity
+|===
+
+[#interval-based]
+=== Interval-based
+[%header, cols="1a,1a,1a,1a,".rstrip(',')]
+|===
+|Column
+|Data type
+|Required
+|Details
+|queueidentifier
+|String
+|Yes
+|Unique identifier for the queue +You can rename the queue by changing the queuename, but it will keep the same queueidentifier.
+|queuename
+|String
+|Yes
+|Identifier for the queue
+|timestamp
+|Datetime
+|Yes
+|Start of the interval
+|offered
+|Integer
+|Yes
+|Amount of contacts (e.g calls or emails) in the interval
+|answered
+|Integer
+|Yes
+|Amount of contacts that have been handled in the interval
+|handlingtime
+|Integer
+|Yes
+|Total handle time for all contacts in the interval
+|channel
+|String
+|No
+|Identifier for the channel of the Peopleware source queue +Defaults to calls if empty +Valid values: calls, chats, emails, social_media, documents, cases.
+|===
+
+[#contact-based]
+=== Contact-based
+[%header, cols="1a,1a,1a,1a,".rstrip(',')]
+|===
+|Column
+|Data type
+|Required
+|Details
+|queueidentifier
+|String
+|Yes
+|Unique identifier for the queue +You can rename the queue by changing the queuename, but it will keep the same queueidentifier.
+|queuename
+|String
+|Yes
+|Identifier for the queue
+|timestamp
+|Datetime
+|Yes
+|Start of the interval
+|
+|answered
+|Integer
+|Yes
+|Handled contact (value 1) +No handled contact (value 0)
+|duration
+|Integer
+|No
+|Total handle time of a single contact
+|channel
+|String
+|No
+|Identifier for the channel of the Peopleware source queue +Defaults to calls if empty +Valid values: calls, chats, emails, social_media, documents, cases.
+|===
+
+[#edit-a-database-integration]
+== Edit a database integration
+When your database details or data structure changes, you can edit the configuration of your database integration. The next data import will be done as before. If you need to re-import all available data from the past, create a new integration.
+
+[#known-odbc-driver-issues]
+== Known ODBC driver issues
+To prevent increasing TCP connections in Cloud Link when querying data from Amazon Athena, make sure to use the [Athena ODBC 2.x driver version](https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver.html).

@@ -1,0 +1,140 @@
+= Schedule chat activities
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to schedule chats.
+:page-aliases: best-practice-chat-activities
+
+To schedule chat activities, take the following steps:
+
+- Import chat data using an integration.
+- Add the resulting queues to a workload in Forecast.
+- Calculate staff requirements for scheduling.
+
+[#prerequisites]
+== Prerequisites
+To import data for chats and calculate staff requirements in chat-related workloads, your xref:acd-integration:how-integrations-work.adoc[integration] must support the Chats contact data type.
+
+[#forecast-chat-workloads]
+== Forecast chat workloads
+To forecast the chat volume, proceed as follows:
+
+1. xref:forecast:create-workloads.adoc#create-workloads[Create a new workload].
+2. In the **Assign queues** section of the **New Workload** configuration page, select one or more chat queues. The first drop-down menu allows you to filter by queue type.
+
+Tip: To consider periods with unusually high or low chat volumes, you can xref:forecast:events-and-holidays.adoc[add events and public holidays] to your workload.
+
+[#workaround-for-no-chat-history-or-unreliable-data]
+=== Workaround for no chat history or unreliable data
+Even with no or unreliable data to create forecasts, you can create chat staff requirements to schedule a fixed number of employees to handle chats. You can skip forecasting and the staff requirements calculation and run the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[**Other - Constant Requirement** calculation].
+
+[#block-vs-blended-scheduling]
+== Block vs. blended scheduling
+We offer two different ways to schedule chats:
+
+- Block scheduling: Employees are scheduled for one or more blocks of a fixed activity during their shift.
+- Blended scheduling: Employees are scheduled to handle any contacts for which they are skilled. You can blend both chat services or chats with other channels, such as emails or calls.
+
+The method determines how you need to set up your chat activities and calculate staff requirements.
+
+[#set-up-block-scheduling]
+=== Set up block scheduling
+Add fixed blocks of chat (and other) activities to day models:
+
+1. xref:administration:activities.adoc#create-an-activity[Create an activity] of type Presence for your new chat activity.
+2. xref:administration:create-and-manage-planning-units.adoc#add-activities[Add the activity to a planning unit] in which you’d like to schedule chats.
+3. (Optional) If only some people in the planning unit can work on the chat activity, proceed as follows:
+   1. xref:administration:work-with-skills.adoc[Create a skill].
+   2. xref:administration:work-with-skills.adoc#add-skills-to-activities[Add the skill to the chat activity].
+   3. [Add the skill to the people](/employee-overview#configure-employee-settings) who will work on chat activities.
+4. Create or update xref:administration:daymodel-basics.adoc[day models] by adding the chat activity to them.
+
+[#set-up-blended-scheduling]
+=== Set up blended scheduling
+You can schedule chat activities of type Plannable by replacing other activities of type Replaceable in day models.
+
+Alternatively, you can use multiactivities:
+
+1. Create an activity of type Presence for your new multiactivity.
+2. Create other activities you want to blend and xref:administration:activity-types-and-properties.adoc#subactivities[add them as subactivities] to the first activity.
+3. Create skills and add them to the (sub)activities and your employees.
+
+[#calculate-staff-requirements]
+== Calculate staff requirements
+There are two different ways to calculate staff requirements for chat activities.
+
+[#calculate-for-block-scheduling]
+=== Calculate for block scheduling
+To configure the calculation method and calculate staff requirements, proceed as follows:
+
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select a period for which a forecast exists.
+3. Scroll down to the **Staff Requirements** section and click _Edit staff requirements_{:.doc-button}.
+4. In the **Staff requirements** configuration window, select **Chat** from the **Calculation method** drop-down menu and complete the form.
+   Learn more about the calculation method for chat and required parameters in the article xref:forecast:task-set-up-staff-requirement-calculation.adoc#steps[Calculate staff requirements].
+5. Click _Save_{:.doc-button}.
+
+The workload details page now displays calculated staff requirements for chat activities.
+
+To use the calculated staff requirements for scheduling, proceed as follows:
+
+1. Go to the top of the page to select an upcoming time period.
+2. In the **Staff requirements** section, click _Use staff requirements_{:.doc-button}.
+3. In the **Use staff requirements** window, click _Save_{:.doc-button}.
+
+[#calculate-for-blended-scheduling]
+=== Calculate for blended scheduling
+To transfer staff requirements from a forecast, proceed as follows:
+
+1. Go to **Forecast**. Select the workloads for each subactivity of the multiactivity.
+2. In each workload, select the same calculation period in the future.
+3. From the three-dot menu {icon-context-menu} at the top right, select **Use forecast**.
+4. In the window that opens, select your forecast version.
+5. Click _Use forecast_{:.doc-button}.
+
+To calculate staff requirements, proceed as follows:
+
+1. Go to _Forecast > Requirement Scripts_{:.breadcrumbs}.
+2. In the **Calls - Multi-Activity** tile, click _Open_{:.doc-button}.  
+   A configuration window with the script parameters opens.
+3. In the script configuration window, complete the form. In the **Planning Unit Parameters** section, select the multiactivity that includes your chat activities.
+4. In the **Assigned activities** section, configure the following parameters for each chat activity:
+   - Under **Queue Parameters**:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|**Parameter**
+|**Description**
+|Calculation method
+|Chat
+|Queue
+|Select the queue with the same name as your workload, prefixed with \*. This queue now contains the data you have transferred before.
+|Version
+|Auto-Forecast
+|Processes
+|Chats Offered
+|Average Handling Time
+|Chats Average Handle Time
+|===
+
+   - Under **Erlang C Parameters**:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|**Parameter**
+|**Description**
+|Seq (%)
+|Enter the percentage of AHT that is spent on tasks which cannot be done in parallel, e.g. after-call work.
+|Max Sessions
+|Enter the maximum number of parallel chats.
+|===
+
+   The staff requirements are now available for scheduling.
+
+[#schedule-chat-activities]
+== Schedule chat activities
+After you have imported chat data and calculated staff requirements, you have completed all prerequisites to schedule your chat activities using the xref:scheduling:scheduling-methods.adoc[available scheduling methods] shift bidding, optimized schedules, or shift sequences.
+
+You can see transferred staff requirements and the scheduling result in the xref:scheduling:analyze-coverage-staffing-requirement.adoc[Shift Center], in xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[Schedules], or in xref:monitoring:dashboards-examples.adoc[Dashboards].

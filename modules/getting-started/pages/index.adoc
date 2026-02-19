@@ -1,0 +1,17 @@
+= Getting started
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-concept:
+
+Set yourself up for success.
+
+Get an overview and learn how to set up the basic configuration data needed for scheduling, calculate a forecast and create your first schedules. You will also learn how to manage user accounts including user roles and understand how billing works.
+
+Have a great start on your Peopleware journey!
+
+[#recommended-articles-in-getting-started]
+== Recommended articles in Getting started
+- xref:getting-started:manage-2fa.adoc[Manage 2FA]
+- xref:getting-started:navigate-peopleware.adoc[Get an overview of Peopleware]
+- xref:getting-started:set-up-base-configuration.adoc[Set up the base configuration]

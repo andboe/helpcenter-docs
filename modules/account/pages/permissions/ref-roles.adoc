@@ -1,0 +1,244 @@
+= Roles reference
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-reference:
+:description: Learn what the role configuration parameters are and how they work.
+:related-articles: configure-user-roles.adoc, role-permissions.adoc, roles-and-permissions.adoc
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Functional permissions that have corresponding object permissions are deactivated when setting object permissions, and vice versa. Example: Setting object permissions on individual dashboards deactivates the **View all dashboards** permission for the role.
+====
+== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Name
+|Identifies the role.
+|Description
+|Provides more information about the role.
+|Default role
+|Controls if the role is preselected for new people.
+|===
+
+== Functional permissions
+
+=== WFM
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Enable access to WFM
+|Grants access to _WFM_{:.breadcrumbs}.
+|===
+
+=== Forecast
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View all workloads
+|Grants view permissions for workloads in _Forecast_{:.breadcrumbs}.
+|Create workloads
+|Grants write permissions for workloads in _Forecast_{:.breadcrumbs}.
+|Access to Requirement calculations
+|Allows people with the role to configure and execute staff requirement calculations.
+|===
+
+=== Plan
+
+<!-- TODO: Find out exactly what "View schedules" "FA to Schedules" "Insert Shift sequences" (Schedules vs. Shift Center, access to features etc.) does -->
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View schedules
+|Grants view permissions for schedules in _Plan > Schedules_{:.breadcrumbs} and _Plan > Shift Center_{:.breadcrumbs}.
+|Full access to Schedules
+|Allows people with the role to use all **Schedules** features.
+|Insert shift sequences
+|Allows people with the role to insert shift sequences.
+|Full access to Meetings
+|Allows people with the role to use all _Plan > Meetings_{:.breadcrumbs} features.
+|View time off
+|Grants view permissions for time-off data in _Plan > Time off_{:.breadcrumbs}.
+|Full access to Time Off
+|Allows people with the role to use all features in _Plan > Time off_{:.breadcrumbs}.
+|Full access to Shift Center
+|Allows people with the role to use all **Shift Center** features.
+|Full access to Configuration
+|Grants access to _Plan > Configuration_{:.breadcrumbs}. Access to configuration data types must be granted in _WFM > System > Role authorization > Navigator > Administration > Scheduling_{:.breadcrumbs}.
+|===
+
+=== Intraday
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Configure adherence settings
+|<!-- what does it do? Does nothing in intraday if checked -->
+|View Real-Time Adherence
+|Grants view permissions for _Intraday > Real-Time Adherence_{:.breadcrumbs}.
+|View Intraday Adherence
+|Grants view permissions for _Intraday > Intraday Adherence_{:.breadcrumbs}. Requires the **View Real-Time Adherence** permission.
+|Edit agent status
+|Allows people with the role to edit actual activities in _Intraday > Intraday Adherence_{:.breadcrumbs}.
+|===
+
+=== Analyze
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View all dashboards
+|Grants view permissions for all dashboards in _Analyze_{:.breadcrumbs}.
+|Create dashboards
+|Allows people with the role to create dashboards in _Analyze_{:.breadcrumbs}.
+|===
+
+=== People
+
+<!-- Which permissions allow the user to see people? All permissions on People do not grant view access to all people, even with access to planning units and selections. -->
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View people
+|Grants view permissions for people.
+|Create people
+|Allows people with the role to create people.
+|Delete people
+|Allows people with the role to delete people.
+|Edit people
+|Grants edit permissions for people.
+|View and edit Password and authentication
+|Allows people with the role to set a new password, and enforce 2FA and SSO for people.
+|View and edit Roles
+|Allows people with the role to view which roles are assigned to people and assign roles to people.
+|View which people are admins
+|Allows people with the role to see if people are admins.
+|===
+
+=== Time Off
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View time off
+|Grants view permissions on _Time Off > Requests_{:.breadcrumbs} and _Time Off > Plan_{:.breadcrumbs}.
+|Create time off
+|Allows people with the role to create time off.
+|Edit time range
+|Allows people with the role to edit the time range of approved time-off requests.
+|Override evaluation
+|Allows people with the role to override the automatically calculated evaluation.
+|Cancel time off
+|Allows people with the role to cancel approved time off.
+|Recommend decision
+|Allows people with the role to recommend a decision for time-off requests.
+|Decide requests with recommendation only
+|Allows people with the role to approve or reject only time-off requests that include a recommendation.
+|Decide all requests
+|Allows people with the role to approve or reject all time-off requests.
+|Full access to Accounts
+|Allows people with the role to access _Time Off > Accounts_{:.breadcrumbs}.
+|View time-off quotas
+|Grants view permissions on _Time Off > Quotas_{:.breadcrumbs}.
+|Full access to time-off quotas
+|Grants view and edit permissions on _Time Off > Quotas_{:.breadcrumbs}.
+|View Configuration
+|Grants view access to **Periods**, **Accounting rules**, and **Types**.
+|Full access to Configuration
+|Grants view and edit access to **Periods**, **Accounting rules**, and **Types**.
+|===
+
+=== Me
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Configure Me
+|Allows people with the role to access the configuration page in **Me**.
+|View Me
+|Allows people with the role to access the **Me** portal.
+|Edit availabilities
+|Allows people with the role to add and edit availabilities in _Me > Availability_{:.breadcrumbs}.
+|===
+
+=== Account
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|View roles
+|Grants view permissions on **Roles**.
+|Full access to Roles
+|Allows people with the role to configure **Roles**.
+|View Billing
+|Grants view permissions on **Billing**.
+|Configure System settings
+|Grants access to System settings
+|Configure Integrations
+|Allows people with the role to access and configure **Integrations**.
+|Configure Security settings
+|Allows people with the role to access and configure **Security**.
+|Configure Notifications
+|Allows people with the role to access and configure **Notifications**.
+|Configure CSV schemas
+|Allows people with the role to access and configure **CSV Schemas**.
+|Full access to background jobs
+|Allows people with the role to view, start and delete background jobs.
+|===
+
+=== My Profile
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Configure Account
+|Allows people with the role to edit their personal details.
+|Configure personal access tokens
+|Allows people with the role to add, edit and delete personal access tokens.
+|===
+
+=== Job status
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Access to job status
+|Allows people with the role to view their jobs in Job Status.
+|Access to jobs of all users
+|Allows people with the role to view all jobs in Job Status.
+|===
+
+=== Support
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Access Help Center
+|Allows people with the role to access Help Center.
+|Create tickets via Help Center
+|Allows people with the role to create tickets via Help Center.
+|===

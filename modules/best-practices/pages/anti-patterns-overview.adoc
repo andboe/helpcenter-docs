@@ -1,0 +1,14 @@
+= Avoid typical planning mistakes
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to avoid typical mistakes to make your planning life easier.
+
+Welcome to the world of anti-patterns. Here we take you into the amazing world of Peopleware curiosities where you can find strange things that we have discovered. An anti-pattern is just like a pattern, except that instead of a solution it gives something that looks superficially like a solution but isn’t one, here is a [great explanation by Martin Fowler](https://www.martinfowler.com/bliki/AntiPattern.html).
+
+[NOTE]
+====
+Only the first section, "Creating schedules manually", applies to Peopleware Essentials customers.
+====

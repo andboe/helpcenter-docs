@@ -1,0 +1,145 @@
+= Single sign-on (SSO)
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to set up and use SSO in Peopleware.
+
+Single Sign-On (SSO) allows users to access multiple applications, including Peopleware, with a single set of credentials. A trusted Identity Provider (IdP), such as OneLogin, Microsoft Entra ID, Okta, or Google, authenticates users and securely shares their identity with Peopleware via the SAML protocol. This centralized authentication supports your organization’s security policies, including two-factor authentication and password rotation.
+
+During the login process, Peopleware as the service provider (SP) redirects them to the IdP for authentication. The IdP verifies the user’s identity and sends a signed response with user details back to Peopleware, confirming successful authentication. Once authenticated with the IdP, users are redirected to Peopleware without needing to log in again.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The SAML assertion exchanged between IdP and SP contains sensitive user details. To improve security, enable encrypted assertions (widely supported) or token encryption (less common) in your IdP settings. Both protect sensitive data during transmission.
+====
+[#requirements]
+== Requirements
+The following requirements must be met to integrate Peopleware into the IdP of choice:
+
+- SAML 2.0 protocol support
+- Federation metadata URL access via web
+- The email address registered in Peopleware and your IdP must be connected to a mailbox
+
+The SSO setup has been tested with OneLogin, Microsoft Entra ID, and Okta. If you cannot integrate your specific IdP, contact your Customer Success team.
+
+[#activate-sso-for-your-account]
+== Activate SSO for your account
+Only users with admin access can activate SSO.
+
+1. Register Peopleware as a new SAML or SSO application in your IdP.
+
+   You can download [this Peopleware logo](/assets/img/common/logo.png) to add it to the web application page.
+
+2. In Peopleware, go to _Account > Security_{:.breadcrumbs} and configure SSO under **Single Sign-On**.
+
+3. In the **Peopleware SAML Metadata** section, you have two options, depending on whether your IdP supports file uploads:
+   - File uploads supported: Click _{icon-download} Download_{:.doc-button} and complete the IdP configuration with the downloaded XML file.
+   - File uploads not supported: Click **Service Provider details** and add the displayed URLs to your IdP configuration.
+
+4. (Optional) For encrypted SAML assertions, click _{icon-download} Download_{:.doc-button} in the **Token encryption** section, and add the downloaded certificates to your IdP configuration. The certificate has a limited validity. Our engineers replace the certificate with a new one six weeks in advance of the end of the validity. Both certificates are supported during the six-week period.
+
+5. Depending on whether your IdP provides an URL for federation metadata, finish the configuration as follows:
+   - IdP provides federation metadata URL: Copy your federation metadata URL for the registered application from your IdP. Paste the URL into the **Federation Metadata URL** field in the **Identity Provider** section.
+   - IdP does not provide federation metadata URL: Download the Federation Metadata XML file and host it yourself. As an example, learn how to set up your own custom [SAML application with Google](https://support.google.com/a/answer/6087519?hl=en).
+
+6. Click _Save configuration_{:.doc-button}.
+
+7. Click _Test configuration_{:.doc-button} to test the login through the IdP. The IdP generates a SAML response that is sent to Peopleware. You are redirected to your IdP's login page, where you enter the IdP credentials. If the IdP configuration is correct and the authentication process is successful, you will be logged in to Peopleware.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+SSO is now active in test mode. Users can still log in with their username and password. For a higher level of security, you can xref:#enforce-sso-for-all-users[enforce SSO for all users].
+====
+[#test-failed-configure-the-saml-response]
+=== Test failed? Configure the SAML response
+The SAML response from the IdP contains the authenticated user's assertion with attributes and profile information. If the process was not successful and you see an error message, check the application configuration, the user configuration, and the Recipient, InResponseTo, NotBefore, and NotOnOrAfter attributes set in the IdP.
+
+You can debug the `SubjectConfirmation` XML element in the SAML response in your browser's dev tools or external SAML tools. To see the unencrypted response in plain text, deactivate encrypted assertions.
+
+Example for the SubjectConfirmation XML element in a SAML response:
+
+----
+<saml:Subject>
+    <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">email@company.org</saml:NameID>
+    <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+        <saml:SubjectConfirmationData NotOnOrAfter="2022-08-11T08:25:25Z"
+            Recipient="https://app.peopleware.com/sso/saml/acs"
+            InResponseTo="_abcdefgh-0444-4567-abcd-abcdabcdabcd"
+    />
+    </saml:SubjectConfirmation>
+</saml:Subject>
+----
+
+[#enforce-sso-for-all-users]
+== Enforce SSO for all users
+In test mode, users can log in with SSO and their original user credentials. Before you enforce SSO for all users, which removes the option to log in with username and password, make sure that the following applies:
+
+- All users exist in the IdP and Peopleware.
+- All Peopleware email addresses match the appropriate IdP identifier.
+- All Peopleware users are assigned to the IdP Peopleware SSO application.
+
+Once SSO is enforced, it is no longer possible to do the following:
+
+- Log in using username and password (all existing passwords will be invalidated).
+- Reset passwords inside Peopleware (neither by user nor by admin).
+- Manage access to Peopleware outside the IdP.
+
+Enforce SSO in the **3. Enforcement** section. The button _Enforce_{:.doc-button} is selectable after you have tested your SSO configuration successfully. You may need to deactivate SSO again by clicking _Disable_{:.doc-button} first.
+
+[#change-email-addresses-when-sso-is-enforced]
+== Change email addresses when SSO is enforced
+When you enforce SSO, users cannot change their email addresses themselves because the Peopleware email address needs to match the appropriate IdP identifier.
+
+Only admin users can change email addresses in Peopleware.
+
+[#log-in-using-sso]
+== Log in using SSO
+When SSO is set up, your users can log in via [https://app.peopleware.com/login/sso](https://app.peopleware.com/login/sso). They need to enter their email address and are redirected to the IdP's login screen. If users are already logged in, they will be automatically redirected back to Peopleware. Otherwise, they need to enter the IdP password.
+
+If SSO login fails, check user existence, email match, and app assignment in the IdP.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Peopleware does not support IdP-initiated SSO. Users must start the login process from the Peopleware login page (SP-initiated SSO). Starting the login process in the IdP will result in login errors.
+====
+[#revoke-access-to-peopleware]
+== Revoke access to Peopleware
+To revoke a user's access to Peopleware via SSO, you must delete the user assignment in the IdP.
+
+Note that revoking the user's access in your IdP does not deactivate them in Peopleware. To completely revoke a user's access to Peopleware, you must xref:people:deactivate-people.adoc[deactivate or delete the user].
+
+[#deactivate-sso]
+== Deactivate SSO
+To deactivate SSO and allow logins with username and password again, users with admin access can deactivate SSO. This will delete the IdP connection and all entered configuration details. After SSO has been deactivated, all active users receive an email to set a new password. Afterwards, logging in with user name and password via [https://app.peopleware.com/login](https://app.peopleware.com/login) is possible again.
+
+[#use-sso-on-multiple-tenants]
+== Use SSO on multiple tenants
+If your organization has multiple Peopleware tenants, and you want some or all of your users to access more than one tenant, add a User Principal Name (UPN) for each person. Their email address and password are different for each tenant. The person's UPN is the same across tenants. The person's UPN is configured in your IdP. The UPN is the identifier Peopleware uses to authenticate the user against their IdP. The format of the UPN, e.g. email address, depends on your IdP and setup.
+
+To add a UPN to a person, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs}.
+2. Click the person who needs to have access to multiple tenants.
+3. In the left-side menu, click **Access**.
+4. In the **Single sign-on** section, enter a user principal name.
+5. Click _Save_{:.doc-button}.
+
+The user's Peopleware email address, and not their UPN, is used for all email verification processes and for notifications or reports. The email address must be unique for each tenant. You can use [plus addressing](https://en.wikipedia.org/wiki/Email_address#Sub-addressing).
+
+SSO for multiple tenants is available to customers on the Advanced and Enterprise WFM plans. If you don't have access to SSO, the UPN field is still displayed on the page. Any input is ignored.
+
+<!-- SSO for multiple tenants can be activated by the feature flag multi_tenant_sso, see also https://github.com/ivx/internal-support-documentation/tree/main/Cortex-->

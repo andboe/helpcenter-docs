@@ -1,0 +1,36 @@
+= Manage availabilities in Me
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Prevent people from adding or changing their one-time availabilities before a specific date.
+
+Availabilities define when a person is available for scheduling on specific dates and times. As a planner, you can configure availabilities in two ways:
+
+- Using personal xref:administration:availabilities.adoc#configure-availabilities[weekly availabilities]
+- Using xref:administration:availabilities.adoc#rotate-availabilities-across-weeks[day models]
+
+Additionally, people can add [one-time availabilities in inijxo Me](/add-availabilities-in-me#add-an-availability). If you already configured weekly availabilities, one-time availabilities replace them.
+
+[#give-people-access-to-availabilities]
+== Give people access to availabilities
+To give people access to availabilities in Me, ensure their role has the following functional permissions:
+
+- **Me**: **View Me** and **Edit availabilities**.
+
+The person can start entering their availability in Me the day after they are granted the necessary permissions.
+
+[#prevent-people-from-editing-their-availabilities]
+== Prevent people from editing their availabilities
+The availability of your people may vary from day to day and from week to week. If you want to allow people to add their availabilities in Me while avoiding scheduling conflicts, you can prevent people from adding or editing one-time availabilities before a specific date.
+
+Example: You want to create your schedules two weeks in advance. To prevent your people from adding or editing their availabilities during those two weeks, select a date at the end of the scheduled period. If you create a schedule on 2 January for the week starting on 15 January, select 22 January. This prevents your people from adding or editing their availabilities up to 22 January.
+
+To prevent people from editing availabilities in Me before a specific date, proceed as follows:
+
+1. Go to _Plan > Configuration > General_{:.breadcrumbs}.
+2. Select a date with the date picker.
+3. Click _Save changes_{:.doc-button}.
+
+Before the specified date, people can still see their availabilities but they cannot edit them. If you do not enter any date, people are always allowed to add or edit their one-time availabilities.

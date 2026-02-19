@@ -1,0 +1,47 @@
+= Time-off quotas
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: None
+:topic-type-concept:
+:description: Learn how to define, calculate, and manage time-off quotas in Peopleware to effectively control employee leave and ensure adequate staffing.
+
+In _Time Off_{:.breadcrumbs}, you can define and manage time-off quotas to help maintain adequate staffing levels. This article explains how to define time-off quotas, and when they are updated.
+
+[#what-are-quotas]
+== What are time-off quotas?
+Time-off quotas define the maximum amount of time off that can be taken for a specific planning unit on a specific date. This helps prevent too many people from being absent at once. You can configure time-off quotas as a condition within xref:time-off:understand-approval-policies.adoc[approval policies].
+
+Key properties of time-off quotas:
+
+- Time-off quotas apply per planning unit.
+- Time-off quotas are set per calendar date.
+- Time-off quotas are expressed in hours and minutes.
+
+[#quota-consumption]
+== Quota consumption
+Quota consumption measures how much of the defined time-off quota is used or projected to be used. This helps planners assess whether additional time-off requests can be approved.
+
+[#consumption-types]
+=== Quota consumption types
+- **Consumed quota**: Time off that has been approved or is pending cancellation.
+- **Projected consumed quota**: Includes all approved time-off and pending requests.
+
+[#quota-consumption-updates]
+=== Quota consumption updates
+Quota consumption is updated automatically when the following events occur:
+
+- Time-off is created, updated, or deleted.
+- Valuation changes.
+- Quota definitions change.
+- Planning unit assignments of people with current or future time off change: Since time-off quotas apply per planning unit, a change in a person's planning unit assignment can impact which quotas their time off affects, or how their time off is calculated against existing quotas.
+
+Peopleware identifies which time-off quotas are affected and recalculates consumption for those time-off quotas.
+
+[#control-which-time-off-types-afftect-quotas]
+=== Control which time-off types affect quota consumption
+Each xref:time-off:time-off-types.adoc[time-off type] can be configured to either include or exclude it from quota calculations. This gives you control over which kinds of absences count toward quota consumption.
+
+[#view-quota-usage]
+=== View Quota Usage
+You can view both consumption and projected consumption directly in the Time Off xref:time-off:time-off.adoc#view-quota-consumption[**Plan** view].

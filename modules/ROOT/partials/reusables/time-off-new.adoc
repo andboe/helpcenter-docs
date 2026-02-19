@@ -1,0 +1,3 @@
+> Note
+>
+> This article refers to the new Time Off app. For information about the legacy Time off app available under _Plan > Time off_{:.breadcrumbs}, see {% link_new this article | features/scheduling/time-off/vacation-absences-management.md %}. For questions about the new Time Off app, contact your Peopleware consultant.

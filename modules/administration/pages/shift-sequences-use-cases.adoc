@@ -1,0 +1,86 @@
+= Shift sequences - Use cases
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn when to use shift sequences through practical examples.
+:related-articles: shift-sequences.adoc, create-shift-sequences.adoc
+:page-aliases: shift-sequence-overview
+
+This article describes common use cases for using shift sequences:
+
+Use case 1: Specify the days when certain shifts must be scheduled
+Use case 2: Schedule recurring activities
+Use case 3: Specify days when people do not work
+Use case 4: Specify when shifts can be scheduled based on people’s availabilities
+
+== Use case 1 - Specify the days when certain shifts must be scheduled
+
+This use case applies, for example, in the following scenarios:
+
+- You need to schedule early and late shifts for different groups of people.
+- You need to schedule a person who cannot start working before a certain time on specific days. On other days, they can start earlier. (e.g. the person cannot start working before 11 AM on Mondays, but is available earlier on all other days).
+
+== Use case 2 - Schedule recurring activities
+
+This use case applies in scenarios such as the following:
+
+- You need to schedule weekly meetings.
+- You need to schedule a person to work for a specific amount of time on a certain activity every day at a specific time (e.g. one-hour back-office work every day at 11 AM).
+
+== Use case 3 - Specify days when people do not work
+
+This use case applies, for example, if you need to define specific patterns of days off for individual people.
+
+== Use case 4 - Specify when shifts can be scheduled based on people’s availabilities
+
+This use case applies when you want to schedule people with varying availabilities.
+
+=== Steps
+
+== Use case 1 - Specify the days when certain shifts must be scheduled
+
+To schedule early and late shifts for different groups of people, create two different rows.
+
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings. In the **Rows** field, enter **2**.
+4. Click _Save_{:.doc-button}.
+5. (Optional) In the **Assignments** section, rename the rows to improve clarity (e.g. **Early shifts** and **Late shifts**).
+6. Assign the day models to the relevant days in the rows.
+
+== Use case 2 - Schedule recurring activities
+
+To schedule weekly meetings, create as many rows as the number of teams for which you want to schedule weekly meetings.
+
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings. In the **Rows** field, enter the number of teams for which you want to schedule weekly meetings.
+4. Click _Save_{:.doc-button}.
+5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a team.
+6. Assign the meeting activity to the relevant days in the rows.
+
+- Select the activity in the drop-down menu.
+- In the **From** and **To** fields, set the activity start and end time.
+
+== Use case 3 - Specify days when people do not work
+
+To schedule specific patterns of days off for a person, proceed as follows:
+
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings.
+4. Click _Save_{:.doc-button}.
+5. Assign the absence activity to the relevant days in the rows.
+
+== Use case 4 - Specify when shifts can be scheduled based on people’s availabilities
+
+To schedule people with varying availability, proceed as follows:
+
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings. In the **Rows** field, enter the number of people for whom you want to schedule varying availabilities.
+4. Click _Save_{:.doc-button}.
+5. (Optional) In the **Assignments** section, rename the rows to improve clarity. Each row corresponds to a person.
+6. Assign the relevant Availability day model to the relevant days in the rows.

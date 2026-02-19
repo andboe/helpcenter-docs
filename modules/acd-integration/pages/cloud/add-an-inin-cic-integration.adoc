@@ -1,0 +1,37 @@
+= Interactive Intelligence CIC
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Interactive Intelligence CIC to import data.
+:related-articles: how-integrations-work.adoc, install-cloud-link.adoc, import-agent-status-data.adoc
+
+An Interactive Intelligence CIC integration is an on-premise integration that imports real-time adherence data.
+
+The integration uses xref:acd-integration:install-cloud-link.adoc[Cloud Link].
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-an-interactive-intelligence-cic-integration]
+== Add an Interactive Intelligence CIC integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Genesys**.
+5. From the **Model name** drop-down menu, select **Interactive Intelligence**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-interactive-intelligence-cic-integration]
+== Set up your Interactive Intelligence CIC integration
+1. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link]. During the installation, your terminal shows a PIN that you need to enter in the integrations page to proceed. The PIN expires after 5 minutes.
+2. In the **Configuration** section, set up your integration:
+   - **Time zone**: Select the time zone of your ACD.
+   - **ACD server addresses**: Enter your ACD server address as DNS name (e.g. acdserver.example.com:8080) or as IP address (e.g. 192.168.1.1:8080). If you do not specify any port, the default port 42027 is used. For multiple ACDs, separate your entries with commas.
+3. Click _Save_{:.doc-button} to create the integration.
+
+The integration starts importing data. To import agent status data, you need to xref:acd-integration:import-agent-status-data.adoc[map external user identifiers and activities] once your Interactive Intelligence CIC integration is set up.
+
+[#edit-an-interactive-intelligence-cic-integration]
+== Edit an Interactive Intelligence CIC integration
+In case any of the integration details change, e.g. your ACD port, you can edit and update the configuration of your integration. The data import will continue using the updated configuration.

@@ -1,4 +1,40 @@
-=Save forecast versions
+= Save forecast versions
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Use forecast versions to save and compare forecasts against actual volumes for both short-term and long-term forecasting.
+:related-articles: what-is-forecast.adoc, create-workloads.adoc
+:page-aliases: versions
+
+Forecast versions allow you to save forecast values for specific periods. Use forecast versions to compare the original forecast with the current values, and to see how other factors, such as events, influence your forecasts. You can also xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculate staff requirements] based on a forecast version, or display forecast version data in xref:monitoring:manage-dashboards.adoc[Dashboards].
 
 [#save-a-forecast-version]
 == Save a forecast version
+You can choose between four forecast versions:
+
+- Version 1 (Operational): For short to mid-term forecasts to calculate staff requirements.
+- Version 2 (Strategic): For long-term forecasts to plan your organization's capacity.
+- Version 3: For longer-term forecasts for monitoring and controlling purposes.
+- Version 4: For short-term forecasts to adjust staff requirements.
+
+To save the default Forecast data in a forecast version, proceed as follows:
+
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select the time frame for which you want to save the forecast version. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
+3. From the {icon-context-menu} at the top right, select _Save forecast in version_{:.doc-button}.
+4. In the configuration window, select the forecast version into which you want to save the data.
+
+   > Note
+   >
+   > There can only be one of each forecast version for a period in a workload. Saving data for the same period in the same forecast version overwrites the existing data.
+
+5. Click _Save_{:.doc-button}.
+
+The volume and AHT graphs show the data from the different forecast versions as colored lines:
+
+- The Version 1 data is displayed as a purple line.
+- The Version 2 data is displayed as a green line.
+- The Version 3 data is displayed as an orange line.
+- The Version 4 data is displayed as a blue line.

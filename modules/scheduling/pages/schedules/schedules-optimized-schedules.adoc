@@ -1,0 +1,93 @@
+= Create an optimized schedule
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn what an optimized schedule is, how to optimize your configuration, and how to create an optimized schedule.
+
+In _Plan > Schedules_{:.breadcrumbs}, you can use the **Create optimized schedule** functionality to automatically create a full schedule with the best possible coverage for all plannable activities. Your schedule is optimized based on your staff requirements and constraints, such as contracts, skills, and day models.
+
+[#prerequisites]
+== Prerequisites
+- You have xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculated staff requirements] for activities configured as Plannable.
+- You have configured the following data:
+  - xref:#people-configuration[People]
+  - xref:#contracts-configuration[Contracts]
+  - xref:#activities-configuration[Activities]
+  - xref:#day-models-configuration[Day models]
+  - xref:#work-time-pattern-models-configuration[Work time pattern models]
+
+To produce the best results when optimizing your schedule, the above data should reflect the needs of your organization.
+
+[#people-configuration]
+=== People configuration
+In _Plan > Configuration > Employees_{:.breadcrumbs}, configure or check the configuration of your xref:administration:employee-overview.adoc[people]. The optimization takes the following data into account:
+
+- xref:administration:employee-overview.adoc#other-settings[Staff membership]
+- xref:administration:create-contracts.adoc[Contracts]
+- xref:administration:work-with-skills.adoc[Skills]
+- xref:administration:create-and-manage-planning-units.adoc[Planning unit(s)]
+- xref:administration:availabilities.adoc[Availabilities]
+
+[#contracts-configuration]
+=== Contracts configuration
+In _Plan > Configuration > Contracts_{:.breadcrumbs}, configure or check the configuration of your xref:administration:create-contracts.adoc[contracts]. The optimization takes the following data into account:
+
+- xref:administration:create-contracts.adoc#work-time-guidelines[Work time guidelines]
+- xref:administration:create-contracts.adoc#work-hours-per-day[Work hours per day]
+- xref:administration:create-contracts.adoc#auto-scheduler-parameters[AutoScheduler parameters]
+- xref:administration:create-contracts.adoc#scheduling-rules-and-parameters[Scheduling parameters]
+
+[#activities-configuration]
+=== Activities configuration
+In _Plan > Configuration > Activities_{:.breadcrumbs}, configure or check the configuration of your xref:administration:activities.adoc[activities]. The optimization takes the following data into account:
+
+- Plannable: Only the activities configured as Plannable are optimized.
+- Replaceable: Activities configured as Replaceable can be replaced during optimization.
+- xref:best-practices:importance-for-activities.adoc[Importance].
+- xref:best-practices:priority-for-activities.adoc[Priority].
+- Attribute `Optimisation: remove on writing`: Activities with this attribute set to Yes are not written to the optimized schedule. For more information see xref:scheduling:task-prevent-activity-scheduling.adoc[Exclude activities from optimized scheduling].
+
+[#day-models-configuration]
+=== Day models configuration
+Only the xref:administration:daymodel-creation.adoc[day models] that are assigned to the planning unit for which you are optimizing the schedule are taken into account.
+
+[#work-time-pattern-models-configuration]
+=== Work time pattern models configuration
+During optimization, only the xref:administration:work-time-pattern-models.adoc[work time pattern models] assigned to your people are taken into account.
+
+[#create-an-optimized-schedule]
+== Create an optimized schedule
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Click _Scheduling actions_{:.doc-button} in the upper right.
+3. Click **Create optimized schedule** and configure the following elements:
+   - Select the **Date range** for which you want to optimize the schedule. The date range is pre-filled with the date range currently selected in the Schedules page.
+   - Select a _Planning unit_{:.label}.
+   - (Optional) Select a _Selection_{:.label} if you want to limit the optimization to a selection of employees.
+   - (Optional) Check the **Optimize again** checkbox.
+
+     > Note
+     >
+     > Check the **Optimize again** checkbox if all the following conditions apply:
+     >
+     > - You have created an optimized schedule with work time pattern models of type C.
+     > - Your staff requirements have changed.
+     > - You want to optimize your schedule again.
+     >
+     > You need to xref:scheduling:delete-schedules.adoc[delete the existing schedule] before optimizing again, otherwise, the same sequence of week time patterns will be used.
+
+4. Click _Create optimized schedule_{:.breadcrumbs}.
+
+Optimization processes may take time. This depends on the number of people, the date range length, and the complexity of your day model and contract configuration. You cannot edit the schedule for the optimized period until the optimization is saved automatically.
+
+Go to xref:general:jobstatus.adoc[Job status] to track the progress.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Setting minimum and maximum working hours per day in your contracts reduces the complexity and speeds up the optimization.
+====

@@ -1,0 +1,75 @@
+= Create and use day types
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Create day types to represent holidays and other special days that affect your business hours.
+:related-articles: create-and-manage-planning-units.adoc, configure-planning-calendars.adoc, scheduling-public-holidays.adoc
+
+Day types define the days with standard business hours and days with different business hours.
+
+Add day types to your xref:administration:create-and-manage-planning-units.adoc#add-business-hours[planning unit] to set business hours for the standard days of the week and for special days, e.g. if your organization is open on public holidays. The business hours defined for those days are taken into account during schedule optimization.
+
+In _Plan > Configuration > Day types_{:.breadcrumbs} you can do the following:
+
+- View the default day types (e.g. Monday, Tuesday, etc.).
+- Create, view, edit, and delete custom day types.
+
+[#create-a-custom-day-type]
+== Create a custom day type
+On some days, your business hours might differ from the standard, e.g. when there are special promotions or public holidays. To create custom day types for those days, follow these steps:
+
+1. In _Plan > Configuration > Day types_{:.breadcrumbs}, click _Create_{:.doc-button} at the top right.
+2. Enter a **Name** and **Abbreviation**.
+3. (Optional) Check the **Holiday mode** checkbox.<br>xref:#holiday-mode[Learn more] about how to configure day types for public holidays.
+4. Click _Save_{:.doc-button}.
+
+[#holiday-mode]
+== Holiday mode
+To mark a day type as a public holiday, check the **Holiday mode** checkbox when you create or edit a day type.
+
+[#configure-day-types-for-public-holidays]
+=== Configure day types for public holidays
+There are two ways to configure day types for public holidays:
+
+- Create day types with holiday mode and xref:administration:configure-planning-calendars.adoc#add-a-day-type[add them to your planning calendar].
+
+- Add a xref:administration:configure-planning-calendars.adoc#add-a-template[calendar template] to your planning calendar. This will automatically create all day types for public holidays included in the template with activated holiday mode.
+
+Holiday mode reduces people's working hours for the day according to their contract. If you decide to schedule the day as a normal working day, you can always deactivate the holiday mode by xref:administration:day-types.adoc#edit-a-day-type[editing the day type].
+
+[#edit-a-day-type]
+== Edit a day type
+[WARNING]
+====
+====
+>
+[NOTE]
+====
+If you activate or deactivate the holiday mode for a day type that is currently in use, you must recalculate time accounts or xref:administration:task-calculate-target-work-times.adoc[target work times].
+====
+1. In _Plan > Configuration > Day types_{:.breadcrumbs}, select a day type from the list.
+2. Edit the data that you want to change.
+3. Click _Save_{:.doc-button}.
+
+[#delete-a-day-type]
+== Delete a day type
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Before you delete a day type, xref:administration:configure-planning-calendars.adoc#remove-day-types-from-the-planning-calendar[remove it from all planning calendars]. You cannot delete default day types.
+====
+1. In _Plan > Configuration > Day types_{:.breadcrumbs}, select a day type from the list.
+2. From the {icon-context-menu} at the top right, select **Delete**.
+3. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#day-types-in-scheduling]
+== Day types in scheduling
+Day types are taken into account during scheduling to schedule people for the correct times.
+
+- If your planning unit is open regularly on a public holiday, you only need to xref:administration:create-and-manage-planning-units.adoc#add-business-hours[add business hours to the planning unit].
+- If your planning unit is closed on a public holiday, or if it is open with special opening hours, check the article xref:best-practices:scheduling-public-holidays.adoc[Schedule public holidays].

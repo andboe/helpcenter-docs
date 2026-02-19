@@ -1,0 +1,90 @@
+= Vacation entitlement
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: See and edit vacation entitlement, transfer it to the next year, and export vacation entitlement data as a CSV file.
+:related-articles: vacation-absences-management.adoc
+
+include::help-center:ROOT:partial$reusables/time-off-legacy.adoc[]
+
+Time-off entitlement is the basis for planning absences from the workplace with Peopleware. The entitlement is always valid for a calendar year. All paid activities of the type Vacation in the Schedule level are subtracted from the vacation entitlement.
+
+The working time subtracted from the yearly vacation entitlement for a full-day vacation depends on the person's contract. The formula for the calculation is: Weekly target hours divided by the number of working days per week. You can manually insert vacation as full-day or regular activities with a start and end time. Vacation requests for part days are calculated on an exact pro rata basis.
+
+People can only request time off in Me if there is a xref:scheduling:time-off-periods-legacy.adoc[time-off period] published for the time range (xref:scheduling:enable-time-off-and-request-sick-leave.adoc[planning period of the type Vacation] in Classic). The activity of type Vacation must be configured as **Requestable in Me**. The activity must be assigned to the same planning unit as the person.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You cannot batch-edit entitlement values. You cannot import vacation entitlement.
+====
+[#check-vacation-entitlement]
+== Check vacation entitlement
+1. Go to _Plan > Time Off_{:.breadcrumbs} and click _Edit entitlement_{:.doc-button} to manage people's entitlements.
+2. Select a _Planning unit_{:.label}, optionally a _Selection_{:.label}, and a **Year**.
+3. (Optional) Use **Search** to find specific persons.
+
+image::vacation-entitlement/image-1.png[Vacation entitlement, width=100%]
+
+Besides the employee number, name, and contract type of your employees, you will see the following columns:
+
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Explanation
+|Remain Current Year
+|Remaining vacation entitlement for the current year. It is calculated as the remaining vacation days from the previous year plus the entitlement for the current year minus the days taken in the current year.
+|Remain Last Year
+|Remaining vacation days from the previous year. You can overwrite this value manually with a negative or positive value.
+|Current Year
+|The total number of vacation days the employee is entitled to in the current year. You can overwrite this value manually with a negative or positive value.
+|Taken Vacation
+|Percentage of vacation days already taken for the current year. The column header displays the average percentage value for your current filter settings.
+|===
+
+If employees belong to more than one planning unit throughout a year, the data for the entire year is always displayed, regardless of the filter setting. You only have to enter the data for each employee once.
+
+In Enterprise on-premise, you find the vacation entitlement menu item under _WFM > Scheduling > SchedulePro > Vacation Entitlement_{:.breadcrumbs}. Field names differ and the functionality is limited (no filter, no download option, not the last two columns in the table). You need to save your changes manually.
+
+[#add-edit-or-delete-vacation-entitlement]
+== Add, edit or delete vacation entitlement
+You can add, edit or delete the values in the **Remain Last Year** and **Current Year** columns.
+
+1. Click a field and press Tab to navigate through the list.
+2. Type in a value or use the arrows in the field. Press the delete key to remove values. The data will be saved automatically.
+
+[#transfer-unused-vacation-entitlement-to-the-next-year]
+== Transfer unused vacation entitlement to the next year
+You can transfer the remaining vacation entitlement for the current year to the following year.
+
+1. Choose a _Planning unit_{:.label} and, optionally, a _Selection_{:.label} to display only the employees whose entitlements you want to transfer. You can use the **Search** field to select individual employees.
+2. Choose the **Year** from which you want to transfer the entitlement to the following year.
+3. If you see no values in the **Remain Current Year** column, edit your employees' contracts in _WFM > Administration > Scheduling > Contracts_{:.breadcrumbs}:
+   - In the **Work Time Guidelines** section of the contract for which you want to show the remaining vacation entitlement, enter a target value for weekly working hours in the **Target** field on the **Week** line. Then, click _Ok_{:.doc-button} to save the contract and reload the vacation entitlement page.
+
+4. Click _Transfer Entitlement_{:.doc-button}. This will transfer the vacation entitlement for all displayed employees into the next year. The transferred entitlement will appear in the **Remain Last Year** column.
+
+[#export-vacation-entitlement-as-csv-file]
+== Export vacation entitlement as CSV file
+Click the {icon-file-arrow-down} next to _Transfer Entitlement_{:.doc-button} to export the displayed data to a CSV file in the following format:
+
+----
+personnelNumber,name,remainingDaysCurrentYear,remainingDaysLastYear,currentYear,percentTaken,year
+0001,"Neumann, Günter",105.0,75.0,30.0,0,2019
+0003,"Neumann, Moritz",121.0,90.0,31.0,0,2019
+...
+----

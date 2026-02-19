@@ -1,0 +1,99 @@
+= Analyze metrics
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Analyze the coverage, staffing, and requirement for your activities, properly use the Day Models tab, and more.
+
+In _Plan > Shift Center_{:.breadcrumbs}, you can analyze _metrics_{:.css} for your activities and day models. This is useful e.g. to find which activities or day models are understaffed or overstaffed, and schedule more or fewer people if necessary. You have the following options:
+
+- Analyze the coverage, staffing, and requirement for your activities
+- Display requirement and staffing as graphs
+- Filter activities by type
+- Analyze metrics for the day models generated in the shift bidding process
+
+New to Shift Center? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
+
+[#analyze-the-coverage-staffing-or-requirements]
+== Analyze the coverage, staffing or requirements
+You can analyze different metrics for each activity in a planning unit. You can display metrics for different time intervals, down to 15 minutes. You can also see the combined values for each activity type. To display these metrics, proceed as follows:
+
+1. At the bottom of the parameter area, click the _Activities_{:.label} tab.
+2. Click the {icon-plus} to expand a planning unit. Shift Center displays all activities assigned to the planning unit:
+   - Multiactivities appear in bold with their subactivities indented below.
+   - Activity types, e.g. the row _Total Values 'Presence'_{:.label} displays the total value for all activities of type Presence.
+
+3. Right-click a cell and select one of the following options:
+   - _Coverage_{:.label}: Difference between the number of people scheduled and required.
+   - _Staffing_{:.label}: Number of people scheduled for a certain activity.
+   - _Requirement_{:.label}: Number of people you need to cover the staff requirements for a given interval and activity.
+
+4. Click a column header to show the detailed coverage for the intervals. Use the arrow buttons on the left side of the time scale to zoom in and see the values for shorter intervals.
+
+The color coding of the cells shows the quality of the coverage. The darker the color, the greater the deviation from the ideal staffing:
+
+- Red: understaffing
+- Blue: overstaffing
+- Green: ideal coverage
+
+[#analyze-an-activity-over-several-days-or-weeks]
+== Analyze an activity over several days or weeks
+To analyze the metrics for a single activity or activity type over several days or weeks, proceed as follows:
+
+1. Click the _Activity Overview_{:.label} tab and click the {icon-plus} to expand a planning unit. The intervals appear in a vertical scrollable view.
+
+2. Right-click a day cell and configure the following options:
+   - _Activity_{:.label}: Click the activity or activity type you want to analyze.
+   - _Parameters_{:.label}: Click the metric you want to analyze.
+   - _Level_{:.label}: Click the level for which you want to analyze the chosen activity and metric.
+
+3. After each selection, the view updates to match your filter. <!-- Repeat this step 2 if needed -->
+
+Scroll through the intervals and check the values for the selected activity and metric. You can also expand additional weeks to show more data side by side.
+
+The tab name displays the activity, parameter and level you have selected.
+
+[#display-requirement-and-staffing-as-graphs]
+== Display requirement and staffing as graphs
+To display the requirement and staffing values as graphs, proceed as follows:
+
+1. Click the _Day Models_{:.label} or _Activities_{:.label} tab.
+2. Right-click a cell and select _Graph Display_{:.label}.
+
+The dashed line represents the requirement values, and the continuous line represents the staffing values. To expand the graph vertically, drag and drop the upper and lower borders of the cell. To downsize the cell back to its original size, double-click its lower border.
+
+[#filter-activities-by-activity-type]
+== Filter activities by activity type
+To show or hide activities of certain activity types, proceed as follows:
+
+1. Click the _Activities_{:.label} tab.  
+   The second column on the left shows the activity types.
+2. Right-click the second column header.
+3. Select or deselect the activity types you want to show or hide. _All_{:.label} is preselected.
+
+[#analyze-day-model-metrics]
+== Analyze day model metrics
+If you use xref:scheduling:schedules-shift-bidding.adoc[shift bidding], you may want to see metrics for generated shifts, for example, to determine how many shifts have been requested or need to be assigned. To show these metrics, proceed as follows:
+
+1. At the bottom of the parameter area, click the _Day models_{:.label} tab.
+2. Click the {icon-plus} to show all day models of the respective planning unit.
+3. Right-click a cell and choose one of the following options:
+   - _Coverage_{:.label}: Difference between the number of day models assigned to people and the number of generated shifts
+   - _Requests_{:.label}: Number of shifts requested by people during the shift bidding process
+   - _Staffing_{:.label}: Number of generated shifts to which people are assigned
+   - _Requirement_{:.label}: Result of the xref:scheduling:shift-bidding.adoc[shift generation]. Shows how many shifts are required.
+
+<!-- Separate section for separate use cases?  -->
+<!-- Not often used. See how the shift generation covers your requirements before activities have been assigned. Good indicator for the shift generation result.
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Net Maximum Capacity
+|Maximum available number of employees already scheduled and skilled for the activity. Counts only employees with an assigned activity of the type *Present*.
+|Staffing According to Shift Requirement
+|Number of day models generated by the shift generation to cover the employee requirement for the activity. You can rate how well the Shift Generation worked.
+|Coverage According to Shift Requirement
+|Difference between the shifts required to cover 100% of the shift requirement and the shifts actually generated during shift generation.
+|===

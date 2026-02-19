@@ -1,0 +1,65 @@
+= Genesys Cloud
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Genesys Cloud CRM to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc
+
+A Genesys Cloud integration is a cloud integration that imports call, email and chat history as well as agent status and real-time adherence data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-genesys-cloud-integration]
+== Add a Genesys Cloud integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Genesys**.
+5. From the **Model name** drop-down menu, select **Genesys Cloud**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-genesys-cloud-integration]
+== Set up your Genesys Cloud integration
+1. In the **Credentials** section, copy and paste your Genesys Cloud OAuth client_id and client_secret.<br>The following permissions are required in Genesys Cloud: "analytics:userDetail:view", "analytics:userObservation:view", "analytics:conversationAggregate:view", "analytics:conversationDetail:view","presence:presenceDefinition:view", and "routing:queue:view".
+2. In the **Configuration** section, set up your integration:
+   - **Account region**: Select the region of your Genesys Cloud account.
+   - **Import detailed on-queue agent statuses**: Check the checkbox if you want to differentiate between the different agent statuses summarized under on-queue, e.g. communication, interacting, idle, not responding.
+
+3. In the **AHT Metrics** section, select the AHT data type that you want to import for each channel. For details, see xref:#aht-metrics[AHT metrics].
+4. Click _Save_{:.doc-button}.
+
+[#aht-metrics]
+== AHT Metrics
+Genesys Cloud calculates AHT values using different metrics. In Peopleware, you can select the suitable AHT metric to be used for data import. The following options are available:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|AHT metric
+|Description
+|tHandle
+|The total time an agent spends on an interaction. This includes time spent on starting the conversation (tContacting), dialing (tDialing), talk time (tTalk), hold time (tHeld), and after call work (tAcw).
+|tTalk
+|The time an agent spends talking or interacting with a customer.
+|===
+
+You can select the AHT metric for each channel during integration setup. You can edit AHT metrics at any time. Changes will be applied from the next import session onwards.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+When you edit the AHT metrics, the changes apply to future imports only. Already imported data is not affected.
+====
+[#frequently-asked-questions]
+== Frequently asked questions
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Question
+|Answer
+|The integration imports data for abandoned calls, average speed of answer, and calls answered within service level. Why am I unable to display this data in Dashboards?
+|You can display this data in Dashboards if you add exclusively queues from your Genesys Cloud integration when you set up a workload in Forecast. You cannot display this data if you include queues from other integrations.
+|===

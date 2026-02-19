@@ -1,0 +1,3 @@
+> Shrinkage and Add (%) are not the same
+>  
+> Your estimated sickness/absences rate is your shrinkage (s%). To be able to use it as *Add (%)* in the script, calculate 1/(1-s%)-1 as a percentage. For example, a shrinkage of 20% will result in a 25% increase, according to the formula 1/(1-0.2)-1.

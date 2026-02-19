@@ -1,0 +1,108 @@
+= Job status
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Use the Job status page to view, restart and cancel running jobs.
+:related-articles: backgroundjobs.adoc
+
+The **Job status** page provides an overview of all background jobs started across various parts of Peopleware. Here, you can manage and monitor these processes, including restarting, terminating, deleting jobs, and viewing detailed reports.
+
+== Prerequisites
+
+- To view the Job status page, you need the **Access to job status** permission.
+- To see jobs of all users, you also need the **Access to jobs of all users** permission. Without this, you will only see your own jobs.
+
+[NOTE]
+====
+Initiating new jobs
+====
+>
+[NOTE]
+====
+You cannot start new jobs directly from the Job status page. This page provides an overview and management actions for jobs already initiated elsewhere in Peopleware. For more details about creating background job templates, see xref:account:backgroundjobs.adoc[Background jobs].
+====
+== Open the Job status page
+
+- In the navigation bar click the {icon-jobstatus} Job Status icon.
+
+[#filter-jobs]
+== Filter jobs
+Filter the job list to find specific jobs:
+
+1. Click _Filter_{:.doc-button}.
+2. Select criteria from the available filter fields.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Filter field
+|Description
+|User
+|Filters the jobs created by a specific user.
+|Status group
+|Filters jobs based on their current status. +**Processed jobs**: Jobs that are actively running or have reached a final status: Starting, Processing, Completed, Suspended, Terminated, Failed. +**Unprocessed jobs**: Jobs that have not begun: Submitted, Not submitted.
+|Type
+|Filters the jobs by type.
+|===
+
+== Job status definitions
+
+Every job progresses through various stages, reflected by its status:
+
+<!-- left-align table -->
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Status
+|Description
+|Starting
+|The job has been initiated and is preparing to run.
+|Processing
+|The job is running.
+|Completed
+|The job has finished successfully.
+|Submitted
+|The job was sent to the recipients.
+|Not submitted
+|The job has not been sent to the recipients yet.
+|Suspended
+|The job's execution has been temporarily paused.
+|Terminated
+|The job was manually canceled by a user before it could complete.
+|Failed
+|The job encountered an error and could not complete successfully.
+|===
+
+For details on other columns in the job overview table, see xref:account:backgroundjobs.adoc[Background jobs].
+
+== Show job results
+
+Detailed job results for completed jobs are available as a PDF or HTML report.
+
+- In the _Result_{:.label} column, click _Show result_{:.label}.
+
+== Show original background job
+
+If a job was started as a background job in _Account > Background jobs_{:.breadcrumbs}, you can see the background job that triggered it, provided that you have the permissions to access _Account > Background jobs_{:.breadcrumbs}.
+
+- Select a job.
+- In the **General** section, click the link below **Triggered by background job:**.
+  Peopleware will redirect you to the original job.
+
+== Manage jobs
+
+The Job status page allows you to perform these actions:
+
+- **Restart**: Starts selected jobs with their original settings.
+- **Terminate**: Cancels selected jobs.
+- **Delete**: Cancels selected jobs and removes them from the list.
+
+1. Select one or more jobs.
+2. Click on the desired action: _Restart_{:.label}, _Terminate_{:.label}, or _Delete_{:.label}.

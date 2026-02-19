@@ -1,0 +1,39 @@
+= Create CSV schema for forecast data
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create a CSV schema specifically for forecast data.
+:related-articles: csv-schemas.adoc, create-csv-schema.adoc, create-csv-schema-for-forecast-data.adoc, import-forecast.adoc
+
+This article explains how to create a CSV schema specifically for forecast data.
+Forecast data can be uploaded manually on the workload page.
+The CSV schema controls which of the following forecast record types Peopleware uses to save the data:
+
+- Imported
+- Version 1 (Operational)
+- Version 2 (Strategic)
+- Version 3
+- Version 4
+
+To enable CSV imports, at least one CSV schema must be available.
+The schema can contain one or more forecast record types.
+
+[#prerequisites]
+== Prerequisities
+- You know the general CSV schema creation process and its prerequisites. For more information see xref:general:create-csv-schema.adoc[Create CSV schema]
+- The CSV file does not exceed the following limits:
+  - File size: 20 MB
+  - Number of rows: 20000
+
+[#steps]
+== Steps
+1. Create a CSV schema draft as explained in the article xref:general:create-csv-schema.adoc#create-csv-schema-draft[Create CSV Schema].
+2. Map the date and time columns as required.
+3. In the data column mapping settings, find the forecast record type you want to assign to the CSV schema, e.g. **Version 1 (Operational)**.
+4. Map the data columns for that forecast record type. Leave empty all mapping fields of the other forecast record types.
+5. Click _Save_{:.doc-button}.
+
+The CSV schema can now be used to import forecast data into a workload as **Version 1 (Operational)**.
+To enable the import of forecast data into another forecast record type, repeat the above steps to create a corresponding CSV schema.

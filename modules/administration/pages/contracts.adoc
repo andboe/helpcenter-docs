@@ -1,0 +1,15 @@
+= Contracts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what contracts are and how they are used.
+:related-articles: create-contracts.adoc
+:page-aliases: contracts-overview
+
+A contract is a structured set of rules and constraints that define the working conditions for an employee or group of employees. It outlines the agreed terms of employment and plays a key role in automated scheduling and compliance.
+
+You can create an unlimited number of contracts and assign them to people based on roles, availability, or specific working agreements. Learn more in xref:administration:create-contracts.adoc[Create contracts].
+
+The settings and time constraints defined in a contract are used in scheduling and by the optimized schedule function, also referred to as AutoScheduler. Learn more in xref:scheduling:schedules-optimized-schedules.adoc[Create an optimized schedule].

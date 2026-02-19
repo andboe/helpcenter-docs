@@ -1,0 +1,85 @@
+= Edit or delete staff requirements
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to edit or delete the calculated staff requirements.
+:related-articles: shift-center-overview.adoc, calculate-a-forecast.adoc, task-set-up-staff-requirement-calculation.adoc, schedules-job-optimization.adoc, schedules-optimized-schedules.adoc
+:page-aliases: employee-requirement
+
+Staff requirements define how many people you need for an activity at a specific time. You need staff requirements to create schedules with the **Create optimized schedule** functionality, or to optimize them with **Job optimization** or **Optimize breaks**.
+
+Generating staff requirements is the last step of the forecasting process. In **Forecast**, you can use the automatically generated requirements, or run a specific staff requirements calculation method. Before you create a schedule, make sure that staff requirements have been generated for all relevant activities.
+
+[#view-and-edit-staff-requirements]
+== View and edit staff requirements
+You can view staff requirements in the following four places:
+
+- _Forecast_{:.menu-item}
+- _Analyze > Dashboard_{:.breadcrumbs}
+- _Plan > Schedules_{:.breadcrumbs}
+- _Plan > Shift Center_{:.breadcrumbs}
+
+The following table includes details about the options available in each place:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,1a,1a,".rstrip(',')]
+|===
+|Where
+|View
+|Edit
+|Delete
+|_Forecast_{:.menu-item}
+|Yes
+|Yes
+|Yes
+|_Analyze > Dashboard_{:.breadcrumbs}
+|Yes
+|No
+|No
+|_Plan > Schedules_{:.breadcrumbs}
+|Yes
+|No
+|No
+|_Plan > Shift Center_{:.breadcrumbs}
+|Yes
+|Yes
+|No
+|===
+
+[#edit-staff-requirements-in-shift-center]
+=== Edit staff requirements in Shift Center
+1. Go to _Plan > Shift Center_{:.breadcrumbs}.
+2. At the bottom of the panel, select the **Activities - Requirement** or the **Activity Overview** tab.<br>
+
+   > No Data message in a cell
+   >
+   > If a cell in the lower table shows the message No Data, select **Schedule** or **Actual** from the **Levels** drop-down menu at the top right.
+
+3. To expand a planning unit, click the {icon-plus} on the left side of each table.
+4. Right-click any cell in the lower table and select **Edit Employee Requirement**.
+5. In the **Edit Employee Requirement** window, click a cell and enter the new value.<br>
+   You cannot edit cells highlighted in blue because they represent deleted activities that are still assigned to the planning unit.<br>
+
+6. (Optional) To edit several cells at once, copy a row of values from a spreadsheet. Click a cell and drag the mouse to the right. Press Ctrl+V to paste the values.<br>
+7. Click _OK_{:.doc-button}.
+
+[#edit-staff-requirements-in-forecast]
+=== Edit staff requirements in Forecast
+To manually edit staff requirements, you can run the constant requirement script in _Forecast_{:.breadcrumbs}. For more information on the configuration options, see the xref:forecast:ref-requirement-calculations.adoc#other-constant-requirement[Staff requirement reference guide].
+
+[#delete-staff-requirements]
+== Delete staff requirements
+You cannot delete staff requirements. You can edit staff requirements to be 0, which has the same effect as deleting them.
+
+You have two options to set the staff requirements to 0:
+
+- Follow the steps to xref:#edit-staff-requirements-in-shift-center[edit staff requirements in Shift Center] and enter or copy 0 in the relevant cells.
+
+- Follow the steps to xref:#edit-staff-requirements-in-forecast[edit staff requirements in Forecast] and enter 0 in the **Agents** field.

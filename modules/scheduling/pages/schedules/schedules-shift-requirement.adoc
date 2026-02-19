@@ -1,0 +1,142 @@
+= Use shift requirements
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Use a shift requirement to define how many shifts are generated for shift bidding.
+:related-articles: create-and-manage-planning-units.adoc, daymodel-creation.adoc, day-types.adoc, edit-or-delete-staff-requirements.adoc, schedules-shift-bidding.adoc
+
+Shift requirements define the minimum and maximum number of shifts that must be generated for your day models. Shift requirements are necessary for xref:scheduling:schedules-shift-bidding.adoc[shift bidding].
+
+[#display-shift-requirements]
+== Display shift requirements
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Click _Scheduling periods_{:.doc-button}.
+3. Select a _Planning unit_{:.label} and, optionally, a _Selection_{:.label}.
+4. Hover over a scheduling period and click the {icon-context-menu}.
+5. Click _Adjust shift generation_{:.label}.  
+   The table shows all fixed and variable day models assigned to the selected planning unit. The columns show the standard day types (weekdays) and other day types assigned to the selected planning unit. Each day type allows to enter a minimum (Min) and maximum value (Max).
+
+[#adjust-shift-requirements]
+=== Adjust shift requirements
+Before you generate shifts, adjust the minimum and maximum to determine the number of generated shifts per day model. This is necessary if you want to oversteer the staff requirements or contractual hours as the upper limit.
+
+1. Select your planning unit.
+2. Double-click cells to enter values or leave cells empty:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Goal
+|Min/Max values
+|Generate as many shifts as necessary based on staff requirements or contractual hours.
+|Leave both fields empty.
+|Avoid generating shifts for a day model. Shifts to bid on for this day model will not be available.
+|Leave both fields empty.
+|Do not consider staff requirements at all but generate a fixed number of shifts.
+|Enter the same value in both fields.
+|create at least a number of shifts but use the staff requirements value as upper limit.
+|Leave both fields empty or enter a minimum value only.
+|===
+
+3. Click _Save_{:.doc-button} to store the values.
+
+You may need to xref:#adjust-values-regularly-before-you-generate-shifts[adjust the values] each time you generate shifts for new period.
+
+[NOTE]
+====
+Shift requirements and pre-inserted shift sequences
+====
+>
+[NOTE]
+====
+To allow your people to request a shift for a day model that is also inserted by shift sequences, increase the minimum values How much depends on the staffing for the day models that are inserted by shift sequences. Check the staffing value on day models tab in Shift Center after inserting shift sequences. For example, a day models is already used twice in a shift sequence and you want at least 10 more people to have the option to request it, enter a minimum value of 12.
+====
+>
+[NOTE]
+====
+If you do not increase the value and the shift requirements are already covered by day models from shift sequences,
+people will not see this day model when the start bidding on generated shifts in the Me portal.
+====
+[#adjust-values-regularly-before-you-generate-shifts]
+=== Adjust values regularly before you generate shifts
+Update your existing shift requirements values each time before you generate shifts for a period. To determine the correct values, you need to know:
+
+- how many shifts you want to offer, e.g. if you only use the shift bidding, everyone should be able to request a shift.
+- how which day models should be used to cover the staff requirements, e.g. to cover peak times with part-time shifts.
+
+xref:administration:selections.adoc[Selections] allow you to count your available full time and part time people. Subtract absences and time off from the total number of people to determine the final values per day model and day.
+
+== Example
+
+You have 10 people:
+
+- 6 full-time people
+- 4 part-time people
+
+You need to create shifts for the following periods<!-- day models? -->:
+
+- 08:00 AM – 12:00 PM (morning shift)
+- 12:00 PM – 04:00 PM (peak time)
+- 08:00 AM – 05:00 PM (full day)
+
+=== Morning Shift (08:00 AM – 12:00 PM):
+
+- You only have 2 part-time people available for this time.
+- You need at least 2 shifts available for people to request or bid on, set the minimum value to 2.
+- You don’t need more than 3 shifts for this period, set the maximum value to 3.
+
+=== Peak Time (12:00 PM – 04:00 PM):
+
+- To ensure enough coverage, set the minimum value to 4 shifts.
+- To avoid overstaffing, set the maximum value to 6 shifts.
+
+=== Full Day Shift (08:00 AM – 05:00 PM):
+
+You only need 1 shift for the full day, set both the minimum and maximum to 1 shift.
+
+=== Result
+
+- Morning Shift (08:00 AM – 12:00 PM): Between 2 and 3 shifts available.
+- Peak Time (12:00 PM – 04:00 PM): Between 4 and 6 shifts available.
+- Full Day (08:00 AM – 05:00 PM): 1 shift available.
+
+[#key-figures-in-shift-center]
+== Key figures in Shift Center
+Find further information on shift requirements and staffing in _Plan > Shift Center_{:.breadcrumbs}. On the Activities tab at the bottom of the table, right-click a cell to display the following figures:
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Key figure
+|Description
+|Tab
+|Staffing According to Shift Requirement
+|Number of shifts generated to cover staff requirements for the selected activity in the displayed interval. This represents the coverage of staff requirements if all generated shifts were staffed.
+|Activities
+|Coverage According to Shift Requirement
+|Difference between the shifts required in the displayed interval and the shifts actually generated for that interval.
+|Activities
+|Requirement
+|Shifts generated for each day model.
+|Day models
+|===
+
+[#key-figures-in-dashboards]
+== Key figures in Dashboards
+In xref:monitoring:manage-dashboards.adoc[_Analyze > Dashboards_{:.breadcrumbs}], you can configure dashboards to display the following figures:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Key figure
+|Description
+|Requirement
+|Number of required shifts.
+|Staffing
+|Number of actual shifts.
+|Requests
+|Number of requested shifts.
+|Coverage
+|Difference between required and generated shifts.
+|Coverage including requests
+|Difference between required and generated shifts, including requests.
+|===

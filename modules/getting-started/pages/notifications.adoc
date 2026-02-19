@@ -1,0 +1,67 @@
+= Notifications
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how Peopleware uses notifications and how to configure them.
+:related-articles: notify-people.adoc, swap-shifts-with-your-colleagues.adoc, schedules-shift-bidding.adoc, what-are-scheduling-periods.adoc
+
+Peopleware can send email notifications and browser push notifications.
+
+By default, Peopleware sends notifications to inform people about events in the scheduling process:
+
+- Published schedules
+- Schedule changes
+- Shift swap requests
+
+Email notifications are sent to each person's login email address. Browser push notifications appear as clickable pop-up notifications if you are logged in to Peopleware in at least one browser tab. If you click a notification, your browser will display Peopleware.
+
+[#configure-notifications]
+== Configure notifications
+Users with admin access can turn off specific notifications:
+
+1. Go to _Account > Notifications_{:.breadcrumbs}.
+2. Click a tab to change the notification category.
+   > Note
+   >
+   > If you deactivate email notifications for Me, people will not be able to invite colleagues to swap shifts in Me.
+3. Check or uncheck the **Email** or **Browser Push** checkboxes as required.
+
+The notification settings are saved automatically. The selected settings affect all users.
+
+[#allow-browser-push-notifications]
+== Allow Peopleware to send browser push notifications
+If notifications are not already set through group policies in the operating system, you can activate notifications for your current browser in your Peopleware user profile.
+Before you start, make sure that your browser allows websites to request permission to send push notifications.
+
+1. In Peopleware, click your **username** at the top right to open your user profile.
+2. In the **Notifications** section, click _Allow Peopleware notifications_{:.doc-button}.
+3. A pop-up window will open in your browser where you can permanently allow browser push notifications.
+
+[#fix-browser-push-notifications-issues]
+== Troubleshoot browser push notifications
+If your browser is not showing notifications from Peopleware, check that your system is set up correctly:
+
+- Peopleware has permission to send browser push notifications.
+- In your operating system's settings, notifications are turned on either globally or for your browser.
+  In macOS, notifications are enabled for your browser and any helper processes, e.g. Google Chrome and Google Chrome Helper.
+- System modes meant to minimize distractions, such as Do Not Disturb or Focus modes, are disabled.
+
+For up-to-date information on how to enable notifications, check the following resources:
+
+**Browsers**
+
+- Chrome: [Google Chrome Support](https://support.google.com/chrome/answer/3220216?hl=en-GB)
+- Firefox: [Mozilla Firefox Support](https://support.mozilla.org/en-US/kb/push-notifications-firefox)
+- Safari: [Safari Support](https://support.apple.com/en-gb/guide/safari/sfri40734/15.1/mac/12.0)
+
+**Operating systems**
+
+- Windows: [Microsoft Windows Support](https://support.microsoft.com/en-us/windows/change-notification-settings-in-windows-8942c744-6198-fe56-4639-34320cf9444e#WindowsVersion=Windows_10)
+- Android: [Android Support](https://support.google.com/android/answer/9079661?hl=en)
+- Mac: [Apple macOS Support](https://support.apple.com/en-us/HT204079)
+- iOS: [Apple iOS Support](https://support.apple.com/en-us/HT201925)
+
+To test if browser push notifications work on your device and with your chosen browser in principle,
+go to <https://www.bennish.net/web-notifications.html/>.

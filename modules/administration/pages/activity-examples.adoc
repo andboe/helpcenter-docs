@@ -1,0 +1,131 @@
+= Activity configuration examples
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Set up standard activities with the help of examples.
+:related-articles: activities.adoc, work-with-skills.adoc
+
+To configure how activities are handled during scheduling and for reporting, use the xref:administration:activity-types-and-properties.adoc[activity types and properties] under _Plan > Configuration > Activities_{:.breadcrumbs}.
+
+Below, you will find configuration examples for frequently used activities, their type and matching properties.
+
+[#presence-break-illness-and-vacation]
+== Presence, break, illness, and vacation
+This table covers setup examples for the activity types Presence, Break, Illness and Vacation.
+The Present activity is a pre-configured standard activity. You can use it for all activities your people work on and that are based on staff requirements, e.g. calls.
+
+<div class="table__wrapper" markdown="1">
+
+<style>
+table {
+   width: 100%;
+}
+</style>
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|&nbsp;
+|Present
+|Lunch break
+|Illness
+|Vacation
+|**Type**
+|Presence
+|Break
+|Illness
+|Vacation
+|Paid
+|<i class="icon-check">
+|
+|<i class="icon-check">
+|<i class="icon-check">
+|Comply with rest period
+|<i class="icon-check">
+|
+|
+|Plannable
+|<i class="icon-check">
+|
+|
+|Requestable in Me
+|
+|<i class="icon-check">
+|
+|<i class="icon-check">
+|Replaceable
+|<i class="icon-check">
+|
+|
+|Exchangeable with shift swap
+|<i class="icon-check">
+|<i class="icon-check">
+|
+|Allow as full-day activity
+|
+|
+|<i class="icon-check">
+|<i class="icon-check">
+|===
+
+</div>
+
+Depending on your organization's policy, contracts or labor regulations, some breaks may also be unpaid. In this case, uncheck the Paid checkbox.
+
+[#absences-and-meetings]
+== Absences and meetings
+This table covers setup examples for the activity types Absence and Meeting.
+Paid absences are typically used to compensate overtime or as a blocker to xref:best-practices:scheduling-public-holidays.adoc[schedule public holidays].
+If there are days when an employee cannot work under any circumstances, you can block those days using the configuration setup under Unpaid absence.
+
+<div class="table__wrapper" markdown="1">
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|&nbsp;
+|Paid absence
+|Unpaid absence
+|Full-day meeting
+|Training
+|**Type**
+|Absence
+|Absence
+|Meeting
+|Meeting
+|Paid
+|<i class="icon-check">
+|
+|<i class="icon-check">
+|<i class="icon-check">
+|Comply with rest period
+|
+|
+|<i class="icon-check">
+|Plannable
+|
+|
+|
+|Requestable in Me
+|<i class="icon-check">
+|<i class="icon-check">
+|
+|Replaceable
+|
+|
+|
+|Exchangeable with shift swap
+|
+|
+|
+|Allow as full-day activity
+|<i class="icon-check">
+|<i class="icon-check">
+|
+|<i class="icon-check">
+|===
+
+</div>
+
+You can also use paid absences as compensation days for overtime or as paid blocker when xref:best-practices:scheduling-public-holidays.adoc[scheduling public holidays].<br>
+The Unpaid Absence activity can also be used to flexibly determine on which days an employee will not work under any circumstances.

@@ -1,1 +1,842 @@
-== Staff requirement reference guide
+= Staff requirement reference guide
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-reference:
+:related-articles: concept-staff-requirements.adoc, task-set-up-staff-requirement-calculation.adoc, task-save-staff-requirements.adoc
+
+[#automatic-requirement-calculations]
+== Automatic requirement calculations
+This section describes the requirement calculation settings available in _Forecast > Workloads > Edit staff requirements_{:.breadcrumbs}.
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Configurable in Erlang-C
+|Configurable in Chat
+|Configurable in Linear
+|Target service level
+|Percentage of incoming calls or chats to be handled within the target answer time.
+|Yes
+|Yes
+|No
+|Target answer time
+|Time in which the percentage of calls or chats specified in the target service level parameter should be handled.
+|Yes
+|Yes
+|No
+|Shrinkage
+|The percentage of paid time during which people are not able to work, due to, e.g., restroom breaks, lateness, unplanned sick leaves, or technical issues.
+|Yes
+|Yes
+|Yes
+|Minimum required staff
+|Enter a value to overwrite intervals with lower staff requirements values.
+|Yes
+|Yes
+|Yes
+|Maximum required staff
+|Enter a value to overwrite intervals with staff requirements values.
+|Yes
+|Yes
+|Yes
+|Fixed average handle time (AHT)
+|Enter a value to overwrite the forecasted AHT. +Check the checkbox **Apply the fixed AHT only when no AHT value is available** to use the fixed AHT value only for periods without AHT data. By default, the staff requirements calculation uses the AHT values from the forecast.
+|Yes
+|Yes
+|Yes
+|Maximum sessions
+|Maximum number of parallel chat sessions that people can handle at a time.
+|No
+|Yes
+|No
+|Overhead
+|Percentage of AHT that a person must spend on tasks that they cannot do in parallel, i.e. adding after-call notes to the CRM system. This parameter will not be considered if you enter 1 in the **Maximum sessions** field.
+|No
+|Yes
+|No
+|===
+
+[#manual-requirement-calculation]
+== Manual requirement calculation
+This section lists the requirement calculation settings available in _Forecast > Requirement calculations_{:.breadcrumbs}.
+
+[#backoffice-linear]
+=== Backoffice - Linear
+Use this calculation for asynchronous work, like emails or tickets, that needs to be handled within a predefined time frame. The script calculates staff requirements by spreading the workload evenly across the selected days and hours.
+
+**Date**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|Add to existing requirement
+|Adds the calculation results to your existing staff requirement for the same planning unit and activity.
+|===
+
+**Back office job parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Addition (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|Process jobs within x hours
+|Time limit in hours within which each incoming job must be processed.
+|Process jobs before x by y
+|- Field 1: Time before which the job must be finished. +- Field 2: Time by which the job must be finished.
+|Distribute among opening hours only
+|Distributes staff requirement only within planning unit business hours.
+|===
+
+[#calls-abandonment-rate]
+=== Calls - Abandonment rate
+Use this calculation for incoming call queues for which you want to take abandoned contacts into account. This option calculates staff requirements using Erlang C, while factoring in a target abandon rate and maximum wait time.
+
+**General**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Abandon rate (%)
+|Maximum percentage of calls that can be abandoned.
+|Time until abandon (sec.)
+|The time after which customers are considered to abandon.
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|===
+
+[#calls-average-speed-of-answer]
+=== Calls - Average speed of answer
+Use this calculation for inbound call queues where staffing is based on keeping the average wait time within a defined threshold. This option calculates the number of people required to answer calls within the target ASA while respecting handle times.
+
+**General**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|===
+
+**Requirement parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|ASA (sec.)
+|Target average speed of answer in seconds.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Add (%)
+|Percentage to increase staff requirement.
+|===
+
+[#calls-multi-activity]
+=== Calls - Multi-activity
+Use this calculation to schedule multi-skilled agents.
+
+**Date**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Multi-activity
+|The multi-activity to which the calculation applies
+|===
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Calculation method
+|Calculation method used per subactivity.
+|Queue
+|The source forecast queue used as basis for the calculation per subactivity.
+|Processes
+|The value type used for the calculation of the number of processes per subactivity.
+|Average handling time
+|The value type used for the average handling time calculation per subactivity.
+|Version
+|The forecast version used as basis for the calculation per subactivity.
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service level (%)
+|Target percentage of contacts to be answered within the defined service seconds for each subactivity.
+|Service sec.
+|Maximum wait time in seconds for the service level target for each subactivity.
+|Add (%)
+|Percentage to increase staff requirement for each subactivity.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number for each subactivity.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number for each subactivity.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value for each subactivity.
+|Seq (%)
+|Share of chat handling time that a person must do sequentially, i.e. not simulteanously with other chats for each subactivity.
+|Max sessions
+|Maximum number of chats a person can handle simultaneously for each subactivity.
+|===
+
+[#calls-outbound]
+=== Calls - Outbound
+Use this calculation for outbound campaigns where the workload is based on the number of records to dial. This option factors in contact rates, redials, right-party connect rates, and handling times to calculate staff requirements over the campaign period.
+
+**Campaign data**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|Records
+|Number of contacts to call. +- Fixed: Uses a fixed number of records. +- Variable: Uses a queue as the data source.
+|Contact rate (%)
+|Expected percentage of contacts where a contact attempt is successful.
+|Redial rate (%)
+|Percentage of contacts that require a redial attempt.
+|Start date
+|The start date from which the calculation applies.
+|End date
+|The end date until which the calculation applies. +- Date: Uses a fixed end date. The campaign stops exactly on that date +- Campaign duration in days. Peopleware calculates the end date automatically by adding those days to the start date.
+|Right party connect rate (%)
+|Percentage of contacts where the correct person is reached. +- Fixed: Uses a fixed number of records. +- Variable: Uses a queue as the data source.
+|Shrinkage (%)
+|Percentage of paid time where people are unproductive, e.g. break, sickness.
+|===
+
+**Average handling time**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Fixed/Variable
+| +- Fixed: Uses a fixed number of records. +- Variable: Uses a queue as the data source.
+|RPC in seconds
+|Handling time in seconds for right-party contacts.
+|WPC in seconds
+|Handling time in seconds for wrong-party contacts.
+|===
+
+**Employee workload**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|===
+
+[#calls-single-activity]
+=== Calls - Single activity
+Use this calculation for inbound call queues. Staff requirements are calculated using Erlang C against a defined service level target, e.g., 80% of calls answered within 20 seconds. This option calculates required agents based on call volume, handle times, and staffing constraints.
+
+**General**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service level (%)
+|Target percentage of contacts to be answered within the defined service seconds.
+|Service sec.
+|Maximum wait time in seconds for the service level target.
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|===
+
+[#chat-webchat]
+=== Chat - WebChat
+Use this calculation for inbound web chat queues where agents can handle multiple sessions at once. This option uses Erlang C with service level targets, factoring in parameters like maximum sessions per person and sequence percentage to calculate staff requirements.
+
+**General**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service level (%)
+|Target percentage of contacts to be answered within the defined service seconds.
+|Service sec.
+|Maximum wait time in seconds for the service level target.
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|Seq (%)
+|Share of chat handling time that a person must do sequentially, i.e. not simulteanously with other chats.
+|Max sessions
+|Maximum number of chats a person can handle simultaneously.
+|===
+
+[#distribution-contacts-time-frames]
+=== Distribution - Contacts (time frames)
+Use this calculation to distribute inbound contacts from a source queue across multiple target queues, representing service providers, or internal teams. The allocation is based on specific percentage distribution values that you can define for each day and time span. Once configured, the calculation adds formulas to the value type to display the results of the distributed contacts.
+
+**Calculation parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the distribution applies.
+|Number of days with timespans
+|The number of days from the start date for which you can enter staff requirements.
+|Number of days
+|Total length of the distribution period.
+|Timespans per day
+|The number of time periods per day for which you can enter staff requirements.
+|Consider each day of the week
+|- Yes: Staff requirements are calculated for the selected weekdays until the end of the date range. +- No: Staff requirements are calculated repeatedly, starting with day 1 and regardless of the weekday, until the end of the date range.
+|Number of service prodivers
+|Number of “targets” to which contacts are distributed.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Source parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Value type (contacts)
+|The value type from the source queue.
+|===
+
+**Target parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Value type (percentages)
+|Percentage distribution across service providers.
+|Value type (calculated contacts)
+|The resulting number of contacts per target.
+|===
+
+**Percentage distribution**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service provider
+|The target queues for the calculation.
+|Time difference to source queue
+|Optional. Shifts contacts in time relative to the source queue.
+|Day
+|Weekday for which the distribution applies.
+|Start/end
+|Defines the exact time frame within the day.
+|Percent per provider
+|The share of contacts allocated to each service provider in that time frame. Must add up to 100% across providers.
+|===
+
+[#distribution-requirement-simple]
+=== Distribution - Requirement (simple)
+Use this calculation to distribute calculated staff requirements across one or more planning units. This option takes a base requirement and allocates it proportionally, to split workload between up to five planning units without complex rules.
+
+**Calculation parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Enable planning unit distribution
+|Distributes requirement across up to 5 planning units.
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service level (%)
+|Target percentage of contacts to be answered within the defined service seconds.
+|Service sec.
+|Maximum wait time in seconds for the service level target.
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|===
+
+[#distribution-requirement-time-frames]
+=== Distribution - Requirement (time frames)
+Use this calculation to distribute staffing requirements across multiple planning units and time spans. This option takes a base requirement and allocates it by percentages or maximum call volumes within defined daily intervals, to share resources appropriately over time and across units.
+
+**Time periods and options**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the distribution applies.
+|Number of days with timespans
+|The number of days from the start date for which you can enter staff requirements.
+|Number of days
+|Total length of the distribution period.
+|Timespans per day
+|The number of time periods per day for which you can enter staff requirements.
+|Consider each day of the week
+|- Yes: Staff requirements are calculated for the selected weekdays until the end of the date range. +- No: Staff requirements are calculated repeatedly, starting with day 1 and regardless of the weekday, until the end of the date range.
+|Number of planning units
+|Number of planning units to which the calculated requirement is distributed.
+|Write data after calculation?
+|
+|Observe planning unit's business hours
+|Applies requirements only during the business hours of each planning unit.
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Service level (%)
+|Target percentage of contacts to be answered within the defined service seconds.
+|Service sec.
+|Maximum wait time in seconds for the service level target.
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|===
+
+**Division of work volume**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Use percentage values
+|Splits requirement across planning units by percentage.
+|Use fixed max. call values
+|Splits requirement by absolute max call volumes instead of percentages.
+|===
+
+**Day/time frames**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start/end
+|Defines exact time ranges within each day.
+|Max. Calls
+|Maximum calls assigned to each planning unit in the defined time frame.
+|===
+
+[#other-constant-requirement]
+=== Other - Constant requirement
+Use this calculation to define a fixed number of people needed during specific times, regardless of the forecast. This option sets constant staffing levels by day and time span, which can be added to other calculated requirements to cover activities like monitoring, admin tasks, or fixed service commitments.
+
+**Date**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days with timespans
+|The number of days from the start date for which you can enter staff requirements.
+|Add to existing requirement
+|Adds the calculation results to your existing staff requirement for the same planning unit and activity.
+|Number of days
+|Total length of the calculation period.
+|Timespans per day
+|The number of time periods per day for which you can enter staff requirements.
+|Add up requirement of overlapping timespans
+|Sums agent requirements if time-spans overlap.
+|Consider each day of the week
+|- Yes: Staff requirements are calculated for the selected weekdays until the end of the date range. +- No: Staff requirements are calculated repeatedly, starting with day 1 and regardless of the weekday, until the end of the date range.
+|Number of activities
+|Number of activities for which you can define rows in the Data section.
+|Observe planning unit's business hours
+|Applies requirements only during the business hours of each planning unit.
+|===
+
+**Data**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|Start/end
+|Defines exact time ranges within each day.
+|Agents
+|The required number of people for that timespan.
+|===
+
+**Day rows**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Day row
+|Lets you define start and end times for each weekday and the exact number of agents required in those timespans.
+|===
+
+[#other-linear-requirement]
+=== Other - Linear requirement
+Use this calculation to create simple, fixed staff requirements that increase or decrease linearly over a selected period. This option sets minimum and maximum staffing levels and distributes them evenly across the timeframe, regardless of the forecast.
+
+**Date**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Start date
+|The start date from which the calculation applies.
+|Number of days
+|The number of days to include in the calculation.
+|===
+
+**Queue parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Queue
+|The source forecast queue used as basis for the calculation.
+|Processes
+|The value type used for the calculation of the number of processes.
+|Average handling time
+|The value type used for the average handling time calculation.
+|Version
+|The forecast version used as basis for the calculation.
+|===
+
+**Planning unit parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning unit
+|The planning unit to which the calculation applies.
+|Activity
+|The activity to which the calculation applies
+|Add to existing requirement
+|Adds the calculation results to your existing staff requirement for the same planning unit and activity.
+|===
+
+**Erlang C parameters**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Add (%)
+|Percentage to increase staff requirement.
+|Minimum staff
+|Minimum value ensuring staff requirement never falls below that number.
+|Maximum staff
+|Maximum value ensuring staff requirement never exceeds that number.
+|Fixed average handling time
+|Overwrites the AHT from the forecast with a constant value.
+|===

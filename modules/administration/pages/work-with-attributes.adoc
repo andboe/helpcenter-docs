@@ -1,0 +1,67 @@
+= Work with attributes
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-concept:
+:description: Learn how to use attributes to add custom information to planning data such as people, activities, or day types.
+:page-aliases: attributes
+
+Attributes are custom markers that you can use to represent information relevant to your organization that is not covered by other features. Attributes are completely flexible and, as such, especially useful to configure employee filters or reports to fit the specific needs of your organization.
+
+You can add attributes to the following configuration data:
+
+- People
+- Activities
+- Day types
+- Employee categories (only available with the Time management feature)
+
+[#create-attributes]
+== Create attributes
+1. In _Plan > Configuration > Attributes_{:.breadcrumbs}, click _Create_{:.doc-button} at the top right.
+2. Enter the following information:
+   - **Name**
+   - **Abbreviation**
+   - xref:#attribute-types[**Type**]
+   - **Fixed value range**: This checkbox is only relevant if you create an attribute of type xref:#text[text].
+   - **Payroll adjustment**: Check this checkbox if you want to use the attribute to mark information relevant for payroll, e.g. whether a day type is a holiday for which people are paid extra.
+   - **Available for**: Select the types of configuration data to which you can add this attribute.
+3. Click _Save_{:.doc-button}.
+
+[#attribute-types]
+== Attribute types
+There are five different types of attributes that you can configure:
+
+[#text]
+=== Text
+Attributes of type text are the only ones for which you can check the **Fixed value range** checkbox. This means that you must define a range of fixed values (at least one) for the attribute, from which you choose one when adding it to other data.
+
+For example, if you want to add an attribute to your people that marks their place of work, you could create an attribute of type text called Location and then add to it three values, e.g. London, Paris, Berlin. When you add this attribute to people, you must select one of these values.
+
+To configure the values of the value range, first xref:#create-attributes[create the attribute]. Once the attribute is created, proceed as follows for each value:
+
+1. Scroll to the **Value range** section.
+2. Click **{icon-plus} Add**.
+3. In the **Value** field, add a value.
+4. Click _Save_{:.doc-button}.
+
+You can also configure attributes of type text without a fixed value range. In this case, when you add the attribute you must fill out a free text field called **Value**.
+
+[#number]
+=== Number
+Attributes of type number require you to enter a numerical value when you add them to other data.
+For example, you could add an attribute of type number to people to represent which payroll group they belong to.
+
+[#yes-no]
+=== Yes/No
+Attributes of type Yes/No refer to a characteristic that can either be true or false, e.g. whether a day type is a bank holiday or not, or whether a person has a remote contract.
+
+When you add an attribute of type yes/no to other entities, you must choose between the values Yes and No, e.g. whether the characteristic represented by the attribute applies or not.
+
+[#date]
+=== Date
+Attributes of type date require you to enter a date as a value when adding them to other data. For example, you could add to people the date on which they joined the company to congratulate them on anniversaries or to keep an overview of when feedback rounds are due.
+
+[#time]
+=== Time
+Attributes of type time require you to enter a time as a value when adding them to other data. For example, you could add the shift start time to people to have an overview of who starts working at what time.

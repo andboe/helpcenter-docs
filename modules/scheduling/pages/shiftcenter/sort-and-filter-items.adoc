@@ -1,0 +1,51 @@
+= Sort and filter items
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Sort and filter items of a level on a given day.
+
+In _Plan > Shift Center_{:.breadcrumbs}, you can filter and sort xref:scheduling:use-levels.adoc[level] items as follows:
+
+- Sort by start time, schedule position or activity
+- Filter by activity or time
+
+New to the Shift Center? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
+
+[#sort-level-items]
+== Sort level items
+To sort items within a level on a given day, proceed as follows:
+
+1. In the xref:scheduling:schedules-overview.adoc#schedule-area[**schedule area**], click the header of a day column to expand the day and display the 24-hour scale.
+2. Right-click the 24-hour scale and select one of the following sorting options:
+   - **Sort by Start Time**
+   - **Sort by Schedule Position**
+   - **Sort by Activity**
+3. Select the **level** for which you want to sort the items.
+4. To reverse the sort order, click the {icon-shift-center-reverse-order} at the top left of the 24-hour scale.
+
+[#filter-level-items]
+== Filter level items
+To filter level items on a given day, proceed as follows:
+
+1. In the xref:scheduling:schedules-overview.adoc#schedule-area[**schedule area**], click the header of a day column to expand the day and display the 24-hour scale.
+2. Right-click the 24-hour scale and select **Filter by Activity and Time**.
+3. Click **Define Filter**.
+4. In the window that opens, configure the following parameters:
+   - **Level**: The level to which you want to apply the filter.
+   - **Activity Type**
+   - **Activity**: The activity you want to display.
+   - **Time**: The filter only displays items that contain the specified time.
+5. Click _Ok_{:.doc-button}.  
+   The schedule updates to only show the items matching your filter. If no data matches the filter, the schedule is empty.
+
+[#deactivate-the-filter]
+== Deactivate the filter
+To deactivate the current filter, proceed as follows:
+
+1. Right-click the header of a day column or its 24-hour scale.
+2. Select **Filter by Activity and Time**.
+3. Click **Delete Filter**.
+
+To reactivate the filter, repeat steps 1 and 2 and click **Enable Filter**.

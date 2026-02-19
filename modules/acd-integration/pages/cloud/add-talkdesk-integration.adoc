@@ -1,0 +1,43 @@
+= Talkdesk
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Talkdesk ACD to import data.
+:related-articles: how-integrations-work.adoc, import-agent-status-data.adoc, create-workloads.adoc
+
+A Talkdesk integration is a cloud integration that imports historical call data and agent status data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-talkdesk-integration]
+== Add a Talkdesk integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Talkdesk**.
+5. Click _Save_{:.doc-button}.
+
+[#set-up-your-talkdesk-integration]
+== Set up your Talkdesk integration
+1. In the **User credentials** section, enter the following information:
+   - **Account name**: Enter the name of your Talkdesk account.
+   - **Client ID** and **Client secret**: Enter a valid client ID and client secret for your Talkdesk ACD.
+
+     > For Client ID and Client secret, [create a new OAuth client](https://docs.talkdesk.com/docs/creating-a-new-oauth-client) in Talkdesk.
+     >
+     > You can also use an existing OAuth client that has been configured as follows:
+     >
+     > - Grant type: client-credentials
+     > - Scopes: data-reports:read and data-reports:write
+
+2. In the **Configuration** section, select the region of your Talkdesk account.
+
+3. Click _Save_{:.doc-button}.  
+   The integration tests the connection and reports issues if there are any.  
+   When the check has passed, the integration starts importing data.
+
+[#whats-next]
+== What's next?
+When call data has been imported into queues, you can create your first workload. Learn more about xref:acd-integration:import-agent-status-data.adoc[importing agent status data], check out the related articles.

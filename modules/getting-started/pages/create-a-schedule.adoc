@@ -1,0 +1,68 @@
+= Create a schedule
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Follow the basic steps required to create a schedule.
+:related-articles: resolve-optimization-issues.adoc, use-levels.adoc, meetings-overview.adoc, schedules-extra-activities.adoc, schedules-replace-activities.adoc, scheduling-public-holidays.adoc
+:page-aliases: quickstart-scheduling
+
+Creating schedules is an essential part of the xref:getting-started:the-wfm-cycle-in-injixo.adoc[WFM cycle]. Schedules contain the shifts and activities planned for your people.
+
+Use this article as a checklist to support your onboarding.
+
+Note: In Essential WFM, you cannot back up your time-off requests or the final schedule.
+
+[#prerequisites]
+== Prerequisites
+Before you create a schedule, make sure you have correctly xref:getting-started:set-up-base-configuration.adoc[set up your base configuration] and xref:getting-started:calculate-a-forecast.adoc[generated a forecast].
+
+[#configuration-order]
+== Configuration order
+We recommend setting up the configuration items in the order presented in this article. No configuration setup is the same, which is why the optimal order might be different for your organization. Contact your consultant if you have any questions.
+
+[#configure-time-off]
+== Configure time off
+People can request time off using Me. To configure time off, go to _Plan > Time Off_{:.breadcrumbs}:
+
+1. Enter your people's xref:scheduling:vacation-entitlement.adoc[vacation entitlement] for the current year.
+2. Create a xref:scheduling:time-off-periods-legacy.adoc[time-off period] and publish it. A time-off period defines the time frame in which people can request vacation and other absences. People will receive a notification in Me and can start creating time-off requests for that period.
+
+[#enter-illness-or-absence-activities]
+== Enter Illness or Absence activities
+In xref:scheduling:schedules-overview.adoc[Schedules] and xref:scheduling:shift-center-overview.adoc[Shift Center], you can manage your team's schedule. Enter any known xref:administration:activity-types-and-properties.adoc#activity-types[activities] of the types Absence or Illness into the schedule.
+
+[#manage-time-off-requests]
+== Manage time-off requests
+In _Plan > Time Off_{:.breadcrumbs}, approve or reject any xref:scheduling:vacation-absences-management.adoc[pending requests].
+
+[NOTE]
+====
+Create a backup of the current schedule in another level
+====
+>
+[NOTE]
+====
+Use xref:scheduling:use-levels.adoc[Copy level content] to save a copy of your schedule. This ensures that you do not lose any approved time-off requests or previously entered absences if you delete the schedule and start over.
+====
+[#create-the-schedule]
+== Create the schedule
+In xref:scheduling:schedules-overview.adoc[Schedules], xref:scheduling:shift-center-overview.adoc[Shift Center] or xref:monitoring:manage-dashboards.adoc[Dashboards], check if xref:forecast:task-set-up-staff-requirement-calculation.adoc[staff requirements] are correctly set up for your activities.
+
+1. Insert xref:scheduling:schedules-insert-shift-sequences.adoc[shift sequences] for your people.
+2. Configure and apply additional xref:scheduling:scheduling-methods.adoc[scheduling methods] to complete the schedule.
+3. Run the xref:scheduling:schedules-job-optimization.adoc[job optimization]. You can skip this step if you xref:scheduling:schedules-optimized-schedules.adoc[create an optimized schedule].
+
+Tip: If you are creating a schedule for testing purposes, you can use xref:scheduling:schedules-empty-levels.adoc[empty levels]. Copy the saved absences and time-off requests back to the Schedule level before each test run.
+
+[#back-up-your-final-schedule]
+== Back up your final schedule
+Before applying any xref:scheduling:modify-items.adoc[manual changes] to your original schedule, xref:scheduling:use-levels.adoc[save a backup] in the Actual level. This allows you to assess the quality of your original schedule compared to later versions.
+
+[#publish-the-schedule-and-allow-shift-swaps]
+== Publish the schedule and allow shift swaps
+1. Create a scheduling period to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[allow people to see their schedule] in Me.
+2. (Optional) xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[Allow people to swap shifts].  
+   By default, you need to xref:scheduling:view-approve-shift-swap-requests.adoc[view and approve any pending shift swaps], but you can also allow automatic swaps between people with the _48152_{:.id-label} **Exchange Mode** setting.
+3. Share the article xref:me:explore-me.adoc[Explore Me] with your people.

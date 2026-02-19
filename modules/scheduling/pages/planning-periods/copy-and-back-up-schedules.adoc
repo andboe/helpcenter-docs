@@ -1,0 +1,62 @@
+= Copy or back up schedules
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: classic
+:topic-type-concept:
+:description: Copy or back up your schedules and other elements in the different scheduling levels (SchedulePro).
+:related-articles: what-are-planning-periods.adoc, delete-schedules.adoc, batch-replace-an-activity.adoc
+
+In this article, you will learn how to copy or back up your schedules and other elements in the different scheduling levels.
+
+To do this, you will use planning periods. Read the article xref:scheduling:what-are-planning-periods.adoc[What are Planning periods?] first.
+
+[NOTE]
+====
+This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+====
+>
+[NOTE]
+====
+If you use Advanced WFM or Enterprise WFM, use the function xref:scheduling:use-levels.adoc[Copy level content] under _Plan > Schedules_{:.breadcrumbs} instead.
+====
+[#what-are-levels]
+== What are levels
+You can use different levels for scheduling purposes. Levels can contain, among other elements, the activities or day models used for scheduling, shift requests or employee availability data. You can copy the data of a level, e.g. your complete schedule or parts of it, within the same level or to another level. This can be helpful to speed up your scheduling process.
+
+You can create a backup by copying the complete schedule to another level. Backups are recommended from time to time, especially before you try out new scheduling methods.
+
+[#select-or-create-a-planning-period]
+== Select or create a planning period
+1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
+2. Choose a _Planning Unit_{:.label}.
+3. Choose the **Type** _Standard_.
+4. For _Selection_{:.label} choose **[All]**.
+5. Click _Apply_{:.doc-button}.
+6. Find a planning period that contains the date range for which you want to copy schedules. It doesn't have to match the date range exactly.
+7. Click _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon}.
+8. Select the **Status** _Locked_ to make sure that employees cannot access the schedule.
+9. Click _Ok_{:.doc-button}.
+
+If there is no suitable planning period in the list, create a new one:
+
+1. Click the {icon-wfm-add} in the action bar.
+2. Use **Valid From** and **Valid To** to define the time period for which you want to copy schedules.
+3. Select the **Status** _Locked_ to make sure that employees cannot access the schedule.
+4. Click _Ok_{:.doc-button}.
+
+[#copy-or-back-up-a-schedule]
+== Copy or back up a schedule
+Select a planning period with the date range in which you want to copy or back up schedules:
+
+1. Click the planning period. A menu opens to the right.
+2. Click _Copy_{:.doc-button} in the section _Level_.
+3. Optional: Change the **Start Date** and **End Date** if you want to further limit the timeframe. If you don't change anything, it will use the time frame of the planning period.
+4. Optional: Change the **Employee Selection** method if you want to run the process for certain employees only. Choose one or more of your selections or employees from the list. Press the _Shift_ or _CTRL_ key to select multiple entries at once.
+5. For **Source Level**, select the scheduling level from which you want to copy or back up data.
+6. Optional: Check **Clear contents after copying** to delete the existing content from the source level.
+7. For **Target Level**, select the scheduling level to which you want to copy the data.
+8. Change the **Start Date** for the _Target Level_ to copy data into a different time frame. For example, copy the data of an old schedule to a future period on the same level. In this case _source level_ and _target level_ are the same.
+9. To start the copy or backup job, click _Ok_{:.doc-button}.
+
+image::copy-and-back-up-schedules/image-3.png[Level copy dialog, width=50%]

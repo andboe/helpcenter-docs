@@ -1,0 +1,74 @@
+= Use mass update to modify people data
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-task:
+:description: Perform mass updates for multiple people to add, replace or remove assignments of roles, contracts, planning units and more. Check the results.
+:related-articles: concept-mass-update.adoc, ref-mass-update-settings.adoc, jobstatus.adoc
+
+This article explains how to perform the following tasks:
+
+- Mass update the relationship between people and objects such as roles, planning units or contracts
+- Check the results of the mass update
+
+[#prerequisites]
+== Prerequisites
+Mass update changes cannot be easily undone.
+Make sure you are aware of how the object assignments you want to mass update work and what the consequences of changing them are.
+
+=== Permissions
+
+Depending on the action you want to perform, your role needs to have the following permissions:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|_WFM > Administration > System > Role Authorization > Mass Update_{:.breadcrumbs}
+|_Account > Roles > Functional permissions > People_{:.breadcrumbs}
+|Contracts
+|Edit People
+|Skills
+|View and edit Roles
+|Planning units
+|
+|Selections
+|
+|Shift sequences
+|
+|Attributes
+|
+|Work Time Pattern Models
+|
+|===
+
+Some types of assignments, such as roles or planning units, may be subject to additional object permissions.
+In this case, you can only mass update assignments of objects that your role has edit permissions for.
+
+To check job result reports of a mass update, your role needs to have **Access to job status** permissions in _Account > Roles > Job Status_{:.breadcrumbs}.
+
+[#steps]
+== Steps
+[#specify-mass-update-scope]
+=== Perform mass update
+1. Go to _People > Overview_{:.breadcrumbs}
+2. In the People table, activate the checkbox of every person you want to edit assignments for. The page displays a toolbar above the table.
+3. In the toolbar, click **Mass update**. Peopleware opens the **Mass update** page, which includes a section menu for every object assignment you can edit.
+4. In the menu, click the item to display all the mass update actions available for the object type.
+5. Click an action of your choice. Peopleware opens the action's configuration page.
+6. Configure the action as needed. For an overview of all mass update settings, see xref:people:ref-mass-update-settings.adoc[Mass update settings].
+7. Click **Apply**.
+
+Peopleware triggers a job that applies the changes to all selected people.
+In cases where a mass update would lead to inconsistent or nonsensical assignments, the job skips the update for individual persons or assignments.
+For a detailed overview of the mass update results, including information on failed assignment changes, check the job's status reports.
+
+[#specify-mass-update-action]
+=== Check the results of a mass update
+1. In the navigation bar, click the {icon-context-menu} _Job Status_{:.label}.
+2. In the job table, find your mass update job.
+   To make finding the job easier, apply the **User** filter option and click the **Submitted** column header to sort the table by date.
+3. Make sure the job's progress is 100 % before proceeding with the next step.
+4. In the **Result** column, click **Show result**. Peopleware opens the job's results report.
+5. Check the report to make sure all the changes were applied as intended.
+
+The report states the reason for every instance where the changes could not be applied.
+You can use that information to troubleshoot or adjust the assignments manually.

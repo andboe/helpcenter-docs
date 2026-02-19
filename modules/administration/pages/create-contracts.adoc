@@ -1,0 +1,297 @@
+= Create contracts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Create contracts to define the working time per week and other rules for your employees.
+:related-articles: contracts.adoc, schedules-job-optimization.adoc
+
+This article explains how to create a contract.
+
+[#create-a-contract]
+== Steps
+1. Go to _Plan > Configuration_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter general details, see xref:#general[General].
+4. Click _Save_{:.doc-button}.
+
+The contract is shown. To ensure accurate scheduling, configure the following:
+
+- xref:#work-time-guidelines[Work time guidelines]
+- xref:#work-hours-per-day[Work hours per day]
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you set **Work hours per day**, **Work time guidelines** will be ignored during scheduling.
+====
+[#settings-and-parameters]
+== Settings and parameters
+Define contract-specific settings that influence scheduling and time calculations.
+
+[#general]
+=== General
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Name
+|Unique contract name (max. 50 characters).
+|Abbreviation
+|Short contract name (max. 25 characters).
+|Color
+|Visual identifier for the contract on the contracts overview page.
+|Working days per week
+|Number of days per week specified in the contract.
+|Workdays calculation
+|Methods for calculation of the working time. +**Standard**: Follows the predefined order of days in the scheduling week. +**Flexible**: Selects any working days within the planning unit’s business hours.
+|Target work time calculation
+|Methods for calculation of the target work time. +**Contract**: Uses the work times defined in the current contract of the person. +**Time account**: Uses the work times defined in the target work time.
+|===
+
+[#work-time-guidelines]
+=== Work time guidelines
+Work time guidelines are baseline rules that are referenced by scheduling and AutoScheduler parameters.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Minimum (day)
+|Minimum working hours per day. Leave empty to use the **Target (days)** value as minimum value. This parameter is verified via the scheduling parameter _2615_{:.id-label}.
+|Target (day)
+|Target working hours per day.
+|Maximum (day)
+|Maximum working hours per day. If you do not enter any value, the target time will be considered as the maximum. This parameter is verified via the scheduling parameter _2614_{:.id-label}.
+|Minimum (week)
+|Minimum number of working hours per scheduling week.
+|Target (week)
+|Target working hours per scheduling week.
+|Maximum (week)
+|Maximum number of working hours per scheduling week. This parameter is verified by the scheduling parameters _2618_{:.id-label} and _2629_{:.id-label}.
+|Minimum (month)
+|Minimum working hours per month.
+|Target (month)
+|Target working hours per month.
+|Maximum (month)
+|Maximum working hours per month. This parameter is verified via the scheduling parameter _2619_{:.id-label}.
+|Minimum (year)
+|Minimum working hours per year.
+|Target (year)
+|Target working hours per year.
+|Maximum (year)
+|Maximum working hours per month. This parameter is verified via the scheduling parameter _2619_{:.id-label}.
+|===
+
+{: class="hint-box-blue"}
+
+[NOTE]
+====
+Start of the week
+====
+>
+[NOTE]
+====
+By default, the start of the week is set to either Sunday or Monday, depending on your region. If you need to set it to another day, contact your consultant.
+====
+[#work-hours-per-day]
+=== Work hours per day
+Work hours per day are used to ensure accurate calculation of paid absences such as vacation or sick leave.
+
+==== Example
+
+The person works 40 hours/week, 8 hours/day, with days off on Wednesday and Sunday.
+
+To ensure correct hour distribution:
+
+- Enter 8:00 for Mon, Tue, Thu, Fri, Sat
+- Enter 0:00 for Wed, Sun
+
+If the person takes sick leave or paid vacation, their working hours will be calculated based on these values.
+Leaving a field blank will apply the default formula: `[Weekly Target Hours/Number of Working Days]`. This can lead to miscalculations because an even distribution of work hours across all working days will be assumed.
+
+[#overtime-factors]
+=== Overtime factors
+Overtime factors are available to customers on the Enterprise WFM plan.
+
+Overtime factors define how overtime hours are credited to the person's time accounts based on their contract, either for work on specific days or outside the opening hours.
+
+As a prerequisite for receiving a credit for a specific day, the day type for which the credit is granted must be assigned to the employee’s primary planning unit on that day.
+
+Credits are granted when the following conditions are met:
+
+- An overtime factor exists in the employee’s contract for the day type.
+- The day type is part of the planning calendar.
+- The day type’s planning unit matches the employee’s primary planning unit on that day.
+- If the credit is limited to a specific time period, the scheduled time falls within that range.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Day type
+|The day type for which the overtime factor is applied.
+|From
+|Start date of time period.
+|To
+|End date of time period.
+|Factor
+|Multiplier (1.00 - 5.00) applied to hours worked during the specified period. For example, 1.00 credits hours at the standard rate, while 2.00 credits double time. Use a period (.) as decimal separator, e.g., 1.50.
+|===
+
+[#auto-scheduler-parameters]
+=== AutoScheduler parameters
+AutoScheduler parameters are used by the Create optimized schedule function, see xref:scheduling:schedules-job-optimization.adoc[Create optimized schedule].
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Use target work times
+|Uses the target work times to calculate weekly scheduled hours. If unchecked, the values under _Work time > Working hours per day_{:.breadcrumbs} apply. See also xref:administration:concept-target-work-times.adoc[Calculate target work times].
+|Schedule work after full day off
+|Schedules a workday immediately after a full day off with activity type Vacation. For consecutive days off, a workday will be scheduled only after the last day off.
+|Min. days off per week
+|Minimum non-working days to be scheduled per week. Recommended if the planning unit operates on weekends.
+|Min. consecutive days off per week
+|Minimum consecutive non-working days to be scheduled in each week.
+|Max. consecutive days off
+|Maximum consecutive non-working days. This value is applied across weeks, not limited to a single week.
+|Max. consecutive workdays
+|Maximum consecutive working days. Recommended if the planning unit operates every day of the week. For example, if a person works 5 days per week, this parameter helps prevent scheduling them for 10 consecutive days.
+|Min. workdays per week
+|Minimum working days to be scheduled per scheduling week. Helps maintain a consistent staffing level in the planning unit to handle expected call volume.
+|Weeks with max. 1 Sat work
+|Number of weeks (1–5) forming a period during which a person can be scheduled to work one Saturday. Within this period, each person can be scheduled to work only one Saturday in total. Ensures fair distribution of weekend work and prevents the same people from consistently working Saturdays.
+|Min. rest between shifts (h)
+|Minimum rest period (in hours) between two consecutive shifts. Helps ensure compliance with labor laws on rest periods.
+|===
+
+[#scheduling-rules-and-parameters]
+=== Scheduling rules and parameters
+Scheduling parameters define contract-specific values that determine how scheduling rules are applied. For more details about scheduling rules and their status, see xref:administration:concept-scheduling-rules.adoc[Scheduling rules]
+
+{: class="hint-box-orange" }
+
+[NOTE]
+====
+Scheduling errors
+====
+>
+[NOTE]
+====
+Changes to scheduling rules and parameters are complex, and changes may lead to errors. Scheduling rules are typically set up during onboarding. Please only change scheduling parameters if you fully understand their effect. If unsure, contact your Peopleware consultant. Learn more about xref:best-practices:resolve-optimization-issues.adoc[how to resolve scheduling errors]
+====
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|ID
+|Parameter (Rule)
+|Description
+|_2621_{:.id-label}
+|Max. Saturdays per month
+|Maximum Saturdays (1-5) the person may be scheduled to work per month.
+|_2622_{:.id-label}
+|Max. Sundays per month
+|Maximum Sundays the person (1-5) can be scheduled to work per month.
+|_2617_{:.id-label}
+|Min. net work hours per day
+|Minimum net duration of a shift. Net time equals the total duration of all paid activities within the shift. (Format: hh:mm)
+|_2616_{:.id-label}
+|Max. net work hours per day
+|Maximum net duration of a shift. Net time equals the total duration of all paid activities within the shift. (Format: hh:mm)
+|_2601_{:.id-label}
+|Rest between two workdays
+|Rest period between the end of the last shift on one day and the start of the first shift on the next day. (Format: hh:mm)
+|_2602_{:.id-label}
+|Max. activity duration
+|Maximum allowed duration for a single activity. Full-day activities are not evaluated by planning this rule. (Format: hh:mm) +**Exclude activity type Illness:** Ignores duration checks for activities of the type Illness. +**Exclude activity type Vacation:** Ignores duration checks for activities of the type Vacation.
+|_2603_{:.id-label}
+|Min. gap between activities
+|Minimum required time gap between two activities scheduled on the same day. This applies only if the activities do not directly follow one another and a gap is entered in the Shift Center. (Format: hh:mm)
+|_2604_{:.id-label}
+|Max. gap between activities
+|Maximum allowed time gap between two activities scheduled on the same day. (Format: hh:mm)
+|_2613_{:.id-label}
+|Max. shifts per day
+|Maximum shifts the person can be scheduled on a single workday.
+|_2614_{:.id-label}
+|Max. work hours per day
+|Maximum daily work time based on day models and activities. +**Include only activities:** Evaluates daily work time using activities only, ignoring day models.  +**Include only day models:** Evaluates daily work time using day models only, ignoring activities.
+|_2620_{:.id-label}
+|Min. weekends off per month
+|Minimum free weekends a person must receive per month. A day is considered free if no working time is scheduled.
+|_2623_{:.id-label}
+|Max. working days per week
+|Maximum number of days that can be scheduled per week.
+|_2624_{:.id-label}
+|Max. consecutive working days
+|Maximum number of consecutive workdays that can be scheduled. Days with paid activities or day models containing paid activities are counted as workdays. +**Exclude activity type Illness:** Ignores paid activities of the type Illness.  +**Exclude activity type Vacation:** Ignores paid activities of the type Vacation.
+|_2625_{:.id-label}
+|Min. consecutive days off per week
+|Minimum number of consecutive days off per week.
+|_2626_{:.id-label}
+|Max. work hours within 24 hours
+|Maximum work time allowed within a 24-hour period based on day models and activities. (Format: hh:mm)
+|_2627_{:.id-label}
+|Min. days off per week with Saturday work
+|For people scheduled to work on a Saturday, the value defines the required number of days off that must be granted between Monday and Friday of the following standard planning week.
+|_2628_{:.id-label}
+|Min. days off per week with Sunday work
+|For people scheduled to work on a Sunday, this defines the required number of days off that must be granted between Monday and Friday of the following standard planning week.
+|_2629_{:.id-label}
+|Overtime threshold in consecutive weeks
+|Maximum number of working hours allowed per week before overtime is applied. The default maximum is 168 hours (168:00), representing the total number of hours in a week. (Format: hh:mm) +**Number of weeks:** Number of consecutive planning weeks during which the overtime threshold can be exceeded.
+|_2631_{:.id-label}
+|Do not schedule on holidays
+|Day models and activities cannot be scheduled on public holidays.
+|_2632_{:.id-label}
+|Max. night shifts per week
+|Maximum number of days with night work than can be scheduled per week.
+|_2633_{:.id-label}
+|Max. night shifts per month
+|Maximum number of days with night work that can be scheduled per month.
+|_2634_{:.id-label}
+|Max. consecutive night shifts
+|Maximum number of consecutive days that may include night work.
+|_2639_{:.id-label}
+|Weekly continuous rest (no full day guaranteed)
+|Minimum continuous weekly rest period. If the rest period is less than 48 hours, it may be split across two days without including a full calendar day. (Format: hh:mm)
+|_2640_{:.id-label}
+|Weekly continuous rest (1 full day guaranteed)
+|Minimum continuous weekly rest period. For rest periods between 24 and 48 hours, at least one full calendar day is included. (Format: hh:mm) You can choose to avoid overlap with rule _2628_{:.id-label}.
+|_2641_{:.id-label}
+|Max. activity duration
+|Maximum activity duration that can be scheduled. (Format: hh:mm) Activities of type ‘Absence’ and full-day activities are exempt from this rule. To also exclude 'Illness' and/or 'Vacation' activities from validation, activate scheduling rule _2602_{:.id-label}. This is useful for scheduling partial-day absences, such as a few hours of vacation.
+|_2643_{:.id-label}
+|Max. scheduled Sundays and holidays per month
+|Maximum number of Sundays and public holidays a person can be scheduled to work within a month.
+|_2644_{:.id-label}
+|Compensation eligibility after weekend work
+|Time period (in days) for checking compensation eligibility after weekend work.
+|_2646_{:.id-label}
+|Rest after holiday work (no full day guaranteed)
+|Rest period granted after working on a holiday. If the rest period is less than 48 hours, it may be split across two days without including a full calendar day. (Format: hh:mm)
+|_2647_{:.id-label}
+|Rest after holiday work (1 day guaranteed)
+|Rest period granted after working on a holiday. The rest period always includes at least one full calendar day. (Format: hh:mm)
+|_2649_{:.id-label}
+|Max. scheduled Sundays in a row
+|Maximum number of consecutive Sundays the person can work across months.
+|_2650_{:.id-label}
+|Max. scheduled weekends in a row
+|Maximum number of consecutive weekends the person may work across months.
+|_2659_{:.id-label}
+|Max. day models in 24h
+|Maximum number of day models that may start within any 24-hour window. The check is performed for the 24 hours before and after the start of each shift. Allowed range: 1 to 100
+|_2662_{:.id-label}
+|Max. allowed work time deviation
+|Deviation from target work times per scheduling period. Allowed range: 00:00 to 999:59 (Format: hh:mm)
+|===
+
+[#duplicate-a-contract]
+== Duplicate a contract
+Learn how to xref:general:duplicate-objects.adoc[duplicate contracts].

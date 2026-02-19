@@ -10,7 +10,21 @@ asciidoc:
     product-classic: peopleware Classic
     product-wfm: peopleware Enterprise WFM
 nav:
+  - modules/getting-started/nav.adoc
   - modules/account/nav.adoc
+  - modules/administration/nav.adoc
   - modules/forecast/nav.adoc
   - modules/plan/nav.adoc
+  - modules/scheduling/nav.adoc
+  - modules/people/nav.adoc
   - modules/me/nav.adoc
+  - modules/monitoring/nav.adoc
+  - modules/reporting/nav.adoc
+  - modules/intraday/nav.adoc
+  - modules/time-off/nav.adoc
+  - modules/time-management/nav.adoc
+  - modules/acd-integration/nav.adoc
+  - modules/support/nav.adoc
+  - modules/gdpr/nav.adoc
+  - modules/best-practices/nav.adoc
+  - modules/general/nav.adoc

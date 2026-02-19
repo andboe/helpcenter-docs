@@ -1,0 +1,33 @@
+= Set up coach-trainee group
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create a coach-trainee group.
+:related-articles: copy-coach-schedule-to-trainee.adoc
+
+In _People_{:.breadcrumbs}, people can be set up to form a coach-trainee group.
+A coach-trainee group serves to copy a coach's activities or day models to the trainees' schedules.
+Every coach-trainee group is made up of one coach and any number of trainees.
+
+The following restrictions apply:
+
+- A coach cannot be a trainee.
+- A trainee can only have one coach.
+- Peopleware ignores trainees in all automated scheduling processes.
+- A coach's activities can only be applied to trainees in the same planning unit as the coach.
+
+To set up a coach-trainee group, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs}
+2. Select the person that should be the coach.
+3. On the person's details page, go to _Planning > Coach/Trainee_{:.breadcrumbs}.
+4. Make sure the person is not assigned to a coach.
+   You cannot assign trainees to a person that is already assigned to a coach.
+5. Click {icon-plus} **Add**.
+6. (Optional) Specify a validity period.
+7. In the **Assignees** section, select the trainees from the list. To filter the list, use the filter options.
+8. Click **Create**.
+
+You have set up the coach trainee group.

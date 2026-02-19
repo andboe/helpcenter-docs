@@ -1,0 +1,67 @@
+= Configure object access
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Specific objects can be restricted so that users only get to access a subset of e.g. Dashboards.
+
+In this article, you will learn:
+
+- what _Object Access Groups_ are and what you do with them.
+- how you create a new group and assign it to users.
+- how you restrict the default full access to objects such as Dashboards.
+
+[#what-are-object-access-groups]
+== What are Object Access Groups?
+With _Object Access Groups_ you can restrict user access to specific objects, such as Dashboards. By default, the _Full Access_ group is assigned to all users. The _Full Access_ group applies no access restrictions and therefore new users have access to all available objects.
+
+Users with _Admin access_ can create different _Object Access Groups_ and assign them to users to restrict the default access. Each user can only be member of one object access group at a time.
+
+[NOTE]
+====
+Manage permissions of WFM objects that are not supported yet by this module, e.g. planning units, under _WFM > Administration > System > Role Authorization_{:.breadcrumbs}.
+====
+[#configure-object-access]
+== Configure Object Access
+Navigate to _Account > Object access_{:.breadcrumbs} to view, edit or create _Object Access Groups_.
+
+image::object-access-permissions/image-0.png[Navigate to object access screen, width=80%]
+
+[#create-a-new-object-access-group]
+=== Create a New Object Access Group
+1. Go to _Account > Object access_{:.breadcrumbs}
+2. Click _Create_{:.doc-button}. The _New object access_ configuration screen opens.
+3. Enter a **Name** for the new object group.
+4. Enter a **Description** (optional). The description appears in the object access overview.
+
+image::object-access-permissions/image-1.png[New object access configuration screen, width=80%]
+
+[#restrict-access-in-an-object-access-group]
+=== Restrict Access In an Object Access Group
+By default, any new _Object Access Group_ grants full access to all current and future objects. To restrict the user access, add the objects that the group members will have access to:
+
+1. Check **Restrict access** for the element in the _Accessible objects_ section. This will open the object configuration.
+2. Check the **checkboxes** of the elements that should be accessible by the group members. You can also search for elements.
+3. Click _Create_{:.doc-button} to save the new object group.
+
+image::object-access-permissions/image-2.png[Accessible objects with restricted access, width=80%]
+
+[NOTE]
+====
+New objects are automatically accessible
+====
+>
+[NOTE]
+====
+If a user creates a new dashboard, it is automatically added to its object access group. This makes the new dashboard available to all other users with the same object access group.
+====
+[#assign-an-object-access-group-to-a-user]
+=== Assign an Object Access Group to a User
+In _People_{:.breadcrumbs}, you can assign an object group to your people:
+
+1. Go to _People_{:.breadcrumbs}.
+2. Click a person's tile.
+3. Under **Access** in the left-side menu, click **{icon-edit} Edit** in the **Object access** section.
+4. Select a **group of access objects** from the drop-down menu.
+5. Click _Save_{:.doc-button}.

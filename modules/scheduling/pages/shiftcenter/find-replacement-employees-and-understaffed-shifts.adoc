@@ -1,0 +1,76 @@
+= Find replacement people for activities, full days or understaffed shifts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Find people to cover absences or understaffed shifts. Learn also how to exchange shifts between two people.
+:related-articles: use-keyboard-shortcuts.adoc, shift-center-overview.adoc
+
+If a scheduled person cannot perform a certain activity or shift or cannot work for a full day (e.g. due to sick leave), you may need to find a person to replace them, or exchange their shift with another person. In _Plan > Shift Center_{:.breadcrumbs}, you can perform the following actions:
+
+- Schedule a replacement for a certain activity or shift or for a full day
+- Find people for understaffed shifts
+- Exchange activities and shifts between two people
+
+New to Shift Center? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
+
+[#find-a-replacement-person]
+== Find a replacement person
+To find a replacement person, proceed as follows:
+
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], click a day column header.
+2. In the row corresponding to the person you want to replace, proceed as follows:
+   - To find a replacement for an activity, right-click an activity and select _Find replacement employee_{:.label}.
+   - To find a replacement for the entire day, right-click a day cell and select _Find replacement employee for day..._{:.label}.
+
+3. In the window that opens, you can see a list of people with skills matching the activities. To filter the results, click the _Options_{:.label} tab:
+   - In the _Selections_{:.label} row, select one of the following options:
+     - _Ignore_{:.label}: Show people from all selections
+     - _Observe_{:.label}: Show only people that belong to the same selection(s) as the person
+   - In the _Placements_{:.label} row, select one of the following options:
+     - _Ignore_{:.label}: Show people regardless of their scheduled activities or shifts.
+     - _With the same working hours and the same date_{:.label}
+     - _At least one placement on the same scheduled day_{:.label}: Show people with scheduled activities on that day
+     - _No placement on the same scheduled day_{:.label}: Show people with no scheduled activities on that day
+
+4. Click the _Replacement Employee_{:.label} tab. The list shows the people matching your criteria.
+5. Click the person you want to schedule as a replacement.
+6. Click _OK_{:.doc-button}.
+
+If the action does not violate any scheduling rule, people's schedules are updated accordingly.
+
+[#find-people-for-understaffed-shifts]
+== Find people for understaffed shifts
+To find a person for an understaffed shift, proceed as follows:
+
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[parameter area], click the _Day Models_{:.label} tab.
+2. Right-click a cell and select _Find Employees for Shift..._{:.label}.
+3. In the window that opens, you can see a list of people with the necessary skills. To filter the results, click the _Options_{:.label} tab and select one of the following options in the _Placement_{:.label} row:
+   - _Ignore_{:.label}: Show people regardless of their scheduled activities or shifts.
+   - _None on the same booking day_{:.label}: Show only people who are not scheduled on that day.
+4. Click the _Employees_{:.label} tab and select a person.
+5. Click _OK_{:.doc-button}.
+   If the action does not violate any scheduling rule, people's schedules are updated accordingly.
+
+[#exchange-shifts-between-two-people]
+== Exchange shifts between two people
+You can exchange all activities and shifts of a given day between two people.
+
+1. In the xref:scheduling:shift-center-overview.adoc#schedule-area[schedule area], click a day column header.
+2. Right-click a day cell.
+3. Select _Find Exchange Partner..._{:.label}.
+4. In the window that opens, a list of people with the necessary skills and contract parameters appears. To filter the results, click the _Options_{:.label} tab:
+   - In the _Selections_{:.label} row, select one of the following options:
+     - _Ignore_{:.label}: Show people from all selections
+     - _Observe_{:.label}: Show people that belong to the same selection(s) as the person
+   - In the _Placements_{:.label} row, select one of the following options:
+     - _Ignore_{:.label}: Show people regardless of their scheduled activities or shifts.
+     - _With the same working hours and the same date_{:.label}
+     - _At least one placement on the same scheduled day_{:.label}: Show people with scheduled activities on that day
+     - _No placement on the same scheduled day_{:.label}: Show people with no scheduled activities on that day
+
+5. Click the _Find Exchange Partner_{:.label} tab and select a person.
+6. Click _OK_{:.doc-button}.
+
+If the action does not violate any scheduling rule, people's schedules are updated accordingly.

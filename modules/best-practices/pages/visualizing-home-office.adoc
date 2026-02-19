@@ -1,0 +1,59 @@
+= View agents working from home
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to see at a glance which agents are working from home on a given day.
+:related-articles: tips-on-shift-center-usage.adoc
+
+<!-- not sure about essentials -->
+
+Your contact center allows employees to work from home on some days. You want to be able to visualize which employees are working from home on any given day so that you know to contact them by phone or a messaging application rather than looking for them in the office.
+
+You can use the following methods to show that employees are working from home:
+
+1. Day status - Schedule an activity for the entire day and display it in the background of other scheduled activities. This option is not available if your tenant includes the new Time Off app.
+2. Schedule levels - Schedule an activity in another scheduling level and display this level next to your schedule.
+3. Comments - Add a text for a single day for each person.
+
+[#home-office-as-day-status]
+== Home office as day status
+This option is not available if your tenant includes the new Time Off app.
+
+To set up home office as day status, xref:administration:activities.adoc[create a new activity] of type Absence. Do not check the **Plannable** checkbox. This prevents the activity from being scheduled automatically.
+
+Check the following checkboxes:
+
+- **Allow as full-day activity** (this activates the day status option)
+- **Can be a day status**
+- **Exchangeable with shift swap** (optional, makes home office exchangeable between employees)
+- **Requestable in Me** (optional, allows agents to request home office days in Me)
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If home office is not exchangeable, shifts can still be exchanged, but not the home office day status.
+====
+When you add the home office activity to your schedule, scheduled activities are preserved and home office is inserted in the background:
+
+image::visualizing-home-office/image-2.png[Home office in Shift Center]
+
+The home office activity will be displayed in the team calendar in Me. <!-- See https://github.com/ivx/injixo/issues/19396#issuecomment-924892178 -->
+
+[#home-office-in-a-second-scheduling-level]
+== Home office in a second scheduling level
+Create an unpaid activity of type Absence and check **Allow as full-day activity**. In Shift Center, you can insert the activity in any unused level, such as Version 1.
+
+When you display this additional level, you can always see the home office activity:
+
+image::visualizing-home-office/image-3.png[Home office in its own level]
+
+[#home-office-as-comment]
+== Home office as comment
+You can use comments in Shift Center or Schedules to indicate that an employee is working from home. However, this is only recommended if you do not use comments for anything else.
+
+To find agents who are working from home, you can look at the comment indicator (thicker black border) on a day cell in Shift Center. Schedules displays a comment icon within the cell.

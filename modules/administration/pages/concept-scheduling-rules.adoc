@@ -1,0 +1,31 @@
+= Scheduling rules overview
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what scheduling rules are.
+:related-articles: task-manage-scheduling-rules-status.adoc, create-contracts.adoc
+
+Peopleware applies scheduling rules to make sure schedules comply with company policies and regulatory requirements.
+A scheduling rule is a set of conditions which are specified by scheduling rule parameters.
+These scheduling rule parameters are usually defined in context, e.g. on contract-level.
+That way, scheduling rules can apply conditions that can differ based on this context.
+
+For more information about contract-specific scheduling parameters, see xref:administration:create-contracts.adoc[Create contracts].
+
+[NOTE]
+====
+**Example**
+====
+>
+[NOTE]
+====
+For a scheduling rule that ensures that a schedule observes the minimum rest period between two working days, the scheduling rule parameter specifies a dedicated minimum rest period value for each contract.
+The scheduling rule then ensures that all employees are scheduled in compliance with the minimum rest period value specified in their contract.
+====
+Scheduling rules can be toggled on or off individually.
+By default, this setting applies to all scheduling processes in Peopleware. This means that a scheduling rule is applied or ignored whenever a schedule is created or changed, regardless of the person or system component that triggered the change.
+This behavior can be configured so that a scheduling rule is applied or ignored when the change is triggered by a specific person or software component.
+
+For more information on how to activate or deactivate scheduling rules, see xref:administration:task-manage-scheduling-rules-status.adoc[Set scheduling rule mode].

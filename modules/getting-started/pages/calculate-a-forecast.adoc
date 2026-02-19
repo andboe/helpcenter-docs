@@ -1,1 +1,43 @@
 = Calculate a forecast
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Follow the basic steps required to create a forecast.
+:page-aliases: quickstart-forecasting
+
+This article lists the steps necessary to create your first xref:forecast:what-is-forecast.adoc[forecast]. Based on historical data, the forecast calculates the number of employees needed to handle the incoming volumes for an activity in a planning unit.
+This article provides an overview of the procedure of creating a forecast. To learn more about the details of each step, follow the links in this article.
+
+Use this article as a checklist to support your onboarding. Contact your consultant if you have any questions.
+
+[#prerequisite]
+== Prerequisite
+Before you create a schedule, make sure you have correctly xref:getting-started:set-up-base-configuration.adoc[set up your base configuration].
+
+[#1-set-up-an-integration]
+== 1. Set up an integration
+Under _Account > Integrations_{:.breadcrumbs}, set up an xref:acd-integration:how-integrations-work.adoc[integration] with your external system to upload historical data. The integration will upload data to create queues.
+
+[#2-set-up-a-workload]
+== 2. Set up a workload
+Under _Forecast_{:.breadcrumbs}, create xref:forecast:create-workloads.adoc[a workload from the queues created by your integration]. A forecast will be generated within minutes.
+
+Note: To xref:forecast:import-forecast.adoc[import external forecasts] you must select at least one queue. If no queue is present, you must upload at least one data point using a xref:acd-integration:add-csv-integration.adoc[CSV integration].
+
+[#3-create-and-add-events]
+== 3. Create and add events
+Create all xref:forecast:events-and-holidays.adoc[events] that might influence your forecast calculation. Add the created events to the history and forecast within your workload(s) to improve the calculation result.
+
+[#4-save-a-forecast-version]
+== 4. Save a forecast version
+A xref:forecast:save-forecast-versions.adoc[forecast version] is a snapshot of the current calculation result. Save the forecast version for later review or to compare your forecast with the volume on the actual day, e.g. in xref:monitoring:manage-dashboards.adoc[Dashboards].
+
+[#5-calculate-staff-requirements]
+== 5. Calculate staff requirements
+To create optimized schedules or run the job optimization, you must first xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculate the staff requirements] for the corresponding activities within your workloads.
+
+[#whats-next]
+== What's next?
+You've done it! You are now ready to xref:getting-started:create-a-schedule.adoc[create your first schedule] based on your forecast and staff requirements.

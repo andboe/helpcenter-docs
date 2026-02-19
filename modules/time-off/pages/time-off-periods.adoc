@@ -1,0 +1,87 @@
+= Time-off periods
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what time-off periods are and how to work with them.
+:related-articles: vacation-entitlement.adoc, vacation-absences-management.adoc, what-are-scheduling-periods.adoc
+:page-aliases: time-off-periods-beta
+
+include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
+
+Time-off periods are time ranges for which people can request time off in Me.
+Every time-off period is linked to a time-off type, planning unit and, optionally, a selection.
+Only time-off types that are set up as Requestable can be linked to time-off periods.
+
+Once a time-off period is set up and published, people in the assigned planning unit and, if applicable, selection can request time-off for that period and time-off type in Me.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Only people with a role that grants the Access time off permission can request time off.
+Roles are assigned to people in _Account > Roles_{:.breadcrumbs}.
+Learn more about xref:account:role-permissions.adoc[role permissions].
+====
+Use
+xref:scheduling:what-are-scheduling-periods.adoc[scheduling periods]
+to allow people
+xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[to see their schedules],
+xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[exchange shifts],
+and
+xref:scheduling:schedules-shift-bidding.adoc[bid on shifts].
+
+[#status]
+== Status
+Every time-off period has a status that determines whether it is available for people in Me.
+You set a status when you create the time-off period, but you can change the status anytime.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Status
+|Explanation
+|Unpublished
+|People cannot see the time-off period or use it to submit time-off requests. Use this status until you are ready for people to see the time-off period and submit time-off requests.
+|Published
+|People can see the time-off period in Me and use it to submit time-off requests. The time-off period appears in Me with a white background. You cannot set this status if the time-off period has an expired deadline.
+|===
+
+[#send-notifications-when-publishing-time-off-periods]
+=== Notify people of published time-off periods
+To inform people by email about the fact that they can request time-off in a time-off period, proceed as follows:
+
+1. Go to _Time Off > Periods_{:.breadcrumbs}.
+2. Select an existing time-off period or create a new one.
+3. Make sure the status of the time-off period is set to Published.
+4. Activate the **Send notification** checkbox.
+5. Optional: Enter a comment. The comment will be included in the notification email.
+6. Click _Save_{:.doc-button}.
+
+Peopleware sends a notification email to all people that meet the following criteria:
+
+- The person is assigned to the planning unit specified for the time-off period.
+- If applicable, the person is assigned to the selection specified for the time-off period.
+- The assignments are valid at any point within the time-off period.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Peopleware clears the notification settings, including the comment, after saving the time-off period.
+====
+[#manage-time-off-periods]
+== Manage time-off periods
+1. Go to _Time Off > Periods_{:.breadcrumbs}.
+2. Click the {icon-filter-plus} to access filtering options.
+
+The table shows information for all time-off periods that match the filter criteria.
+
+The time-off periods marked with {icon-info-circle} **Inherited** are time-off periods created for a parent planning unit.
+All child planning units inherit the time-off period and the column shows the name of the relevant parent planning unit.
+
+To sort a column, click the table header. To reverse the sorting order, click again.

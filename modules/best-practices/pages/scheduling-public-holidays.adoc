@@ -1,0 +1,97 @@
+= Schedule public holidays
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to handle public holidays in your schedule.
+:related-articles: configure-planning-calendars.adoc
+
+Public holidays can be challenging for scheduling and operations.
+We support you in the following:
+
+- Visualizing the public holiday in your schedule
+- Blocking your schedule if your planning unit is closed
+- Accommodating changes in your business hours as compared to normal days
+
+[#open-treat-public-holidays-as-workdays]
+== Open: Treat public holidays as workdays
+If your planning unit is open regularly on public holidays, you don't need to change your schedules. Handle any public holidays as normal working days.
+
+[#open-with-different-business-hours-planning-calendar]
+== Open with different business hours (planning calendar)
+If your contact center is open on a public holiday, but has different business hours, use a planning calendar. The schedule must comply with the minimum working hours per week. Day models and the working hours defined in contracts must comply with business hours.
+
+1. Create a xref:administration:configure-planning-calendars.adoc[Planning calendar].
+2. Add all relevant public holidays. If your planning unit is closed on weekends, do not add any holidays on weekends.
+3. Assign the Planning calendar xref:administration:create-and-manage-planning-units.adoc[to your planning unit].
+4. In the **Business Hours** section of the planning unit, add the public holidays.
+5. In the **From** and **To** fields, enter the business hours for each day.  
+   On public holidays, Peopleware only generates staff requirements and schedule people within the business hours. Other days will not be affected.
+
+Note: Scheduling rule _2631_{:.id-label} **Do not schedule on holidays** checks the holiday mode. If the scheduling rule and the corresponding checkbox in the contract are activated, you cannot assign activities or day models to employees on public holidays.
+
+[TIP]
+====
+: Public holidays on weekends
+====
+>
+[NOTE]
+====
+If you use the planning calendar and holiday mode, but your planning unit is closed on weekends, remove all public holidays that fall on a weekend from the planning calendar to ensure a correct calculation of working days for the week.
+====
+[#closed-use-paid-full-day-absence-activities]
+== Closed: Use paid full-day absence activities
+If your planning unit is closed on public holidays, schedule a paid full-day activity of type Absence to prevent the creation of a schedule for such days:
+
+1. Create an activity of type Absence, such as Public Holiday.
+2. Check the checkboxes **Paid** and **Allow as Full-Day Activity**.
+3. Assign the activity to your planning unit.
+4. Schedule the Public Holiday activity for all employees on public holidays.  
+   Tip: To add the activity, you can use the **Employee** tab in the dialog in Shift Center. Learn more about xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-activities-day-models-availabilities-or-comments-to-multiple-people[adding multiple items at once].
+
+The target working time for these days is determined as follows:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Configured contract option
+|Details
+|Work Time Guidelines
+|Peopleware calculates the value (Target Work Time per Week / by Number of Working Days)
+|Working Hours for Each Day of the Week
+|Peopleware considers the value entered for the weekday
+|===
+
+Users with the Agent role can see the public holidays in their calendars in _Me > My Calendar_{:.breadcrumbs}.
+
+[#closed-use-the-planning-calendar]
+== Closed: Use the planning calendar
+If your planning unit is closed on public holidays, you can also add public holidays to a planning calendar, which you assign to your planning unit. Your planning unit is automatically closed on such days, when you do not assign any business hours to the public holidays you add to your planning unit.
+
+Public holidays reduce the working hours per week and using a planning calendar can cause problems depending on your contract configuration, for example with such contract:
+
+- Working time per week of 40 hours over five days
+- Minimum and target working time per day of eight hours
+
+With one public holiday in a week, the schedule can only include four working days with eight hours each. **Create optimized schedules** cannot schedule people where the contractual minimum working hours (of 40 hours) per week cannot be met. Even if the minimum number of four working days could be adhered to, no schedule will be created.
+
+Calculation example for the above contract:
+
+- `(Scheduled Working Time / Number of Working Days) * (Number of Working Days - Public Holidays)`
+- `(40 hours / 5 days) * (5 - 1) = 32 hours`
+
+To create a schedule, you would need to lower the values for the minimum working hours to 32 hours and for the minimum number of working days per week to 4 days. The downsides with this approach is that you need to change the contracts for weeks with public holidays (and revert the change for normal weeks again). Also, this configuration could result in scheduling a four-day week in weeks without public holidays if you are overstaffed.
+
+To avoid the need to change contracts on a regular basis, better use the paid full-day absence activities described above.
+
+Note: If the contractual working time is defined in the **Working hours for each day of the week** section, use a paid full-day absence. Otherwise, optimized scheduling cannot create a schedule for such contracts. On the one hand, optimization must schedule a certain number of working hours on certain days, and on the other hand, there are no opening hours on one of these days.
+
+[#visualize-public-holidays-shift-center]
+== Visualize public holidays (Shift Center)
+When you work with a planning calendar to schedule public holidays, the Shift Center will highlight public holidays in the planning unit for which you have added the planning calendar. If you do not use the planning calendar, you can still visualize public holidays in day cells in a separate planning unit, which does not affect your scheduling:
+
+1. Create a separate planning unit and assign a planning calendar. Do not add people or activities.
+2. Add a leading underscore or blank space to the name of the new planning unit, e.g. \_Calendar.  
+   Because the Shift Center displays planning units in alphabetical order, the new planning unit shows up in first position.
+
+   image::scheduling-public-holidays/image-5.png[Planning unit for displaying public holidays, width=90%]

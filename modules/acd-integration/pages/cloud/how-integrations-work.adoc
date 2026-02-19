@@ -1,0 +1,73 @@
+= How integrations work
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how integrations work, which integrations exist, and how to add and delete them.
+:related-articles: install-cloud-link.adoc, import-agent-status-data.adoc
+
+To support your workforce management, Peopleware needs contact and agent status data from external systems, such as Automatic Call Distribution (ACD) or Customer Relationship Management (CRM) systems. For Peopleware to receive and process your data, you need to integrate your ACD and/or CRM.
+
+We offer native vendor-specific integrations and universal integrations, both for cloud and on-premise systems. Depending on the integration, data is imported every 15, 30, or 60 minutes (historical data import), or even within seconds (real-time data import).
+
+[#delivery-modes]
+== Delivery modes
+The delivery mode of an integration determines how Peopleware connects to the external system:
+
+- Cloud integrations connect to and directly import data from a cloud system, e.g. Five9 or Vonage.
+- On-premise integrations use xref:acd-integration:install-cloud-link.adoc[Cloud Link] to connect to a system in your local network, e.g. Genesys Engage or Sikom. Once connected, on-premise integrations will start to import up to three years of historical data.
+
+[#vendor-specific-and-universal-integrations]
+== Vendor-specific and universal integrations
+Vendor-specific integrations are tailored to the specific system and should always be the preferred option. If no vendor-specific integration is available, you can also use one of the universal integration options:
+
+- Database: On-premise integration that uses an SQL query to read data from a database.
+- CSV: File-based integration to import CSV files with Cloud Link.
+- Peopleware API: Cloud integration required for sending HTTP requests to the Peopleware API.
+
+[#which-data-is-imported]
+== Which data is imported?
+Depending on the integration, Peopleware imports contact data, agent status data or both:
+
+- Contact data (calls, chats, social media, tickets, emails, documents) contains the offered and answered volumes, as well as the average handle time, and is used to generate forecasts.
+- Agent status data (login, logout, after-call work, breaks, etc.) contains information about employee activities, such as when they switch from one activity to the next, and it is used for intraday management.
+
+[#add-an-integration]
+== Add an integration
+For details on how to set up your integration, see the following articles:
+
+- xref:acd-integration:add-an-integration.adoc[Add an integration]
+- xref:acd-integration:add-csv-integration.adoc[Add a CSV integration]
+- xref:acd-integration:add-database-integration.adoc[Add a database integration]
+- xref:acd-integration:import-data-with-api.adoc[Import data with Peopleware API]
+
+Once you add an integration, it starts sending data.
+
+Contact data is automatically imported. To work with contact data, add imported queues to a (new) workload to xref:getting-started:calculate-a-forecast.adoc[calculate a forecast]. Then calculate staff requirements and create your schedule.
+
+[NOTE]
+====
+Prerequisite to display agent status data
+====
+>
+[NOTE]
+====
+To see agent status data in Intraday, xref:acd-integration:import-agent-status-data.adoc[map external user and activity IDs]. To do this, pause the data import of your integration first.
+====
+<!-- add list of articles? or generic steps? -->
+
+[#pause-the-data-import]
+== Pause the data import
+The activity mapping is overwritten by the running integration. To retain the mapping and to avoid duplicating activities, pause the data import of the integration by clicking the {icon-pause-circle} next to the integration on the overview page.
+
+To resume the data import when the mapping is done, click the {icon-play-circle}. Missing data will be reimported.
+
+[#delete-an-integration]
+== Delete an integration
+Deleting an integration does not delete the imported data. The queues remain assigned to your workloads. You cannot delete the queues created by an integration.
+
+1. Go to _Account > Integrations_{:.breadcrumbs}.
+2. Click the {icon-edit} next to the integration that you want to delete.
+3. In the bottom right corner, click _Delete integration_{:.doc-button}.
+4. In the confirmation window, click _Yes, really delete_{:.doc-button}.

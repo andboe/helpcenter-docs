@@ -1,0 +1,109 @@
+= Schedule extra activities
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to schedule a defined amount of time for storable activities, such as emails and back-office tasks.
+
+The **Schedule extra activities** functionality replaces scheduled activities of type Presence that are configured as Paid and Replaceable with other activities.
+
+[#when-should-i-schedule-extra-activities]
+== When should I schedule extra activities?
+Use the **Schedule extra activities** functionality to schedule a set amount of person-hours for any activity. The most common use case is to schedule storable activities. Storable activities are activities that do not need to be dealt with inmediately, such as back-office tasks, emails, or support tickets.<br>
+
+[#overview-of-the-process]
+== Overview of the process
+1. Based on xref:#generate-scheduling-suggestions[your input], suggestions are generated for suitable time slots.
+2. You accept or reject the scheduling suggestions. The process is optimized to minimize the impact on the coverage of other scheduled activities.
+
+[#prerequisites]
+== Prerequisites
+To use the **Schedule extra activities** functionality, the following conditions need to apply:
+
+- There is a schedule in the Schedule xref:scheduling:use-levels.adoc[level].<!-- add link to levels once it's been reworked https://help.peopleware.com/tips-on-shift-center-usage#tip-9-working-with-different-levels -->
+- The schedule includes activities of type Presence that are configured as Paid and Replaceable. The **Schedule extra activities** functionality will replace such activities with the activity you select.
+
+[#generate-scheduling-suggestions]
+== Generate scheduling suggestions
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Schedule extra activities_{:.menu-item}.
+3. Click _Set up new extra activity_{:.doc-button} at the bottom left.
+4. In the **Settings** section, configure the extra activity that you want to schedule:
+   - _Planning unit_{:.label}: Select a planning unit from the drop-down menu or type its name in the search bar.<br>
+     After you select a planning unit, you see a message if there are activities of type Presence that are not configured as Replaceable in the planning unit.
+   - **Extra activity to schedule**: Select an activity from the drop-down menu. You only see activities of type Presence configured as Paid.
+   - **Date range**: The period during which you want to schedule the extra activity. By default, the date range is the first working week (Monday to Sunday) after the current date.
+   - **Minimum duration of slots**. The minimum duration of slots in which the extra activity will be scheduled. The default value is 30 minutes. The available values depend on the xref:administration:create-and-manage-planning-units.adoc#create-planning-units[interval defined for the selected planning unit].
+   - **Total person-hours to be scheduled**
+   - (Optional) **Distribute person-hours evenly among people**: Check this checkbox to distribute the total person-hours among scheduled people as evenly as possible. This can worsen the coverage for other scheduled activities. How evenly the hours are distributed also depends on other factors, such as the number of people scheduled for a replaceable activity.
+5. In the **Employees** section, select the people that you want to schedule for the extra activity. By default, you see as pre-selected all people assigned to the selected planning unit who have the required skill(s).
+   - (Optional) Click the {icon-selection-filter-s} or the {icon-schedules-filter-employees-s} to filter out people. By default, all checkboxes are checked.
+   - Uncheck the checkboxes next to the names of the people that you do not want to schedule for the extra activities. Uncheck the checkbox next to **Name** to deselect all people in the list.
+6. Click _Generate suggestions_{:.doc-button} at the bottom of the page.
+   An entry is created in the table in the **Scheduling history** section.
+
+It can take some time to generate scheduling suggestions, depending on the number of employees and the chosen date range. When the process is complete, the status changes. Learn about the possible statuses in the section below.
+
+[#check-the-process-status]
+== Check the process status
+The **Scheduling history** section includes a table with the following information about each suggestion generation process:
+
+- **Initiated on**: Date and time of the process start.
+- **User**: The person who started the process.
+- _Planning unit_{:.label}
+- **Extra activity**
+- **Date range**
+- **Status**: When the process is complete, the status updates. The following table includes the possible statuses:
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Status
+|Description and effect
+|Next step
+|**Suggestions available**
+|The process was successful. Scheduling suggestions for the selected activity have been generated.
+|Learn how to xref:#review-and-apply-scheduling-suggestions[review the suggestions].
+|**Not possible**
+|The process failed. No scheduling suggestions could be created.
+|Click **View conflict** to see why the process failed.
+|**Optimization failed. Please try again**
+|The process could not start.
+|Try starting the process again. If the problem persists, xref:support:create-ticket.adoc[create a ticket] to get support.
+|===
+
+[#review-and-apply-scheduling-suggestions]
+== Review and apply scheduling suggestions
+If the scheduling suggestions were generated successfully, the **Status** column displays the message **Suggestions available**.
+
+1. To display details about the generated suggestions, click **View suggestions**.
+   The page that opens includes the number of person-hours suggested and the number of person-hours that will be scheduled if you apply all suggestions. The page also includes a table with the following columns:
+   - Checkbox column: By default, all checkboxes are checked. To reject a suggestion, uncheck the checkbox next to it.
+   - **Suggested time slot**: The time slot when the extra activity will be scheduled.
+   - **Extra activity to schedule**: The activity that will be scheduled.
+   - **Employee**: The person who will be scheduled for the extra activity in the suggested time slot.
+   - **Replaced activity**: The activity that will be replaced by the extra activity.
+   - **Resulting coverage**: How the coverage changes for all affected activities if you accept the scheduling suggestion(s) for the extra activity.
+2. (Optional) To reject a suggestion, uncheck the corresponding checkbox.<br>
+   The number of person-hours to be scheduled at the top updates.
+3. To apply the selected suggestions, click _Schedule extra activity_{:.doc-button} at the bottom of the page.
+
+[#see-the-scheduling-results]
+== See the scheduling results
+After you apply the suggestions to the schedule, the page updates and displays three tabs with information on the scheduling results. Each tab name includes the number of corresponding person-hours in brackets.
+You can only select a tab if it includes results.
+
+- **Scheduled**: Includes all the scheduling suggestions that you wrote into the schedule.
+- **Failed**: Includes all the scheduling suggestions that could not be scheduled due to errors.
+- **Excluded**: Includes all the scheduling suggestions that you rejected. These suggestions were not written into the schedule.
+
+To see the updated schedule, click **View Schedule**.<br>
+To see the scheduling results, click **View results** in the **Scheduling history** section of the **Schedule extra activities page** at any time.
+
+[#delete-an-entry-from-the-scheduling-suggestions-history]
+== Delete an entry from the scheduling suggestions history
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. From the _Scheduling actions_{:.doc-button} drop-down menu, select _Schedule extra activities_{:.menu-item}.
+3. In the **Scheduling history** section, check the checkbox next to the entry that you want to delete. Check the checkbox in the table header to select all entries.
+4. Click _Delete entries_{:.doc-button}.<br>
+   The extra activities that you already entered in the schedule will not be removed.

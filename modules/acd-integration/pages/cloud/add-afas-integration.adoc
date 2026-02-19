@@ -1,0 +1,147 @@
+= AFAS
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your AFAS HR system to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc
+
+An AFAS integration is a cloud integration that imports people data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#prerequisite]
+== Prerequisite
+Before you add an AFAS integration in Peopleware, set up an app connector in the AFAS system. The app connector ensures that Peopleware can access the relevant data. To learn how to set up the app connector, refer to the AFAS documentation.
+
+[#add-an-afas-integration]
+== Add an AFAS integration
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Before the first import run, all personnel numbers in Peopleware must consistently match the `Medewerker` values in AFAS. These personnel numbers serve as the unique identifier between the two systems.
+====
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **AFAS**.
+5. Click _Save_{:.doc-button}.
+
+The AFAS integration synchronizes people and contract data daily.
+
+[#settings-and-parameters]
+== Settings and parameters
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Name
+|Unique name for your integration
+|===
+
+[#credentials]
+=== Credentials
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Environment ID
+|Your AFAS sub-domain (e.g., https://<customerID>.rest.afas.online)
+|Connector name
+|The name of your AFAS connector (e.g. Peopleware_Medewerker_Contracten).
+|API Token
+|Your AFAS API authentication token.
+|===
+
+[#data-mapping]
+=== Data mapping
+For accurate data transfer, Data mapping connects the AFAS system data to Peopleware fields. Each field represents a data field in Peopleware. To complete the mapping, enter the technical identifier from AFAS that matches the correct type of data for each field.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Personnel number
+|Unique employee ID used for matching people across systems
+|First name
+|Person's first name
+|Last name
+|The person's last name
+|Last name prefix
+|Person's family name prefix (e.g. “van”, “de” if applicable)
+|Email
+|Person's email address, also used for Peopleware login
+|Staff membership valid from
+|Employment start date
+|Staff membership valid to
+|Employment end date
+|Contract valid from
+|Start date of the person's contract
+|Contract valid to
+|End date of the person's contract
+|Working days per week
+|Number of working days per week for the contract
+|Working hours per week
+|Number of working hours per week for the contract
+|Reduction of working hours per week
+|Hours of long-term absence (e.g. parental leave) per week, used to reduce the weekly working hours in the Peopleware contract mapping
+|===
+
+[#configuration]
+=== Configuration
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Send welcome email
+|Option to automatically send a welcome email to each person imported from AFAS to Peopleware.
+|Default calculation for workdays
+|Method to interpret working days: +Standard: Fixed working days schedule +Flexible: Adjustable working days (recommended)
+|===
+
+== Data handling
+
+The sections below present information to consider for the data import from AFAS to Peopleware.
+
+[#duplicate-or-overlapping-records]
+=== Duplicate or overlapping records
+If people appear twice or if data overlaps between integrations, verify that the personnel numbers are consistent across systems. Multiple integrations referencing the same people can cause conflicts. Avoid overlapping data sources.
+
+[#decimal-working-days]
+=== Decimal working days
+When importing people with decimal values in working days, the integration automatically rounds up these values.
+For example, if a person is listed as working 2.5 days, the system will import it as 3 days.
+
+[#people-with-zero-working-days-or-hours]
+=== People with zero working days or hours
+People with 0 working days and 0 working hours per week defined in AFAS are typically on-call employees. For such people, Peopleware defines 1 working day per week and 0:00 target working hours per week in contracts.
+
+[#contract-assignment-during-import]
+=== Contract assignment during import
+Peopleware imports work schedules from AFAS as contracts. For persons with multiple work schedules, Peopleware creates and assigns one contract for each work schedule.
+
+The contract's start and end dates are sourced from the following AFAS fields:
+
+- `Begindatum_rooster` (Start date)
+- `Einddatum_rooster_2` (End date)
+
+New contracts use the following naming convention:
+
+- **Without long-term absence**: `{personnel number} {working days per week}/{working hours per week}`  
+  Example: `123456 4.0/32.0`
+- **With long-term absence** (using the `Uren ouderschapsverlof per week` field): `{personnel number} {working days per week}/{working hours per week}-{long-term absence}`  
+  Example: `123456 4.0/32.0-8`
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Before you import data from AFAS for the first time, assign a separate contract to each person in Peopleware. Make sure the contract names match the expected format. This helps the integration recognize and match existing contracts correctly, and avoids creating duplicates.
+====
+Before assigning a contract, Peopleware checks if a contract with the same name already exists for the person. The name must exactly match the expected format, which includes working days, working hours, and long-term absence if applicable. If any of these details differ from the existing contract, Peopleware treats it as a new schedule and creates a new contract.

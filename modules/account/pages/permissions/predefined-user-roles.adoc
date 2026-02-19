@@ -1,0 +1,47 @@
+= Predefined roles
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn more about the roles that come predefined by Peopleware.
+:related-articles: configure-user-roles.adoc
+:page-aliases: user-roles-in-detail
+
+Peopleware provides predefined roles, each with a set of permissions tailored to the requirements of the role.
+
+The following roles are predefined:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Role
+|Description
+|Everyone
+|A default role that is automatically assigned to every user account. Use this role to assign permissions that every user should have.
+|Standard Planner
+|A role for people that create and edit forecasts and schedules, generate reports and add user accounts.
+|Standard Agent
+|A default role that grants access to the features available in **Me**. Which features are available depends on how an admin set up **Me**.
+|Standard Supervisor basic
+|A role for supervisors that need to view schedules, view time-off and vacation data, check adherence or create reports.
+|Standard Supervisor advanced
+|A role for supervisors with more advanced requirements, such as editing schedules, managing user accounts and roles or adding meetings.
+|Standard Finance
+|A role that grants access to price plan and user count data.
+|===
+
+The roles Everyone and Standard Agent come predefined as default roles, i. e. they are automatically assigned to every new user account.
+The default role setting can be disabled for the Standard Agent role, but not for the Everyone role.
+For more information on how to set up roles, see xref:account:configure-user-roles.adoc[Configure roles].
+
+Predefined roles have a set of permissions, which can be edited.
+To view or edit the permissions of a role, go to _Account > Roles_{:.breadcrumbs}.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Each predefined role specifies additional permissions in _WFM > Administration > System > Role Authorization_{:.breadcrumbs} to control access to WFM features.
+====

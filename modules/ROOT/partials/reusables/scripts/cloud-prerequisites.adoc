@@ -1,0 +1,12 @@
+To use this script, you must transfer your forecast to the WFM first:
+1. Go to *Forecast*{:.menu-item}.
+2. Select a **Workload** from the dropdown menu.
+3. Select a **time frame**.
+4. Click *Use Forecast*{:.doc-button}.  
+
+This is how you configure the calculation method to select the script in your workload:
+1. Go to *Forecast*{:.menu-item}.
+2. Select the **Workload** from the dropdown.
+3. Click on *Edit Calculation Method*{:.doc-button}. (Only available on days with forecast data.)
+4. Select **Other** from the *Calculation Method* dropdown menu.
+5. Click on *Save Configuration*{:.doc-button}.

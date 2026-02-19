@@ -1,0 +1,36 @@
+= Configure WFM Settings
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:description: Learn how to configure WFM Settings
+
+This article explains how to configure WFM settings.
+
+== Prerequisites
+
+Changes to WFM settings are complex and can result in scheduling errors if done incorrectly. Before changing WFM settings, contact your consultant.
+
+=== Permissions
+
+To edit the **Personal value** of a WFM setting, your role needs read access to Settings.
+To edit both the **Personal value** and **System value** of a WFM setting, your role needs Admin access.
+
+== Edit WFM settings
+
+1. Go to _Account > WFM Settings_{:.breadcrumbs}.
+2. Select a setting.
+3. (Optional) In the **System value** field, enter a value. If applicable, enter a value in the **Personal value** field. To reset the value to its previously saved value, click _Reset_{:.doc-button}.
+4. Click **Save**.
+
+=== Configure overrides
+
+Overrides let you apply a different setting value for specific people, instead of using the values defined for everyone. To specify dedicated values for individual people, proceed as follows:
+
+1. Go to _Account > WFM Settings_{:.breadcrumbs}.
+2. Select a setting.
+3. In the **Overrides for individual people** section, click **+Add**.
+4. Select people. To shorten the list of people, use the search field.
+5. Enter an override value.
+6. Click _Save_{:.doc-button}.

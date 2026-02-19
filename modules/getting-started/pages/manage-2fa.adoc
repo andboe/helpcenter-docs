@@ -1,0 +1,54 @@
+= Manage 2FA
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to activate and deactivate 2FA for your people.
+:page-aliases: 2fa
+
+[NOTE]
+====
+Only people with admin access can manage two-factor authentication (2FA) for other people.
+====
+[#see-other-peoples-2fa-settings]
+== See other people's 2FA settings
+To see other people's current 2FA status, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs}.
+2. A shield icon indicates the 2FA status for each person. Hover over it to see more information.
+   - {icon-red-exclamation-mark-shield}: 2FA is not active.
+   - {icon-orange-exclamation-mark-shield}: 2FA was enforced for the person. The person has to activate 2FA on their next login.
+   - {icon-orange-check-shield}: 2FA is active. The person activated 2FA themselves.
+   - {icon-green-check-shield}: 2FA is active. The use of 2FA was enforced.
+
+[#enforce-2fa-activation-for-other-people]
+== Enforce 2FA activation for other people
+You can make other people activate 2FA. Enforcing 2FA for other people has the following consequences:
+
+- People will not able to log in if they don't activate 2FA.
+- People will not be able to deactivate 2FA for themselves anymore.
+
+Before you enforce 2FA for other people, make sure that they have access to one of the xref:getting-started:use-two-factor-authentication.adoc#prerequisite-install-an-authenticator-app[supported authenticator apps].
+
+[#enforce-2fa-activation-for-individual-people]
+=== Enforce 2FA activation for individual people
+1. Go to _People_{:.breadcrumbs}.
+2. Select a person from the list
+3. In the left-side menu, click **Access**.
+4. In the **Password and authentication** section, click _{icon-check-circle} Enforce 2FA_{:.doc-button}.
+
+[#enforce-2fa-activation-for-everyone]
+=== Enforce 2FA activation for everyone
+1. Go to _Account > Security_{:.breadcrumbs}. On this page, you can see the current distribution of 2FA among your people.
+2. Click _Enforce 2FA for all users_{:.doc-button}.  
+   You will see a green success message. The button text will change to _Revoke enforcement_{:.doc-button}.
+
+[#deactivate-2fa-for-individual-people]
+=== Deactivate 2FA for individual people
+In some cases, you may want to deactivate 2FA temporarily for individual people, or exclude some people from 2FA enforcement.
+
+1. Go to _People_{:.breadcrumbs}.
+2. Select a person from the list.
+3. In the left-side menu, click **Access**.
+4. In the **Password and authentication** section, click _Revoke 2FA enforcement_{:.doc-button}.

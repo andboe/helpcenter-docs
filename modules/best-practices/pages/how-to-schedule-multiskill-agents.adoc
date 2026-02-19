@@ -1,0 +1,53 @@
+= Schedule multiskill agents
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Schedule multiskill agents using optimized scheduling.
+
+Contact centers offer their customers multiple channels, e.g. phone numbers for orders, or email and chat for complaints, which requires multiple skills. Not all agents are skilled in all areas, and they can only handle contacts they are skilled for.
+
+[#representation-in-peopleware]
+== Representation in Peopleware
+Optimized scheduling supports multiactivities that allow you to schedule multiskill or multichannel tasks.
+
+Each input channel represents a subactivity and each employee skill a corresponding Peopleware skill. During scheduling, all employee skills are included simultaneously in the staff requirements calculation. This causes a pooling effect, so that the total requirement for agents decreases because all necessary skills are covered by fewer employees.
+
+[#recommended-approach]
+== Recommended approach
+1. Create a xref:administration:activity-types-and-properties.adoc#subactivities[Multiactivity].
+
+2. Create the forecast. For multiactivity, you will need a workload for each skill and each contact channel.
+
+3. Calculate the multiactivity staff requirements by using the `Calls - Multiactivity` requirement calculation. For more information, see xref:forecast:ref-requirement-calculations.adoc#calls-multi-activity[Staff requirement reference guide].
+
+4. Run the **Create optimized schedule** functionality.
+
+[#scheduling-result]
+=== Scheduling result
+In _Shift Center_{:.menu-item}, the schedule only contains the multiactivity. The subactivities are visible in the parameter window:
+
+image::how-to-schedule-multiskill-agents/image-2.png[Shift Center with parameters for multiactivity]
+
+[NOTE]
+====
+Hint
+====
+>
+[NOTE]
+====
+You cannot add up the staffing values for each subactivity to calculate the value for the multiactivity
+====
+>
+[NOTE]
+====
+The multiactivity staffing always equals the number of people that has been scheduled. The Shift center does not display absolute numbers for subactivities, but the number of people skilled to perform this task. When people are skilled for multiple subactivities, the subactivity staffing values can be as high as the multiactivity staffing at maximum.
+====
+To see a person's assigned activities for a day, double-click a day cell and select the **Multi-Activities** tab.
+
+image::how-to-schedule-multiskill-agents/image-1.png[subactivities in shift center dialog, width=60%]
+
+For intraday management, xref:monitoring:manage-dashboards.adoc[Dashboards] can display the coverage and staffing for multiactivities and their subactivities. Pull the staffing for the single subactivities and the multiactivity itself into the chart.
+
+image::how-to-schedule-multiskill-agents/image-3.png[Multiactivity staffing dashboard]

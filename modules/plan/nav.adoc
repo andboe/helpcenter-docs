@@ -1,1 +1,2 @@
-* xref:plan.adoc[]
+* Plan
+** xref:plan.adoc

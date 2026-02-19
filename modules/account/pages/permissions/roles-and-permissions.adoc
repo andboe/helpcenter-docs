@@ -1,0 +1,57 @@
+= Roles and permissions
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Understand the concepts behind roles and permissions.
+:related-articles: configure-user-roles.adoc, role-permissions.adoc, ref-roles.adoc
+
+Access management in Peopleware is based on roles and permissions.
+
+A role groups a set of xref:#permissions[permissions]. A permission grants access to individual features and objects. Roles are assigned to people.
+
+== Roles
+
+Roles represent a set of permissions, usually matching a specific job function or responsibility. They simplify permission management by allowing you to manage access at the group level instead of the individual level.
+
+=== Predefined roles
+
+A predefined role is a role provided by Peopleware with a standard set of permissions. Predefined roles cannot be deleted, but can be edited.
+
+=== Default roles
+
+Default roles are roles that Peopleware automatically preselects when you create a new person in People. This ensures that every new person has a minimum set of permissions.
+
+You can unassign default roles from a person at any time.
+
+== Permissions
+
+Permissions define what people can do and what data they can access in Peopleware. There are different types of permissions:
+
+- Functional permissions
+- Object permissions
+
+A role can be granted both functional and object permissions for a quick and easy setup.
+
+Alternatively, specific roles can only have functional or object permissions. This approach requires a bit more effort to set up, but it is more flexible.
+
+=== Functional permissions
+
+Functional permissions define what people can see or do in a Peopleware app or feature. Examples:
+
+- View schedules
+- Create dashboards
+- View, edit, or delete people
+
+=== Object permissions
+
+Object permissions control which actions people can perform on specific data objects, such as a planning unit or a number of selections.
+
+Example:
+
+- Which planning units a role can view or edit
+- Which selections a role can view or edit
+- Which day models or activities a role can access
+
+You can define object permissions in _WFM > System > Role Authorization_{:.breadcrumbs}. Object permissions for Workloads, Dashboards, and Roles are configured in _Account > Roles_{:.breadcrumbs}.

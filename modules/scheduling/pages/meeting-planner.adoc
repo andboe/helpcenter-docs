@@ -1,0 +1,126 @@
+= Meeting Planner
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: classic, on-premise
+:topic-type-concept:
+:description: Schedule meetings with the Meeting Planner (SchedulePro).
+
+In the Meeting Planner, you can schedule meetings and assign them to people.
+
+[NOTE]
+====
+This article is about _WFM > Scheduling > SchedulePro > Meeting Planner_{:.breadcrumbs}.
+====
+>
+[NOTE]
+====
+If you are using Advanced WFM or Enterprise WFM, use the xref:scheduling:meetings-overview.adoc[Meetings] feature under _Plan > Meetings_{:.breadcrumbs} instead.
+====
+Using the meeting parameters that you define and the people you select, the page displays possible meeting times containing a certain activity. Select one or more of the meeting time suggestions and insert the meeting information in the _Schedule_ level of the _Shift Center_{:.menu-item}.
+
+The program tries to find potential meeting times that match the parameters you enter. To reflect the two different search criteria, the program window is divided into two parts: the Meeting Parameters and Employees sections.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Only Employees who are already scheduled for the period for which you want to schedule a meeting will be included in the search.
+====
+[#setting-meeting-parameters]
+== Setting meeting parameters
+First, set the required parameters in the Meeting Parameters section.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Activity
+|Select the activity to schedule for the meeting. All activities created in the _Administration_{:.menu-item} section are available for selection. Activities are displayed in alphabetical order.
+|Duration
+|Enter the duration of the meeting in hours and minutes. The default duration is one hour.
+|Start Date
+|Select the start date for the period during which the meeting is to take place. Note that the start date can only be the same as or earlier than the end date.
+|End Date
+|Select the end date for the period during which the meeting is to take place. Note that the end date can only be the same as or later than the start date. You can set the search period to a maximum of one year.
+|Search Daily
+|Check this checkbox if you want the entered start and end times to count as possible start and end times for each day within the search period. Note that this checkbox only changes the behavior for periods longer than one day. If this checkbox is checked, the system verifies whether a meeting can take place each day between the specified start and end times. For example, if you enter Monday to Friday from 09:00 to 17:00, the result can only be a meeting within that time frame, for example, Tuesday 11:00. However, if this checkbox is not checked, the system checks whether a meeting can take place at any time between 9:00 a.m. on Monday and 5:00 p.m. on Friday. This would mean that a meeting on Tuesday at 07:00 is possible. If the checkbox is checked, alternative start and end dates for the meeting can also be specified.
+|Start Time
+|Enter a desired time for the start of the period during which the meeting is to take place. The default time is 00:00.
+|End Time
+|Enter a desired time for the end of the period during which the meeting is to take place. The default time is 00:00.
+|Alternative Start Time
+|If the `Search Daily` checkbox is checked, you can enter an alternative time to the `Start Time for the start of the period within which the meeting to be planned is to take place. The default time is 00:00.
+|Alternative End Time
+|If the 'Search Daily' checkbox is checked, you can enter an end time for an alternative time period in which the meeting should be scheduled. The default time is 00:00.
+|Search Time Interval
+|Select the interval that you want to search for available Employees for the meeting. You can choose between 5; 10; 15; 30 and 60 minutes. For example, if you select a search time interval of 10 minutes, the system checks every 10 minutes whether an Employee could attend a meeting within the specified time period. The default value is 30 minutes.
+|Ignore Breaks
+|Check this checkbox if you want to ignore employee breaks when searching for a time at which the meeting can be scheduled. If this checkbox is not checked, employee breaks are considered locked time during which an Employee cannot attend a meeting.
+|Minimum number of Employees
+|Enter a value for the minimum number of Employees who should participate in the meeting. If the field is left empty, this means that any number of Employees can participate. This field is blank by default.
+|Maximum number of Employees
+|Enter a value for the maximum number of employees who should participate in the meeting. If the field is left empty, this means that any number of Employees can participate. This field is blank by default.
+|Maximum Simultaneous Meetings
+|Enter the maximum number of meetings that can be held at the same time. If the field is left empty, this means that there can be any number of meetings. This field is blank by default.
+|Comment for Employees
+|Enter a comment that should be displayed to the employees in Me after the meeting has been assigned as well as to the planners in the _Shift Center_{:.menu-item}. The input is limited to a maximum of 30 characters.
+|===
+
+[#selecting-employees]
+== Selecting employees
+After setting the meeting parameters, select which employees should be considered for the meeting.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|Planning Units
+|Select one, several or all planning units for the meeting. To choose multiple planning units at once, press and hold the _CTRL_{:.doc-button} key while selecting the entries. By default, `[All]` is selected.
+|Selections
+|Select one, several or all selections for the meeting to be scheduled. To choose multiple selections at once, press and hold the _CTRL_{:.doc-button} key while selecting the entries. By default, `[All]` is selected.
+|Employees
+|Select one, several or all employees for the meeting to be scheduled. To choose more than one employee at a time, press and hold the _CTRL_{:.doc-button} key while selecting the entries. By default, `[All]` is selected.
+|When searching ignore employees who have the following activities
+|Check this checkbox if you want to ignore employees who are assigned certain activities in the schedule when searching for a time for the meeting to be scheduled. Select then one or more activities from the available list. To select multiple activities at the same time, press and hold the _CTRL_{:.doc-button} key while selecting the entries. By default, `[All]` is selected.
+|When searching do not include employees who have a meeting with the same activity within the specified period
+|Check this checkbox if you want to ignore employees who have already been assigned a meeting with the same activity in the schedule in the specified time period when searching for a time for the meeting to be scheduled.
+|Start Date
+|Select the start date for the period during which you want to check for a meeting that has been scheduled with the same activity.
+|End Date
+|Select the end date for the period during which you want to check for a meeting that has been scheduled with the same activity.
+|===
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You must select a minimum of one planning unit, selection or employee for the search as the simultaneous selection of `[All]` for all three fields is not permitted.
+====
+To start the search for possible meeting times, confirm your selection with _OK_{:.doc-button}. With _Cancel_{:.doc-button} you can reset all parameters.
+
+[#scheduling-meetings]
+== Scheduling meetings
+The results overview displays the suggested meeting times and it is limited to a maximum of 50 entry. For each entry, the following information is provided.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Description
+|Date
+|Displays the date for each suggested meeting time.
+|Start Time
+|Displays the start time for each suggested meeting time.
+|Affected Activities
+|Displays all the activities where coverage would be affected by scheduling this meeting.
+|Coverage
+|This column displays the number of Employees by which the coverage of the affected activity would be reduced if the suggested meeting is scheduled.
+|===
+
+Click the _Schedule_{:.doc-button} in the column `Scheduling Selection` for each meeting suggestion that you want to schedule. The meeting will then be transferred to the `Schedule` level of the _Shift Center_{:.menu-item} and assigned to the relevant Employees. When the process is complete, an information message advising the successful scheduling of the meeting is displayed. The _Schedule_{:.doc-button} is not available for suggested meeting times that violate existing scheduling rules, and therefore cannot be scheduled.
+
+You can view the results of scheduling meetings in the `Schedule` level of the _Shift Center_{:.menu-item}. For every Employee who has been assigned a meeting, the comments entered are displayed along with information about the meeting in the `Comment` tab of the entry dialog in _Shift Center_{:.menu-item}.

@@ -1,0 +1,173 @@
+= Set up shift bidding
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Generate shifts for the shift bidding process, invite people to bid on them, run a lottery, and publish the schedule (Schedules).
+:related-articles: configure-me.adoc, what-are-scheduling-periods.adoc, edit-or-delete-staff-requirements.adoc, schedules-shift-requirement.adoc, schedules-job-optimization.adoc, view-approve-shift-swap-requests.adoc, notifications.adoc
+
+Shift bidding is a scheduling method you can combine with other scheduling methods. Use shift bidding to allow people to express their shift preferences and take part in the scheduling process. Schedule your shifts with xref:scheduling:scheduling-methods.adoc[other scheduling methods] before setting up the shift bidding.
+
+[#prerequisites]
+== Prerequisites
+- You have xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculated staff requirements].
+- You have created a xref:scheduling:what-are-scheduling-periods.adoc#create-scheduling-periods[scheduling period] with the status _Unpublished_{:.label} for the relevant planning unit.
+- You have xref:scheduling:schedules-shift-requirement.adoc[set up shift requirements] for your xref:administration:daymodel-creation.adoc[day models].
+
+[#shift-bidding-process]
+== Shift bidding process
+The shift bidding process includes the following steps:
+
+1. xref:#generate-shifts[Generate shifts].
+2. xref:#invite-people-to-bid-on-shifts[Invite people to bid on shifts].
+
+   > Warning
+   >
+   > Do not re-run the shift generation without a backup of bids when people started bidding. If the shift generation is re-run, all bids already placed are deleted from the Request and Alternative Request levels. To re-insert bids, xref:scheduling:use-levels.adoc[back up all shift requests] in an unused level, e.g. Version 1 and copy bids back to the original level before you starting again.
+
+3. xref:#run-the-shift-lottery[Run the shift lottery].
+4. xref:#assign-remaining-shifts[Assign the remaining shifts].
+5. xref:#optimize-shifts-and-publish-the-scheduling-period[Optimize shifts and publish the scheduling period].
+
+[#generate-shifts]
+=== Generate shifts
+In _Plan > Schedules_{:.breadcrumbs}, you can generate shifts for scheduling periods as follows:
+
+1. Click _Scheduling periods_{:.doc-button}.
+2. From the drop-down menus, select the following:
+   - **Planning unit**
+   - (Optional) **Selection**  
+     The table displays all scheduling periods for the selected planning unit (and selection).
+3. Hover over the scheduling period for which you want to generate shifts and select _Generate shifts_{:.doc-button} from the three-dot menu on the right.
+4. Set the _Shift generation requirement_{:.label} percentage value. A percentage value below 100% creates fewer shifts, e.g. when your planning unit is understaffed. A value over 100% creates additional shifts, e.g. for unexpected time off.
+5. Select an option that will be used as the upper limit when generating shifts:
+   - _of the staff requirements_{:.label}
+   - _of the contractual hours_{:.label}
+
+   > Note
+   >
+   > If you do not configure maximum values for shift requirements, staff requirements for your activities or contractual hours define the maximum number of shifts generated.
+
+6. Click _Generate shifts_{:.doc-button}.
+
+The shift generation starts. You can track the progress of the job via Job status page. See xref:general:jobstatus.adoc[Job status].
+
+To change the shift generation result, xref:scheduling:schedules-shift-requirement.adoc#adjust-shift-requirements[edit the shift requirements for single days].
+
+=== Key figures related to the shift generation result
+
+In _Plan > Shift Center_{:.breadcrumbs}, you can find key figures related to the shift generation result. On the _Activities_{:.label} and _Day models_{:.label} tabs at the bottom of the table, right-click a cell to display the following figures:
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Key figure
+|Description
+|Tab
+|Staffing According to Shift Requirement
+|Number of shifts generated to cover staff requirements for the selected activity in the displayed interval. This represents the coverage of staff requirements if all generated shifts were staffed.
+|Activities
+|Coverage According to Shift Requirement
+|Difference between the shifts required in the displayed interval and the shifts actually generated for that interval.
+|Activities
+|Requirement
+|Shifts generated for each day model.
+|Day models
+|===
+
+[#invite-people-to-bid-on-shifts]
+=== Invite people to bid on shifts
+Scheduling periods allow you to manage which planning units or selections can bid on shifts. To invite people to bid on shifts, follow these steps:
+
+1. In _Plan > Schedules_{:.breadcrumbs}, click _Scheduling periods_{:.doc-button}.
+2. Hover over the scheduling period for which you want to allow shift bidding and click the {icon-edit} on the right.
+
+   > Note
+   >
+   > Bids are limited to a maximum of 100 days in advance even if scheduling periods are longer than 100 days.
+
+3. Configure the following fields:
+   - (Optional) _Selection_{:.label}: Additional option to limit who can bid on shifts in the planning unit.
+   - (Optional) _Deadline_{:.label}: Date by which people can place their shift bids.
+   - _Status_{:.label}: Select _Shift bidding enabled_{:.label} for periods with no deadline or a deadline in the future.
+
+4. Click _Save_{:.doc-button}.  
+   Peopleware sends a xref:getting-started:notifications.adoc[notification] about the scheduling period status to all the relevant people.
+
+To close the bidding period again, set the scheduling period status to _Unpublished_{:.label}.
+
+=== See placed bids in the Request and Alternative Request levels
+
+To see the placed bids, add the Request and Alternative Request levels to the view as follows:
+
+- In _Plan > Schedules_{:.breadcrumbs}, xref:scheduling:schedules-overview.adoc#level-column[use the filter in the _Level_{:.label} column].
+- In _Plan > Shift Center_{:.breadcrumbs}, xref:scheduling:shift-center-overview.adoc#action-bar[use the _Levels_{:.label} filter in the action bar].
+
+[#run-the-shift-lottery]
+=== Run the shift lottery
+After the deadline has passed or you have stopped the shift bidding, assign shifts with the shift lottery. You can use xref:administration:selections.adoc[selections] to run the shift lottery for separate groups within the planning unit.
+
+To run the shift lottery, follow these steps:
+
+1. In _Plan > Schedules_{:.breadcrumbs}, click _Scheduling periods_{:.doc-button}.
+2. Hover over the scheduling period for which you want to run the shift lottery and select _Start shift lottery_{:.doc-button} from the three-dot menu {icon-context-menu} on the right.
+3. In the window that opens, configure the following parameters:
+   - _Consider average start time of other shifts_{:.label}: If activated, the average shift start time is considered as a reference when assigning shifts.
+   - (Optional) _Tolerance_{:.label}: A xref:#set-the-right-tolerance-value[tolerance window] around the average start time of a person's shifts in hours (hh:mm format).
+
+4. In the _Employees_{:.label} section, select the people who you want to include in the shift lottery. By default, Peopleware displays and pre-selects all people assigned to the selected planning unit.
+   - (Optional) Click the {icon-schedules-filter-employees-u} or the {icon-filter-u} to filter out people. By default, all checkboxes are checked.
+   - Uncheck the checkboxes next to the names of people whom you want to exclude from the shift lottery. Uncheck the checkbox next to _Name_{:.label} to deselect all people in the list.
+
+5. Click _Start shift lottery_{:.doc-button}.
+
+A job for the shift lottery starts in the background. You see a success or an error message at the top of the page.<br>Go to xref:general:jobstatus.adoc[Job status] to track the progress. When the job is concluded, the shifts assigned by the shift lottery are added to the Schedule level.
+
+If the job fails, click the related entry or the report icon to see more information. The report includes the reasons why a bid has not been scheduled as well as daily and total lottery quotas in %. <!-- needs checking -->
+
+[#assign-remaining-shifts]
+=== Assign the remaining shifts
+After running the shift lottery, some shifts might not have been assigned because no one bid on them. In this case, use the _Assign shifts_{:.label} functionality to assign the remaining shifts to people who received no or not enough shifts:
+
+1. In _Plan > Schedules_{:.breadcrumbs}, click _Scheduling periods_{:.doc-button}
+2. Hover over the scheduling period for which you want to assign shifts and select _Assign shifts_{:.doc-button} from the three-dot menu {icon-context-menu} on the right.
+3. In the window that opens, configure the following parameters:
+   - _Consider average start time of other shifts_{:.label}: If activated, the average shift start time is considered as a reference when assigning shifts.
+   - (Optional) _Tolerance_{:.label}: A xref:#set-the-right-tolerance-value[tolerance window] around the average start time of a person's shifts in hours (hh:mm format).
+
+4. In the _Employees_{:.label} section, select the people to whom you want to assign the remaining shifts. By default, Peopleware displays and pre-selects all people assigned to the selected planning unit.
+   - (Optional) Click the {icon-schedules-filter-employees-u} or the {icon-filter-u} to filter out people. By default, all checkboxes are checked.
+   - Uncheck the checkboxes next to the names of people to whom you do not want assign the remaining shifts. Uncheck the checkbox next to _Name_{:.label} to deselect all people in the list.
+
+5. Click _Assign shifts_{:.doc-button}.
+
+A job for the assignment of the remaining shifts starts in the background. You see a success or an error message at the top of the page.<br>Go to xref:general:jobstatus.adoc[Job status] to track the progress or view a job report. The report lists the assigned and unassigned shifts. When the job is concluded, the assigned shifts are added to the Schedule level.
+
+After using the _Assign shifts_{:.label} functionality, there may still be unassigned shifts, e.g., because there are not enough people with the respective skills to cover the shifts. You can reconfigure the parameters in steps 3 and 4, then reassign shifts or xref:scheduling:schedules-edit.adoc[manually change your schedule]. Alteratively, you can use the xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedule] functionality to assign more shifts based on achieving a higher coverage.
+
+[#optimize-shifts-and-publish-the-scheduling-period]
+=== Optimize shifts and publish the scheduling period
+After assigning the remaining shifts, optimize scheduled activities and breaks of the scheduling period with the xref:scheduling:schedules-job-optimization.adoc[Job optimization].
+
+When you finish scheduling your shifts, set the scheduling period status to _Published_{:.label} to allow people to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[see their schedules]. Learn how you can allow people to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[swap shifts].
+
+[#set-the-right-tolerance-value]
+== Set the right tolerance value
+Tolerance represents a time window around the average shift start time of a person when using the Shift lottery and Assign shifts functionalities. When a tolerance value is set, only shifts within the tolerance window are assigned. The shift start time for the tolerance window is calculated in two different ways:
+
+- If you have already scheduled shifts for a person (e.g. by inserting shift sequences), Peopleware calculates the average shift start time of the scheduled shifts. For example, with two shifts starting at 8:00 and 12:00, the average shift start time is 10:00. If you set the tolerance value to 1:00, shifts starting between 9:00 and 11:00 are assigned to the person.
+- If you have not scheduled shifts for a person, the first shift assigned to the person determines the average shift start time. For example, if the first shift assigned starts at 9:00, and you set the tolerance value to 1:00, Peopleware assigns shifts starting between 8:00 and 10:00 to the person.
+
+[#edit-the-generated-shifts]
+== Edit the generated shifts
+In _Plan > Shift Center_{:.breadcrumbs}, you can check the generated shifts per day and edit the number of required shifts if necessary. To edit the shifts, proceed as follows:
+
+1. In the parameter area, click the **Day Models** tab.
+2. Right-click a cell and select **Edit Shift Requirement...**.
+3. Select how to display the day models:
+   - Alphabetical order: Click the {icon-plus} in the row **All shifts according to name**.
+   - Chronological order: Click the {icon-plus} in the row **All shifts according to time**.
+
+4. Click the {icon-plus} on the left of a day model to expand it. For each day model, the number of generated shifts is shown in the **Requirement** column.
+5. Click a cell in the **Requirement** column next to a day model and enter a new value.
+6. Click _OK_{:.doc-button} to save your changes.

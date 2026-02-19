@@ -1,0 +1,47 @@
+= Use keyboard shortcuts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn about the various keyboard shortcuts that can speed up your usage of the Shift Center.
+
+In _Plan > Shift Center_{:.breadcrumbs}, you can use keyboard shortcuts to save time on your Shift Center usage.
+
+New to the Shift Center? Learn xref:scheduling:shift-center-overview.adoc[the basics] first.
+
+[#navigation]
+== Navigation
+- **Arrow keys**: Move up, down, left, and right to the next element
+- **TAB**: Move to the next element to the right
+- **CTRL + F**: Find an employee and jump to them
+- **CTRL + G**: Jump to a date
+- **CTRL + K**: Display or close the xref:scheduling:shift-center-overview.adoc#message-area-[message area]
+
+[#cut-copy-and-paste]
+== Cut, copy, and paste
+- **CTRL + C**: Copy all selected elements
+- **CTRL + X**: Cut all selected elements
+- **CTRL + V**: Paste cut or copied elements
+
+[#schedule-modification]
+== Schedule modification
+- **CTRL + N**: Create a new activity
+- **CTRL + M**: Modify the selected activity
+- **CTRL + L**: Delete all items of one or more selected days
+- **CTRL + E**: Delete a selected item in an expanded day
+- **CTRL + R**: Find a xref:scheduling:find-replacement-employees-and-understaffed-shifts.adoc[replacement person] for a selected activity or shift
+- **CTRL + Q**: Find a xref:scheduling:find-replacement-employees-and-understaffed-shifts.adoc[replacement person] for a selected day
+- **CTRL + Z**: Undo the last action
+
+You'll find the available shortcuts next to most items in the context menus. To open a context menu, right-click an item or day in the xref:scheduling:shift-center-overview.adoc#schedule-area-[schedule area].
+
+[#custom-keyboard-shortcuts-to-insert-activities]
+== Custom keyboard shortcuts to insert activities
+You can create custom keyboard shortcuts to insert activities in your schedule. This is especially useful for the following activity types:
+
+- Vacation
+- Absence
+- Illness
+
+Learn more about xref:best-practices:tips-on-shift-center-usage.adoc#tip-2-shortcuts-for-a-quick-assignment-of-activities[custom keyboard shortcuts].

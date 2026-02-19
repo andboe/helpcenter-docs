@@ -1,0 +1,97 @@
+= Schedule split shifts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to schedule two or more shifts per person per day with split shifts.
+:related-articles: work-with-skills.adoc, activities.adoc, daymodel-creation.adoc, work-time-pattern-models.adoc, schedules-shift-bidding.adoc
+:page-aliases: best-practice-split-shifts
+
+[#what-are-split-shifts]
+== What are split shifts?
+A split shift consists of two (or more) shifts on the same workday. The shifts are separated by an extended break, e.g. longer than two hours.  
+Split shifts are not very popular with some people.
+
+Use split shifts if the following is true:
+
+- Your staff requirements go down repeatedly at a particular time of day (see 1 p.m. to 4 p.m in the image below)
+- You only have a few part-timers to cover peaks in staff requirements (see 10 a.m to 2 p.m.)
+- You want to allow optimized scheduling to cover peak staff requirements by scheduling split shifts for full-timers (see 10 a.m to 2 p.m. and 3 p.m. to 6:30 p.m.)
+
+image::scheduling-split-shifts/image-6.png[M curve for staff requirements with shifts, width=90%]
+
+[#set-up-split-shifts]
+== Set up split shifts
+To use split shifts in optimized scheduling, create xref:administration:daymodel-creation.adoc[day models] of the _Fixed_ or _Variable_ type. The type determines the flexibility of a day model. Learn more about xref:administration:daymodel-basics.adoc#types-of-day-models[day model types].
+
+To increase scheduling flexibility, vary different break lengths and positions in multiple day models.
+
+Use an _Absence_ activity to cover the break. This way, a person who signs out for their break will not show as out-of-adherence in the Adherence feature.
+
+[#balance-a-recurring-gap-in-staff-requirements]
+=== Balance a recurring gap in staff requirements
+To compensate a gap in staff requirements at a certain time of the day, create long day models of the _Fixed_ type. Add a (fixed) absence to counter a midday low, for example:
+
+image::scheduling-split-shifts/image-1.png[Split shift day model of type Fixed Shift, width=50%]
+
+[#make-schedules-more-flexible]
+=== Make schedules more flexible
+To make schedules more flexible, create day models of the _Variable Shift_ type. Add an absence in a corridor in which the break can be flexibly scheduled.
+
+image::scheduling-split-shifts/image-2.png[Split shift day model of type Variable Shift, width=50%]
+
+[#limit-the-use-of-split-shifts]
+== Limit the use of split shifts
+Split shifts are unpopular with most people. To set a maximum number of split shifts per week, you can use work time pattern models with exception days:
+
+1. Create a xref:administration:work-time-pattern-models.adoc[week time pattern] and add the standard day models you want to use for scheduling.
+2. Set the **Maximum number of exception days per week** to the number of allowed split shifts per person per week.
+
+   image::scheduling-split-shifts/image-3.png[Week time pattern standard, width=50%]
+
+3. Create another week time pattern and add the day model for split shifts. Do not change the number of exception days.
+
+   image::scheduling-split-shifts/image-4.png[Week time pattern exception for split shifts, width=50%]
+
+4. Create a xref:administration:work-time-pattern-models.adoc[work time pattern model].
+
+5. In the **Week time pattern - exception days** drop-down menu, select the week time pattern that contains the split shifts which will be used to schedule exception days.
+
+   image::scheduling-split-shifts/image-5.png[Work time pattern model with split shifts, width=50%]
+
+6. Assign the work time pattern model to your people.
+
+Optimized scheduling aims at the best coverage using normal or split shifts. Exception days ensure that split shifts are only scheduled up to the defined maximum.
+
+[#limit-split-shifts-to-certain-people]
+== Limit split shifts to certain people
+By adding a skill to your activity for a gap between shifts, you can specify that only selected people are scheduled for split shifts:
+
+1. Create a new skill, e.g _Break (Split Shift)_.
+2. Create an _Absence_ activity, e.g. _Break (Split Shift)_ and assign the new skill.
+3. Create a day model for the split shift and add the absence activity.
+4. Add the new skill to people you want to schedule for split shifts.
+
+Only skilled people will receive the split shift day model in optimized scheduling.
+
+[#use-split-shifts-in-shift-bidding]
+== Use split shifts in shift bidding
+Besides the long day models for split shifts introduced above, xref:scheduling:schedules-shift-bidding.adoc[shift bidding] can also schedule two or more short standard day models per person as separate shifts.
+
+For this, set the scheduling parameter _2613_{:.id-label} **Max. shifts per day** to the value of 2 or higher in the person's contracts
+
+The shifts are generated according to staff requirements. Enter correct numbers in the shift requirements table:
+
+- Add enough short shifts so that all people an achieve their weekly target
+- For day models of the _Fixed Shift_ type, ensure that employees can get one shift at the beginning and one at the end of the day. If shifts overlap, only one of the shifts will be assigned.
+
+[NOTE]
+====
+Shift bidding and optimized scheduling
+====
+>
+[NOTE]
+====
+If a shift has already been scheduled by the shift bidding process, optimized scheduling cannot schedule additional shifts for the same day because it only allows one day model per day.
+====

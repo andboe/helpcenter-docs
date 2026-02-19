@@ -1,0 +1,113 @@
+= Work with skills
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how skills in Peopleware reflect employee skills. Create, edit, and delete skills and skill levels.
+:related-articles: configure-user-roles.adoc, activities.adoc
+:page-aliases: skills
+
+Skills ensure that people are only scheduled for activities for which they are qualified.
+Skills map people's abilities (e.g. product knowledge, languages, communication channels, etc.) to activities they can work on and that you schedule.
+
+To configure skills, go to _Plan > Configuration > Skills_{:.breadcrumbs}.
+
+[#create-skills]
+== Create skills
+Create at least one skill for each activity that requires a particular ability.
+When you create a skill, the skill level is set to 100% by default.
+Skill levels reflect how proficient people need to be to work on an activity, e.g. 100% proficient in English but only 50% proficient in Spanish.
+You can create different skill levels for one skill.
+
+[NOTE]
+====
+If people do not need specific abilities to work on an activity, you do not need to create a skill for it.
+====
+1. Click _Create_{:.doc-button}.
+2. Enter a **Name**.
+   The abbreviation is auto-generated, but you can edit it.
+3. Click _Save_{:.doc-button}.
+
+Next, you can xref:#add-skill-levels-to-a-person[assign a skill level to a person] and xref:#add-skills-to-activities[assign the skill to an activity].
+
+[#create-skill-levels]
+== Create skill levels
+1. Select a skill.
+2. In the **Skill levels** section, click **{icon-plus} Add**.
+3. Configure the following parameters:
+   - **Name**. The abbreviation is auto-generated, but you can edit it.
+   - **Rating**. See also: xref:#calculate-suitability-using-rating-and-weighting[Calculate suitability using rating and weighting].
+4. Click _Save_{:.doc-button}.
+
+[#edit-skills-and-skill-levels]
+== Edit skills and skill levels
+1. Select a skill from the list.
+2. Edit the skill or skill level(s).
+   - To edit a skill level, click a skill level.
+3. Click _Save_{:.doc-button}.
+
+[#duplicate-skills]
+== Duplicate skills
+Learn how to xref:general:duplicate-objects.adoc[duplicate skills].
+
+[#delete-skills]
+== Delete skills
+1. Hover over a skill and click the {icon-delete} next to it.
+2. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#delete-skill-levels]
+== Delete skill levels
+1. Select a skill from the list.
+2. In the **Skill levels** section, hover over a skill level and click the {icon-delete} next to it.
+3. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#add-skills-to-activities]
+== Add skills to activities
+1. Go to _Plan > Configuration > Activities_{:.breadcrumbs}.
+2. Select an activity from the list.
+3. In the **Skills** section, click **{icon-plus} Add**.
+4. Select a skill from the drop-down menu.
+5. (Optional) Change the **Weighting**. If you only add one skill, enter 100%.  
+   For activities that require more than one skill, you can xref:#calculate-suitability-using-rating-and-weighting[use weighting] to determine which skill is more important.
+6. Click _Save_{:.doc-button}.
+
+[#add-skill-levels-to-a-person]
+== Add skill levels to a person
+1. Go to _People > Overview_{:.breadcrumbs}.
+2. Select a person from the list.
+3. In the left-side menu, click **Work profile**.
+4. In the **Skill levels** section, click **{icon-plus} Add**.
+5. Select the skill levels you want to add to the person.
+6. (Optional) Select **Valid from** and \*_Valid to_ dates if you want to add the skill levels only temporarily to the person.
+   You cannot assign different skill levels of the same skill to a person for the same validity period.
+7. Click _Save_{:.doc-button}.  
+   The activities that require the skill(s) assigned will appear in the **Activities** section for that person.
+
+An activity can require one or more skills.
+To work on an activity that requires several skills, the people assigned to it need to have all the skills.
+
+Tip: To assign a skill to several people at once, you can use the xref:administration:employee-overview.adoc#use-mass-update[mass update functionality].
+
+[#calculate-suitability-using-rating-and-weighting]
+== Calculate suitability using rating and weighting
+The suitability value is calculated based on:
+
+- The rating of a person's skill level
+- The weighting values when an activity requires several skills
+
+Example: You have a Calls in Spanish activity that requires two skills, Spanish and Calls.
+The Spanish skill is twice as important as the Calls skill. The weighting values are 100 for Spanish and 50 for Calls.
+
+- Person 1 has the skill levels Spanish 50% and Calls 100%.
+- Person 2 has the skill levels Spanish 100% and Calls 50%.
+
+This results in a suitability value of 66.66% for person 1 and 83.33% for person 2.
+
+The suitability value is calculated using this formula: `(Sum(Each skill's weighting * individual's skill level value for that skill) / (Sum of all skills' weighting)`
+
+If an activity requires only one skill, the suitability value equals the person's skill level.
+
+To consider the suitability value in xref:scheduling:schedules-optimized-schedules.adoc[optimized scheduling] (instead of using the headcount), configure setting _48069_{:.id-label} _Take suitability percentage into account_.
+In xref:scheduling:analyze-coverage-staffing-requirement.adoc[Shift Center] and xref:scheduling:analyze-coverage-staffing-and-staff-requirements-in-schedules.adoc[Schedules], coverage and staffing cannot be displayed based on people's suitability.
+In these cases, coverage and staffing are always displayed as 100% to show the headcount.

@@ -1,0 +1,131 @@
+= What are scheduling periods?
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what scheduling periods are used for and how to display, edit and delete them in Plan > Schedules.
+:related-articles: schedules-shift-bidding.adoc, time-off-periods-legacy.adoc
+
+Scheduling periods are time spans that you define to organize your schedules. A scheduling period can consist of a few days, weeks, or months.
+
+You need scheduling periods for the following use cases:
+
+- Allow people to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[see their schedules] in Me.
+- Allow people to xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-swap-shifts[swap shifts] with each other in Me.
+- Set up and use xref:scheduling:schedules-shift-bidding.adoc[shift bidding]
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Do not confuse scheduling periods with time-off periods. xref:scheduling:time-off-periods-legacy.adoc[Time-off periods] are used to organize your people's time-off entitlement and when they can request time off.
+====
+[#create-scheduling-periods]
+== Create scheduling periods
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Click _Scheduling periods_{:.doc-button}.
+3. Click _Create scheduling period_{:.doc-button} in the upper right.
+4. Configure the following fields:
+   - **Planning unit**
+   - (Optional) **Selection**
+   - **Date range**
+   - (Optional) **Deadline**: Last day on which people can swap or bid on shifts.
+   - **Status**: xref:#status[Learn more about the different possible statuses and what they mean].
+
+5. Click _Save_{:.doc-button}.
+
+[#status]
+== Status
+All scheduling periods have a status. The status unlocks or restricts certain options for your people for the date range of the scheduling period. Change the status of a scheduling period multiple times during the scheduling process, for example, after you have finalized the schedule or when the time period for submitting shift requests has expired.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Status
+|Explanation
+|Unpublished
+|People cannot see the schedule, cannot bid on shifts and cannot swap shifts with each other.
+|Shift bidding enabled
+|People can see the schedule, bid on shifts, swap shifts with each other, and see xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-comments[comments] in the Schedule level. This status cannot be set if the deadline of the scheduling period has already expired.
+|Published
+|People can see the schedule, swap shifts with each other, and see comments in the Schedule level. They cannot bid on shifts.
+|Finished
+|This status indicates that the schedule is final. People can still swap shifts with each other and see comments in xref:scheduling:use-levels.adoc[the Schedule level].
+|===
+
+[#display-scheduling-periods]
+== Display scheduling periods
+To see all scheduling periods created for a specific planning unit and/or selection, follow these steps:
+
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Click _Scheduling periods_{:.doc-button}.
+3. Select a **Planning unit** and, optionally, a **Selection**.
+   The table displays all scheduling periods for your selected planning unit (and selection), if there are any.<br>
+   Learn more about the xref:#ongoing-and-expired-tabs[tabs] and xref:#table-columns[table columns] below.
+
+[#ongoing-and-expired-tabs]
+=== Ongoing and Expired tabs
+In the table, scheduling periods are divided into two tabs:
+
+- **Ongoing**: Scheduling periods that lie partly or completely in the future.
+- **Expired**: scheduling periods that lie completely in the past.
+
+[#table-columns]
+=== Table columns
+You can sort the list by any column by clicking the respective header. To reverse the sort order, click again.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column name
+|Explanation
+|Status
+|Displays the xref:#status[status] of the scheduling period. This entry is a drop-down menu, with which you can edit the status of scheduling periods.
+|Selection
+|The selection affected by the scheduling period, if there is one.
+|Valid from
+|Start date of the scheduling period.
+|Valid to
+|End date of the scheduling period.
+|Deadline
+|Last day on which people can swap or bid on shifts.
+|Inherited from
+|If you create a scheduling period for a parent planning unit, that scheduling period is inherited by all its child planning units. If applicable, the column shows the name of the parent planning unit.
+|===
+
+[#edit-scheduling-periods]
+== Edit scheduling periods
+To update only the status of a scheduling period, select a new status from the drop-down menu in the **Status** column. The new status is automatically saved.
+
+To edit all parameters of a scheduling period (including the status), follow these steps:
+
+1. In the table, hover over the relevant scheduling period and click the {icon-edit} on the right.
+2. Edit the relevant parameters.
+3. Click _Save_{:.doc-button}.
+
+[#delete-scheduling-periods]
+== Delete scheduling periods
+To delete one or more scheduling periods, check the checkboxes on the left of the list entries. The checkbox in the table heading selects all displayed entries. Click _Delete selected_{:.doc-button} below the list.
+
+[#other-actions]
+== Other actions
+In the Scheduling periods table, click the {icon-context-menu} on the right of a list entry to acces the following functions:
+
+- xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Generate shifts]
+
+- xref:scheduling:schedules-shift-bidding.adoc#run-the-shift-lottery[Start shift lottery]
+
+- xref:scheduling:schedules-shift-bidding.adoc#assign-remaining-shifts[Assign shifts]
+
+- xref:scheduling:schedules-shift-requirement.adoc[Adjust shift generation]
+
+[#when-can-people-see-their-schedules]
+=== When can people see their schedules?
+In _Me > My calendar_{:.breadcrumbs}, people can see their schedules for all scheduling periods with the status Published, Shift bidding enabled or Finished.
+
+[#when-can-people-swap-shifts]
+=== When can people swap shifts?
+To allow people to swap shifts, xref:#create-scheduling-periods[create a scheduling period] and set its status to Published, Shift bidding enabled or Finished. All activities in the scheduling period's day models must be configured as xref:administration:activity-types-and-properties.adoc#activity-properties[Exchangeable with shift swap]. Shift swap must be xref:me:configure-me.adoc#shift-swaps[activated in Me].
+
+Learn more about xref:scheduling:view-approve-shift-swap-requests.adoc[Shift swap].

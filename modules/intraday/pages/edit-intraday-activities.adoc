@@ -1,0 +1,38 @@
+= Edit Intraday activities
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: See how closely people adhere to their shift schedules throughout the day.
+:related-articles: adherence-intraday.adoc
+
+In _Intraday adherence_{:.breadcrumbs}, you can edit the actual activities of people. This helps fix issues that can compromise the accuracy of intraday adherence, for example:
+
+- A person logs into the wrong activity
+- A person forgets to switch to another activity
+- A person forgets to log out during a break
+- A person forgets to log out at the end of the working day.
+
+[#prerequisites]
+== Prerequisites
+To see adherence data, make sure the following applies:
+
+- xref:acd-integration:import-agent-status-data.adoc[Agent status data] is available, e.g. via an xref:acd-integration:how-integrations-work.adoc[integration].
+- Your role has the **Edit agent status** permission.
+
+[#steps]
+== Steps
+To edit a person's activities, proceed as follows:
+
+1. Go to _Intraday > Intraday adherence_{:.breadcrumbs}.
+2. Select a planning unit or a selection.
+3. Click the person whose activities you want to edit.
+4. On the **Agent intraday adherence** page, click _Edit actual activities_{:.breadcrumbs}.
+5. Click {icon-context-menu} on the right of the activity and select **{icon-edit} Edit** or **{icon-delete} Delete**. To add an activity, click _Create_{:.doc-button}.
+6. Edit the activity.
+7. Click _Save_{:.doc-button}.
+
+Activity updates may take a few minutes.
+If you delete or shorten an activity, a gap may appear.
+This gap is replaced by the Offline activity. If you adjust the validity period of an entry, Peopleware will automatically adjust the activities before and after to avoid overlapping.

@@ -1,0 +1,52 @@
+= Create reports
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise, classic
+:topic-type-task:
+:description: Learn how to generate standard reports in HTML or PDF format with different parameters.
+:related-articles: concept-reports.adoc, ref-reports.adoc
+:page-aliases: reports
+
+This article explains how to perform the following tasks:
+
+- See a description of each report
+- Create reports
+- View generated reports
+
+[#create-reports]
+== Prerequisites
+To see the results of reports you created, your role needs the following permissions:
+
+- Access to job status
+
+To see the results of reports created by other users, your role needs the following permissions:
+
+- Access to jobs of all users
+
+[#see-a-description-of-each-report]
+== See a description of each report
+1. Go to _Analyze > Reports_{:.breadcrumbs}.
+2. Hover over the report description in the **Reports** section.
+
+[#create-reports]
+== Create reports
+1. Go to _Analyze > Reports_{:.breadcrumbs}.
+2. Select a date range.
+3. Filter people:
+   - Use the standard filter to filter by planning unit, selection or contract
+   - Use the advanced filter.
+4. Select people.
+5. Select a xref:reporting:concept-reports.adoc#report-category[report category].
+6. Select a report.
+7. Click _Create report_{:.doc-button}.
+
+In the **Create report** window that opens, select a xref:reporting:ref-reports.adoc#settings[level] and the xref:reporting:ref-reports.adoc#format-delivery[delivery format].
+
+[#view-generated-reports]
+== View generated reports
+1. In the navigation bar, click the {icon-jobstatus} Job Status icon.
+2. Find the job matching the report you want to display.
+3. In the **Result** column, click **Show result**.
+
+Peopleware displays the generated report in a new tab.

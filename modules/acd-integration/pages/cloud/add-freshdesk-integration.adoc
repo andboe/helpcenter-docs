@@ -1,0 +1,90 @@
+= Add a Freshdesk integration
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Freshdesk CRM to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc
+
+A Freshdesk integration is a cloud integration that imports contact volumes for email, web forms, chat, and social messaging from Freshdesk tickets.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-freshdesk-integration]
+== Add a Freshdesk integration
+To add a new Freshdesk integration, you need a Pro or Enterprise Freshdesk account.
+
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Freshworks**.
+5. From the **Model name** drop-down menu, select **Freshdesk**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-freshdesk-integration]
+== Set up your Freshdesk integration
+1. In the **Credentials** section, set up the access to your Freshdesk account:
+   - **Domain**: Enter your full Freshdesk domain name including the subdomain, e.g. example.freshchat.com.
+   - **API key**: Enter a valid API key of a Freshdesk user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
+2. Click _Save_{:.doc-button}.
+
+[#install-the-peopleware-app]
+== Install the Peopleware app
+Peopleware can only receive data from Freshdesk when you set up the Peopleware Freshdesk app in your Freshworks account:
+
+1. In the **Install the Peopleware app** section, generate and copy the **Peopleware API key**.
+2. Set up the app in the [Freshworks marketplace](https://www.freshworks.com/apps/injixo_1).
+3. In the Peopleware app installation page, paste the copied API key.
+
+After you have installed the app, you can see new queues in your workloads and Forecast.
+
+[#freshdesk-data-in-peopleware]
+== Freshdesk data in Peopleware
+Peopleware imports all ticket data from Freshdesk. Tickets usually contain multiple conversations that take place between your team members and customers.<br>
+Note: Peopleware cannot import ticket durations from Freshdesk. This is why you won't see the AHT graph for workloads with Freshdesk queues in **Forecast**.
+
+[#tickets-and-conversations]
+=== Tickets and conversations
+In Peopleware, all conversations are grouped by the Freshdesk communication channel (Source). A conversation can be a new ticket or a reply to an existing ticket.
+
+In Peopleware, the conversations in a Freshdesk ticket are counted separately as an offered contact.
+
+Example: A user creates a ticket by e-mail. The team member replies and closes the ticket. Two days later, the ticket is reopened due to another email, which leads to a new conversation.
+
+The number of offered contacts in Peopleware will usually be higher than the number of tickets reported in Freshdesk.
+
+[#events-from-different-sources]
+=== Events from different sources
+In a Freshdesk ticket, replies can be tracked in different Peopleware queues using the channel Cases.
+
+Example: When there is an email reply to a ticket, you will see the contact in an Peopleware queue that matches the Freshdesk group and source name. A chat in the same ticket will be counted in a separate queue.
+
+[#source-queue-naming-convention]
+=== Source queue naming convention
+Peopleware creates source queues from your tickets. The naming convention of these queues depends on the stage of the data import (initial or continuous). During this initial import, the source queue naming will follow this convention:
+
+- "group name + source name + Tickets"
+- "group name + source name + Replies"
+
+Examples:
+
+- CustomerService chat Tickets
+- CustomerService email Replies
+- Unknown group/source Tickets
+
+A new ticket will create a ticket queue. A reply to a ticket will create a replies queue that will also record any other replies. To get all information about a ticket, you need to look at both the ticket and the replies queue.
+
+[#deleted-tickets-and-spam-tickets]
+=== Deleted tickets and spam tickets
+The group name and source name cannot be determined when a ticket is changed that has already been deleted or marked as spam. The source queues that count such tickets will be labeled Unknown group/source Tickets or Unknown group/source Replies. Typically, these queues are irrelevant for scheduling your agents' workload.
+
+[#frequently-asked-questions]
+== Frequently asked questions
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Question
+|Answer
+|Suddenly, Peopleware stops displaying new Freshdesk data but the page in **Account > Integrations** still shows the status Operational for my Freshdesk integration. What can I do?
+|the Peopleware app gets Freshdesk data and sends events to Peopleware. In the event of communication errors between the Peopleware app and Peopleware, Freshdesk data may no longer be displayed. The Freshdesk integration cannot detect such communication errors. + +Check that the Peopleware API key you entered when setting up the Peopleware app in your Freshdesk account is still valid. If the API key is invalid, update the Peopleware API key on the Peopleware app installation page. If the API key is still valid, contact our support team.
+|===

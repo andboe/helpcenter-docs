@@ -1,0 +1,3 @@
+Enter values for the following additional parameters:
+- **Seq (%)**: Percentage of the average handling time that agents need for tasks that cannot be done in parallel, such as after-call work.
+- **Max Sessions**: Maximum number of parallel chats

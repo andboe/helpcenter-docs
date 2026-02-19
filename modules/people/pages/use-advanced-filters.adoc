@@ -1,0 +1,45 @@
+= Use advanced filters
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Use the advanced filter editor to filter people using a combination of criteria.
+
+With advanced filters, you can create lists of people who match several criteria. The editing options depend on your user rights.
+
+Advanced filters work similarly to xref:administration:selections.adoc[selections]. The difference between them is the following:
+
+- For employee filters, the grouping criteria are based on configuration elements, e.g. planning unit, skill, and contract.
+- For selections, you can create your own grouping criteria.
+
+To access advanced filters, go to _People > Advanced filters_{:.breadcrumbs}.
+
+[#create-a-filter]
+== Create a filter
+1. In _People > Advanced filters_{:.breadcrumbs}, click _Create_{:.doc-button}.
+2. Select a xref:people:advanced-filters.adoc#time-frames[**Time frame**].
+3. Select a **Date range**.
+4. Click _+ Add group_{:.doc-button}. Learn more about xref:people:advanced-filters.adoc#groups[**groups**].
+5. Click _+Add criterion_{:.doc-button}. Learn more about xref:people:advanced-filters.adoc#criteria[**Criteria**].
+6. (Optional) Add more groups or criteria.
+7. Click _Save_{:.doc-button}.
+
+[#edit-a-filter]
+== Edit a filter
+1. In the **Advanced filters** section, select a filter or use the search field.
+2. Edit the filter.
+3. Click _Save_{:.doc-button}.
+
+[#duplicate-a-filter]
+== Duplicate a filter
+1. In the **Advanced filters** section, select a filter or use the search field.
+2. Click the three-dot menu icon {icon-context-menu}.
+3. Click {icon-overlapping-boxes} Duplicate.
+
+[#delete-a-filter]
+== Delete a filter
+1. In the **Advanced filters** section, select a filter or use the search field.
+2. Click the three-dot menu icon {icon-context-menu}.
+3. Click {icon-delete} Delete.
+4. To confirm, click _Delete_{:.doc-button}.

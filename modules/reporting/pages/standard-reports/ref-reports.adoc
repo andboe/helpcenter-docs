@@ -1,0 +1,90 @@
+= Reports settings reference
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise, classic
+:topic-type-reference:
+:description: Find information about every report setting.
+:related-articles: concept-reports.adoc, task-create-reports.adoc
+
+This article lists all reports settings available in _Analyze > Reports_{:.breadcrumbs}.
+For more information about reports see:
+
+- xref:reporting:concept-reports.adoc[Reports]
+- xref:reporting:task-create-reports.adoc[Create reports]
+
+[#date-range]
+== Date range
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Start date
+|The beginning of the time period for which data should be included in the report.
+|End date
+|The end of the time period for which data should be included in the report.
+|===
+
+[#people]
+== People
+[#people-filter]
+=== People filter
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Planning units
+|Filters the people list by planning unit.
+|Selections
+|Filters the people list by selection. Only works if people are assigned to at least one selection.
+|Contracts
+|Filters the people list by contract.
+|===
+
+[#advanced-filter]
+=== Advanced filter
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Advanced filter
+|Applies a predefined xref:people:use-advanced-filters.adoc[advanced filter] to create a custom list of people.
+|===
+
+[#reports]
+== Reports
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Description
+|Report name and description
+|Report name and xref:reporting:task-create-reports.adoc[description]
+|Category
+|Report xref:reporting:concept-reports.adoc[category]
+|===
+
+[#create-report-window]
+== Create report window
+[#settings]
+=== Settings
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Level
+|Level of the schedule (e.g. Schedule, Actual, Version 1). Reports reflect the data stored in the selected level.
+|===
+
+[#format-delivery]
+=== Format delivery
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Format
+|Report format: PDF or HTML
+|Send report to
+|Defines how to email the report:  +- **Do not send**: Does not send the report. + - **Selected recipients**: Sends the report to the recipients defined in the report configuration. + - **Selected people (shared CC)**: Sends the report to the selected people, all CC’d on the same email thread. +- **Custom email address**: Sends the report to one or more manually entered email addresses.
+|Export as anonymous report
+|Hides personal identifiers such as people names and personnel numbers in the report.
+|===

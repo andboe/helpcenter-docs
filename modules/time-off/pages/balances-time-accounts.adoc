@@ -1,0 +1,61 @@
+= Edit taken time off and entitlement
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to edit balances and entitlement in Time Off.
+
+In _Time Off > Time accounts_{:.breadcrumbs}, you can manually create records for entitlement and taken time-off for a person and time-off type. Any record you create directly affects the time account's balance.
+
+A time account is a ledger of a person’s time-off records. To increase or reduce a person's entitlement or edit the taken time-off value, you need to create a manual time account record.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Time account balances for time-off types without a defined entitlement can be negative.
+====
+[#edit-entitlement]
+== Edit entitlement
+1. Go to _Time Off > Time accounts_{:.breadcrumbs}.
+2. Select a person and a time account.
+3. Click _Create_{:.doc-button}.
+4. Enter the following information:
+   - Reason: Select **Manual entitlement**. This directly impacts the entitlement for that person and time-off type, but not their taken time off.
+   - Select a **Booking date**
+   - (Optional) Select an **Expiration date**.
+   - Enter a **Value in days**: Enter the value by which you want to increase or decrease the entitlement. To increase the entitlement by 5 days, enter 5. As a result, the remaining balance increases by 5 days. To decrease the entitlement by 5 days, enter -5. As a result, the balance decreases by 5 days.
+   - (Optional) Enter a comment.
+5. Click _Save_{:.doc-button}.
+
+[#check-the-result-of-your-entitlement-edits]
+=== Check the result of your entitlement edits
+1. Go to _Time Off > Balances_{:.breadcrumbs}.
+2. Select the time-off type and the planning unit of the person linked to the time account you just modified .
+3. Look for the person in the balances table. If you increased the entitlement value for this person using **Manual entitlement** option, the values in the **Entitlement** and **Remaining** columns increase by the same amount.
+
+[#edit-taken-time-off]
+== Edit taken time off
+1. Go to _Time Off > Time accounts_{:.breadcrumbs}.
+2. Select a person and a time account.
+3. Click _Create_{:.doc-button}.
+4. Enter the following information:
+   - Reason: Select **Manual correction**. This directly impacts the taken time off for that person and time-off type, but not their entitlement.
+   - Select a **Booking date**
+   - (Optional) Select an **Expiration date**.
+   - Enter a **Value in days** or **Value in hours**: Enter the value by which you want to increase or decrease the taken time off. The unit depends on the time-off type.  
+     Example for days: To increase the taken time off by 5 days, enter -5. As a result, the remaining balance decreases by 5 days. To decrease the taken time off by 5 days, enter 5. As a result, the remaining balance increases by 5 days.
+   - (Optional) Enter a comment.
+5. Click _Save_{:.doc-button}.
+
+[#check-the-result-of-your-taken-time-off-edits]
+=== Check the result of your taken time off edits
+1. Go to _Time Off > Balances_{:.breadcrumbs}.
+2. Select a time-off type and a planning unit.
+3. Look for the person in the balances table.
+4. Check the following columns:
+   - **Taken**: If you increased the taken time off value using **Manual correction**, the Taken column increases by the same amount.
+   - **Remaining**: If you increased the taken time off value using **Manual correction**, the Remaining column decreases by the same amount. If you decreased the taken time off value using **Manual correction**, the Remaining column increases by the same amount.

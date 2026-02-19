@@ -1,0 +1,53 @@
+= Generate suggestions for 1:1 meetings
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Generate scheduling suggestions for one-on-one meetings with reduced impact on the coverage of your schedule in Plan > Meetings.
+:page-aliases: one-on-ones
+
+In _Plan > Meetings_{:.breadcrumbs}, you can generate scheduling suggestions for one-on-one meetings (1:1 meetings) with reduced impact on the coverage of your schedule. 1:1 meetings are meetings between a meeting host, typically a team leader, and another team member.
+
+New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
+
+[#prerequisites]
+== Prerequisites
+- You have created xref:administration:activities.adoc#create-an-activity[a meeting activity] for 1:1 meetings.
+- You have created xref:administration:activity-types-and-properties.adoc#activity-properties[Replaceable activities].
+- If the meeting host is scheduled, xref:administration:create-and-manage-planning-units.adoc[the planning units] of the meeting host and the other participants must have the same interval.
+
+[#generate-suggestions-for-11-meetings]
+== Generate suggestions for 1:1 meetings
+To generate suggestions for 1:1 meetings, follow these steps:
+
+1. In _Plan > Meetings_{:.breadcrumbs}, click _Set up_{:.doc-button} in the _1:1 meetings_{:.label} tile.
+2. In the _Settings_{:.label} section, configure the following fields:
+   - _Planning unit_{:.label}
+   - _Activity to schedule_{:.label}: Select the meeting activity you created for 1:1 meetings.
+   - _Date range_{:.label}
+   - _Meeting duration_{:.label}
+
+3. (Optional) In the _Optional settings_{:.label} section, check the checkboxes to activate and configure the following fields:
+   - _Ensure a buffer between meetings_{:.label}: Minimum period between meetings in minutes.
+   - _Limit the number of meetings per day to maximum_{:.label}
+   - _Consider only time slots for which the resulting coverage will be at least_{:.label}: Enter the minimum value under which coverage may not drop when scheduling 1:1 meetings.
+
+4. In the _Meeting to be scheduled between_{:.label} section, define when the meeting host is available for the meeting:
+   - If the meeting host does not have a schedule, select _Enter manually_{:.doc-button} under _Meeting host_{:.label} and configure the following fields:
+     - _Day_{:.label}
+     - _From_{:.label} and _To_{:.label}
+     - (Optional) Click _+ Add time span_{:.doc-button} to add a period in which the meeting host is available for 1:1 meetings on the configured day. Click the {icon-x} to delete the period.
+     - (Optional) Click _Add day and time span_{:.doc-button} to add more days in which the meeting host is available for 1:1 meetings. Click _{icon-delete} Remove day_{:.doc-button} to delete additional days.
+
+   - If the meeting host has a schedule, select _Choose employee_{:.doc-button} under _Meeting host_{:.label} and configure the following fields:
+     - _Planning unit_{:.label}
+     - _Employee_{:.label}
+
+5. In the _Participants_{:.label} section, select the people for whom you want to generate 1:1 meeting suggestions. By default, all people assigned to the selected planning unit are displayed and pre-selected:
+   - (Optional) Click the {icon-schedules-filter-employees-u} or the {icon-filter-u} to filter out people. By default, all checkboxes are checked.
+   - Uncheck the checkboxes next to the names of people for whom you do not want to generate meeting suggestions. Uncheck the checkbox next to _Name_{:.label} to deselect all people in the list.
+
+6. Click _Generate suggestions_{:.doc-button}.
+
+You are redirected to the _Meetings_{:.label} page and the generated suggestions for 1:1 meetings are displayed in the _Generated suggestions_{:.label} table. You can proceed to xref:scheduling:scheduling-suggestions.adoc[review and apply the meeting suggestions].

@@ -1,0 +1,30 @@
+= Notify people about changes to their schedule
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Inform employees about schedule changes via email or browser notifications.
+:page-aliases: schedules-notify-scheduling-changes
+
+In _Plan > Schedules_{:.breadcrumbs}, you can use the **Notify people** function to send push notifications or emails to your people, for example, if you modified their schedule.
+
+[#notify-schedule-changes]
+== Notify schedule changes
+You can use the **Notify people** function for any xref:scheduling:what-are-scheduling-periods.adoc[scheduling period] with the status Published.
+If you filter people by both planning unit and selection, ensure that a scheduling period with the status Published exists for that combination.
+
+1. Go to _Plan > Schedules_{:.breadcrumbs}.
+2. Click _Notify people_{:.doc-button}.
+3. In the window, select the following elements. If you selected values for these elements in the **Schedules** page, they are preselected in the window.
+   - **Planning unit**
+   - **Selection**
+   - **Date range**
+   - **People**: Check the checkboxes next to the people that you want to notify.
+4. Click _Notify n people_{:.doc-button}.
+
+When you notify people, they receive generic push notifications or emails, even if you did not make any changes to the schedule. People are only notified about the date range you selected, but not about specific activity changes. To avoid people receiving irrelevant notifications, you can select individual employees in the configuration window.
+
+By default, both email and browser push notifications are allowed. Email notifications are sent to each person’s login email address. Browser push notifications appear as clickable pop-up notifications if the person is logged in in at least one browser tab.
+
+To turn off email or browser push notifications for your tenant, go to _Account > Notifications_{:.breadcrumbs}. To see push notifications, people need to xref:getting-started:notifications.adoc[allow push notifications] in their browsers.

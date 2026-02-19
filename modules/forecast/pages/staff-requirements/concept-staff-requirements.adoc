@@ -1,1 +1,72 @@
-== Staff requirements
+= Staff requirement basics
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what staff requirements are and how they are calculated.
+:related-articles: task-set-up-staff-requirement-calculation.adoc, task-save-staff-requirements.adoc, task-run-requirement-calculations.adoc, ref-requirement-calculations.adoc
+:page-aliases: concept-requirement-calculations
+
+Staff requirements specify the number of people needed to handle a planning unit's activities in a given period.
+The calculation of staff requirements is the final step in the forecasting process.
+Once this step is complete, the requirements data can be used by the following scheduling features:
+
+- Create optimized schedule
+- Job optimization
+- Optimize breaks
+
+In Peopleware, staff requirement data is generated in two distinct ways:
+
+- A continuous, automated process based on your forecast
+- Specific, manually triggered calculations
+
+[#automatic-requirement-calculations]
+== Automatic requirement calculations
+Automatic requirement calculations are set up per workload in _Forecast > Workloads_{:.breadcrumbs}.
+Once set up, these calculations continuously provide staff requirement data based on a number of input parameters, such as forecasted contact volume and average handling time data.
+The data required for the staff requirements calculation is saved in queues in _Analyze > Configuration > Queues_{:.breadcrumbs}.
+The queues have the name of the corresponding workload with a leading asterisk, e.g. _\*yourWorkloadName_.
+
+While the calculation is automatic, the data is not available for scheduling until someone actively saves the calculated requirement data for a defined period.
+This gives planners full control over when staff requirements based on new forecast data become relevant for scheduling.
+
+Key characteristics of automatic requirement calculations:
+
+- Trigger: Automatic and continuous
+- Scope: Every forecast version of a workload and any period
+- Purpose: Continuously provide baseline staff requirement data
+
+For more information, see xref:forecast:task-set-up-staff-requirement-calculation.adoc[Set up automatic staff requirement calculation]
+
+[#manual-requirement-calculations]
+== Manual requirement calculations
+You can trigger requirement calculations manually in _Forecast > Requirement calculations_{:.breadcrumbs}.
+Unlike automatic requirement calculations, manual calculations are always performed for a specific period only and use parameters specifically set up for a calculation run.
+Manual calculations cover specific use cases that cannot be modelled with automatic calculations.
+
+Key characteristics of manual requirement calculations:
+
+- Trigger: Manual
+- Scope: Varies, but is always performed for a specific period
+- Purpose: Address unique staffing needs, model scenarios or make targeted adjustments
+
+For more information, see:
+
+- xref:forecast:task-run-requirement-calculations.adoc[Run staff requirement calculations]
+- xref:forecast:ref-requirement-calculations.adoc[Requirement calculations reference]
+
+[#calculation-methods]
+== Calculation methods
+Peopleware supports a set of calculation methods to determine staff requirements.
+
+- Erlang-C: The classic formula for inbound contact centers.
+  This calculation method calculates the staff needed to answer a certain volume of calls within a target service level, e.g., 80 % of calls answered within 20 seconds.
+
+- Chat: An extension of Erlang-C adapted for concurrent chat sessions.
+  This calculation method includes an additional parameter for the number of simultaneous chats an agent can handle.
+
+- Linear: A calculation method for work that doesn't happen in real-time, like emails, letters, or back-office tasks.
+
+Automatic staff requirement calculations for workloads always apply one of these calculation methods.
+Depending on the purpose, manual requirement calculations are based on one of these calculation methods or use other means to calculate a result.

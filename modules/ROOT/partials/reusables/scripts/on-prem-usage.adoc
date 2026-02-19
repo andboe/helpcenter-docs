@@ -1,0 +1,1 @@
+Note: In injixo Enterprise on-premise, go to *WFM > Forecast > ForecastPro > Forecast*{:.breadcrumbs} or *WFM > Administration > Forecasting > Scripts*{:.breadcrumbs}. The script requires an existing forecast for the combination of queue, value type, and version. The script name may vary because you can enter a custom name when creating the script.

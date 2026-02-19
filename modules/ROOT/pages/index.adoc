@@ -1,2 +1,7 @@
-= Landing Page
+= Glossary
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-concept:
 
+Welcome to the Peopleware-specific glossary, where you will find frequently used terms and their meanings.

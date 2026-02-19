@@ -1,0 +1,39 @@
+= Time Management
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-concept:
+:description: Learn how Peopleware can evaluate employee working hours by comparing scheduled activities with actual performed activities.
+:related-articles: task-check-validate-punches.adoc
+
+Time Management evaluates your people's working hours, overtime, and time off for compliance and payroll calculation purposes.
+It processes records of scheduled activities and actual performed activities and applies a set of configurable rules to categorize time data.
+
+Time Management processes data as follows:
+
+- **Activity Recording**: Activity data can be imported from external systems (e.g. ACD systems) or can be directly recorded by people in _Me > Time Tracking_{:.breadcrumbs}
+- **Rule Processing**: Peopleware applies calculation rules to the recorded activity data to validate, categorize, and account for time worked.
+- **Calculation and Review**: Peopleware calculates results that can be reviewed in Shift Center or Payroll overview.
+
+[#accounts-and-categories]
+== Accounts and time categories
+- Time categories are labels for different types of time extracted from activity data. For example, you can create categories for regular work, overtime, paid breaks, and unpaid breaks. Time category rules assign these labels to specific time periods.
+- Accounts store categorized time data. You can define accounts for working time, overtime hours and paid time off or anything else required by your organisation. Account rules determine how time is written to these accounts. Accounts track balances over time for payroll and reporting purposes.
+- Account groups group related accounts. For example, you can group all paid time off accounts, e.g. Vacation, Sick Leave, Personal Time into a Leave group. This provides an aggregated view of related time data.
+
+[#rules]
+== Rules
+Rules define how Peopleware processes and categorizes time data. Time Management uses several rule types that you can combine:
+
+- **Punch Rules** create or adjust your punched activities. For example, punch rules can add or remove time worked before or after a shift, or they can create punched breaks when employees forget to clock in. Punch rules operate on an internal level; originally punched data is not touched.
+- **Time Category Rules** extract time periods from the activities in the adjusted punch level and split the shift on a day into time categories, e.g. regular working hours, paid presence, unpaid breaks or overtime. This allows you to book the resulting time slices to accounts. You cannot assign the same period to two different time categories.
+- **Account Rules** write the processed time to accounts. Accounts sum up values like normal working time, overtime, or leave on a daily, weekly, or monthly basis. Accounts also allow you to calculate bonuses or penalties based on defined criteria using other account values, specific keywords, or fixed values.
+<!-- - **Warning Rules** generate warnings or errors when deviations or discrepancies occur between scheduled times and actual punches (e.g., unapproved overtime, missed punches). -->
+- **Closing Rules** define the process for closing accounting periods to finalize and process payroll for a specific period.
+
+[#rule-libraries]
+== Rule libraries
+You can create rule libraries that combine multiple rules and pass variables to a rule template in your ruleset.
+Rule sets reference rule libraries, such as calling a function.
+This allows you to create the same rule with different accounts, for example.

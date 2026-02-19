@@ -1,0 +1,29 @@
+= Ujet
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Ujet CRM to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc
+
+A Ujet integration is a cloud integration that imports call history and agent status data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-ujet-integration]
+== Add a Ujet integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **UJET**.
+5. Click _Save_{:.doc-button}.
+
+[#set-up-your-ujet-integration]
+== Set up your Ujet integration
+1. Enter a unique name for the integration that identifies the data source.
+2. In the **Credentials** section, configure the following information:
+   - **Subdomain**: Enter your Ujet subdomain.
+   - **Company key** and **Company secret code**: Enter a valid company key and company secret code for your Ujet ACD.
+
+3. Click _Save_{:.doc-button}.

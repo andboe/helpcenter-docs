@@ -1,0 +1,34 @@
+= What is an external system?
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: on-premise
+:topic-type-concept:
+:description: Learn what external systems are and how to create them.
+:related-articles: xlink-overview.adoc, xlink-configuration-import-odbc.adoc
+
+In this article, you will learn:
+
+- what an external system is and why you need it.
+- how to create an external system.
+
+[#what-is-an-external-system]
+== What is an external system?
+External systems are required to import data using Xlink.
+
+[NOTE]
+====
+You don't need an external system to upload data using an xref:acd-integration:how-integrations-work.adoc[integration].
+====
+External systems define which Xlink (standard) interface is used to retrieve data via ODBC or CSV files. The interfaces behind external systems use a vendor-specific rigid configuration and import logic to connect and to get data from the ACD or file.
+
+The available Universal and CSV interface are more flexible, as you can define a format for files or tables the Xlink reads data from. The corresponding manuals for these interfaces are available at [downloads.peopleware.com](https://downloads.peopleware.com).
+
+[#create-an-external-system]
+== Create an external system
+1. Go to _WFM > Administration > System > External System_{:.breadcrumbs}.
+2. Click the {icon-wfm-add}.
+3. Under _System Description_, select **CSV Files**, **Universal**, or a **specific interface** for your ACD.
+4. Enter a **Name** to identify the data source.
+5. Check the checkboxes **PhoneLink** (for call data) and **TimeLink** (for agent activity data). Not all interfaces support both options.
+6. Click _OK_{:.doc-button}.

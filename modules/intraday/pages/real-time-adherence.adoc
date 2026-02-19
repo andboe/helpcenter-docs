@@ -1,0 +1,205 @@
+= Real-Time Adherence
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Check how closely your agents are adhering to their schedules in real time.
+:related-articles: import-agent-status-data.adoc, adherence-matches.adoc, adherence-intraday.adoc
+:page-aliases: adherence
+
+_Intraday > Real-Time Adherence_{:.breadcrumbs} compares _people_{:.css}'s _scheduled activities_{:.css} with their _actual activity_{:.css} in real time. When _people_{:.css} track their work in an _external system_{:.css}, e.g. an ACD, for which you have configured an xref:acd-integration:how-integrations-work.adoc[integration], Peopleware imports their _status data_{:.css}, and compares it with their _schedule_{:.css} in Peopleware. In _Real-Time Adherence_{:.breadcrumbs} you can see if _people_{:.css} work in adherence with their _schedule_{:.css} and take timely action when they deviate from it.
+
+[#prerequisites]
+== Prerequisites
+- You have configured the xref:acd-integration:import-agent-status-data.adoc[real-time agent status import] for the _external system_{:.css} whose data you want to compare with your _schedules_{:.css} in Peopleware.
+- You have allowed _Real-Time Adherence_{:.label} to open a xref:getting-started:system-requirements.adoc#share-urls-for-websockets[WebSocket connection], which is required for real-time updates. If the WebSocket connection cannot be opened or needs to be recreated due to firewalls or an unstable network connection, you see a notification.
+- You have added the relevant external identifiers to your _people_{:.css} in Peopleware.
+
+For more adherence details, map external activities to activities in Peopleware. To define a more detailed _mapping_{:.css}, use xref:intraday:adherence-matches.adoc[Matches].
+
+[#adherence-statuses]
+== Adherence statuses
+In _Intraday > Real-Time Adherence_{:.breadcrumbs}, each person has a status based on the comparison between their scheduled and their actual activity:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Status
+|Description
+|In adherence
+|The type of the scheduled activity matches the type of the actual activity. The row is not highlighted.
+|_Out of adherence_{:.css}
+|The type of the scheduled activity does not match the type of the actual activity. The row is highlighted in red.
+|===
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you have not configured an integration and mapped _external identifiers_{:.css}, the following applies:
+====
+>
+[NOTE]
+====
+- People who are scheduled appear as _in adherence_{:.css}, and _Offline_{:.css} is displayed as their actual activity. You do not see any data for them in the _External System_{:.css} _level_{:.css} in _Schedules_{:.css} or _Shift Center_{:.css}.
+- People who are scheduled for activities of type Vacation or Illness, and who are logged into the external system appear as Not Scheduled.
+- People who are not scheduled but are engaged in an activity appear as Not scheduled.
+- People who are not scheduled and are offline are not displayed.
+====
+The status _Out of adherence_{:.css} has the following subtypes, which are color-coded in the xref:#adherence-overview-table[overview table]:
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Subtype
+|Color
+|Description
+|_Not present_{:.css}
+|Red
+|The person is scheduled to work on a specific activity, but there is no information available from the external system. Data is not imported or not mapped correctly.
+|_Wrong activity_{:.css}
+|Yellow
+|According to the external system, the person is working on an activity that does not match the scheduled activity in Peopleware.
+|_Not Scheduled_{:.css}
+|Blue
+|The person is not scheduled for any activity in Peopleware but the external system sent a status mapped to an activity of type Presence, Break, or Meeting. This subtype does not negatively affect the _adherence score_{:.css}. The person is not displayed at all if the activity type of the status sent is Absence, Illness, or Vacation.
+|===
+
+[#understand-the-real-time-adherence-page]
+== Understand the _Real-Time Adherence_{:.css} page
+_Real-time adherence_{:.label} displays an overview of your _people_{:.css}'s adherence data in real time. Select at least a _planning unit_{:.css} to display data. The page is divided into six sections, which are explained below.
+
+[#real-time-adherence]
+=== _Real-time_{:.breadcrumbs}
+This section shows the percentage of _people_{:.css} who are currently in adherence (including those within the configured xref:#buffer-time[_buffer time_{:.css}]). This score refers only to the _people_{:.css} from the selected _planning unit_{:.css} and, if applicable, _selection_{:.css}.
+
+[#intraday-adherence]
+=== Intraday adherence
+This section shows the aggregate _adherence score_{:.css} for the past intervals of the current day for the selected _planning unit_{:.css} and/or _selection_{:.css}. The graph shows the daily adherence trends.
+
+Hover over the graph to see values for single intervals, color-coded as follows:
+
+- Gray: _Adherence score_{:.css} for the past intervals
+- Blue: Daily trend of the _adherence score_{:.css}
+- Pink: The pink dashed line shows the configured xref:#target-adherence-score[_target adherence score_{:.css}]. Additionally, adherence scores lower than the configured target score are highlighted in pink everywhere in the _Real-Time Adherence_{:.label} page.
+
+image::real-time-adherence/image-3.png[Intraday Adherence graphs, width=45%]
+
+Click the section title to open a more detailed view on an independent tab. The detail view displays a table with a timeline for individual _people_{:.css}. You can click a person's name in the table to open their data on an independent tab.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Times are displayed in the xref:best-practices:working-with-timezones.adoc[time zone] of the selected _planning unit_{:.css}. If you have only chosen a _selection_{:.css}, and have planning units with different time zones, all times appear in the _time zone_{:.css} configured in your user profile. The graphs display the xref:administration:create-and-manage-planning-units.adoc#add-business-hours[business hours] of the selected _planning unit_{:.css} where applicable.
+====
+[#agent-overview]
+=== Agent overview
+This section lists how many _people_{:.css} currently have the different _adherence statuses_{:.css}. The colors of the statuses match those of the _people_{:.css} rows highlighted in the table underneath.
+
+Click a status to filter the table underneath by that status. Click the same status again to remove it from the filter. You can click several statuses to filter by them at the same time.
+
+[#breaks-and-presence]
+=== Breaks and Presence
+This section shows data on how many _people_{:.css} are working on their _scheduled activities_{:.css}, divided into activities of type _Break_{:.css} and _Presence_{:.css}.
+
+The data is structured as follows:
+
+- Scheduled: Number of _people_{:.css} scheduled for activities of type _Break_{:.css} or _Presence_{:.css}.
+- Actual: Number of _people_{:.css} with a status matching their _scheduled activity_{:.css}.
+- Difference: Number of _people_{:.css} with a different status than their _scheduled activity_{:.css}.
+
+[#activity-overview]
+=== Activity overview
+In this section, you can see how many _people_{:.css} are scheduled for an activity in Peopleware and how many _people_{:.css} are currently working on this activity. You can sort the table by clicking any header.
+
+Hover over an activity to display the {icon-magnifying-glass} and the {icon-matches}.
+
+Click the {icon-magnifying-glass} to filter the overview table to the right by that activity. Click the icon again to remove that activity from the filter. You can filter by several activities at the same time.
+
+Click the {icon-matches} to map and match external statuses to Peopleware activities. Learn more about xref:intraday:adherence-matches.adoc[activity matches].
+
+[#adherence-overview-table]
+=== Adherence overview table
+The table shows the _adherence status_{:.css} of all _people_{:.css} assigned to the _planning unit_{:.css} and/or _selection_{:.css} you selected. Check the checkbox _Show only out of adherence_{:.label} next to the search bar to show only _people_{:.css} who are _out of adherence_{:.css}.
+
+Click any header to filter the table by that column. You can additionally filter the table by activity or status by clicking the relevant activities or statuses in the sections _Agent overview_{:.label} and _Activity overview_{:.label}.
+
+The table contains the following columns:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Description
+|Name
+|Name of the person
+|_Actual activity_{:.css}
+|Name of the activity that the person is currently working on (based on data from the External System _level_{:.css})
+|Status
+|Status as a colored marker with a tooltip showing the name of the status
+|_Scheduled activity_{:.css}
+|Name of the activity for which the person is currently scheduled, if applicable
+|_Out-of-adherence duration_{:.css}
+|Time the person has been _out of adherence_{:.css} (including the xref:#buffer-time[_buffer time_{:.css}])
+|_Current activity duration_{:.css}
+|Time passed since the start of the current activity
+|===
+
+[#individual-adherence-details]
+=== Individual adherence details
+To see more detailed information on a specific person, click their name in the table. A timeline opens under the table showing their scheduled activities and _out-of-adherence statuses_{:.css} of the current day. At the top right of the timeline, you can see their _adherence score_{:.css} based on the total time the person has been in and _out of adherence_{:.css} during that day.
+
+image::real-time-adherence/image-6.png[Details of a person, width=100%]
+
+Click the person's name in the timeline view to open the person's adherence data on an independent tab.
+
+In the timeline, click a time period in the _Out of adherence_{:.css} row to open a detailed view of the actual activities the person performed instead of the scheduled ones. You can also see the activity type and the duration. The detailed view groups short periods where a person was _out of adherence_{:.css} in a row into a single block.
+
+image::real-time-adherence/image-7.png[Out-of-adherence details, width=100%]
+
+[#buffer-time]
+== _Buffer time_{:.css}
+In a real work environment, _people_{:.css} are rarely able to adhere to their schedule to the second, which can lead to a cluttered overview of _people_{:.css} marked as _out of adherence_{:.css}. Users with admin access can configure a _buffer time_{:.css} for each _out-of-adherence subtype_{:.css} that defines how long _people_{:.css} are _out of adherence_{:.css} before the status becomes effective. This helps you focus on the _people_{:.css} who really need your attention.
+
+If a person is within the defined _buffer time_{:.css}, the time displayed in the _Out of adherence duration_{:.label} column increases but the following applies:
+
+- Their row is not highlighted. Only the status marker changes.
+- Their status has no negative effect on the _adherence score_{:.css}.
+- Their row is not displayed when the _Show only out of adherence_{:.label} filter is active.
+
+To configure or edit the _buffer time_{:.css}, follow these steps:
+
+1. At the top right of the overview table, click the {icon-context-menu}.
+2. Select _Adjust your buffer time_{:.label}.
+3. Select values for the _Not present_{:.label}, _Wrong activity_{:.label} and _Not scheduled_{:.label} subtypes from the drop-down menus.
+4. Click _Apply_{:.doc-button}.
+
+[NOTE]
+====
+The configured _buffer times_{:.css} apply to everyone in your Peopleware tenant.
+====
+[#target-adherence-score]
+== _Target adherence score_{:.css}
+You can configure a _target adherence score_{:.css} to better identify _people_{:.css} and intervals that fall below the target of your organization. This value is displayed as a pink dashed line in the adherence graphs. All percentage values below the target score are also highlighted in pink. By default, the _target adherence score_{:.css} is set to 90%.
+
+Users with admin access can edit the _target adherence score_{:.css} by following these steps:
+
+1. At the top right of the overview table, click the {icon-context-menu}.
+2. Select _Adjust your target adherence score_{:.label}.
+3. Enter a new value.
+4. Click _Apply_{:.doc-button}.
+
+[NOTE]
+====
+The configured target score applies to everyone in your Peopleware tenant.
+====
+[#troubleshoot-wrong-or-missing-external-status-information-in-peopleware]
+== Troubleshoot wrong or missing external status information in Peopleware
+People without an assigned _external identifier_{:.css} appear as Offline, because Peopleware cannot import their status data. You also see no data for these _people_{:.css} in the External System _level_{:.css} in _Shift Center_{:.label} or _Schedules_{:.label}. To see status data for a person, assign them a correct _external identifier_{:.css}, or check their assigned one for typos.
+
+If you see unexpected gaps in the data in the External System _level_{:.css} in _Shift Center_{:.label}, make sure all relevant external activities are mapped to either the Present activity (ID 1) or other activities. Learn more about xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[activity mapping].
+
+If this does not resolve the problem, contact our support team. They will ask you to generate a report in your _external system_{:.css} that shows the status data logged, and to provide screenshots of your Real-Time Adherence page and of the data in the External System _level_{:.css} in _Shift Center_{:.label} to track incoming statuses internally.

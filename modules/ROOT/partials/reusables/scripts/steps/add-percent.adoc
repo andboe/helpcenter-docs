@@ -1,0 +1,1 @@
+(Optional) Enter a value for **Add (%)** to increase the calculated staff requirements by a percentage value, e.g. to account for shrinkage.

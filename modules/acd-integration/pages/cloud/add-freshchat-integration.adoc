@@ -1,0 +1,77 @@
+= Add a Freshchat integration
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Freshchat CRM to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc
+:page-aliases: add-freshdesk-messaging-integration
+
+A Freshchat integration is a cloud integration that imports chat volumes.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-freshchat-integration]
+== Add a Freshchat integration
+To add a new Freshchat integration, you need a Pro or Enterprise Freshchat account.
+
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Freshworks**.
+5. From the **Model name** drop-down menu, select **Freshchat**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-freshchat-integration]
+== Set up your Freshchat integration
+1. Enter a unique name for the integration that identifies the data source.
+2. In the **Credentials** section, set up the access to your Freshchat account:
+   - **Domain**: Enter your full Freshchat domain name including the subdomain, e.g. example.freshchat.com.
+   - **API key**: Enter a valid API key of a Freshchat user with the Account Administrator role. You can find the key in the API Tokens page under Admin > Configure.
+3. Click _Save_{:.doc-button}.
+
+[#install-the-peopleware-app]
+=== Install the Peopleware app
+Peopleware can only receive data from Freshchat when you set up the Peopleware Freshchat app in your Freshworks account:
+
+1. In the **Install the Peopleware app** section, generate and copy the **Peopleware API key**.
+2. Set up the app in the [Freshworks marketplace](https://www.freshworks.com/apps/injixo_connect/).
+3. In the Peopleware app installation page, paste the copied API key.
+
+After you have installed the app, you can see new queues in your workloads and Forecast and xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map external identifiers] to your people in Peopleware.
+
+[#freshchat-data-in-peopleware]
+== Freshchat data in Peopleware
+[#contacts]
+=== Contacts
+In Freshchat, a chat usually contains multiple conversations that take place between your team members and your customers. In Peopleware, each solved chat counts as one contact, independent of the number of conversations.
+
+Example: A customer creates a chat on the website, the team member then responds but solves the issue one day later, due to further information needed. This would be counted as one contact in Peopleware.
+
+[#source-queue-naming-convention]
+=== Source queue naming convention
+Peopleware automatically creates a queue for each unique combination of `group` and `source` values included in the imported Freshchat data.
+
+The queue name is derived from these values as follows:
+
+`{group} ({source})`
+
+Examples:
+
+- Customer Support (WEBCHAT)
+- 2nd Level Support (MOBILE)
+
+[#deleted-and-spam-chats]
+=== Deleted and spam chats
+A chat can be deleted or marked as spam when it is updated. In this case, the integration cannot determine the group name. The source queues that count such chats are labeled Undefined_Queue. Typically, these queues are irrelevant for scheduling your people's workload.
+
+[#frequently-asked-questions]
+== Frequently asked questions
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Question
+|Answer
+|Suddenly, Peopleware stops displaying new Freshchat data but the page in **Account > Integrations** still shows the status Operational for my Freshchat integration. What can I do?
+|The Peopleware app gets Freshchat data and sends events to Peopleware. In the event of communication errors between the Peopleware app and Peopleware, Freshchat data may no longer be displayed. The Freshchat integration cannot detect such communication errors. + +In Freshworks, you can check the logs of the Freshchat app for errors. For example, you will see errors with status 401 if the Peopleware API key you entered when setting up the Peopleware app in your Freshchat account is invalid. If the API key is invalid, update the Peopleware API key on the Peopleware app installation page. If the API key is still valid or you don't see errors, contact our support team.
+|===

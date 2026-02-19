@@ -1,0 +1,86 @@
+= Create activities
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Create activities to represent scheduled and unscheduled tasks in your company.
+:related-articles: activity-examples.adoc, activity-types-and-properties.adoc, work-with-skills.adoc
+:page-aliases: creating-activities
+
+To create, edit and delete activities, go to _Plan > Configuration > Activities_{:.breadcrumbs}.
+
+Activities represent all tasks that are scheduled and reported on in your company, such as telephony, break, time off, or meetings. You can create as many activities as you want. The number of activities depends only on how many tasks you want to distinguish and the desired level of detail.
+
+Activities are an essential part of planning and scheduling in Peopleware. They are linked to other configuration items, e.g. to xref:administration:create-and-manage-planning-units.adoc[planning units], xref:administration:daymodel-basics.adoc[day models]. They are also part of the schedules managed in xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc[Shift Center] or in xref:scheduling:schedules-edit.adoc[Schedules].
+
+Peopleware includes two pre-configured (non-deletable) activities:
+
+- Present: This activity is used as a placeholder activity within day models. During scheduling, this activity is replaced with other ones that are configured as Plannable.
+- Vacation: This activity is used to schedule paid vacation based on a person’s vacation entitlement. Create unpaid time off as a separate activity.
+
+[#create-an-activity]
+== Create an activity
+1. In _Plan > Configuration > Activities_{:.breadcrumbs}, click _Create_{:.doc-button}.
+2. Enter the general information for your activity:
+   - **Name**: Unique name to describe your activity. The abbreviation is automatically generated.
+   - **Type**: The activity type determines how Peopleware uses activities in scheduling and how they are displayed in other modules and reporting. Learn more about the different xref:administration:activity-types-and-properties.adoc[activity types].
+   - (Optional) **Color**: The color appears in schedule and configuration data pages. It can help you identify different activities.
+   - (Optional) **Shortcut**: Optional keyboard shortcut to help you insert the activity more quickly in Shift Center. Learn more about xref:best-practices:tips-on-shift-center-usage.adoc[shortcuts].
+   - (Optional) **Official name and abbreviation**: Alternative name that can be used for internal reporting and integrations. Me always displays the name entered under **Name**.
+3. Check one or more checkboxes to set different xref:administration:activity-types-and-properties.adoc[activity properties].
+   If you check Plannable, you can edit the xref:best-practices:importance-for-activities.adoc[importance value].
+   If you check Replaceable, you can edit the xref:best-practices:priority-for-activities.adoc[priority value].
+4. Click _Save_{:.doc-button}.
+
+[#multiactivities-and-subactivities]
+== Multiactivities and subactivities
+Multiactivities allow you to schedule people with several skills when one of their skills is needed. Multiactivities are not available in Essential WFM.
+You can turn an activity into a multiactivity by xref:administration:activity-types-and-properties.adoc[assigning other activities] to it. The assigned activities become subactivities. In the list of activities, multiactivities are marked with an <em class="multiactivity-icon"></em> icon.
+
+If an activity is a subactivity, when you click it you can see the section **Multiactivities**, which displays all the multiactivities it is assigned to.
+
+If an activity is not a subactivity, when you click it you can see the section **Subactivities**, where you can select other activities to be subactivities of the activity that you are editing. The activity itself would then become a multiactivity.
+You can only assign subactivities to an activity after you have created it.
+
+[#create-a-new-multiactivity]
+=== Create a new multiactivity
+To create a multiactivity from scratch, proceed as follows:
+
+1. In _Plan > Configuration > Activities_{:.breadcrumbs}, create all the activities that you want to use as subactivities. Ensure that your configuration meets xref:administration:activity-types-and-properties.adoc[these conditions].
+2. Create the activity that you want to turn into a multiactivity.
+3. In the **Subactivities** section, click **+ Add**.
+4. From the drop-down menu **Subactivities**, select the activity that you want to use as a subactivity.
+5. Click _Save_{:.doc-button}.
+6. (Optional) To add more subactivities, repeat steps 3 to 5.
+
+The **Subactivities** section shows the names and IDs of the assigned activities.<br>
+In _Plan > Configuration > Activities_{:.breadcrumbs}, an <em class="multiactivity-icon"></em> is shown next to the name of the multiactivity.
+
+You can now xref:administration:create-and-manage-planning-units.adoc[assign the subactivities and the multiactivity to your planning unit].
+
+[#map-external-statuses]
+== Map external statuses
+You can map external statuses from external systems (e.g. an ACD) to an activity in Peopleware.
+The following procedure provides an overview of the configuration steps. For a more detailed explanation, go to xref:intraday:map-external-status.adoc[Map external statuses to activities].
+
+1. Select an activity from the list, scroll to the section **External statuses**, and click **Map external statuses in Intraday**.  
+   Peopleware redirects you to _Intraday > Configuration_{:.breadcrumbs}.
+2. Click the integration with the external system whose external statuses you want to map.
+3. In the **External statuses** section, select all statuses that you want to map to your activity.
+4. Click _Save changes_{:.doc-button}.
+
+[#edit-or-delete-an-activity]
+== Edit or delete an activity
+1. In the **Activities** list, select an activity.
+
+- To edit the activity, edit the information you want to change and click _Save_{:.doc-button}.
+- To delete the activity, click the three-dot menu {icon-context-menu}, and select **{icon-delete} Delete**.
+
+If the deleted activity was assigned to other configuration items, such as planning units or day models, its name is displayed in italics in these items. A deleted activity loses its assignments to other items but will remain visible in configuration data. You may need to recreate existing day models that used the deleted activity.
+
+Shift Center displays deleted activities xref:scheduling:shift-center-overview.adoc[surrounded by a dashed line]. Schedules displays deleted activities in gray without the name. The original time information will remain visible, except in the daily view.
+
+[#duplicate-an-activity]
+== Duplicate an activity
+Learn how to xref:general:duplicate-objects.adoc[duplicate activities].

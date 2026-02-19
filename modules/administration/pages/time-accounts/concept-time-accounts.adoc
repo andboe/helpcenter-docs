@@ -1,0 +1,52 @@
+= Time account basics
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what time accounts are and how to use them.
+:related-articles: concept-target-work-times.adoc, task-calculate-target-work-times.adoc, task-calculate-time-accounts.adoc, create-contracts.adoc
+
+Time accounts compare the worked and scheduled hours for each person and a calculation period leading up to a specific day.
+The time account balance for that day shows the difference between the scheduled hours and the contractual working hours for that person in the given calculation period.
+
+The time account balance for a period indicates whether a person was or is scheduled to work more or fewer hours than their contractual working hours.
+
+Time account balances can be used for various purposes, such as:
+
+- Monitor deviations from contractual working hours
+- Adjust target working time for future scheduling periods
+
+== Calculation process
+
+Time account calculations are triggered manually for a specific calculation date.
+The calculation date defines the end date of the calculation period.
+Usually, time accounts are calculated on the last day of a scheduling period.
+
+To determine the start date of the calculation period, Peopleware tracks back in time from the calculation date to evaluate the following dates:
+
+- The previous calculation date for that person
+- The last reset date for that person's time account
+- The start date of the person's current contract
+- The start date of the person's current staff membership period
+
+Of these dates, the one closest to the calculation date serves as the start date for the calculation period.
+Once Peopleware established the calculation period, it uses the following data to determine the time account balance:
+
+- The person's scheduled hours in the calculation period across all planning units assigned to that person
+- The person's weekly or monthly working hours as defined in their contract
+- The time account balance at the start date of the calculation period
+
+Once calculated, the time account data is available for review and processing.
+If necessary, the time account balances can be adjusted or reset.
+
+A possible next step in Peopleware is to use the time account balance in the calculation process for target work times.
+For more information, see article xref:administration:concept-target-work-times.adoc[Target work time basics]
+
+== Time account reset
+
+Resetting a time account sets its balance for that day to 0.
+Usually, a reset is performed at the beginning of the period for which a balance should be calculated, e.g. a month.
+As a result, the subsequent calculation period starts from a clean slate and the next calculation yields a balance not influenced by data from previous calculations.
+
+For example, resetting time account balances for people of a planning unit on 31 Dec and then performing calculations at the end of the weekly January scheduling periods and at the end of the month, yields accurate overtime and undertime data both for January and each scheduling period.

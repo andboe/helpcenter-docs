@@ -1,0 +1,89 @@
+= Calculate target work times
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:description: Trigger calculation of target work times for specific people and scheduling periods.
+:related-articles: concept-target-work-times.adoc, concept-time-accounts.adoc, task-calculate-time-accounts.adoc, create-contracts.adoc, what-are-scheduling-periods.adoc
+
+This article explains how to calculate and adjust target work times for a specific scheduling period and group of people.
+
+[#prerequisites]
+== Prerequisites
+[#general]
+=== General
+- You are familiar with how target work times are calculated and used in Peopleware.
+  For more information, see article xref:administration:concept-target-work-times.adoc[Target work time basics]
+- Peopleware calculates target work times for specific scheduling periods of a planning unit.
+  These scheduling periods are set up in Peopleware. <!-- TODO add related article -->
+- To calculate target work times exclusively based on contract settings:
+  The person's contract work time guidelines specify daily or weekly target time values.
+- To calculate target work times based on contract settings and time accounts:
+  The person's contract work time guidelines specify daily or weekly values for minimum, target and maximum work times.
+  The target work times calculated for a scheduling period observe the daily or weekly work time window defined by these values.<br>
+  Example:<br>
+  The work time guidelines of a person's contract define a weekly target work time of 30 hours and a weekly maximum work time of 40 hours.
+  The scheduling period spans a week.
+  The relevant time account balance of the person prior to the start of the scheduling period shows a deficit of 20:00 hours.
+  The target work time for this person and scheduling period will be 40 hours, i.e. the weekly maximum target work time as defined by the contract.
+
+<!--
+I was unable to calculate sensible target work times when the contract only specified monthly or annual min/max/target work time values.
+Steffen Rühlemann suspects that these don't actually work, so for now, I assume TWT can only be calculated if the contract defines daily/weekly values.
+This tracks with the results of my tests in the system.
+-->
+
+[#permissions]
+=== Permissions
+You have the following functional permissions:
+
+- **Plan**
+  - **Full access to Target Work Times in Configuration**
+
+<!-- ROLES-new - release with go-live of new roles UI
+You have the following base permissions:
+-->
+
+<!-- ROLES-new - release with go-live of new roles UI
+- _Plan > Configuration > Target work times_{:.breadcrumbs}
+  - **Configure target work times**
+-->
+<!-- LNF-new - release with go-live of left-side nav
+- _Scheduling > Configuration > Target work times_{:.breadcrumbs}
+- **Configure target work times**
+-->
+
+[#steps]
+== Calculate target work times
+<!-- LNF-new
+1. Go to _Scheduling > Configuration > Target work times_{:.breadcrumbs}.
+-->
+
+1. Go to _Plan > Configuration > Target work times_{:.breadcrumbs}.
+2. Select a planning unit and scheduling period.
+   The target work times table now displays all people that are members of the planning unit within the scheduling period.
+3. Optional: Select a selection to further filter the people shown in the table.
+4. In the table, select all people you want to calculate the target work time for.
+5. Click _Calculate_{:.doc-button}.
+
+The calculated target work times of all selected people and scheduling period is now available for evaluation or further processing.
+If necessary, you can adjust the calculated target work time.
+
+[#adjust-target-work-times]
+== Adjust target work times
+To adjust the calculated target work time of an individual person, proceed as follows:
+
+1. In the **Target work times** table, navigate to the person.
+2. In the **Modified value** field, enter a new target work time.
+   The modified value replaces the calculated value.
+
+To adjust the calculated target work time for multiple people in batch, proceed as follows:
+
+1. In the **Target work times** table, select all the people whose calculated value you want to adjust.
+2. Click _Adjust_{:.doc-button}.
+   Peopleware opens a configuration dialog.
+3. In the dialog, configure how you want to adjust the calculated values.
+4. Click _Adjust_{:.doc-button}.
+
+Peopleware stores the new target work time in the people's respective **Modified value** fields.

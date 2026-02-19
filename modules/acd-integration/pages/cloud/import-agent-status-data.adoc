@@ -1,0 +1,95 @@
+= Import agent status data
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to correctly import agent status data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc, add-an-integration.adoc
+
+External systems, such as ACDs, record when people switch from one activity to the next. Peopleware can use this data to support Intraday Management.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#prerequisites]
+== Prerequisites
+To import agent status data, you first need to xref:acd-integration:how-integrations-work.adoc[add an integration] that supports agent status data import.
+
+If you need to check whether your integration supports agent status data, go to _Account > Integrations_{:.breadcrumbs} and click _Add an integration_{:.doc-button}. There, you can see the data types that each integration supports (e.g. agent status, call history, etc.). Some vendor-specific integrations are divided into different models. In those cases, click the **Select model** dropdown to see which data types are supported by each model.
+
+After configuring the integration, you need to map the identifiers from your external system (here called external identifiers) to your people in Peopleware. Optionally, you can map external statuses imported from your external system to activities in Peopleware.
+
+[#external-identifiers]
+== External identifiers
+External identifiers identify the users in the external system by an email address, a username, or an agent ID. External identifiers are vendor-specific.
+
+To avoid unsuccessful imports, pay attention to the correct spelling, the use of upper and lower case, and spaces.
+
+<!-- left-align table -->
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Vendor
+|Required user identifier
+|Five9
+|user name from Five9
+|Genesys Cloud
+|user name from PureCloud
+|Genesys Engage
+|user name from PureEngage
+|Talkdesk
+|email address used in Talkdesk
+|UJET
+|email address used in UJET
+|Sikom
+|user name from Sikom
+|Mitel MiVoice Business
+|user name from Mitel MiVoice Business
+|Vonage
+|agent id from Vonage
+|Avaya CMS
+|user name from Avaya CMS
+|Freshcaller
+|email address used in Freshcaller
+|Zendesk
+|agent id from Zendesk
+|===
+
+[#map-external-identifiers-to-people-in-peopleware]
+== Map external identifiers to people in Peopleware
+To import agent status data, add external identifiers to all people for whom you want to import data:
+
+1. Go to _People_{:.breadcrumbs} and select a person.
+2. In the **Profile** section, go to **External identifiers** and click **Add**.
+3. From the **Integration** drop-down menu, select the integration which imports your agent statuses.
+4. In the **Identifier** field, enter the external identifier from your integration for this person.
+5. Optional: Specify a validity period.
+6. Click _Save_{:.doc-button}.
+
+After you have updated the person's profile section, the next import will include agent status data.
+
+If you do not have access to the **External systems** section in the **Profile** section in **People** yet, follow these steps:
+
+1. Go to _People_{:.breadcrumbs} and select a person.
+2. At the top right of the person's window, click **WFM**.
+3. In the side window, click **External systems** or scroll down to the **External systems** section.
+4. Click the {icon-wfm-add} to add an external system.
+   A window opens.
+5. Configure the following information:
+   - **External System**: Select the integration you have set up before.
+   - **Employee ID in External System**: Enter a unique number for the employee, e.g. the employee's personnel number.
+   - **Extension**: Enter the external system user identifier for the employee, e.g. the employee's email address.
+6. Click _OK_{:.doc-button}.
+
+[#map-external-statuses-to-activities-in-peopleware]
+== Map external statuses to activities in Peopleware
+External systems record when people log in, log out, or switch from one task to another. We call this information external statuses.
+
+When you add an integration, Peopleware maps all external statuses to the activity Present (ID 1). With this configuration, Intraday will show the activity Present for your people whenever external status data is available.
+
+You can remap external statuses to other activities. You can read more about how to map external statuses and which strategy to follow in xref:intraday:map-external-status.adoc[Map external statuses to activities].

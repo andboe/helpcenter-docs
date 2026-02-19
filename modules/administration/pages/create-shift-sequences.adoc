@@ -1,0 +1,123 @@
+= Create and edit shift sequences
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create, edit, and delete shift sequences.
+:related-articles: shift-sequences.adoc, shift-sequences-use-cases.adoc, assign-shift-sequences-to-people.adoc
+
+This article explains how to create, edit, and delete shift sequences, and generate reports with shift sequence data.
+
+[#prerequisites]
+== Prerequisites
+- You have the **Full access to Configuration** permission.
+- You have **Read**, **Edit**, and **Delete** access to **Shift Sequences** in WFM. Learn more about xref:account:configure-user-roles.adoc#set-wfm-permissions[WFM permissions].
+- You have created xref:administration:activities.adoc[activities] or xref:administration:daymodel-creation.adoc[day models].
+- You have determined how many shift sequences you need as well as the number of rows and cells in each. This depends entirely on your organization's needs, e.g. how many different shifts you plan, whether you plan recurring meetings, etc.
+
+[#create-a-shift-sequence]
+== Create a shift sequence
+[#enter-the-basic-information]
+=== Enter the basic information
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings for the shift sequence. For more information see xref:#general-settings[General settings].
+4. Click _Save_{:.doc-button}.
+
+[#assign-activities-and-day-models-to-the-shift-sequence]
+=== Assign activities and day models to the shift sequence
+1. (Optional) In the **Assignments** section, rename the Employee rows by clicking on their name.
+2. Click _Day model_{:.doc-button} or _Activity_{:.doc-button}.
+3. In the dropdown menu, select the day model or activity that you want to assign to the shift sequence.
+   - If you select an activity, set its start and end time.
+4. Click on a cell to insert the day model or activity.
+
+Peopleware saves the shift sequence automatically.
+
+You can now xref:administration:assign-shift-sequences-to-people.adoc[assign shift sequences to your people].
+
+[#edit-a-shift-sequence]
+== Edit a shift sequence
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. Click on the name of the shift sequence that you want to edit.
+3. Make the changes.
+
+- If you make changes in the **General** section, click _Save_{:.doc-button}.
+- If you edit the **Assignments**, your changes are saved automatically. To clear all assignments, click the three-dot menu {icon-context-menu} and then _Clear all_{:.doc-button}.
+
+[#delete-a-shift-sequence]
+== Delete a shift sequence
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. In the row corresponding to the shift sequence that you want to delete, click the three-dot menu {icon-context-menu}.
+3. From the drop-down menu, select {icon-delete} Delete.
+4. In the window that opens, click _Delete_{:.doc-button}.
+
+If the shift sequence was assigned to your people, it remains visible in their page under _Planning > Shift sequences_{:.breadcrumbs}
+
+[#duplicate-a-shift-sequence]
+== Duplicate a shift sequence
+Learn how to xref:general:duplicate-objects.adoc[duplicate shift sequences].
+
+[#generate-a-report]
+== Generate a report
+For each shift sequence, you can generate a PDF report that includes shift sequence data. For more information on the data included in the report, see the xref:#addendum[addendums].
+
+1. Go to _Plan > Configuration > Shift sequences_{:.breadcrumbs}.
+2. In the row corresponding to the shift sequence for which you want to create a report, click the three-dot menu {icon-context-menu}.
+3. From the drop-down menu, select _Create report_{:.doc-button}.
+
+A process starts in the background. To track its progress, go to the xref:general:jobstatus.adoc[Job status page].
+
+[#settings-and-parameters]
+== Settings and parameters
+[#general-settings]
+=== General settings
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Name
+|Unique name for the shift sequence (max. 50 characters)
+|Abbreviation
+|Short name for the shift sequence (max. 25 characters)
+|Rows
+|Number of rows for the shift sequence (max. 53). Each row is assigned a number.
+|Days
+|Duration of the shift sequence (max. 371). The duration defines the number of days after which the shift sequence restarts.
+|Valid from
+|(Optional) Start day of the shift sequence's validity.
+|Valid to
+|(Optional) End day of the shift sequence's validity.
+|===
+
+[NOTE]
+====
+Shift sequences as weekly patterns
+====
+>
+[NOTE]
+====
+Shift sequences repeat continuously for as long as they remain valid. To configure shift sequences as weekly patterns, set the number of **Days** to 7 or a multiple of 7.
+====
+[#addendum]
+== Addendum
+The following table explains the values displayed in the shift sequence report:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column/row
+|Description
+|From column
+|Start time of the activities or day models included in the shift sequence per weekday.
+|To column
+|End time of the activities or day models included in the shift sequence per weekday.
+|Hrs. column
+|Net duration of the activities and day models per weekday, in hours.
+|Sum row
+|Net duration of all activities or day models in the shift sequence per weekday, in hours.
+|Sum column
+|Total added net duration of the activities or day models per week, in hours.
+|Average row
+|Average of all values in the Sum column, in hours.
+|===

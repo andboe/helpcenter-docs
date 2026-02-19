@@ -1,0 +1,99 @@
+= Lock and unlock plan data
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-task:
+:description: Learn how to lock and unlock scheduling levels for specific planning units and date ranges to control access to schedule data.
+:related-articles: use-levels.adoc, schedules-overview.adoc
+
+In Peopleware, schedules are organized into xref:scheduling:use-levels.adoc[levels].
+You can lock and unlock plan data for specific planning units in a specified level and date range to control editing access.
+This article explains how to perform the following tasks:
+
+- Lock plan data for a specific planning unit in a specified level and time range
+- Copy plan data to another level and lock the plan data in that level
+- Unlock plan data for a specific planning unit in a specified level and time range
+
+Locked periods help you protect your scheduling data. Common use cases include:
+
+- Ensure data consistency with external systems:
+  Freeze plan data to prevent changes and discrepancies with data exported to external systems.
+- Maintain a source of truth: Lock plan data for reference, keep it for comparison or historical record-keeping.
+
+[#prerequisites]
+== Prerequisites
+[#permissions]
+=== Permissions
+To lock plan data for a specific planning unit in the specified level and time period, you need a role with the following permissions:
+
+- Full access to Configuration in Plan
+
+Object permissions can be specified for the following object types:
+
+- Planning units
+- Levels
+
+Make sure that you have at least `Read` permissions for the relevant planning units and for the levels you want to lock.
+
+[#steps]
+== Steps
+[#lock-a-level-for-editing]
+=== Lock a level for editing
+1. Go to _Plan > Configuration > Locked periods_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Select the following configuration data:
+   - **Planning unit**:
+     The planning unit for which you want to lock a level.
+   - **Locked level**:
+     The level that includes the data you want to lock for editing.
+   - **Date range**:
+     The date range of the level data that cannot be edited.
+     Example:
+     If you select the entire month of January, the level data cannot be edited for that period.
+4. Click _Save_{:.doc-button}.
+5. In the **Locked periods** overview page, click the contextual menu icon {icon-context-menu} next to the locked period you just created.
+6. Select {icon-lock} **Lock**.
+
+[#create-an-editable-copy-of-a-locked-level]
+=== Copy and lock a level
+The **Copy and lock** option allows you to copy the data from the main scheduling level into a target level and lock the target level, creating a backup of your main scheduling level. In most cases, your main scheduling level is the **Schedule** level.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You can only use the following as target levels:
+====
+>
+[NOTE]
+====
+- Actual, if your main scheduling level is Schedule
+- Schedule, if your main scheduling level is Actual
+- Version 1
+- Version 2
+- Version 3
+====
+1. Go to _Plan > Configuration > Locked periods_{:.breadcrumbs}.
+2. Create a locked period. In the **Locked level** field, select the target level into which you want to copy the data from your main scheduling level.
+3. Click _Save_{:.doc-button}.
+4. In the **Locked periods** overview page, click the contextual menu icon {icon-context-menu} next to the locked period you just created.
+5. Select {icon-lock} **Copy and lock**.
+   A confirmation window specifies your main scheduling level.
+6. Click _Confirm_{:.doc-button}.
+
+This copies your main scheduling level into the locked level for that period and planning unit.
+Example:
+If you selected **Actual** as the locked level and your main scheduling level is **Schedule**, the **Schedule** level data is copied into the **Actual** level.
+The period is automatically locked.
+The Schedule level remains editable.
+
+[#unlock-plan-data]
+== Unlock plan data
+1. Go to _Plan > Configuration > Locked periods_{:.breadcrumbs}.
+2. In the **Locked periods** overview page, click the contextual menu icon {icon-context-menu} next to the locked period you want to unlock.
+3. Select {icon-lock-open} **Unlock**.
+
+This unlocks the plan data. The data for the related planning unit in that level and time range can now be edited.

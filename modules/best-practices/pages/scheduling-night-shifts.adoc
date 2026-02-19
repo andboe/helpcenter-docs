@@ -1,0 +1,107 @@
+= Schedule night shifts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to schedule night shifts.
+
+There are different options to schedule night shifts.
+
+Note:
+
+- Peopleware checks compliance with rest periods before and after a night shift. This is why you need to consider the entire week.
+- For a 24/7 operation, in your forecast, you must calculate staff requirements for Monday of the following week. Otherwise, your employees will not be scheduled correctly on Monday.
+- Essential WFM supports scenario 1 only.
+
+[#scenario-1-night-shifts-are-distributed-fairly-among-all-employees]
+== Scenario 1: Night shifts are distributed fairly among all employees
+To make sure that night shifts are distributed equally among all employees, you can use xref:administration:shift-sequences.adoc[shift sequences].
+
+First, calculate how many night shifts you need and how you can distribute them among all employees as just as possible. Note that you may have to redistribute shift sequences when employees enter and leave the company.
+
+image::scheduling-night-shifts/image-3.png[Shift sequence with distributed night shifts, width=80%]
+
+Then you can create optimized schedules to assign the remaining shifts.
+
+**Advantage:**
+
+- Night shifts are always distributed fairly among all employees.
+
+**Disadvantages:**
+
+- High manual effort to keep the shift sequences up to date
+- No flexibility
+- Manual scheduling required in case of sickness or vacation
+
+[#scenario-2-night-shifts-are-the-exception]
+== Scenario 2: Night shifts are the exception
+You can integrate night shifts into your existing xref:best-practices:fair-shift-distribution.adoc#optimized-rotation-work-time-pattern-models[work time pattern models].
+
+For that, you need a dedicated week time pattern for weeks with night shifts. The week time pattern only contains day models for night shifts. Select the week time pattern as _Week Time Pattern - Exception Days_ in your work time pattern model.
+
+You define the number of possible night shifts in the week time pattern (_maximum number of exception days per week_). This way, you can specify the number of night shifts per week.
+
+Since night shifts are only distributed according to need, some employee can go weeks without a night shift.
+
+image::scheduling-night-shifts/image-2.png[Possible setup of a work time pattern model with a night shift exception week time pattern, width=80%]
+
+**Advantage:**
+
+- Because most contact centers are typically understaffed and at the limit of their capacities, what should be optional exception days tend to always be scheduled.
+
+**Disadvantages:**
+
+- Since employees get their night shifts randomly and you cannot set a rotation for night shifts, there may be an unfair distribution.
+- If understaffing during the day is disproportionately high, night shifts may also be understaffed.
+
+[#scenario-3-employees-are-scheduled-on-a-weekly-basis-for-night-shifts]
+== Scenario 3: Employees are scheduled on a weekly basis for night shifts
+In this scenario, you also integrate your night shifts into your existing xref:best-practices:fair-shift-distribution.adoc#optimized-rotation-work-time-pattern-models[work time pattern models].
+
+Create your own week time pattern for the night shift week. However, only add day models for night shifts.
+
+image::scheduling-night-shifts/image-1.png[Possible construction of a Work Time Pattern Model with a night shift week, width=80%]
+
+**Advantage:**
+
+- All agents receive a fair distribution of night shifts.
+
+**Disadvantage:**
+
+- Night shifts can only be scheduled for full weeks.
+
+[#scenario-4-employees-can-request-night-shifts]
+== Scenario 4: Employees can request night shifts
+If you want your employees to choose their own night shifts, use the xref:scheduling:shift-bidding.adoc[shift request procedure]. You can use shift bidding for all shifts as usual or night shifts only.
+
+You can run the shift lottery and assign remaining shifts or combine shift bidding with optimized schedules. In the latter case, however, you cannot work with work time pattern models at the same time.
+
+You can limit the maximum number of night shifts by adjusting the xref:scheduling:shift-requirement.adoc[shift requirement].
+
+image::scheduling-night-shifts/image-4.png[Adjust the shift requirements table, width=80%]
+
+**Advantage:**
+
+- Perceived fairness because employees can request night shifts themselves
+
+**Disadvantages:**
+
+- Night shifts must be scheduled manually if not enough employees requested night shifts.
+- Night shifts must be requested before other shifts can be scheduled.
+
+[#night-shift-related-settings]
+== Night shift-related settings
+- _48161_{:.id-label} _Mode for defining night work_
+- _48121_{:.id-label} _Earliest start time for night work_
+- _48122_{:.id-label} _Night work duration_
+- _48162_{:.id-label} _Reference time for night shifts_
+
+[#additional-constraints-on-night-shifts-in-contracts]
+== Additional constraints on night shifts in contracts
+- _2632_{:.id-label} Max. night shifts per week
+- _2633_{:.id-label} Max. night shifts per month
+- _2634_{:.id-label} Max. consecutive night shifts
+- _2635_{:.id-label} _Ensure minimum number of days off after night work_
+- _2636_{:.id-label} _Ensure rest period after night work_
+- _2637_{:.id-label} _Ensure maximum number of working days before night work_

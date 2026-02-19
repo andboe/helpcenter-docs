@@ -1,0 +1,43 @@
+= What is Meetings?
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to automatically schedule 1:1 meetings, group meetings, and self-learning sessions for the people in your organization.
+:related-articles: scheduling-suggestions.adoc
+
+In _Plan > Meetings_{:.breadcrumbs}, you can schedule meetings for the people in your organization. Peopleware finds the best slots to minimize the impact on the coverage of existing activities and generates meeting suggestions. You can then review and apply these suggestions to the schedule.
+
+[#prerequisites]
+== Prerequisites
+- You have created at least one activity of type Meeting.
+- You have created a schedule in the Schedule xref:scheduling:use-levels.adoc[level] for the planning unit in which you want to schedule people for meetings.
+- The schedule includes activities of type Presence that are configured as Replaceable. The _Meetings_{:.label} functionality generates suggestions to replace such activities with a meeting.
+
+[#limitations-and-impact-on-the-schedule]
+== Limitations and impact on the schedule
+You can only schedule meetings for time periods in the future.<br>
+The _Meetings_{:.label} functionality does not affect activities that are not configured as Replaceable.
+Furthermore, the _Meetings_{:.label} functionality does not not affect activities of types other than Presence, even if they are configured as Replaceable.
+
+[#meeting-types]
+== Meeting types
+In _Plan > Meetings_{:.breadcrumbs}, you can schedule meetings of the following three types:
+
+- xref:scheduling:generate-suggestions-for-1-1-meetings.adoc[1:1 meetings]: One-on-one meetings with a host.
+- xref:scheduling:self-learning-sessions.adoc[Self-learning sessions]: Individual training sessions.
+- xref:scheduling:generate-suggestions-for-group-meetings.adoc[Group meetings]: Meetings for groups of people with or without a host.
+
+[#generate-meeting-suggestions]
+== Generate meeting suggestions
+1. Go to _Plan > Meetings_{:.breadcrumbs}.
+2. In the tile with the type of meeting that you want to schedule, click _Set up_{:.doc-button}.
+3. In the window that opens, configure the required **Parameters**, that are different for each type of meeting.
+   Learn more about the parameters for xref:scheduling:generate-suggestions-for-1-1-meetings.adoc[1:1 meetings], xref:scheduling:self-learning-sessions.adoc[self-learning sessions], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings].
+4. Click **Generate suggestions**.  
+   The process can take up to 10 minutes.
+
+   Meeting suggestions are generated in the time zone of the planning unit.
+
+When generating meeting suggestions, new entries are added to the table in the _Generated suggestions_{:.label} section. Learn how to xref:scheduling:scheduling-suggestions.adoc[review and apply the meeting suggestions].

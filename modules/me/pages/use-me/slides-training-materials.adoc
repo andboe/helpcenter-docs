@@ -1,0 +1,12 @@
+= Training materials
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-concept:
+:description: Download training material to help your people use the employee portal.
+
+Equip your team with essential knowledge about the Peopleware Me employee portal.
+Download our PDF training materials, designed for easy distribution to employees without direct Help Center access.
+
+- <a href="/assets/pdf/features/me-training-materials/Peopleware_Your_employee_portal_Quick_start_guide.pdf">Download PDF (English)</a>
+- <a href="/assets/pdf/features/me-training-materials/Peopleware_Ihr_Mitarbeiter-Portal_Kurzanleitung.pdf">Download PDF (German)</a>

@@ -1,0 +1,75 @@
+= Use Xlink log files
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: on-premise
+:topic-type-concept:
+:description: Activate logging for Xlink and learn about what kind of information is logged.
+
+Xlink generates log files, which are important in case of problems with the data import. You may be able to find a problem yourself by taking a look at the files. The log files contain errors and warnings. However, this article does not explain specific error messages. Your Customer Success Team needs them for problem analysis.
+
+[#activate-logging]
+== Activate logging
+The configuration file 'isps_ul.ini' contains a parameter **Protocol** in two places:
+
+- Section [General]
+- Section [Name of your external system].
+
+To activate logging, change the value from 0 to 1 and restart the 'ISPS Xlink' service after saving the file.
+
+[#xlink-log-files-for-service-and-user-interface]
+== Xlink log files for service and user interface
+A log file is generated after the import of call and agent data.
+
+These log files contain information about
+
+- any starts/stops of the Xlink interface and service
+- loaded configuration parameters
+- mapping and script changes
+- the start and end of each import
+- data records read by the interface
+- possible error messages, e.g. for connection problems
+
+When logging is activated in the [General] section, Xlink will populate following log files with data:
+
+- isps_uls.log
+- isps_ul.log
+
+If the option for agent data import (TimeLink) is activated in the external system, there is another log file:
+
+- external_system_agent_import.log
+
+[#interface-specific-logging]
+=== Interface-specific logging
+Activate logging in the section [Name of your external system] so that the Xlink creates a log file for each mapped queue from the external system.
+
+These log files contain:
+
+- Queries to the data source (database or file)
+- Returned values
+- Error messages (due to any incorrect configuration, e.g. for universal interface)
+
+From your external system, 'Queue1' and 'Queue2' are linked/mapped with Peopleware, the Xlink now creates two log files:
+
+- external_system_queue1.log
+- external_system_queue1.log
+
+[#specify-a-custom-log-directory]
+=== Specify a custom log directory
+Specifically for interface log files, you are able to configure a different target directory. To do this, add the parameter 'LogDir' with an absolute path in the [General] section of the 'isps_ul.ini':
+
+Example:
+
+----
+[General]
+LogDir="C:\Xlink\Logs"
+----
+
+[#maximum-file-size]
+== Maximum file size
+Log files can reach a maximum size of 4 GB. Xlink does not delete log files automatically.
+
+As a result, Xlink will no longer import data. There are two possible solutions:
+
+- Switch off logging (Protocol=0).
+- Delete the files regularly manually or by using a bat file in a scheduled task.

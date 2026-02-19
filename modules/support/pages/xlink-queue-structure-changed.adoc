@@ -1,0 +1,58 @@
+= Autocorrect incorrect mappings
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: on-premise
+:topic-type-concept:
+:description: Autocorrect mappings after changing parent queue.
+:related-articles: xlink-mapping-telephony.adoc
+
+In this article, you will learn how to configure the _AutomaticMappingCorrection_ parameter in Xlink to automatically correct invalid mappings.
+
+[#what-is-the-_automaticmappingcorrection_-parameter-for]
+== What Is the _AutomaticMappingCorrection_ Parameter for?
+To import call data, you need queue mappings. Existing queue mappings become invalid if you change the parent queue in a queue.
+Duplicate mappings may occur if you create new mappings for the queue in the Xlink user interface. These mappings can lead to incorrect or missing data.
+
+[#activate-the-_automaticmappingcorrection_-parameter]
+== Activate the _AutomaticMappingCorrection_ Parameter
+Note: The parameter _AutomaticMappingCorrection_ is part of the Xlink sample configuration and may already be included in the _isps_ul.ini_ file.
+
+1. Stop the **ISPS Xlink** service on the computer where the Xlink is installed.
+2. Open the file _isps_ul.ini_ in the Xlink folder.
+3. In the section _[GENERAL]_, add the parameter **AutomaticMappingCorrection=1** . If the parameter already exists, change the configured value from 0 to 1 if necessary.
+4. Restart the service **ISPS Xlink**
+5. Open the Xlink user interface **isps_ul.exe** again.
+
+Xlink checks existing mapping entries in the _acd_map.ini_ file. Xlink detects incorrect mappings and corrects or removes them. The current _acd_map.ini_ file is backed up. A dialog window tells you if wrong mappings have been detected.
+
+[#review-mapping-changes]
+== Review Mapping Changes
+Any mapping changes are logged to the _isps_ul.log_ file. There are two different messages:
+
+- _Invalid Mapping detected and automatically corrected_: A mapping entry with an invalid parent queue is changed to the correct queue ID.
+- _Invalid Mapping(s) detected and automatically removed_: A mapping entry with invalid IDs exists multiple times. The additional entries are removed.
+
+Example:
+
+----
+03/17/22 12:15:48 > ** ANALYSING MAPFILE STARTED **
+
+03/17/22 12:15:48 > Invalid Mapping(s) detected and automatically removed:
+03/17/22 12:15:48 > 	R4-System:1001:1016:1009=$350.BAS
+03/17/22 12:15:48 > 	R4-System:1001:1016:1009=Avaya CMS:1:VDN:123:ACDTIME
+03/17/22 12:15:48 > The following valid mapping was identified:
+03/17/22 12:15:48 > 	R4-System:1:1016:1009=$473.BAS
+03/17/22 12:15:48 > 	R4-System:1:1016:1009=Avaya CMS:1:VDN:123:ACDTIME
+
+03/17/22 12:15:48 > Invalid Mapping detected and automatically corrected:
+03/17/22 12:15:48 > 	R4-System:1104:1108:1023=$522.BAS
+03/17/22 12:15:48 > 	R4-System:1104:1108:1023=Avaya CMS:1:Split:Test:Holdtime
+03/17/22 12:15:48 > Updated to:
+03/17/22 12:15:48 > 	R4-System:0:1108:1023=$522.BAS
+03/17/22 12:15:48 > 	R4-System:0:1108:1023=Avaya CMS:1:Split:Test:Holdtime
+
+03/17/22 12:16:03 > The file 'C:\Program Files\InVision Enterprise WFM\XLink\Acd_map.ini' has been backed up to the file 'C:\Program Files\InVision Enterprise WFM\XLink\Acd_map220317121603.ini'
+
+03/17/22 12:16:03 > ** ANALYSING MAPFILE COMPLETED **
+----

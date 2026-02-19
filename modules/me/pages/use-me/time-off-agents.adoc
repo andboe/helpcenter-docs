@@ -1,0 +1,122 @@
+= Request time off
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how you can request time off and request cancellations of approved time off in Peopleware Me.
+:page-aliases: time-off-agents
+
+include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
+
+Time off represents absences from the workplace. The amount and type of time off you can take and whether you are paid during your absence depends on your organization's regulations and your contract. Go to _Me > Time Off_{:.breadcrumbs} to do the following:
+
+- Request time off for the different available time-off types (e.g. Sickness or Vacation)
+- See submitted requests and their status
+- xref:#view-your-personal-balance[Check your personal balance] for each type, i.e. how much time off of a type you can still take
+- Request cancellation of approved time-off requests
+
+== The calendar
+
+Days in your calendar in _Me > Time Off_{:.breadcrumbs} are highlighted differently:
+
+- White: You can request time off. If there is already a published schedule, the days for which you are scheduled to work are bold.
+- Green: Days with approved time off.
+- Light gray: You cannot request time off, e.g. because your organization has not yet published a time-off period for those days.
+- Dark gray: Days for which you requested time off.
+- Brown: Rejected time-off requests.
+
+[#view-your-personal-balance]
+== View your personal balance
+1. Select a time-off type from the drop-down menu in the top left.
+2. The gray tiles at the top show details for the selected time-off type:<br>
+   - **Pending**: Time off requested but not yet approved or rejected
+   - **Current balance**: Time off you can still request within the entitlement period
+   - **Taken**: Time off requested and approved
+
+=== Value of the Pending tile for cancellation requests
+
+For cancellation requests, the value of the **Requested** tile indicates the time that will be added again to your balance if the request is approved. Your balance will not be modified if you see no value (i.e. **-**). This can happen for different reasons, e.g. if you have other contracts while being off.
+
+[#request-time-off-for-full-days]
+== Request time off for full days
+1. Select a type from the drop-down menu in the top left.
+2. Click _Request_{:.doc-button}.
+3. Define the length of your time off:<br>
+   **Start date**/**End date**: If you only want to take one day off, select the same date in both date range pickers.
+4. (Optional) Enter a comment.
+5. Click _Request_{:.doc-button}.
+
+You cannot edit a request after submitting it. If you need to edit the details of a pending request, delete it and create a new one.
+
+[#request-time-off-for-partial-days]
+== Request time off for partial days
+1. Select a type from the drop-down menu in the top left.
+2. Click _Request_{:.doc-button}.
+3. Select the day for your time off:<br>
+   **Start date**/**End date**: Select the same date in both date range pickers or two consecutive dates if your requested time off starts before and ends after midnight.
+4. Activate the **Request a part of the day** option.
+5. Define the length of your time off:<br>
+   **Start time**/**End time**: Depending on your organization's settings, requests for a partial day might be rounded to half a day or a full day.
+6. (Optional) Enter a comment.
+7. Click _Request_{:.doc-button}.
+
+You cannot edit a request after submitting it. If you need to edit the details of a pending request, delete it and create a new one.
+
+[#how-approved-time-off-is-scheduled]
+== How approved time off is scheduled
+When your planner approved a full day off, an absence for one calendar day is scheduled. This applies to days without night shifts or if you have not been scheduled yet for the day, for example, if you request time off on 25&nbsp;June, your absence starts at midnight on 25&nbsp;June and ends at midnight on 26&nbsp;June.
+
+=== Night shifts: Requesting the day after
+
+If you request June 26 off, your time off starts at 6 AM (after your shift) and ends at midnight on June 26, which results in a total absence of 18 hours.
+
+=== Night shifts: Requesting the day before
+
+If you request June 25 off, your time off ends at 6 AM on June 26 (after your shift), which results in a total absence of 30 hours.
+
+=== Night shifts: Requesting periods spanning multiple night shifts
+
+If your requested time off includes night shifts at both the start and the end of the period, your time off begins after the first night shift ends and finishes after the last night shift ends.
+
+For a quick overview of the different scenarios, see this table:
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Scheduled night shift
+|Time-off request
+|Time off in schedule
+|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
+|26&nbsp;June
+|26&nbsp;June, 6&nbsp;AM until 27&nbsp;June midnight (18&nbsp;hours)
+|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM
+|25&nbsp;June
+|25&nbsp;June, midnight until 26&nbsp;June 6&nbsp;AM (30&nbsp;hours)
+|25&nbsp;June, 10&nbsp;PM until 26&nbsp;June, 6&nbsp;AM and 28&nbsp;June, 10&nbsp;PM until 29&nbsp;June, 6&nbsp;AM, not scheduled on 27&nbsp;June
+|25&nbsp;June until 29&nbsp;June
+|25&nbsp;June, midnight until 29&nbsp;June, 6&nbsp;AM
+|no scheduled night shift
+|26&nbsp;June
+|26&nbsp;June, midnight until 27&nbsp;June, midnight
+|===
+
+If you want to take specific hours off instead of a full day, use a xref:#request-time-off-for-partial-days[partial-day time-off request].
+
+[#cancel-approved-time-off]
+== Cancel approved time off
+If time off requests are still pending, you can cancel the request by clicking **{icon-arrow-rotate-left} Withdraw**.
+If time off has already been approved, you cannot cancel it yourself. Instead, submit a cancellation request.
+
+1. In the **Requests** section, click **{icon-circle-xmark} Request cancellation** under the approved request you want to cancel.
+2. (Optional) Enter a **Reason for cancellation**.
+3. Click _Request cancellation_{:.doc-button}.
+
+== Unpaid time off
+
+Depending on your organization's setup, you may also request unpaid time off by choosing an unpaid time-off type. While not being compensated for unpaid time off, you can use it to ensure you do not get scheduled, e.g. if you have an appointment outside of work.
+
+[#notifications-about-planner-actions]
+== Notifications about planner actions
+Your planner can schedule time off, cancel approved time off, or edit the dates of already approved time off, for example, to extend or shorten a planned absence, or to move it to a different point in time. These changes may be needed due to organizational needs, if there are not enough people to work on a given day, due to sick leaves that need to be extended because you need longer to recover.
+
+In all of these cases, Peopleware notifies you via email about the time off added, cancelled or edited by your planner.

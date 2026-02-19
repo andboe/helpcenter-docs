@@ -1,0 +1,64 @@
+= Home working tips for contact centers
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn about scheduling best practices, valuable reports, and other useful tips for scheduling work from home agents.
+
+[#home-working-for-contact-center-employees]
+== Home working for contact center employees
+More and more contact centers are offering home working as an option for their agents. The coronavirus pandemic and the stay at home orders imposed by governments around the world have accelerated this trend and taught us some new lessons. This is one of those moments where planners (and their WFM partners) can make a real difference to contact center effectiveness and efficiency in the face of adversity.
+
+Here are some useful tips:
+
+[#general-scheduling-tips]
+== General scheduling tips
+- Implement xref:best-practices:scheduling-split-shifts.adoc[split shifts], which allow agents to have extended breaks to cover childcare.
+- Use xref:scheduling:schedules-shift-bidding.adoc[shift bidding] to generate shifts and allow agents to bid on them. Publish a shift window to cover shortfall gaps.
+
+[#further-scheduling-tips]
+== Further scheduling tips
+Additionally, you can try the following tips:
+
+- Give Team Leaders access to xref:scheduling:schedules-overview.adoc[Schedules] to view agent shifts.
+- Make it easy for Planners to see Agents that are working from home using xref:best-practices:visualizing-home-office.adoc[Day Status]
+- Allow agents to set their Availability within xref:me:explore-me.adoc[Me] and schedule around that.
+- Use ‘What If’ scenarios, e.g. using the Actual schedule level.
+- Use xref:scheduling:shift-center-overview.adoc[Selections] to filter your Home Workers.
+- Use comments in xref:scheduling:shift-center-overview.adoc[Shift Center] to add important information that you would like to be visible to your agents.
+- Agents should request absences using xref:me:explore-me.adoc[Me].
+
+[#useful-reports]
+== Useful reports
+With a lowered level of visibility when staff are not working in the office, it is important to monitor and track attendance and absences. For this case we suggest some reports you can use to cope with this challenge.
+
+[#illness-statistics-with-total-amount-column]
+=== Illness statistics with total amount column
+Use this report to create an overview for planning units, which informs you of the total of all assigned paid and unpaid illnesses of each person in hours and days, both overall and per illness. In addition, the report shows the total number of absent people, standardized to a full-time employee (full-time equivalent).
+
+[#activities-in-hours]
+=== Activities in hours
+Use this report to create an overview with hourly values for the employees' paid working time. Select activities to display the hourly shares (total and individual). You can filter this report to display only those activities that are of the type Illness or Absence to more easily calculate shrinkage.
+
+[#absence-statistics]
+=== Absence statistics
+Use this report to create a monthly overview for planning units, that informs you of the total of all paid and unpaid absences assigned to each employee in hours and days for each absence.
+
+[#absence-schedule]
+=== Absence schedule
+Use this report to create a monthly overview, broken down by planning units, that informs you of the total hours of each employee's assigned paid and unpaid absences.
+
+[#general-absence-schedule]
+=== General absence schedule
+Use this report to create general absence schedules for planning units, which shows you an overview, broken down by planning units, that informs you of the total hours of all assigned paid and unpaid non-presences for each employee.
+
+You can also view our full list of reports below:
+
+- xref:reporting:planning-unit-reports.adoc[Planning unit reports]
+- xref:reporting:employee-reports.adoc[Employee reports]
+
+[#recommended-reading]
+== Recommended reading
+- [Pros and cons of home working](https://www.monster.com/career-advice/article/the-benefits-of-working-from-home)
+- [6 top tips for coping with the coronavirus in your contact center](https://blog.peopleware.com/wfm-strategy/wfm-and-coronavirus-6-lessons-learned?utm_content=124144596&utm_medium=social&utm_source=linkedin&hss_channel=lcp-3192081)

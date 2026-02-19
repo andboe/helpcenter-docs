@@ -1,0 +1,83 @@
+= Calculate time accounts
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:description: Trigger manual calculation of time accounts for a specific calculation date.
+:related-articles: concept-time-accounts.adoc, concept-target-work-times.adoc
+
+This article explains how to calculate time accounts for a specific day and group of people.
+
+Time accounts calculation is not tied to predefined periods or intervals and can be performed as needed, e.g.:
+
+- At the end of each scheduling period
+- At the end of each month
+- At the end of each weekly scheduling period and at the end of each month.
+
+Performing the calculation at the end of a given period ensures that the time account balances accurately reflect the scheduled hours during that period.
+
+[#prerequisites]
+== Prerequisites
+[#general]
+=== General
+- You are familiar with how time accounts are calculated and used in Peopleware.
+  For more information, see article xref:administration:concept-time-accounts.adoc[Time accounts]
+- Time accounts can only be calculated for people who meet one of the following criteria:
+  - The person is assigned to a planning unit.
+  - The person is an active staff member, i.e. the person's staff membership setting has a **Valid from** date preceding the calculation date of the time account.
+  - The person is assigned to an active contract, i.e. the person-to-contract assignment period's **Valid from** date precedes the calculation date of the time account.
+  - The contract's work time guidelines specify daily or weekly target working hours.
+
+[#permissions]
+=== Permissions
+You have the following functional permissions:
+
+- **Plan**
+  - **Full access to Time Accounts in Configuration**
+
+<!-- ROLES-new - release with go-live of new roles UI
+You have the following base permissions:
+-->
+
+<!-- ROLES-new - release with go-live of new roles UI
+- _Plan > Configuration > Time accounts_{:.breadcrumbs}
+    - **Configure time accounts**
+-->
+
+<!-- LNF-new - release with go-live of left-side nav
+- _Scheduling > Configuration > Time accounts_{:.breadcrumbs}
+  - **Configure time accounts**
+-->
+
+[#steps]
+== Steps
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You can trigger a time account calculation for any given date.
+However, any subsequent calculation already performed for a later date does not automatically update and will have to be retriggered to reflect the results of previous calculations.
+Also, you cannot delete a balance value for a date once it has been calculated.
+To prevent undue manual overhead, only calculate time accounts at planned dates and try to deviate as little as possible from that plan.
+====
+<!-- LNF-new
+1. Go to _Scheduling > Configuration > Time accounts_{:.breadcrumbs}.
+-->
+
+1. Go to _Plan > Configuration > Time accounts_{:.breadcrumbs}.
+2. Select at least a calculation date and planning unit.<br>
+   The time accounts table now displays all people that are members of the planning unit at the selected date.
+3. Optional: Select a selection to further filter the people shown in the table.
+4. Optional: To check the balance history of a person, navigate to that person in the table and click the {icon-edit} Edit icon.
+   The balance history shows every event where a time account balance was either calculated or reset.
+   To return to the time account overview, click the back button of your browser.
+5. To calculate the time accounts of all people in the planning unit and selection, click _Calculate_{:.doc-button}.
+6. Optional: To adjust calculated balances of individual people, enter a value in the **Correction value** field.
+   The correction value is added to or subtracted from the calculated balance.
+   Peopleware saves the value automatically once you leave the input field.<br>
+   Example: If the calculated value for date is 20:00 and the correction value is -15:00, the resulting time account balance for this day is 05:00.
+
+The time account balance of all people in the calculation scope for the specified day is now available for evaluation or further processing.

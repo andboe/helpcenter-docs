@@ -1,0 +1,58 @@
+= Manage user authorization
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-task:
+:description: Learn how to create and edit permissions for one person.
+:related-articles: predefined-user-roles.adoc, workload-permissions.adoc
+:page-aliases: user-and-role-authorization
+
+This article explains how to perform the following tasks:
+
+- Override role-based functional permissions for a person.
+- Override role-based object permissions for a person.
+
+User authorization settings override role-based permissions for a person and increase permission management complexity.
+Use role-based permissions wherever possible.
+Learn more about xref:account:concept-user-authorization.adoc[user authorization].
+
+== Prerequisites
+
+=== Functional permissions
+
+- Your role needs the **Access to User Authorization** permission for **People**.
+
+=== Object permissions
+
+== Open user authorization settings
+
+1. Go to _People_{:.breadcrumbs}.
+2. Select the person for whom you want to edit user authorization settings.
+3. Click _Access_{:.breadcrumbs}.
+4. In the **User authorization** section, click **Access user authorization of this person**.
+
+== Functional permissions
+
+1. Open the person's user authorization settings.
+2. Select or deselect the apps and features to add or remove access for the user.
+3. Click _OK_{:.doc-button}.
+
+== Object permissions
+
+1. Open the person's user authorization settings.
+2. Scroll to the object type, e.g. day models.
+3. Click {icon-wfm-add}.
+4. Filter or select the object.
+   To select multiple objects, hold the Command key on MacOS or the Control key on Windows/Linux while clicking.
+5. Configure the object permissions as required.
+6. Click _OK_{:.doc-button}.
+
+== Reset user authorization settings
+
+Resetting a person's the user authorization settings reverts all individual permissions for an object or app back to the permissions defined in the person's assigned roles.
+
+1. Access User Authorization.
+2. Scroll to the app or object type for which you want to reset the User Authorization.
+3. Click the Reset icon {icon-asterisk} next to the app or object type.
+4. Click _OK_{:.doc-button}.

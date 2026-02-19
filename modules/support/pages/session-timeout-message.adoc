@@ -1,0 +1,32 @@
+= Session timeout message when accessing WFM
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Resolve the timeout issue that appears when you access WFM.
+:related-articles: browser-setup.adoc
+
+In this article, you will learn how to resolve the timeout message when clicking the link to _WFM_{:.menu-item} in the navigation bar.
+
+image::session-timeout-message/image-1.png[Session Timeout, width=50%]
+
+[#correct-your-trusted-sites-configuration]
+== Correct your trusted sites configuration
+There can be two reasons for this problem:
+
+- The protected mode is activated for the trusted sites.
+- The trusted sites entry is misconfigured.
+
+To solve the issue, reconfigure your [trusted sites entry and security zone level](/browser-setup#configure-the-trusted-sites-and-security-zone-settings) in the internet options. Check if you have added the correct **\*.peopleware.com** entry to the trusted sites.
+
+[#check-your-browser-bookmarks]
+== Check your browser bookmarks
+Check if you are using an old browser bookmark to access Peopleware. Your bookmark may point to a page which no longer exists.
+
+To solve this issue:
+
+1. Open a new browser window or tab.
+2. Navigate to [https://app.peopleware.com/login](https://app.peopleware.com/login).
+3. Enter your credentials and navigate to the desired page.
+4. Store *https://app.peopleware.com/login* as a new bookmark.

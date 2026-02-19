@@ -1,0 +1,26 @@
+= User authorization
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Understand how user authorization works.
+:related-articles: configure-user-roles.adoc, role-permissions.adoc, ref-roles.adoc
+
+As is the case for roles, permissions in Peopleware can also be set for individual people.
+These people-based permissions are specified in the person's user authorization settings.
+
+Permissions specified for a person override their role-based permissions:
+
+- If a person's role grants them a permission but the user authorization settings restrict it, the restriction applies.
+- If a person's role restricts a permission but the user authorization settings grant it, the user authorization settings apply.
+
+User authorization is useful for the following cases:
+
+- Granting temporary permissions to specific people without creating a new role
+- Restricting permissions for specific people without modifying their roles
+- Managing access in complex scenarios where multiple roles apply
+
+Use role-based permissions whenever possible.
+Specifying user-specific permission overrides make permission management complex.
+When you apply user authorization overrides, you create person-specific rules that do not automatically update when roles change.

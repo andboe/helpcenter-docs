@@ -1,0 +1,17 @@
+* Getting Started
+** xref:browser-setup.adoc
+** xref:calculate-a-forecast.adoc
+** xref:create-a-schedule.adoc
+** xref:index.adoc
+** xref:ip-filtering.adoc
+** xref:log-in-to-peopleware.adoc
+** xref:manage-2fa.adoc
+** xref:navigate-peopleware.adoc
+** xref:notifications.adoc
+** xref:object-access-permissions.adoc
+** xref:set-up-base-configuration.adoc
+** xref:single-sign-on.adoc
+** xref:system-requirements.adoc
+** xref:the-wfm-cycle-in-injixo.adoc
+** xref:use-help-center.adoc
+** xref:use-two-factor-authentication.adoc

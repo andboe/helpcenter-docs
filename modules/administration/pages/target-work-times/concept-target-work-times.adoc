@@ -1,0 +1,55 @@
+= Target work time basics
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what target work times are and how to use them.
+:related-articles: concept-time-accounts.adoc, task-calculate-time-accounts.adoc, create-contracts.adoc
+
+Target work times specify the hours that people should work during a scheduling period, based on their contract or current time account balance.
+They ensure that scheduling takes into account any overtime or deficit of hours already worked.
+Target work times can be manually specified.
+This allows for shifting work time from quiet periods to more busy periods within the contractual limits.
+
+== Target work times calculation
+
+Target work times are calculated based on:
+
+- The contractual working hours defined in the person's contract
+- The person's current time account balance
+- The scheduling period for which the target work time is set
+
+There are different calculation methods:
+
+- Based on contract: Uses the daily, weekly or annual work time targets specified in work time guidelines of the person's contract.
+- Based on contract and time account: Same as based on contract, but additionally considers the person's last time account balance before the scheduling period.
+  As a result, people with the same contract can have different target working hours if they have different time account balances.
+- Based on modulation period: Distributes target working hours across multiple scheduling periods within a modulation period, taking into account seasonal variations and forecast data.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The modulation period feature is subject to individual licensing agreements.
+Get in touch with your Peopleware consultant to learn more.
+====
+Target work times are typically calculated at the beginning of a new scheduling period.
+
+After calculation, the following tasks can be performed:
+
+- Review the target work time values for each person
+- Make manual adjustments to modify the calculated values
+- Use **Create optimized schedule** feature to schedule people based on target work times
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+**Create optimized schedule** generates schedules based on target work times if the contract's AutoScheduler parameter **Use target work times** is activated.
+For more information, see article xref:administration:create-contracts.adoc[Create contracts].
+====

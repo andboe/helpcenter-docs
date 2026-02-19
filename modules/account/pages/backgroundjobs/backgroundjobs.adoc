@@ -1,0 +1,76 @@
+= Automate recurring jobs
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-concept:
+:description: Automate report generation and more using background jobs.
+:related-articles: backgroundjobs-examples.adoc
+
+Background jobs are predefined jobs for automated, recurring tasks, such as inserting shift sequences, creating reports, running the shift lottery, and calculating target work times.
+
+== Prerequisites
+
+You need the following permissions to create a background job:
+
+- **Full access to background jobs**
+- **View people**
+
+[#create-job]
+== Create job
+1. Go to _Account > Background jobs_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Specify the general settings of the job. For more information, see xref:#general-settings[General settings].
+4. Click _Save_{:.doc-button}.
+5. Configure:
+   - xref:#parameters[Parameters]
+   - xref:#schedule[Schedule]
+
+[#general-settings]
+== General settings
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Name
+|Unique job name (max. 50 characters).
+|Type
+|Sets the job type. The job type controls which parameters are available for the job.
+|Priority
+|Sets the priority. If more than one job is scheduled, the job with the highest priority is processed first.
+|User
+|Defines whose permissions will apply when this automated job runs. Only users with **Full access to background jobs** permission are selectable. The selected user will appear on the Job status page, and their email notification settings will be used.
+|Active
+|Controls whether the job is enabled or disabled. Active jobs are processed as scheduled.
+|Delete job after processing
+|Deletes the job after successful completion from the xref:general:jobstatus.adoc[Job status page]. The job configuration will remain in Background jobs.
+|Reference period
+|Specifies the time period for data processing by the job. +**Absolute**: Defines a specific time period. This is useful when you need to process data for a fixed historical or future time period, regardless of when the job actually runs. +**Relative**: Sets a data time period that adjusts automatically relative to the job's execution date, as defined under **Schedule**. When you select **Relative**, the drop-down menu **Unit** (day, week, month, year) appears. The **From** and **To** fields define the exact period, e.g. -1 for the preceding unit, 0 for the current unit. +To define on which date and time active jobs should run, go to [Schedule] (#schedule).
+|===
+
+[#parameters]
+=== Parameters
+Parameters define the scope the job performs. For example, they specify the data coverage, email notifications, or the language of a report.
+Learn more about available parameters and values in xref:account:backgroundjobs-examples.adoc[Job parameter examples].
+
+[#schedule]
+=== Schedule
+The job schedule defines when active jobs are scheduled to run automatically. You can set one or more execution dates for a job.
+If no execution date is defined, the job can only be started manually.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Frequency
+|Description
+|Every week
+|Runs the job on a specific weekday and time each week.
+|Every month
+|Runs the job on a specific day of the month and time. Note: Choose a day that occurs in every month of your reference period.
+|Last day of the month
+|Runs the job on the last day of each month at a specific time.
+|===
+
+<!-- To edit existing templates, click an item in the list. -->
+<!-- Existing templates with the configured parameters can be edited via _Backgroundjobs_{:.menu-item} at any time. -->
+<!-- outdated for cloud -->
+<!-- image::backgroundjobs/image-1.png[Job Configuration, width=50%] -->

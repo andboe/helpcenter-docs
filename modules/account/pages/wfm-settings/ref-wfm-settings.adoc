@@ -1,0 +1,327 @@
+= WFM Settings reference
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-reference:
+:description: Find information about every WFM setting.
+
+== WFM settings overview page
+
+=== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48121] Earliest start time for night work
+|Specifies the earliest possible start time for night shifts, measured in seconds from midnight. For example, 3600 corresponds to 1:00 AM and 79200 to 10:00 PM. The default value is 0.
+|[48122] Night work duration
+|Specifies the latest possible end time for night shifts, measured in seconds from the start time value specified in WFM setting 48121. For example, a value of 36000 and a start time of 10:00 PM yields a latest possible end time for night shifts of 08:00 AM.
+|[48161] Mode for defining night work
+|Defines what constitutes a night shift. If set to 0, a shift is a night shift if it lies entirely within the time range specified by the WFM settings [48121] Earliest start time for night work and [48122] Night work duration. If set to 1, a shift is a night shift if it includes the reference time defined in WFM setting [48162] Reference time for night shifts.
+|[48162] Reference time for night shifts
+|Defines the reference time used to identify night shifts when mode 1 is selected in WFM setting 48161. The value represents a time of day, expressed in seconds since midnight (e.g. 79200 for 10 PM). Shifts or activities that begin, end, or overlap with this reference time are classified as night shifts.
+|===
+
+==== Time accounts
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|
+|[48013] Level for the time account calculation
+|Defines which scheduling level is used to calculate time accounts. Available options: +- 0 = Schedule +- 1 = Actual +- 2 = External System +- 3 = Time Recording
+|===
+
+=== SchedulePro
+
+==== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48184] Take into account the hierarchy of the planning units
+|Specifies whether the planning unit hierarchy should be considered when scheduling and calculating target work and time accounts. When enabled with value 1, child planning units inherit planning periods from their parent, and these are used in calculations without needing to create new planning periods. The inherited periods are also visible in the Planning Periods menu of SchedulePro. When disabled with value 0, only the directly assigned planning unit is considered. The default value is 0. Planning periods are called scheduling periods in Peopleware.
+|===
+
+==== Shift Center
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48077] Start time of the Shift Center hour scale
+|Defines when the hour scale display begins in the Shift Center view. Controls the visual starting point of the scheduling timeline for users. Enter time in seconds from midnight. The default value is 0.
+|[48078] End time of the Shift Center hour scale
+|Defines when the hour scale display ends in the Shift Center view. Controls the visual end point of the scheduling timeline for users. Enter time in seconds from midnight. The default value is 0.
+|[48092] Display of data in the day cells of the parameter window
+|Controls how shift and activity data is displayed in the Shift Center parameter window. The setting determines whether values appear as averages or totals, and whether they are calculated in relation to a 24-hour day or to the planning unit’s business hours. Available options: +- 0 = Average values per 24-hour day (default) +- 1 = Total hours per 24-hour day +- 2 = Average values based on business hours +- 3 = Total hours based on business hours +- 4 = Total number of shifts. Total values are calculated using hourly data derived from interval values.
+|[48194] Viewing mode for the daily overview cell
+|Controls what information (text and color) is shown in the daily overview cell in the schedule. Available options: +- 0 = Display the first scheduled activity or shift (default) +- 1 = Display the last scheduled activity or shift +- 2 = Display the day status; if no day status is available, show the first activity or shift +- 3 = Display the day status; if no day status is available, show the last activity or shift
+|[48669] Save display settings
+|Controls whether Shift Center saves the user's display preferences. If enabled (value '1'), the layout and view settings will be restored the next time the user opens the Shift Center. If disabled (value '0', which is the default), no preferences are retained.
+|===
+
+==== Configuration of Tool Tips
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48308] Display of attributes in the Shift Center
+|Controls whether the Shift Center shows employee attributes in a tooltip. When enabled (1), the tooltip displays the value with the highest priority for each attribute, based on the current validity period. If multiple values exist for the same attribute, Shift Center displays only the highest priority value. When disabled (0), Shift Center does not display any attributes. The default value is 0.
+|===
+
+==== Configuration of columns
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48006] Width of the day column in the Shift Center
+|Defines the width of the Shift Center's day columns in pixels. The default value is 25.
+|[48008] Width of week column
+|Defines the width of the Shift Center's week columns in pixels. The default value is 60.
+|[48086] Width of the 'Planning Units' column in the Shift Center
+|Defines the width in pixels of the Planning Units column in the Shift Center. The default value is 150.
+|[48087] Width of the 'Personnel Number' column in the Shift Center
+|Defines the width in pixels of the Personnel Number column in the Shift Center. The default value is 60.
+|[48088] Width of the 'Level' column in the Shift Center
+|Defines the width in pixels of the Level column in the Shift Center. The default value is 60.
+|[48478] Display accounts used in Time Management
+|Controls whether Time Management account balances are available in the Shift Center. When enabled (1), the Account Balances button is visible and allows access to account data. When disabled (0), the function is hidden. The default value is 0.
+|===
+
+=== Optimization
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48069] Take suitability percentage into account
+|Determines how skill levels suitability percentages affect coverage and scheduling. 0 ignores skill levels; all people are treated as 100% suitable. 1 uses skill percentages for coverage (e.g., 50% skill = 0.5 coverage), but not for scheduling order. 2 uses skill percentages for both coverage and scheduling priority. People with higher skill levels are scheduled first when possible. The default value is 0.
+|[48591] Start time for re-optimization period
+|Defines when re-optimization begins for the current day. Applies to Break Optimization, Job Optimization, and AutoScheduler. The time must be entered in seconds since midnight UTC and converted to the planning unit’s time zone. Only shifts, activities, and breaks fully within the re-optimization window are affected. For Break/Job Optimization, the window ends at the time set in [48592]. For AutoScheduler, it ends at the end of the optimization period and requires the "Optimize Again" option to be active. Enter 0 to disable re-optimization and use the full period instead. Default is 0. Example: If the planning unit is in UTC+1 and you want the re-optimization period to start at 06:00 local time, first convert 06:00 to UTC, which is 05:00. Then calculate the seconds since midnight UTC:
+|5 × 3600 = 18 000.
+|[48592] End time for re-optimization period
+|Defines the end time for the re-optimization period of the current day. This setting applies to Break Optimization and Job Optimization, and only if [48591] is set to a value greater than 0. The value must be entered in seconds and represents how much time should be subtracted from the end of the planning unit’s business hours to determine the re-optimization end time. A value of 0 means optimization continues until the end of the business day. This setting is relative to local business hours and does not require time zone conversion. AutoScheduler ignores this setting and always uses its full optimization period.
+|===
+
+==== Shift generation
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48697] Minimum duration of activity segments when splitting shifts compatible with multiple activities
+|Defines how shifts with the default activity Present are split into smaller blocks during shift generation. Each block can be assigned a different activity. Use a value between 900 and 86400 seconds, rounded down to the nearest 900. Set to 0 to disable. The maximum is 64 segments per day. If WFM settings 48303 or 48520 also use segmentation, apply the same value in those settings.
+|===
+
+==== Job optimization
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48520] Minimum duration of activity segments when splitting shifts compatible with multiple activities
+|Defines the smallest time block in seconds for splitting the default activity Present during Job Optimization. Each segment can be assigned a different activity. Allowed values range from 900 to 86400 seconds and round down to the nearest 900. Set to 0 to disable. Job Optimization supports up to 64 segments per day. Using small values may reduce performance, especially with long shifts or when WFM setting 48069 is active. To merge identical back-to-back segments, activate WFM setting 48521.
+|===
+
+==== AutoScheduler
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48303] Minimum duration of activity segments when splitting shifts compatible with multiple activities
+|Defines the smallest segment size, in seconds, used to split the default activity Present during schedule optimization. Each segment can receive a different required activity. Enter a value between 900 and 86400 seconds. Peopleware rounds it down to the nearest multiple of 900. Enter 0 to disable segmentation. Schedule optimization supports up to 64 segments per day. Using small values may slow performance, especially with long shifts or if WFM setting 48069 is enabled. To merge identical adjacent segments, activate WFM setting 48304.
+|[48309] Take into account existing activities
+|Controls how AutoScheduler handles activities already scheduled in the Shift Center. +- 0: Default value. Keep all existing activities. AutoScheduler can still replace activities with ID 1. It schedules shifts around fixed items such as meetings. You can change day models before scheduling begins. +- 1: Add or adjust activities only when needed to reach each person’s contractual working hours. For example, if a person has a 40-hour contract but only 35 hours scheduled, AutoScheduler adds activities until the contract is met. It can replace ID 1 activities. It places shifts before or after meetings and ensures breaks do not overlap with them. You can change day models before scheduling begins, but not during. +- 2: Add or adjust activities as needed to meet staffing requirements, even if people end up working more or fewer hours than their contracts specify. AutoScheduler can replace activities with ID 1. It places shifts before or after meetings and ensures breaks do not overlap with them. You can change day models at any time during scheduling. This mode requires more system resources.
+|[48408] Take into account business hours in AutoScheduler
+|Controls how schedule optimization interprets a planning unit’s business hours. +- 0: Check only whether the planning unit has business hours on the day. If business hours exist, schedule optimization runs normally. If not, schedule optimization ignores staff requirements for that day. +- 1: Use the exact start and end times of business hours. Schedule optimization places people only within that time window. +- 2: Apply business hours as a hard limit. Schedule optimization places people only if the full staff requirement fits within the business hours. +- 3: Restrict scheduling to the time ranges when the planning unit assigns the required activity. Schedule optimization places people only in those relevant time slots.
+|===
+
+=== Lottery and assignment
+
+==== Lottery
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48041] Take seniority into account
+|Determines whether seniority affects the outcome of the lottery procedure, based on people's staff membership Available options: +- 0 = Seniority is not considered +- 1 = Preference is given to employees with more seniority +- 2 = Preference is given to employees with less seniority.
+|[48067] Delete assigned requests after running the lottery procedure
+|Determines whether assigned shift requests are automatically removed after the lottery procedure. Available options: +- 0 = Requests remain visible (default) +- 1 = Assigned requests are deleted from the Request or Alternative Request level. Undeleted requests continue to appear under Coverage (Requests and Staffing) in the Activities and Day Models tabs in Shift Center, where they are compared against staff requirements.
+|===
+
+=== Me
+
+==== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48176] Displaying breaks in My Calendar (including reports) and Shift Exchange
+|Controls whether breaks are visible in My Calendar, Shift Exchange, and the Request Schedule reports. Enter 1 to show breaks and generate the Employee Request Schedule I (List) report. Enter 0 to hide breaks and generate the Employee Request Schedule II (List) report.
+|===
+
+==== Shift exchange
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48151] Barred period for the Shift Exchange
+|Defines how many days from the current day are locked for shift swap to protect the current schedule. During this period, shift swap is disabled. The default value is 3.
+|[48152] Exchange mode
+|Specifies whether shift swaps require planner approval. Enter 0 to require approval. Enter 1 to allow people to swap shifts without approval.
+|[48153] Exchange entitlement
+|Controls which people can swap shifts or days off with each other. Enter 0 to enable swaps within a planning unit. Enter 1 to enable swaps within selections. Enter 2 to enable swaps across planning units. The default value is 0.
+|[48555] Exchanging work days against free days
+|Determines whether people can swap a work day for a free day. A free day has no scheduling content or only an unpaid, exchangeable absence. Enter 0 to prevent swaps or 1 to allow them. The default value is 0.
+|[48556] Exchanging different days
+|Specifies whether people can exchange entire work days across different dates. When enabled (1), a person can swap a scheduled work day (including its shift) with another person's work day on a different date. When disabled (0), exchanges are only allowed between shifts on the same day. The default value is 0.
+|[48999] Enable specific checks for subactivities of multi-activities in association with scheduling rule 2605
+|Enables checks for subactivities when people exchange multi-activities, based on rule 2605. Enter 1 to allow exchanges only if both persons have identical subactivity sets. Enter 0 to disable the check. The default value is 0.
+|===
+
+=== Reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48187] Start times of the shift intervals for reports 'Daily Schedule II with Shift Summary', 'Daily Schedule II with Shift Summary and Breaks' and 'Shift Overview'
+|Defines up to 4 time intervals for grouping shifts in reports like Daily Schedule II with Shift Summary and Shift Overview. Enter start times for: Early, Middle, Late, and Night shifts. Format: Seconds since midnight, separated by semicolons. Default values: 21600;32400;43200;64800.
+|[48315] Display comment in reports
+|Displays comments from Shift Center in daily schedules. Possible values: +- 1: Show comments. +- 0: Hide comments. + The default value is 0.
+|===
+
+=== AdherenceMonitor
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48581] Advanced Activity Comparison
+|Defines how AdherenceMonitor identifies deviations from the scheduled activity. 0 compares only activity types. Activities of the same type are considered compatible, even if their IDs differ. 1 compares exact activity IDs. Any difference between the scheduled activity and the performed activity is flagged as an adherence violation, even if the activity types match. For multi-activities, the performed activity is considered in adherence if it is part of the scheduled multi-activity’s subactivities.
+|===
+
+=== Time Management
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48473] Source level for scheduled data
+|Defines which scheduling level is used as the source of scheduled data in Time Management calculations. The Rules functionality in Time Management compares this scheduled data with the actual hours data as specified in WFM setting 48474. 1000 sets the level to Schedule. 3000 sets the level to Actual. 8000 sets the level to Version 1. This setting also determines which level is used to display account balances in Shift Center.
+|[48474] Source level for Actual Hours data
+|Defines which scheduling level is used as the source of actual hours or actual data in Time Management calculations. The Rules functionality in Time Management compares this actual data with the scheduled data as specified in WFM setting 48473. 1000 sets the level to Schedule. 3000 sets the level to Actual. 4000 sets the level to Time Recording. 4001 sets the level Correction. 5000 sets the level to External System.
+|[48475] Source Level for Reference Data
+|Legacy setting. This setting is no longer supported.
+|[48518] Show/hide the Account Balances editing category in the TimeKeeper module
+|Legacy setting. This setting is no longer supported.
+|[48544] Inspection period for punches
+|Controls how the inspection period is defined in Payroll Control. Value 0 uses the standard month and year selection. Value 1 enables manual date entry using From and To fields instead.
+|[48597] Month for the border day
+|Works in combination with setting [48596] to define the border day used in the Special-Day Payout menu. The border day is used for tax-related assessment and is calculated based on a specific day and a number of months after the special day. Defines how many months after the special day the border day occurs. Accepted values: 0 to 11 (default is 1, meaning the following month).
+|[48598] Account for the credit factor
+|Specifies the account used to calculate additional credit for special days. The calculation factor is defined per special day through time management rules. Enter the ID of an existing account. If no account is specified, no credit is posted, and Peopleware defaults to a factor value of 1. There is no default account.
+|[48599] Account for 'Compensatory Time Off'
+|Specifies which account is used to display values in the Compensatory Time Off column. This account holds working time eligible for additional credit as time off. For example, if an employee receives 50% additional credit for 4 hours worked, they are credited with 6 hours total. The credited time contributes to the employee's compensatory time entitlement. Enter the ID of an account. No default account is set.
+|[48600] Account for 'Hours Worked'
+|Specifies which account supplies the data shown in the Hours Worked column for special days. This account includes both standard working hours and any hours eligible for additional credit on a special day. Enter the ID of an account. No default account is set.
+|[48601] Account for 'Payable Hours'
+|Defines the account used to populate the Hours Worked column for special days. This account should contain both regular working hours and any hours eligible for additional credit on those days. Enter the ID of an account. No default account is specified.
+|[48604] Refresh period for Special Days
+|Defines how frequently Peopleware refreshes the date, in milliseconds. Accepted range: 0 to 60000. The default value is 2000 (i.e. every 2 seconds). Enter 0 to disable automatic updates.
+|[48615] Code for punches made using the time recording system
+|Defines a code used to label punches recorded via the time recording system. This code appears in the Payroll Adjustment and Closing Operations menus. Enter a single letter (A–Z). There is no default code.
+|[48616] Code for automatically generated punches
+|Defines a code used to label automatically created punches that replace missing ones (e.g., when a person forgets to clock out). This code appears in the Payroll Adjustment and Closing Operations menus. Enter a single letter (A–Z). The default value is 'a'.
+|[48617] Code for manually adjusted punches
+|Specifies the code used to label punches that are manually adjusted in the Payroll Adjustment menu. The code is also displayed in the Closing Operations menu. Enter a single letter (A–Z). The default value is 'k'.
+|[48619] Signal activity for punches deleted from the 48620 Storage level for corrections
+|Defines an internal activity to be stored at the correction level defined in WFM setting 48620 when all punches are deleted. This signal activity is automatically inserted to indicate the absence of punches. If no activity is set here and the correction level is empty, the system displays data from the actual hours source level defined in WFM setting 48474 instead. Enter the ID of the signal activity. No default is set. The user interface does not display the signal activity.
+|[48622] Source level for displaying scheduled day models or activities
+|Specifies which data level is used to display day models or activities in the Scheduling Data column of the Payroll Overview menu and report. The selected level must contain the assigned day model or activities for the employee on the given day. Possible values: + 1000 = Schedule (default) +- 2000 = Request +- 2001 = Alternative Request +- 2002 = Vacation/Absence Request +- 3000 = Actual +- 4000 = Time Recording +- 4001 = Correction +- 5000 = External System +- 6000 = Availability +- 6001 = On Call +- 8000 = Version 1 +- 8001 = Version 2 +- 8002 = Version 3 +- 9000 = Personal Limits to Work Time Adjustment.
+|[48635] Code for automatic punches that have been deleted
+|Defines a code used to label automatic punches that have been manually deleted by a planner. This code appears in the Payroll Adjustment and Closing Operations menus. Enter a single letter (A–Z). The default value is 'a'.
+|[48667] Payment Type in report Payroll Overview for employees
+|Controls whether Payment Type information is included in the Payroll Overview report when accessed by employees through Reports or _Me > My Calendar_{:.breadcrumbs}. Value 1 displays Payment Type information. Value 0 hides it. The default value is 0.
+|[48668] Time accounts in report Payroll Overview for employees
+|Defines which time accounts should appear in the Payroll Overview when generated by employees via either the Reports module or _Me > My Calendar_{:.breadcrumbs}. Attributes and Time accounts must be assigned to people. Enter the ID of the attribute you want to use. There is no default value.
+|[48691] Activity for 'Scheduling Data'
+|Consolidates consecutive scheduled activities into a single entry. Applies to both the Payroll Overview and Payroll Adjustment menu items. To group activities, enter the ID of the activity you want to display (e.g., enter '1' to show 'Present'). To display each activity separately, enter 0. The default value is 1.
+|[48692] Displaying scheduled breaks after dissociating a day model from the shift concept
+|Hides or displays breaks once the day model has been dissociated from the shift concept on a given day. Applies to the Payroll Overview and Payroll Adjustment menu items. Value 1 displays breaks, value 0 hides them. The default value is 1.
+|[48693] Storing and recalculating manual changes
+|Determines how the Rules feature handles recalculations when manual changes are made in Time Management. Applies to Punches and Time Categories. Value 0 always retains the initial statuses of punches and time categories. Value 1 recalculates the statuses, including the "No Break Taken" column in Payroll Adjustment, only for the most recently adjusted punches and time categories if they differ from the originally calculated values. Value 2 recalculates punches only on dates where no manual changes have been made. Time Categories are recalculated as in option 1, regardless of any changes to punches. Value 3 always retains manually adjusted punches and time categories without recalculation.
+|===
+
+=== Payroll Adjustment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|[48620] Storage level for corrections
+|Defines the level in which corrections made in Payroll Adjustment are stored. If no data exists in this level, Payroll Overview displays data from WFM setting 48474 instead. To prevent the level from appearing empty after all punches are deleted, use setting WFM setting 48619 to insert a placeholder activity. Available options: + 1000 = Schedule +- 2000 = Request +- 2001 = Alternative Request +- 2002 = Vacation/Absence Request +- 3000 = Actual +- 4000 = Time Recording +- 4001 = Correction (default) +- 5000 = External System +- 6000 = Availability +- 6001 = On Call +- 8000–8002 = Version 1–3 +- 9000 = Personal Limits.
+|[48625] Comment level (Shift Center)
+|Defines which scheduling levels support comments in Shift Center. Comments can be created, edited, and viewed via Payroll Adjustment. Possible options: Same as for WFM setting 48620.
+|[48626] Attribute for the parameter 'Maximum Break Deduction'
+|Defines which xref:administration:work-with-attributes.adoc[attribute] sets the maximum break duration that can be deducted from an employee's time. Enter the attribute ID. No default is set.
+|[48627] First level displayed in Scheduling Data
+|Specifies up to three levels to show first in the 'Scheduling Data' editing category. Enter level IDs separated by semicolons. Possible options: Same as WFM setting 48620. Default is 1000 (Schedule). Names appear as defined in the system.
+|[48628] Second level displayed in Scheduling Data
+|Specifies up to three levels to display as the second row in the Scheduling Data editing category. Possible options: Same as WFM setting 48620.
+|[48629] Third level displayed in Scheduling Data
+|Defines up to three levels to show as the third row in the Scheduling Data editing category. Possible options: Same as WFM setting 48620. Displayed names reflect any custom labels defined by users.
+|[48630] Level for Full-Day Activity, Day Status and Absence Coverage
+|Specifies the level used to display and edit Full-Day Activity, Day Status, or Absence Coverage in the Punches editing category. Possible options: Same as WFM setting 48620. Displayed names reflect any custom labels defined by users.
+|[48631] Standard activity for entering Punches
+|Sets the activity that appears by default when clicking Add. Enter the ID of the activity to use. The default value is 1.
+|[48634] Display shift start time
+|Determines whether the start time of a shift is shown alongside the day model name in the Scheduling Data section. Enter 1 to display the start time. Enter 0 to hide it. The default value is 0.
+|[48642] Period for displaying account balances in Payroll Adjustment
+|Sets how far back to begin displaying account balances in the Daily Statistics section of Payroll Adjustment. Enter a value from -1 to -31. This is counted backward from the 1st of the next month. Default: -1 (last day of current month). The end of the period adjusts based on whether the selected date is in the current month or not.
+|[48674] Account types available in Payroll Adjustment
+|Specifies which account types appear in the Select Accounts dialog in the Daily Statistics section. Enter IDs separated by semicolons. Default: 101;103;104. 101 = Time Account, 103 = Entitlement, 104 = Counter.
+|[48682] Colour to identify outdated values in 'Daily Statistics'
+|Defines the color used to show outdated values in Daily Statistics when the Rules feature in Time Management hasn’t recalculated yet. These outdated values appear temporarily after user changes. Default color: Red.
+|===
+
+== WFM Settings configuration page
+
+=== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Name
+|WFM setting name
+|Status
+|Settings with the Admin status only have System value. Settings with the Public status have both System value and Personal value.
+|System value
+|User-defined value for the setting. Applies to all users.
+|Personal value
+|User-defined value for the setting. Applies only to the currently logged in user.
+|===
+
+=== Overrides for individual people
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Name
+|Name of the person to whom the override value applies. Peopleware uses the override value for people being scheduled by that person when using the **Create optimized schedule** functionality.
+|Value
+|Value that overrides the system value for this person.
+|===

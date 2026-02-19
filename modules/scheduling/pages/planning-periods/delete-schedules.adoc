@@ -1,0 +1,64 @@
+= Delete schedules
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: classic
+:topic-type-concept:
+:description: Delete schedules from one or more scheduling levels for a specific date range (SchedulePro).
+:related-articles: what-are-planning-periods.adoc, batch-replace-an-activity.adoc, copy-and-back-up-schedules.adoc
+
+In this article, you will learn how to
+
+- Delete schedules (activities and day models) from one or more scheduling levels for a specific date range.
+- Limit the deletion to specific employees.
+
+To do this, you will use planning periods. Read the article xref:scheduling:what-are-planning-periods.adoc[What are Planning Periods?] first.
+
+[NOTE]
+====
+This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+====
+>
+[NOTE]
+====
+If you use Advanced WFM or Enterprise WFM, use the function xref:scheduling:schedules-empty-levels.adoc[Empty level] under _Plan > Schedules_{:.breadcrumbs} instead.
+====
+[#select-or-create-a-planning-period]
+== Select or create a planning period
+1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
+2. Choose the _Planning Unit_{:.label}.
+3. Choose the **Type** _Standard_.
+4. For _Selection_{:.label} choose **[All]**.
+5. Click _Apply_{:.doc-button}.
+6. Find a planning period that contains the correct date range for which you want to delete schedules. It doesn't have to match the date range exactly.
+7. Click _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon}.
+8. Select the **Status** _Locked_ to make sure that employees cannot access the schedule.
+9. Click _Ok_{:.doc-button}.
+
+If there is no suitable planning period in the list, create a new one:
+
+1. Click the {icon-wfm-add} in the action bar.
+2. Use **Valid From** and **Valid To** to define the time period for which you want to delete schedules.
+3. Select the **Status** _Locked_ to make sure that employees cannot access the schedule.
+4. Click _Ok_{:.doc-button}.
+
+[#delete-schedules-for-a-specific-date-range]
+== Delete schedules for a specific date range
+[NOTE]
+====
+Be careful when setting your parameters - you cannot undo a schedule deletion.
+Do not delete time-off requests
+====
+>
+[NOTE]
+====
+Approved xref:scheduling:vacation-absences-management.adoc[time-off requests] are only stored in the Schedule level. If you have approved time-off requests, don't delete your schedule as explained here. Because this would also delete the approved time-off requests in the chosen date range. Instead, delete the shifts manually.
+====
+1. Click a **planning period** of type _Standard_ that contains the data range in which you want to delete schedules. A menu opens to the right.
+2. Click _Delete_{:.doc-button} in the section _Level_.
+3. If needed, change the **Start Date** and **End Date** to further limit the timeframe that will be deleted.
+4. Optional: Change the **Employee Selection** method if you want to delete only the data of certain employees. You can choose one or more of your selections or one or more employees from the list. Press the _Shift_ or _CTRL_ key to select multiple entries at once.
+5. Select the **Level** from which you want to delete data.
+6. To delete the data, click _Ok_{:.doc-button}. There is no further security prompt.
+
+image::delete-schedules/image-4.png[Delete level dialog, width=50%]

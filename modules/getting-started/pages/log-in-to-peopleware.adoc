@@ -1,0 +1,59 @@
+= Log in to Peopleware
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Short description of how to log in to Peopleware
+:related-articles: navigate-peopleware.adoc, explore-me.adoc
+:page-aliases: login-to-injixo
+
+To log in to Peopleware, you need your login credentials. There are three options to receive the login credentials:
+
+- The Peopleware welcome email includes a link to set your password when your account is created.
+- Directly from your organization, e.g. your administrator or team lead.
+- Click the **Forgot your password?** link on the login screen at any later time.
+
+[#access-peopleware-through-your-browser]
+== Access Peopleware through your browser
+We support the two latest versions of the following browsers:
+
+- Microsoft Edge
+- Google Chrome
+- Mozilla Firefox
+- Apple Safari
+
+[#log-in]
+== Log in
+To log in to Peopleware:
+
+- Enter your **Email** and **Password** on the [login screen](https://app.peopleware.com/login).
+
+Your organization may require that you log in via xref:getting-started:single-sign-on.adoc[single sign-on] (SSO).
+
+To log in via SSO:
+
+- Enter your **Email** on the [SSO login screen](https://app.peopleware.com/login/sso).
+  You are redirected to the SSO identity provider login screen. If you have already logged in to the xref:getting-started:single-sign-on.adoc[identity provider] through another application, you are redirected to Peopleware.
+
+After logging in, people with the xref:account:predefined-user-roles.adoc[predefined agent role] will be redirected to their xref:me:explore-me.adoc#get-an-overview-dashboard[Dashboards] in Me. People with xref:account:predefined-user-roles.adoc[other roles] will be redirected to Peopleware's start page.
+
+[#log-out]
+== Log out
+To log out:
+
+- Click the {icon-right-from-bracket} at the top right in the navigation bar.
+
+[NOTE]
+====
+Users are logged out after 12 hours of inactivity.
+====
+[#reset-password]
+== Reset password
+1. Go to the [login screen](https://app.peopleware.com/login).
+2. Click **Forgot your password?**
+3. Enter your **Email**.
+4. Click _Send Instructions_{:.doc-button} to receive an email with detailed instructions.
+5. Check your inbox. If you do not find the reset password email, check your spam folder.
+
+After you have changed your password, you will be redirected back to the login screen.

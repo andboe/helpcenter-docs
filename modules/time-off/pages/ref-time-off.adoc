@@ -1,0 +1,141 @@
+= Time Off reference guide
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-reference:
+:description: Find information about time-off settings.
+:related-articles: time-off-types.adoc, use-approval-policies.adoc
+
+This article lists **Types** and **Accounting rules** settings available in _Time off_{:.breadcrumbs}.
+
+== Types
+
+=== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Name
+|Time-off type name
+|Color
+|Display color of the time-off type, helps visually distinguish this absence in schedules and calendars.
+|Time unit
+|Defines whether absences for this type are calculated and deducted in days or hours.
+|Paid
+|Indicates whether people are paid when taking this type of time off.
+|Fill up schedule with
+|Available only if you check the **Paid** checkbox. Replaces unpaid activities and blocks unscheduled hours with an unpaid absence, preventing people from being scheduled during their time off.
+|Requestable
+|Allows people to submit their own requests for this time-off type in Me.
+|Consider in quotas
+|Determines whether absences of this type count toward daily time-off quotas for hours.
+|Enable recommendations
+|Requires requests of this type to receive a recommendation (approve or reject) before a final decision is made.
+|Deducts from entitlement
+|Ensures that approved requests for this type-off type reduce the person’s time-off balance for the associated entitlement.
+|Start of leave year
+|Defines when the annual entitlement cycle begins. The leave year determines:  +– When yearly renewals are created (on the first day of the leave year). +– The calculation period for balances and accruals. +– How and when entitlement created by entitlement policies expires.
+|Planning unit
+|Planning unit to which the time-off type is available.
+|Approval policies
+|Rules that determine how requests for this time-off type are evaluated.
+|Entitlement policies
+|Rules that define how and when people receive their time-off balance for this time-off type.
+|===
+
+=== Approval policies
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Approve requests automatically if all checks pass
+|If this box is checked, Peopleware automatically approves time-off requests that pass all the checks defined in the **Checks** section.
+|===
+
+==== Checks
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Check
+|Type of check: +- **Consecutive days**: Verifies the number of days requested in a row. +- **Projected balance**: Verifies the requesting person's remaining time-off balance after the request is approved. +- **Lead time in days**: Verifies the number of days between the request date and the first day off. +- **Quota**: <!-- tbc -->
+|Condition
+|- **>**: Greater than. Activates the check if the value requested is greater than the value entered in the threshold fields. +- **<**: Smaller than. Activates the check if the value requested is smaller than the value entered in the threshold fields.
+|Review threshold
+|The limit value at which a time-off request needs to be manually reviewed before approval or refusal. Example: If the Review threshold for Consecutive days is 10, any time-off request for more than 10 days needs manual approval.
+|Prevent threshold
+|The limit value at which a time-off request cannot be submitted. Example: If the prevent threshold for lead time is 2 days, people cannot submit a request with less than 2 days’ notice.
+|===
+
+=== Entitlement policies
+
+<table style="width:100%;">
+  <thead>
+    <tr>
+      <th style="width:20%;">Name</th>
+      <th style="width:80%;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Contracts</td>
+      <td>Contracts to which the entitlement policy applies</td>
+    </tr>
+  </tbody>
+</table>
+
+==== Entitlement strategy
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Yearly renewal
+|Gives people a fixed amount of time off once per year on a specified date.
+|Accrual
+|Adds time off gradually (weekly, bi-weekly, or monthly) throughout the leave year. Entitlement must be used within that same year. Carry over is not allowed.
+|Entitlement amount
+|Available only if you select **Yearly renewal** as an entitlement strategy. Number of days or hours a person receives under a policy. Defines how much time off people are granted or can accrue.
+|Renewal date
+|Available only if you select **Yearly renewal** as an entitlement strategy. Scheduled day on which an entitlement policy runs and creates the corresponding time-off entitlement for people.
+|Carry over
+|Available only if you select **Yearly renewal** as an entitlement strategy. Portion of unused time-off entitlement that can be transferred into the next leave year, up to a defined maximum and validity period.
+|Max. carry over amount
+|Available only if you check the **Carry over** checkbox. Maximum number of unused days that can be transferred from one leave year to the next under a carry over rule.
+|Carry over expiration date
+|Available only if you check the **Carry over** checkbox. Last date by which carried-over time-off must be used before it automatically expires.
+|Accrual amount
+|Available only if you select **Accrual** as an entitlement strategy. Fixed number of days or hours a person earns at the beginning of each accrual cycle.
+|Accrual frequency
+|Available only if you select **Accrual** as an entitlement strategy. How often entitlement is added.
+|===
+
+== Accounting rules
+
+=== General
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Name
+|Description
+|Valuation strategy
+|Defines the basis Peopleware uses to calculate how much time off is deducted from a person’s entitlement. Can be based on the person’s schedule, contract, or a mix of both: schedule when available, contract otherwise.
+|Consider bank holidays
+|Ensures that public holidays within a requested time-off period are not deducted from entitlement when valuation is based on contracts. It adjusts the person’s working days for that week instead, so holidays don’t reduce their leave balance.
+|Ignore weekends
+|Excludes weekends from time-off valuation, so requested days that fall on Saturday or Sunday are not deducted from entitlement.
+|Enable rounding
+|Sets thresholds so that partial-day requests are rounded up or down. Example: Counting 4+ hours as a full day and fewer as a half day.
+|===
+
+=== Contracts
+
+Peopleware targets the contracts added in this category, so that the rule only applies to the selected contracts. If no contract is assigned, the rule acts as the default for everyone.
+
+=== Adjusted days
+
+Days added in this category are exceptions where only part of a day is deducted, even if someone requests the full day off.

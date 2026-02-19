@@ -1,0 +1,93 @@
+= Scheduling methods
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn about the various scheduling methods available.
+:related-articles: combined-scheduling-methods.adoc, create-contracts.adoc, set-a-validity-period.adoc, employee-overview.adoc, configure-me.adoc
+
+We offer different scheduling methods, which you can use on their own or as a xref:scheduling:combined-scheduling-methods.adoc[combination].
+
+The different scheduling methods are designed to fit different use cases. All scheduling methods consider the information configured in your people's xref:administration:create-contracts.adoc[contracts], such as the number of working days, the working hours per day, week, or month, and other scheduling parameters.
+
+[#prerequisites]
+== Prerequisites
+Before you start using scheduling methods, make sure that you have set up the following configuration data in _Plan > Configuration_{:.breadcrumbs}:
+
+- Skills
+- Activities
+- Day models
+- Planning units
+- Contracts
+- Employees
+
+Some scheduling methods might also require that you set up other configuration data, e.g. shift sequences or work time pattern models.
+
+[#fixed-scheduling]
+== Fixed scheduling
+The fixed scheduling method is based on xref:administration:shift-sequences.adoc[shift sequences]. A shift sequence is a weekly pattern of day models or activities that defines on which days a person works, as well as their exact shift start and end time. As a consequence, fixed scheduling is the most consistent scheduling method, but it offers the least flexibility.
+
+Schedules created using shift sequences can be the same every week, or change in intervals from 2 to 53 weeks.
+
+After the schedule has been created, you can still run xref:scheduling:break-optimization.adoc[Optimize breaks], or the xref:scheduling:schedules-job-optimization.adoc[Job optimization] to further optimize your schedule.
+
+**Optimize breaks** moves planned breaks to the time slot where they have the least impact on your coverage. Only breaks configured within a xref:administration:daymodel-basics.adoc#fixed-elements-vs-corridors[corridor in a day model] can be moved.
+
+**Job optimization** can replace activities configured as replaceable with other plannable activities to achieve the best possible coverage for all activities, based on their staff requirements. The start and end times of shifts remain unchanged. **Job optimization** can also modify break times within a schedule, in the same way **Optimize breaks** does.
+
+[#optimized-scheduling]
+== Optimized scheduling
+The optimized scheduling method offers the most flexibility. In this method, you use the xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedule] functionality to automatically create a full schedule with the best possible coverage for all activities with as few people as possible.
+
+By default, the **Create optimized schedule** functionality can schedule people using any xref:administration:daymodel-basics.adoc[day model] that is assigned to their planning unit and is compatible with their contract.
+
+Depending on your configuration, using different day models in scheduling can lead to very inconsistent schedules, e.g. people could be scheduled to work the night shift on a Monday, the afternoon shift on a Tuesday, and the morning shift on a Wednesday.
+
+To define which day models can be used to create a schedule, configure xref:administration:work-time-pattern-models.adoc[work time pattern models]. A work time pattern model is made up of xref:administration:work-time-pattern-models.adoc#create-week-time-patterns[week time patterns], and defines how day models are assigned to your people. With work time pattern models you can create repeating patterns of shifts, and set scheduling constraints for the **Create optimized schedule** functionality.
+
+To schedule people using work time pattern models, assign one work time pattern model to each person. You cannot assign several work time pattern models to a person for the same validity period.
+
+[#fully-flexible-shifts]
+=== Fully flexible shifts
+To create schedules with fully flexible shifts, create work time pattern models of xref:administration:work-time-pattern-models.adoc#types-of-work-time-pattern-models[type A], and assign them to your people.
+
+With type A, Peopleware can select any day model included in the work time pattern model for every day of every week, as long as it complies with a person's contract.
+
+This method creates the best schedules to meet your operational needs. At the same time, it can create very inconsistent schedules that negatively impact your people. To reduce this negative impact, you can exclude certain shifts for some people by assigning individual day models to them, or by using xref:#availabilities[availabilities].
+
+[#rotating-flexible-shifts]
+=== Rotating flexible shifts
+To create schedules with rotating flexible shifts, create work time pattern models of xref:administration:work-time-pattern-models.adoc#types-of-work-time-pattern-models[type B, C, or D], and assign them to your people.
+
+With types B, C and D, you define a specific order to be followed when selecting the day models from those available in the selected work time pattern model and compatible with people's contract. You can also define a fixed start time for the shifts, or a time frame within which shifts start.
+
+[#availabilities]
+=== Availabilities
+You can use xref:administration:availabilities.adoc[availabilities] to configure that people are not available to work on a day, or during some hours. Availabilities add further scheduling restrictions to those defined by contracts and planning units' business hours.
+
+When people have availabilities assigned, they can only be scheduled for shifts that fit into the time frames in which they are available.
+
+[#shift-bidding]
+== Shift bidding
+If you use xref:scheduling:schedules-shift-bidding.adoc[shift bidding], the final schedule is only created after people have had the chance to request their preferred shifts in Me.
+
+To create a schedule using Shift bidding, follow these steps:
+
+1. Define how many shifts you need for a xref:scheduling:what-are-scheduling-periods.adoc[scheduling period].
+2. xref:scheduling:schedules-shift-bidding.adoc#generate-shifts[Generate shifts] based on forecasted staff requirements.
+3. Set the status of your scheduling period to **Published**. People can request two shifts per day (up to 10 in total).
+4. Start a xref:scheduling:shift-bidding.adoc#lottery-of-requested-shifts[shift lottery] for the shifts that have been requested.
+5. Assign the remaining shifts. People whose requests were not fulfilled during the lottery will be scheduled in this step.
+
+After the schedule has been created, you can still run the xref:scheduling:schedules-job-optimization.adoc[Job optimization] to optimize the scheduled activities and the positions of breaks.
+
+[NOTE]
+====
+Use the activity Present if you combine shift bidding and **Job optimization**
+====
+>
+[NOTE]
+====
+If people can request shifts in Me but you want to run **Job optimization** later, only use the default system activity Present (activity ID: 1) as activity in the day models. This way you avoid that people request shifts with specific activities but are then assigned completely different activities by the **Job optimization**.
+====

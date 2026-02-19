@@ -1,0 +1,59 @@
+= Assign shift sequences to people
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to assign shift sequences to your people.
+:related-articles: shift-sequences.adoc, create-shift-sequences.adoc, employee-overview.adoc
+
+This article explains how to assign shift sequences to your people individually.
+
+To assign shift sequences to your people in bulk, use the xref:people:concept-mass-update.adoc[mass update functionality]
+
+[#prerequisites]
+== Prerequisites
+- You have the **View people** and **Edit people** permissions.
+- You have at least **Read** access to **Shift Sequences** in WFM. Learn more about xref:account:configure-user-roles.adoc#set-wfm-permissions[WFM permissions].
+- You have created xref:administration:create-shift-sequences.adoc[shift sequences].
+
+[#steps]
+== Steps
+1. Go to _People_{:.breadcrumbs}.
+2. Select a person from the list.
+3. In the menu on the left, click **Planning**.
+4. In the _Shift sequences_{:.label} section, click {icon-plus} **Add** .
+5. Configure the xref:#settings[assignment settings].
+6. Click _Save_{:.doc-button}.
+
+[#settings]
+== Settings
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Shift sequence
+|Specifies the shift sequence that is assigned to the person.
+|Employee row
+|Specifies the shift sequence's employee row that is assigned to the person.
+|Sequence
+|Specifies a numerical value that controls in which order shift sequences are applied for the person.
+|Reference date
+|Specifies from which day onwards the shift sequence is repeatedly applied to schedule the person.
+|Valid from
+|Specifies the start of the period in which the shift sequence is available to schedule the person.
+|Valid to
+|Specifies the end of the period in which the shift sequence is available to schedule the person.
+|===
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Starting from the **Reference date**, the shift sequence repeats continuously for as long as it remains valid. If you configure shift sequences as weekly patterns, make sure you set the reference date to the same weekday as the start of the week defined for your tenant. By default, the start of the week is either Sunday or Monday, depending on your region. If you need to change it to a different day, contact your consultant.
+====
+[#next-steps]
+== Next steps
+You can now xref:scheduling:schedules-insert-shift-sequences.adoc[insert shift sequences] into your schedule.

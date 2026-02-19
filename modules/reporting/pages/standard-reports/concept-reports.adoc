@@ -1,0 +1,48 @@
+= Reports
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise, classic
+:topic-type-concept:
+:description: Understand the core concepts behind reports in Peopleware.
+:related-articles: task-create-reports.adoc, ref-reports.adoc
+:page-aliases: reports
+
+Reports allow you to view and extract structured data related to scheduling and people activity.
+They provide insights into scheduled shifts, people configuration, and other scheduling-related information.
+
+You can create reports in HTML or PDF format.
+
+[#report-category]
+== Report category
+Reports are organized into two categories:
+
+- Planning Unit Reports: Focus on planning unit data.
+- Employee Reports: Focus on individual employee data such as configuration and activity.
+
+You can filter reports by category using the **Category** drop-down in the **Reports** section.
+
+[#displayed-data-and-filters]
+== Displayed data and filters
+The data shown in a report depends on the type of report, parameters and filters you define when generating the report.
+These can include:
+
+- Schedule levels
+- Date ranges
+- People selections or planning units
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Reports based on selections only show content if people are assigned to at least one selection.
+====
+[#time-zones-in-reports]
+== Time zones in reports
+All times shown in reports reflect the planning unit’s time zone.
+The report header includes:
+
+- The time difference between the planning unit’s time zone and UTC
+- The time difference between the planning unit’s time zone and the local time of the user viewing the report

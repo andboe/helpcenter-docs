@@ -1,42 +1,31 @@
 = Download forecasts
 include::help-center:ROOT:partial$libs/libs.adoc[]
-:author: Alexis Braine
+:author: 
+:email: 
 :product-label: advanced, enterprise
-:topic-type-task:
-:page-aliases: download-forecast/index.adoc
+:topic-type-concept:
+:description: Download forecasts as CSV files from Forecast. Learn how these files are formatted.
+:page-aliases: download-forecast
 
-In {bc-forecast-workloads}, you can download your forecast data as a CSV file.
+In _Forecast > Workloads_{:.breadcrumbs}, you can download your forecast data as a CSV file.
 
-You can download forecast data for up to 24 months.
-You can download the *Forecast* xref:forecast:save-forecast-versions.adoc#save-a-forecast-version[version data] by itself, or together with any other versions.
+You can download forecast data for up to 24 months. You can download the Forecast xref:forecast:save-forecast-versions.adoc#save-a-forecast-version[version] data by itself, or together with any other versions.
 
 [#download-a-forecast]
 == Download a forecast
-
-. In {bc-forecast-workloads}, select a workload.
-. Select the time frame using the date picker.
-Click a week number to select the whole week, or click any day and drag to select a custom period.
-. From the context menu icon {icon-context-menu} at the top right, select *Download as CSV*.
-. Select the forecast data that you want to download.
-+
-To select all available versions, check the *All* checkbox.
-. Click {btn-download-as-csv}.
-+
-The downloaded forecast versions are saved in one file.
+1. In _Forecast > Workloads_{:.breadcrumbs}, select a workload.
+2. Select the time frame using the date picker. Click on a week number to select the whole week, or click any day and drag to select a period shorter or longer than a week.
+3. From the {icon-context-menu} at the top right, select **Download as CSV**.
+4. Select the forecast data that you want to download.<br>To select all available versions, check the **All** checkbox.
+5. Click _Download as CSV_{:.doc-button}.<br>
+   The downloaded forecast versions are saved in one file.
 
 [#csv-file-example]
 == CSV file example
+The CSV file name contains the workload name and the channel. For example, the CSV file for the calls workload Orders will be named `Orders-Calls.csv`. The column headers show the forecast version. The file contains timestamps (formatted as YYYY-MM-DD) and values for each forecast, and uses the time zone and interval of the workload. The file does not include information about public holidays, events added to the workload, or any historical data.
 
-The CSV file name contains the workload name and the channel.
-For example, the CSV file for the calls workload Orders is named `Orders-Calls.csv`.
-The column headers show the forecast version.
-The file contains timestamps formatted as `YYYY-MM-DD` and values for each forecast.
-It uses the time zone and interval of the workload.
-The file does not include information about public holidays, events added to the workload, or historical data.
+If you select **Forecast** and **Operational**, the file will look as follows:
 
-If you select *Forecast* and *Operational*, the file looks as follows:
-
-====
 ----
 Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
 ...
@@ -46,12 +35,13 @@ Timestamp;Offered_auto;AHT_auto;Offered_operational;AHT_operational
 2020-05-17 17:15;41;181;37;183
 ...
 ----
-====
 
 [NOTE]
 ====
 The download option is only available for Smart workloads in Live mode.
-Switch the workload to Live mode to access the download option.
-See xref:forecast:create-workloads.adoc[] for details about Live mode and Test mode.
-Smart workloads are only available for Enterprise and Advanced WFM plans.
+====
+>
+[NOTE]
+====
+Switch your workload to Live mode to access the download option. See xref:forecast:create-workloads.adoc[Create workloads] for details about Live mode and Test mode. Smart workloads are only available for Enterprise and Advanced WFM plans.
 ====

@@ -1,0 +1,30 @@
+= Export data as CSV
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to export your Peopleware data as a CSV file.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The CSV export feature explained here is the new standard for exporting data from overview tables in Peopleware. It is currently available in _People_{:.breadcrubs} and will be rolled out to more Peopleware apps soon.
+====
+In Peopleware apps, you can export your data as Comma Separated Values (CSV) files. The columns and data of the generated CSV file depend on the app from which you are exporting data. Use the exported CSV file to process, analyze, store or distribute the data in any way you like.
+
+To export your Peopleware data to a CSV file, follow these steps:
+
+1. Go to the table from which you want to export data, e.g. the overview table in _People_{:.breadcrumbs}.
+2. (Optional) Use the search field or the filters to filter the list of entries.
+3. Select the entries you want to export:
+   - To select entries individually, check the corresponding checkbox.
+   - To select all entries on the page, check the top checkbox.
+   - To select all entries in the table, click **Select all**.
+4. Click **{icon-cloud-arrow-down} Download CSV**.  
+   If you do not see this option, make sure you have selected at least one item.
+
+Your browser either saves the file to the default download folder or asks you to choose a download folder, depending on your settings.

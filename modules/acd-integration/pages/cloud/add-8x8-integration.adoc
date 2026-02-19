@@ -1,0 +1,152 @@
+= 8X8
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your 8X8 ACD to import data.
+:related-articles: how-integrations-work.adoc, import-agent-status-data.adoc
+
+An 8X8 integration is a cloud integration that imports calls, chats, emails, voicemails, agent status and real-time adherence data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-an-8X8-integration]
+== Add an 8X8 integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **8X8**.
+5. Click _Save_{:.doc-button}.
+
+[#set-up-your-8x8-integration]
+== Set up your 8X8 integration
+1. In the **Credentials** section, enter the xref:#credentials[required information].
+2. In the **Configuration** section, enter the xref:#configuration[required information]
+3. Click _Save_{:.doc-button}.
+
+[#credentials]
+=== Credentials
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Client ID
+|Your 8X8 client ID <!-- can we add an example? (e.g., https://<customerID>.rest.afas.online) -->
+|Client secret
+|Your 8X8 client secret <!-- can we add an example?    -->
+|===
+
+[#configuration]
+=== Configuration
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Account region
+|The region of your 8x8 account
+|===
+
+[#queue-data-and-channel-mapping]
+== Queue data and channel mapping
+The integration imports interactions that have a `queueName` and whose direction is either `InboundDir` or `OutboundDir`.
+Peopleware handles data as explained in the table below:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Data type
+|Report/metric used
+|Queue data
+|`historical-metrics` report with the type `detailed-reports-interaction-details`
+|Interaction timestamp
+|`queueTime`
+|===
+
+`Handled` is set to `true` when the interaction includes the `Handled` label.
+
+Peopleware maps media types to channels as explained below:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|8x8 channel
+|Peopleware channel
+|phone
+|call
+|chat
+|chat
+|email
+|email
+|voicemail
+|call
+|===
+
+[#agent-status-data]
+== Agent status data
+Peopleware uses the `agentId`, `status`, and `statusCode` from the report to build the agent statuses.<br>
+If there is a `statusCode`, Peopleware includes it in brackets, e.g.: "OnBreak (Lunch)".<br>
+If the `status` is `LoggedOut`, Peopleware does not include the `statusCode`.
+
+[#historical-agent-status-data]
+=== Historical agent status data
+Peopleware retrieves the historical agent statuses by triggering a `historical-metrics` detailed report with the type `detailed-reports-agent-status-change`.
+
+[NOTE]
+====
+Potential time discrepancy in Intraday Adherence
+====
+>
+[NOTE]
+====
+The 8X8 API accepts timestamps only in UTC format but interprets them as local time when returning data. This can cause a time discrepancy for tenants in time zones that differ from UTC.<br>
+In addition, the integration imports historical agent status data every 15 minutes. This can introduce an additional delay of 15-30 minutes.<br>
+If present, these time discrepancies will appear in the historical agent status data in _Intraday > Intraday Adherence_{:.breadcrumbs}.
+====
+[#live-agent-status-data]
+=== Live agent status data
+Peopleware retrieves live agent status data as explained in the table below:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Data type
+|Report/metric used
+|Live agent status data
+|`realtime-metrics`
+|Person's timestamp
+|`loggedInTime` is added to `lastLogin`, then `timeOnStatus` is subtracted.  +If the person's status is `LoggedOut`, Peopleware sets both the status start and end time to the `lastLogout` timestamp.
+|===
+
+[#aht-calculation]
+== AHT calculation
+For each call, the integration calculates handling time as the difference between `Wrap Up End Time` and `Offer Action Time`.<br>
+The average handle time (AHT) is calculated as follows:
+(Sum of handling times for 15-minute interval) / (Number of handled calls for 15-minute interval)

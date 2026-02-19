@@ -1,0 +1,220 @@
+= Mass update overview
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-concept:
+:description: Understand the core concepts behind mass updates in Peopleware.
+:related-articles: task-perform-mass-update.adoc, ref-mass-update-settings.adoc
+
+<style>
+  table {
+    margin-left: 0;
+  }
+</style>
+
+In Peopleware people are linked via assignments to a number of objects, such as roles, planning units or contracts.
+The mass update feature serves to simultaneously apply changes to these assignments for multiple people.
+This helps to handle large-scale changes, such as:
+
+- Reorganize teams: Move entire departments to new planning units.
+- Roll out new policies: Assign a new contract type to all relevant employees.
+- Update qualifications: Add a new skill to a specific group.
+
+== Mass update basics
+
+Mass updates operate on three actions: Add, Replace, and Delete.
+These actions can be applied to assignments of various objects.
+The behavior of these actions can be further refined with additional settings.
+While most of these settings apply to the majority of assignments, some assignments have specific settings depending on the assigned object.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Action
+|Description
+|Add
+|Assigns a specific object, e.g. a role, to the selected persons.
+|Replace
+|Unassigns an existing object from the selected persons and assigns another object in its place.
+|Delete
+|Unassigns one or more existing objects from the selected persons.
+|===
+
+=== Handling of validity periods
+
+Every mass update can apply assignment changes either temporarily or for an unlimited time.
+This way, assignments can be tailored to match scenarios such as:
+
+- Apply changes for a specific duration:
+  For example, assign a contract for a project that runs from July 1 to December 31.
+- Establish future assignments:
+  Set up a new planning unit assignment that begins next quarter.
+- End existing assignments:
+  Define an end date to terminate a selection assignment.
+
+If the new assignment overlaps with or completely covers the validity period of an existing assignment, the validity period of the existing assignment is automatically adjusted or terminated to accommodate the new assignment.
+
+**Example:**
+
+A number of people are assigned to planning unit Hamburg.
+Due to external factors, every member of that planning unit needs to be reassigned to planning unit Berlin for a few months.
+
+Prior to the mass update, all people of the Hamburg planning unit are assigned to it as follows:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Planning unit
+|1 Jan to 31 Dec
+|Hamburg
+|===
+
+You perform a mass update to temporarily reassign the people to the Berlin planning unit from April to August.
+The resulting assignments are:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Planning unit
+|1 Jan to 31 Mar
+|Hamburg
+|1 Apr to 31 Aug
+|Berlin
+|1 Sep to 31 Dec
+|Hamburg
+|===
+
+=== Handling of periods without assignments
+
+==== Add action
+
+For most object types supported by the mass update feature, the Add action by default only assigns an object for periods in which an object of the same type is not yet assigned.
+For example, consider an Add action that assigns the Berlin planning unit to Person A and Person B from 1 Jan to 31 Dec.
+With the default settings, the results are:
+
+**Person A**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Planning unit<br>(before)
+|Planning Unit<br>(after)
+|1 Jan to 31 Mar
+|Hamburg
+|Hamburg
+|1 Apr to 31 Aug
+|_no assignment_
+|**Berlin**
+|1 Sep to 31 Dec
+|Hamburg
+|Hamburg
+|===
+
+**Person B**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Planning unit<br>(before)
+|Planning Unit<br>(after)
+|1 Jan to 31 Mar
+|_no assignment_
+|**Berlin**
+|1 Apr to 31 Aug
+|Munich
+|Munich
+|1 Sep to 31 Dec
+|_no assignment_
+|**Berlin**
+|===
+
+As an alternative, the Add action can be set up to overwrite existing assignments.
+In this case, the Add action would yield the following planning unit assignment:
+
+**Person A and Person B**
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Planning unit<br>(after)
+|**1 Jan to 31 Dec**
+|**Berlin**
+|===
+
+Note that overwriting existing assignments with the Add action affects all assignments in the period specified for the mass update.
+The Replace action allows for a more targeted replacement of existing assignments.
+
+==== Replace action
+
+The Replace action by default only affects the selected assignments.
+For example, consider a Replace action that in the period from 1 Jan to 31 Dec replaces the full-time contracts assigned to Person A and Person B with the part-time contract.
+With the default settings, the results are:
+
+**Person A**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Contract<br>(before)
+|Contract<br>(after)
+|1 Jan to 31 Aug
+|_no assignment_
+|_no assignment_
+|1 Sep to 31 Dec
+|Full-time
+|**Part-time**
+|===
+
+**Person B**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Contract<br>(before)
+|Contract<br>(after)
+|1 Jan to 31 Mar
+|Temporary
+|Temporary
+|1 Apr to 31 Aug
+|Full-time
+|**Part-time**
+|1 Sep to 31 Dec
+|_no assignment_
+|_no assignment_
+|===
+
+For some object types, the Replace action can be set up to also add the new assignments to periods with no object assignment.
+In this case, the Replace action would yield the following contract assignments:
+
+**Person A**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Contract<br>(before)
+|Contract<br>(after)
+|1 Jan to 31 Aug
+|_no assignment_
+|**Part-time**
+|1 Sep to 31 Dec
+|Full-time
+|**Part-time**
+|===
+
+**Person B**
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Assignment period
+|Contract<br>(before)
+|Contract<br>(after)
+|1 Jan to 31 Mar
+|Temporary
+|Temporary
+|1 Apr to 31 Aug
+|Full-time
+|**Part-time**
+|1 Sep to 31 Dec
+|_no assignment_
+|**Part-time**
+|===

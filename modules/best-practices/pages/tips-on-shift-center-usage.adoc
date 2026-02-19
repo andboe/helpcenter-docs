@@ -1,0 +1,104 @@
+= Tips on Shift Center usage
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn some best practices for using the Shift Center.
+:page-aliases: best-practice-tips-on-shift-center-usuage
+
+In this article, you will receive useful tips to work with the Shift Center more efficiently in your daily work.
+
+[#tip-1-adjust-the-view-of-the-hour-scale]
+== Tip 1: Adjust the view of the hour scale
+Limit the hour scale to the opening hours of your planning unit by hiding irrelevant time periods:
+
+1. Go to _WFM > Administration > System > Settings_{:.breadcrumbs}.
+2. Scroll to the _SchedulePro_ section (or use the search).
+3. Adjust the default value for the settings below according to your needs:
+   - _48077_{:.id-label} _Start time of the Shift Center hour scale_
+   - _48078_{:.id-label} _End time of the Shift Center hour scale_
+
+[#tip-2-shortcuts-for-a-quick-assignment-of-activities]
+== Tip 2: Shortcuts for a quick assignment of activities
+Shortcuts offer simple and quick way to add full-day activities or fixed day models to employees manually. No need to select the corresponding activity from a dialog window first. This is especially useful when managing absences during intraday management.
+
+The two available shortcuts types allow letters, numbers, and spaces (max. 5 characters):
+
+- Default shortcuts: require to press the _Enter_ key after you entered the defined sequence on your keyboard to insert the related day model or activity.
+- Instant shortcuts: No need to press _Enter_. Add a _#_ character at the end when creating the shortcut definition.
+
+[#create-shortcuts]
+=== Create shortcuts
+1. Go to _Plan > Configuration_{:.breadcrumbs} and select **Activities**.
+2. Select an **activity** or _day model_{:.label}.
+3. Enter the shortcut into the **Shortcut** field, e.g. **s** for _sickness_ (default shortcut) or **s#** (instant shortcut).
+4. Click _Ok_{:.doc-button} to save the shortcut.
+
+Note: Shortcuts require that activities and day models are assigned to the planning unit.
+
+[#use-a-default-shortcut]
+=== Use a default shortcut
+1. Select one or more **day cells** for an employee in the scheduling window.
+2. Press **s**. The new element is directly added. To enter an element for multiple consecutive days, select **several cells at once**, before pressing **s**. This action overwrites existing elements in the schedule.
+
+[#use-an-instant-shortcut]
+=== Use an instant shortcut
+1. Select a **day cell** for an employee in the scheduling window.
+2. Press **s** followed by **Enter**. To enter the element for several consecutive days, press a **number key** after the shortcut, e.g. **s** + **3** + **Enter**. This action overwrites existing elements in the schedule.
+
+Tip: The space bar is perfectly suitable as an instant shortcut (e.g. for the activity sickness), because this key is reached fastest. Simply, press space followed by #.
+
+image::tips-on-shift-center-usage/image-1.png[Instant-Shortcut, width=50%]
+
+[#tip-3-copy-the-original-schedule-as-reference]
+== Tip 3: Copy the original schedule as reference
+Even the best schedule will only last until the first necessary change in day-to-day business. To keep track of the necessary schedule variances and, if necessary, draw conclusions for the next scheduling period, it is a good idea to save the original schedule before changing it.
+
+For this purpose, we offer various xref:#tip-9-working-with-different-levels[scheduling levels], and you can copy your final schedule from the _Schedule_ level to the _Actual_ level using the xref:scheduling:use-levels.adoc[copy level content] feature to obtain a reference.
+
+Use the levels contrary to their names:
+
+- _Schedule_: for all changes concerning short-term illnesses, vacations, delays, or unexpected team meetings etc. Optimize jobs and breaks at any time, if you need to react to changed requirements.
+- _Actual_: Use the level for comparison purposes. It serves as a reference to the original schedule.
+
+[#tip-4-sort-shifts-within-the-day-view]
+== Tip 4: Sort shifts within the day view
+When you open the _Shift Center_{:.menu-item}, the day view is always sorted alphabetically by employee name by default. You can xref:scheduling:sort-and-filter-items.adoc#sort-level-items[change the sort order], e.g. ascending or descending by shift start time. When you reopen the _Shift Center_{:.menu-item}, click the **arrow pointing down** to call up the sorting previously used.
+
+[#tip-5-change-the-view-of-the-day-cell]
+== Tip 5: Change the view of the day cell
+The day cell offers short information on the day in both closed and open day views. By default, it displays the short name of the first activity of the day, but depending on how you work, it may be useful to adjust the view.
+
+To show the actual working hours (gross working time) or shift start/end times instead of the abbreviation of the first element, right-click a **day cell**, select **Display**, and then choose one of the **options**.
+
+image::tips-on-shift-center-usage/image-4.png[Setting the day cell display, width=50%]
+
+[#tip-6-display-the-modification-history-for-a-day]
+== Tip 6: Display the modification history for a day
+The _History_ tab gives displays the current and previous employee assignments for the selected day. You can see who made the respective change, which may be helpful when collaborating with several people on a schedule. Learn how to xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#recover-previous-schedules-states-[display and revert previous actions].
+
+[#tip-7-add-activities-to-multiple-employees-at-once]
+== Tip 7: Add activities to multiple employees at once
+If you need to quickly insert the same (meeting) activity for multiple employees, adding it manually can be way more faster than using an automated process. You still have a direct view of the schedule and the parameter window. Learn how to xref:scheduling:add-and-delete-activities-day-models-availabilities-and-comments.adoc#add-activities-day-models-availabilities-or-comments-to-multiple-people[insert an activity for multiple employees at once].
+
+[#tip-8-adjust-the-parameter-view]
+== Tip 8: Adjust the parameter view
+The _Activities_ tab within the parameter window allows you to recognize over- or understaffed activities, indicated by colors.
+
+To get a better overview, remove various activities from the view and xref:scheduling:analyze-coverage-staffing-requirement.adoc#filter-activities-by-activity-type-[display only certain activity types]. If you only select the _Presence_ type, it will be easier to make adjustments and see their effects in the schedule, e.g. during intraday management when you enter sick leave requests, to be able to initiate requirement-oriented countermeasures, if necessary.
+
+[#tip-9-working-with-different-levels]
+== Tip 9: Working with different levels
+Display and use different levels to carry out your scheduling even more precisely:
+
+- _Schedule_{:.menu-item}: displays manually or automatically scheduled activities and shifts. xref:scheduling:schedules-shift-bidding.adoc[Shift bidding] and xref:scheduling:schedules-optimized-schedules.adoc[Optimized schedules] write to this level. Job and break optimizations change the content, employees see it in Me.
+- _Actual_{:.menu-item}: contains the actual schedule. xref:#tip-3-copy-the-original-schedule-as-reference[Copy your final schedule] to this level and make any last-minute changes for the day here.
+- _External System_{:.menu-item}: displays xref:acd-integration:import-agent-status-data.adoc[agent status data] imported using an integration (if configured). You can add/edit entries manually if needed.
+- _Request_{:.menu-item}: displays all normal shift requests that employees enter in Me. You can add day models manually, but no individual activities.
+- _Alternative Request_{:.menu-item}: shows all alternative requests employees enter in Me. You can add day models manually, but no individual activities.
+- _Vacation Request/Absence Request_{:.menu-item}: displays any time-off requests employees enter in Me. You can add day models manually, but no individual activities.
+- _Availability_{:.menu-item}: displays employee availabilities. You can also add them manually.
+- _Version 1_{:.menu-item} and _Version 2_{:.menu-item}: can contain schedule backups or approved time-off requests. Use this level for comparison purposes, e.g. for schedules compared to the actual day or for testing/comparing different scheduling scenarios.
+
+Note: Advanced and Enterprise WFM include all levels. You can configure the access to levels via xref:account:configure-user-roles.adoc[roles]. Essential WFM only provides access to the _Schedule_ level.

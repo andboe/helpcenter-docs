@@ -1,0 +1,40 @@
+= Send reports by email
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Deliver Peopleware reports via email.
+
+In _WFM > Monitoring > Reports_{:.breadcrumbs}, you can easily send reports by email to specific groups or individual people. You can configure the email delivery options before the report generation.
+
+After sending the email, you will receive a status report with the report as attachment.
+
+[#send-email-report-to]
+== Send email report to
+To configure if and to whom the report is sent by e-mail, select one of the following options in the **E-mail report to** drop-down menu:
+
+- **No E-Mail**: Selected by default.
+- **Selected recipients**: Select the e-mail addresses of the people, or manually enter one or more email addresses. Each recipient receives the same report.
+- **Employees in the employees list**: Select people from the selection list to send the report to their configured email address. This option is only available for daily and weekly schedule reports.
+- **Each employee separately**: Select people to send a specific report to their configured email address. Each person receives an individual report separately, which only contains the person's data. This option is available for the following reports:
+  - Employee Work Schedule I (List)
+  - Employee Work Schedule I (List) (without Breaks)
+  - Employee Work Schedule II (List)
+  - Employee Work Schedule III (Graph)
+  - Weekly Schedule II (without Full-Day Activities)
+  - Weekly Schedule II (without Breaks) (without Full-Day Activities)
+
+[#email-address]
+== Email address
+In the **E-mail address** drop-down menu, you can specify the e-mail address to which the report is sent. The options are the following:
+
+- **Peopleware Login (Email)**: The e-mail address you entered in the **Basic information** section in _People_{:.breadcrumbs}
+- **E-mail 2**: The alternate e-mail address you entered in the **Contact data** section in _People_{:.breadcrumbs}
+- **Both**
+
+In Enterprise on-premise, the **Peopleware Login (Email)** field is named **E-Mail 1**.
+
+[#anonymous-report]
+== Anonymous report
+Select **Yes** to hide people's names and personnel numbers in the reports and replace them by placeholders. The reports are sorted by person ID.

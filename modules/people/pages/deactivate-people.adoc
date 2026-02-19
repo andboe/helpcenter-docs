@@ -1,0 +1,78 @@
+= Deactivate, reactivate and delete people
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn when and how to deactivate, reactivate or delete people.
+:page-aliases: deactivate-employees
+
+If you have people who you no longer schedule or who no longer need access to Peopleware, you can deactivate or delete them. Deactivated people lose access to Peopleware.
+
+[#deactivate-people]
+== Deactivate people
+If people are not available for work for an extended period of time, e.g. when they take a sabbatical or parental leave, you can temporarily deactivate them. You can reactivate people when they return to work. In some cases, the European General Data Protection Regulation (GDPR) may require you to delete a person's data. If this is the case, xref:#delete-a-person[delete] the person.
+
+To deactivate a person, follow these steps:
+
+1. Go to _People_{:.breadcrumbs} and select a person from the list.
+2. In the left-side menu, click **Work profile**.
+3. In the **Staff membership** section, click the currently active staff membership.
+4. Enter a **Valid to** date.
+5. Click _Save_{:.doc-button}.
+
+[#list-deactivated-people]
+=== List deactivated people
+1. Go to _People_{:.breadcrumbs}.
+2. Click _{icon-filter} Filter_{:.doc-button}.
+3. Activate the **Only show inactive** checkbox.
+
+[#reactivate-people]
+=== Reactivate people
+To reactivate a person, e.g. when they return to work after a long absence, follow these steps:
+
+1. Go to _People_{:.breadcrumbs} and select the person you want to reactivate.
+   You can use the search or xref:#list-deactivated-people[display only deactivated people].
+2. In the left-side menu, click **Work profile**.
+3. In the **Staff membership** section, click {icon-plus} **Add**.
+4. Configure a new staff membership with at least a **Valid from** date.
+5. Click _Save_{:.doc-button}.
+
+[#delete-a-person]
+== Delete a person
+When you delete a person in Peopleware, their personal data is anonymized for privacy protection.
+Peopleware retains the person's ID but marks it as deleted, and replaces their name with asterisks.
+Peopleware also modifies personal details to remove any identifiable information, such as names, personnel number, addresses, phone numbers, and email addresses.
+If the person's configuration included ID card numbers, Peopleware completely deletes them.
+
+To ensure your schedule is up to date after deleting a person, run a xref:scheduling:schedules-job-optimization.adoc[job optimization].
+
+[WARNING]
+====
+====
+>
+[NOTE]
+====
+You cannot reactivate a deleted person. The person will be removed from all current and future schedules they were scheduled for. Deleting a person does not affect historical adherence data in xref:intraday:adherence-intraday.adoc[Intraday].
+====
+[#delete-person-in-overview-table]
+=== Delete person in overview table
+1. Go to _People > Overview_{:.breadcrumbs}.
+2. Find the person in the list.
+3. Click the Delete icon {icon-delete}.
+4. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#delete-person-in-detailed-view]
+=== Delete person in detailed view
+1. Go to _People > Overview_{:.breadcrumbs}.
+2. Select the person in the list.
+3. From the {icon-context-menu} at the top left, select {icon-delete} **Delete**.
+4. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#delete-multiple-people]
+=== Delete multiple people
+1. Go to _People > Overview_{:.breadcrumbs}.
+2. Select at least 2 people in the list.
+3. In the action bar, select {icon-delete} **Delete**.
+4. In the confirmation window, enter the number of people records you selected for deletion.
+5. Click _Delete_{:.doc-button}.

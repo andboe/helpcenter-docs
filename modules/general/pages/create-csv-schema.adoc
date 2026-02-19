@@ -1,4 +1,582 @@
 = Create CSV schema
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create a CSV schema.
+:related-articles: csv-schemas.adoc
+
+This article explains how to create a CSV schema.
+
+[#prerequisites]
+== Prerequisities
+- You have the **Configure CSV schemas** permission.
+- You have a CSV sample file that is representative of the CSV files that will be imported with the CSV schema. The CSV sample file includes all the columns and header rows and at least one data row.
+
+[#steps]
+== Steps
+Creating a ready-to-use CSV schema is a two-step process.
+First, you create a CSV schema draft and specify general and file processing settings based on the sample file.
+Then you map the columns available in the sample file to the target fields Peopleware expects for the schema type.
+
+The CSV schema will only be available for manual CSV imports and CSV integrations when the mapping is complete.
+
+[#create-csv-schema-draft]
+=== Create CSV schema draft
+1. Go to _Account > CSV Schemas_{:.breadcrumbs}
+2. Click _Create_{:.doc-button}.
+3. Configure general and file processing settings as needed.
+4. Upload the CSV sample file.
+5. Click _Save_{:.doc-button}
+
+Peopleware saves the CSV schema draft and opens the details page.
 
 [#map-columns]
-== Map columns
+=== Map columns
+The schema type controls which columns need to be mapped to target fields in Peopleware.
+Usually, mapping is required for date and time values and for data specific to the object type, e.g. forecasts.
+
+1. On the details page of the CSV schema draft, go to the **Date and time columns** section.
+2. If the CSV sample file stores date and time data in a single column, activate the **Date and time in one column** setting.
+3. For every date or time field, assign the corresponding CSV column and specify the value format.
+4. Go to the **Data column mapping and processing** section.
+5. Assign the target fields to their corresponding CSV column.
+6. Click _Save_{:.doc-button}
+
+Depending on the schema type, the CSV schema can now be used to import CSV data via the CSV import dialogs or a CSV integration.
+
+[#settings-and-parameters]
+== Settings and parameters
+=== General settings
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Schema type
+|Controls what kind of data can be imported with the CSV schema and which data Peopleware expects in the CSV import file.
+|Schema subtype
+|For schema type **Contact data** only. + Controls which data layout Peopleware expects and how data needs to be mapped. For more information see section xref:#schema-subtypes[Schema subtypes for contact data]
+|Name
+|Identifies the CSV schema.
+|Description
+|Provides additional information.
+|===
+
+[#schema-subtypes]
+==== Schema subtypes for contact data
+CSV schemas with schema type **Contact data** must specify a schema subtype.
+Schema subtypes are either interval-based or contact-based:
+
+- **Interval based**: The CSV schema expects all contact data to be provided in aggregated form on one line per interval.
+- **Contact based**: The CSV schema expects all data to be provided on one line per contact.
+
+Additionally, schema subtypes control how the data provided in the CSV files needs to be mapped:
+
+- **SQL**: The CSV schema maps CSV file columns to Peopleware target fields via an SQL query. Select this option if one of the following applies:
+  - At least one of the required Peopleware target fields is not available as a column in the CSV import file.
+  - The CSV import file includes values in an unsupported format that needs to be converted to a supported format.
+  - You want to perform calculations on the data provided in the CSV import file and save the results in a target field.
+- **column mappings**: The CSV schema maps CSV file columns directly to target fields in Peopleware.
+
+For information on how to perform SQL mapping, see section xref:#sql-mapping[Use SQL to map contact data].
+
+=== File processing settings
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|Separator
+|Specifies which separator character is used in the CSV import files. Select **Auto-detect** to let Peopleware detect the separator automatically based on the CSV sample file.
+|File has no header row
+|Specifies if the CSV import files have a header row. If not, Peopleware identifies each row with a letter to enable CSV column mapping.
+|Skip first x rows
+|Specifies how many rows Peopleware skips during import. For files with header rows, Peopleware interprets the first row after the skipped rows as the header row.
+|Skip rows containing
+|Specifies a value, e.g. `skip`, `42` or `01/01/2026`. Peopleware skips the import of every row that contains that value.
+|===
+
+=== Date and time columns
+
+The **Date and time columns** section serves to specify how date and time values are provided in the CSV import file.
+The available configuration options depend on the schema type.
+
+=== Data column mapping and processing
+
+The **Data column mapping and processing** section serves to map CSV columns to the corresponding Peopleware target fields.
+The relevant target fields depend on the schema type.
+
+[#contact-data-target-fields]
+==== Target fields for schema type Contact data
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Timezone**
+|Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00)
+|**Date**
+|Date values
+|**Date format**
+|Format of the date values. Select one of the predefined options or specify your own format.
+|**Time**
+|Time values
+|**Time format**
+|Format of the time values.
+|**Timestamp**
+|The field is only available if option **Date and time in one column** is active. +Timestamp values
+|**Timestamp format**
+|The field is only available if option **Date and time in one column** is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
+|**Interval length**
+|The length of the data intervals provided in the CSV import file. +The field is only available for interval-based data.
+|**Queue name**
+|Name of the queue from which data is imported
+|**Offered**
+|Offered contacts (per interval for interval-based data) +Supports whole numbers or decimals with decimal point.
+|**Handled**
+|Answered contacts (per interval for interval-based data) +Supports whole numbers and decimals with decimal point. +For contact-based data, the value for handled contacts can only be 0 or 1 or corresponding decimal values.
+|**Duration**
+|Duration of the record in seconds (whole number). +The field is only available for contact-based data.
+|**Channel**
+|Name of the channel. Use the **Fixed channel** option to set a fixed channel for all data in the CSV import file.
+|===
+
+[#agent-status-target-fields]
+==== Target fields for schema type Agent status
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Timezone**
+|Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00)
+|**Start date**
+|Date at which the agent started the activity
+|**End date**
+|Date at which the agent stopped the activity
+|**Date format**
+|Format of the **Start date** and **End date** values
+|**Start time**
+|Time at which the agent started the activity
+|**End time**
+|Time at which the agent stopped the activity
+|**Time format**
+|Format of the **Start time** and **End time** values
+|**Start timestamp**
+|The field is only available if option **Date and time in one column** is active. +Date and time at which the agent started the activity.
+|**End timestamp**
+|The field is only available if option **Date and time in one column** is active. +Date and time at which the agent stopped the activity.
+|**Timestamp format**
+|The field is only available if option **Date and time in one column** is active. +Format of the **Start timestamp** and **End timestamp** values.
+|**Agent identifier**
+|Unique identifier for the agent, e.g. ID or name
+|**Activity identifier**
+|Activity the agent is working on
+|===
+
+==== Target fields for schema type Forecast
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Date**
+|Date values
+|**Date format**
+|Format of the date values. Select one of the predefined options or specify your own format.
+|**Time**
+|Time values
+|**Time format**
+|Format of the time values.
+|**Timestamp**
+|The field is only available if option **Date and time in one column** is active. +Timestamp values
+|**Timestamp format**
+|The field is only available if option **Date and time in one column** is active. +Format of the timestamp values. Select one of the predefined options or specify your own format.
+|**Offered**
+|Offered contacts in the interval
+|**AHT**
+|Average handling time of handled contacts in the interval
+|===
+
+==== Target fields for schema type Plan data
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Plan data CSV schemas are a paid feature. Get in touch with your Peopleware consultant for more information.
+====
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Timezone**
+|Time zone in which your external system records the data, e.g. America/Chicago (UTC-05:00).
+|**Booking date**
+|Booking date of the activity.
+|**Date**
+|Date of the activity. For cases where the **End time** value is before the **Start time** value, Peopleware assumes a nightshift and puts the end date in the following day.
+|**Date format**
+|Format of the date values. Select one of the predefined options or specify your own format.
+|**Personnel number**
+|The personnel number of the person as specified in the person's Peopleware profile.
+|**Start time**
+|Start time of the activity in the schedule.
+|**End time**
+|End time of the activity in the schedule.
+|**Time format**
+|Format of the time values.
+|**Planning unit identifier**
+|Specifies the ID of the person's planning unit. If no value is provided, Peopleware uses the planning unit with the highest priority assigned to the person for that day.
+|**Activity identifier**
+|The ID or name of the Peopleware activity. Which means of identification is used is controlled by setting **Name as activity identifier**.
+|**Full-day activity flag**
+|Controls if Peopleware imports the activity as a full day activity. If an activity is imported as a full day activity, Peopleware ignores the **Start time** and **End time** values. Supported values: +- `t`: Activity is imported as a full-day activity +-`f`: Activity is imported as a partial-day activity
+|**Name as activity identifier**
+|Controls if Peopleware uses the ID or the name to identify the activity. Activate the setting to use the abbreviation.
+|===
+
+==== Target fields for schema type Time account
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Date**
+|Date values
+|**Date format**
+|Format of the date values. Select one of the predefined options or specify your own format.
+|**Person ID**
+|The internal ID of the person in Peopleware.
+|**Time-off type ID**
+|ID of the time-off type.
+|**Entitlement balance**
+|The person's total time-off entitlement in hours or days. The unit is specified in the time-off type.
+|**Taken balance**
+|The time-off amount taken in days or hours. The unit is specified in the time-off type.
+|**Reason for modification**
+|A comment that explains the change.
+|===
+
+[#sql-mapping]
+== Special use case: Use SQL queries to map contact data
+The schema type **Contact data** supports mapping using SQL queries.
+Consider SQL mapping in the following cases:
+
+- The CSV import files do not provide the required data in a dedicted column.
+- Column values are in an unsupported format that may require data conversions or calculations.
+
+SQL mapping allows you to add default values for missing columns, convert data using SQLite functions, or run calculations.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+See [sqlite.org](https://www.sqlite.org) for details and limitations on functions and conversions:
+====
+>
+[NOTE]
+====
+- [numeric precision](https://www.sqlite.org/datatype3.html)
+- [math functions](https://www.sqlite.org/lang_mathfunc.html)
+- [implicit data conversions](https://www.sqlite.org/datatype3.html#affinity)
+- [date and time functions](https://www.sqlite.org/lang_datefunc.html)
+- [string manipulation](https://www.sqlite.org/lang_corefunc.html#string_functions)
+====
+To use SQL mapping instead of mapping target fields directly, select the **Contact data** schema type and then one of the following schema subtypes:
+
+- **Interval based - SQL**
+- **Contact based - SQL**
+
+For these schema subtypes, Peopleware displays an SQL query field in the **Data column mapping and processing** section instead mapping target fields.
+
+[#columns-required-in-sql-query]
+=== Columns required in SQL query
+The following table gives you an overview of the columns required in the SQL query:
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Column name
+|Data type
+|Required for interval-based data
+|Required for contact-based data
+|Description
+|queue
+|String
+|Yes
+|Yes
+|Identifier for the queue
+|timestamp
+|Datetime
+|Yes
+|Yes
+|Start of the interval in the format YYYY-MM-DD hh:mm:ss
+|offered
+|Integer
+|Yes
+|Yes
+|interval-based: Amount of contacts (e.g calls or emails) in the interval +contact-based: The value 1 (or true) indicates that the contact has been offered. If you have a single column for handled, e.g. connected, you need to consider all entries for the queue, independant from the column value
+|handled
+|Integer
+|Yes
+|Yes
+|interval-based: Amount of contacts handled in the interval +contact-based: The value 1 (or true) indicates that the contact has been handled. The value 0 (or false) indicates that it has not been handled.
+|aht
+|Float
+|No <sup>1</sup>
+|No
+|interval-based: Average handling time for all contacts in the interval +contact-based: Not supported
+|duration
+|Integer
+|No
+|Yes
+|interval-based: Not supported +contact-based: Total handling time of a single contact
+|channel
+|String
+|Yes
+|Yes
+|Identifier for the channel of the source queue +Allowed values: calls, chats, emails, social_media, documents, cases
+|===
+
+<sup>1</sup> While not technically required, importing AHT for interval-based data is crucial for precise staff requirement calculations and forecasting.
+
+[#basic-query]
+=== Basic query
+As a starting point, use the following basic example queries that show the required columns and table name:
+
+- Interval-based contact data:
+
+[source,sql]
+----
+SELECT
+queue, timestamp,
+offered, handled, aht,
+channel
+FROM uploaded_file
+----
+
+- Contact-based contact data:
+
+[source,sql]
+----
+SELECT
+queue, timestamp,
+offered, handled, duration,
+channel
+FROM uploaded_file
+----
+
+[TIP]
+====
+====
+>
+[NOTE]
+====
+Because the column names will most probably not fit to your data, start using aliases, e.g. yourColumnName as offered.
+====
+To learn how to write queries that match your data, see the xref:#advanced-query-examples[advanced query examples].
+
+[#advanced-query-examples]
+=== Advanced query examples
+The following advanced query examples show how to apply mathematical operations and SQLite functions.
+
+Note the following requirements:
+
+- Use `uploaded_file` as table name.
+- Use lowercase column names (also if you refer to different column names in column aliases), e.g. `QueueNameColumn as queue`.
+- Use a date formatted as `YYYY-MM-DD hh:mm:ss` or convert your date to this format. <!-- before it said, datetime required. This is not true for CSV but only for database integrations -->
+
+[#example-1-combine-separate-date-and-time-column]
+==== Example 1 (combine separate date and time column)
+- Divide HandleTime by HandledCalls for the required average handling time (AHT).
+- Combine Date and Time using SUBSTR for the required YYYY-MM-DD HH:MM:SS timestamp format.
+
+[%header, cols="1a,1a,1a,1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Queue
+|Date
+|Time
+|Received
+|HandledCalls
+|Aband
+|HandleTime
+|HoldTime
+|test queue
+|06/03/2023
+|07:30
+|5
+|5
+|-
+|1324.6
+|-
+|test queue
+|06/03/2023
+|08:00
+|2
+|2
+|-
+|1548
+|-
+|===
+
+[source,sql]
+----
+SELECT
+  Queue as queue,
+  SUBSTR(Date, 7, 4) || '-'|| SUBSTR(Date, 1, 2) || '-' || SUBSTR(Date, 4,2) || ' ' || Time || ':00' as timestamp,
+  Received as offered,
+  HandledCalls as handled,
+  HandleTime/HandledCalls as aht,
+  'chats' as channel
+FROM uploaded_file
+----
+
+[#example-2-column-names-with-blank-characters]
+==== Example 2 (column names with blank characters)
+- Use SQLite's `date('now')` to get the current date and combine this with the time from the file.
+- Strip decimals and convert them to integers.
+- Combine Date and Time using SUBSTR for the required YYYY-MM-DD HH:MM:SS timestamp format.
+
+In this example, the column names contain blank characters:
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Queue Name
+|Hour in hh:mm
+|Offered Calls
+|Handled Calls
+|Average Handling Time
+|demo queue
+|07:00
+|3.4
+|2.9
+|00:05:30
+|demo queue
+|08:30
+|5.7
+|5.2
+|00:10:15
+|===
+
+You can refer to the actual column names using double quotes:
+
+[source,sql]
+----
+ SELECT
+   "Queue Name" as queue,
+   DATE('now')||' '|| "Hour in hh:mm"||':00' as timestamp,
+   FLOOR("Offered Calls") as offered,
+   FLOOR ("Handled Calls") as handled,
+   (CAST(substr("Average Handling Time", 1, 1) AS INTEGER) * 3600) +
+   (CAST(substr("Average Handling Time", 3, 2) AS INTEGER) * 60) +
+   CAST(substr("Average Handling Time", 6, 2) AS INTEGER) as aht,
+   'calls' as channel
+FROM uploaded_file
+----
+
+Alternatively, you can replace the header row by using the following file processing options:
+
+- **Skip first x rows**: Enter `1`to remove the original header.
+- **File has no header row**: Check to add column headers with letters
+
+[source,sql]
+----
+ SELECT
+   A as queue,
+   DATE('now')||' '|| B || ':00' as timestamp,
+   FLOOR(C) as offered,
+   FLOOR (D) as handled,
+   (CAST(substr(E, 1, 1) AS INTEGER) * 3600) +
+   (CAST(substr(E, 3, 2) AS INTEGER) * 60) +
+   CAST(substr(E, 6, 2) AS INTEGER) as aht,
+   'calls' as channel
+FROM uploaded_file
+----
+
+[#example-3-calculate-handled-calls-with-subtraction]
+==== Example 3 (calculate handled calls with subtraction)
+- Calculate the handled calls by subtracting AbandonedCalls from OfferedCalls.
+- Transform the special formatted Start string into the required YYYY-MM-DD HH:MM:SS timestamp format.
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Name
+|Start
+|OfferedCalls
+|AbandonedCalls
+|AverageHandlingTime
+|queue1
+|20230613 15:30:00
+|10
+|2
+|300
+|queue2
+|20230613 15:35:00
+|15
+|3
+|450
+|queue3
+|20230613 15:40:00
+|12
+|2
+|350
+|===
+
+[source,sql]
+----
+SELECT
+  Name as queue,
+    substr(Start, 1, 4) || '-' ||
+    substr(Start, 5, 2) || '-' ||
+    substr(Start, 7, 2) || ' ' ||
+    substr(Start, 10, 8) as timestamp,
+  Offered as offered,
+  (Offered - Abandoned) as handled,
+  AverageHandlingTime as aht,
+  'calls' as channel
+FROM uploaded_file
+----
+
+[#example-4-case-statement-for-contact-based-data-and-iso8601-date-conversion]
+==== Example 4 (CASE statement for contact-based data and ISO8601 date conversion)
+Contact-based data records often do not have a column with the number of offered and handled calls. Instead, you will see boolean values for the type of contact:
+
+[%header, cols="1a,1a,1a,1a,1a,".rstrip(',')]
+|===
+|Queue
+|DateTimeISO8601
+|Offered
+|Answered
+|Duration
+|My Inbound Queue
+|2023-01-01T22:59:00
+|true
+|true
+|100
+|My Inbound Queue
+|2023-01-01T23:59:00
+|true
+|false
+|100
+|===
+
+- Use a CASE statement for contact-based data with boolean values for offered and handled calls.
+- Transform an ISO8601 formatted date into the required YYYY-MM-DD HH:MM:SS format.
+
+[source,sql]
+----
+SELECT
+   "Queue" as queue,
+   substr("DateTimeISO8601", 1, 10) || ' ' || substr("DateTimeISO8601", 12, 8) as timestamp,
+   (CASE WHEN "Offered" = 'true' THEN 1 ELSE 0 END) as offered,
+   (CASE WHEN "Answered" = 'true' THEN 1 ELSE 0 END) as handled,
+   "Duration" as duration,
+   'calls' as channel
+FROM uploaded_file
+----
+
+This query will also work for real ISO8601 timestamps, such as data in UTC (2023-01-01T22:59:00Z) or timestamps with the offset of your time zone (2023-01-01T22:59:00+02:00)

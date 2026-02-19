@@ -1,0 +1,13 @@
+= Use Me
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-concept:
+
+Learn all you need to know to request time off, set your availabilities, bid on shifts, and swap shifts with your colleagues.
+
+[#recommended-articles-in-use-injixo-me]
+== Recommended articles in Use Me
+- xref:me:explore-me.adoc[Explore Me]
+- xref:me:bid-on-shifts.adoc[Bid on shifts]
+- xref:me:swap-shifts-with-your-colleagues.adoc#swap-shifts[Swap shifts with your colleagues]

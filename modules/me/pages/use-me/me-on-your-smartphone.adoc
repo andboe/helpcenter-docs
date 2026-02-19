@@ -1,0 +1,37 @@
+= Use Me on your smartphone
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Set up your smartphone for quick access to Me.
+:page-aliases: injixo-me-on-your-smartphone
+
+You can save Me as a favorite on mobile devices.
+
+[#android-google-chrome]
+== Android: Google Chrome
+1. Open Google Chrome.
+2. Login to app.peopleware.com/login with your Peopleware credentials.
+3. Tap the menu button in Chrome.  
+   This typically looks like three dots stacked on top of each other, but some Android devices have a physical menu button.
+4. Tap _Add to Home Screen_{:.doc-button}.
+
+[#android-firefox]
+== Android: Firefox
+1. Open Firefox.
+2. Login to app.peopleware.com/login with your Peopleware credentials.
+3. Tap the menu button in Firefox.  
+   This typically looks like three dots stacked on top of each other, but some Android devices have a physical menu button.
+4. Tap _Add to Home Screen_{:.doc-button}.
+
+[#apple-safari]
+== Apple: Safari
+1. Open Safari.
+2. Login to app.peopleware.com/login with your Peopleware credentials.
+3. Tap the share button at the bottom of the screen.
+4. Scroll to the _Add to Home Screen_{:.doc-button} option.
+5. (Optional) Change the name of the link. Use **Me** or some other descriptive name.
+6. Click _Add_{:.doc-button} button.
+
+Note: This function won't work with other mobile browsers on iOS.

@@ -1,0 +1,199 @@
+= Configure people
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create, view, edit and delete people.
+:related-articles: deactivate-people.adoc
+
+_People_{:.breadcrumbs} is the central place to create, configure, edit, and delete people. As part of the configuration, you can add different elements to people:
+
+- Basic information, e.g. name, e-mail, or address
+- Work profile data, e.g. contracts, skills, or external identifiers
+- Scheduling data, e.g. planning units, selections, or day models
+- Access data, e.g. roles, password, or 2FA
+
+People with admin access can access _People_{:.breadcrumbs} by default. Depending on your role configuration, you may need to xref:account:configure-user-roles.adoc[grant permissions for **People** to other people] in your organization.
+
+The **People** page shows an overview list of all people in your organization with key information such as name or employee ID, or whether they have admin access. A {icon-envelope-arrow-right} next to a person's email address indicates they haven't verified it yet.
+
+[#create-a-person]
+== Create a person
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You cannot go back to a previous step during the creation process. Before you click _Next_{:.doc-button} at any step, make sure the information you entered is correct and complete. To change any information from a previous step, finish the creation process first, and edit the person.
+====
+1. Go to _People_{:.breadcrumbs}.
+2. On the top right, click _Create_{:.doc-button}.
+3. Follow the steps in the configuration window. Click the links to learn more about how to configure the xref:#basic-information[basic information], xref:#staff-membership[staff membership], and xref:#roles[roles].
+4. Click _Save_{:.doc-button}.
+
+The person is created. You can now further configure the person's settings as needed.
+
+[#basic-information]
+=== Basic information
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|**First name** / **Last name** / **Middle name**
+|The middle name is optional.
+|**Email**
+|Enter the unique email address the person will use to log in to Peopleware. To invite the person to log in to Peopleware, check the checkbox **Send welcome email**. +You can only send the welcome email while creating a person. The email includes instructions on how to set a password and a link to the Peopleware login page. When the person sets a password, their email address is verified.
+|**Personnel number**
+|Automatically generate a unique identifier for the person or enter one manually.
+|===
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+When you click _Next_{:.doc-button} at the bottom of the **Basic information** page, the person is created with an active staff membership right away. If you have opted for the welcome email, the person can log in to Peopleware. You can no longer cancel the creation process. After completing the creation process, you can xref:#view-or-edit-a-person[edit] or xref:people:deactivate-people.adoc#delete-a-person[delete] the person.
+====
+[#staff-membership]
+=== Staff membership
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|**Valid from**
+|By default, the start date of the staff membership for a new person is automatically set to the current date. If you want the person's staff membership to be active later, change the start date.
+|**Valid to**
+|By default, the end date of the staff membership is empty. If the person only has a temporary contract, set an end date.
+|===
+
+Learn how to xref:people:deactivate-people.adoc#deactivate-people[edit a person's staff membership] after creating the person.
+
+[#roles]
+=== Roles
+In the Roles list, use the search field to find a specific role or scroll the list. Check the checkbox for each role that you want to assign to the person. xref:account:configure-user-roles.adoc[Learn more about roles].
+
+[#view-or-edit-a-person]
+== View or edit a person
+1. Go to _People_{:.breadcrumbs}.
+2. Click a person in the table. Use the search field or the filter options to reduce the entries shown.
+
+   > Note
+   >
+   > If you change a person's email address, they can no longer log in to Peopleware with the old email address.
+
+3. Click _Save_{:.doc-button}.
+
+[#profile]
+=== Profile
+In this section, you can view and edit information in the three following sections:
+
+- xref:#basic-information[**Basic information**]: Edit personal information, such as marital status, date and place of birth, and current email address.
+- Language and time zone
+
+[#work-profile]
+=== Work profile
+In this section, you can add and remove the following configuration data:
+
+- Staff membership: You can configure several staff membership periods
+- xref:administration:create-contracts.adoc[Contracts]
+- xref:administration:availabilities.adoc[Availabilities]
+- xref:administration:work-with-skills.adoc[Skill levels]
+- Suitable activities: The list displays all activities for which the person has the required skills and skill levels.
+- ID card numbers: The number of the person's company ID card or other personal ID card.
+- xref:acd-integration:import-agent-status-data.adoc#external-identifiers[External systems]
+
+[#planning]
+=== Planning
+In this section, you can add and remove the following planning-related data:
+
+- Schedule exclusion: Select whether Peopleware schedules the person
+- Schedule position: Position the person is displayed in Shift Center if you sort people by schedule position
+- xref:administration:create-and-manage-planning-units.adoc[Planning units]
+- xref:administration:selections.adoc[Selections]
+- xref:people:set-up-coach-trainee-group.adoc[Trainees]
+- xref:administration:shift-sequences.adoc[Shift sequences]
+- xref:administration:daymodel-basics.adoc[Day models]
+- xref:administration:work-time-pattern-models.adoc[Work time pattern models]
+
+[#attributes]
+=== Attributes
+If your organization works with attributes in Peopleware, you can add and remove them from your people here.
+
+[#access]
+=== Access
+In this section, you can do the following:
+
+- Grant or withdraw admin access
+- Add or remove roles
+- Enforce or revoke the xref:getting-started:manage-2fa.adoc[two-factor authentication]
+- Set a new password, e.g. to unlock a person
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The **Access** section is only available to users who have verified their email address. Learn more in the xref:#how-do-people-verify-their-email-addresses[dedicated section below].
+====
+For non-admin users, the section content depends on the role permissions for People:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Action
+|Permission required
+|Set or change passwords
+|View and edit Password and authentication
+|Edit roles and admin access
+|View and edit Roles
+|===
+
+[#grant-admin-access]
+=== Grant admin access
+To grant admin access to a person, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs} and select the person.
+2. Go to the **Access** section.
+3. In the **Admin access** section, Check the **Grant admin access** checkbox.
+4. Click {icon-check} **Save**.
+
+[#faq]
+== FAQ
+[#why-can-i-not-find-a-person-i-am-looking-for]
+=== Why can I not find the person I am looking for?
+People with admin access can see all people in the organization.
+
+If you do not have admin access, there may be different reasons why you cannot find a person using the search bar. To find out why you cannot see them in the list, check the following:
+
+- The person is assigned to a planning unit for which you have at least read access.
+- The person's assignment to the planning unit is still valid. When in doubt, ask a person with admin access to check the start and end date of the person's assignment to the planning unit. If there is no start and end date configured, the person's assignment is always valid.
+
+[#dow-do-i-unlock-a-person]
+=== How do I unlock a person?
+People are locked after three failed login attempts with a wrong password. To unlock people, proceed as follows:
+
+1. Go to _People_{:.breadcrumbs} and select the person you want to unlock.
+   The list shows a {icon-lock} next to every locked person's name.
+2. In the left-side menu, click _Access_{:.breadcrumbs}.
+3. In the _Authentication and password_{:.breadcrumbs} section, click {icon-edit} **Edit**.
+4. Enter a new password and click {icon-check} **Save**.
+
+[#how-do-i-delete-a-person]
+=== How do I delete a person?
+xref:people:deactivate-people.adoc#delete-a-person[Here] you can find the process to delete a person. You can also xref:people:deactivate-people.adoc#deactivate-people[deactivate people], for example, when they are away from work for a longer period of time, e.g. on sabbatical or on parental leave.
+
+[#how-do-people-verify-their-email-addresses]
+=== How do people verify their email addresses?
+People need to verify their email addresses to receive emails from Peopleware. Admins can see the **Access** tab in _People_{:.breadcrumbs}.
+
+The email address is verified when new people click the link in the welcome email to set their password.
+
+Alternatively, people can do the following:
+
+- Click the **Forgot password?** link on the login page.
+- Click the **Resend verification email** link in their user profile.
+
+In _People_{:.breadcrumbs}, an {icon-envelope-arrow-right} next to a person's email address indicates they haven't verified it yet.

@@ -1,0 +1,32 @@
+= Use requirement calculations presets
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:description: Learn how to create, edit and delete requirement calculations presets in Peopleware.
+:related-articles: concept-staff-requirements.adoc, task-set-up-staff-requirement-calculation.adoc, task-save-staff-requirements.adoc, task-run-requirement-calculations.adoc
+
+This article describes how to use presets for the manual calculation of staff requirements.
+
+[#prerequisites]
+== Prerequisites
+[#permissions]
+=== Permissions
+Your role needs to have the following functional permissions:
+
+- Full access to requirement calculations under **Forecast**.
+
+[#create-a-requirement-calculation-preset]
+== Create a requirement calculation preset
+1.  Go to _Forecast > Requirement calculations_{:.breadcrumbs}.
+2.  Select the calculation for which you need to create a preset.
+3.  In the navigation menu, click **Presets**.
+4.  Click **+ Add**.
+5.  Fill in the parameters:
+
+- Enter a name.
+- (Optional) Check the **Private** checkbox. This makes the preset available only to the currently logged in user.
+- Fill in the configuration parameters.
+
+6.  Click _Save_{:.doc-button}.

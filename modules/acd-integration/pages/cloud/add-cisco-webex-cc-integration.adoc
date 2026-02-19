@@ -1,0 +1,68 @@
+= Cisco Webex Contact Center
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Cisco Webex Contact Center system to import historical, agent status and real-time adherence data.
+:related-articles: how-integrations-work.adoc
+
+A Cisco Webex Contact Center integration is a cloud integration that imports call history, chat history, email history, social media history, agent status and real-time adherence data.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#prerequisites]
+== Prerequisites
+To set up the Cisco Webex Contact Center integration, you need to create a service app in Cisco Webex Contact Center and configure it with specific information and scopes.
+
+Information to enter from the service app into the integration:
+
+- client_id
+- client_secret
+- access_token
+- refresh_token
+- region
+
+Required scopes for the service app to be fully functional:
+
+- cjp:config_read: Necessary for searching historical status and importing contact queues. This scope allows the integration to access user data, which is used to map the agent IDs returned by the Cisco API to the primary email addresses defined in Cisco. To complete the setup, ensure this scope is present and create the person mappings in Peopleware using the Cisco email adresses as an external identifier.
+- cjp:config_write: Required for webhook functionality, specifically for Real-Time Adherence.
+
+[#api-regions]
+== API regions
+The Cisco Webex Contact Center API endpoints vary by region. Ensure your integration is configured with the correct region to connect to the appropriate API.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Region
+|API Endpoint
+|US
+|https://api.wxcc-us1.cisco.com
+|ANZ
+|https://api.wxcc-anz1.cisco.com
+|UK
+|https://api.wxcc-eu1.cisco.com
+|EU (Frankfurt)
+|https://api.wxcc-eu2.cisco.com
+|Japan
+|https://api.wxcc-jp1.cisco.com
+|Canada
+|https://api.wxcc-ca1.cisco.com
+|Singapore
+|https://api.wxcc-sg1.cisco.com
+|===
+
+[#add-a-cisco-webex-contact-center-integration]
+== Add a Cisco Webex Contact Center integration
+1. Go to _Account > Integrations_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Cisco**.
+5. From the **Model name** drop-down menu, select **Cisco Webex Contact Center**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-cisco-webex-contact-center-integration]
+== Set up your Cisco Webex Contact Center integration
+1. In the **Credentials** section, enter the required information.
+2. In the **Configuration** section, select your **Account region**.
+3. Click _Save_{:.doc-button}.

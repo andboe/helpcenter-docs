@@ -1,0 +1,479 @@
+= Background job parameter examples
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise
+:topic-type-concept:
+:description: Learn about important job types and what they are used for.
+:related-articles: backgroundjobs.adoc
+
+This article lists and explains examples of parameters available for the following background job types:
+
+- xref:#report[Report]
+- xref:#insert-shift-sequences[Insert shift sequences]
+
+For parameters specific to job result reports, see xref:#job-result-reports[Job result reports].
+
+<style>
+table {
+  width: 100%;
+}
+
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 70%;
+}
+</style>
+
+[#Report]
+== Report
+<!-- image::backgroundjobs-examples/image-1.png[Sending Job Manager Report via Email, width=50%] -->
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|cmd
+|Internal report name
+|p
+|Planning unit ID
+|e
+|Employees +Values: all, individual IDs delimited by hyphen (-)
+|c
+|Contracts +Values: all, individual IDs delimited by hyphen (-)
+|se
+|Selections +Values: all, individual IDs delimited by hyphen (-)
+|level
+|xref:#level-id[Level ID]
+|lid
+|xref:#language-id[Language ID]
+|targethtml
+|Output Format +Values: 0 (PDF), 1 (HTML)
+|targetanonymous
+|Standard or Anonymous reports +Values: 0 (standard), 1 (anonymous)
+|jobnameid
+|(Optional) Internal report ID that can be blank
+|===
+
+See the following sections for details on how to identify report types via their internal report name.
+
+=== Weekly schedule reports
+
+In addition to the internal report name specified by the `cmd` parameter, weekly schedule reports may require additional parameters to identify a report. Add them as separate parameters when configuring the job.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter values
+|Weekly Schedule I
+|`cmd=shiftplan`
+|Weekly Schedule I with Filter
+|`cmd=shiftplan showconsel=1`
+|Weekly Schedule I (without Full-Day Activities)
+|`cmd=shiftplansel hidefda=1`
+|Weekly Schedule II (without Full-Day Activities)
+|`cmd=shiftplansel showbreaks=1 hidefda=1`
+|Weekly Schedule II (without Breaks) (On-premise only)
+|`cmd=shiftplansel`
+|Weekly Schedule (without Breaks) (without Full-Day Activities)
+|`cmd=shiftplansel hidefda=1`
+|Weekly Schedule III
+|`cmd=weeklyworkplan`
+|Weekly Schedule III (without Full-Day Activities)
+|`cmd=weeklyworkplan hidefda=1`
+|===
+
+=== Daily schedule reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Daily Schedule I
+|`cmd=staffworkpubar`
+|Daily Schedule I with Breaks
+|`cmd=staffworkpubarbreaks`
+|Daily Schedule I (without absences, illnesses and vacation)
+|`cmd=staffworkpubarabsences`
+|Daily Schedule II
+|`cmd=staffworktimebar`
+|Daily Schedule II with Breaks
+|`cmd=staffworktimebarbreaks`
+|Daily Schedule II with Shift Summary
+|`cmd=staffworktimebartotal`
+|Daily Schedule II with Shift Summary and Breaks
+|`cmd=staffworktimebartotalbreaks`
+|Daily Schedule III
+|`cmd=stafffworkactbar`
+|Daily Schedule III with Breaks
+|`cmd=staffworkactbarbreaks`
+|Daily Schedule IV
+|`cmd=staffworkpubarsel`
+|Daily Schedule V
+|`cmd=staffworktimebarsel`
+|Daily Schedule VI
+|`cmd=staffworkactbarsel`
+|===
+
+=== Vacation and absence schedule
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Absence Schedule
+|`cmd=absence`
+|General Absence Schedule
+|`cmd=realabsence`
+|Absence Schedule with Day Status and Full-Day Activities
+|`cmd=orgabscalendar`
+|Vacation Schedule I
+|`cmd=holiday`
+|Vacation Schedule I with Full-Time-Equivalent
+|`cmd=vacation_fte`
+|Vacation Schedule II
+|`cmd=staffworktimebartotal`
+|===
+
+=== Absence, illness- and vacation statistics
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Absence Statistics
+|`cmd=absence_c`
+|Absence Statistics with Total Amount Column
+|`cmd=absence_t`
+|Absence Statistics with Full-Time-Equivalent
+|`cmd=absence_fte`
+|Vacation Statistics
+|`cmd=holiday_c`
+|Vacation Statistics with Total Amount Column
+|`cmd=holiday_t`
+|Vacation Statistics with Full-Time-Equivalent
+|`cmd=holiday_fte`
+|Illness Statistics
+|`cmd=illness_c`
+|Illness Statistics with Total Amount Column
+|`cmd=illness_t`
+|Illness Statistics with Full-Time-Equivalent
+|`cmd=illness_fte`
+|===
+
+=== Work time reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Time Worked per Planning Unit
+|`cmd=diff_pu`
+|Activities in Hours
+|`cmd=activ_st`
+|Activities in Percent
+|`cmd=activ_per`
+|Activity Statistics
+|`cmd=activity_stat`
+|Net Working Times (On-premise only)
+|`cmd=realized_hours`
+|Activity Analysis
+|`cmd=state_train`
+|===
+
+=== Break schedules
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Break Schedule I
+|`cmd=pause`
+|Break Schedule II
+|`cmd=pausetwo`
+|Break Schedule III
+|`cmd=pausethree`
+|===
+
+=== Other reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Difference in Working Times Between Levels
+|`cmd=worktimes`
+|Time Accounts Reports
+|`cmd=timeacount`
+|Shifts with a Requirement
+|`cmd=genshifts`
+|Days With Night, Weekend and Holiday Schedules (On-premise only)
+|`cmd=shifttype`
+|Capacities According to Contract Type
+|`cmd=capacity`
+|Training Programs (On-premise only)
+|`cmd=train_camp_summary`
+|Minimum Staffing (On-premise only)
+|`cmd=minimalcoverage`
+|Scheduling Rules Configuration
+|`cmd=schedulingrules`
+|Vacation Overview
+|`cmd=vacationoverview`
+|Shift Overview
+|`cmd=monthlyshiftplan`
+|Yearly Working Hours Analysis
+|`cmd=work_time_analysis`
+|Conformance Report
+|`cmd=conformance`
+|Adherence Report
+|`cmd=adherence`
+|===
+
+=== Exchange reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Exchanges I (On-premise only)
+|`cmd=shiftexchdetails`
+|Exchanges II (On-premise only)
+|`cmd=shiftexchnodetails`
+|Exchange Statistics
+|`cmd=shiftexchstats`
+|===
+
+=== Employee work schedules
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Employee Work Schedule I (List)
+|`cmd=staffwork showbreaks=1`
+|Employee Work Schedule I (List) (Without Breaks)
+|`cmd=staffwork`
+|Employee Work schedule II (List)
+|`cmd=staffworkabsill`
+|Employee Work Schedule III (Graph)
+|`cmd=staffworkbar`
+|Employee Work Schedule IV (6 Weeks)
+|`cmd=staffsixweeksnobreaks`
+|Employee Work Schedule IV (6 Weeks) (Activities)
+|`cmd=staffsixweeks`
+|Employee Work Schedule IV (6 Weeks) (No Breaks)
+|`cmd=staffsixweekstwo`
+|===
+
+=== Other employee reports
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Report name
+|Parameter value
+|Employee Request Schedule I (List) (On-premise only)
+|`cmd=staff_wish`
+|Hours Worked per Employee I
+|`cmd=diff_st`
+|Hours Worked per Employee II
+|`cmd=diff_st_two`
+|Monthly Employees' Journal (On-premise only)
+|`cmd=journal`
+|Organisational Chart
+|`cmd=organ`
+|Weekend Working Hours I
+|`cmd=weekendwork`
+|Weekend Working Hours II
+|`cmd=weekendwork2`
+|Weekend Working Hours III (Lottery and Assignment) (On-premise only)
+|`cmd=weekendwork3`
+|Anniversaries
+|`cmd=jubilee`
+|Vacation Slip (On-premise only)
+|`cmd=hd_list`
+|Staff by Contract Type
+|`cmd=read`
+|Fluctuation I
+|`cmd=fluct`
+|Fluctuation II
+|`cmd=detailfluctuation`
+|Yearly Overview (On-premise only)
+|`cmd=absencejob_cal`
+|Compensation Days for Weekend Work (On-premise only)
+|`cmd=comp_week_work`
+|Staff Shift Sequences
+|`cmd=staffshiftseq`
+|Timetable (On-premise only)
+|`cmd=monthly_work_sched`
+|Workplace (On-premise only)
+|`cmd=assignedworkplaces`
+|Holiday Work (Lottery And Assignment)
+|`cmd=laaholidaywork`
+|Minimum Occupancy By Sites (On-premise only)
+|`cmd=deskminstaffing`
+|Workplace Occupancy (On-premise only)
+|`cmd=deskalloc`
+|Validity Of Master Data (On-premise only)
+|`cmd=masterdatavalidity`
+|Coach/Trainee - Scheduling Differences (On-premise only)
+|`cmd=coach_trainee`
+|Master Data Overview
+|`cmd=employeemasterdata`
+|Group Authorization (On-premise only)
+|`cmd=group_auth`
+|Modifying Master Data
+|`cmd=audit`
+|===
+
+[#insert-shift-sequences]
+== Insert shift sequences
+<!-- image::backgroundjobs-examples/image-2.png[Insert Shift Sequences, width=50%] -->
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|delete1
+|Delete full-day activities +Values: 1 (yes), 0 (no)
+|delete2
+|Delete availability periods +Values: 1 (yes), 0 (no)
+|delete3
+|Delete all activities and shifts +Values: 1 (yes), 0 (no)
+|level_id
+|xref:#level-id[Level ID]
+|lid
+|xref:#language-id[Language ID]
+|nr_of_seq
+|Number of employees with shift sequences +Value: all
+|option
+|Internal ID +Value: 2
+|planunit_id
+|Planning unit ID
+|selection_id
+|Selections +Values: -1 (all selections), specific IDs delimited by hyphen (-)
+|shiftseq_id
+|IDs of shift sequences assigned to the selected employees delimited by hyphen (-). Required unless type is set.
+|type
+|(Optional) Selects all shift sequences for the selected employees. If used, the shiftseq_id parameter can be blank. +Value: all
+|===
+
+[#lottery-and-assignment]
+=== Lottery and assignment
+<!-- image::backgroundjobs-examples/image-3.png[Lottery or Assignment, width=50%] -->
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|doreporting
+|Log file +Values: 1 (yes), 0 (no)
+|e
+|Employees +Values: all, individual IDs delimited by hyphen (-)
+|lid
+|xref:#language-id[Language ID]
+|modelcase
+|Internal ID +Values: 10 (shift assignment), 11 (shift lottery)
+|observecorr
+|Take the tolerance value for the start time into account +Values: 0 (no), 1 (yes)
+|periodid
+|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the [API](https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate). If the time period for job processing is set to relative, only the relevant planning period is taken into account.
+|puid
+|Planning unit ID
+|staffcount
+|Number of people. This parameter is mandatory but its value is always ignored. You can enter any value.
+|tolerance
+|Maximum deviation from the average start time +Value: Time using format HH:MM, 00:00 (if the observecorr parameter is 0)
+|===
+
+[#copy-level]
+=== Copy level
+The **Copy level content** functionality can be found under _Plan > Schedules > Scheduling actions_{:.breadcrumbs}.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|copystartdate
+|Start date for inserting the data in [Julian date format](https://www.onlineconversion.com/julian_date.htm). Data is shifted if the date is not the start date of the planning period.
+|deletesource
+|Delete the source level. +Values: 0 (Keep source level), 1 (delete source level)
+|lid
+|xref:#language-id[Language ID] for error messages
+|e
+|Employees +Values: all, individual IDs delimited by hyphen (-)
+|modelcase
+|Internal ID. +Values: 15 (copy level), 16 (delete level)
+|periodid
+|Planning period ID or multiple IDs delimited by comma. The correct planning period ID can be found in the source code of the page via dev tools (first part of the value in the data-flip-id element) or by using the [API](https://legacy-api.peopleware.com/#tag/Planning-Periods/operation/getV1PlanningPeriodsStartDate). If the time period for job processing is set to relative, only the relevant planning period is taken into account.
+|puid
+|ID of the planning unit. Can be filtered by ID when separated by a delimiter (-).
+|sourcelevel
+|xref:#level-id[Level ID] (Source)
+|targetlevel
+|xref:#level-id[Level ID] (Target)
+|staffcount
+|Required but not used. Enter value 0
+|selectionid
+|Selection ID +Values: -1 (all selections), specific ID delimited by hyphen (-)
+|===
+
+[#job-result-reports]
+== Job result reports
+Detailed job results for completed jobs are available as a PDF or HTML report on the xref:general:jobstatus.adoc[Job status page].
+
+[#email-parameters]
+=== Email parameters
+Email parameters are optional. If the email parameters are not configured, the resulting reports are only available on the xref:general:jobstatus.adoc[Job status page].
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Parameter
+|Description
+|em
+|Employee IDs +Values: -1 (all), multiple IDs delimited by hyphen (-)
+|sendtoall
+|Send a single email to the selected employees +Values: 1 (yes), 0 (no)
+|sendperemp
+|Send an individual email to the selected employee. Not available for all reports <!-- which? --> +Values: 1 (yes), 0 (no)
+|email
+|Recipient email address. Multiple email recipients not supported. If needed, use an email distribution list that forwards internally to multiple recipients. The email parameter is not used when the em parameter specifies IDs.
+|emailtype
+|Employee email address +Values: 1 (email 1), 3 (email 2), 2 (both). Cloud versions do not support email 2.
+|comments
+|Optional text for the email message
+|===
+
+[#language-id]
+=== Language ID
+The **lid** parameter defines the language ID for the resulting report.
+
+- 1031 (German)
+- 1033 (English US)
+- 1034 (Spanish standard)
+- 1036 (French)
+- 1040 (Italian)
+- 1043 (Dutch)
+- 1045 (Polish)
+- 1053 (Swedish)
+- 2057 (English UK)
+- 3082 (Spanish modern)
+
+[#level-id]
+=== Level ID
+The **level** parameter defines the level from which data is read.
+
+- 1000 (plan)
+- 3000 (current status)
+- 5000 (external system)
+- 4000 (time recording)
+- 2000 (request)
+- 2001 (alternative request)
+- 2002 (holiday/absence request)
+- 6000 (availability)
+- 6001 (on-call duty)
+- 4001 (correction)
+- 8000 (version 1)
+- 8001 (version 2)
+- 8002 (version 3)

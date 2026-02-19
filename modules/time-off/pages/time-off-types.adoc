@@ -1,0 +1,122 @@
+= Time Off types
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to configure types in Time Off.
+:page-aliases: time-off-types-beta
+
+include::help-center:ROOT:partial$reusables/time-off-new.adoc[]
+
+Before your people can request time off in Peopleware Me, you need to create time-off types with the **Requestable** checkbox activated.
+
+[#time-off-types]
+== Time-off types
+In Time Off , types are absence categories that distinguish between different reasons for absences, such as sickness, vacation, or parental leave. For example, if your organization offers one day off per year for volunteering at an NGO, you can add the type Volunteering leave. The different types of time off can be paid or unpaid, depending on your organization's needs and national legislation.
+
+When you create a type in Time Off , a full-day activity of the type Absence with the same name is automatically created in _Plan > Configuration > Activities_{:.breadcrumbs}. If the time-off type is paid and/or requestable, the activity is configured the same.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If your reporting relies on the other activity types, Illness or Vacation, create any new activity in _Plan > Configuration > Activities_{:.breadcrumbs} instead. Such activities also create a new time-off type in Time Off .
+====
+Peopleware uses the activity to represent the time off in Schedules and Shift Center.
+
+[#entitlement-policies]
+=== Entitlement policies
+Entitlement policies define the rules for automatically granting and managing people’s time-off entitlement. They let you configure strategies that grant leave either all at once for a leave year or gradually, for example every month. Entitlement policies specify how much time off people are entitled to, when it is granted, and when it expires.
+
+Entitlement policies are always tied to a leave year. The leave year determines the validity period of the entitlement. If you allow carry-over, the entitlement policy also defines how much unused time can be carried over into the next leave year and until when it can be used.
+
+An entitlement policy can apply to everyone with access to a given time-off type, or it can be restricted to people working under specific contracts.
+
+Learn more about xref:time-off:entitlement-policies.adoc[entitlement policies]
+
+[#replace-unpaid-activities-and-fill-up-non-working-hours]
+=== Replace unpaid activities and fill up non-working hours
+Peopleware allows you to block unscheduled times around a person's paid time off to avoid scheduling during those times.
+
+[NOTE]
+====
+To use this option, create an unpaid time-off type first.
+====
+When a person requests time off of a paid type, the paid absence activity for that type replaces any paid presence activities in the person's schedule for that time. Any unpaid activities, e.g. breaks, remain as scheduled. That means that the person's calendar is empty for the time before and after their time off, and they can be scheduled to work during those times.
+
+To avoid people being scheduled for originally unscheduled times around their time off, create an unpaid time-off type and use it to replace unpaid activities and fill up unscheduled hours. If you check the **Fill up scheduled with** checkbox in the type configuration, Peopleware converts the unpaid type you select into an unpaid absence activity. Existing unpaid activities in the person's schedule are replaced with this unpaid absence activity. Additionally, non-working hours are filled up with this unpaid absence activity to block open times from scheduling.
+
+[Learn more](https://help.peopleware.com/time-off#how-does-approved-time-off-appear-in-the-schedule) about how Peopleware displays approved time off in the schedule, depending on whether or not you used this option and other factors.
+
+[NOTE]
+====
+Activate or deactivate the fill-up functionality at a later time
+====
+>
+[NOTE]
+====
+You can activate or deactivate the fill-up functionality for any paid type at any time. However, it only applies to requests approved or created after you activated or deactivated the functionality.
+====
+[#create-a-time-off-type]
+=== Create a time-off type
+1. Go to _Time Off > Types_{:.breadcrumbs}.
+2. Click _Create type_{:.doc-button} on the right.
+3. Enter the following information:
+   - **Name**
+   - **Time unit**: Select whether you want to calculate the time off taken in hours or days.<br>Depending on national legislation, it may be mandatory to calculate time off in hours or days.<br>You cannot change the time unit after saving the new time-off type.
+   - **Paid**: Check this checkbox if people get paid when they take this type of time off (e.g. Sickness).<br>Depending on national legislation, some time-off types must be paid.
+   - **Fill up schedule with**: Only for paid types. Activate the xref:#replace-unpaid-activities-and-fill-up-non-working-hours[fill-up functionality].
+   - **Requestable**: People can request time off for requestable types only. Planners can add non-requestable types to a person's schedule, e.g. in case of sickness. People can select the non-requestable types, e.g. to see their current balance.
+   - **Deducts from entitlement**: Ensures that approved requests for this type-off type reduce the person’s time-off balance for the associated entitlement.
+   - **Start of leave year**: Defines the start date of a recurring annual entitlement period. Entitlement is granted for or accrued over the leave year.
+4. Click _Save_{:.doc-button}.
+
+[#edit-a-time-off-type]
+=== Edit a time-off type
+1. Go to _Time Off > Types_{:.breadcrumbs}.
+2. In the table, select the type that you want to edit.
+3. Edit the information.
+4. Click _Save changes_{:.doc-button}.
+
+[#delete-a-time-off-type]
+=== Delete a time-off type
+1. Go to _Time Off > Types_{:.breadcrumbs}.
+2. In the table, select the type that you want to delete.
+3. Click _Delete type_{:.doc-button}.
+4. In the confirmation window, click _Delete type_{:.doc-button}.
+
+[NOTE]
+====
+Time-off types and absence activities
+====
+>
+[NOTE]
+====
+When you delete a time-off type, the corresponding absence activity with the same name is deleted as well. Likewise, when you delete an absence activity linked to a time-off type, its corresponding time-off type is also deleted.
+====
+>
+[NOTE]
+====
+Deleted time-off types cannot be restored.
+====
+After deleting a time-off type or its corresponding absence activity, the following applies:
+
+- People can no longer submit new requests with that type.
+- You can still view, reject and cancel requests created with that type.
+- You can no longer approve requests created with that type. You can handle pending time-off requests that use a deleted type in one of the following two ways:
+  - Reject the pending request.
+  - Ask the person to withdraw the request and create a new one.<br>
+- You still see the absence activity in schedules that included it.
+- You can no longer plan the absence activity in a new schedule.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you delete a period for which requests already exist, the existing requests are not deleted and can still be approved or rejected.
+====

@@ -1,0 +1,29 @@
+= Get support from the Peopleware team
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to get support in case of problems with Peopleware and what information to provide.
+
+The Peopleware support team is here to help with any issues, from system errors to configuration and scheduling questions. To ensure a faster resolution, provide as many details as possible, but keep each support request focused on a single topic.
+
+[#what-to-include-in-your-ticket]
+== What to include in your ticket
+- A brief but clear summary of the issue or question.
+- Affected functionality and number of users affected
+- Error messages or error codes (text or screenshots).
+- Details on impacted items, such as users, workloads, etc (share IDs, names, or page URLs).
+
+[#creating-a-new-ticket]
+== Create a new ticket
+1. Search [Help Center]({{ site.url }}) for answers.
+2. If you still need help, click **Raise a support ticket** on the Help Center start page.
+3. Fill in the form. You cannot add screenshots here but we may ask for them in our next reply.
+4. Click _Submit_{:.doc-button}.
+   You will receive a confirmation email with your ticket ID.
+
+[#incident-tracking-and-outage-notifications]
+== Incident tracking and outage notifications
+For service-wide outages or widespread issues, visit [status.peopleware.com](https://status.peopleware.com).
+Click **Subscribe to updates** to receive notifications about future incidents.

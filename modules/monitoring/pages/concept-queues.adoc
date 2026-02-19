@@ -1,0 +1,69 @@
+= Queues
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how queues, event types, value types, and versions work.
+
+Queues organize and store contact data imported from external systems into Peopleware. Each queue corresponds to a specific contact channel (e.g., calls, emails, chats) and is divided into fixed time intervals (e.g., 15, 30, or 60 minutes), based on how frequently data is imported through the integration.
+
+The imported data in queues is the basis for forecasting. In **Forecast**, queues are grouped into workloads, which aggregate historical data and enable Peopleware to generate accurate forecasts of contact volume and average handle time.
+
+[#event-types]
+== Event types
+Event types represent regular weekdays and special days like holidays or sales events.
+They help define how process volumes behave on different days and are used in forecasting and campaign planning.
+You can set opening hours for each event type.
+
+Add a start and end time, or enter 00:00 in both fields to keep the queue open 24 hours.
+Opening hours do not affect the forecast but help define queue availability.
+
+[#value-types]
+== Value types
+Cloud integrations automatically add predefined value types like Offered, Answered, and AHT when you click **Use Forecast** in a workload.
+These are based on the queue’s channel, e.g. Calls Offered, Calls Answered, and Calls Average Handling Time for call queues.
+
+You can also add value types manually.
+This is necessary when creating virtual value types.
+Depending on your WFM plan, Peopleware can also display queues in xref:monitoring:manage-dashboards.adoc[Dashboards].
+
+=== Virtual value types
+
+In Peopleware, virtual value types in are values calculated from one or more queue value types from an external system, using mathematical formulas or functions.
+They allow you to create custom metrics and forecasts by aggregating, combining, or transforming data for analysis and planning.
+Virtual value types are stored in separate queues that you create manually.
+You can choose from three aggregation types: Sum, Average, and Total Average.
+These determine how data is calculated across intervals, e.g. sum values, average only non-zero intervals, or include all intervals (including zero) in the average.
+
+Virtual value types are defined using formulas that can include:
+
+- Values from multiple external system value types
+- Arithmetic operations (e.g. addition, multiplication, division)
+- Constants
+- Conditional expressions
+
+Virtual value types allow you to model business-specific metrics such as:
+
+- Aggregated call volumes from multiple queues
+- Weighted averages of handling times
+- Derived service level indicators
+- Forecasted staff requirements
+
+Example:
+
+----
+Q1001:1003 * 0.5 + Q1002:1003
+----
+
+- **Q1001:1003** represents a value type from queue 1001 with value type ID 1003.
+- The formula multiplies the first value by 0.5 and adds the second value.
+
+These calculations allow virtual value types to reflect specific KPIs.
+
+[#versions]
+== Versions
+Different sets of forecast data are saved in versions.
+Peopleware includes two predefined versions: Historical for imported data and Standard for forecasted values.
+You cannot delete versions, but you can rename them to match your naming conventions.
+To run parallel forecasts, add additional versions as needed.

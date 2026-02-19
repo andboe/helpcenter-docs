@@ -1,0 +1,103 @@
+= Configure planning calendars
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Configure planning calendars to automatically adjust your standard business hours for days with different business hours.
+:related-articles: day-types.adoc, create-and-manage-planning-units.adoc, scheduling-public-holidays.adoc
+:page-aliases: planning-calendar
+
+In a planning calendar, you can use xref:administration:day-types.adoc[day types] to mark days with special business hours or staffing needs (e.g. marketing campaign days or public holidays). This way, you can ensure these days are automatically considered during scheduling. If you add a day type to the planning calendar, it overwrites the standard business hours for that day. You can create different planning calendars for different planning units or regions, for example, if those have different opening hours or public holidays.
+
+== Templates
+
+Templates contain predefined national holidays for an individual region.
+Adding a template will automatically create all day types for public holidays included in the template with activated holiday mode.
+If you select a template that includes a public holiday on a day that already includes any day type, the data in the cell is overwritten.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Once inserted, you cannot remove an entire template. If you inserted the wrong template, you need to manually remove each individual day of the template from the planning calendar.
+====
+[#create-a-planning-calendar]
+== Create a planning calendar
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a **Name**.
+4. Click _Save_{:.doc-button}.
+5. Add xref:#add-a-day-type[day types] and/or a xref:#add-a-template[template].
+
+Peopleware automatically saves the changes.
+
+[#add-a-day-type]
+=== Add a day type
+1. In the **Calendar** section, select a **Year** or use _<_{:.doc-button} and _>_{:.doc-button} to navigate to a past or future year.
+2. Select a **Day type**.
+3. Add the selected day type to a day of the month. If you click a cell that already contains a day type, it is overwritten.
+
+[#add-a-template]
+=== Add a template
+1. Click the three-dot menu {% icon ellipsis_v ; icon-only %}.
+2. Click **+ Insert template**.
+3. Select a **Public holiday region**.
+4. Click _Insert_{:.doc-button}.
+
+[#remove-day-types-from-the-planning-calendar]
+== Remove day types from the planning calendar
+If your planning unit is closed on certain days and your people do not receive any holiday pay for those days, make sure that those days are not included in your planning calendar as xref:administration:day-types.adoc[day types with holiday mode]. If you do not remove those day types from your planning calendar, the target working time for that week is reduced and people are scheduled for fewer hours. Learn more about how to xref:best-practices:scheduling-public-holidays.adoc[schedule public holidays].
+
+To remove day types from the planning calendar, proceed as follows:
+
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. Select your planning calendar.
+3. Hover over each day type you want to remove and click Close _X_{:.doc-button}.
+
+[#edit-an-existing-planning-calendar]
+== Edit an existing planning calendar
+1. Go to _Plan > Configuration > Planning calendar_{:.breadcrumbs}.
+2. Select your planning calendar.
+3. Edit the planning calendar.
+
+Peopleware automatically saves the changes.
+
+[#assign-a-planning-calendar-to-a-planning-unit]
+== Assign a planning calendar to a planning unit
+Planning calendars should be assigned to planning units, making them valid for all people in the relevant planning unit.
+To use a planning calendar for scheduling, proceed as follows:
+
+1. Go to _Plan > Configuration > Planning units_{:.breadcrumbs}.
+2. Select the planning unit to which you want to assign the planning calendar.
+3. In the **Planning Calendar** section, click **+ Add**.
+4. In the **Planning Calendar** configuration window, select a planning calendar.<br>You can choose a single calendar that spans several years, for example if you create a schedule that exceeds one year. If you want to assign different planning calendars for each year, choose one calendar at a time and use the **Valid from** and **Valid To** fields to set the time period when it should be used. Note that single-year planning calendars only work for single-year schedules.
+5. Click _OK_{:.doc-button}
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If your planning unit contains children planning units, the planning calendar is not automatically assigned to them. If required, assign the planning calendar manually to each child planning unit.
+====
+[#add-planning-calendars-to-people]
+== Add planning calendars to people (Enterprise only)
+You can also add planning calendars to individual people, which overwrites any assignments derived from planning units.
+
+1. Go to _People_{:.breadcrumbs}.
+2. Select a person from the list.
+3. In the left-side menu, click **Planning**.
+4. In the **Planning calendars** section, click **+ Add**.
+5. Configure the following information:
+   - **Planning calendars**
+   - **Reference date**
+   - **Valid from** and **Valid to**: Configure these dates if you want to add the planning calendar only temporarily to the person.
+6. Click _Save_{:.doc-button}.
+
+[#duplicate-planning-calendars]
+== Duplicate planning calendars
+Learn how to xref:general:duplicate-objects.adoc[duplicate planning calendars].

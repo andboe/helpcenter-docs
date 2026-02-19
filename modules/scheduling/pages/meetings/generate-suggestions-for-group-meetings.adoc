@@ -1,0 +1,47 @@
+= Generate suggestions for group meetings
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Generate scheduling suggestions for group meetings with reduced impact on the coverage of your schedule in Plan > Meetings.
+:page-aliases: group-meetings
+
+In _Plan > Meetings_{:.label}, you can generate scheduling suggestions for group meetings with reduced impact on the coverage of your schedule. Group meetings are meetings with a group of participants and may include a meeting host, typically a team leader.
+
+New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
+
+[#prerequisites]
+== Prerequisites
+- You have created xref:administration:activities.adoc#create-an-activity[a meeting activity] for group meetings.
+- You have created xref:administration:activity-types-and-properties.adoc#activity-properties[Replaceable activities].
+- If you want to include a meeting host with a schedule, xref:administration:create-and-manage-planning-units.adoc[the planning units] of the meeting host and the other participants must have the same interval.
+
+[#generate-suggestions-for-group-meetings]
+== Generate suggestions for group meetings
+1. In _Plan > Meetings_{:.breadcrumbs}, click _Set up_{:.doc-button} in the _Group meetings_{:.label} tile.
+2. In the _Settings_{:.label} section, configure the following fields:
+   - _Planning unit_{:.label}
+   - _Activity to schedule_{:.label}: Select the meeting activity you created for group meetings.
+   - _Date range_{:.label}
+   - _Meeting duration_{:.label}
+
+3. (Optional) To set the days and time in which meeting suggestions can be generated, activate the _Set additional availability constraint_{:.label} toggle.
+   - _Day_{:.label}
+   - _From_{:.label} and _To_{:.label}
+   - To add a period in which the meetings could take place on the selected day, click _+ Add time span_{:.doc-button}. To delete a period, click the {icon-x} next to it.
+   - To add more days on which the meetings could take place, click _Add day and time span_{:.doc-button}. To delete a day, click _{icon-delete} Remove day_{:.doc-button} next to it.
+
+4. In the _Host_{:.label} section, select one option:
+   - _No host_{:.label}: You do not want to include a meeting host. The generated suggestions for group meetings may overlap.
+   - _Internal host_{:.label}: You want to include a meeting host that has a schedule. Group meeting suggestions are based on the meeting host's availability. To select the meeting host, use the _Planning unit_{:.label} and _Employee_{:.label} drop-down menus.
+   - _External host_{:.label}: You want to include a meeting host that does not have a schedule. Group meeting suggestions are based on the days and periods that you set with the _Set additional availability constraint_{:.label} toggle.
+
+5. In the _Participants_{:.label} section, select the people for whom you want to generate meeting suggestions. By default, all people assigned to the selected planning unit are displayed and pre-selected:
+   - (Optional) Click the {icon-schedules-filter-employees-u} or the {icon-filter-u} to filter out people. By default, all checkboxes are checked.
+   - Uncheck the checkboxes next to the names of people for whom you do not want to generate meeting suggestions. Uncheck the checkbox next to _Name_{:.label} to deselect all people in the list.
+
+6. (Optional) To generate meetings suggestions for different groups of participants, based on their availabilities, activate the _Split the meeting into several time slots_{:.label} toggle. You can select the minimum number of people from the _Minimum amount of participants per time slot_{:.label} drop-down menu.
+7. Click _Generate suggestions_{:.doc-button}.
+
+You are redirected to the _Meetings_{:.label} page and the generated suggestions for group meetings are displayed in the _Generated suggestions_{:.label} table. You can proceed to xref:scheduling:scheduling-suggestions.adoc[review and apply the meeting suggestions].

@@ -1,0 +1,63 @@
+= Map Xlink agent activity data
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: on-premise
+:topic-type-concept:
+:description: Map agent statuses and external activities from your ACD to Peopleware activities.
+
+In this article, you will learn how to map the external login IDs from external systems with injixo. We call this process Mapping.
+
+[NOTE]
+====
+This article refers to Xlink. Read the article xref:acd-integration:import-agent-status-data.adoc[Import agent status data] if you want to configure an integration.
+====
+An activity in an external system represents an activity or skill that an employee logs on to, for example, by entering a code in the external system. Depending on the interface, different activities from the external system are available. The specific interface documentation with further information is available at [downloads.peopleware.com](https://downloads.peopleware.com).
+
+[#map-external-user-identifiers-to-employees]
+== Map external user identifiers to employees
+By default, Xlink stores all external activities from your system in the activity _Present_ with the ID 1. Therefore, the agent status will be displayed as _Present_ for all activities. To display the actual activities instead, follow these steps:
+
+Create a separate new activity for each activity which has been stored in _Present_.
+
+1. Go to _Plan > Configuration_{:.breadcrumbs} and select **Activities**.
+2. Click **Present** in the list of activities, then click **External System**. You will see a list of all activities which have been imported by Xlink.
+3. For each of these activities, xref:administration:activities.adoc#create-an-activity[create a new activity] if it doesn't exist already.
+4. Click the **Present** activity, then click **External System**.
+5. Click _![remove button](/assets/img/common/item-delete.gif)_{:.doc-button-icon} on every **activity** to remove it from the **Present** activity.
+6. Click _OK_{:.doc-button}.
+
+Now, you can map the activities from the external system with the newly created activities:
+
+1. Click one of the **activities** which you have just created, then click **External System**.
+2. Click the {icon-wfm-add}.
+3. For **External System**, select your external system.
+4. For **External Activity**, select the external activity you want to connect with the current activity.
+5. Select _1_ for **Classification**.
+6. Click _OK_{:.doc-button}.
+7. Modify all activities you created in the same way.
+
+[NOTE]
+====
+To properly display your newly created activities, add them to your xref:administration:create-and-manage-planning-units.adoc#add-activities[planning unit] under _WFM > Administration > Scheduling > Planning Units_{:.breadcrumbs}.
+====
+Several external activities can be assigned to one WFM activity. Conversely, however, only exactly one WFM activity can be assigned to an external activity.
+
+[#add-external-login-ids-to-employees]
+== Add external login IDs to employees
+Your employees have a unique ID in the external system with which they log in. Go to _WFM > Administration > Scheduling > Employees_{:.breadcrumbs} and assign the correct external user identifier to each employee.
+
+1. Click an **Employee**.
+2. At the top, find the **External System** link and click it. The page will scroll down to the External System section.
+3. Click the {icon-wfm-add} to add an external system. A new window opens.
+4. For **External System**, select the external system you have set up in advance.
+5. For **Employee ID in External System**, add the ACD login ID for the employee. The ID may only contain numbers.
+6. Click _OK_{:.doc-button}.
+
+Repeat the process for all employees. A missing or wrong user identifier will lead to no data import. After you have added the external user identifier for all employees, you can import data.
+
+image::xlink-mapping-activities/image-1.png[Employees External Systems, width=50%]
+
+image::xlink-mapping-activities/image-2.png[External Systems Dialog, width=50%]
+
+You can assign several external employee IDs to a single employee in WFM, but you only can assign an external employee ID to a single WFM employee.

@@ -1,0 +1,216 @@
+= Explore Me
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Use Me to view your schedule, swap shifts with colleagues, bid on shifts, request time off, set your availability, and clock in.
+:page-aliases: injixo-me-agent-view
+
+Me is our employee portal. Go to Me to:
+
+- See your schedule
+- xref:me:swap-shifts-with-your-colleagues.adoc#swap-shifts[Swap shifts with your colleagues]
+- xref:me:bid-on-shifts.adoc[Bid on shifts]
+- Request time off
+- Set your availabilities
+- Clock in
+
+[#access-me]
+== Access Me
+Me works on the two latest versions of the following browsers:
+
+- Microsoft Edge
+- Google Chrome
+- Mozilla Firefox
+- Apple Safari
+
+You can access Me on your computer, xref:me:me-on-your-smartphone.adoc[smartphone, or tablet].
+Once you have logged in to your Me account, you will see up to six navigation items: xref:#get-an-overview-dashboard[Dashboard], xref:#see-your-schedule-my-calendar[My Calendar], xref:#see-your-teams-schedule-team-calendar[Team Calendar], xref:#manage-your-time-off-requests-time-off[Time Off], xref:#set-your-availabilities-availability[Availability], and xref:#clock-in-and-track-your-activities-time-recording[Time Recording].
+
+If you are missing a functionality, you may not have access to it. Get in touch with your supervisor or planner.
+
+[#get-an-overview-dashboard]
+== Get an overview: Dashboard
+In _Me > Dashboard_{:.breadcrumbs} you can see an overview of your schedule:
+
+- NOW, NEXT, and THEN: your current activity and the next two activities in your schedule
+- 7 Day Agenda: your schedule for the next seven days. Here you can xref:me:swap-shifts-with-your-colleagues.adoc#swap-shifts[swap shifts with your colleagues].
+- Notices: counteroffers for shift swaps and open periods for shift bidding
+- Upcoming Events: scheduled vacations, meetings, and absences
+
+[#see-your-schedule-my-calendar]
+== See your schedule: My Calendar
+In _Me > My Calendar_{:.breadcrumbs}, you can see your schedule in a daily, weekly, or monthly view.
+You can also xref:me:swap-shifts-with-your-colleagues.adoc#swap-shifts[swap shifts].
+
+- To change the displayed time period, click _Day_{:.doc-button}, _Week_{:.doc-button}, or _Month_{:.doc-button}.
+- To jump to the previous or to the next time period, click _<_{:.doc-button} or _>_{:.doc-button}.
+- To see the overview for the current date, click _Today_{:.doc-button}.
+- To select a date range, click the {icon-calendar}.
+- To display the daily view for a specific day, select the day in the calendar.
+- To view a planner's comment for a specific day, click the {icon-comment} in the list on the left (daily view).
+
+[#subscribe-to-the-calendar]
+=== Subscribe to the calendar
+You can synchronize your Me calendar with other calendar apps by using an ICS link.
+
+1. Go to _Me > My Calendar_{:.breadcrumbs}.
+2. Click _Subscribe_{:.doc-button} in the upper right.
+   - Windows: Click **view subscription link**. Open the link in your browser to open your calendar app, e.g. Outlook. Updates depend on the app. Tip: Double-click the downloaded ICS file to create a new, separate Peopleware calendar. Right-click and "Open with". This allows you to select Outlook and to add the events to an existing calendar, e.g., your primary Outlook calendar.
+   - Android (Samsung/Google Calendar): Click **view subscription link** to copy the ICS URL.
+     - The default Android calendar apps cannot subscribe to ICS links. Imported calendars will add events but not update automatically.
+     - To keep the calendar synchronized, open [Google Calendar](https://calendar.google.com) on a desktop PC and add the ICS URL as a new calendar. Google Calendar updates approximately every 24 hours; other apps may vary. Alternatively, use a third-party app such as ICSx⁵. Updates are automatic.
+   - iOS/macOS: Click _Subscribe now_{:.doc-button} to open the default calendar app.
+3. Click _Close_{:.doc-button}.
+
+When the schedule changes, your calendar app will periodically pull new data from the ICS URL. Some calendar applications allow you to manually refresh the calendar and configure the auto-refresh interval. In [Google Calendar](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop) and [Outlook.com](https://support.microsoft.com/en-US/office/import-or-subscribe-to-a-calendar-in-outlook-com-cff1429c-5af6-41ec-a5b4-74f2c278e98c), the interval is not configurable, and updates can take around 24 hours.
+
+[#download-your-schedule]
+=== Download your schedule
+If your schedule has been published, you can download it as a PDF or as an ICS file.
+
+1. Go to _Me > My Calendar_{:.breadcrumbs}.
+2. Click the {icon-cloud-arrow-down} in the upper right.
+3. (Optional) Edit the **Start Date** and the **End Date**.
+   The downloaded calendar displays a maximum of 100 days in the future, even if you have selected a larger time frame.
+4. From the drop-down menu **Format**, select your schedule's structure and file format:
+   - **List view (PDF)**: Download a list of your scheduled activities.
+   - **Block view (PDF)**: Get an overview of your scheduled activities in a timeline. Each activity is displayed with the same color that you can see in your schedule in Me.
+   - **Calendar file (ICS)**: Download your schedule and import it into your calendar application.
+5. Click _Download_{:.doc-button}.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+In the block view report, shifts that end past midnight are displayed entirely in the row of the day on which the shift starts. The time displayed on the **End** column refers to the day on which the shift ends.
+====
+[#see-your-teams-schedule-team-calendar]
+== See your team's schedule: Team calendar
+In _Me > Team Calendar_{:.breadcrumbs}, you can see the schedules of all employees in your planning unit and selection. The team calendar includes activities such as presence, breaks, and vacations. The team calendar can display day status activities, e.g. to visualize that people work in home office. If the scheduling period is still unpublished, you see the following message: Nothing scheduled.
+
+[#manage-your-time-off-requests-time-off]
+== Manage your time-off requests: Time Off
+In _Me > Time Off_{:.breadcrumbs}, you can view your time off, check your requests, and submit new ones.
+
+=== View time off and requests
+
+1. Go to _Me > Time Off_{:.breadcrumbs}.
+2. From the drop-down menu at the top left, select a time-off type.
+3. (Optional) Adjust the time period.
+   You can view all time off, including requests of the selected time-off type, in the calendar and under **Requests**.
+
+To view all time off, including requests of different time-off types, see xref:#download-time-off-overview[Download time-off overview].
+
+**Your time-off calendar**
+
+- **Bold dates**: Your scheduled workdays.
+- **Light grey**: Not available for time-off requests (no time-off period is published yet).
+- **Dark grey**: You're off or have requested time off.
+
+[#request-time-off]
+=== Request time off
+You can only request days that are included in a published time-off period.
+
+1. Go to _Me > Time Off_{:.breadcrumbs}.
+2. From the drop-down menu at the top left, select a time-off type.
+3. You can request time off in two ways:
+   - In the calendar, select individual available days. Days with a white background are available.
+   - Click _Request_{:.doc-button} on the right. The selected period defaults to today.
+4. (Optional) In the window, under **Time range**, change the desired period for your time-off request.
+   Part-day requests are only available for single-day selections.
+5. (Optional) Add a comment for your planner.
+6. Click _Request_{:.doc-button}.  
+   Your pending request is displayed in the calendar and under **Requests**.
+
+[#delete-a-time-off-request]
+=== Delete a time-off request
+You can delete a time-off request as long as it has not been approved or rejected.
+
+- In _Me > Time Off_{:.breadcrumbs}, click the {icon-delete} next to the request that you want to delete.
+
+[#download-time-off-overview]
+=== Download your time-off overview
+The time-off overview is a detailed summary of your time off. It allows you to filter by request status and time-off type.
+
+1. Go to _Me > Time Off_{:.breadcrumbs}.
+2. Click the Download icon {icon-cloud-arrow-down}.
+3. Select the **Request statuses** and **Time-off types** to include.
+4. Click _Download_{:.doc-button}.  
+   The time-off overview is downloaded as a PDF.
+
+[#set-your-availabilities-availability]
+== Set your availabilities: Availability
+Availabilities allow you to define time periods in which you are not available to work.
+
+In _Me > Availability_{:.breadcrumbs} you can set up to 14 availabilities.
+
+[#set-an-availability]
+=== Set an availability
+1. Go to _Me > Availability_{:.breadcrumbs}.
+2. Click _Set Availability_{:.doc-button} or select a day in the calendar.
+   A dialog window opens.
+3. Set the **Available** toggle:
+   - To **True** to enter time periods in which you are available.
+   - To **No** to enter time periods in which you are not available.
+4. Enter a **Start Time** and an **End Time**.
+5. (Optional) Define the **Valid From** and **Valid To** dates of the period during which the restriction should apply.
+6. Click _Set Availability_{:.doc-button}.
+   Your availabilities will be considered for scheduling. There are exceptions to this process. Speak to your planner or supervisor to see if they apply to you.
+
+[#edit-an-availability]
+=== Edit an availability
+1. Go to _Me > Availability_{:.breadcrumbs}.
+2. In the **Availabilities** section, click the {icon-edit} next to the availability that you want to edit.
+3. Make your changes.
+4. Click _Edit Availability_{:.doc-button} to save the changes.
+
+[#delete-an-availability]
+=== Delete an availability
+1. Go to _Me > Availability_{:.breadcrumbs}.
+2. In the **Availabilities** section, click the {icon-delete} next to the availability that you want to delete.
+
+[#clock-in-and-track-your-activities-time-recording]
+== Clock in and track your activities: Time Recording
+In _Me > Time Recording_{:.breadcrumbs}, you can:
+
+- Clock in and out.
+- Record the activity that you are currently working on.
+- See an overview of the time you spent on activities.
+
+[#clock-in-switch-activities-and-clock-out]
+=== Clock in, switch activities, and clock out
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You can clock in and out, and switch activities in _Me > Time Recording_{:.breadcrumbs} and in _Me > Dashboard_{:.breadcrumbs}
+====
+To clock in, proceed as follows:
+
+1. In _Me > Time Recording_{:.breadcrumbs}, select the current day.
+2. Click _Clock In_{:.doc-button}.
+3. In the dialog window, select an activity from the drop-down menu, and click _Start_{:.doc-button}.
+
+   _Me > Dashboard_{:.breadcrumbs} opens. You can see the clock-in date and time information next to _Clock Out_{:.doc-button}.
+
+To switch activities, proceed as follows:
+
+1. In _Me > Time Recording_{:.breadcrumbs}, click _Switch_{:.doc-button}.
+2. In the dialog window, select an activity from the drop-down menu, and click _Switch_{:.doc-button}.
+
+To clock out, proceed as follows:
+
+1. In _Me > Time Recording_{:.breadcrumbs}, select the current day.
+2. Click _Clock Out_{:.doc-button}.
+
+[#see-an-overview-of-the-time-you-spent-on-activities]
+=== See an overview of the time you spent on activities
+In _Me > Time Recording_{:.breadcrumbs}, in the **Time Statistics** section, use the buttons to filter the view by activity type or by activity, and by time period.
+
+In the **Time Recording** section, you can see start time, end time, and duration of the activities that you recorded. You can also see the total amount of time that you recorded.

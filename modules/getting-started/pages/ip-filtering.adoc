@@ -1,0 +1,77 @@
+= IP filtering
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: enterprise, advanced
+:topic-type-concept:
+:description: Learn how to set up IP filtering for your Peopleware tenant.
+
+IP filtering is a paid feature.
+It is not automatically included in your Enterprise WFM or Advanced WFM plan.
+If your organization is interested in this feature, get in touch with your consultant.
+
+IP filtering ensures that your users can access your Peopleware tenant from specific IP address ranges only.
+Users with IP addresses outside of the defined range will not be able to access Peopleware. We offer a [network access control list](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) (network ACL).
+Activate the network ACL if you want to allow access to Peopleware from selected networks only (e.g. your organization's network).
+
+[#activate-ip-filtering]
+== Activate IP filtering
+Only users with admin access can activate IP filtering.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+When you activate IP filtering, all active users are logged out. Depending on the product area, the time frame varies:
+====
+>
+[NOTE]
+====
+- Logout can be immediate
+- Logout happens when data is next loaded or stored
+- Logout is timed (only in Shift Center accessible via _Plan > Shift Center_{:.breadcrumbs})
+====
+>
+[NOTE]
+====
+To continue working with Peopleware, users will have to log in again.
+====
+1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+2. In the **Allowed IPs** field, enter a comma-separated list of IPs or IP address ranges in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#:~:text=CIDR%20notation%20specifies%20an%20IP,bits), e.g.:
+   - `192.0.2.25,198.51.100.0/24,203.0.113.0/24`
+3. Click _Activate filtering_{:.doc-button}.
+
+IP filtering only affects UI interactions. The optionally available Shift Center, accessible via direct URL, and the API are currently not affected by IP filtering.
+
+[#edit-the-ip-address-ranges]
+== Edit the IP address ranges
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you edit the IP address ranges, all users will be logged out when they next interact with Peopleware. To continue working with Peopleware, users will have to log in again.
+====
+1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+2. Edit the IP address ranges.
+3. Click _Save_{:.doc-button}.
+
+[#deactivate-ip-filtering]
+== Deactivate IP filtering
+1. Go to _Account > Security_{:.breadcrumbs} and scroll to the **IP filtering** section.
+2. Delete the IP address ranges.
+3. Click _Deactivate filtering_{:.doc-button}.
+
+After deactivating IP filtering, users will be able to access Peopleware from any IP address.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+If you deactivate IP filtering, all users will be logged out. To continue working with Peopleware, users will have to log in again.
+====

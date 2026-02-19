@@ -1,0 +1,101 @@
+= Filter with selections
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to use selections as a filter.
+
+New to selections? Learn xref:administration:selections.adoc[the basics] first.
+
+When managing your team, you often need to group people with similar working conditions, e.g. people with daycare needs or people who report to a specific supervisor. Selections allow you to create your own grouping criteria. This is useful if you need grouping options beyond the scope of xref:administration:create-and-manage-planning-units.adoc[planning units] and xref:people:advanced-filters.adoc[employee filters].
+
+Planning units help you group people according to your organizational structure, e.g. by assigning people in different time zones to different planning units, and employee filters work based on configuration elements, such as contracts and activities. Selections help you group people to meet the specific needs of your organization.
+
+You can create a selection to refine filters within a planning unit or to manage people across planning units. For example, you can create a selection to make sure that people with daycare needs have their schedules managed separately, or to filter schedules of people from different planning units for a marketing campaign in different time zones.
+
+[#use-selections-to-filter-people-within-planning-units]
+== Use selections to filter people within planning units
+You can find planning unit and selection filters in **Plan** and **Intraday**. After selecting the planning unit, you can additionally filter people by selection.
+
+For example, you have three planning units and one of the planning units includes people who are taking part in a training program. You can use selections to group them and manage their schedules separately, e.g. to plan specific meetings.
+
+[#use-selections-to-manage-people-across-planning-units]
+== Use selections to manage people across planning units
+There are three ways of filtering with selections across planning units. You can find respective examples of how to filter with selections below this section.
+
+The following table presents an overview of the three different options to filter by selection across planning units. You can find these options in different components or functionalities.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Component/functionality
+|Filtering option
+|Schedules
+|All planning units and one selection.
+|Time Off
+|All planning units and one selection.
+|Real-Time Adherence
+|One selection and no planning unit.
+|Intraday Adherence
+|One selection and no planning unit.
+|Shift Center
+|One selection (no planning unit filter available).
+|Notify people
+|One planning unit and one selection. Repeat for all planning units that you want to filter.
+|Scheduling periods
+|One planning unit and one selection. Repeat for all planning units that you want to filter.
+|Meetings
+|One planning unit and one selection. Repeat for all planning units that you want to filter.
+|Time-off periods
+|One planning unit and one selection. Repeat for all planning units that you want to filter.
+|Vacation entitlement
+|One planning unit and one selection. Repeat for all planning units that you want to filter.
+|===
+
+For all functionalities in _Plan > Schedules > Scheduling actions_{:.breadcrumbs}, you need to select one planning unit and one selection, and apply the scheduling action to each planning unit that you want to filter.
+
+The following examples provide more details about the three filtering options for selections as described in the table above.
+
+[#examples]
+== Examples
+The examples below use a selection named Onboarding. The Onboarding selection is intended to group people who are in the onboarding phase in your organization independent of their planning unit. Using the Onboarding selection makes it easier to manage their schedules and track their needs.
+
+With the following configuration, you can use the Onboarding selection as a filter across planning units:
+
+1. xref:administration:selections.adoc#create-selections[Create and configure a selection] named Onboarding.
+2. xref:administration:selections.adoc#add-selections-to-people[Assign the people] who are in the onboarding phase to the Onboarding selection.
+
+[#filtering-option-1-all-planning-units-and-one-selection]
+=== Filtering option 1: All planning units and one selection
+In _Plan > Schedules_{:.breadcrumbs}, you can filter the schedules of people in the Onboarding selection with the following drop-down menus:
+
+- _Planning unit_{:.label}: Select **All planning units**.
+- **Choose selection**: Select **Onboarding**.  
+   If the **Choose selection** drop-down menu is not displayed, click the {icon-filter-u} on the top left.
+
+[#filtering-option-2-one-selection-and-no-planning-unit]
+=== Filtering option 2: One selection and no planning unit
+In _Intraday > Real-Time Adherence_{:.breadcrumbs}, you can filter the scheduled activities of the people in the Onboarding selection and compare them with a person's actual status in real time. This is useful to check, for example, if a person is carrying out the activities scheduled for their onboarding phase.
+
+To filter by selection, use the following drop-down menus:
+
+- _Planning unit_{:.label}: Make sure that no planning unit is selected.
+- _Selection_{:.label}: Select **Onboarding**.
+
+[#filtering-option-3-one-selection-and-one-planning-unit]
+=== Filtering option 3: One selection and one planning unit
+If you have specific time-off conditions for people in the onboarding phase, you can create specific time-off periods for the Onboarding selection. Consider that you have the following planning units for three different offices: Office 1, Office 2, and Office 3. These three offices have people in the onboarding phase who are assigned to the Onboarding selection.
+
+To create specific time-off periods for the Onboarding selection:
+
+1. In _Plan > Time Off_{:.breadcrumbs}, click _Time-off periods_{:.doc-button}.  
+   You will be redirected to the **Time-off Periods** page.
+2. Click _Create time-off period_{:.doc-button}.  
+   A dialog window opens.
+3. Filter by selection with the following drop-down menus:
+   - _Planning unit_{:.label}: Select **Office 1**.
+   - _Selection_{:.label}: Select **Onboarding**.
+4. Complete the remaining fields.  
+   Learn more about the configuration of xref:scheduling:time-off-periods-legacy.adoc[time-off periods].
+5. Click _Save_{:.doc-button}.
+6. Repeat the steps 1 to 5 for planning units Office 2 and Office 3.

@@ -1,0 +1,75 @@
+= Navigate Peopleware
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Get an overview of all our features and functionalities.
+:related-articles: predefined-user-roles.adoc, the-wfm-cycle-in-injixo.adoc
+:page-aliases: after-first-login
+
+Users with different user roles can access different apps and features.
+You may not be able to see all the features listed in this article. Read more about xref:account:predefined-user-roles.adoc[access to apps and features] for the predefined user roles.
+
+[#apps-and-features]
+== Apps and features
+Click the items in the navigation bar at the top to access the different apps and features.
+
+------- | --------
+**WFM** | Create the configuration data required to xref:getting-started:set-up-base-configuration.adoc[map out your company], xref:reporting:task-create-reports.adoc[run reports], and configure settings and xref:administration:create-contracts.adoc[scheduling rules].
+**Forecast** | xref:forecast:create-workloads.adoc[Create workloads] to xref:forecast:what-is-forecast.adoc[generate forecasts] based on imported historical data.
+**Plan** | xref:scheduling:schedules-overview.adoc[Create schedules], xref:scheduling:time-off-periods-legacy.adoc[manage time-off periods and requests], and xref:scheduling:meetings-overview.adoc[schedule meetings]. Go to xref:scheduling:shift-center-overview.adoc[Shift Center] to view and manually adjust your schedules. Add configuration data such as xref:administration:work-with-skills.adoc[skills].
+**Intraday** | In xref:intraday:real-time-adherence.adoc[Real-Time Adherence] you can see details on each employee's current adherence status. This helps you identify and react to unforeseen events and maintain your service level.
+**Analyze** | Go to xref:monitoring:manage-dashboards.adoc[Dashboards] to analyze historical and forecasted data, and to view and compare your data in graphs.
+**People** | Go to xref:people:configure-people.adoc[People] to create, edit, and delete people. Assign roles to your people, unlock locked people, and manage other xref:people:configure-people.adoc[people settings].
+**Me** | People can xref:me:explore-me.adoc[access their schedules, request time off, swap shifts, and bid on shifts]. Users with admin access can xref:me:configure-me.adoc[turn features on or off].
+
+[#account]
+== Account
+Users with admin access can access the following functionalities under _Account_{:.menu-item}.  
+Learn about xref:account:predefined-user-roles.adoc[access for the predefined user roles].
+
+---------- | --------
+**Roles** | xref:account:configure-user-roles.adoc[Create new roles and manage existing ones].
+**Billing** | View your current number of active users. For more information, see xref:account:check-active-user-counts.adoc[Check active user counts].
+**System settings** | Change your company's name and country. Change your tenant's timezone and language.
+**Integrations** | xref:acd-integration:how-integrations-work.adoc[Set up integrations] to import data.
+**Security** | xref:getting-started:manage-2fa.adoc[Enforce two-factor authentication] for all users. xref:getting-started:single-sign-on.adoc[Activate single sign-on] for your account and for all users' accounts.
+**Notifications** | xref:getting-started:notifications.adoc[Configure email and browser push notifications] for other users' accounts.
+
+[NOTE]
+====
+Grant admin access to a second user in xref:people:configure-people.adoc[_People_{:.breadcrumbs}].
+====
+[#your-user-profile]
+== Your user profile
+Click your **user name** at the top right to open your user profile.
+
+---------- | --------
+**My Profile** | Change your name, and the email address that you use to log in. Set your language. Set the timezone to correctly display scheduling data (this change is effective after the next login). Allow xref:getting-started:notifications.adoc[browser notifications] from Peopleware.
+**Security** | Change your password. Activate xref:getting-started:use-two-factor-authentication.adoc[two-factor authentication].
+**Personal access tokens** | Create a token to access the xref:reporting:api.adoc[API].<br>By default, only users with admin access can create personal access tokens. Users with admin access can xref:reporting:api.adoc[allow other user roles to create personal access tokens].
+
+[#product-updates]
+== Product updates
+Click the {icon-gift} next to your user name to access our product updates. Users with the Standard Agent role do not have access to the product updates page.
+
+[#support]
+== Support
+Click the {icon-circle-question} at the top right to access Help Center, where you can:
+
+- Access a library of articles to help you maximize your performance.
+- Browse the glossary to find the definitions of terms and abbreviations used in our user interface and in Help Center articles.
+- Submit a support ticket or download technical manuals.
+- Discover additional services and other learning resources.
+
+[#filters]
+== Filters
+You can narrow down lists by object with filters. To use filters, proceed as follows:
+
+1. Click the {icon-filter-plus}.
+2. Hover over the filter criterion you want to use. The list of objects appear.
+3. Select the options you want to use for filtering.
+
+Repeat this operation to filter by more than one object.
+To remove a filter, click _x_{:.doc-button}.

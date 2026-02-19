@@ -1,1 +1,15 @@
-* xref:me.adoc[]
+* Me
+** xref:index.adoc
+** xref:me.adoc
+** Set-Up-Me
+*** xref:set-up-me/configure-me.adoc
+*** xref:set-up-me/give-employees-access-to-me.adoc
+*** xref:set-up-me/manage-availabilities-in-me.adoc
+** Use-Me
+*** xref:use-me/add-availabilities-in-me.adoc
+*** xref:use-me/bid-on-shifts.adoc
+*** xref:use-me/explore-me.adoc
+*** xref:use-me/me-on-your-smartphone.adoc
+*** xref:use-me/slides-training-materials.adoc
+*** xref:use-me/swap-shifts-with-your-colleagues.adoc
+*** xref:use-me/time-off-agents.adoc

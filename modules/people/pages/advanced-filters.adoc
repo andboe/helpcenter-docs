@@ -1,0 +1,175 @@
+= Advanced filters
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn what advanced filters are, what they are used for, and how they help you manage people effectively.
+
+In _People > Advanced filters_{:.breadcrumbs}, you can create dynamic lists of people based on one or more conditions. These filters are used to identify subsets of people who match specific criteria in the following applications:
+
+- _People_{:.breadcrumbs}
+- _Plan > Schedules_{:.breadcrumbs}
+- _Plan > Shift Center_{:.breadcrumbs}
+- _WFM > Monitoring > Reports_{:.breadcrumbs}
+
+Filters are composed of the following elements:
+
+- Criteria: Individual conditions based on configuration data
+- Groups: Logical containers for combining criteria
+- Operators: Define how conditions and groups are evaluated
+- Exclusions: Remove people from the final result after applying all conditions
+
+[#criteria]
+== Criteria
+A criterion is a single condition that compares a field to a value. For example:
+
+----
+Planning unit `Is` "New York"
+----
+
+Each criteria consists of three parts:
+
+- Configuration element: The data field being filtered (e.g. Planning unit, Contract, Skill)
+- Comparison operator: The logic used to compare the field to the value (i.e. Is, Is not, Is like, Is not like)
+- Value: The target value to compare against (e.g. "New York", "Full time")
+
+Supported configuration elements include:
+
+- Planning unit
+- Contract
+- Selection
+- Skill (with optional skill level)
+- Attribute
+- Employee category
+
+[#comparison-operators]
+== Comparison operators
+Operators define how values are matched. Available operators depend on the selected field.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Operator
+|Description
+|Is
+|Matches exact values
+|Is not
+|Excludes specific values
+|Is like
+|Matches partial values using a xref:#wildcard-characters[wildcard] search
+|Is not like
+|Excludes partial matches using a xref:#wildcard-characters[wildcard] search
+|===
+
+Some fields, like **Planning Unit**, **Employee Category**, or **Skill**, support **Priority** or **Skill level** filtering using relational operators:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Operator
+|Description
+|Equal to
+|Matches value exactly equal to the input
+|Not equal to
+|Matches values different from the input
+|Less than
+|Matches values strictly lower than the input
+|Less than or equal to
+|Matches values lower than or equal to the input
+|Greater than
+|Matches values strictly higher than the input
+|Greater than or equal to
+|Matches values higher than or equal to the input
+|===
+
+[#wildcard-characters]
+=== Wildcard characters
+Wildcard characters match partial values when using **Is like** or **Is not like** operators. You can use them to find variations in spelling or structure.
+
+[%header, cols="1a,1a,1a,1a,".rstrip(',')]
+|===
+|Wildcard
+|Description
+|Example
+|Matches examples
+|`*`
+|Replaces any number of characters, including none
+|`M*er`
+|`Mayer`, `Meier`, `Mayherr`, `Mer`
+|`?`
+|Replaces exactly one character
+|`Ma?er`
+|`Mayer`, `Maier`, `Maher`
+|`[]`
+|Matches any one character inside the brackets
+|`M[ae]yer`
+|`Mayer`, `Meyer`
+|`[a-z]`
+|Matches any one character in a character range
+|`M[a-c]yer`
+|`Mayer`, `Mbyer`, `Mcyer`
+|`[!]`
+|Matches any one character not listed inside the brackets
+|`M[!a]yer`
+|`Meyer`, `Moyer` (but not `Mayer`)
+|===
+
+Wildcard support depends on the selected field. Always test your filter to ensure it behaves as expected.
+
+[#groups]
+== Groups
+A group combines multiple criteria. Every group applies logical operators (**AND** or **OR**) to its criteria.
+
+- Use **AND** when the list of people should match all criteria in the group.
+- Use **OR** when the list of people should match at least one of the criteria in the group.
+
+To exclude all people who match the criteria combined in a group, check **NOT**.
+
+Example:
+
+----
+NOT (
+  Contract `Is` "Full Time 40h"
+  AND
+  Selection `Is` "Extra Hours"
+)
+----
+
+This group includes anyone who has neither a Full-Time 40h contract nor belongs to the Extra Hours selection.
+
+[#combining-groups]
+== Combine groups
+A filter can contain multiple groups. Groups are evaluated independently and can be combined using AND or OR between them.
+Use AND between groups to require that a person matches all group-level conditions.
+Use OR to include people who match at least one group.
+
+[#time-frames]
+== Time frames
+Filters can be time-bound using one of the following time frame types:
+
+- **Relative**: Dynamic period like "next month" or "previous week"
+- **Custom**: Custom start and end date
+- **Contextual**: The time period adjusts depending on where you use the filter:
+  - In _People_{:.breadcrumbs}: Automatically uses the current day.
+  - In _WFM > Monitoring > Reports_{:.breadcrumbs}, _Plan > Shift Center_{:.breadcrumbs} and _Plan > Schedules_{:.breadcrumbs}: Uses the date range currently applied.
+
+[#example-filter]
+== Example filter
+To include:
+
+- All people in the **New York** planning unit
+- Who do **not** have a **Full Time 40h** contract
+- And are **not** part of the **Extra Hours** selection
+
+The correct filter structure would be:
+
+----
+Group 1:
+  Criterion: Planning unit *Is* New York
+
+AND
+
+Group 2 (with NOT enabled):
+  Criterion: Contract *Is* Full Time 40h
+  AND
+  Criterion: Selection *Is* Extra Hours
+----

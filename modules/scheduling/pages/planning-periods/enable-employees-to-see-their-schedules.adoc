@@ -1,0 +1,41 @@
+= Allow employees to see their schedules
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: classic
+:topic-type-concept:
+:description: Allow employees to see their schedules in Me (SchedulePro).
+:related-articles: give-employees-access-to-me.adoc, enable-employees-to-swap-shifts.adoc, enable-time-off-and-request-sick-leave.adoc
+
+In this article, you will learn how to allow employees to see their schedules in Me.
+
+To do this, you will use planning periods. Read the article xref:scheduling:what-are-planning-periods.adoc[What are planning periods?] first.
+
+[NOTE]
+====
+This article is about _WFM > Scheduling > SchedulePro_{:.breadcrumbs}.
+====
+>
+[NOTE]
+====
+If you use Essential WFM, Advanced WFM, or Enterprise WFM, use xref:scheduling:what-are-scheduling-periods.adoc#when-can-people-see-their-schedules[Scheduling Periods] under _Plan > Schedules_{:.breadcrumbs} instead.
+====
+[#allow-employees-to-see-their-schedules]
+== Allow employees to see their schedules
+1. Go to _WFM > Scheduling > SchedulePro > Planning Periods_{:.breadcrumbs}.
+2. Choose the _Planning Unit_{:.label} you want to publish schedules for.
+3. Choose the **Type** _Standard_.
+4. Set the _Selection_{:.label} to **[All]** unless you want to limit the publishing of the schedules to a certain group of agents. I you want to limit the publishing, choose the respective selection.
+5. Click _Apply_{:.doc-button}.
+6. Select the planning period with the date range for which you want to publish schedules and click _![edit button](/assets/img/common/item-edit.gif)_{:.doc-button-icon} in the action bar. If there is no planning period for that date range yet, create a new one. Click the {icon-wfm-add}.
+
+In both cases, the following dialog appears:
+
+image::enable-employees-to-see-their-schedules/image-3.png[Define Planning Period, width=60%]
+
+1. If you created a new planning period, use **Valid From** and **Valid To** to define the time period for which you want to publish the schedules.
+2. Select the **Status** _Information_ if you want your employees to only see the schedules. If the planning period is also used for xref:scheduling:shift-bidding.adoc[shift bidding] and xref:scheduling:enable-employees-to-swap-shifts.adoc[shift swaps] between agents, choose _Enabled_.
+3. Optional: Set a **Deadline** (only for shift bidding and shift swaps). Schedules will still be visible afterwards.
+4. Confirm with _Ok_{:.doc-button}.
+
+Your employees will now see their schedules in Me for the time period defined by the planning period.

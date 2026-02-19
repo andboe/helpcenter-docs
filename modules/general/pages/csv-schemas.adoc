@@ -1,0 +1,70 @@
+= CSV schemas
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how CSV schemas work and how they are used.
+:related-articles: create-csv-schema.adoc, create-csv-schema-for-forecast-data.adoc, csv-schema-default-schemas.adoc, import-forecast.adoc, csv-schema-default-schemas.adoc, add-csv-integration.adoc, csv-integration-upload-data-manually.adoc
+
+Peopleware supports the import of CSV files via a CSV uploader for manual imports in the user interface and via a dedicated CSV integration.
+Both options are based on CSV schemas.
+CSV schemas control how Peopleware processes and stores the provided data for a specific object type, such as forecasts.
+Every CSV schema has a schema type. The schema type controls which object type can be processed with that CSV schema.
+
+Peopleware provides a set of default CSV schemas that cover the most common use cases.
+
+== Supported object types
+
+Data from CSV files can be imported to Peopleware for a number of object types.
+The following table provides an overview of the supported object types and how data can be imported for these objects in Peopleware.
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Object type
+|Description
+|Import type
+|Forecast
+|Import forecast data including forecast versions to a workload.
+|Manual upload in _Forecast > Workloads_{:.breadcrumbs}
+|Time-off account balance
+|Import time-off account balance data for people.
+|Manual upload in _Time Off > Accounts_{:.breadcrumbs}
+|Contact data
+|Import contact data.
+|CSV integration
+|Agent status data
+|Import agent status data.
+|CSV integration
+|Plan data
+|Import plan data.
+|CSV integration
+|===
+
+<!-- Time-off quotas are unreleased at the time of writing
+
+| Time-off quota           | Import time-off quotas for planning units.                      | Manual upload in _Time Off > Quotas_{:.breadcrumbs}    |-->
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+CSV import for some object types may not be available in your Peopleware plan.
+====
+>
+[NOTE]
+====
+- Time-off-related object types are available only in _Time off_{:.breadcrumbs}.
+- Plan data imports are a paid feature.
+- CSV imports for forecast data are available only in the Advanced WFM and Enterprise WFM plans.
+====
+== CSV schemas and integrations
+
+CSV schemas are maintained in a central place and integrations retrieve the CSV schema settings from there.
+This has a number of implications:
+
+- Creating a working CSV integration requires that a CSV schema has been set up for the object type first, e.g. contact data.
+- Deleting a CSV schema breaks every integration based on that CSV schema.
+- Modifying a CSV schema's mapping settings may break integrations based on that CSV schema.

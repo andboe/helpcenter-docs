@@ -1,0 +1,25 @@
+= Shift sequences
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn what shift sequences are and how you can use them.
+:related-articles: activities.adoc, daymodel-creation.adoc, employee-overview.adoc, create-shift-sequences.adoc, shift-sequences-use-cases.adoc, assign-shift-sequences-to-people.adoc, schedules-insert-shift-sequences.adoc
+:page-aliases: shift-sequence-overview
+
+A shift sequence is a series of repeating patterns of day models or activities.
+
+Insert shift sequences into your schedule and have Peopleware optimize the rest of the schedule.
+
+Each shift sequence can include a number of patterns of day models or activities. Such patterns are defined as rows.
+Day models and activities are assigned to rows.
+Rows are assigned to people.<br>
+Shift sequences are inserted into the schedule.
+
+Learn more about:
+
+- xref:administration:activities.adoc[new Activities]
+- xref:administration:daymodel-basics.adoc[Day models]
+- xref:administration:assign-shift-sequences-to-people.adoc[Assigning shift sequence rows to People]
+- xref:scheduling:schedules-insert-shift-sequences.adoc[Inserting shift sequences into the schedule]

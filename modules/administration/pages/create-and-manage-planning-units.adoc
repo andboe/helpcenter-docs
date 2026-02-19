@@ -1,0 +1,154 @@
+= Create and manage planning units
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to create, configure, and delete planning units.
+:related-articles: configure-planning-calendars.adoc, how-to-use-virtual-planning-units.adoc, activities.adoc
+:page-aliases: planning-unit-configuration
+
+Planning units group people and configuration data for scheduling purposes. Your business locations do not necessarily have to correspond to your planning units. You can xref:#add-planning-units-to-people[add one planning unit to people] who work at two different locations.
+
+[#how-many-planning-units-should-i-use]
+== How many planning units should I use?
+To minimize efforts, you can schedule people who work in different locations or teams in one planning unit by using xref:administration:selections.adoc[selections]. We recommend using more than one planning unit in the following cases:
+
+- People work in different time zones.
+- Planners are only responsible for groups of people, e.g. business units. In Advanced and Enterprise WFM, custom user roles can xref:account:configure-user-roles.adoc#manage-team-access-restrict-access-to-configuration-data[restrict access to planning units].
+- You have shared staff requirements, e.g. for overflow scenarios.
+- You want to create reports that include the total numbers from several planning units.
+
+[TIP]
+====
+s for working with multiple planning units
+====
+>
+[NOTE]
+====
+- To group figures across planning units, add a parent planning unit to all relevant planning units.
+- You can temporarily change an employee’s assignment from one planning unit to another.<br>Learn more about how to xref:administration:employee-overview.adoc#delegate-employees[delegate employees].
+====
+<!-- Typically, you assign one planning unit to a person at a time. Reassign a planning unit using valid from and valid to dates in the employee configuration. In rare cases, you will need to assign more than one planning unit to a person. The person's main planning unit is assigned with priority 1. The person is scheduled in this main planning unit. A person's schedule will be displayed in other planning units with lower priority. You can also manually reschedule people in other planning units if needed. -->
+
+[#create-planning-units]
+== Create planning units
+1. Go to _Plan > Configuration > Planning units_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button} at the top right.  
+   A configuration window opens on the right side.
+3. Configure the following information:
+   - **Name**
+   - **Abbreviation**
+   - **Color**: The color is used in Schedules.
+   - **Interval**: Influences the level of detail of the data displayed in Schedules, e.g. coverage and staff requirements. The planning unit interval should not be longer than the interval of your contact and agent status data imports. The interval cannot be changed after creating. Learn more about xref:acd-integration:how-integrations-work.adoc[data imports through integrations].
+   - **Parent planning unit**: Learn more about xref:best-practices:how-to-use-virtual-planning-units.adoc[parent planning units].
+   - **Time zone**: The time zone cannot be changed after creating. The selected time zone must match the time zone of your workloads in Forecast. Otherwise, you cannot transfer staff requirements for scheduling. An integration will adjust the imported data according to the time zone of your workloads. Learn more about xref:best-practices:working-with-timezones.adoc[working with time zones].
+
+4. Click _Save_{:.doc-button}.  
+   You can now add business hours, activities, day models, or planning calendars.
+
+[#add-business-hours]
+=== Add business hours
+To add business hours to a planning unit, xref:administration:create-and-manage-planning-units.adoc#create-planning-units[create the planning unit first].
+
+For scheduling, you need to add business hours to the xref:administration:day-types.adoc[day types] included in the planning unit. Business hours limit the daily hours for which you can xref:forecast:task-set-up-staff-requirement-calculation.adoc[calculate staff requirements] and xref:scheduling:schedules-optimized-schedules.adoc[create optimized schedules]. <!-- special public holiday day types or part of the linked article? -->
+
+1. In _Plan > Configuration > Planning units_{:.breadcrumbs}, select a planning unit.
+2. In the **Business Hours** section, click **{icon-plus} Add**.
+3. Select one or more day types.
+4. Enter the start and end time in the **From** and **To** fields (24&nbsp;hours format). If your organization is open 24&nbsp;hours, enter 00:00 in both fields.
+5. (Optional) In the **Valid from** and **Valid to** fields, enter a date range that the business hours apply to. If the business hours always apply, leave the fields blank. Learn more about xref:administration:set-a-validity-period.adoc[validity periods].
+6. Click _Save_{:.doc-button}.
+
+To modify or remove business hours, hover over them in the **Business hours** list in the configuration window and click the {icon-arrow-up-right-from-square} or the {icon-delete}.
+
+[#add-activities]
+=== Add activities
+To add activities to a planning unit, you need to xref:administration:create-and-manage-planning-units.adoc#create-planning-units[create the planning unit first].
+
+Before you create schedules, you need to add all relevant activities of type Presence to planning units. You can only schedule people for activities that you have added to their planning unit. By default, all planning units include the Present activity, which cannot be deleted.
+To include activities of any type in your reports, add the activities to the relevant planning units.
+
+To add activities to a planning unit, proceed as follows:
+
+1. In _Plan > Configuration > Planning units_{:.breadcrumbs}, select a planning unit.
+2. In the **Activities** section, click **{icon-plus} Add**.
+3. Select one or more activities.
+4. Enter a time range in the **From** and **To** fields. The xref:scheduling:schedules-optimized-schedules.adoc[Create optimized schedules] functionality considers this activity within the time range you entered. If both fields have the value 00:00, the business hours of the planning unit are considered. Users with admin access can change this default behavior in setting _48408_{:.id-label} _Take into account business hours in AutoScheduler_.
+5. (Optional) Enter a date range in the **Valid from** and **Valid to** fields to limit when the activity is available for scheduling.
+6. Click _Save_{:.doc-button}.
+
+To edit or remove an activity, hover over it in the **Activities** list in the configuration window and click the {icon-arrow-up-right-from-square} or the {icon-delete}.
+
+[#add-multiactivities]
+=== Add multiactivities
+To assign a multiactivity to a planning unit, proceed as follows:
+
+1. Ensure that the relevant multiactivity has been created. To create a new multiactivity, proceed as xref:administration:activities.adoc#create-a-new-multiactivity[explained here].
+2. Assign all respective subactivities to the planning unit as xref:#add-activities[explained above].
+3. Assign the multiactivity to the planning unit.
+
+[#edit-assigned-multiactivities]
+=== Edit assigned multiactivities
+To add a subactivity to a multiactivity that is already assigned to a planning unit, proceed as follows:
+
+1. In _Plan > Configuration > Activities_{:.breadcrumbs}, create the activity that will become a subactivity.
+2. In _Plan > Configuration > Planning units_{:.breadcrumbs}, assign the new activity to the planning unit.
+3. In _Plan > Configuration > Activities_{:.breadcrumbs}, assign the new activity as subactivity to the multiactivity.
+
+[#limit-day-models]
+=== Limit day models
+You can only use day models that are added to the planning unit to generate shifts, create reports, or create optimized schedules. By default, all existing and future xref:administration:daymodel-creation.adoc[day models] are added to your planning units. If you do not use all day models in a planning unit, you can change this setting. Limiting day models can speed up scheduling with the **Create optimized schedules** functionality, but may involve more effort in maintaining the other configuration data, e.g. week time patterns.
+
+To limit the day models used in a planning unit, follow these steps:
+
+1. In _Plan > Configuration > Planning units_{:.breadcrumbs}, select a planning unit.
+2. In the **Day models** section in the configuration window, click **{icon-edit} Edit**.
+3. Uncheck the **All existing and future day models** checkbox.
+4. Select all day models that you want to add to the planning unit.
+5. Click _Save_{:.doc-button}.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Deleting a day model in use does not affect the schedules and shifts created with that day model.
+====
+>
+[NOTE]
+====
+If you delete all day models in the planning unit, you can only schedule activities manually or by xref:administration:shift-sequences.adoc[inserting activities in shift sequences]. You can no longer use the **Create optimized schedule** functionality.
+====
+[#delete-planning-units]
+== Delete planning units
+[WARNING]
+====
+====
+>
+[NOTE]
+====
+If you delete a planning unit, you can no longer access the corresponding schedules.
+====
+1. In _Plan > Configuration > Planning units_{:.breadcrumbs}, select the planning unit you want to delete.
+2. From the {icon-context-menu} at the top right, select **Delete**.
+3. In the confirmation window, click _Delete_{:.doc-button}.
+
+[#add-planning-units-to-people]
+== Add planning units to people
+1. Go to _People_{:.breadcrumbs}.
+2. Select a person from the list.
+3. In the left-side menu, click **Planning**.
+4. In the _Planning units_{:.label} section, click {icon-plus} **Add**.
+5. Configure the following information:
+   - **Planning unit**
+   - **Priority**: Enter 1 for the main planning unit that you add to the person. Learn more about xref:#priority-for-planning-units[priority]
+   - **Valid from** and **Valid to**: Configure these dates if you want to add the planning unit only temporarily to the person.
+6. Click _Save_{:.doc-button}.
+
+[#priority-for-planning-units]
+== Priority for planning units
+If you add only one planning unit to a person, enter priority 1. If you add several planning units to a person, you need to prioritize them, 1 being the highest.
+
+Schedule optimization only considers the planning unit with priority 1. You can schedule people manually as part of other planning units with priority 2 or lower. In Shift Center, the person is displayed in all planning units added to them, but their scheduled is grayed out in planning units with lower priority.

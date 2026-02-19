@@ -1,0 +1,535 @@
+= Mass update settings reference
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:topic-type-reference:
+:description: Find information about every mass update setting.
+:related-articles: concept-mass-update.adoc, task-perform-mass-update.adoc
+
+<style>
+  table {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  table tr td:first-child,
+  table tr th:first-child {
+    width: 20%;
+  }
+</style>
+
+This article lists all mass update settings available in _People_{:.breadcrumbs}.
+For more information about mass updates see:
+
+- xref:people:concept-mass-update.adoc[Mass update overview]
+- xref:people:task-perform-mass-update.adoc[Update people data in bulk]
+
+---
+
+== Roles
+
+=== Add role
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Role**
+|Specifies the role that the mass update assigns to the selected people.
+|===
+
+---
+
+=== Delete role
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Role**
+|Specifies the role that the mass update unassigns from the selected people.
+|===
+
+---
+
+== Skills
+
+=== Add skill
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Skill**
+|Specifies the skill that the mass update assigns to the selected people.
+|**Skill level**
+|Specifies the skill level of the skill.
+|**Overwrite current skill level**
+|Controls if the mass update replaces the skill level of any existing assignment of the newly added skill with the skill level specified for the Add action. This option extends the option **Add only to empty time periods** by ensuring that all assignments of the added skill in the mass update period have the same skill level. This option has no effect on skills other than the added skill.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type. For skills, the **Overwrite current skill level** extends this option.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Replace skill
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Skill**
+|Specifies the skill that the mass update replaces.
+|**Skill level**
+|Specifies the skill levels of the skill that the mass update replaces. The replace action only replaces assignments of skills with these skill levels.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Skill**
+|Specifies the skill that the mass update uses to replace an existing skill.
+|**Skill level**
+|Specifies the skill level of the replacement skill.
+|===
+
+<!--
+| Overwrite current skill level | --TODO-- might be obsolete                                              |
+-->
+
+=== Delete skill
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Skill**
+|Specifies the skill that the mass update unassigns from the selected people.
+|**Skill level**
+|Specifies the skill levels of the skill that the mass update unassigns from the selected people. The delete action only removes assignments of skills with these skill levels.
+|===
+
+---
+
+== Work time pattern models
+
+=== Add work time pattern model
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Work time pattern model**
+|Specifies the work time pattern model that the mass update assigns to the selected people.
+|**Reference date**
+|Specifies from which day onwards the work time pattern model is repeatedly applied to schedule the selected people.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Replace work time pattern models
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Work time pattern models**
+|Specifies the work time pattern models that the mass update replaces.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Work time pattern model**
+|Specifies the work time pattern model that Peopleware uses to replace one or more existing work time pattern models.
+|**Reference date**
+|Specifies from which day onwards the work time pattern model is repeatedly applied to schedule the selected people.
+|**Replace existing assignments**
+|Controls if the Replace action within the mass update period only replaces assignments of objects specifically selected for replacement.
+|**Replace existing assignments and fill empty time periods**
+|Controls if the Replace action within the mass update period replaces assignments of objects specifically selected for replacement and adds assignments to periods without assignments of the selected object type.
+|===
+
+---
+
+=== Delete work time pattern models
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Work time pattern models**
+|Specifies the work time pattern models that the mass update unassigns from the selected people.
+|===
+
+---
+
+== Shift sequences
+
+=== Add shift sequence
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Shift sequence**
+|Specifies the shift sequence that the mass update assigns to the selected people.
+|**Employee row**
+|Specifies the shift sequence's employee row that the mass update assigns to the selected people.
+|**Sequence**
+|Specifies a numerical value that controls in which order shift sequences are applied for the selected people.
+|**Reference date**
+|Specifies from which day onwards the shift sequence is repeatedly applied to schedule the selected people.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Replace shift sequence
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Shift sequence**
+|Specifies the shift sequence that the mass update replaces.
+|**Employee row**
+|Specifies the shift sequence's employee row that the mass update replaces.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Shift sequence**
+|Specifies the shift sequence that Peopleware uses to replace an existing shift sequence.
+|**Employee row**
+|Specifies the shift sequence's employee row that is assigned to the selected people.
+|**Reference date**
+|Specifies from which day onwards the newly assigned shift sequence is repeatedly applied to schedule the selected people.
+|===
+
+<!--
+| Overwrite current sequence | --TODO-- might be obsolete                                                              |
+-->
+
+=== Delete shift sequences
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Shift sequences**
+|Specifies the shift sequences that the mass update unassigns from the selected people.
+|===
+
+---
+
+== Planning units
+
+=== Add planning unit
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Planning unit**
+|Specifies the planning unit that the mass update assigns to the selected people.
+|**Priority**
+|Specifies the priority of the planning unit. Peopleware uses the holiday and business hour settings of the planning unit with the highest priority to calculate a persons working hours. Priority 1 is the highest priority value.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Replace planning unit
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Planning unit**
+|Specifies the planning unit that the mass update replaces.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Planning unit**
+|Specifies the planning unit that replaces an existing planning unit.
+|===
+
+---
+
+=== Delete planning units
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Planning units**
+|Specifies the planning units that the mass update unassigns from the selected people.
+|===
+
+---
+
+== Selections
+
+=== Add selection
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Selection**
+|Specifies the selection that the mass update assigns to the selected people.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Replace selections
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Selections**
+|Specifies the selections that the mass update replaces.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Selection**
+|Specifies the selection that replaces one or more existing selections.
+|===
+
+---
+
+=== Delete selections
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Selections**
+|Specifies the selections that the mass update unassigns from the selected people.
+|===
+
+---
+
+== Attributes
+
+=== Add attribute
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Attribute**
+|Specifies the attribute that the mass update assigns to the selected people.
+|**Value**
+|Specifies the value of the assigned attribute.
+|**Priority**
+|Specifies the priority of the assigned attribute value.
+|**Overwrite current values**
+|If the specified attribute and priority combination is already assigned in the mass update period, the setting controls if the Add action overwrites the old attribute value. If the setting is inactive and the same attribute and priority combination is already assigned, the mass update automatically lowers the priority of the existing attribute and priority combinations with the same or a lower priority.
+|===
+
+---
+
+=== Delete attribute
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Attribute**
+|Specifies the attribute that the mass update unassigns from the selected people.
+|**Delete all included values**
+|Controls if the mass update removes every assignment of the selected attribute, regardless of the attribute value.
+|**Delete specific values only**
+|Controls if specific values need to be selected for the Delete action. The mass update only removes assignments of the attribute that have these values.
+|**Values**
+|Specifies a set of values of the selected attribute. The mass update only removes assignments of the attribute that have these values.
+|===
+
+---
+
+== Contracts
+
+=== Add contract
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Contract**
+|Specifies the contract that the mass update assigns to the selected people.
+|**Add only to empty time periods**
+|Controls if the mass update adds the object only to periods within the mass update period that do not already have an assignment of the added object type.
+|**Add to empty time periods and overwrite existing assignments**
+|Controls if the mass update removes within the mass update period any existing object assignment of the selected object type and then assigns the new object for the whole mass update period.
+|===
+
+---
+
+=== Change contract validity
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Contract**
+|Specifies a contract. Mass update adjusts the contract validity for every assignment of that contract within the mass update period.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Valid from**
+|Controls if the mass update changes the start date of the contract assignment. If in the mass update period more than one assignment exists for the selected contract, the mass update only adjusts the Valid from date of the assignment with the earliest Valid from date.
+|**Valid to**
+|Controls if the mass update changes the end date of the contract assignment. If in the mass update period more than one assignment exists for the selected contract, the mass update only adjusts the Valid to date of the assignment with the latest Valid to date.
+|**New date**
+|Specifies the value for the **Valid from** or **Valid to** setting.
+|===
+
+---
+
+=== Replace contracts
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**From**
+|Specifies the start date of the period affected by the mass update.
+|**To**
+|Specifies the end date of the period affected by the mass update.
+|**Contracts**
+|Specifies the contracts that the mass update replaces.
+|===
+
+==== New assignment
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Field
+|Description
+|**Contract**
+|Specifies the contract that Peopleware uses to replace one or more existing contracts.
+|**Replace existing assignments**
+|Controls if the Replace action within the mass update period only replaces assignments of objects specifically selected for replacement.
+|**Replace existing assignments and fill empty time periods**
+|Controls if the Replace action within the mass update period replaces assignments of objects specifically selected for replacement and adds assignments to periods without assignments of the selected object type.
+|===

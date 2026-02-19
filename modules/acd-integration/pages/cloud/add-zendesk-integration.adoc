@@ -1,0 +1,233 @@
+= Zendesk
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Zendesk CRM to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc, import-agent-status-data.adoc
+
+A Zendesk integration is a cloud integration that imports real-time agent status data and contact volumes for email, web forms, chat, calls, and social messaging from Zendesk Support and Zendesk Talk.
+
+The integration only imports incoming calls (but no outbound calls).
+The average handle time (AHT) data is only available for Zendesk Talk.
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-zendesk-integration]
+== Add a Zendesk integration
+To add a new Zendesk integration, follow the steps below:
+
+1. Go to _Account > Integrations_{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Zendesk**.
+5. Click _Save_{:.doc-button}.
+
+[#set-up-your-zendesk-integration]
+== Set up your Zendesk integration
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Zendesk updated their security and policy requirements for third-party apps and integrations, effective February 11, 2026.
+As a result, Peopleware no longer supports Basic Authentication to connect to Zendesk.
+If your Zendesk integration still uses Basic Authentication, switch to OAuth as soon as possible.
+====
+1. In the **Credentials** section, perform the following steps:
+   - **Zendesk domain**:
+     Enter your Zendesk domain including the subdomain, e.g. example.zendesk.com.
+   - **Authentication method**:
+     Select the **OAuth** option.
+
+2. In the **Configuration** section, configure the following information:
+   - **Group the Zendesk Talk call queues by**:
+     Select how you want to group Zendesk Talk data into source queues.
+     The strategy determines how xref:#queue-names-for-zendesk-talk[the resulting source queues are named].
+     To use the destination group, select **Interactive Voice Response (IVR)**.
+     To name the source queue after the receiving number, select **Phone number**.
+     A call without the relevant information will appear as ungrouped.
+     Source queues for Zendesk Support are not affected.
+
+   > You cannot change the grouping strategy once you have saved the configuration.
+   - **Import real-time agent status data**: Learn more about the import of agent status data in the xref:#agent-status-data[dedicated section below].
+
+3. Click _Save_{:.doc-button}.
+4. Go back to the **Credentials** section.
+5. Click _Authorize with Zendesk_{:.doc-button}.
+6. Enter your Zendesk credentials.
+7. Confirm that you allow Peopleware to access your Zendesk account.
+
+After successful authorization, the integration can be used to import data.
+
+[#zendesk-data-in-peopleware]
+== Zendesk data in Peopleware
+[#tickets-vs-contact-events]
+=== Tickets vs. contact events
+In Zendesk, a ticket usually contains multiple interactions between your team members and your customers through the different communication channels.
+
+Every interaction represents one task that your team members have to handle. An interaction can be a new ticket or a change to an existing ticket.
+
+Example: A user creates a ticket by writing an email. The team member then replies and closes the ticket. Two days later, the user sends another email replying to the team members's email, which reopens the ticket. In Peopleware, this would be counted as two emails, although happening on a single ticket.
+
+[#views]
+=== Views
+Peopleware creates source queues based on your Zendesk views. After the initial data import, you will see a source queue for every supported view that you have created in Zendesk. If a view contains events from different channels (e.g. chat and email), these will appear in separate xref:forecast:create-workloads.adoc#queues-and-channels[channels] in Peopleware.
+
+Note: Adding new Zendesk views after you have saved the integration will auto-generate new source queues and related history.
+
+[#unsupported-views]
+=== Unsupported views
+Zendesk allows you to create views to group tickets based on certain criteria, e.g. tickets assigned to you. Learn more in the [Zendesk documentation](https://support.zendesk.com/hc/en-us/articles/4408888828570-Creating-views-to-build-customized-lists-of-tickets).
+
+The Zendesk integration does not support all fields and operators you can select on the Zendesk view configuration page. In parentheses below, you can see the names used in the Zendesk API. To check if your views are supported, you may need to query the raw view configuration using the Zendesk API.
+
+Views that use the following fields or operators are currently not supported:
+
+- Business Hours (is_business_hours, less_than_business_hours, greater_than_business_hours)
+- SLA-related fields (until_sla_next_breach_at, sla_next_breach_at)
+- Channel (via_id)
+- Skills (skills_match)
+- Conditions with user-specific values for fields (assignee_id, via_id, updated_at, ticket_is_public)
+- Unsupported operators (changed, value, value_previous, not_changed, not_value, not_value_previous)
+
+No source queues are created for views with the unsupported fields or operators listed above.
+
+[#channel-mapping-between-zendesk-and-peopleware]
+=== Channel mapping between Zendesk and Peopleware
+Any change event on a Zendesk ticket may be counted within multiple Peopleware channels.
+
+Example: An email will create a ticket which will show up in an email queue in Peopleware. If that same ticket enters a chat view, it will also be counted in a chat queue in Peopleware.
+
+<!-- left-align table -->
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Zendesk Channel
+|Peopleware
+|email
+|email
+|mobile
+|email
+|web
+|email
+|chat
+|chat
+|native_messaging
+|chat
+|sms
+|social_media
+|any_channel
+|social_media
+|facebook
+|social_media
+|twitter
+|social_media
+|sunshine_conversations_facebook_messenger
+|social_media
+|instagram_dm
+|social_media
+|voice
+|call
+|api
+|case
+|answer_bot_for_web_widget
+|case
+|chat_transcript
+|case
+|mobile_sdk
+|case
+|whatsapp
+|social_media
+|===
+
+[#queue-names-for-zendesk-support]
+=== Queue names for Zendesk Support
+The resulting source queue name for Zendesk Support queues will follow this convention:
+
+"view name (_Peopleware channel_)"
+
+Examples:
+
+- Support Tickets (chat)
+
+[#queue-names-for-zendesk-talk]
+=== Queue names for Zendesk Talk
+The resulting source queue name for Zendesk Talk queues will follow this convention:
+
+"Calls Inbound For _grouping strategy_"
+
+Examples:
+
+- Calls Inbound For +49123456789 (Phone number)
+- Calls Inbound For Senior Agents (IVR)
+- Calls Inbound Ungrouped
+
+[#agent-status-data]
+=== Agent status data
+When you activate the **Import real-time agent status data** checkbox, the integration automatically performs the following steps:
+
+- Create a personal access token in Peopleware for your account
+- Create a webhook in Zendesk, which uses that PAT to authenticate
+
+The webhook serves to import the agent availability event type "zen:event-type:agent.unified_state_changed" to Peopleware.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+Peopleware imports changes to the unified agent status in Zendesk. Omnichannel routing must be set up in Zendesk. Status changes per channel for messaging and live chat are not supported.
+====
+The webhooks name is `Peopleware - Zendesk {integration ID}`. You can find the integration ID as part of the URL when you edit your Zendesk integration.
+
+Peopleware supports the following unified agent statuses:
+
+- Online
+- Away
+- Transfer only
+- Offline<br>When Peopleware imports an Offline status, it ends the previous activity.
+- Custom states
+
+To monitor your people's adherence to their schedule, xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[map Zendesk identifiers to people] and xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[map Zendesk statuses to Peopleware activities].
+
+[#handling-deleted-user-accounts]
+== Handling deleted user accounts
+=== Zendesk account
+
+The Zendesk integration links Peopleware to a Zendesk account.
+When this Zendesk account is deleted, the integration can no longer import historical volume data.
+To fix this, perform the authentication steps again to link the integration to a new Zendesk account:
+
+1. Go to _Account > Integrations_{:.breadcrumbs}
+2. Select the Zendesk integration in the **Integrations** table.
+3. Go to the **Credentials** section.
+4. Click _Authorize with Zendesk_{:.doc-button}.
+5. Enter your Zendesk credentials.
+6. Confirm that you allow Peopleware to access your Zendesk account.
+
+=== Peopleware user account
+
+Real-time agent status data is imported to Peopleware via a webhook.
+The webhook is set up in Zendesk and uses a personal access token that is tied to a Peopleware user account.
+Deleting the Peopleware user account invalidates the personal access token.
+The integration can no longer import real-time agent status data.
+To fix this, perform the following steps:
+
+1. Go to _Account > Integrations_{:.breadcrumbs}
+2. Select the Zendesk integration in the **Integrations** table.
+3. In the **Configuration** section, deactivate the **Import real-time agent status data** checkbox.
+4. Click _Save_{:.doc-button}.
+   Peopleware deletes the obsolete webhook configuration in Zendesk.
+5. In the **Configuration** section, activate the **Import real-time agent status data** checkbox.
+   Peopleware creates a new personal access token and sets up a new webhook in Zendesk.
+6. Click _Save_{:.doc-button}.

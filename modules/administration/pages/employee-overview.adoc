@@ -1,0 +1,159 @@
+= Configure employees
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-concept:
+:description: Create and configure employees to be included in scheduling.
+:related-articles: shift-center-overview.adoc, calculate-a-forecast.adoc, task-set-up-staff-requirement-calculation.adoc, schedules-job-optimization.adoc, schedules-optimized-schedules.adoc
+
+There are two places where you can create and edit a person's account, depending on your use case. The table below gives you an overview of the different places for account configuration and describes what you can do where.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Place
+|Possible actions
+|**People**
+|- xref:people:configure-people.adoc[Create and manage people] +- Manage people's contact and address information +- Manage access rights via roles +- Unlock locked people +- Set a new password for people +
+|**Plan > Configuration > Employees**
+|xref:administration:employee-overview.adoc[Configure employees for scheduling]. Employees without assigned planning units do not appear in the list.
+|===
+
+[NOTE]
+====
+The list in _Plan > Configuration > Employees_{:.breadcrumbs} does not automatically show all employees in the organization
+====
+>
+[NOTE]
+====
+In _Plan > Configuration > Employees_{:.breadcrumbs}, people without admin access can only see employees assigned to the planning units for which they have at least read access. If employees are not assigned to such a planning unit or if their xref:people:configure-people.adoc[assignment to such planning unit is not valid] for the current day, they do not appear in the list, even if **All** is selected in the planning unit and selection drop-down menus. People with admin access can always see all employees in the organization.
+====
+Users and people are synchronized, so you only have to create a person once.
+
+[#create-an-employee]
+== Create an employee
+To create an employee with the basic settings, complete all mandatory fields. Before you can set up the employee for scheduling, you have to xref:#configure-employee-settings[configure] several other xref:#overview-of-employee-settings[employee settings].
+To create an employee with the basic settings, follow the steps below:
+
+1. Go to _Plan > Configuration > Employees_{:.breadcrumbs}.
+2. In the action bar, click the {icon-wfm-add}.
+3. In the **General** section, add a unique **Personnel number**.
+4. In the **Personal data** section, add the **Last name** of the employee.
+5. In the **Peopleware Login (Email)** field, enter the email address the employee is going to use for Peopleware. A user login for Me is automatically created.
+6. xref:me:give-employees-access-to-me.adoc[Set a password] for the employee, so that they can log in to Peopleware.<br>You can do this after finishing the basic configuration of the employee.
+7. Click _OK_{:.doc-button}.<br>The system automatically sets the join date to the current day. You can manually change it later in the xref:#other-settings[Staff membership section].
+
+When you create an employee, Peopleware automatically creates a user with the Standard Agent role.
+
+<!-- in Enterprise on-premise, you need to set the correct join date for the employee in the Employment Period section manually. To automatically create a linked user in the Users section, you need to add a User name and a Password in the Employee section. The Peopleware Login (Email) field is called Email 1 here and is not mandatory. --->
+
+[#configure-employee-settings]
+== Configure employee settings
+After you have created an employee with the mandatory basic settings, you can configure the scheduling-related settings. To do that, follow the steps below:
+
+Prerequisite: You have set up xref:getting-started:set-up-base-configuration.adoc#required-configuration-elements[all elements required for scheduling].
+
+1. Click an employee in the list.<br>
+   You can use the blue quick links in the upper right to quickly navigate to a section.
+2. Click the {icon-wfm-add} in a section to add a new setting. To edit an existing setting, click the {icon-wfm-edit}.<br>Learn more about the xref:#overview-of-employee-settings[individual setting options].
+3. (Optional) In some sections, you can configure xref:administration:set-a-validity-period.adoc[Valid From and Valid To dates] that limit the validity period for a setting.
+4. To save your changes, click _OK_{:.doc-button}.
+
+[#overview-of-employee-settings]
+== Overview of employee settings
+In the following sections, you can find information about mandatory and optional scheduling settings for employee configuration.
+
+[#mandatory-scheduling-settings]
+=== Mandatory scheduling settings
+The following list shows the mandatory configuration items you need to assign to your employees in order to schedule them. To learn more about each configuration item, follow the links.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+You cannot add assignments with overlapping xref:administration:set-a-validity-period.adoc[validity periods].
+Past and future assignments are hidden by default. To show them, click the Display all icon {icon-assignment-history}.
+====
+- xref:administration:create-contracts.adoc[Contracts]: The drop-down menu shows all available contracts. Choose the right contract for your employee and assign it to them.
+- xref:administration:work-with-skills.adoc[Skill levels]: Skill levels reflect how qualified an employee is to work on a certain task. Select one or more skill levels from the drop-down menu.
+- xref:administration:activities.adoc[Activities]: Activities are the tasks an employee can work on based on their skills. The activities section is auto-populated after assigning a skill level to an employee. Activities that all employees can work on do not require a skill, e.g. the preset activities Present and Vacation.
+- xref:administration:create-and-manage-planning-units.adoc[Planning units]: Planning units group employees. An employee can be assigned to more than one planning unit but needs at least one planning unit with priority 1. Other planning units can be assigned with a value between 1 and 100 for each employee, with 1 being the highest priority.
+
+[#optional-scheduling-settings]
+=== Optional scheduling settings
+The following settings are not mandatory but can also be used for scheduling. To learn more about each configuration item, follow the links.
+
+- xref:administration:availabilities.adoc[Availability]: Define on which days and at which times a person is available for scheduling. If you want to always exclude someone from scheduling on a certain day of the week, set the availability for the respective xref:administration:day-types.adoc[day type] to one minute. To set the same availability for several people at once, use day models of the xref:administration:daymodel-creation.adoc#availability[Availability type] in shift sequences. If a person is available without limitation, you don't need to add any availabilities.
+
+- xref:administration:daymodel-creation.adoc[Day models]: By default, all day models assigned to the planning unit are used to create schedules for your employees. If you assign personal day models to an employee, the schedule optimization will only use these specific day models for the employee. If you want to only schedule employees who have been assigned personal day models, you can activate the scheduling rule _2661_{:.id-label} _Day model assignment to employee_.
+
+- xref:administration:shift-sequences.adoc[Shift sequences]: Shift sequences contain day models or activities with a repeating weekly pattern. To use shift sequences to create schedules for your people, create shift sequences and xref:administration:assign-shift-sequences-to-people.adoc[assign them to your people] first. You can also assign more than one shift sequence to a person, for example, if you want to use a different shift sequence for weekends and weekdays.
+
+- xref:administration:selections.adoc[Selections]: Selections serve as a type of filter that you can use to display a filtered group of employees in an overview or to perform an action simultaneously for a specific group of employees. You can create one or several selections from the Selections drop-down menu. Examples of selections could be a group of employees who are always scheduled in the same way, have the same contract, work in shift sequences, carpool to work, or who are scheduled first due to their full-time status.
+
+- xref:administration:work-time-pattern-models.adoc[Work time pattern models]: Use work time pattern models to limit the automatic scheduling to a subset of all available day models. You can assign several work time pattern models to one employee, but only if their validity periods do not overlap. Set a reference date to define the start date for the work time pattern model.
+
+- External systems: Assign xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[external user identifiers] which are needed for the agent status import from your ACD.
+
+[#other-settings]
+=== Other settings
+The following section provides an overview of the remaining settings in the employee configuration. Most of them are not relevant for scheduling. For further information about these settings, you can also hover over them in the UI to display the setting details.
+
+- Staff membership: When you xref:#create-an-employee[create an employee with the basic settings], the join date is automatically set. Here, you can edit the join date and set a leave date, if required.
+
+- Personal data: Enter personal data for your employee, e.g. address data, phone number, and country.
+
+- Identification card numbers: Enter the number of your employee's company ID card or other personal ID card.
+
+- Miscellaneous
+
+Some of the settings in the Miscellaneous section are relevant for scheduling and others are not. The following table provides an overview of the setting details.
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Setting
+|Relevant for scheduling
+|Description
+|Color
+|No
+|Pick a color to quickly identify the employee in the schedule.
+|Date and place of birth
+|No
+|Add the employee's date and place of birth.
+|Schedule position
+|Yes
+|Defines the sorting order for the xref:scheduling:sort-and-filter-items.adoc[Sort by Schedule Position] functionality in Shift Center. The default value is 0 and Shift Center will sort in ascending order.
+|Shift assignment
+|Yes
+|The checkbox is checked by default and is required if you want to schedule employees automatically. If you do not want this, uncheck the checkbox. You can still manually assign shifts and insert shift sequences for this employee.
+|===
+
+[#use-mass-update]
+== Use mass update
+In Advanced and Enterprise WFM, you can use the xref:people:concept-mass-update.adoc[mass update functionality] to edit multiple employees at once.
+
+[#delegate-employees]
+== Delegate employees
+If your employees often work in other planning units for a limited amount of time, you can use the Delegate employee functionality to temporarily assign employees to another planning unit.
+
+During the delegation period, the new planning unit automatically takes priority for scheduling. When the defined period ends, the employee is automatically scheduled in their old planning unit again. The Delegate employee functionality saves time compared to manually reassigning the planning unit.
+
+To delegate an employee, follow the steps below.
+
+1. Select an employee.
+2. Go to the **Planning units** section.
+3. In the section header, click the {icon-delegate-employees}.
+4. Select the planning unit the employee is delegated to.
+5. Enter a start date and an end date for the delegation period.
+6. Click _OK_{:.doc-button}.
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+An employee assigned to multiple planning units at the same time is delegated from the planning unit with the highest priority.
+====

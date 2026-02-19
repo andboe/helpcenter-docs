@@ -1,0 +1,110 @@
+= Schedule meetings from suggestions
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: View suggestions for meetings and self-learning sessions and apply them to your schedule.
+:related-articles: meetings-overview.adoc
+
+In _Plan > Meetings_{:.breadcrumbs}, you can generate suggestions for xref:ROOT:generate-suggestions-for-1-1-meetings.adoc[1:1&nbsp], xref:scheduling:self-learning-sessions.adoc[self-learning lessons], and xref:scheduling:generate-suggestions-for-group-meetings.adoc[group meetings]. After generating suggestions, you can view the generated suggestions and schedule meetings.
+
+New to Meetings? Learn xref:scheduling:meetings-overview.adoc[the basics] first.
+
+[#overview-of-the-suggestions]
+== Overview of the suggestions
+In _Plan > Meeting_{:.breadcrumbs}, the _Generated suggestions_{:.label} table shows the suggestions you xref:scheduling:meetings-overview.adoc#generate-meeting-suggestions[generated]:
+
+<style>
+table {
+   margin-left: 0px;
+}
+</style>
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Explanation
+|Initiated on
+|Date and time of the process start.
+|Type
+|Type of meeting
+|Planning unit
+|Planning unit of the participants
+|Participant status
+|How many participants are available for the suggestions.
+|Actions
+|Further actions to take.
+|===
+
+The _Actions_{:.label} column shows the following actions:
+
+- _View suggestions_{:.label}: To see the generated suggestions, click _View suggestions_{:.label}.
+- _View conflict_{:.label}: No suggestions were generated due to conflicts in the schedules. To see further details about the conflicts and learn how to solve them, click _View conflict_{:.label}.
+- _View results_{:.label}: This option appears after you have xref:#schedule-meetings-and-sessions-from-suggestions[scheduled meetings and self-learning sessions from suggestions]. To see which meetings were sucessfully scheduled, click _View results_{:.label}.
+
+[#view-suggestions]
+== View suggestions
+To view suggestions, click _View suggestions_{:.label} in the _Actions_{:.label} column. You are redirected to the _Suggestions_{:.label} page. If suggestions could only be generated for some of the selected people, a box with details about the affected people appears at the top of the page.
+
+The _Suggestions_{:.label} page includes a table with the following details about the suggestions:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Column
+|Details
+|Suggested time slot
+|Suggested time for the meeting
+|Activity to schedule
+|Meeting activity that will be scheduled.
+|Host/Participant
+|Names of people who will be in the meeting.
+|Replaced activity
+|Scheduled activity that will be replaced by the meeting.
+|Resulting coverage
+|How scheduling the suggested meeting affects the coverage of your schedule. Hover over the coverage values to open a popover with detailed information.
+|===
+
+[NOTE]
+====
+====
+>
+[NOTE]
+====
+The impact on the coverage is calculated automatically when you generate suggestions. Any changes you make to the schedule after generating suggestions will not affect the values in the _Resulting coverage_{:.label} column.
+====
+To check people's schedules before scheduling meetings, click _View schedule_{:.label} next to the suggestion.
+
+[#schedule-meetings-and-sessions-from-suggestions]
+== Schedule meetings and sessions from suggestions
+To schedule meetings and sessions from suggestions, follow these steps:
+
+1. In the _Suggestions_{:.label} page, select the suggestions you want to apply to your schedule. By default, all suggestions are pre-selected:
+   - (Optional) Uncheck the checkboxes next to the suggestions that you do not want to apply to your schedule. Uncheck the checkbox next to _Suggested time slot_{:.label} to deselect all suggestions.
+
+2. Click _Schedule meetings_{:.doc-button} or _Schedule sessions_{:.doc-button} (for self-learning lessons).
+
+   You are redirected to the _Results_{:.label} page.
+
+The _Results_{:.label} page includes the following tabs with information about which meetings were scheduled:
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Tab
+|Details
+|Scheduled
+|Scheduled meetings
+|Failed
+|Meetings that were not scheduled. Check the reasons why the meeting could not be scheduled in the _Information_{:.label} column. You cannot click the tab if all suggestions you selected have been scheduled.
+|Excluded
+|Suggestions that were deselected before scheduling the meetings. You cannot click the tab if you did not deselect any suggestion.
+|===
+
+If necessary, xref:scheduling:meetings-overview.adoc#generate-meeting-suggestions[regenerate the suggestions] for the meetings listed in the _Failed_{:.label} and _Excluded_{:.label} tabs with different settings or xref:scheduling:schedules-edit.adoc#add-activities[add a meeting activity manually to your schedules] in _Plan > Schedules_{:.breadcrumbs}.
+
+== Delete suggestions <a name="delete-meeting-suggestions">
+
+To delete suggestions, follow these steps:
+
+1. In _Plan > Meetings_{:.breadcrumbs}, check the checkbox next to the suggestions you want to delete in the _Generated suggestions_{:.label} table. To select all suggestions, check the checkbox next to _Initiated on_{:.label}.
+2. Click _Delete entry_{:.doc-button}.

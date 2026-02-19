@@ -1,0 +1,91 @@
+= Set scheduling rule mode
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: essential, advanced, enterprise
+:topic-type-task:
+:description: Learn how to set the standard mode and overrides for scheduling rules.
+:related-articles: concept-scheduling-rules.adoc
+
+This article explains how to control which scheduling rules are applied when scheduling people and how.
+Scheduling rules can be set up to apply to everyone and overrides can be specified for groups of people or for people whose scheduling is performed with a specific program component.
+
+== Prerequisites
+
+- You have admin permissions.
+
+== Steps
+
+1. Go to _Plan > Configuration > Scheduling rules_{:.breadcrumbs}).
+2. Select a scheduling rule.
+3. In the **For everyone** section, select the scheduling rule mode. For more information, see xref:#modes[Standard mode for everyone].
+4. (Optional) Specify the scheduling rule mode for specific user groups or program components in the **Overrides for...** sections. For more information see xref:#overrides[mode overrides].
+5. Click _Save_{:.doc-button}.
+
+[#modes]
+== Modes
+The scheduling rule mode controls whether the rule is active and whether violations are permitted. An active scheduling rule is applied to all users when no overrides are set.
+
+[%header, cols="1a,1a,1a,".rstrip(',')]
+|===
+|Mode
+|Color
+|Description
+|Off
+|Gray
+|Deactivates the scheduling rule.
+|Vioable
+|Yellow
+|Sets the scheduling rule to soft mode. Violations trigger warnings in Shift Center.
+|Invioable
+|Red
+|Activates and fully enforces the scheduling rule. Violations block scheduling and show errors.
+|===
+
+== Effective settings
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Section
+|Description
+|For you
+|Displays the mode or value that applies to the currently logged in user.
+|For everyone
+|Displays and lets you select the mode or value that applies to everyone in your organization.
+|For administrators
+|Displays and lets you select the mode or value that applies to people with the Admin status.
+|===
+
+[#overrides]
+== Overrides
+=== Overrides for current user
+
+Changes the scheduling rule mode for you, the user who is currently logged in. Use this when you, as an administrator or authorized user, need a temporary or personal deviation from the standard mode or other overrides.
+
+=== Overrides for individual planners
+
+Changes the scheduling rule mode for a specific, selected planner. Use this to manage individual exceptions or special scheduling needs.
+
+=== Overrides for roles
+
+Changes the scheduling rule mode for all users assigned to the selected role. This ensures consistent behavior and rule application across entire job functions, teams, or departments.
+
+=== Overrides for programm components
+
+Changes the scheduling rule mode for a specific program component or feature. Use this when the scheduling behavior needs to vary within certain workflows or system areas.
+
+[%header, cols="1a,1a,".rstrip(',')]
+|===
+|Program component
+|Description
+|Lottery
+|The shift lottery component for day models and activities.
+|Request approval
+|The approval process component of activity requests made by the employees in Me.
+|Capacitor
+|The component that transfers employee absences and contract renewals from Capacitor to iWFM.
+|Optimization
+|The shift generation component that performs automatic job optimization and break optimization.
+|Assignment
+|The component that assigns day models and activities.
+|===

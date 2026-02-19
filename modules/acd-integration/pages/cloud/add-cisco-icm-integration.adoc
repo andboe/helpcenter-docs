@@ -1,0 +1,59 @@
+= Cisco ICM
+include::help-center:ROOT:partial$libs/libs.adoc[]
+:author: 
+:email: 
+:product-label: advanced, enterprise
+:topic-type-concept:
+:description: Learn how to connect your Cisco ICM to Peopleware to import data.
+:related-articles: how-integrations-work.adoc, add-an-integration.adoc, import-agent-status-data.adoc
+
+The Cisco ICM integration imports real-time adherence data. The integration uses xref:acd-integration:install-cloud-link.adoc[Cloud Link].
+
+New to integrations? Learn xref:acd-integration:how-integrations-work.adoc[the basics] first.
+
+[#add-a-cisco-icm-integration]
+== Add a Cisco ICM integration
+1. Go to *Account > Integrations*{:.breadcrumbs}.
+2. Click _Create_{:.doc-button}.
+3. Enter a unique name for the new integration that identifies the data source.
+4. From the **External system** drop-down menu, select **Cisco**.
+5. From the **Model name** drop-down menu, select **Cisco ICM**.
+6. Click _Save_{:.doc-button}.
+
+[#set-up-your-cisco-icm-integration]
+== Set up your Cisco ICM integration
+1. In the **Cloud Link** section, click the **download link** for your operating system.
+
+   > Note
+   >
+   > You neeed to download the Cisco-specific Cloud Link from this page, even if you already downloaded Cloud Link for a different integration.
+
+2. Install and connect xref:acd-integration:install-cloud-link.adoc[Cloud Link]. During the installation, your terminal shows a PIN that you need to enter in the integrations page to proceed. The PIN expires after 5 minutes.
+3. In the **Credentials** section, enter the following information:
+   - **Connection string**: Enter a connection string with the specific parameters for your database type and ODBC driver to connect to your Cisco database, e.g.:
+
+   `DRIVER={MS SQL Server};Server=myServerAddress;Database=myDataBase;UserId=myUsername;Password=myPassword;`
+   - **Client ID** and **Password**: Enter your client ID and password for Cisco ICM.
+
+4. In the **Configuration** section, enter the following information:
+   - **Database time zone**.
+   - **Peripheral gateway 1**: Enter the addresses (as IP address or DNS name) and port numbers to be used. Separate addresses with commas (e.g. “192.168.0.1:42027, 192.168.0.2:43027”). The first address is considered a Side A peripheral gateway, and the second one a Side B peripheral gateway. If you only enter one address, it is assumed that no Side B exists.
+   - (Optional) **Peripheral gateway 2**.
+
+5. Click _Save_{:.doc-button}.
+
+RTA data starts to be imported but the data is only visible after you have mapped external identifiers to your people.
+
+[#map-external-identifiers-to-your-people]
+== Map external identifiers to your people
+1. Go to _People_{:.breadcrumbs}.
+2. Assign external identifiers to your people. The external identifiers are the Unified CCE Skill Target IDs.
+
+Learn more about xref:acd-integration:import-agent-status-data.adoc#map-external-identifiers-to-people-in-peopleware[mapping external identifiers] to people.
+
+[#map-external-statuses-to-peopleware-activities]
+== Map external statuses to Peopleware activities
+1. Go to _Intraday > Configuration_{:.breadcrumbs}.
+2. Map external statuses from Cisco ICM to Peopleware activities.
+
+Learn more about xref:intraday:map-external-status.adoc#map-external-statuses-to-activities-in-intraday[mapping external statuses] to Peopleware activities.
